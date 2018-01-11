@@ -64,14 +64,6 @@ export default {
   markets: {
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
-    steps: `
-      <h3>Buy Skycoin NOW in 3 easy steps:</h3>
-      <ol>
-        <li><p>Download <a href="/downloads">Skycoin wallet</a> and get address</p></li>
-        <li><p>Put your address in <a target="_blank" href="https://otc.skycoin.net/">otc.skycoin.net</a></p></li>
-        <li><p>Send bitcoin to the address to receive your skycoin instantly</p></li>
-      </ol>
-    `,
   },
   home: {
     title: 'Skycoin - третье поколение криптовалюты',
@@ -188,8 +180,6 @@ export default {
     bbs: {
       heading: 'Скачать Skycoin BBS',
       lead: 'Skycoin BBS - это децентрализованная социальная сеть следующего поколения, построенная с использованием экосистемы Skycoin.',
-      link: 'Find the latest binaries on Github.',
-      thin: 'Access a BBS thin client.',
     },
     whitepapers: {
       heading: 'Скачать документацию Skycoin',

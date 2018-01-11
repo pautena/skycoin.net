@@ -15,7 +15,7 @@ class MailingPage extends PureComponent {
   render() {
     return (
       <div>
-        <Header secondary title="Mailing" />
+        <Header />
         <Container>
           <div id="mc_embed_signup">
             <form

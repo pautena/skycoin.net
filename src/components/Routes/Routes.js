@@ -26,13 +26,12 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
-      <Route path={`${prefix}buy`} exact component={MarketsPage} />
+      <Route path={`${prefix}markets`} exact component={MarketsPage} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
       <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
-      <Redirect from={`${prefix}markets`} to={`${prefix}buy`} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );

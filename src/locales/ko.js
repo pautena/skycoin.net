@@ -64,14 +64,6 @@ export default {
   markets: {
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',
-    steps: `
-      <h3>Buy Skycoin NOW in 3 easy steps:</h3>
-      <ol>
-        <li><p>Download <a href="/downloads">Skycoin wallet</a> and get address</p></li>
-        <li><p>Put your address in <a target="_blank" href="https://otc.skycoin.net/">otc.skycoin.net</a></p></li>
-        <li><p>Send bitcoin to the address to receive your skycoin instantly</p></li>
-      </ol>
-    `,
   },
   home: {
     title: '스카이코인 - 제 3세대 암호화폐',
@@ -188,8 +180,6 @@ export default {
     bbs: {
       heading: 'Download Skycoin BBS',
       lead: '스카이코인 BBS는 스카이코인 생태계와 함께 차세대 분산 소셜 네트워크를 구축하였습니다.',
-      link: 'Find the latest binaries on Github.',
-      thin: 'Access a BBS thin client.',
     },
     whitepapers: {
       heading: 'Download Skycoin Whitepapers',

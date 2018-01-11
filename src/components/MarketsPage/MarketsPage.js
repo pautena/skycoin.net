@@ -6,7 +6,7 @@ import MarketsList from './components/MarketsList/MarketsList';
 
 const MarketsPage = () => (
   <div>
-    <Header secondary title="Markets" />
+    <Header border />
     <Container>
       <MarketsList />
     </Container>
