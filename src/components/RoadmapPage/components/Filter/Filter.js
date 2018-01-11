@@ -19,7 +19,7 @@ const Filters = styled.div`
 `;
 
 const Text = styled.div`
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.mono};
   font-weight: 700;
   font-size: ${rem(FONT_SIZES[1])};
   color: #fff;

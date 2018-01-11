@@ -48,7 +48,6 @@ class MailingPage extends PureComponent {
                         value="1"
                         name="group[1057][1]"
                         id="mce-group[1057]-1057-0"
-                        checked
                       />
                       <label htmlFor="mce-group[1057]-1057-0" checked>{' I\'m Interested in a Skywire Miner'}</label>
                     </li>

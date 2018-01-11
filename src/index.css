@@ -1,35 +1,19 @@
 @font-face {
-    font-family: 'SkycoinSans';
-    src: url('./skycoin-bold-webfont.woff2') format('woff2'),
-         url('./skycoin-bold-webfont.woff') format('woff');
+    font-family: 'Montreal';
+    src: url('./montreal-bold-webfont.woff2') format('woff2'),
+         url('./montreal-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'SkycoinSans';
-    src: url('./skycoin-regular-webfont.woff2') format('woff2'),
-         url('./skycoin-regular-webfont.woff') format('woff');
+    font-family: 'Montreal';
+    src: url('./montreal-regular-webfont.woff2') format('woff2'),
+         url('./montreal-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'SkycoinSans';
-    src: url('./skycoin-bold-italic-webfont.woff2') format('woff2'),
-         url('./skycoin-bold-italic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face  {
-    font-family: 'SkycoinSans';
-    src: url('./skycoin-regular-italic-webfont.woff2') format('woff2'),
-         url('./skycoin-regular-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
 }
 
 @font-face {
@@ -50,12 +34,8 @@
 
 }
 
-body,
 html {
   box-sizing: border-box;
-  font-family: 'SkycoinSans', sans-serif;
-  font-size: 16px;
-  background: #fbfbfb;
   -webkit-font-smoothing: antialiased;
 }
 

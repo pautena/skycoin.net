@@ -22,7 +22,7 @@ const Year = styled.div`
   border-radius: 50%;
   background-image: linear-gradient(0deg, ${COLORS.base} 0%, ${COLORS.blue[5]} 100%);
   margin: 0 auto;
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.mono};
   font-size: ${rem(FONT_SIZES[2])};
   font-weight: 700;
   display: flex;

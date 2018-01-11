@@ -1,7 +1,5 @@
 import React from 'react';
 import { Flex, Box } from 'grid-styled';
-import styled from 'styled-components';
-import { COLORS_NEW } from 'config';
 
 import Container from 'components/Container';
 import Text from 'components/Text';
@@ -9,20 +7,21 @@ import Logo from 'components/Logo';
 
 import Languages from './components/Languages';
 import List from './components/List';
+import Email from './components/Email';
 import content from './content';
 
-const Footer = styled.div`
-  background: ${COLORS_NEW.black};
-`;
-
 export default () => (
-  <Footer>
+  <div>
     <Container>
-      <Flex wrap py={[4, 8]} mx={-4}>
+      <Flex wrap my={[4, 8]} mx={-4}>
         <Box width={[1 / 2, 1 / 4]} my={2} px={4}>
-          <Logo white />
+          <Logo />
 
-          <Text as="div" fontSize={[0, 0, 1]} color={COLORS_NEW.white} heavy>
+          <Text fontSize={[1, 2, 3]} color="gray.8" heavy mt={2}>
+            <Email />
+          </Text>
+
+          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" heavy>
             <Languages />
           </Text>
         </Box>
@@ -34,5 +33,5 @@ export default () => (
         ))}
       </Flex>
     </Container>
-  </Footer>
+  </div>
 );

@@ -1,36 +1,28 @@
 import styled, { css } from 'styled-components';
 import { space, width, fontSize, color } from 'styled-system';
-import { rem, darken, rgba } from 'polished';
+import { rem, darken } from 'polished';
 import get from 'lodash/get';
 
 import Link from 'components/Link';
 import media from 'utils/media';
-import { COLORS, FONT_FAMILIES, SPACE, BORDER_RADIUS } from 'config';
+import { COLORS, FONT_FAMILIES, FONT_SIZES, SPACE, BORDER_RADIUS, BOX_SHADOWS } from 'config';
 
 export default styled(Link)`
   display: inline-block;
   border: 1px solid transparent;
   cursor: pointer;
+  line-height: 1;
+  font-weight: 700;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
 
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
-  font-family: ${FONT_FAMILIES.sans};
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  font-weight: bold;
+  box-shadow: ${BOX_SHADOWS.base};
+  font-family: ${FONT_FAMILIES.mono};
+  font-size: ${rem(FONT_SIZES[3])};
+  padding: ${rem(SPACE[3])} ${rem(SPACE[6])};
   transition: 150ms ease-in-out;
-  ${props => props.gradient && `
-    background: linear-gradient(107.35deg, ${props.gradientFirst} 0%, ${props.gradientSecond} 100%);
-    box-shadow: 0 8px 20px -4px ${rgba(props.gradientSecond, 0.2)};
-    border: none;
-
-    &:hover {
-      box-shadow: 0 0 0 0 ${rgba(props.gradientSecond, 0)};
-    }
-  `};
-
 
   ${fontSize}
   ${color}
@@ -41,6 +33,8 @@ export default styled(Link)`
     background-color: ${props =>
       props.bg && darken(0.05, get(COLORS, props.bg) || props.bg)
     };
+
+    box-shadow: ${BOX_SHADOWS.hover};
   }
 
   &:active {

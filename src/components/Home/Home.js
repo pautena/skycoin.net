@@ -1,42 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { injectIntl, FormattedHTMLMessage } from 'react-intl';
+import { injectIntl, FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import { rem } from 'polished';
-import { COLORS_NEW } from 'config';
 
+import GetStarted from 'components/GetStarted';
+import Heading from 'components/Heading';
+import Label from 'components/Label';
 import Link from 'components/Link';
-import TechnologyLink from 'components/TechnologyLink';
-import Container from 'components/Container';
-import Grid from 'components/Grid';
-import GridColumn from 'components/GridColumn';
+import Text from 'components/Text';
+import { eventInProgress } from 'components/Distribution/eventStatus';
+import Blog from 'components/Blog';
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
+import DistributionEvent from './components/DistributionEvent';
+import About from './components/About';
+import Network from './components/Network';
+import Miner from './components/Miner';
 import Logos from './components/Logos';
-import Exchanges from './components/Exchanges';
-import skycoinImage from './images/skycoin.png';
-import skywireImage from './images/skywire.png';
-import arrowRight from './images/arrowRight.svg';
-
-const Links = styled.div`
-  padding-top: ${rem(90)};
-  padding-bottom ${rem(240)};
-`;
 
 const StyledLink = styled(Link)`
-  color: ${COLORS_NEW.black};
-  font-size: ${rem(16)};
   text-decoration: none;
+  color: #fff;
 
-  img {
-    vertical-align: middle;
-    margin-left: 5px;
-  }
-
-  span > span {
-    color: ${COLORS_NEW.gold};
-    text-decoration: underline;
+  &:hover {
+    text-decoration: none;
   }
 `;
 
@@ -51,24 +39,35 @@ const Home = ({ intl }) => (
     </Helmet>
 
     <Hero />
-    <Container>
-      <Links>
-        <Grid>
-          <GridColumn width={6}>
-            <TechnologyLink href="skywire" bg={skywireImage} title="Skywire" />
-          </GridColumn>
-          <GridColumn width={6}>
-            <TechnologyLink href="skycoin" bg={skycoinImage} title="Skycoin" />
-          </GridColumn>
-        </Grid>
-        <StyledLink to="architecture-overview">
-          <FormattedHTMLMessage id="home.architectureLink" />
-          <img src={arrowRight} alt="arrow" />
-        </StyledLink>
-      </Links>
-    </Container>
+    <Blog />
+    {eventInProgress && <DistributionEvent />}
+    <About>
+      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+        <FormattedMessage id="home.about.heading" />
+      </Heading>
+
+      <Text fontSize={[3, 3, 4]} color="black" heavy>
+        <FormattedMessage id="home.about.lead" />
+      </Text>
+    </About>
+    <Miner />
+    <About>
+      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+        <FormattedMessage id="home.aboutSkywire.heading" />
+      </Heading>
+
+      <Text fontSize={[3, 3, 4]} mb={[4, 6]} color="black" heavy>
+        <FormattedMessage id="home.aboutSkywire.lead" />
+      </Text>
+      <StyledLink href="https://blog.skycoin.net/tags/skywire/" target="_blank">
+        <Label>
+          <FormattedMessage id="home.miner.label" />
+        </Label>
+      </StyledLink>
+    </About>
+    <Network />
     <Logos />
-    <Exchanges />
+    <GetStarted />
     <Footer />
   </div>
 );

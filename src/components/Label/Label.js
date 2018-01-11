@@ -7,7 +7,7 @@ export default styled.span`
   background-color: ${COLORS.blue[5]};
   border-radius: ${BORDER_RADIUS.base};
   box-shadow: ${BOX_SHADOWS.base};
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.mono};
   font-size: ${rem(FONT_SIZES[0])};
   padding: ${rem(SPACE[2])} ${rem(SPACE[3])};
 

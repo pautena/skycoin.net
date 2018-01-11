@@ -1,7 +1,6 @@
 export default {
   header: {
     navigation: {
-      home: 'Technology',
       distribution: '배포',
       distributionEvent: '배포 이벤트',
       whitepapers: '백서',
@@ -77,16 +76,8 @@ export default {
   home: {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
-    architectureLink: 'View our full <span>Architecture Overview</span>',
-    logos: {
-      title: 'Partnerships & media',
-    },
-    exchanges: {
-      title: 'Exchanges',
-    },
     hero: {
-      heading: 'the next generation cryptocurrency.',
-      lead: 'we built a full-fledged technology ecosystem that works harmoniously together to create the first and only truly decentralized and democratic cryptocurrency.',
+      heading: '스카이코인은 3세대 암호-화폐입니다.',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',
@@ -234,116 +225,5 @@ export default {
   },
   roadmapPage: {
     heading: '개발 로드맵',
-  },
-  skycoinPage: {
-    about: {
-      title: 'Skycoin is the only cryptocurrency backed by a commodity in high demand: bandwidth.',
-      listTitle: 'Skycoin <span>fixes all of the major flaws</span> and centralization tendencies associated with other cryptocurrencies.',
-      listDescription: 'Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
-      obeliskTitle: 'Obelisk Consensus Algorithm',
-      obeliskText: 'Seven years of research went into our consensus algorithm, Obelisk, which uses a web-of-trust mechanism to to allow for collective decision making, resulting in true decentralization of power',
-      skywireTitle: 'Designed for Skywire',
-      skywireText: 'Our incentivized mesh network, Skywire, is the backbone of Skycoin. By becoming a node on our mesh net, you will earn passive income.',
-    },
-    benefits: {
-      title: 'Benefits of our <span>third generation</span> cryptocurrency.',
-      1: {
-        title: 'Fast',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      2: {
-        title: 'Free transactions',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      3: {
-        title: 'Privacy',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      4: {
-        title: 'Security',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-        list: {
-          1: 'Encrypted by default',
-          2: 'Feature here',
-          3: 'Feature here',
-        },
-      },
-      5: {
-        title: 'Eco-friendly',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-    },
-  },
-  skywirePage: {
-    form: {
-      title: 'Stay informed on further Skywire releases',
-      checkbox: 'I’m interested in the Skywire Miner',
-      button: 'Sign up',
-    },
-    sell: {
-      checkbox: 'I’m interested in the Skywire Miner',
-      soldout: 'Sold out!',
-      title: 'Start <span>earning money</span> today.',
-      description: 'Buy our Skywire Miner or install our software and become a major provider in our emerging network.',
-      listTitle: 'Skywire Miner',
-      listDescription: 'The backbone of this new network is the Skywire miner, which is custom built for power and performance. The Skywire Miner is used to forward traffic and provide various network resources, in return for skycoin.',
-      listName: 'Specifications',
-      list: {
-        1: '8 CPU boards',
-        2: '2 GB of RAM per board',
-        3: '4 CPU cores per board',
-        4: '64 GB of storage per board',
-        5: '64-bit Linux (Alpine Linux)',
-        6: 'Gigabit ethernet, 8+1 port switch',
-      },
-    },
-    about: {
-      title: 'Earn money providing open and free internet access to the people to whom it belongs.',
-      button: 'Profit Calculator',
-      listTitle: 'The Skywire economy is <span>powered by Skycoin</span>, where you earn money for operating the network.',
-      listDescription: 'Imagine an internet that gives you total privacy and control of your data, one that lets you do everything you do today and more — except instead of paying for this incredible resource, you earn income supporting it.',
-      list: {
-        1: {
-          name: 'Install Skywire software',
-          text: 'You don’t need any special hardware to install our software and act as a node on our incentivised mesh network, Skywire.',
-        },
-        2: {
-          name: 'Serve content',
-          text: 'Skywire lets you act as your own ISP, providing free, private, and secure access to the open and free internet to everyone in your vicinity.',
-        },
-        3: {
-          name: 'Earn a passive income',
-          text: 'You will maximize your profit in two ways: by having high bandwidth in high-traffic areas, or by serving highly sought-after content.',
-        },
-      },
-    },
-    benefits: {
-      title: 'Benefits of the <span>new internet</span>.',
-      1: {
-        title: 'Security',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-        list: {
-          1: 'Encrypted by default',
-          2: 'Feature here',
-          3: 'Feature here',
-        },
-      },
-      2: {
-        title: 'Privacy',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      3: {
-        title: 'Fast',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      4: {
-        title: 'Neutral and uncensored',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      5: {
-        title: 'Free',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-    },
   },
 };
