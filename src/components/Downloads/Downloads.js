@@ -10,6 +10,7 @@ import Whitepappers from 'components/WhitepapersPage/components/Whitepapers';
 import Assets from './components/Assets';
 import Wallet from './components/Wallet';
 import BBS from './components/BBS';
+import Skywire from './components/skywire';
 
 const Downloads = ({ intl }) => (
   <div>
@@ -26,6 +27,7 @@ const Downloads = ({ intl }) => (
     <BBS />
     <Whitepappers />
     <Assets />
+    <Skywire />
 
     <GetStarted />
     <Footer />

@@ -21,72 +21,89 @@ const Th = styled.th`
 
 const Row = styled.tr`
   text-align: center;
+  background-color: ${props => (props.display ? '#EDEDED' : 'white')};
 
   td {
     border-top: 1px solid ${props => (props.light ? '#D2D3D4' : 'inherit')};
   }
 `;
 
+const A = styled.a`
+  opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+`;
 
-const ApplicationTable = ({ list }) => (
-  <TableWrapper>
-    <Table>
-      <tbody>
-        {list.map(({ platform, icon, builds }, platformIndex) =>
-          builds.map((build, buildIndex) =>
-            build.architectures.map((architecture, architectureIndex) => (
-              <Row
-                light={buildIndex !== 0 && buildIndex !== builds.length}
-                key={`${platformIndex}-${buildIndex}-${architectureIndex}`}
-              >
-                {buildIndex === 0 &&
-                  <Th
-                    count={builds.length}
-                    rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}
-                  >
-                    <Icon src={icons[icon]} />
-                    <FormattedMessage id={platform} />
-                  </Th>
-                }
 
-                {architectureIndex === 0 &&
-                  <td rowSpan={build.architectures.length}>
-                    <FormattedMessage id={build.name} />
+const ApplicationTable = ({ list }) => {
+  let OSName = -1;
+  if (navigator.appVersion.indexOf('Win') !== -1) OSName = 1;
+  if (navigator.appVersion.indexOf('Mac') !== -1) OSName = 0;
+  if (navigator.appVersion.indexOf('X11') !== -1) OSName = 2;
+  if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
+
+  return (
+    <TableWrapper>
+      <Table>
+        <tbody>
+          {list.map(({ platform, icon, builds }, platformIndex) =>
+            builds.map((build, buildIndex) =>
+              build.architectures.map((architecture, architectureIndex) => (
+                <Row
+                  light={buildIndex !== 0 && buildIndex !== builds.length}
+                  key={`${platformIndex}-${buildIndex}-${architectureIndex}`}
+                  display={platformIndex === OSName}
+                >
+                  {buildIndex === 0 &&
+                    <Th
+                      count={builds.length}
+                      rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}
+                    >
+                      <Icon src={icons[icon]} />
+                      <FormattedMessage id={platform} />
+                    </Th>
+                  }
+
+                  {architectureIndex === 0 &&
+                    <td rowSpan={build.architectures.length}>
+                      <FormattedMessage id={build.name} />
+                    </td>
+                  }
+
+                  <td>{architecture.name}</td>
+
+                  <td>
+                    <A
+                      href={architecture.download}
+                      linkcolor={platformIndex === OSName || OSName < 0}
+                    >
+                      <FormattedMessage id="downloads.wallet.download" />
+                    </A>
                   </td>
-                }
+                  <td>
+                    <Text as="span" color="gray.7" heavy>
+                      {architecture.filetype}
+                    </Text>
+                  </td>
 
-                <td>{architecture.name}</td>
+                  {architecture.torrent && <td>
+                    <a href={architecture.torrent}>
+                      <FormattedMessage id="downloads.wallet.torrent" />
+                    </a>
+                  </td>}
 
-                <td>
-                  <a href={architecture.download}>
-                    <FormattedMessage id="downloads.wallet.download" />
-                  </a>
-                </td>
-                <td>
-                  <Text as="span" color="gray.7" heavy>
-                    {architecture.filetype}
-                  </Text>
-                </td>
-
-                {architecture.torrent && <td>
-                  <a href={architecture.torrent}>
-                    <FormattedMessage id="downloads.wallet.torrent" />
-                  </a>
-                </td>}
-
-                <td>
-                  <Text as="span" color="gray.7" heavy>
-                    {architecture.version}
-                  </Text>
-                </td>
-              </Row>
-            )),
-          ),
-        )}
-      </tbody>
-    </Table>
-  </TableWrapper>
-);
+                  <td>
+                    <Text as="span" color="gray.7" heavy>
+                      {architecture.version}
+                    </Text>
+                  </td>
+                </Row>
+              )),
+            ),
+          )}
+        </tbody>
+      </Table>
+    </TableWrapper>
+  );
+};
 
 ApplicationTable.propTypes = {
   list: PropTypes.arrayOf(PropTypes.object).isRequired,

@@ -184,6 +184,8 @@ export default {
     bbs: {
       heading: 'Download Skycoin BBS',
       lead: '스카이코인 BBS는 스카이코인 생태계와 함께 차세대 분산 소셜 네트워크를 구축하였습니다.',
+      githublink: 'Find the latest binaries on Github.',
+      thinclient: 'Access a BBS thin client.',
     },
     whitepapers: {
       heading: 'Download Skycoin Whitepapers',
@@ -191,6 +193,9 @@ export default {
     },
     assets: {
       heading: 'Download Skycoin Branding Guide',
+    },
+    skywire: {
+      heading: 'Skywire',
     },
     roadmap: {
       heading: '로드맵',

@@ -4,9 +4,9 @@ import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import ApplicationTable from 'components/ApplicationTable';
+import DownloadsTable from 'components/DownloadTableSimple';
 
-import { downloads, version } from './downloads';
+import content from './content';
 
 const BBS = () => (
   <div>
@@ -19,10 +19,7 @@ const BBS = () => (
         <FormattedMessage id="downloads.bbs.lead" />
       </Text>
 
-      <Text fontSize={[3, 3, 4]} color="gray.9" heavy>
-        <FormattedMessage id="downloads.wallet.build" values={{ version }} />
-      </Text>
-      <ApplicationTable list={downloads} />
+      <DownloadsTable list={content} />
     </Container>
   </div>
 );
