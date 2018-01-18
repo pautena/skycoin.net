@@ -54,6 +54,8 @@ export default {
     home: 'Skycoin homepage',
   },
   architectureOverview: {
+    title: 'Architecture overview',
+    description: 'Architecture overview - components which make up the Skycoin ecosystem',
     heading: 'Architecture overview',
   },
   getStarted: {
@@ -62,6 +64,8 @@ export default {
     wallet: 'Get Wallet',
   },
   markets: {
+    title: 'Markets',
+    description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
   },
@@ -194,6 +198,7 @@ export default {
   },
   infographics: {
     title: 'Infographics',
+    description: 'Graphical overview',
   },
   distribution: {
     title: 'Skycoin distribution event',

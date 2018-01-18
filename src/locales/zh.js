@@ -53,6 +53,8 @@ export default {
     home: '天空币首页',
   },
   architectureOverview: {
+    title: 'Architecture overview',
+    description: 'Architecture overview - components which make up the Skycoin ecosystem',
     heading: 'Architecture overview',
   },
   getStarted: {
@@ -61,6 +63,8 @@ export default {
     wallet: '下载钱包',
   },
   markets: {
+    title: 'Markets',
+    description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
   },
@@ -189,6 +193,7 @@ export default {
   },
   infographics: {
     title: '信息图表',
+    description: 'Graphical overview',
   },
   distribution: {
     title: '天空币分发活动',

@@ -54,6 +54,8 @@ export default {
     home: '스카이코인 홈페이지',
   },
   architectureOverview: {
+    title: 'Architecture overview',
+    description: 'Architecture overview - components which make up the Skycoin ecosystem',
     heading: '아키텍처 개요',
   },
   getStarted: {
@@ -62,6 +64,8 @@ export default {
     wallet: '지갑 얻기',
   },
   markets: {
+    title: 'Markets',
+    description: 'List of Skycoin markets',
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',
   },
@@ -194,6 +198,7 @@ export default {
   },
   infographics: {
     title: '인포그래픽스',
+    description: 'Graphical overview',
   },
   distribution: {
     title: '스카이코인 배포 이벤트',

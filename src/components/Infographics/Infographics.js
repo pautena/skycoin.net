@@ -33,6 +33,10 @@ const Infographics = ({ intl }) => (
   <div>
     <Helmet>
       <title>{intl.formatMessage({ id: 'infographics.title' })}</title>
+      <meta
+        name="description"
+        content={intl.formatMessage({ id: 'infographics.description' })}
+      />
     </Helmet>
     <Header />
 
