@@ -1,25 +1,26 @@
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import Button from 'components/Button';
 import Buy from 'components/Buy';
-import List from '../List';
 import Heading from 'components/Heading';
 import { Flex, Box } from 'grid-styled';
+import List from '../List';
 
 
-const Introduction = ({ intl: { messages }}) => (
+const Introduction = () => (
   <div>
     <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
       <FormattedMessage id="home.hero.heading" values={{ break: <br /> }} />
     </Heading>
     <List content={[
-      messages["home.hero.list.0"],
-      messages["home.hero.list.1"],
-      messages["home.hero.list.2"],
-      messages["home.hero.list.3"],
-      messages["home.hero.list.4"],
-    ]} />
+      'home.hero.list.0',
+      'home.hero.list.1',
+      'home.hero.list.2',
+      'home.hero.list.3',
+      'home.hero.list.4',
+    ]}
+    />
     <Flex wrap row mb={4}>
 
       <Box width={[1 / 2, 1, 1 / 2]} pr={[1, 0, 4]} mb={[0, 4, 0]}>
@@ -76,4 +77,4 @@ const Introduction = ({ intl: { messages }}) => (
   </div>
 );
 
-export default injectIntl(Introduction);
+export default Introduction;

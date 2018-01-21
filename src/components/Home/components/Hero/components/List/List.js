@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import media from 'utils/media';
+import { FormattedMessage } from 'react-intl';
 
 import { SPACE } from 'config';
 
@@ -28,11 +30,17 @@ const ListItem = styled.li`
 const List = ({ content }) => (
   <Wrapper>
     <ul>
-      {content.map((item) => (
-        <ListItem>{item}</ListItem>
+      {content.map(item => (
+        <ListItem>
+          <FormattedMessage id={item} />
+        </ListItem>
       ))}
     </ul>
   </Wrapper>
 );
+
+List.propTypes = {
+  content: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default List;
