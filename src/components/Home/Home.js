@@ -44,23 +44,19 @@ const Home = ({ intl }) => (
       <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
         <FormattedMessage id="home.about.heading" />
       </Heading>
-
       <Text fontSize={[3, 3, 4]} color="black" heavy>
         <FormattedMessage id="home.about.lead" />
       </Text>
       <Text fontSize={[2, 2, 3]} color="black">
         <FormattedMessage id="home.about.paragraph" />
       </Text>
-    </About>
-    <Miner />
-    <About>
       <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
         <FormattedMessage id="home.aboutSkywire.heading" />
       </Heading>
-      <Text fontSize={[3, 3, 4]} mb={[4, 6]} color="black" heavy>
+      <Text fontSize={[3, 3, 4]} color="black" heavy>
         <FormattedMessage id="home.aboutSkywire.lead" />
       </Text>
-      <Text fontSize={[2, 2, 3]}>
+      <Text fontSize={[2, 2, 3]} color="black">
         <FormattedMessage id="home.aboutSkywire.paragraph" />
       </Text>
       <StyledLink href="https://blog.skycoin.net/tags/skywire/" target="_blank">
@@ -68,6 +64,12 @@ const Home = ({ intl }) => (
           <FormattedMessage id="home.aboutSkywire.button" />
         </Label>
       </StyledLink>
+    </About>
+    <Miner />
+    <About>
+      <Text fontSize={[2, 2, 3]}>
+        <FormattedMessage id="home.skyProtocol.paragraph" />
+      </Text>
     </About>
     <Nav />
     <Network />
