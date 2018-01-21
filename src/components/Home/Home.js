@@ -10,11 +10,11 @@ import Label from 'components/Label';
 import Link from 'components/Link';
 import Text from 'components/Text';
 import { eventInProgress } from 'components/Distribution/eventStatus';
-import Blog from 'components/Blog';
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
 import DistributionEvent from './components/DistributionEvent';
 import About from './components/About';
+import Nav from './components/Hero/components/Nav';
 import Network from './components/Network';
 import Miner from './components/Miner';
 import Logos from './components/Logos';
@@ -39,7 +39,6 @@ const Home = ({ intl }) => (
     </Helmet>
 
     <Hero />
-    <Blog />
     {eventInProgress && <DistributionEvent />}
     <About>
       <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
@@ -49,22 +48,28 @@ const Home = ({ intl }) => (
       <Text fontSize={[3, 3, 4]} color="black" heavy>
         <FormattedMessage id="home.about.lead" />
       </Text>
+      <Text fontSize={[2, 2, 3]} color="black">
+        <FormattedMessage id="home.about.paragraph" />
+      </Text>
     </About>
     <Miner />
     <About>
       <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
         <FormattedMessage id="home.aboutSkywire.heading" />
       </Heading>
-
       <Text fontSize={[3, 3, 4]} mb={[4, 6]} color="black" heavy>
         <FormattedMessage id="home.aboutSkywire.lead" />
       </Text>
+      <Text fontSize={[2, 2, 3]}>
+        <FormattedMessage id="home.aboutSkywire.paragraph" />
+      </Text>
       <StyledLink href="https://blog.skycoin.net/tags/skywire/" target="_blank">
         <Label>
-          <FormattedMessage id="home.miner.label" />
+          <FormattedMessage id="home.aboutSkywire.button" />
         </Label>
       </StyledLink>
     </About>
+    <Nav />
     <Network />
     <Logos />
     <GetStarted />

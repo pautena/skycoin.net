@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { Flex, Box } from 'grid-styled';
 
 import { COLORS } from 'config';
@@ -8,6 +8,7 @@ import Button from 'components/Button';
 import Buy from 'components/Buy';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import Text from 'components/Text';
 import media from 'utils/media';
 
 const GetStarted = styled.div`
@@ -25,6 +26,10 @@ const Buttons = styled.div`
   `}
 `;
 
+const TextContainer = styled.div`
+  margin-top: 1rem;
+`;
+
 export default () => (
   <GetStarted>
     <Container>
@@ -33,6 +38,11 @@ export default () => (
           <Heading heavy as="h2" fontSize={[4, 5, 6]} mb={[6, 6, 0]} color="black">
             <FormattedMessage id="getStarted.heading" />
           </Heading>
+          <TextContainer>
+            <Text>
+              <FormattedHTMLMessage id="getStarted.paragraph" />
+            </Text>
+          </TextContainer>
         </Box>
 
         <Box width={[1 / 1, 1 / 1, 1 / 2]}>

@@ -60,6 +60,7 @@ export default {
   },
   getStarted: {
     heading: 'Get started with Skycoin',
+    paragraph: '<p>True decentralization means no government can censor Skywire, no corporate interest can stop it.</p><p>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
     buy: 'Buy Skycoin',
     wallet: 'Get Wallet',
   },
@@ -73,7 +74,14 @@ export default {
     title: 'Skycoin - The third generation of cryptocurrency',
     description: 'Skycoin is designed to implement Satoshi\'s original vision and fix the problems with Bitcoin.',
     hero: {
-      heading: 'Skycoin is the third generation of crypto-currency',
+      heading: 'Skycoin — More than a coin, Skycoin is a 360 degree Privacy Protocol powering:',
+      list: [
+        'Anonymous decentralized internet and telecom infrastructure, Skywire',
+        'Be your own ISP',
+        'Internet access point that pays you for bandwidth, SkyMiner',
+        'Decentralized consensus network',
+        'Decentralized exchange',
+      ],
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -105,12 +113,14 @@ export default {
     },
     aboutSkywire: {
       heading: 'What is Skywire?',
-      lead: 'Skywire is the new internet.',
-      button: 'Read more',
+      lead: 'Skywire is the new internet. An incentivized mesh network poised to become the privacy protocol of the future.',
+      paragraph: 'Skywire’s goal is to make corporate internet service providers a thing of the past by giving the internet back to the people with its a revolutionary privacy protocol. Peer-to-peer technology with a grassroots ethos, Skywire’s new networking protocol promotes net neutrality and sharing without blocking, slowdowns or censorship.',
+      button: 'Read More about Skywire, Powered by Skycoin',
     },
     about: {
       heading: 'What is Skycoin?',
-      lead: 'Skycoin is designed to implement Satoshi\'s original vision and fix the problems with Bitcoin.',
+      lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
+      paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
       whitepaper: 'Whitepapers',
       speed: {
         heading: 'Speed',
@@ -136,9 +146,9 @@ export default {
       link: 'Learn about Network Consensus',
     },
     miner: {
-      label: 'Read more',
+      label: 'Explore the First Generation of Skyminers',
       heading: 'Skywire Miner: hardware for the new internet',
-      subscribe: 'Sign up for the Skycoin mailing list for Skywire Miner updates',
+      subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
     },
     roadmap: {
       heading: 'Roadmap',

@@ -7,7 +7,6 @@ import { COLORS } from 'config';
 import media from 'utils/media';
 import Container from 'components/Container';
 import Header from 'components/Header';
-import Nav from './components/Nav';
 import Map from './components/Map';
 import Introduction from './components/Introduction';
 import Announcement from './components/Announcement';
@@ -28,12 +27,6 @@ const StyledFlex = styled(Flex)`
   z-index: 1;
 `;
 
-const NavWrapper = styled(Box)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const Hero = () => (
   <Wrapper>
     <Map />
@@ -45,12 +38,9 @@ const Hero = () => (
       <Box>
         <Container>
           <Flex row wrap align="center">
-            <Box width={[1 / 1, 1 / 2]}>
+            <Box width={[1 / 1]}>
               <Introduction />
             </Box>
-            <NavWrapper width={[1 / 1, 1 / 2]}>
-              <Nav />
-            </NavWrapper>
           </Flex>
         </Container>
       </Box>
