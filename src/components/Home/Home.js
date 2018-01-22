@@ -59,7 +59,7 @@ const Home = ({ intl }) => (
       <Text fontSize={[2, 2, 3]} color="black">
         <FormattedMessage id="home.aboutSkywire.paragraph" />
       </Text>
-      <StyledLink href="https://blog.skycoin.net/tags/skywire/" target="_blank">
+      <StyledLink href="https://www.skycoin.net/blog/tags/skywire/" target="_blank">
         <Label>
           <FormattedMessage id="home.aboutSkywire.button" />
         </Label>
