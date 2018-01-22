@@ -9,12 +9,6 @@ import { FONT_SIZES, FONT_FAMILIES, SPACE } from 'config';
 
 import Link from 'components/Link';
 
-const Section = styled.section`
-  background: #f9f9fa;
-  border-bottom: 2px solid #eceef0;
-  width: 100%;
-`;
-
 const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
@@ -45,50 +39,48 @@ const StyledBox = styled(Box)`
 `;
 
 const Nav = () => (
-  <Section>
-    <Wrapper>
-      <Flex row wrap align="flex-start">
-        <StyledBox width={[1 / 1, 1 / 2]}>
-          <StyledLink to="/architecture-overview">
-            <FormattedMessage id="home.nav.architecture" />
-          </StyledLink>
-          <StyledLink disabled href="/whitepapers">
-            <FormattedMessage id="home.nav.whitepapers" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/skycoin">
-            <FormattedMessage id="home.nav.blockchain" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/cx">
-            <FormattedMessage id="home.nav.cx" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/cxo">
-            <FormattedMessage id="home.nav.cxo" />
-          </StyledLink>
-        </StyledBox>
+  <Wrapper>
+    <Flex row wrap align="flex-start">
+      <StyledBox width={[1 / 1, 1 / 2]}>
+        <StyledLink to="/architecture-overview">
+          <FormattedMessage id="home.nav.architecture" />
+        </StyledLink>
+        <StyledLink disabled href="/whitepapers">
+          <FormattedMessage id="home.nav.whitepapers" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/skycoin">
+          <FormattedMessage id="home.nav.blockchain" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/cx">
+          <FormattedMessage id="home.nav.cx" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/cxo">
+          <FormattedMessage id="home.nav.cxo" />
+        </StyledLink>
+      </StyledBox>
 
-        <StyledBox width={[1 / 1, 1 / 2]}>
-          <StyledLink disabled href="https://github.com/skycoin/skywire">
-            <FormattedMessage id="home.nav.skywire" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/viscript">
-            <FormattedMessage id="home.nav.viscript" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/skywire">
-            <FormattedMessage id="home.nav.cryptoSphere" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/net">
-            <FormattedMessage id="home.nav.messenger" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/skycoin-mobilewallet">
-            <FormattedMessage id="home.nav.mobileWallet" />
-          </StyledLink>
-          <StyledLink disabled href="https://github.com/skycoin/bbs">
-            <FormattedMessage id="home.nav.bbs" />
-          </StyledLink>
-        </StyledBox>
-      </Flex>
-    </Wrapper>
-  </Section>
+      <StyledBox width={[1 / 1, 1 / 2]}>
+        <StyledLink disabled href="https://github.com/skycoin/skywire">
+          <FormattedMessage id="home.nav.skywire" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/viscript">
+          <FormattedMessage id="home.nav.viscript" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/skywire">
+          <FormattedMessage id="home.nav.cryptoSphere" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/net">
+          <FormattedMessage id="home.nav.messenger" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/skycoin-mobilewallet">
+          <FormattedMessage id="home.nav.mobileWallet" />
+        </StyledLink>
+        <StyledLink disabled href="https://github.com/skycoin/bbs">
+          <FormattedMessage id="home.nav.bbs" />
+        </StyledLink>
+      </StyledBox>
+    </Flex>
+  </Wrapper>
 );
 
 export default Nav;

@@ -118,7 +118,7 @@ export default {
       button: 'Read More about Skywire, Powered by Skycoin',
     },
     skyProtocol: {
-      paragraph: 'The Sky Privacy Protocol solves  the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network. Take a look at the technology behind it.',
+      paragraph: 'The Sky Privacy Protocol solves  the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network. Take a look at the technology behind it:',
     },
     about: {
       heading: '스카이코인은 무엇인가?',

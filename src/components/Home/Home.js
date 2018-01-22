@@ -70,8 +70,8 @@ const Home = ({ intl }) => (
       <Text fontSize={[2, 2, 3]}>
         <FormattedMessage id="home.skyProtocol.paragraph" />
       </Text>
+      <Nav />
     </About>
-    <Nav />
     <Network />
     <Logos />
     <GetStarted />

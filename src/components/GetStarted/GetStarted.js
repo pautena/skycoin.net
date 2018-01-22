@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { Flex, Box } from 'grid-styled';
 
-import { COLORS } from 'config';
+import { COLORS, FONT_FAMILIES } from 'config';
 import Button from 'components/Button';
 import Buy from 'components/Buy';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
-import Text from 'components/Text';
 import media from 'utils/media';
 
 const GetStarted = styled.div`
@@ -27,6 +26,10 @@ const Buttons = styled.div`
 `;
 
 const TextContainer = styled.div`
+  color: #394049;
+  font-family: ${FONT_FAMILIES.sans};
+  font-size: 0.9375em;
+  line-height: 1.75rem;
   margin-top: 1rem;
 `;
 
@@ -39,9 +42,7 @@ export default () => (
             <FormattedMessage id="getStarted.heading" />
           </Heading>
           <TextContainer>
-            <Text>
-              <FormattedHTMLMessage id="getStarted.paragraph" />
-            </Text>
+            <FormattedHTMLMessage id="getStarted.paragraph" />
           </TextContainer>
         </Box>
 
