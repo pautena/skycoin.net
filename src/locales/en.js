@@ -71,7 +71,7 @@ export default {
     contact: 'To list Skycoin and put your exchange here email ',
   },
   home: {
-    title: 'Skycoin - The third generation of cryptocurrency',
+    title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is designed to implement Satoshi\'s original vision and fix the problems with Bitcoin.',
     hero: {
       heading: 'Skycoin — More than a coin, Skycoin is a 360 degree Privacy Protocol powering:',

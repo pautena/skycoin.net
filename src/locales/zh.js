@@ -70,7 +70,7 @@ export default {
     contact: 'To list Skycoin and put your exchange here email ',
   },
   home: {
-    title: 'Skycoin - The third generation of cryptocurrency',
+    title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
       heading: 'Skycoin — More than a coin, Skycoin is a 360 degree Privacy Protocol powering:',
