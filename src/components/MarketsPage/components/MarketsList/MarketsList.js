@@ -92,10 +92,10 @@ const MarketsList = () => (
     </Title>
     <List>
       <Row>
-        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/DRG</Item> <ExhangeRate>(100 CNY = 1 DRG)</ExhangeRate>
+        <Item href="https://www.c2cx.com/in/trade_btc_sky" target="_blank">SKY/BTC</Item>
       </Row>
       <Row>
-        <Item href="https://www.c2cx.com/in/trade_btc_sky" target="_blank">SKY/BTC</Item>
+        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/DRG</Item> <ExhangeRate>(100 CNY = 1 DRG)</ExhangeRate>
       </Row>
     </List>
     <Title>
