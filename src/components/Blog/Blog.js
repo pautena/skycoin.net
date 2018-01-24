@@ -16,7 +16,7 @@ import Link from 'components/Link';
 const StyledLink = styled(Link)`
   color: #000;
   font-size: ${rem(FONT_SIZES[4])};
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sans};
   margin-bottom: ${rem(SPACE[2])};
   text-decoration: none;
 

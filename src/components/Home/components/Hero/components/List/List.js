@@ -5,7 +5,7 @@ import { rem } from 'polished';
 import media from 'utils/media';
 import { FormattedMessage } from 'react-intl';
 
-import { SPACE } from 'config';
+import { SPACE, FONT_FAMILIES } from 'config';
 
 const Wrapper = styled.nav`
   display: flex;
@@ -20,7 +20,7 @@ const Wrapper = styled.nav`
 const ListItem = styled.li`
   font-size: 16px;
   color: #ffffff;
-  font-family: "Montreal",sans-serif;
+  font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
   line-height: 1.5rem;
   margin-bottom: 0.5em;

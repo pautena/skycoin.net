@@ -1,37 +1,37 @@
 @font-face {
-    font-family: 'Montreal';
-    src: url('./montreal-bold-webfont.woff2') format('woff2'),
-         url('./montreal-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
+  font-family: 'SkycoinSansBold';
+  src: url('./resources/fonts/skycoin-bold-webfont.woff2') format('woff2'),
+         url('./resources/fonts/skycoin-bold-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Montreal';
-    src: url('./montreal-regular-webfont.woff2') format('woff2'),
-         url('./montreal-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'SkycoinSans';
+  src: url('./resources/fonts/skycoin-regular-webfont.woff2') format('woff2'),
+         url('./resources/fonts/skycoin-regular-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Inconsolata';
-    src: url('./inconsolata-bold-webfont.woff2') format('woff2'),
-         url('./inconsolata-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
+  font-family: 'SkycoinSansBoldItalic';
+  src: url('./resources/fonts/skycoin-bold-italic-webfont.woff2') format('woff2'),
+         url('./resources/fonts/skycoin-bold-italic-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Inconsolata';
-    src: url('./inconsolata-regular-webfont.woff2') format('woff2'),
-         url('./inconsolata-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SkycoinSansItalic';
+  src: url('./resources/fonts/skycoin-regular-italic-webfont.woff2') format('woff2'),
+         url('./resources/fonts/skycoin-regular-italic-webfont.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'InconsolataBold';
+  src: url('./resources/fonts/inconsolata-bold-webfont.woff2') format('woff2'),
+         url('./resources/fonts/inconsolata-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./resources/fonts/inconsolata-regular-webfont.woff2') format('woff2'),
+         url('./resources/fonts/inconsolata-regular-webfont.woff') format('woff');
 }
 
 html {
@@ -56,6 +56,11 @@ hr,
 fieldset, legend {
   margin:  0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+strong {
+  font-weight: normal;
 }
 
 li > {

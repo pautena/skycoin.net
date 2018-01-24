@@ -18,9 +18,8 @@ const Current = styled.div`
   padding-left: 12px;
   padding-top: 9px;
   box-sizing: border-box;
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[1])};
-  font-weight: 700;
   cursor: pointer;
   padding-right: 44px;
   transition: background .2s ease-in-out;
@@ -66,7 +65,7 @@ const List = styled.div`
 
 const Item = styled.div`
   padding: ${rem(SPACE[2])};
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[1])};
   box-sizing: border-box;
   transition: background .2s ease-in-out;

@@ -22,9 +22,8 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[1])};
-  font-weight: 700;
   margin: 0 auto ${rem(SPACE[5])};
 `;
 
@@ -34,8 +33,7 @@ const Button = styled.button`
   line-height: 30px;
   box-sizing: border-box;
   text-align: center;
-  font-family: ${FONT_FAMILIES.mono};
-  font-weight: 700;
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[1])};
   border-radius: 5px;
   border: 1px solid ${COLORS.blue[5]};

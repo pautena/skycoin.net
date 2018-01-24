@@ -19,7 +19,6 @@ export default styled(Text)`
   ${width}
 
   font-family: ${FONT_FAMILIES.sans};
-  font-weight: ${props => (props.heavy ? 500 : 400)};
   line-height: ${rem(24)};
   text-transform: ${props => (props.caps ? 'uppercase' : 'none')};
 

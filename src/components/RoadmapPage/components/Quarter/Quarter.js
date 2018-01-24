@@ -6,9 +6,8 @@ import styled from 'styled-components';
 import Item from '../Item/Item';
 
 const Text = styled.div`
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-style: italic;
-  font-weight: 700;
   font-size: ${rem(FONT_SIZES[1])};
   margin: ${rem(SPACE[5])} 0;
   color: ${COLORS.gray[8]};

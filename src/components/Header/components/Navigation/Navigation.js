@@ -28,10 +28,9 @@ const Wrapper = styled.div`
 
 const StyledLink = styled(Link)`
   margin-right: ${rem(SPACE[5])};
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sansBold};
   color: ${props => (props.white ? 'white' : COLORS.black)};
   text-decoration: none;
-  font-weight: 700;
 
   &:hover {
     text-decoration: underline;

@@ -15,7 +15,11 @@ export const BREAKPOINTS = {
 
 export const FONT_FAMILIES = {
   mono: '"Inconsolata", monospace, sans-serif',
-  sans: '"Montreal", sans-serif',
+  monoBold: '"InconsolataBold", monospace, sans-serif',
+  sans: '"SkycoinSans", sans-serif',
+  sansItalic: '"SkycoinSansItalic", sans-serif',
+  sansBold: '"SkycoinSansBold", sans-serif',
+  sansBoldItalic: '"SkycoinSansBoldItalic", sans-serif',
 };
 
 export const BORDER_RADIUS = {

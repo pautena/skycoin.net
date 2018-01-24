@@ -36,20 +36,19 @@ const Logo = styled.img`
 `;
 
 const Item = styled(Link)`
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[3])};
   color: ${COLORS.blue[5]};
   text-decoration: none;
-  font-weight: 700;
+
   &:hover {
     text-decoration: underline;
   }
 `;
 
 const ExhangeRate = styled.span`
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[3])};
-  font-weight: 700;
 `;
 
 const Note = styled.span`

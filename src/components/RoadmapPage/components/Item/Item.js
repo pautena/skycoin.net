@@ -9,9 +9,8 @@ import slated from './images/slated.svg';
 import completed from './images/completed.svg';
 
 const Title = styled.h4`
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[2])};
-  font-weight: 700;
   margin-bottom: ${rem(SPACE[1])};
   color: #16191D;
 `;

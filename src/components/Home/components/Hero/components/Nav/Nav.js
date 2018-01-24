@@ -23,7 +23,7 @@ const Wrapper = styled.nav`
 
 const StyledLink = styled(Link)`
   margin-bottom: ${rem(SPACE[2])};
-  font-family: ${FONT_FAMILIES.mono};
+  font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[5])};
   color: #394049;
   text-decoration: none;
