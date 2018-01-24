@@ -32,7 +32,7 @@ export default [{
     to: '/whitepapers',
   }, {
     label: 'footer.blockchain',
-    href: 'http://explorer.skycoin.net/blocks',
+    href: 'https://explorer.skycoin.net/blocks',
   }, {
     label: 'footer.distribution',
     to: 'distribution',
