@@ -74,7 +74,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'Skycoin is a 360-degree Privacy Protocol powering:',
+      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',

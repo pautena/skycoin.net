@@ -73,7 +73,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
-      heading: 'Skycoin is a 360-degree Privacy Protocol powering:',
+      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
