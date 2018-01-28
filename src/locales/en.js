@@ -152,6 +152,7 @@ export default {
       label: 'Explore the First Generation of Skyminers',
       heading: 'Skywire Miner: hardware for the new internet',
       subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
+      mailingList: 'Sign up to be notified about our next release of miners',
     },
     roadmap: {
       heading: 'Roadmap',
