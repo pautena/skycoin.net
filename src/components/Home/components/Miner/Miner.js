@@ -59,9 +59,9 @@ const Miner = () => (
             </Label>
           </StyledLink>
           <StyledLink to="mailing-list">
-            <Label>		
-              <FormattedMessage id="home.miner.mailingList" />		
-            </Label>		
+            <Label>
+              <FormattedMessage id="home.miner.mailingList" />
+            </Label>
           </StyledLink>
         </Box>
       </Flex>
