@@ -94,3 +94,10 @@ fieldset {
 dd, ol, ul {
   margin-left: 1rem;
 }
+
+.mce_inline_error {
+  color: #FF004E;
+  display: inline-block;
+  font-family: 'SkycoinSans', sans-serif;
+  margin: 0 0 0 1em;
+}
