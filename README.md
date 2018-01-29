@@ -45,6 +45,8 @@ $ yarn test -- --coverage
 
 ## Releasing to production
 
+*This requires write access to the skycoin/skycoin.net repo, doing a PR from a fork doesn't carry over the tag.*
+
 Commits on the master branch will be automatically released to https://staging.skycoin.net.
 
 To release to production:
