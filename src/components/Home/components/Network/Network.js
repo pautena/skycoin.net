@@ -24,7 +24,7 @@ export default () => (
     <Container>
       <Flex py={[7, 8]} align="center">
         <Box width={[1 / 1, 2 / 3]}>
-          <Link href="https://blog.skycoin.net/statement/obelisk-the-skycoin-consensus-algorithm/" target="_blank">
+          <Link href="https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/" target="_blank">
             <Heading heavy as="h2" my={[4, 5]} fontSize={[5, 6]} color="black">
               <FormattedMessage id="home.network.heading" />
             </Heading>
