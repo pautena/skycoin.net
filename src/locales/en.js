@@ -240,47 +240,4 @@ export default {
   roadmapPage: {
     heading: 'Development roadmap',
   },
-  team: {
-    title: 'Skycoin Team',
-    description: 'Bios of the Skycoin team',
-    heading: '',
-    bios: [
-      {
-        name: 'Brandon',
-        picture: '',
-        title: 'Founder',
-        bio: 'Brandon is one of the original developers behind Bitcoin. He started Skycoin 8 years ago with a vision of creating a new, decentralized Internet. Brandon sits on the advisory board of several cryptocurrency projects. His background is mathematics, distributed systems, and symbolic logic.',
-      },
-      {
-        name: 'Steve',
-        picture: '',
-        title: 'CTO',
-        bio: 'Steve has a background in ...'
-      },
-      {
-        name: 'Bradford',
-        picture: 'bradford.jpg',
-        title: 'COO-West',
-        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. Besides Big Data, other companies he assisted were in fashion, security, and adtech. His teams also drove several exits, including one public M&A. He holds a degree in Computer Science and economics, specializing in distributed systems.',
-      },
-      {
-        name: 'Catherine',
-        picture: '',
-        title: 'Director of Marketing',
-        bio: 'Catherine is a marketer with experience in the digital, traditional and affiliate spaces. Before entering marketing, she worked as a journalist on projects which received awards from American City Business Journals and the Associated Press. Catherine holds degrees in Political Science and Communication.',
-      },
-      {
-        name: 'Michael M',
-        picture: '',
-        title: 'Brand creative, design',
-        bio: 'Creative direction, design, branding for fortune 500 companies, boutiques, working with the top athletes, talent, photographers, and creative in the world. 5 years at Nike, Apple / Beats by Dr Dre.',
-      },
-      {
-        name: 'Erich Quist',
-        picture: 'erich.jpg',
-        title: 'Director of Digital Experience',
-        bio: ''
-      }
-    ],
-  },
 };
