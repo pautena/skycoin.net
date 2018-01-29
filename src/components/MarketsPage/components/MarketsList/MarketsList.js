@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { SPACE, COLORS, FONT_FAMILIES, FONT_SIZES } from 'config';
@@ -41,10 +41,19 @@ const Item = styled(Link)`
   color: ${COLORS.blue[5]};
   text-decoration: none;
   font-weight: 700;
-
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const ExhangeRate = styled.span`
+  font-family: ${FONT_FAMILIES.sans};
+  font-size: ${rem(FONT_SIZES[3])};
+  font-weight: 700;
+`;
+
+const Note = styled.span`
+  font-size: 0.8em;
 `;
 
 const Contact = styled.div`
@@ -61,7 +70,6 @@ const ContactLink = styled.a`
 const MarketsList = () => (
   <Wrap>
     <Contact>
-      <FormattedHTMLMessage id="markets.steps" />
       <FormattedMessage
         id="markets.contact"
       /> <ContactLink href="mailto:contact@skycoin.net">contact@skycoin.net</ContactLink>
@@ -78,13 +86,13 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        C2CX
+        C2CX <Note>(<a href="https://www.c2cx.com/in/trade_usdt_sky" target="_blank" rel="noopener noreferrer">Only supports USDT ERC20 token.</a>)</Note>
       </Heading>
       <Logo src={Logoc2cx} alt="C2CX LOGO" />
     </Title>
     <List>
       <Row>
-        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/CNY</Item>
+        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/DRG</Item> <ExhangeRate>(100 CNY = 1 DRG)</ExhangeRate>
       </Row>
       <Row>
         <Item href="https://www.c2cx.com/in/trade_btc_sky" target="_blank">SKY/BTC</Item>
@@ -92,7 +100,7 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        Cryptopia
+        Cryptopia <Note>(experiencing issues due to heavy volume)</Note>
       </Heading>
       <Logo src={LogoCryptopia} alt="Cryptopia" />
     </Title>
