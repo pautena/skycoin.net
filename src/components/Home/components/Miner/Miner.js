@@ -26,8 +26,10 @@ const Graphic = styled.img.attrs({
 `;
 
 const StyledLink = styled(Link)`
+  display: block;
   text-decoration: none;
   color: #fff;
+  margin: 1em 0 0;
 
   &:hover {
     text-decoration: underline;
@@ -45,18 +47,22 @@ const Miner = () => (
         </Box>
 
         <Box width={[2 / 3, 3 / 4]}>
-          <StyledLink href="https://www.skycoin.net/blog/statement/skywire-miner-hardware-for-the-next-internet/">
-            <Label>
-              <FormattedMessage id="home.miner.label" />
-            </Label>
-          </StyledLink>
-
           <Heading heavy as="h2" mt={[4, 5]} mb={0} fontSize={[5, 6]} color="white">
             <FormattedMessage id="home.miner.heading" />
           </Heading>
           <Heading heavy as="div" mt={5} mb={0} fontSize={[3]} color="white">
             <FormattedMessage id="home.miner.subscribe" />
           </Heading>
+          <StyledLink href="https://www.skycoin.net/blog/statement/skywire-miner-hardware-for-the-next-internet/">
+            <Label>
+              <FormattedMessage id="home.miner.label" />
+            </Label>
+          </StyledLink>
+          <StyledLink to="mailing-list">
+            <Label>
+              <FormattedMessage id="home.miner.mailingList" />
+            </Label>
+          </StyledLink>
         </Box>
       </Flex>
     </Container>

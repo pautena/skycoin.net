@@ -73,7 +73,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
-      heading: 'Skycoin is a 360-degree Privacy Protocol powering:',
+      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
@@ -151,6 +151,7 @@ export default {
       label: 'Explore the First Generation of Skyminers',
       heading: '天空链矿机：驱动下一代互联网的硬件',
       subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
+      mailingList: 'Sign up to be notified about our next release of miners',
     },
     roadmap: {
       heading: '路线图',
@@ -184,8 +185,8 @@ export default {
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
-      withElectron: 'Standalone',
-      withoutElectron: 'Installer',
+      withElectron: 'Installer (recommended)',
+      withoutElectron: 'Portable (advanced)',
       download: '下载',
       torrent: '种子',
     },

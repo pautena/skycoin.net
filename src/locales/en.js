@@ -74,7 +74,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'Skycoin is a 360-degree Privacy Protocol powering:',
+      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
@@ -152,6 +152,7 @@ export default {
       label: 'Explore the First Generation of Skyminers',
       heading: 'Skywire Miner: hardware for the new internet',
       subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
+      mailingList: 'Sign up to be notified about our next release of miners',
     },
     roadmap: {
       heading: 'Roadmap',
@@ -189,8 +190,8 @@ export default {
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
-      withElectron: 'Standalone',
-      withoutElectron: 'Installer',
+      withElectron: 'Installer (recommended)',
+      withoutElectron: 'Portable (advanced)',
       download: 'Download',
       torrent: 'Torrent',
     },

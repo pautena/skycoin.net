@@ -74,7 +74,7 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Skycoin is a 360-degree Privacy Protocol powering:',
+      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
@@ -152,6 +152,7 @@ export default {
       label: 'Explore the First Generation of Skyminers',
       heading: '스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어',
       subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
+      mailingList: 'Sign up to be notified about our next release of miners',
     },
     roadmap: {
       heading: '로드맵',
@@ -189,8 +190,8 @@ export default {
       macos: 'MacOS',
       linux: '리눅스',
       windows: '윈도우',
-      withElectron: 'Standalone',
-      withoutElectron: 'Installer',
+      withElectron: 'Installer (recommended)',
+      withoutElectron: 'Portable (advanced)',
       download: '다운로드',
       torrent: '토렌트',
     },

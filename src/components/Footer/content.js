@@ -26,13 +26,13 @@ export default [{
   heading: 'footer.explore',
   links: [{
     label: 'footer.blog',
-    href: 'http://blog.skycoin.net',
+    href: 'https://www.skycoin.net/blog',
   }, {
     label: 'footer.whitepapers',
     to: '/whitepapers',
   }, {
     label: 'footer.blockchain',
-    href: 'http://explorer.skycoin.net/blocks',
+    href: 'https://explorer.skycoin.net/blocks',
   }, {
     label: 'footer.distribution',
     to: 'distribution',
