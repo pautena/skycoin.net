@@ -21,6 +21,7 @@ const Label = styled.label`
 `;
 
 const StyledSubmit = styled.input`
+  border: 1px solid #0073ff;
   background-color: #0073ff;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
