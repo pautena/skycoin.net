@@ -63,13 +63,10 @@ export default [{
     href: 'https://github.com/skycoin/skycoin',
   }, {
     label: 'footer.telegram',
-    href: 'https://t.me/Skycoin',
+    href: 'https://t.me/SkycoinWelcome',
   }, {
     label: 'footer.slack',
     href: 'http://skycoin.herokuapp.com/',
-  }, {
-    label: 'footer.discord',
-    href: 'https://discord.gg/EgBenrW',
   }, {
     label: 'footer.facebook',
     href: 'https://www.facebook.com/skycoinproject',
