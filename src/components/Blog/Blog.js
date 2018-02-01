@@ -42,7 +42,7 @@ export default class Blog extends PureComponent {
       posts: [],
       loaded: false,
     };
-    this.rss = 'https://blog.skycoin.net/index.xml';
+    this.rss = 'https://www.skycoin.net/blog/index.xml';
 
     this.renderPost = this.renderPost.bind(this);
   }
