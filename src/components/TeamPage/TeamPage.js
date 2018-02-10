@@ -11,7 +11,7 @@ import Heading from 'components/Heading';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
 
-import { FONT_FAMILIES } from 'config';
+import { FONT_FAMILIES, BREAKPOINTS } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 const Wrapper = styled.div`
@@ -24,6 +24,10 @@ const Description = styled.strong`
 
 const Person = styled.article`
   border-bottom: 1px solid #eceef0;
+
+  @media (max-width: ${BREAKPOINTS.sm}rem) {
+
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -58,6 +62,11 @@ const Bio = styled.p`
   font-family: ${FONT_FAMILIES.sans};
 `;
 
+const StyledBox = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
 const localeList = { en, zh, ko, ru };
 
 const getLocale = (locale) => {
@@ -81,22 +90,22 @@ const TeamPage = ({ intl }) => (
           {getLocale(intl.locale).title}
         </Heading>
         <Description>{getLocale(intl.locale).description}</Description>
-        {getLocale(intl.locale).bios.map(({ name, picture, title, bio }, index) => (
+        {getLocale(intl.locale).bios.west.map(({ name, picture, title, bio }, index) => (
           <Person key={index}>
-            <Flex py={[7, 8]}>
-              <Box width={[1 / 3, 1 / 4]} mr={[4, 6]}>
+            <Flex wrap py={[7, 8]}>
+              <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
                 <ImageContainer>
                   {picture ?
                     <Img src={`./content/images/${picture}`} alt={`Picture of ${name}`} /> : // eslint-disable-line global-require
                     <NoImg />
                   }
                 </ImageContainer>
-              </Box>
-              <Box width={[2 / 3, 3 / 4]}>
+              </StyledBox>
+              <StyledBox width={[1 / 1, 3 / 4]}>
                 <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
                 <Title>{title}</Title>
                 <Bio>{bio}</Bio>
-              </Box>
+              </StyledBox>
             </Flex>
           </Person>
         ))}
