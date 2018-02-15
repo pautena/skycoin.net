@@ -72,10 +72,10 @@ const getLocale = (locale) => {
 const TeamPage = ({ intl }) => (
   <div>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'team.title' })}</title>
+      <title>{getLocale(intl.locale).title}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'team.description' })}
+        content={getLocale(intl.locale).description}
       />
     </Helmet>
     <Header border />
