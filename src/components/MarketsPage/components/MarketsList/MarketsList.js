@@ -46,6 +46,12 @@ const Item = styled(Link)`
   }
 `;
 
+const NotLinked = styled.span`
+  font-family: ${FONT_FAMILIES.sansBold};
+  font-size: ${rem(FONT_SIZES[3])};
+  color: ${COLORS.gray[4]};
+`;
+
 const ExhangeRate = styled.span`
   font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[3])};
@@ -99,13 +105,13 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        Cryptopia <Note>(experiencing issues due to heavy volume)</Note>
+        Cryptopia <Note>(Cryltopia is not allowing deposits or withdraws due to heavy volume)</Note>
       </Heading>
       <Logo src={LogoCryptopia} alt="Cryptopia" />
     </Title>
     <List>
       <Row>
-        <Item href="https://www.cryptopia.co.nz/Exchange/?market=SKY_BTC">SKY/BTC</Item>
+        <NotLinked>SKY/BTC</NotLinked>
       </Row>
     </List>
     <Heading heavy as="h2" fontSize={[5, 6]} color="black" my={[4, 6]}>
