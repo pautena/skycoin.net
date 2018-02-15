@@ -8,7 +8,7 @@ export default {
       explorer: 'Explorer',
       blog: 'Blog',
       buy: 'Buy Skycoin',
-      roadmap: 'Roadmap',
+      team: 'Team',
     },
   },
   footer: {
