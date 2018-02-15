@@ -8,7 +8,7 @@ export default {
       explorer: '익스플로러',
       blog: '블로그',
       buy: '스카이코인 구매',
-      roadmap: '로드맵',
+      team: 'Team',
     },
   },
   footer: {

@@ -8,6 +8,7 @@ export default {
       explorer: '区块浏览器',
       blog: '开发日志',
       buy: '购买天空币',
+      team: 'Team',
     },
   },
   footer: {
