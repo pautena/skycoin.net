@@ -11,7 +11,7 @@ export default [{
     to: 'infographics',
   }, {
     label: 'footer.team',
-    href: 'https://www.skycoin.net/blog/statement/skycoin-team/',
+    to: 'team',
   }, {
     label: 'footer.subscribe',
     to: 'mailing-list',
