@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.skycoin.net/</loc>
+  <lastmod>2018-01-11T07:22:46+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/downloads/</loc>
+  <lastmod>2018-01-11T07:22:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/whitepapers/</loc>
+  <lastmod>2018-01-11T07:22:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/roadmap/</loc>
+  <lastmod>2018-01-11T07:22:48+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/markets/</loc>
+  <lastmod>2018-01-11T07:22:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/architecture-overview/</loc>
+  <lastmod>2018-01-11T07:22:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/mailing-list/</loc>
+  <lastmod>2018-01-11T07:22:50+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/</loc>
+  <lastmod>2018-01-11T07:22:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/</loc>
+  <lastmod>2018-01-11T07:22:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/</loc>
+  <lastmod>2018-01-11T07:22:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/infographics/</loc>
+  <lastmod>2018-01-11T07:23:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/distribution/</loc>
+  <lastmod>2018-01-11T07:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/downloads/</loc>
+  <lastmod>2018-01-11T07:22:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/whitepapers/</loc>
+  <lastmod>2018-01-11T07:22:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/roadmap/</loc>
+  <lastmod>2018-01-11T07:22:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/markets/</loc>
+  <lastmod>2018-01-11T07:22:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/architecture-overview/</loc>
+  <lastmod>2018-01-11T07:22:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/mailing-list/</loc>
+  <lastmod>2018-01-11T07:22:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/infographics/</loc>
+  <lastmod>2018-01-11T07:22:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/cn/distribution/</loc>
+  <lastmod>2018-01-11T07:22:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/downloads/</loc>
+  <lastmod>2018-01-11T07:22:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/whitepapers/</loc>
+  <lastmod>2018-01-11T07:22:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/roadmap/</loc>
+  <lastmod>2018-01-11T07:22:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/markets/</loc>
+  <lastmod>2018-01-11T07:22:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/architecture-overview/</loc>
+  <lastmod>2018-01-11T07:22:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/mailing-list/</loc>
+  <lastmod>2018-01-11T07:22:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/infographics/</loc>
+  <lastmod>2018-01-11T07:22:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ru/distribution/</loc>
+  <lastmod>2018-01-11T07:22:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/downloads/</loc>
+  <lastmod>2018-01-11T07:23:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/whitepapers/</loc>
+  <lastmod>2018-01-11T07:23:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/roadmap/</loc>
+  <lastmod>2018-01-11T07:23:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/markets/</loc>
+  <lastmod>2018-01-11T07:23:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/architecture-overview/</loc>
+  <lastmod>2018-01-11T07:23:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/mailing-list/</loc>
+  <lastmod>2018-01-11T07:23:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/infographics/</loc>
+  <lastmod>2018-01-11T07:23:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.skycoin.net/ko/distribution/</loc>
+  <lastmod>2018-01-11T07:23:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

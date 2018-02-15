@@ -74,13 +74,13 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
+      heading: 'Skycoin Project is building the new internet. This includes:',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
-        'Skycoin: Free, Instant, Infinite transactions',
+        'Skycoin Blockchain: Free, Instant, Infinite transactions',
         'Skyminer: Internet access point that pays you for bandwidth',
-        'Obelisk: Decentralized consensus network',
-        'All designed by original Bitcoin and Ethereum developers',
+        'Obelisk: Decentralized consensus',
+        'Designed by original Bitcoin and Ethereum developers',
       ],
       buy: 'Buy Skycoin',
       community: 'Community',
