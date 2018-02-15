@@ -140,7 +140,7 @@ export const en = {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
         picture: 'mike.png',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degreein Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
+        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
         name: 'Michael Terpin',
@@ -336,7 +336,7 @@ export const zh = {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
         picture: 'mike.png',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degreein Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
+        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
         name: 'Michael Terpin',
@@ -532,7 +532,7 @@ export const ru = {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
         picture: 'mike.png',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degreein Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
+        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
         name: 'Michael Terpin',
@@ -728,7 +728,7 @@ export const ko = {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
         picture: 'mike.png',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degreein Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
+        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
         name: 'Michael Terpin',
