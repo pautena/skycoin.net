@@ -8,7 +8,7 @@ export default {
       explorer: 'Обозреватель',
       blog: 'Блог',
       buy: 'Купить Skycoin',
-      roadmap: 'План',
+      team: 'Team',
     },
   },
   footer: {
