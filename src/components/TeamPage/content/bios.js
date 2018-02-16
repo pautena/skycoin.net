@@ -21,7 +21,7 @@ export const en = {
         email: '',
         picture: '',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was a formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -106,16 +106,16 @@ export const en = {
       {
         name: 'Simon Hobbs',
         email: '',
-        picture: 'simon.png',
+        picture: 'simon.jpg',
         title: 'Co-Founder of Gamification Giant Ltd.',
         bio: 'Hobbs has 28 years of high-level technical experience in delivering complex, high-volume IT projects on time and on budget. He began his career as an engineer on missile guidance software, and later moved into financial services, leading IT projects for Barclays Home Finance Mortgage, Swiss Bank and Cedel Bank. Simon holds a BSc in computer science from the University of Hertfordshire.',
       },
       {
         name: 'Amaury Hernandez Aguila',
         email: '',
-        picture: 'amaury.png',
+        picture: 'amaury.jpg',
         title: 'CX Developer',
-        bio: 'Amaury Aguila is a computer systems engineer with an expertise in expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
+        bio: 'Amaury Aguila is a computer systems engineer with an expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
       },
       {
         name: 'Evan Lin',
@@ -139,7 +139,7 @@ export const en = {
       {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
-        picture: 'mike.png',
+        picture: 'mike.jpg',
         bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
@@ -157,14 +157,14 @@ export const en = {
       {
         name: 'Dr. John Henry Clippinger',
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john.png',
+        picture: 'john.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'Patrick Dai',
         title: 'Founder and CEO of Qtum',
         picture: 'patrick.jpg',
-        bio: 'Founder and CEO of Qtum Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
       },
       {
         name: 'Josh Ogle',
@@ -181,13 +181,13 @@ export const en = {
       {
         name: 'Alphabit',
         title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
+        picture: 'alphabit.jpg',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.png',
+        picture: 'tokenkey.jpg',
         bio: 'TokenKey is an end-to-end solution for ICO and token launches.',
       },
     ],
@@ -217,7 +217,7 @@ export const zh = {
         email: '',
         picture: '',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was a formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -302,16 +302,16 @@ export const zh = {
       {
         name: 'Simon Hobbs',
         email: '',
-        picture: 'simon.png',
+        picture: 'simon.jpg',
         title: 'Co-Founder of Gamification Giant Ltd.',
         bio: 'Hobbs has 28 years of high-level technical experience in delivering complex, high-volume IT projects on time and on budget. He began his career as an engineer on missile guidance software, and later moved into financial services, leading IT projects for Barclays Home Finance Mortgage, Swiss Bank and Cedel Bank. Simon holds a BSc in computer science from the University of Hertfordshire.',
       },
       {
         name: 'Amaury Hernandez Aguila',
         email: '',
-        picture: 'amaury.png',
+        picture: 'amaury.jpg',
         title: 'CX Developer',
-        bio: 'Amaury Aguila is a computer systems engineer with an expertise in expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
+        bio: 'Amaury Aguila is a computer systems engineer with an expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
       },
       {
         name: 'Evan Lin',
@@ -335,7 +335,7 @@ export const zh = {
       {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
-        picture: 'mike.png',
+        picture: 'mike.jpg',
         bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
@@ -353,14 +353,14 @@ export const zh = {
       {
         name: 'Dr. John Henry Clippinger',
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john.png',
+        picture: 'john.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'Patrick Dai',
         title: 'Founder and CEO of Qtum',
         picture: 'patrick.jpg',
-        bio: 'Founder and CEO of Qtum Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
       },
       {
         name: 'Josh Ogle',
@@ -377,13 +377,13 @@ export const zh = {
       {
         name: 'Alphabit',
         title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
+        picture: 'alphabit.jpg',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.png',
+        picture: 'tokenkey.jpg',
         bio: 'TokenKey is an end-to-end solution for ICO and token launches.',
       },
     ],
@@ -413,7 +413,7 @@ export const ru = {
         email: '',
         picture: '',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was a formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -482,13 +482,6 @@ export const ru = {
         bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
       },
       {
-        name: 'Jason Gao',
-        email: '',
-        picture: '',
-        title: '',
-        bio: 'Technophile, strategist and marketer, Gao has expertise in both marketing and business strategy. In addition to his work with Skycoin, Gao serves as the China CEO of a boutique international consulting firm. Prior, he served a series of global companies across the professional services industry and media industry. Gao speaks fluent English, Chinese, Japanese, and French. He holds a master’s degree in advertising & communication from a top university in China.',
-      },
-      {
         name: 'Michael',
         email: '',
         picture: '',
@@ -498,16 +491,16 @@ export const ru = {
       {
         name: 'Simon Hobbs',
         email: '',
-        picture: 'simon.png',
+        picture: 'simon.jpg',
         title: 'Co-Founder of Gamification Giant Ltd.',
         bio: 'Hobbs has 28 years of high-level technical experience in delivering complex, high-volume IT projects on time and on budget. He began his career as an engineer on missile guidance software, and later moved into financial services, leading IT projects for Barclays Home Finance Mortgage, Swiss Bank and Cedel Bank. Simon holds a BSc in computer science from the University of Hertfordshire.',
       },
       {
         name: 'Amaury Hernandez Aguila',
         email: '',
-        picture: 'amaury.png',
+        picture: 'amaury.jpg',
         title: 'CX Developer',
-        bio: 'Amaury Aguila is a computer systems engineer with an expertise in expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
+        bio: 'Amaury Aguila is a computer systems engineer with an expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
       },
       {
         name: 'Evan Lin',
@@ -531,7 +524,7 @@ export const ru = {
       {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
-        picture: 'mike.png',
+        picture: 'mike.jpg',
         bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
@@ -549,14 +542,14 @@ export const ru = {
       {
         name: 'Dr. John Henry Clippinger',
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john.png',
+        picture: 'john.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'Patrick Dai',
         title: 'Founder and CEO of Qtum',
         picture: 'patrick.jpg',
-        bio: 'Founder and CEO of Qtum Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
       },
       {
         name: 'Josh Ogle',
@@ -573,13 +566,13 @@ export const ru = {
       {
         name: 'Alphabit',
         title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
+        picture: 'alphabit.jpg',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.png',
+        picture: 'tokenkey.jpg',
         bio: 'TokenKey is an end-to-end solution for ICO and token launches.',
       },
     ],
@@ -609,7 +602,7 @@ export const ko = {
         email: '',
         picture: '',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was a formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -694,16 +687,16 @@ export const ko = {
       {
         name: 'Simon Hobbs',
         email: '',
-        picture: 'simon.png',
+        picture: 'simon.jpg',
         title: 'Co-Founder of Gamification Giant Ltd.',
         bio: 'Hobbs has 28 years of high-level technical experience in delivering complex, high-volume IT projects on time and on budget. He began his career as an engineer on missile guidance software, and later moved into financial services, leading IT projects for Barclays Home Finance Mortgage, Swiss Bank and Cedel Bank. Simon holds a BSc in computer science from the University of Hertfordshire.',
       },
       {
         name: 'Amaury Hernandez Aguila',
         email: '',
-        picture: 'amaury.png',
+        picture: 'amaury.jpg',
         title: 'CX Developer',
-        bio: 'Amaury Aguila is a computer systems engineer with an expertise in expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
+        bio: 'Amaury Aguila is a computer systems engineer with an expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
       },
       {
         name: 'Evan Lin',
@@ -727,7 +720,7 @@ export const ko = {
       {
         name: 'Mike Doty',
         title: 'Co-Founder of Ark',
-        picture: 'mike.png',
+        picture: 'mike.jpg',
         bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
       },
       {
@@ -745,14 +738,14 @@ export const ko = {
       {
         name: 'Dr. John Henry Clippinger',
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john.png',
+        picture: 'john.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'Patrick Dai',
         title: 'Founder and CEO of Qtum',
         picture: 'patrick.jpg',
-        bio: 'Founder and CEO of Qtum Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
       },
       {
         name: 'Josh Ogle',
@@ -769,13 +762,13 @@ export const ko = {
       {
         name: 'Alphabit',
         title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
+        picture: 'alphabit.jpg',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.png',
+        picture: 'tokenkey.jpg',
         bio: 'TokenKey is an end-to-end solution for ICO and token launches.',
       },
     ],
