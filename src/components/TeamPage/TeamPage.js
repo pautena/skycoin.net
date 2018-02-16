@@ -35,14 +35,6 @@ const Img = styled.img`
   width: 100%;
 `;
 
-const NoImg = styled.div`
-  background: #eceef0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-`;
-
 const Title = styled.strong`
   display: block;
   font-family: ${FONT_FAMILIES.sansItalic};
@@ -51,6 +43,7 @@ const Title = styled.strong`
 
 const Bio = styled.p`
   font-family: ${FONT_FAMILIES.sans};
+  line-height: 1.8;
 `;
 
 const StyledBox = styled(Box)`
@@ -96,15 +89,15 @@ const TeamPage = ({ intl }) => (
                     {picture ?
                       /* eslint-disable */
                       <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
                       /* eslint-disable */
-                      <NoImg />
                     }
                   </ImageContainer>
                 </StyledBox>
                 <StyledBox width={[1 / 1, 3 / 4]}>
                   <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  <Title>{title}</Title>
-                  <Bio>{bio}</Bio>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
                 </StyledBox>
               </Flex>
             </Person>
@@ -121,16 +114,16 @@ const TeamPage = ({ intl }) => (
                   <ImageContainer>
                     {picture ?
                       /* eslint-disable */
-                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> : // eslint-disable-line global-require
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
                       /* eslint-disable */
-                      <NoImg />
                     }
                   </ImageContainer>
                 </StyledBox>
                 <StyledBox width={[1 / 1, 3 / 4]}>
                   <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  <Title>{title}</Title>
-                  <Bio>{bio}</Bio>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
                 </StyledBox>
               </Flex>
             </Person>
@@ -147,16 +140,16 @@ const TeamPage = ({ intl }) => (
                   <ImageContainer>
                     {picture ?
                       /* eslint-disable */
-                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> : // eslint-disable-line global-require
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
                       /* eslint-disable */
-                      <NoImg />
                     }
                   </ImageContainer>
                 </StyledBox>
                 <StyledBox width={[1 / 1, 3 / 4]}>
                   <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  <Title>{title}</Title>
-                  <Bio>{bio}</Bio>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
                 </StyledBox>
               </Flex>
             </Person>
@@ -173,16 +166,16 @@ const TeamPage = ({ intl }) => (
                   <ImageContainer>
                     {picture ?
                       /* eslint-disable */
-                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> : // eslint-disable-line global-require
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
                       /* eslint-disable */
-                      <NoImg />
                     }
                   </ImageContainer>
                 </StyledBox>
                 <StyledBox width={[1 / 1, 3 / 4]}>
                   <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  <Title>{title}</Title>
-                  <Bio>{bio}</Bio>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
                 </StyledBox>
               </Flex>
             </Person>
