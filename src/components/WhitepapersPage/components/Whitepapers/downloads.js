@@ -1,8 +1,5 @@
 export default [{
-  name: '★ A Distributed Consensus Algorithm for Cryptocurrency Networks',
-  download: 'http://downloads.skycoin.net/whitepapers/a-distributed-consensus-algorithm-for-cryptocurrency-networks.pdf',
-  filetype: '.pdf',
-  filesize: '463kb',
+  name: 'Skywire White Paper — coming soon',
 }, {
   name: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
   download: 'http://downloads.skycoin.net/whitepapers/sky-an-opinion-dynamics-framework-and-model-for-consensus-over-p2-p-network.pdf',
@@ -23,4 +20,9 @@ export default [{
   download: 'http://downloads.skycoin.net/whitepapers/sznajd2-a-community-aware-opinion-dynamics-model.pdf',
   filetype: '.pdf',
   filesize: '467kb',
+}, {
+  name: 'A Distributed Consensus Algorithm for Cryptocurrency Networks',
+  download: 'http://downloads.skycoin.net/whitepapers/a-distributed-consensus-algorithm-for-cryptocurrency-networks.pdf',
+  filetype: '.pdf',
+  filesize: '463kb',
 }];
