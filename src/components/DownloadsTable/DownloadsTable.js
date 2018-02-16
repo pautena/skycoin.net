@@ -56,17 +56,17 @@ const DownladsTable = ({ title, list, id }) => (
                 <td>{name}</td>
 
                 <td>
-                  <Link target="_blank" href={download}>
+                  {download && <Link target="_blank" href={download}>
                     <FormattedMessage id="downloads.whitepapers.download" />
                     &nbsp;
                     ({filetype})
-                  </Link>
+                  </Link>}
                 </td>
 
                 <td>
-                  <Text as="span" color="gray.7" heavy>
+                  {filesize && <Text as="span" color="gray.7" heavy>
                     {filesize}
-                  </Text>
+                  </Text>}
                 </td>
               </tr>
             ))}

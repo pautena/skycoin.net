@@ -198,7 +198,7 @@ export default {
       thinclient: 'Access a BBS thin client.',
     },
     whitepapers: {
-      heading: 'Download Skycoin Whitepapers',
+      heading: 'Download Skycoin Consensus Whitepapers',
       download: '下载',
     },
     assets: {
