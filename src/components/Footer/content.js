@@ -73,5 +73,8 @@ export default [{
   }, {
     label: 'footer.instagram',
     href: 'https://www.instagram.com/skycoinproject/',
+  }, {
+    label: 'footer.youtube',
+    href: 'https://www.youtube.com/c/Skycoin',
   }],
 }];

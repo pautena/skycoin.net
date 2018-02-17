@@ -38,6 +38,7 @@ export default {
     instagram: 'Instagram',
     facebook: 'Facebook',
     discord: 'Discord',
+    youtube: 'Youtube',
   },
   buyBanner: {
     lead: 'Existing Skycoins are available separately on the following exchanges',

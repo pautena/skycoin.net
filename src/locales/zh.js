@@ -38,6 +38,7 @@ export default {
     instagram: 'Instagram',
     facebook: 'Facebook',
     discord: 'Discord',
+    youtube: 'Youtube',
   },
   buyBanner: {
     lead: '选择以下交易所购买天空币',
