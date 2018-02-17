@@ -108,7 +108,7 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        Cryptopia <Note>(Cryltopia is not allowing deposits or withdraws due to heavy volume)</Note>
+        Cryptopia <Note>(Cryptopia is not allowing deposits or withdraws due to heavy volume)</Note>
       </Heading>
       <Logo src={LogoCryptopia} alt="Cryptopia" />
     </Title>
