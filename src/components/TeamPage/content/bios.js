@@ -90,14 +90,7 @@ export const en = {
         bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
       },
       {
-        name: 'Jason Gao',
-        email: '',
-        picture: '',
-        title: '',
-        bio: 'Technophile, strategist and marketer, Gao has expertise in both marketing and business strategy. In addition to his work with Skycoin, Gao serves as the China CEO of a boutique international consulting firm. Prior, he served a series of global companies across the professional services industry and media industry. Gao speaks fluent English, Chinese, Japanese, and French. He holds a master’s degree in advertising & communication from a top university in China.',
-      },
-      {
-        name: 'Michael',
+        name: 'Michael Weng',
         email: '',
         picture: '',
         title: '',
@@ -286,14 +279,7 @@ export const zh = {
         bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
       },
       {
-        name: 'Jason Gao',
-        email: '',
-        picture: '',
-        title: '',
-        bio: 'Technophile, strategist and marketer, Gao has expertise in both marketing and business strategy. In addition to his work with Skycoin, Gao serves as the China CEO of a boutique international consulting firm. Prior, he served a series of global companies across the professional services industry and media industry. Gao speaks fluent English, Chinese, Japanese, and French. He holds a master’s degree in advertising & communication from a top university in China.',
-      },
-      {
-        name: 'Michael',
+        name: 'Michael Weng',
         email: '',
         picture: '',
         title: '',
@@ -482,7 +468,7 @@ export const ru = {
         bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
       },
       {
-        name: 'Michael',
+        name: 'Michael Weng',
         email: '',
         picture: '',
         title: '',
@@ -671,14 +657,7 @@ export const ko = {
         bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
       },
       {
-        name: 'Jason Gao',
-        email: '',
-        picture: '',
-        title: '',
-        bio: 'Technophile, strategist and marketer, Gao has expertise in both marketing and business strategy. In addition to his work with Skycoin, Gao serves as the China CEO of a boutique international consulting firm. Prior, he served a series of global companies across the professional services industry and media industry. Gao speaks fluent English, Chinese, Japanese, and French. He holds a master’s degree in advertising & communication from a top university in China.',
-      },
-      {
-        name: 'Michael',
+        name: 'Michael Weng',
         email: '',
         picture: '',
         title: '',
