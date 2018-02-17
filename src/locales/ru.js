@@ -38,6 +38,7 @@ export default {
     instagram: 'Instagram',
     facebook: 'Facebook',
     discord: 'Discord',
+    youtube: 'Youtube',
   },
   buyBanner: {
     lead: 'Имеющиеся в наличии Skycoins можно приобрести на следующих биржах',

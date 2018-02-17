@@ -5,7 +5,7 @@ export default [{
     to: 'downloads',
   }, {
     label: 'footer.buy',
-    buy: true,
+    to: 'markets',
   }, {
     label: 'footer.infographics',
     to: 'infographics',
@@ -73,5 +73,8 @@ export default [{
   }, {
     label: 'footer.instagram',
     href: 'https://www.instagram.com/skycoinproject/',
+  }, {
+    label: 'footer.youtube',
+    href: 'https://www.youtube.com/c/Skycoin',
   }],
 }];
