@@ -92,11 +92,14 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        C2CX <Note>(<a href="https://www.c2cx.com/in/trade_usdt_sky" target="_blank" rel="noopener noreferrer">Only supports USDT ERC20 token.</a>)</Note>
+        C2CX
       </Heading>
       <Logo src={Logoc2cx} alt="C2CX LOGO" />
     </Title>
     <List>
+      <Row>
+        <Item href="https://www.c2cx.com/in/trade_usdt_sky" target="_blank">SKY/USDT</Item>
+      </Row>
       <Row>
         <Item href="https://www.c2cx.com/in/trade_btc_sky" target="_blank">SKY/BTC</Item>
       </Row>
