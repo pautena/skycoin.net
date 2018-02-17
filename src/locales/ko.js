@@ -38,6 +38,7 @@ export default {
     instagram: '인스타그램',
     facebook: '페이스북',
     discord: 'Discord',
+    youtube: 'Youtube',
   },
   buyBanner: {
     lead: '현재 스카이코인은 다음의 거래소에서 개별적으로 매매할 수 있습니다.',
