@@ -5,7 +5,7 @@ export default [{
     to: 'downloads',
   }, {
     label: 'footer.buy',
-    buy: true,
+    to: 'markets',
   }, {
     label: 'footer.infographics',
     to: 'infographics',
