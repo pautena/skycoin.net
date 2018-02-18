@@ -111,17 +111,6 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        Cryptopia <Note>Cryptopia (Cryptopia is not processing deposits, do not deposit SKY there)</Note>
-      </Heading>
-      <Logo src={LogoCryptopia} alt="Cryptopia" />
-    </Title>
-    <List>
-      <Row>
-        <NotLinked>SKY/BTC</NotLinked>
-      </Row>
-    </List>
-    <Title>
-      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
         5iquant
       </Heading>
       <Logo src={Logo5iquant} alt="5iquant logo" />
@@ -132,6 +121,17 @@ const MarketsList = () => (
       </Row>
       <Row>
         <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_IQT" target="_blank">SKY/IQT</Item>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        Cryptopia <Note>(Cryptopia is not processing deposits, do not deposit SKY there)</Note>
+      </Heading>
+      <Logo src={LogoCryptopia} alt="Cryptopia" />
+    </Title>
+    <List>
+      <Row>
+        <NotLinked>SKY/BTC</NotLinked>
       </Row>
     </List>
     <Title>
