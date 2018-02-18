@@ -9,6 +9,7 @@ import Link from 'components/Link';
 import LogoCryptopia from './images/Cryptopia-Light2x.png';
 import Logoc2cx from './images/c2cx-logo.png';
 import Logo5iquant from './images/5iquant-logo.png';
+import LogoCoin918 from './images/coin918-logo.png';
 import LogoOpenledger from './images/openledger-logo.png';
 
 const Wrap = styled.div`
@@ -135,16 +136,13 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        5iquant
+        coin918
       </Heading>
-      <Logo src={Logo5iquant} alt="5iquant logo" />
+      <Logo src={LogoCoin918} alt="Coin918 logo" />
     </Title>
     <List>
       <Row>
-        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_BTC" target="_blank">SKY/BTC</Item>
-      </Row>
-      <Row>
-        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_IQT" target="_blank">SKY/IQT</Item>
+        <Item href="https://coin918.com/trade/index/market/sky_usd/" target="_blank">SKY/USD</Item>
       </Row>
     </List>
     <Title>
