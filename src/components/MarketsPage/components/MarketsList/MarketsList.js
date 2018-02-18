@@ -9,6 +9,7 @@ import Link from 'components/Link';
 import LogoCryptopia from './images/Cryptopia-Light2x.png';
 import Logoc2cx from './images/c2cx-logo.png';
 import Logo5iquant from './images/5iquant-logo.png';
+import LogoOpenledger from './images/openledger-logo.png';
 
 const Wrap = styled.div`
   margin: ${rem(SPACE[5])} 0;
@@ -130,6 +131,40 @@ const MarketsList = () => (
       </Row>
       <Row>
         <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_IQT" target="_blank">SKY/IQT</Item>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        5iquant
+      </Heading>
+      <Logo src={Logo5iquant} alt="5iquant logo" />
+    </Title>
+    <List>
+      <Row>
+        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_BTC" target="_blank">SKY/BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_IQT" target="_blank">SKY/IQT</Item>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        Openledger
+      </Heading>
+      <Logo src={LogoOpenledger} alt="Openledger logo" />
+    </Title>
+    <List>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_USD" target="_blank">OPEN.SKY/USD</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_OPEN.BTC" target="_blank">OPEN.SKY/OPEN.BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_BTS" target="_blank">OPEN.SKY/BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_OBITS" target="_blank">OPEN.SKY/OBITS</Item>
       </Row>
     </List>
     <Heading heavy as="h2" fontSize={[5, 6]} color="black" my={[4, 6]}>
