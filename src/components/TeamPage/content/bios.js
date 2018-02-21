@@ -19,7 +19,7 @@ export const en = {
       {
         name: 'Houwu Chen',
         email: '',
-        picture: '',
+        picture: 'chen.jpg',
         title: '',
         bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
@@ -33,68 +33,22 @@ export const en = {
     ],
   },
   west: {
-    title: 'Skycoin West',
+    title: 'Skycoin Team',
     bios: [
+
       {
         name: 'Bradford Stephens',
         email: 'bradford@skycoin.net',
         picture: 'bradford.jpg',
-        title: 'Chief Operations Officer',
-        bio: 'Bradford formerly served as a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
-      },
-      {
-        name: 'Catherine Byerly',
-        email: 'catherine@skycoin.net',
-        picture: 'catherine.jpg',
-        title: 'Associate Director of Marketing',
-        bio: 'Catherine Byerly is a marketer with experience in the digital, traditional, and affiliate spaces. Before entering marketing, she worked as a journalist on projects which received awards from American City Business Journals and the Associated Press. Byerly holds degrees in Political Science and Communication.',
-      },
-      {
-        name: 'Daken Freeborn',
-        email: '',
-        picture: 'daken.jpg',
-        title: 'Events Director',
-        bio: 'Daken Freeborn brings more than 20 years of events experience to Skycoin. He has previously worked with hospitality brands including MGM Resorts International, Hilton Worldwide, and Caesars Entertainment. An early investor in Skycoin, he is passionate about systems of distributed ledgers, open-sources cryptocurrency platforms, and free and decentralized internet possibilities.',
-      },
-      {
-        name: 'Angela',
-        email: '',
-        picture: 'angela.jpg',
-        title: 'Community Director',
-        bio: 'Part of the crypto community since 2015, Angela has been an active voice in assisting and growing multiple crypto projects through Telegram, Discord, and Reddit communities.',
-      },
-    ],
-  },
-  east: {
-    title: 'Skycoin East',
-    bios: [
-      {
-        name: 'Sam',
-        email: '',
-        picture: 'sam.jpg',
-        title: '',
-        bio: 'In 2014, Sam began investing in blockchain and now holds a number of successful portfolios. He is currently a founding Partner of a management consulting firm with offices in Shanghai and Singapore. Prior to that, Sam served a Singapore group as Global Project Manager. He also served a Germany-based Fortune 500 company as Project Manager and Solution Architect. He holds a degree from UniSA.',
+        title: 'EVP Western Operations',
+        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
       },
       {
         name: 'Jesse Sun',
         email: '',
         picture: 'jesse.jpg',
-        title: '',
+        title: 'Eastern Operations',
         bio: 'Jesse Sun is both the Founder and head of a fund investing in blockchain startups, applications and cryptocurrencies, as well as bitcoin mining. In 2014, Sun was COO to one of the first blockchain companies. Before joining the crypto world, he was a management consultant. Sun holds an MBA from the Manchester Business School and a master’s degree from Tongji University.',
-      },
-      {
-        name: 'Mary Li',
-        email: '',
-        picture: 'mary.jpg',
-        title: '',
-        bio: 'Li is a serial entrepreneur who began blockchain angel investing in 2015. During her time in the blockchain industry, she has been responsible for marketing efforts at several blockchain startups. In 2017, Li founded a blockchain investment fund that focused on blockchain startups and digital currency.',
-      },
-      {
-        name: 'Michael Weng',
-        email: '',
-        picture: '',
-        title: '',
-        bio: 'Michael has more than 10 years of experience in software development, software reverse engineering, and network attack and defense. He started coding in junior high school, at 13 years old. Michael would go on to work at two public companies and lead the development team of an IoT platform for home appliances.',
       },
       {
         name: 'Simon Hobbs',
@@ -111,11 +65,11 @@ export const en = {
         bio: 'Amaury Aguila is a computer systems engineer with an expertise in machine learning and data science. He holds a master’s degree in Computer Science, and is currently pursuing a doctoral degree in computer science.',
       },
       {
-        name: 'Evan Lin',
-        email: '',
-        picture: 'evan.jpg',
-        title: 'BBS and Kitty Cash developer',
-        bio: 'Evan Lin is Skycoin’s main developer for Skycoin BBS. Lin left university to pursue a career in software development. His personal projects include; cross-platform applications written using the Qt framework with QML/ C++; APIs in Golang and Node.JS hosted on cloud services such as AWS and GCS; creation of an ROS package for maintaining linear movement via rotary encoders for dual-wheeled robots. Lin is passionate about open- source technology, cryptocurrency, decentralized applications, and linux.',
+        name: 'Jonathan Wilson',
+        email: 'jonathan@skycoin.net',
+        picture: 'jonathan.jpg',
+        title: 'Branding and Communications',
+        bio: 'Jonathan is an experienced crypto trader, investor and strategist. A former FORD Model with degrees in Marketing and International Business from Southeastern University, he is a renowned researcher and consultant in crypto.',
       },
       {
         name: 'Konstantin Ivanov',
@@ -130,17 +84,18 @@ export const en = {
     title: 'Key Investors and Advisors',
     bios: [
       {
-        name: 'Mike Doty',
-        title: 'Co-Founder of Ark',
-        picture: 'mike.jpg',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
-      },
-      {
         name: 'Michael Terpin',
         title: 'Founder and CEO of CoinAgenda',
         picture: 'michael.jpg',
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
+      {
+        name: 'Mike Doty',
+        title: 'Co-Founder of Ark',
+        picture: 'mike.jpg',
+        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
+      },
+
       {
         name: 'Richard Kastelein',
         title: 'Founder of the Blockchain News (acquired in 2017) | Director of Cryptoassets Design Group | Partner at Blockchain Partners',
@@ -163,13 +118,7 @@ export const en = {
         name: 'Josh Ogle',
         title: 'CEO of Samples.com and The Original Agency | Angel Investor',
         picture: 'josh.jpg',
-        bio: 'Founder of three successful online marketing and advertising companies, Ogle grew each business from less than $50k in funding to six-figure profits profits within two years. Ogle specializes in lead generation and free or cheap ways to grow business, including unusual approaches to making products/services “go viral.” He is a Cornell University alumnus.',
-      },
-      {
-        name: 'Andrew Masanto',
-        title: 'Board Of Directors at Cornerstone Capital Inc. | Entrepreneur and Investor',
-        picture: 'andrew.jpg',
-        bio: 'Andrew Masanto currently runs a US investment Holding Company, Land Invest LLC, and is an active advisor to several specialty media buying companies. Previously, he founded www.altitudeshoes.com which became the UK’s leading seller of Men’s Height Increasing Shoes. After its sale, Masanto founded Higher Click SEO Agency (acquired in 2013). He has also lectured at Harvard Business School and Oxford University on the topic of digital marketing.',
+        bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
       },
       {
         name: 'Alphabit',

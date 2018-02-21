@@ -105,58 +105,6 @@ const TeamPage = ({ intl }) => (
         </BioSection>
         <BioSection>
           <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
-            {getLocale(intl.locale).west.title}
-          </Heading>
-          {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
-            <Person key={index}>
-              <Flex wrap py={[7, 8]}>
-                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
-                  <ImageContainer>
-                    {picture ?
-                      /* eslint-disable */
-                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
-                      /* eslint-disable */
-                    }
-                  </ImageContainer>
-                </StyledBox>
-                <StyledBox width={[1 / 1, 3 / 4]}>
-                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  {title && <Title>{title}</Title>}
-                  {bio && <Bio>{bio}</Bio>}
-                </StyledBox>
-              </Flex>
-            </Person>
-          ))}
-        </BioSection>
-        <BioSection>
-          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
-            {getLocale(intl.locale).east.title}
-          </Heading>
-          {getLocale(intl.locale).east.bios.map(({ name, picture, title, bio }, index) => (
-            <Person key={index}>
-              <Flex wrap py={[7, 8]}>
-                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
-                  <ImageContainer>
-                    {picture ?
-                      /* eslint-disable */
-                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
-                      /* eslint-disable */
-                    }
-                  </ImageContainer>
-                </StyledBox>
-                <StyledBox width={[1 / 1, 3 / 4]}>
-                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
-                  {title && <Title>{title}</Title>}
-                  {bio && <Bio>{bio}</Bio>}
-                </StyledBox>
-              </Flex>
-            </Person>
-          ))}
-        </BioSection>
-        <BioSection>
-          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
             {getLocale(intl.locale).investors.title}
           </Heading>
           {getLocale(intl.locale).investors.bios.map(({ name, picture, title, bio }, index) => (
@@ -181,6 +129,34 @@ const TeamPage = ({ intl }) => (
             </Person>
           ))}
         </BioSection>
+        <BioSection>
+          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
+            {getLocale(intl.locale).west.title}
+          </Heading>
+          {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
+            <Person key={index}>
+              <Flex wrap py={[7, 8]}>
+                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
+                  <ImageContainer>
+                    {picture ?
+                      /* eslint-disable */
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                      /* eslint-disable */
+                    }
+                  </ImageContainer>
+                </StyledBox>
+                <StyledBox width={[1 / 1, 3 / 4]}>
+                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
+                </StyledBox>
+              </Flex>
+            </Person>
+          ))}
+        </BioSection>
+
+
       </Wrapper>
     </Container>
     <Footer />
