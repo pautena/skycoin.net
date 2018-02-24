@@ -36,11 +36,11 @@ export const en = {
     title: 'Skycoin Team',
     bios: [
       {
-        name: 'Bradford Stephens',
-        email: 'bradford@skycoin.net',
-        picture: 'bradford.jpg',
-        title: 'EVP Western Operations',
-        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
+        name: 'Sam',
+        email: '',
+        picture: 'sam.jpg',
+        title: 'COO',
+        bio: 'In 2014, Sam began investing in blockchain and now holds a number of successful portfolios. He is currently a founding Partner of a management consulting firm with offices in Shanghai and Singapore. Prior to that, Sam served a Singapore group as Global Project Manager. He also served a Germany-based Fortune 500 company as Project Manager and Solution Architect. He holds a degree from UniSA.',
       },
       {
         name: 'Jesse Sun',
@@ -158,11 +158,11 @@ export const zh = {
     title: 'Skycoin Team',
     bios: [
       {
-        name: 'Bradford Stephens',
-        email: 'bradford@skycoin.net',
-        picture: 'bradford.jpg',
-        title: 'EVP Western Operations',
-        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
+        name: 'Sam',
+        email: '',
+        picture: 'sam.jpg',
+        title: 'COO',
+        bio: 'In 2014, Sam began investing in blockchain and now holds a number of successful portfolios. He is currently a founding Partner of a management consulting firm with offices in Shanghai and Singapore. Prior to that, Sam served a Singapore group as Global Project Manager. He also served a Germany-based Fortune 500 company as Project Manager and Solution Architect. He holds a degree from UniSA.',
       },
       {
         name: 'Jesse Sun',
@@ -280,11 +280,11 @@ export const ru = {
     title: 'Skycoin Team',
     bios: [
       {
-        name: 'Bradford Stephens',
-        email: 'bradford@skycoin.net',
-        picture: 'bradford.jpg',
-        title: 'EVP Western Operations',
-        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
+        name: 'Sam',
+        email: '',
+        picture: 'sam.jpg',
+        title: 'COO',
+        bio: 'In 2014, Sam began investing in blockchain and now holds a number of successful portfolios. He is currently a founding Partner of a management consulting firm with offices in Shanghai and Singapore. Prior to that, Sam served a Singapore group as Global Project Manager. He also served a Germany-based Fortune 500 company as Project Manager and Solution Architect. He holds a degree from UniSA.',
       },
       {
         name: 'Jesse Sun',
@@ -402,11 +402,11 @@ export const ko = {
     title: 'Skycoin Team',
     bios: [
       {
-        name: 'Bradford Stephens',
-        email: 'bradford@skycoin.net',
-        picture: 'bradford.jpg',
-        title: 'EVP Western Operations',
-        bio: 'Bradford was a C-level executive at five VC-backed companies. He is the creator of Spire, one of the first distributed SQL databases. In addition to the Big Data field, Bradford also operated companies in fashion, security, and adtech. His teams also drove several exits, including one public M&A. Bradford holds a degree in Computer Science and Political Science, specializing in distributed systems.',
+        name: 'Sam',
+        email: '',
+        picture: 'sam.jpg',
+        title: 'COO',
+        bio: 'In 2014, Sam began investing in blockchain and now holds a number of successful portfolios. He is currently a founding Partner of a management consulting firm with offices in Shanghai and Singapore. Prior to that, Sam served a Singapore group as Global Project Manager. He also served a Germany-based Fortune 500 company as Project Manager and Solution Architect. He holds a degree from UniSA.',
       },
       {
         name: 'Jesse Sun',
