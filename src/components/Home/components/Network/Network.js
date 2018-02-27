@@ -19,6 +19,11 @@ const Graphic = styled.img.attrs({
   display: block;
 `;
 
+const Strong = styled.strong`
+  display: inline-block;
+  font-family: SkycoinSansBold;
+`;
+
 export default () => (
   <div>
     <Container>
@@ -30,6 +35,7 @@ export default () => (
             </Heading>
           </Link>
           <Text fontSize={[3, 3, 4]} mb={0} color="black" heavy>
+            <Strong><FormattedMessage id="home.network.emphasis" /></Strong>
             <FormattedMessage id="home.network.body" />
           </Text>
           <Button mt={4} to="/whitepapers" color="white" bg="base" big fontSize={[1, 3]}>

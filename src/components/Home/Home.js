@@ -67,9 +67,9 @@ const Home = ({ intl }) => (
     </About>
     <Miner />
     <About>
-      <Text fontSize={[2, 2, 3]}>
-        <FormattedMessage id="home.skyProtocol.paragraph" />
-      </Text>
+      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+        <FormattedMessage id="home.technology.header" />
+      </Heading>
       <Nav />
     </About>
     <Network />

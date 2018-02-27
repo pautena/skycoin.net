@@ -75,7 +75,7 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
+      heading: 'The skycoin project is the most advanced blockchain application platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
@@ -118,8 +118,8 @@ export default {
       paragraph: 'Skywire’s goal is to make corporate internet service providers a thing of the past by giving the internet back to the people with its revolutionary privacy protocol. Peer-to-peer technology with a grassroots ethos, Skywire’s new networking protocol promotes net neutrality and sharing without blocking, slowdowns or censorship.',
       button: 'Read More about Skywire, Powered by Skycoin',
     },
-    skyProtocol: {
-      paragraph: 'The Sky Privacy Protocol solves the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network. Take a look at the technology behind it:',
+    technology: {
+      header: 'Skycoin Technology and Ecosystem:',
     },
     about: {
       heading: '스카이코인은 무엇인가?',
@@ -146,7 +146,8 @@ export default {
     network: {
       label: '더 보기',
       heading: 'Obelisk: 스카이코인 합의 알고리즘',
-      body: '사토시는 비트코인 네트워크가 수백, 수천 개의 컴퓨터로 분산화 되는 것을 염원했고, 오늘날, 비트코인 네트워크는 3개의 채굴 풀로 완벽히 통제되고 있습니다. 비트코인은 더 이상 분산화가 아닙니다. 스카이코인 합의 알고리즘은 완벽한 분산 블록체인 합의 알고리즘으로 설계되었습니다.',
+      emphasis: 'Bitcoin is completely controlled by three mining pools.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
       link: '네트워크 합의에 대해 알아보기',
     },
     miner: {
