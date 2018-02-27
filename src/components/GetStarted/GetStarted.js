@@ -1,21 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
-import { Flex } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 
 import { COLORS } from 'config';
 import Button from 'components/Button';
 import Buy from 'components/Buy';
 import Container from 'components/Container';
-import media from 'utils/media';
+import Heading from 'components/Heading';
 
 const GetStarted = styled.div`
   background-color: ${COLORS.gray[1]};
   text-align: center;
-
-  ${media.md.css`
-    text-align: left;
-  `}
 `;
 
 const Buttons = styled.div`
@@ -26,6 +22,11 @@ export default () => (
   <GetStarted>
     <Container>
       <Flex align="center" py={[6, 6, 10]} wrap>
+        <Box width={[1 / 1, 1 / 1, 1 / 1]}>
+          <Heading heavy as="h2" fontSize={[4, 5, 6]} mb={[6, 6, 7]} color="black">
+            <FormattedMessage id="getStarted.heading" />
+          </Heading>
+        </Box>
         <Buttons>
           <Buy color="white" bg="blue.5" big fontSize={[1, 3]}>
             <FormattedMessage id="getStarted.buy" />
