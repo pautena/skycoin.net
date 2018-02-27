@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   text-align: center;
   background-color: ${COLORS.gray[0]};
   border-top: 2px solid ${COLORS.gray[1]};
+  padding: 2em 0;
 `;
 
 const Logo = styled.img`
@@ -28,22 +29,27 @@ const Logo = styled.img`
   `}
 `;
 
-const LogoSmall = styled.img`
-  padding: 0 1rem;
-  vertical-align: middle;
-  height: ${props => (props.square ? rem(25) : rem(25))};
+const Paragraph = styled.p`
+  font-size: 17px;
+  margin-bottom: 0px;
+  font-family: "SkycoinSans", sans-serif;
+  line-height: 1.5rem;
+  padding: 1em 0;
+  -webkit-text-transform: none;
+  text-transform: none;
+`;
 
-
-  padding: ${rem(SPACE[4])} ${rem(SPACE[4])};
-
-  ${media.md.css`
-    height: ${props => (props.square ? rem(35) : rem(30))};
-    padding: ${rem(SPACE[6])} ${rem(SPACE[4])};
-  `}
+const StyledLink = styled.a`
+  color: #394049;
 `;
 
 export default () => (
   <Wrapper>
+    <Paragraph>
+      <StyledLink href="https://www.huffingtonpost.com/entry/the-top-5-crypto-projects-to-watch-in-2018_us_5a4c6a77e4b06cd2bd03e359" target="_blank" rel="noopener noreferrer">
+        {'"Top 5 Crypto Projects to Watch in 2018" Karl Kangur - CEO of Result Compass'}
+      </StyledLink>
+    </Paragraph>
     <Container>
       <a
         target="_blank"
@@ -67,14 +73,6 @@ export default () => (
         href="http://www.the-blockchain.com/2017/08/01/skycoin-launches-vision-new-internet/"
       >
         <Logo src={images.blockchainNews} square />
-      </a>
-
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.huffingtonpost.com/entry/the-top-5-crypto-projects-to-watch-in-2018_us_5a4c6a77e4b06cd2bd03e359"
-      >
-        <LogoSmall src={images.huffingtonpost} />
       </a>
     </Container>
   </Wrapper>
