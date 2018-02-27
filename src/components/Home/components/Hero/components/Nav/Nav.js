@@ -14,7 +14,7 @@ const Wrapper = styled.nav`
   flex-direction: column;
   margin: 0 auto ${rem(SPACE[4])};
   max-width: 60rem;
-  padding: 40px 1rem;
+  padding: 16px 1rem 40px 0;
 
   ${media.sm.css`
     margin-bottom: 0;
