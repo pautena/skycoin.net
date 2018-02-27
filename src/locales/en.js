@@ -75,7 +75,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'Skycoin Project is building the new internet. This includes:',
+      heading: 'The skycoin project is the most advanced blockchain application platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin Blockchain: Free, Instant, Infinite transactions',
@@ -147,7 +147,7 @@ export default {
       label: 'Digging deeper',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
       emphasis: 'Bitcoin is completely controlled by three mining pools. ',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized blockchain.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
       link: 'Learn about Network Consensus',
     },
     miner: {
