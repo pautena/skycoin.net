@@ -118,8 +118,8 @@ export default {
       paragraph: 'Skywire’s goal is to make corporate internet service providers a thing of the past by giving the internet back to the people with its revolutionary privacy protocol. Peer-to-peer technology with a grassroots ethos, Skywire’s new networking protocol promotes net neutrality and sharing without blocking, slowdowns or censorship.',
       button: 'Read More about Skywire, Powered by Skycoin',
     },
-    skyProtocol: {
-      paragraph: 'The Sky Privacy Protocol solves the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network. Take a look at the technology behind it:',
+    technology: {
+      header: 'Skycoin Technology and Ecosystem:',
     },
     about: {
       heading: 'Что такое Skycoin?',
@@ -146,7 +146,8 @@ export default {
     network: {
       label: 'Углубляясь в тему',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
-      body: 'Изначально Сатоши задумывал Bitcoin как децентрализованную сеть, контролируемую сотнями тысяч компьютеров. Сегодня же Bitcoin полностью подконтролен трём майнинговым пулам. Bitcoin потерял свою децентрализованность. Алгоритм консенсуса Skycoin спроектирован для достижения истинной децентрализации блокчейна.',
+      emphasis: 'Bitcoin is completely controlled by three mining pools.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized blockchain.',
       link: 'Узнать о Сетевом Консенсусе',
     },
     miner: {
