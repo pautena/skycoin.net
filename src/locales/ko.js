@@ -75,7 +75,7 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Skycoin is a utility token for bandwidth on the new internet. The project includes:',
+      heading: 'The skycoin project is the most advanced blockchain application platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
@@ -147,7 +147,7 @@ export default {
       label: '더 보기',
       heading: 'Obelisk: 스카이코인 합의 알고리즘',
       emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized blockchain.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
       link: '네트워크 합의에 대해 알아보기',
     },
     miner: {
