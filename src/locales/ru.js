@@ -146,7 +146,8 @@ export default {
     network: {
       label: 'Углубляясь в тему',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
-      body: 'Изначально Сатоши задумывал Bitcoin как децентрализованную сеть, контролируемую сотнями тысяч компьютеров. Сегодня же Bitcoin полностью подконтролен трём майнинговым пулам. Bitcoin потерял свою децентрализованность. Алгоритм консенсуса Skycoin спроектирован для достижения истинной децентрализации блокчейна.',
+      emphasis: 'Bitcoin is completely controlled by three mining pools.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized blockchain.',
       link: 'Узнать о Сетевом Консенсусе',
     },
     miner: {
