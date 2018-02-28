@@ -75,7 +75,7 @@ export default {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     hero: {
-      heading: 'The skycoin project is the most advanced blockchain application platform',
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',

@@ -75,7 +75,7 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'The skycoin project is the most advanced blockchain application platform',
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
