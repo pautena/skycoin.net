@@ -75,7 +75,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'The skycoin project is the most advanced blockchain application platform',
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin Blockchain: Free, Instant, Infinite transactions',
