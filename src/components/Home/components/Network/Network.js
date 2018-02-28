@@ -22,6 +22,7 @@ const Graphic = styled.img.attrs({
 const Strong = styled.strong`
   display: inline-block;
   font-family: SkycoinSansBold;
+  margin-right: 0.5ch;
 `;
 
 export default () => (
