@@ -21,7 +21,7 @@ const Introduction = () => (
       'home.hero.list.4',
     ]}
     />
-    <Flex wrap row mb={4}>
+    <Flex wrap row pt={6}>
       <Box width={[1 / 2, 1, 1 / 2]} pr={[1, 0, 4]} mb={[0, 4, 0]}>
         <Buy
           color="blue.5"
@@ -36,7 +36,8 @@ const Introduction = () => (
       <Box width={[1 / 2, 1, 1 / 2]} pl={[1, 0, 4]}>
         <Button
           to="downloads"
-          color="white"
+          color="blue.5"
+          bg="white"
           big
           fontSize={[1, 3]}
           width={[1, 1 / 2, 1]}
