@@ -75,7 +75,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
-      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform',
+      heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
       list: [
         'Skywire: Anonymous, decentralized mesh-internet and telecoms',
         'Skycoin: Free, Instant, Infinite transactions',
