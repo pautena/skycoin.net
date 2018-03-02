@@ -22,7 +22,7 @@ const Introduction = () => (
     ]}
     />
     <Flex wrap row pt={6}>
-      <Box width={[1 / 2, 1, 1 / 2]} pr={[1, 0, 4]} mb={[0, 4, 0]}>
+      <Box width={[1 / 2, 1, 1 / 2]} pr={[1, 0, 4]} mb={[8, 4, 4]}>
         <Buy
           color="blue.5"
           bg="white"
