@@ -141,7 +141,7 @@ export default {
       label: 'Углубляясь в тему',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
       emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s vision of a truly decentralized cryptocurrency.',
       link: 'Узнать о Сетевом Консенсусе',
     },
     miner: {
