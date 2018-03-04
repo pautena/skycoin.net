@@ -76,13 +76,7 @@ export default {
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
       heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      list: [
-        'Skywire: Anonymous, decentralized mesh-internet and telecoms',
-        'Skycoin Blockchain: Free, Instant, Infinite transactions',
-        'Skyminer: Internet access point that pays you for bandwidth',
-        'Obelisk: Decentralized consensus',
-        'Designed by original Bitcoin and Ethereum developers',
-      ],
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
