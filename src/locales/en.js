@@ -60,7 +60,7 @@ export default {
     heading: 'Architecture overview',
   },
   getStarted: {
-    heading: 'Get started with Skycoin',
+    heading: 'Get Started with Skycoin',
     paragraph: '<p>True decentralization means no government can censor Skywire, no corporate interest can stop it.</p><p>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
     buy: 'Buy Skycoin',
     wallet: 'Get Wallet',
@@ -76,13 +76,7 @@ export default {
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
       heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      list: [
-        'Skywire: Anonymous, decentralized mesh-internet and telecoms',
-        'Skycoin Blockchain: Free, Instant, Infinite transactions',
-        'Skyminer: Internet access point that pays you for bandwidth',
-        'Obelisk: Decentralized consensus',
-        'Designed by original Bitcoin and Ethereum developers',
-      ],
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -147,7 +141,7 @@ export default {
       label: 'Digging deeper',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
       emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s vision of a truly decentralized cryptocurrency.',
       link: 'Learn about Network Consensus',
     },
     miner: {
