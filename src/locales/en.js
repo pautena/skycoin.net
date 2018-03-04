@@ -60,7 +60,7 @@ export default {
     heading: 'Architecture overview',
   },
   getStarted: {
-    heading: 'Get started with Skycoin',
+    heading: 'Get Started with Skycoin',
     paragraph: '<p>True decentralization means no government can censor Skywire, no corporate interest can stop it.</p><p>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
     buy: 'Buy Skycoin',
     wallet: 'Get Wallet',
