@@ -8,7 +8,7 @@ import Heading from 'components/Heading';
 import Label from 'components/Label';
 import Link from 'components/Link';
 
-import miner from './miner.png';
+import miner from './miner.jpg';
 import background from './background.png';
 
 // TODO: update gradient to use global colors
