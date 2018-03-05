@@ -76,13 +76,7 @@ export default {
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
       heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      list: [
-        'Skywire: Anonymous, decentralized mesh-internet and telecoms',
-        'Skycoin: Free, Instant, Infinite transactions',
-        'Skyminer: Internet access point that pays you for bandwidth',
-        'Obelisk: Decentralized consensus network',
-        'All designed by original Bitcoin and Ethereum developers',
-      ],
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
       buy: '购买天空币',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -147,7 +141,7 @@ export default {
       label: '深入了解',
       heading: 'Obelisk: The Skycoin Consensus Algorithm',
       emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s vision of a truly decentralized cryptocurrency.',
       link: '深入了解网络共识',
     },
     miner: {

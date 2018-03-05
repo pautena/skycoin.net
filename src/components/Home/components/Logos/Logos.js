@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { rem } from 'polished';
 
-import { SPACE, COLORS } from 'config';
+import { SPACE, COLORS, FONT_FAMILIES } from 'config';
 import Container from 'components/Container';
 import media from 'utils/media';
 
@@ -41,6 +41,7 @@ const Paragraph = styled.p`
 
 const StyledLink = styled.a`
   color: #394049;
+  font-family: ${FONT_FAMILIES.sansBold};
 `;
 
 export default () => (

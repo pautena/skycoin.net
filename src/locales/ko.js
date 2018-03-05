@@ -76,13 +76,7 @@ export default {
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
       heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      list: [
-        'Skywire: Anonymous, decentralized mesh-internet and telecoms',
-        'Skycoin: Free, Instant, Infinite transactions',
-        'Skyminer: Internet access point that pays you for bandwidth',
-        'Obelisk: Decentralized consensus network',
-        'All designed by original Bitcoin and Ethereum developers',
-      ],
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',
@@ -147,7 +141,7 @@ export default {
       label: '더 보기',
       heading: 'Obelisk: 스카이코인 합의 알고리즘',
       emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Santoshi’s vision of a truly decentralized cryptocurrency.',
+      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s vision of a truly decentralized cryptocurrency.',
       link: '네트워크 합의에 대해 알아보기',
     },
     miner: {
