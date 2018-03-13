@@ -18,14 +18,9 @@ const Wrapper = styled.div`
 const Header = ({ white, border }) => (
   <Wrapper border={border}>
     <Container>
-      <Flex align="center" wrap>
-        <Box width={[1 / 1, 1 / 4]}>
-          <Logo white={white} />
-        </Box>
-
-        <Box width={[1 / 1, 3 / 4]}>
-          <Navigation white={white} />
-        </Box>
+      <Flex align="center" justify="space-between" wrap>
+        <Logo white={white} />
+        <Navigation white={white} />
       </Flex>
     </Container>
   </Wrapper>

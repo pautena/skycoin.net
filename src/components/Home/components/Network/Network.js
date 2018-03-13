@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
-import { Flag } from 'flag';
+import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import SubHeading from 'components/SubHeading';
 import Link from 'components/Link';
 import Text from 'components/Text';
-import Button from 'components/Button';
+import { COLOR, SPACE } from 'config';
 
-import obelisk from './obelisk.jpg';
+import obelisk from './obelisk.png';
 
 const Graphic = styled.img.attrs({
   src: obelisk,
@@ -19,46 +20,42 @@ const Graphic = styled.img.attrs({
   display: block;
 `;
 
-const Strong = styled.strong`
-  display: inline-block;
-  font-family: SkycoinSansBold;
-  margin-right: 0.5ch;
+const Wrapper = styled.div`
+  // padding: ${rem(SPACE[12])} 0;
+  background: ${COLOR.lightGrey};
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 export default () => (
-  <div>
+  <Wrapper>
     <Container>
       <Flex py={[7, 8]} align="center">
-        <Box width={[1 / 1, 2 / 3]}>
-          <Link href="https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/" target="_blank">
-            <Heading heavy as="h2" my={[4, 5]} fontSize={[5, 6]} color="black">
+        <Box width={[1 / 1, 3 / 5]} mr={[4, 6]}>
+          <StyledLink href="https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/" target="_blank">
+            <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="black">
               <FormattedMessage id="home.network.heading" />
             </Heading>
-          </Link>
-          <Text fontSize={[3, 3, 4]} mb={0} color="black" heavy>
-            <Strong><FormattedMessage id="home.network.emphasis" /></Strong>
+            <SubHeading fontSize={2}>
+              <FormattedMessage id="home.network.description" />
+            </SubHeading>
+          </StyledLink>
+          <Text fontSize={2} mb={0} color="black">
             <FormattedMessage id="home.network.body" />
           </Text>
-          <Button mt={4} to="/whitepapers" color="white" bg="base" big fontSize={[1, 3]}>
-            <FormattedMessage id="home.about.whitepaper" />
-          </Button>
-
-          <Flag
-            name="network"
-            render={() => (
-              <Text fontSize={[3, 3, 4]} mb={0} heavy color="base">
-                <Link href="infographics.html">
-                  <FormattedMessage id="home.network.link" />
-                </Link>
-              </Text>
-            )}
-          />
+          <Text mt={4} color="base" big fontSize={2}>
+            <StyledLink to="/whitepapers">
+              <FormattedMessage id="home.about.whitepaper" />
+            </StyledLink>
+          </Text>
         </Box>
 
-        <Box width={[0, 1 / 3]} ml={[0, 4]}>
+        <Box width={[0, 2 / 5]}>
           <Graphic />
         </Box>
       </Flex>
     </Container>
-  </div>
+  </Wrapper>
 );

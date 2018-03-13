@@ -7,6 +7,8 @@ export const COLORS = palx('#0072FF');
 export const COLOR = {
   base: '#0072FF',
   dark: '#101F34',
+  lightGrey: '#F2F5FA',
+  textLight: '#B6C5D6',
 };
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 28, 36, 40];

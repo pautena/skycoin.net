@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
+import { rem } from 'polished';
 
 import Button from 'components/Button';
 import Buy from 'components/Buy';
 import Heading from 'components/Heading';
 import { Flex, Box } from 'grid-styled';
 
-import { FONT_FAMILIES, COLOR, SPACE } from 'config';
+import { FONT_FAMILIES, COLOR, SPACE, FONT_SIZES } from 'config';
 
 const Paragraph = styled.p`
-  font-size: 1.125em;
+  font-size: ${rem(FONT_SIZES[3])};
   color: #ffffff;
   font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
@@ -21,7 +22,8 @@ const Paragraph = styled.p`
 
 const Intro = styled.div`
   background-color: ${COLOR.dark};
-  padding: ${SPACE[5]}px;
+  padding: ${rem(SPACE[5])} ${rem(SPACE[7])} ${rem(SPACE[5])} ${rem(SPACE[4])};
+  margin-left: -${rem(SPACE[4])};
 `;
 
 const Introduction = () => (
