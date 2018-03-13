@@ -7,7 +7,7 @@ import Link from 'components/Link';
 import media from 'utils/media';
 import { COLORS, FONT_FAMILIES, FONT_SIZES, SPACE, BORDER_RADIUS, BOX_SHADOWS } from 'config';
 
-export default styled(Link)`
+const Button = styled(Link)`
   display: inline-block;
   border: 1px solid transparent;
   cursor: pointer;
@@ -19,9 +19,10 @@ export default styled(Link)`
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
   box-shadow: ${BOX_SHADOWS.base};
   font-family: ${FONT_FAMILIES.sansBold};
-  font-size: ${rem(FONT_SIZES[3])};
+  font-size: ${rem(FONT_SIZES[2])};
   padding: ${rem(SPACE[3])} ${rem(SPACE[6])};
   transition: 150ms ease-in-out;
+  text-transform: ${props => (props.uppercase ? 'uppercase' : 'none')};
 
   ${fontSize}
   ${color}
@@ -62,3 +63,9 @@ export default styled(Link)`
     padding: ${rem(SPACE[4])} ${rem(SPACE[7])};
   `}
 `;
+
+Button.defaultProps = {
+  uppercase: true,
+};
+
+export default Button;
