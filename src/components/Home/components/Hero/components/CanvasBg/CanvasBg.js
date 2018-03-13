@@ -6,16 +6,12 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 
 const Wrapper = styled.div`
-  background-color: ${COLOR.dark};
-  position: relative;
-  min-height: 33rem;
-  height: auto;
   position: absolute;
   top: 0;
-
-  ${media.sm.css`
-    height: 40rem;
-  `}
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 100%;
+  overflow: hidden;
 `;
 
 const Canvas = styled.canvas`
