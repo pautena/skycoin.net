@@ -148,6 +148,10 @@ export default {
       subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep. | ko',
       link: 'Become a node | ko',
     },
+    press: {
+      heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ko',
+      body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | ko',
+    },
     roadmap: {
       heading: '로드맵',
       blurb: 'GitHub에 방문하여 팔로우 또는 스카이코인의 개발 진행에 도움을 주세요. 우리는 오류 수정, 디자인 그리고 개발 관련 바운티 캠페인을 얼마 후에 개최할 예정입니다.',

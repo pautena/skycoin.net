@@ -17,7 +17,7 @@ import About from './components/About';
 import Nav from './components/Hero/components/Nav';
 import Network from './components/Network';
 import Miner from './components/Miner';
-import Logos from './components/Logos';
+import Press from './components/Press';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -39,6 +39,7 @@ const Home = ({ intl }) => (
     </Helmet>
 
     <Hero />
+    <Press />
     {eventInProgress && <DistributionEvent />}
     {/*<About>*/}
       {/*<Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>*/}
@@ -73,7 +74,6 @@ const Home = ({ intl }) => (
       {/*<Nav />*/}
     {/*</About>*/}
     <Network />
-    {/*<Logos />*/}
     {/*<GetStarted />*/}
     {/*<Footer />*/}
   </div>

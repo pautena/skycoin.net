@@ -14,7 +14,7 @@ import Announcement from './components/Announcement';
 const Wrapper = styled.div`
   background: ${COLOR.dark};
   position: relative;
-  min-height: 33rem;
+  min-height: 56rem;
   height: auto;
 
   ${media.sm.css`
@@ -32,11 +32,11 @@ const Hero = () => (
   <Wrapper>
     <CanvasBg />
 
-    <StyledFlex column justify="space-between">
+    <StyledFlex column justify="flex-start">
       <Box>
         <Header white />
       </Box>
-      <Box>
+      <Box mt={8}>
         <Container>
           <Flex row wrap align="center">
             <Box width={[1 / 1]}>

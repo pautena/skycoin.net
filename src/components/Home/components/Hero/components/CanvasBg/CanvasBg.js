@@ -5,7 +5,7 @@ import { COLOR } from 'config';
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   max-height: 100%;

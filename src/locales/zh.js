@@ -148,6 +148,10 @@ export default {
       subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep. | zh',
       link: 'Become a node | zh',
     },
+    press: {
+      heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | zh',
+      body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | zh',
+    },
     roadmap: {
       heading: '路线图',
       blurb: '可以在Github上跟进开发进程。我们即将启动奖励机制，以便奖励那些提供漏洞修复、设计、或其他工作的社区成员。',

@@ -7,6 +7,7 @@ export const COLORS = palx('#0072FF');
 export const COLOR = {
   base: '#0072FF',
   dark: '#101F34',
+  white: '#fff',
   lightGrey: '#F2F5FA',
   textLight: '#B6C5D6',
 };

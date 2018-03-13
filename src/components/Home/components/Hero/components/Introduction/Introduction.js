@@ -12,7 +12,7 @@ import { FONT_FAMILIES, COLOR, SPACE, FONT_SIZES } from 'config';
 
 const Paragraph = styled.p`
   font-size: ${rem(FONT_SIZES[3])};
-  color: #ffffff;
+  color: ${COLOR.white};
   font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
   line-height: 1.5rem;
