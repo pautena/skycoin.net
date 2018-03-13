@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
+import PropTypes from 'prop-types';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
 
-import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
+import { COLOR, SPACE } from 'config';
 import { rem } from 'polished';
 
 import * as images from './images';
@@ -57,6 +58,14 @@ const InfoItem = ({ name }) => (
     </div>
   </Flex>
 );
+
+InfoItem.propTypes = {
+  name: PropTypes.string,
+};
+
+InfoItem.defaultProps = {
+  name: ecosystemItems[0],
+};
 
 const Press = () => (
   <Wrapper pt={[10, 13]} pb={[7, 8]}>

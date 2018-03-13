@@ -9,13 +9,14 @@ import Heading from 'components/Heading';
 import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
 import { rem } from 'polished';
 
-import award from './award.png';
+import award from './images/award.png';
+
 /* eslint-disable global-require */
 const logos = [
-  require('./logo-blockchain.png'),
-  require('./logo-forbes.png'),
-  require('./logo-cointelegraph.png'),
-  require('./logo-coinagenda.png'),
+  require('./images/logo-blockchain.png'),
+  require('./images/logo-forbes.png'),
+  require('./images/logo-cointelegraph.png'),
+  require('./images/logo-coinagenda.png'),
 ];
 /* eslint-enable global-require */
 
@@ -34,9 +35,7 @@ const Logo = styled.img.attrs({
   src: props => props.src,
 })`
   display: block;
-  // width: 100%;
 `;
-
 
 const Paragraph = styled.p`
   font-size: ${rem(FONT_SIZES[2])};
