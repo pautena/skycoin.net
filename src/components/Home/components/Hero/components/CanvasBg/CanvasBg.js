@@ -24,11 +24,27 @@ const Canvas = styled.canvas`
 `;
 
 class CanvasBg extends React.Component {
+  componentDidMount = () => {
+    const waitForAnimationInit = () => {
+      if (window.initialized) {
+        window.startAnimation();
+      }
+      else {
+        setTimeout(() => {
+          waitForAnimationInit();
+        }, 500);
+      }
+    };
 
+    waitForAnimationInit();
+  }
+  shouldComponentUpdate = () => {
+    return false;
+  }
   render() {
     return (
       <Wrapper>
-        <Canvas ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
+        <Canvas id="bgCanvas" ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
       </Wrapper>
     );
   }
