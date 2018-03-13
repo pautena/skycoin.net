@@ -18,6 +18,7 @@ import Nav from './components/Hero/components/Nav';
 import Network from './components/Network';
 import Miner from './components/Miner';
 import Press from './components/Press';
+import Ecosystem from './components/Ecosystem';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -74,6 +75,7 @@ const Home = ({ intl }) => (
       {/*<Nav />*/}
     {/*</About>*/}
     <Network />
+    <Ecosystem />
     {/*<GetStarted />*/}
     {/*<Footer />*/}
   </div>

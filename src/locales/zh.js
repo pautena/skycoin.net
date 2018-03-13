@@ -152,6 +152,70 @@ export default {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | zh',
       body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | zh',
     },
+    ecosystem: {
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | zh',
+      subheading: 'Skycoin Ecosystem | zh',
+      fiber: {
+        title: 'Fiber | zh',
+        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together.  | zh',
+      },
+      obelisk: {
+        title: 'Obelisk | zh',
+        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date. | zh',
+      },
+      skycoin: {
+        title: 'Skycoin | zh',
+        text: 'The most powerful and complete cryptocurrency ever created. | zh',
+      },
+      coinHours: {
+        title: 'Coin Hours | zh',
+        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact. | zh',
+      },
+      coinJoin: {
+        title: 'Coin Join | zh',
+        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology. | zh',
+      },
+      skyledger: {
+        title: 'Skyledger | zh',
+        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology. | zh',
+      },
+      skywire: {
+        title: 'Skywire | zh',
+        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth. | zh',
+      },
+      skyminer: {
+        title: 'Skyminer | zh',
+        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep. | zh',
+      },
+      nodes: {
+        title: 'Nodes | zh',
+        text: 'Our community members, and anyone who processes bandwith on Skywire. | zh',
+      },
+      cx: {
+        title: 'CX | zh',
+        text: 'The most powerful programming language on the market. | zh',
+      },
+      cxo: {
+        title: 'CXO | zh',
+        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet. | zh',
+      },
+      kittyCash: {
+        title: 'Kitty Cash | zh',
+        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | zh',
+      },
+      skyVpn: {
+        title: 'SkyVPN | zh',
+        text: 'Decentralized Virtual Private Network running on Skywire. | zh',
+      },
+      skyMessenger: {
+        title: 'SkyMessenger | zh',
+        text: 'Decentralized Encrypted Messenger running on Skywire. | zh',
+      },
+      bbs: {
+        title: 'BBS | zh',
+        text: 'Decentralized Social Network running on Skywire. | zh',
+      },
+    },
     roadmap: {
       heading: '路线图',
       blurb: '可以在Github上跟进开发进程。我们即将启动奖励机制，以便奖励那些提供漏洞修复、设计、或其他工作的社区成员。',

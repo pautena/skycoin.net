@@ -152,6 +152,70 @@ export default {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ko',
       body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | ko',
     },
+    ecosystem: {
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | ko',
+      subheading: 'Skycoin Ecosystem | ko',
+      fiber: {
+        title: 'Fiber | ko',
+        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together.  | ko',
+      },
+      obelisk: {
+        title: 'Obelisk | ko',
+        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date. | ko',
+      },
+      skycoin: {
+        title: 'Skycoin | ko',
+        text: 'The most powerful and complete cryptocurrency ever created. | ko',
+      },
+      coinHours: {
+        title: 'Coin Hours | ko',
+        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact. | ko',
+      },
+      coinJoin: {
+        title: 'Coin Join | ko',
+        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology. | ko',
+      },
+      skyledger: {
+        title: 'Skyledger | ko',
+        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology. | ko',
+      },
+      skywire: {
+        title: 'Skywire | ko',
+        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth. | ko',
+      },
+      skyminer: {
+        title: 'Skyminer | ko',
+        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep. | ko',
+      },
+      nodes: {
+        title: 'Nodes | ko',
+        text: 'Our community members, and anyone who processes bandwith on Skywire. | ko',
+      },
+      cx: {
+        title: 'CX | ko',
+        text: 'The most powerful programming language on the market. | ko',
+      },
+      cxo: {
+        title: 'CXO | ko',
+        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet. | ko',
+      },
+      kittyCash: {
+        title: 'Kitty Cash | ko',
+        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | ko',
+      },
+      skyVpn: {
+        title: 'SkyVPN | ko',
+        text: 'Decentralized Virtual Private Network running on Skywire. | ko',
+      },
+      skyMessenger: {
+        title: 'SkyMessenger | ko',
+        text: 'Decentralized Encrypted Messenger running on Skywire. | ko',
+      },
+      bbs: {
+        title: 'BBS | ko',
+        text: 'Decentralized Social Network running on Skywire. | ko',
+      },
+    },
     roadmap: {
       heading: '로드맵',
       blurb: 'GitHub에 방문하여 팔로우 또는 스카이코인의 개발 진행에 도움을 주세요. 우리는 오류 수정, 디자인 그리고 개발 관련 바운티 캠페인을 얼마 후에 개최할 예정입니다.',
