@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
-import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Link from 'components/Link';
 import Text from 'components/Text';
-import { COLOR, SPACE } from 'config';
+import { COLOR } from 'config';
 
 import obelisk from './obelisk.png';
 
@@ -21,7 +20,6 @@ const Graphic = styled.img.attrs({
 `;
 
 const Wrapper = styled.div`
-  // padding: ${rem(SPACE[12])} 0;
   background: ${COLOR.lightGrey};
 `;
 
@@ -39,7 +37,7 @@ export default () => (
               <FormattedMessage id="home.network.heading" />
             </Heading>
             <SubHeading fontSize={2}>
-              <FormattedMessage id="home.network.description" />
+              <FormattedMessage id="home.network.subheading" />
             </SubHeading>
           </StyledLink>
           <Text fontSize={2} mb={0} color="black">

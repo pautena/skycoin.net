@@ -10,7 +10,7 @@ export const COLOR = {
   lightGrey: '#F2F5FA',
   textLight: '#B6C5D6',
 };
-export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
+export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 28, 36, 40];
 
 export const BREAKPOINTS = {
@@ -36,6 +36,7 @@ export const BORDER_RADIUS = {
 export const BOX_SHADOWS = {
   base: '0 1px 2px rgba(0, 0, 0, 0.25)',
   hover: '0 1px 4px rgba(0, 0, 0, 0.25)',
+  box: '0 2px 20px #DFE9F4',
 };
 
 export const FLAGS = {

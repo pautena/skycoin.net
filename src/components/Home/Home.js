@@ -65,7 +65,7 @@ const Home = ({ intl }) => (
         {/*</Label>*/}
       {/*</StyledLink>*/}
     {/*</About>*/}
-    {/*<Miner />*/}
+    <Miner />
     {/*<About>*/}
       {/*<Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>*/}
         {/*<FormattedMessage id="home.technology.header" />*/}

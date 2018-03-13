@@ -140,15 +140,13 @@ export default {
     network: {
       label: '더 보기',
       heading: 'Obelisk',
-      description: '스카이코인 합의 알고리즘',
+      subheading: '스카이코인 합의 알고리즘',
       body: 'Bitcoin is no longer decentralized. It is completely controlled by three mining pools. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s original vision of truly peer-to-peer cash.',
-      link: '네트워크 합의에 대해 알아보기',
     },
     miner: {
-      label: 'Explore the First Generation of Skyminers',
-      heading: '스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어',
-      subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
-      mailingList: 'Sign up to be notified about our next release of miners',
+      heading: 'Explore Skyminer | ko',
+      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep. | ko',
+      link: 'Become a node | ko',
     },
     roadmap: {
       heading: '로드맵',

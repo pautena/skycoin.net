@@ -140,15 +140,13 @@ export default {
     network: {
       label: 'Digging deeper',
       heading: 'Obelisk',
-      description: 'The Skycoin Consensus Algorithm',
+      subheading: 'The Skycoin Consensus Algorithm',
       body: 'Bitcoin is no longer decentralized. It is completely controlled by three mining pools. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s original vision of truly peer-to-peer cash.',
-      link: 'Learn about Network Consensus',
     },
     miner: {
-      label: 'Explore the First Generation of Skyminers',
-      heading: 'Skywire Miner: hardware for the new internet',
-      subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
-      mailingList: 'Sign up to be notified about our next release of miners',
+      heading: 'Explore Skyminer',
+      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep.',
+      link: 'Become a node',
     },
     roadmap: {
       heading: 'Roadmap',
