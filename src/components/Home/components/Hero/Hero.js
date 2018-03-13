@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { Flag } from 'flag';
 
-import { COLORS } from 'config';
+import { COLOR } from 'config';
 import media from 'utils/media';
 import Container from 'components/Container';
 import Header from 'components/Header';
-import Map from './components/Map';
+import CanvasBg from './components/CanvasBg';
 import Introduction from './components/Introduction';
 import Announcement from './components/Announcement';
 
 const Wrapper = styled.div`
-  background-image: linear-gradient(-110deg, ${COLORS.base}, ${COLORS.blue[5]});
+  background: ${COLOR.dark};
   position: relative;
   min-height: 33rem;
   height: auto;
@@ -23,13 +23,14 @@ const Wrapper = styled.div`
 `;
 
 const StyledFlex = styled(Flex)`
+  position: relative;
   height: 100%;
   z-index: 1;
 `;
 
 const Hero = () => (
   <Wrapper>
-    <Map />
+    <CanvasBg />
 
     <StyledFlex column justify="space-between">
       <Box>

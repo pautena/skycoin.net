@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   align-items: center;
 
   ${media.sm.css`
-    font-size: ${rem(FONT_SIZES[3])};
+    font-size: ${rem(FONT_SIZES[2])};
     padding-top: 0;
     text-align: right;
   `}
@@ -43,7 +43,7 @@ const StyledLink = styled(Link)`
 
   ${media.md.css`
     margin-left: 0;
-    margin-right: ${rem(SPACE[7])};
+    margin-right: ${rem(SPACE[9])};
   `}
 `;
 

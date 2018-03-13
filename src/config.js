@@ -4,6 +4,10 @@ import moment from 'moment';
 export const DISTRIBUTION_START = moment('2017-08-08T12:00:00.000Z');
 export const DISTRIBUTION_END = moment('2017-08-31T12:00:00.000Z');
 export const COLORS = palx('#0072FF');
+export const COLOR = {
+  base: '#0072FF',
+  dark: '#101F34',
+};
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 28, 36, 40];
 

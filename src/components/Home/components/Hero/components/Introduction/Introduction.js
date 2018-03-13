@@ -7,7 +7,7 @@ import Buy from 'components/Buy';
 import Heading from 'components/Heading';
 import { Flex, Box } from 'grid-styled';
 
-import { FONT_FAMILIES } from 'config';
+import { FONT_FAMILIES, COLOR, SPACE } from 'config';
 
 const Paragraph = styled.p`
   font-size: 1.125em;
@@ -19,16 +19,24 @@ const Paragraph = styled.p`
   text-transform: none;
 `;
 
+const Intro = styled.div`
+  background-color: ${COLOR.dark};
+  padding: ${SPACE[5]}px;
+`;
+
 const Introduction = () => (
-  <div>
-    <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
-      <FormattedMessage id="home.hero.heading" values={{ break: <br /> }} />
-    </Heading>
-    <Paragraph>
-      <FormattedMessage id="home.hero.paragraph" />
-    </Paragraph>
     <Flex wrap row pt={6}>
-      <Box width={[1 / 2, 1, 1 / 2]} pr={[1, 0, 4]} mb={[8, 4, 4]}>
+      <Box width={[1, 1, 2 / 3]} pr={[1, 0, 4]} mb={[8, 4, 4]}>
+        <Intro>
+          <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
+            <FormattedMessage id="home.hero.heading" values={{ break: <br /> }} />
+          </Heading>
+          <Paragraph>
+            <FormattedMessage id="home.hero.paragraph" />
+          </Paragraph>
+        </Intro>
+      </Box>
+      <Box width={[1, 1, 1 / 3]} pl={[1, 0, 4]}>
         <Buy
           color="blue.5"
           bg="white"
@@ -38,8 +46,6 @@ const Introduction = () => (
         >
           <FormattedMessage id="home.hero.buy" />
         </Buy>
-      </Box>
-      <Box width={[1 / 2, 1, 1 / 2]} pl={[1, 0, 4]}>
         <Button
           to="downloads"
           color="blue.5"
@@ -52,7 +58,6 @@ const Introduction = () => (
         </Button>
       </Box>
     </Flex>
-  </div>
 );
 
 export default Introduction;

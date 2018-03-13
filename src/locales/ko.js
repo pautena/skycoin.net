@@ -75,8 +75,8 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
+      heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | ko',
+      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | ko',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',
