@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -35,6 +36,14 @@ const GraphicItem = ({ i }) => (
     <Graphic src={miners[i]} />
   </Box>
 );
+
+GraphicItem.propTypes = {
+  i: PropTypes.number,
+};
+
+GraphicItem.defaultProps = {
+  i: 0,
+};
 
 const Miner = () => (
   <Box my={13}>

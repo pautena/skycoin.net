@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
 import { rem } from 'polished';
@@ -37,15 +38,26 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const SocialItem = ({ item }) => (
-  <StyledLink to={item.to}>
-    <img src={item.icon} alt="" />
+const SocialItem = ({ to, icon }) => (
+  <StyledLink to={to}>
+    <img src={icon} alt="" />
   </StyledLink>
 );
 
+
+SocialItem.propTypes = {
+  to: PropTypes.string,
+  icon: PropTypes.node,
+};
+
+SocialItem.defaultProps = {
+  to: socialLinks[0].to,
+  icon: socialLinks[0].icon,
+};
+
 const Social = () => (
   <Wrapper align="center" justify="space-between" wrap py={[4, 6, 8]}>
-    {socialLinks.map((item, i) => <SocialItem item={item} key={i} />)}
+    {socialLinks.map((item, i) => <SocialItem to={item.to} icon={item.icon} key={i} />)}
   </Wrapper>
 );
 

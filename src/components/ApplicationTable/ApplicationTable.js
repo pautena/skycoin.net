@@ -50,7 +50,7 @@ const Row = styled.tr`
   background-color: ${props => (props.light ? '#F4F9FF' : 'white')};
 
   border-bottom: 1px solid ${props => (props.light ? '#F4F9FF' : 'white')};
-  border-top: ${props => props.isFirst ? '2px' : '1px'} solid ${props => (props.light ? '#F4F9FF' : 'white')};
+  border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? '#F4F9FF' : 'white')};
 `;
 
 const A = styled.a`

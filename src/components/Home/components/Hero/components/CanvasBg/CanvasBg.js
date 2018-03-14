@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLOR } from 'config';
-
 const Wrapper = styled.div`
   position: absolute;
   top: 40px;
@@ -17,12 +15,11 @@ const Canvas = styled.canvas`
 `;
 
 class CanvasBg extends React.Component {
-  componentDidMount = () => {
+  componentDidMount() {
     const waitForAnimationInit = () => {
       if (window.initialized) {
         window.startAnimation();
-      }
-      else {
+      } else {
         setTimeout(() => {
           waitForAnimationInit();
         }, 500);
@@ -31,7 +28,7 @@ class CanvasBg extends React.Component {
 
     waitForAnimationInit();
   }
-  shouldComponentUpdate = () => {
+  shouldComponentUpdate() {
     return false;
   }
   render() {

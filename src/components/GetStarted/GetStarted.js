@@ -20,12 +20,6 @@ const Buttons = styled.div`
   margin: 0 auto;
 `;
 
-<Flex column align="center" width={[1, 1, 1 / 3]} pl={[1, 0, 4]} pt={4}>
-  <Buy color="white" bg="base" big width={'200px'} pill >
-    <FormattedMessage id="home.hero.buy" />
-  </Buy>
-</Flex>
-
 export default () => (
   <GetStarted>
     <Container>

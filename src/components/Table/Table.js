@@ -3,7 +3,7 @@ import { rem } from 'polished';
 import media from 'utils/media';
 
 import Text from 'components/Text';
-import { COLORS, SPACE } from 'config';
+import { COLORS } from 'config';
 
 export const TableWrapper = styled(Text).attrs({
   as: 'div',
