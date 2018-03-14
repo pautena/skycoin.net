@@ -1,14 +1,19 @@
 export default {
   header: {
     navigation: {
+      home: 'Home',
       distribution: '배포',
       distributionEvent: '배포 이벤트',
       whitepapers: '백서',
       downloads: '다운로드',
+      wallet: 'Wallet',
       explorer: '익스플로러',
+      ecosystem: 'Ecosystem',
       blog: '블로그',
       buy: '스카이코인 구매',
       team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
     },
   },
   footer: {

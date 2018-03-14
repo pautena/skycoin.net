@@ -1,14 +1,19 @@
 export default {
   header: {
     navigation: {
+      home: 'Home',
       distribution: '币分发',
       distributionEvent: 'Distribution event',
       whitepapers: '白皮书',
       downloads: '下载区',
+      wallet: 'Wallet',
       explorer: '区块浏览器',
+      ecosystem: 'Ecosystem',
       blog: '开发日志',
       buy: '购买天空币',
       team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
     },
   },
   footer: {

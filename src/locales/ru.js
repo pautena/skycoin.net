@@ -1,14 +1,19 @@
 export default {
   header: {
     navigation: {
+      home: 'Главная',
       distribution: 'Распространение',
       distributionEvent: 'Распространение',
       whitepapers: 'Документация',
       downloads: 'Загрузки',
+      wallet: 'Wallet',
       explorer: 'Обозреватель',
+      ecosystem: 'Экосистема',
       blog: 'Блог',
       buy: 'Купить Skycoin',
       team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
     },
   },
   footer: {

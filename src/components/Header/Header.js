@@ -19,8 +19,8 @@ const Header = ({ white, border }) => (
   <Wrapper border={border}>
     <Container>
       <Flex align="center" justify="space-between" wrap>
-        <Logo white={white} />
         <Navigation white={white} />
+        <Logo white={white} />
       </Flex>
     </Container>
   </Wrapper>

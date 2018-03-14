@@ -1,14 +1,19 @@
 export default {
   header: {
     navigation: {
+      home: 'Home',
       distribution: 'Distribution',
       distributionEvent: 'Distribution event',
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
+      wallet: 'Wallet',
       explorer: 'Explorer',
+      ecosystem: 'Ecosystem',
       blog: 'Blog',
       buy: 'Buy Skycoin',
       team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
     },
   },
   footer: {
