@@ -81,7 +81,7 @@ export default {
       community: 'Community',
       whitepapers: 'Whitepapers',
       wallet: {
-        get: 'Get Wallet',
+        get: 'Download Wallet',
         blurb: 'Skycoin is driving the new internet revolution.',
       },
     },
@@ -119,7 +119,7 @@ export default {
       heading: 'What is Skycoin?',
       lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
       paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
-      whitepaper: 'Whitepapers',
+      whitepaper: 'Whitepaper',
       speed: {
         heading: 'Speed',
         body: 'We built Skycoin to compete with credit cards and services like AliPay/Apple Pay. Transactions happen in seconds, not minutes.',

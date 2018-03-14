@@ -60,7 +60,7 @@ const Button = styled(Link)`
   `}
 
   ${props => props.big && media.sm.css`
-    padding: ${rem(SPACE[4])} ${rem(SPACE[7])};
+    padding: ${rem(SPACE[4])} ${rem(SPACE[4])};
   `}
 `;
 
