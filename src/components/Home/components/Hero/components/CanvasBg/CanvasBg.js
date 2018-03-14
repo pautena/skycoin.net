@@ -14,7 +14,6 @@ const Wrapper = styled.div`
 
 const Canvas = styled.canvas`
   display: block; 
-  background-color: ${COLOR.dark};
 `;
 
 class CanvasBg extends React.Component {
