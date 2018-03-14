@@ -17,7 +17,7 @@ const WhitepapersPage = ({ intl }) => (
         content={intl.formatMessage({ id: 'whitepapers.description' })}
       />
     </Helmet>
-    <Header secondary title="Whitepapers" />
+    <Header border />
 
     <Whitepapers />
 

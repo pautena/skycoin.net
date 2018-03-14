@@ -12,7 +12,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import media from 'utils/media';
-import { SPACE } from 'config';
+import { COLORS, SPACE } from 'config';
 import * as slides from './slides';
 
 const Slide = styled.img`
@@ -22,6 +22,7 @@ const Slide = styled.img`
 
 const Wrapper = styled.div`
   padding: ${rem(SPACE[5])} 0;
+  border-top: 2px solid ${COLORS.gray[1]};
 
   ${media.md.css`
     padding: ${rem(SPACE[7])} 0;
@@ -32,8 +33,12 @@ const Infographics = ({ intl }) => (
   <div>
     <Helmet>
       <title>{intl.formatMessage({ id: 'infographics.title' })}</title>
+      <meta
+        name="description"
+        content={intl.formatMessage({ id: 'infographics.description' })}
+      />
     </Helmet>
-    <Header secondary title="Infographics" />
+    <Header />
 
     <Wrapper>
       <Container>

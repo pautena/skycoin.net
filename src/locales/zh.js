@@ -1,15 +1,19 @@
 export default {
   header: {
     navigation: {
-      home: 'Technology',
-      roadmap: 'Roadmap',
+      home: 'Home',
       distribution: '币分发',
       distributionEvent: 'Distribution event',
       whitepapers: '白皮书',
       downloads: '下载区',
+      wallet: 'Wallet',
       explorer: '区块浏览器',
+      ecosystem: 'Ecosystem',
       blog: '开发日志',
       buy: '购买天空币',
+      team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
     },
   },
   footer: {
@@ -39,6 +43,7 @@ export default {
     instagram: 'Instagram',
     facebook: 'Facebook',
     discord: 'Discord',
+    youtube: 'Youtube',
   },
   buyBanner: {
     lead: '选择以下交易所购买天空币',
@@ -55,38 +60,28 @@ export default {
     home: '天空币首页',
   },
   architectureOverview: {
+    title: 'Architecture overview',
+    description: 'Architecture overview - components which make up the Skycoin ecosystem',
     heading: 'Architecture overview',
   },
   getStarted: {
     heading: '开始天空币之旅',
+    paragraph: '<p>True decentralization means no government can censor Skywire, no corporate interest can stop it.</p><p>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
     buy: '购买天空币',
     wallet: '下载钱包',
   },
   markets: {
+    title: 'Markets',
+    description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
-    steps: `
-      <h3>Buy Skycoin NOW in 3 easy steps:</h3>
-      <ol>
-        <li><p>Download <a href="/downloads">Skycoin wallet</a> and get address</p></li>
-        <li><p>Put your address in <a target="_blank" href="https://otc.skycoin.net/">otc.skycoin.net</a></p></li>
-        <li><p>Send bitcoin to the address to receive your skycoin instantly</p></li>
-      </ol>
-    `,
   },
   home: {
-    title: 'Skycoin - The third generation of cryptocurrency',
+    title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
-    architectureLink: 'View our full <span>Architecture Overview</span>',
-    logos: {
-      title: 'Partnerships & media',
-    },
-    exchanges: {
-      title: 'Exchanges',
-    },
     hero: {
-      heading: 'the next generation cryptocurrency.',
-      lead: 'we built a full-fledged technology ecosystem that works harmoniously together to create the first and only truly decentralized and democratic cryptocurrency.',
+      heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | zh',
+      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | zh',
       buy: '购买天空币',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -118,12 +113,17 @@ export default {
     },
     aboutSkywire: {
       heading: 'What is Skywire?',
-      lead: 'Skywire is the new internet.',
-      button: 'Read more',
+      lead: 'Skywire is the new internet. An incentivized mesh network poised to become the privacy protocol of the future.',
+      paragraph: 'Skywire’s goal is to make corporate internet service providers a thing of the past by giving the internet back to the people with its revolutionary privacy protocol. Peer-to-peer technology with a grassroots ethos, Skywire’s new networking protocol promotes net neutrality and sharing without blocking, slowdowns or censorship.',
+      button: 'Read More about Skywire, Powered by Skycoin',
+    },
+    technology: {
+      header: 'Skycoin Technology and Ecosystem:',
     },
     about: {
       heading: '什么是天空币?',
-      lead: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
+      lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
+      paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
       whitepaper: '白皮书',
       speed: {
         heading: '快速',
@@ -144,14 +144,87 @@ export default {
     },
     network: {
       label: '深入了解',
-      heading: 'Obelisk: The Skycoin Consensus Algorithm',
-      body: '中本聪的设计,原本是要通过去大量中心化的计算机来控制比特币网络。现如今，比特币网络完全被三家矿池控制，比特币无法再以去中心化自居。天空币的共识算法才可以实现真正的区块链共识去中心化的设计。',
-      link: '深入了解网络共识',
+      heading: 'Obelisk',
+      subheading: 'The Skycoin Consensus Algorithm',
+      body: 'Bitcoin is no longer decentralized. It is completely controlled by three mining pools. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s original vision of truly peer-to-peer cash.',
     },
     miner: {
-      label: 'Read more',
-      heading: '天空链矿机：驱动下一代互联网的硬件',
-      subscribe: 'Sign up for the Skycoin mailing list for Skywire Miner updates',
+      heading: 'Explore Skyminer | zh',
+      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep. | zh',
+      link: 'Become a node | zh',
+    },
+    press: {
+      heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | zh',
+      body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | zh',
+    },
+    ecosystem: {
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | zh',
+      subheading: 'Skycoin Ecosystem | zh',
+      fiber: {
+        title: 'Fiber | zh',
+        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together.  | zh',
+      },
+      obelisk: {
+        title: 'Obelisk | zh',
+        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date. | zh',
+      },
+      skycoin: {
+        title: 'Skycoin | zh',
+        text: 'The most powerful and complete cryptocurrency ever created. | zh',
+      },
+      coinHours: {
+        title: 'Coin Hours | zh',
+        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact. | zh',
+      },
+      coinJoin: {
+        title: 'Coin Join | zh',
+        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology. | zh',
+      },
+      skyledger: {
+        title: 'Skyledger | zh',
+        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology. | zh',
+      },
+      skywire: {
+        title: 'Skywire | zh',
+        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth. | zh',
+      },
+      skyminer: {
+        title: 'Skyminer | zh',
+        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep. | zh',
+      },
+      nodes: {
+        title: 'Nodes | zh',
+        text: 'Our community members, and anyone who processes bandwith on Skywire. | zh',
+      },
+      cx: {
+        title: 'CX | zh',
+        text: 'The most powerful programming language on the market. | zh',
+      },
+      cxo: {
+        title: 'CXO | zh',
+        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet. | zh',
+      },
+      kittyCash: {
+        title: 'Kitty Cash | zh',
+        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | zh',
+      },
+      skyVpn: {
+        title: 'SkyVPN | zh',
+        text: 'Decentralized Virtual Private Network running on Skywire. | zh',
+      },
+      skyMessenger: {
+        title: 'SkyMessenger | zh',
+        text: 'Decentralized Encrypted Messenger running on Skywire. | zh',
+      },
+      bbs: {
+        title: 'BBS | zh',
+        text: 'Decentralized Social Network running on Skywire. | zh',
+      },
+    },
+    signup: {
+      heading: 'Free Skycoin. No Joke. Check It Out. | zh',
+      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | zh',
+      button: 'Sign Up | zh',
     },
     roadmap: {
       heading: '路线图',
@@ -185,23 +258,28 @@ export default {
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
-      withElectron: 'Installer (recommended)',
-      withoutElectron: 'Portable (advanced)',
+      withElectron: 'Installer',
+      withElectronComment: ' (recommended)',
+      withoutElectron: 'Portable',
+      withoutElectronComment: ' (advanced)',
       download: '下载',
       torrent: '种子',
     },
     bbs: {
       heading: 'Download Skycoin BBS',
       lead: 'Skycoin BBS is a next generation decentralized social network built with the Skycoin Ecosystem.',
-      link: 'Find the latest binaries on Github.',
-      thin: 'Access a BBS thin client.',
+      githublink: 'Find the latest binaries on Github.',
+      thinclient: 'Access a BBS thin client.',
     },
     whitepapers: {
-      heading: 'Download Skycoin Whitepapers',
+      heading: 'Download Skycoin Consensus Whitepapers',
       download: '下载',
     },
     assets: {
       heading: 'Download Skycoin Branding Guide',
+    },
+    skywire: {
+      heading: 'Skywire',
     },
     roadmap: {
       heading: 'Roadmap',
@@ -209,6 +287,7 @@ export default {
   },
   infographics: {
     title: '信息图表',
+    description: 'Graphical overview',
   },
   distribution: {
     title: '天空币分发活动',
@@ -230,116 +309,5 @@ export default {
   },
   roadmapPage: {
     heading: 'Development roadmap',
-  },
-  skycoinPage: {
-    about: {
-      title: 'Skycoin is the only cryptocurrency backed by a commodity in high demand: bandwidth.',
-      listTitle: 'Skycoin <span>fixes all of the major flaws</span> and centralization tendencies associated with other cryptocurrencies.',
-      listDescription: 'Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
-      obeliskTitle: 'Obelisk Consensus Algorithm',
-      obeliskText: 'Seven years of research went into our consensus algorithm, Obelisk, which uses a web-of-trust mechanism to to allow for collective decision making, resulting in true decentralization of power',
-      skywireTitle: 'Designed for Skywire',
-      skywireText: 'Our incentivized mesh network, Skywire, is the backbone of Skycoin. By becoming a node on our mesh net, you will earn passive income.',
-    },
-    benefits: {
-      title: 'Benefits of our <span>third generation</span> cryptocurrency.',
-      1: {
-        title: 'Fast',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      2: {
-        title: 'Free transactions',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      3: {
-        title: 'Privacy',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      4: {
-        title: 'Security',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-        list: {
-          1: 'Encrypted by default',
-          2: 'Feature here',
-          3: 'Feature here',
-        },
-      },
-      5: {
-        title: 'Eco-friendly',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-    },
-  },
-  skywirePage: {
-    form: {
-      title: 'Stay informed on further Skywire releases',
-      checkbox: 'I’m interested in the Skywire Miner',
-      button: 'Sign up',
-    },
-    sell: {
-      checkbox: 'I’m interested in the Skywire Miner',
-      soldout: 'Sold out!',
-      title: 'Start <span>earning money</span> today.',
-      description: 'Buy our Skywire Miner or install our software and become a major provider in our emerging network.',
-      listTitle: 'Skywire Miner',
-      listDescription: 'The backbone of this new network is the Skywire miner, which is custom built for power and performance. The Skywire Miner is used to forward traffic and provide various network resources, in return for skycoin.',
-      listName: 'Specifications',
-      list: {
-        1: '8 CPU boards',
-        2: '2 GB of RAM per board',
-        3: '4 CPU cores per board',
-        4: '64 GB of storage per board',
-        5: '64-bit Linux (Alpine Linux)',
-        6: 'Gigabit ethernet, 8+1 port switch',
-      },
-    },
-    about: {
-      title: 'Earn money providing open and free internet access to the people to whom it belongs.',
-      button: 'Profit Calculator',
-      listTitle: 'The Skywire economy is <span>powered by Skycoin</span>, where you earn money for operating the network.',
-      listDescription: 'Imagine an internet that gives you total privacy and control of your data, one that lets you do everything you do today and more — except instead of paying for this incredible resource, you earn income supporting it.',
-      list: {
-        1: {
-          name: 'Install Skywire software',
-          text: 'You don’t need any special hardware to install our software and act as a node on our incentivised mesh network, Skywire.',
-        },
-        2: {
-          name: 'Serve content',
-          text: 'Skywire lets you act as your own ISP, providing free, private, and secure access to the open and free internet to everyone in your vicinity.',
-        },
-        3: {
-          name: 'Earn a passive income',
-          text: 'You will maximize your profit in two ways: by having high bandwidth in high-traffic areas, or by serving highly sought-after content.',
-        },
-      },
-    },
-    benefits: {
-      title: 'Benefits of the <span>new internet</span>.',
-      1: {
-        title: 'Security',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-        list: {
-          1: 'Encrypted by default',
-          2: 'Feature here',
-          3: 'Feature here',
-        },
-      },
-      2: {
-        title: 'Privacy',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      3: {
-        title: 'Fast',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      4: {
-        title: 'Neutral and uncensored',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-      5: {
-        title: 'Free',
-        text: 'Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, eiusmod tempor incididunt ut labore.',
-      },
-    },
   },
 };

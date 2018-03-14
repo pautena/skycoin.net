@@ -8,6 +8,9 @@ import Link from 'components/Link';
 
 import LogoCryptopia from './images/Cryptopia-Light2x.png';
 import Logoc2cx from './images/c2cx-logo.png';
+import Logo5iquant from './images/5iquant-logo.png';
+import LogoCoin918 from './images/coin918-logo.png';
+import LogoOpenledger from './images/openledger-logo.png';
 
 const Wrap = styled.div`
   margin: ${rem(SPACE[5])} 0;
@@ -36,20 +39,25 @@ const Logo = styled.img`
 `;
 
 const Item = styled(Link)`
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[3])};
   color: ${COLORS.blue[5]};
   text-decoration: none;
-  font-weight: 700;
+
   &:hover {
     text-decoration: underline;
   }
 `;
 
-const ExhangeRate = styled.span`
-  font-family: ${FONT_FAMILIES.sans};
+const NotLinked = styled.span`
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[3])};
-  font-weight: 700;
+  color: ${COLORS.gray[4]};
+`;
+
+const ExhangeRate = styled.span`
+  font-family: ${FONT_FAMILIES.sansBold};
+  font-size: ${rem(FONT_SIZES[3])};
 `;
 
 const Note = styled.span`
@@ -86,27 +94,75 @@ const MarketsList = () => (
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        C2CX <Note>(<a href="https://www.c2cx.com/in/trade_usdt_sky" target="_blank" rel="noopener noreferrer">Only supports USDT ERC20 token.</a>)</Note>
+        C2CX
       </Heading>
       <Logo src={Logoc2cx} alt="C2CX LOGO" />
     </Title>
     <List>
       <Row>
-        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/DRG</Item> <ExhangeRate>(100 CNY = 1 DRG)</ExhangeRate>
+        <Item href="https://www.c2cx.com/in/trade_usdt_sky" target="_blank">SKY/USDT</Item>
       </Row>
       <Row>
         <Item href="https://www.c2cx.com/in/trade_btc_sky" target="_blank">SKY/BTC</Item>
       </Row>
+      <Row>
+        <Item href="https://www.c2cx.com/in/trade_sky" target="_blank">SKY/DRG</Item> <ExhangeRate>(100 CNY = 1 DRG)</ExhangeRate>
+      </Row>
     </List>
     <Title>
       <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
-        Cryptopia <Note>(experiencing issues due to heavy volume)</Note>
+        5iquant
+      </Heading>
+      <Logo src={Logo5iquant} alt="5iquant logo" />
+    </Title>
+    <List>
+      <Row>
+        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_BTC" target="_blank">SKY/BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://www.5iquant.org/iqtexTrade/tradePair/SKY_IQT" target="_blank">SKY/IQT</Item>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        Cryptopia <Note>(Cryptopia is not processing deposits, do not deposit SKY there)</Note>
       </Heading>
       <Logo src={LogoCryptopia} alt="Cryptopia" />
     </Title>
     <List>
       <Row>
-        <Item href="https://www.cryptopia.co.nz/Exchange/?market=SKY_BTC">SKY/BTC</Item>
+        <NotLinked>SKY/BTC</NotLinked>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        coin918
+      </Heading>
+      <Logo src={LogoCoin918} alt="Coin918 logo" />
+    </Title>
+    <List>
+      <Row>
+        <Item href="https://coin918.com/trade/index/market/sky_usd/" target="_blank">SKY/USD</Item>
+      </Row>
+    </List>
+    <Title>
+      <Heading mb={0} heavy as="h2" fontSize={[5, 6]} color="black">
+        Openledger
+      </Heading>
+      <Logo src={LogoOpenledger} alt="Openledger logo" />
+    </Title>
+    <List>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_USD" target="_blank">OPEN.SKY/USD</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_OPEN.BTC" target="_blank">OPEN.SKY/OPEN.BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_BTS" target="_blank">OPEN.SKY/BTC</Item>
+      </Row>
+      <Row>
+        <Item href="https://openledger.io/market/OPEN.SKY_OBITS" target="_blank">OPEN.SKY/OBITS</Item>
       </Row>
     </List>
     <Heading heavy as="h2" fontSize={[5, 6]} color="black" my={[4, 6]}>

@@ -7,12 +7,11 @@ export default styled.span`
   background-color: ${COLORS.blue[5]};
   border-radius: ${BORDER_RADIUS.base};
   box-shadow: ${BOX_SHADOWS.base};
-  font-family: ${FONT_FAMILIES.sans};
+  font-family: ${FONT_FAMILIES.sansBold};
   font-size: ${rem(FONT_SIZES[0])};
   padding: ${rem(SPACE[2])} ${rem(SPACE[3])};
 
   color: white;
   display: inline-block;
-  font-weight: 600;
   text-transform: uppercase;
 `;

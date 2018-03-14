@@ -1,38 +1,48 @@
 import React from 'react';
-import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
-import { COLORS_NEW } from 'config';
+import { Flex, Box } from 'grid-styled';
 
 import Container from 'components/Container';
+import Navigation from 'components/Navigation';
 import Text from 'components/Text';
 import Logo from 'components/Logo';
+import { COLOR } from 'config';
 
 import Languages from './components/Languages';
-import List from './components/List';
-import content from './content';
+import Email from './components/Email';
+import Social from './components/Social';
 
-const Footer = styled.div`
-  background: ${COLORS_NEW.black};
+const COPYRIGHT = '© Skycoin.net 2018';
+
+const Wrapper = styled.div`
+  background: ${COLOR.dark};
 `;
 
 export default () => (
-  <Footer>
+  <Wrapper>
     <Container>
-      <Flex wrap py={[4, 8]} mx={-4}>
-        <Box width={[1 / 2, 1 / 4]} my={2} px={4}>
-          <Logo white />
+      <Flex align="center" justify="space-between" wrap pb={[8, 10]} pt={[10, 12]}>
+        <Logo blueWhite />
+        <Navigation white />
+      </Flex>
 
-          <Text as="div" fontSize={[0, 0, 1]} color={COLORS_NEW.white} heavy>
+      <Social />
+
+      <Flex py={[6, 8]}>
+        <Box width={[1, 1 / 3]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0}>{COPYRIGHT}</Text>
+        </Box>
+        <Box width={[1, 1 / 3]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">
+            <Email />
+          </Text>
+        </Box>
+        <Box width={[1, 1 / 3]}>
+          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" my={0} heavy>
             <Languages />
           </Text>
         </Box>
-
-        {content.map(({ heading, links }, sectionIndex) => (
-          <Box width={[1 / 2, 1 / 4]} my={2} px={4} key={sectionIndex}>
-            <List heading={heading} links={links} />
-          </Box>
-        ))}
       </Flex>
     </Container>
-  </Footer>
+  </Wrapper>
 );

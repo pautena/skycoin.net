@@ -10,6 +10,7 @@ import Whitepappers from 'components/WhitepapersPage/components/Whitepapers';
 import Assets from './components/Assets';
 import Wallet from './components/Wallet';
 import BBS from './components/BBS';
+import Skywire from './components/skywire';
 
 const Downloads = ({ intl }) => (
   <div>
@@ -20,12 +21,13 @@ const Downloads = ({ intl }) => (
         content={intl.formatMessage({ id: 'downloads.description' })}
       />
     </Helmet>
-    <Header secondary title="Downloads" />
+    <Header border />
 
     <Wallet />
     <BBS />
     <Whitepappers />
     <Assets />
+    <Skywire />
 
     <GetStarted />
     <Footer />

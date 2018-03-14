@@ -1,7 +1,12 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { injectIntl, FormattedMessage } from 'react-intl';
+
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
-import { FormattedMessage } from 'react-intl';
+
 import Header from 'components/Header';
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
@@ -19,10 +24,18 @@ const Wrapper = styled.div`
   flex: 1;
 `;
 
-const ArchitectureOverview = () => (
+const ArchitectureOverview = ({ intl }) => (
+
   <Page>
     <Wrapper>
-      <Header secondary title="Architecture overview" />
+      <Helmet>
+        <title>{intl.formatMessage({ id: 'architectureOverview.title' })}</title>
+        <meta
+          name="description"
+          content={intl.formatMessage({ id: 'architectureOverview.description' })}
+        />
+      </Helmet>
+      <Header border />
       <Container>
         <Box my={[5, 7]}>
           <Heading
@@ -46,4 +59,10 @@ const ArchitectureOverview = () => (
 
 );
 
-export default ArchitectureOverview;
+ArchitectureOverview.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
+export default injectIntl(ArchitectureOverview);

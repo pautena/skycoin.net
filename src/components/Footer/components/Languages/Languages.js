@@ -2,15 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Flag } from 'flag';
+import media from 'utils/media';
 
 const Languages = styled.div`
   list-style: none;
   margin: 0;
+  text-align: center;
+  
+  ${media.sm.css`
+    text-align: right;
+  `}
 `;
 
 const Language = styled.span`
   &:not(:first-of-type):before {
-    content: ', '
+    content: ' · '
   }
 `;
 
@@ -24,23 +30,23 @@ const StyledLink = styled(Link)`
 
 export default () => (
   <Languages>
-    <Language><StyledLink to="/">En</StyledLink></Language>
+    <Language><StyledLink to="/">English</StyledLink></Language>
     <Flag
       name="chinese"
       render={() => (
-        <Language><StyledLink to="/cn/">Cn</StyledLink></Language>
+        <Language><StyledLink to="/cn/">中文</StyledLink></Language>
       )}
     />
     <Flag
       name="russian"
       render={() => (
-        <Language><StyledLink to="/ru/">Ru</StyledLink></Language>
+        <Language><StyledLink to="/ru/">Ру́сский</StyledLink></Language>
       )}
     />
     <Flag
       name="korean"
       render={() => (
-        <Language><StyledLink to="/ko/">Ko</StyledLink></Language>
+        <Language><StyledLink to="/ko/">한국어</StyledLink></Language>
       )}
     />
   </Languages>

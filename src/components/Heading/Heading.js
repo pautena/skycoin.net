@@ -16,7 +16,7 @@ export default styled(Heading)`
   ${space}
   ${width}
 
-  font-family: ${FONT_FAMILIES.sans};
-  font-weight: ${props => (props.heavy ? 'bold' : 'normal')};
+  font-family: ${props => (props.heavy ? `${FONT_FAMILIES.sansBold}` : `${FONT_FAMILIES.sans}`)};
+  font-weight: 'normal';
   line-height: 1.5;
 `;
