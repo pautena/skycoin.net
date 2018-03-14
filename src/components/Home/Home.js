@@ -19,6 +19,7 @@ import Network from './components/Network';
 import Miner from './components/Miner';
 import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
+import SignUp from './components/SignUp';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -41,7 +42,11 @@ const Home = ({ intl }) => (
 
     <Hero />
     <Press />
-    {eventInProgress && <DistributionEvent />}
+    <Miner />
+    <Network />
+    <Ecosystem />
+    <SignUp />
+    {/*{eventInProgress && <DistributionEvent />}*/}
     {/*<About>*/}
       {/*<Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>*/}
         {/*<FormattedMessage id="home.about.heading" />*/}
@@ -67,15 +72,12 @@ const Home = ({ intl }) => (
         {/*</Label>*/}
       {/*</StyledLink>*/}
     {/*</About>*/}
-    <Miner />
     {/*<About>*/}
       {/*<Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>*/}
         {/*<FormattedMessage id="home.technology.header" />*/}
       {/*</Heading>*/}
       {/*<Nav />*/}
     {/*</About>*/}
-    <Network />
-    <Ecosystem />
     {/*<GetStarted />*/}
     {/*<Footer />*/}
   </div>

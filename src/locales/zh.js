@@ -216,6 +216,11 @@ export default {
         text: 'Decentralized Social Network running on Skywire. | zh',
       },
     },
+    signup: {
+      heading: 'Free Skycoin. No Joke. Check It Out. | zh',
+      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | zh',
+      button: 'Sign Up | zh',
+    },
     roadmap: {
       heading: '路线图',
       blurb: '可以在Github上跟进开发进程。我们即将启动奖励机制，以便奖励那些提供漏洞修复、设计、或其他工作的社区成员。',

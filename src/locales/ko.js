@@ -216,6 +216,11 @@ export default {
         text: 'Decentralized Social Network running on Skywire. | ko',
       },
     },
+    signup: {
+      heading: 'Free Skycoin. No Joke. Check It Out. | ko',
+      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | ko',
+      button: 'Sign Up | ko',
+    },
     roadmap: {
       heading: '로드맵',
       blurb: 'GitHub에 방문하여 팔로우 또는 스카이코인의 개발 진행에 도움을 주세요. 우리는 오류 수정, 디자인 그리고 개발 관련 바운티 캠페인을 얼마 후에 개최할 예정입니다.',

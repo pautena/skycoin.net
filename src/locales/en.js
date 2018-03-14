@@ -216,6 +216,11 @@ export default {
         text: 'Decentralized Social Network running on Skywire.',
       },
     },
+    signup: {
+      heading: 'Free Skycoin. No Joke. Check It Out.',
+      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win.',
+      button: 'Sign Up',
+    },
     roadmap: {
       heading: 'Roadmap',
       blurb: 'Visit GitHub to follow or contribute to Skycoin’s continued development and deployment. We will be opening bounties for bug fixes, design and development in the coming months.',

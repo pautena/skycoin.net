@@ -18,7 +18,7 @@ const Button = styled(Link)`
 
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
   box-shadow: ${BOX_SHADOWS.base};
-  font-family: ${FONT_FAMILIES.sansBold};
+  font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[2])};
   padding: ${rem(SPACE[3])} ${rem(SPACE[6])};
   transition: 150ms ease-in-out;
@@ -60,7 +60,7 @@ const Button = styled(Link)`
   `}
 
   ${props => props.big && media.sm.css`
-    padding: ${rem(SPACE[4])} ${rem(SPACE[4])};
+    padding: ${rem(SPACE[4])};
   `}
 `;
 
