@@ -16,12 +16,12 @@ const Wrapper = styled.div`
   border-bottom: ${props => (props.border ? `2px solid ${COLORS.gray[1]}` : 'none')}
 `;
 
-const Header = ({ white, border, social }) => (
+const Header = ({ white, blueWhite, border, social }) => (
   <Wrapper border={border}>
     <Container>
       <Flex align="center" justify="space-between" wrap>
         <Logo white={white} />
-        <Navigation white={white} social={social} />
+        <Navigation white={white} social={social} blueWhite={blueWhite} />
       </Flex>
     </Container>
   </Wrapper>
@@ -31,12 +31,14 @@ Header.propTypes = {
   white: PropTypes.bool,
   border: PropTypes.bool,
   social: PropTypes.bool,
+  blueWhite: PropTypes.bool,
 };
 
 Header.defaultProps = {
   white: false,
   border: false,
   social: false,
+  blueWhite: false,
 };
 
 export default Header;
