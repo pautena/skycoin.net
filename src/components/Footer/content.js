@@ -54,7 +54,7 @@ export default [{
   },
   {
     label: 'footer.reddit',
-    href: 'https://www.reddit.com/r/SkycoinProject',
+    href: 'https://www.reddit.com/r/Skycoin',
   }, {
     label: 'footer.twitter',
     href: 'https://twitter.com/skycoinproject',
