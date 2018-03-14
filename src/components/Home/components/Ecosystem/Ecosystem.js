@@ -42,7 +42,7 @@ const Icon = styled.img.attrs({
   display: block;
   max-width: 100%;
   height: auto;
-  margin-right: ${rem(SPACE[5])};
+  margin-right: ${rem(SPACE[2])};
 `;
 
 const InfoItem = ({ name }) => (
@@ -67,7 +67,7 @@ InfoItem.defaultProps = {
   name: ecosystemItems[0],
 };
 
-const Press = () => (
+const Ecosystem = () => (
   <Wrapper pt={[10, 13]} pb={[7, 8]}>
     <Container>
       <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="white" width={[1, 2 / 3]}>
@@ -76,11 +76,11 @@ const Press = () => (
       <SubHeading fontSize={2} my={[4, 6]}>
         <FormattedMessage id="home.ecosystem.subheading" />
       </SubHeading>
-      <Flex align="center" justify="space-between" wrap mt={12} mx={[-6, -6, -8]}>
+      <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-6, -6, -8]}>
         {ecosystemItems.map((item, i) => <InfoItem name={item} key={i} />)}
       </Flex>
     </Container>
   </Wrapper>
 );
 
-export default Press;
+export default Ecosystem;
