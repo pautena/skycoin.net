@@ -34,6 +34,7 @@ export default {
     team: 'Team',
     subscribe: 'Mailing List',
     market: 'Markets',
+    jobs: 'Jobs',
     bitcoinTalk: 'Bitcointalk ANN',
     instagram: 'Instagram',
     facebook: 'Facebook',

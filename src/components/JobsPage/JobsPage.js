@@ -78,7 +78,11 @@ const JobsPage = () => (
         <Heading heavy as="h1" fontSize={[6, 7]} color="black" mb={[4, 6]}>
             Skycoin is hiring developers.
         </Heading>
-        <Subheading>If you would like to work with us, send an email to jobs@skycoin.net with this information:</Subheading>
+        <Subheading>
+          {
+            // eslint-disable-next-line max-len
+          }If you would like to work with us, send an email to jobs@skycoin.net with this information:
+        </Subheading>
         <Section>
           <StyledList>
             <ListItem>Name</ListItem>
@@ -89,8 +93,14 @@ const JobsPage = () => (
             <ListItem>Brief résumé</ListItem>
           </StyledList>
           <Divider />
-          <Strong>All of our projects are developed in Go. For frontend work, we use Angular 2 or React.js.</Strong>
-          <Paragraph>Our team is spread across the world and you will be working remotely.  We communicate using <StyledLink href="https://t.me/skycoindev" rel="noopener noreferrer" target="_blank">telegram</StyledLink> and <StyledLink href="https://discord.gg/EgBenrW" rel="noopener noreferrer" target="_blank">discord</StyledLink>.</Paragraph>
+          <Strong>
+            {
+              // eslint-disable-next-line max-len
+            }All of our projects are developed in Go. For frontend work, we use Angular 2 or React.js.
+          </Strong>
+          <Paragraph>
+            Our team is spread across the world and you will be working remotely.  We communicate using <StyledLink href="https://t.me/skycoindev" rel="noopener noreferrer" target="_blank">telegram</StyledLink> and <StyledLink href="https://discord.gg/EgBenrW" rel="noopener noreferrer" target="_blank">discord</StyledLink>.
+          </Paragraph>
           <Paragraph>Some of our open positions include:</Paragraph>
           <StyledList>
             <ListItem>Sr. Go Developer [golang] [multiple positions]</ListItem>
