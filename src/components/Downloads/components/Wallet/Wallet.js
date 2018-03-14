@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
-import Text from 'components/Text';
+import SubHeading from 'components/SubHeading';
 import ApplicationTable from 'components/ApplicationTable';
 
 import { downloads, version } from './downloads';
@@ -13,13 +13,13 @@ const Wallet = () => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+        <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[1, 2]}>
           <FormattedMessage id="downloads.wallet.heading" />
         </Heading>
 
-        <Text fontSize={[3, 3, 4]} color="gray.9" heavy>
+        <SubHeading fontSize={[1, 1, 2]} color="gray.9" normal>
           <FormattedMessage id="downloads.wallet.build" values={{ version }} />
-        </Text>
+        </SubHeading>
       </Box>
       <ApplicationTable list={downloads} />
     </Container>

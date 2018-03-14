@@ -3,10 +3,47 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { SPACE } from 'config';
-import Table, { TableWrapper } from 'components/Table';
+import media from 'utils/media';
+import { SPACE, COLORS } from 'config';
 import Text from 'components/Text';
 import * as icons from './icons';
+
+const TableWrapper = styled(Text).attrs({
+  as: 'div',
+  color: 'black',
+  fontSize: [1, 2],
+  heavy: true,
+}) `
+  overflow-x: auto;
+  margin-right: -${rem(SPACE[4])};
+  padding-right: ${rem(SPACE[4])};
+  margin-left: -${rem(SPACE[4])};
+  padding-left: ${rem(SPACE[4])};
+  margin-bottom: 100px;
+`;
+
+const Table = styled.table`
+  width: 100%;
+  min-width: ${rem(800)};
+
+  tr td, tr th {
+    border-bottom: 1px solid rgba(146,164, 186, 0.2);
+  }
+
+  td, th {
+    height: ${rem(40)};
+
+    ${media.sm.css`
+      height: ${rem(50)};
+    `}
+  }
+
+  a {
+    color: ${COLORS.base};
+  }
+
+  border-bottom: 2px solid white;
+`;
 
 const Icon = styled.img`
   max-width: ${rem(30)};
@@ -21,17 +58,32 @@ const Th = styled.th`
 
 const Row = styled.tr`
   text-align: center;
-  background-color: ${props => (props.display ? '#EDEDED' : 'white')};
+  height: 80px;
+  background-color: ${props => (props.light ? '#F4F9FF' : 'white')};
 
-  td {
-    border-top: 1px solid ${props => (props.light ? '#D2D3D4' : 'inherit')};
-  }
+  border-bottom: 1px solid ${props => (props.light ? '#F4F9FF' : 'white')};
+  border-top: ${props => props.isFirst ? '2px' : '1px'} solid ${props => (props.light ? '#F4F9FF' : 'white')};
 `;
 
 const A = styled.a`
   opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+  text-decoration: none;
 `;
 
+const Platform = styled(Text) `
+  display:block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+`;
+
+const Comment = styled(Text) `
+  color:#92A4BA;
+`;
+
+const TdPadding = styled.td`
+  text-align:left;
+  padding-left: 100px;
+`;
 
 const ApplicationTable = ({ list }) => {
   let OSName = -1;
@@ -48,27 +100,39 @@ const ApplicationTable = ({ list }) => {
             builds.map((build, buildIndex) =>
               build.architectures.map((architecture, architectureIndex) => (
                 <Row
-                  light={buildIndex !== 0 && buildIndex !== builds.length}
+                  light={platformIndex % 2 === 0}
                   key={`${platformIndex}-${buildIndex}-${architectureIndex}`}
                   display={platformIndex === OSName}
+                  isFirst={buildIndex === 0 && architectureIndex === 0}
                 >
                   {buildIndex === 0 &&
                     <Th
                       count={builds.length}
                       rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}
                     >
+                      <Platform>
+                        <FormattedMessage id={platform} />
+                      </Platform>
                       <Icon src={icons[icon]} />
-                      <FormattedMessage id={platform} />
                     </Th>
                   }
 
                   {architectureIndex === 0 &&
-                    <td rowSpan={build.architectures.length}>
+                    <TdPadding rowSpan={build.architectures.length}>
                       <FormattedMessage id={build.name} />
-                    </td>
+                      <Comment as="span">
+                        <FormattedMessage id={`${build.name}Comment`} />
+                      </Comment>
+                    </TdPadding>
                   }
 
                   <td>{architecture.name}</td>
+
+                  <td>
+                    <Text as="span" color="gray.7" heavy>
+                      {architecture.filetype}
+                    </Text>
+                  </td>
 
                   <td>
                     <A
@@ -77,11 +141,6 @@ const ApplicationTable = ({ list }) => {
                     >
                       <FormattedMessage id="downloads.wallet.download" />
                     </A>
-                  </td>
-                  <td>
-                    <Text as="span" color="gray.7" heavy>
-                      {architecture.filetype}
-                    </Text>
                   </td>
 
                   {architecture.torrent && <td>

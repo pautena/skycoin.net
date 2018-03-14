@@ -1,10 +1,50 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { rem } from 'polished';
-import Table, { TableWrapper } from 'components/Table';
 import Link from 'components/Link';
+import Text from 'components/Text';
+import media from 'utils/media';
 
 import { COLORS, SPACE, BREAKPOINTS } from 'config';
+
+const Table = styled.table`
+  width: 100%;
+  min-width: ${rem(800)};
+
+  tr {
+    padding-bottom: ${rem(10)};
+  }
+
+  td, th {
+    height: ${rem(15)};
+
+    ${media.sm.css`
+      height: ${rem(20)};
+    `}
+  }
+
+  a {
+    color: ${COLORS.base};
+    text-decoration: none;
+  }
+
+  margin-bottom: 100px;
+`;
+
+const TableWrapper = styled(Text).attrs({
+  as: 'div',
+  color: 'black',
+  fontSize: [1, 2],
+  heavy: true,
+}) `
+  overflow-x: auto;
+  margin-right: -${rem(SPACE[4])};
+  padding-right: ${rem(SPACE[4])};
+  margin-left: -${rem(SPACE[4])};
+  padding-left: ${rem(SPACE[4])};
+  margin-bottom: ${rem(SPACE[4])};
+`;
 
 const StyledTable = Table.extend`
   td {
@@ -19,13 +59,13 @@ const StyledTable = Table.extend`
     tr {
       display: block;
       padding: ${rem(SPACE[4])} 0;
-      border-top: 1px solid ${COLORS.gray[1]};
     }
 
     td {
       border: 0;
       display: block;
       height: auto;
+      margin: 0;
 
       &:first-of-type {
         width: auto;
