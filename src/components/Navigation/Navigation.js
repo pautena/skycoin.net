@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 
@@ -10,31 +11,35 @@ import media from 'utils/media';
 import telegram from './telegram.svg';
 import discord from './discord.svg';
 
-const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-`;
-
 const GroupWrapper = styled.div`
   font-size: ${rem(FONT_SIZES[1])};
-  padding-top: ${rem(SPACE[4])};
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: ${rem(SPACE[4])};
+  align-items: center;  
 
   ${media.sm.css`
     font-size: ${rem(FONT_SIZES[2])};
-    margin-left: ${rem(SPACE[9])};
-    padding-top: 0;
     text-align: right;
   `}
-  ${media.md.css`
-    margin-left: ${rem(SPACE[9])};
+`;
+
+const Wrapper = styled(Flex)`
+  font-size: ${rem(FONT_SIZES[1])};
+  text-align: center;
+
+  ${media.sm.css`
+    font-size: ${rem(FONT_SIZES[2])};
+    text-align: right;
   `}
+  
+  ${GroupWrapper} + ${GroupWrapper} {
+    margin-left: ${rem(SPACE[4])};
+    
+    ${media.sm.css`
+      margin-left: ${rem(SPACE[7])};      
+    `}
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -66,8 +71,8 @@ const Img = styled.img.attrs({
   max-width: 100%;
 `;
 
-const Navigation = ({ white }) => (
-  <Wrapper>
+const Navigation = ({ white, social }) => (
+  <Wrapper align="center" wrap>
     <GroupWrapper>
       <StyledLink white={white} to="/">
         <FormattedMessage id="header.navigation.home" />
@@ -93,7 +98,7 @@ const Navigation = ({ white }) => (
         <FormattedMessage id="header.navigation.ecosystem" />
       </StyledLink>
     </GroupWrapper>
-
+    {social &&
     <GroupWrapper>
       <StyledLink white={white} to="https://t.me/Skycoin">
         <Img src={telegram} alt="Telegram" />
@@ -105,16 +110,18 @@ const Navigation = ({ white }) => (
         <FormattedMessage id="header.navigation.discord" />
       </StyledLink>
     </GroupWrapper>
-
+    }
   </Wrapper>
 );
 
 Navigation.propTypes = {
   white: PropTypes.bool,
+  social: PropTypes.bool,
 };
 
 Navigation.defaultProps = {
   white: false,
+  social: false,
 };
 
 export default Navigation;

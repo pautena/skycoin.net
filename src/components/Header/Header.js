@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { Flex, Box } from 'grid-styled';
+import { Flex } from 'grid-styled';
 import { rem } from 'polished';
 
+import Container from 'components/Container';
+import Navigation from 'components/Navigation';
+import Logo from 'components/Logo';
+
 import { SPACE, COLORS } from 'config';
-import Container from '../Container';
-import Logo from '../Logo';
-import Navigation from './components/Navigation';
 
 const Wrapper = styled.div`
   padding: ${rem(SPACE[6])} 0;
@@ -15,12 +16,12 @@ const Wrapper = styled.div`
   border-bottom: ${props => (props.border ? `2px solid ${COLORS.gray[1]}` : 'none')}
 `;
 
-const Header = ({ white, border }) => (
+const Header = ({ white, border, social }) => (
   <Wrapper border={border}>
     <Container>
       <Flex align="center" justify="space-between" wrap>
-        <Navigation white={white} />
         <Logo white={white} />
+        <Navigation white={white} social={social} />
       </Flex>
     </Container>
   </Wrapper>
@@ -29,11 +30,13 @@ const Header = ({ white, border }) => (
 Header.propTypes = {
   white: PropTypes.bool,
   border: PropTypes.bool,
+  social: PropTypes.bool,
 };
 
 Header.defaultProps = {
   white: false,
   border: false,
+  social: false,
 };
 
 export default Header;

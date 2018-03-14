@@ -1,37 +1,46 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 
 import Container from 'components/Container';
+import Navigation from 'components/Navigation';
 import Text from 'components/Text';
 import Logo from 'components/Logo';
+import { COLOR } from 'config';
 
 import Languages from './components/Languages';
-import List from './components/List';
 import Email from './components/Email';
-import content from './content';
+
+const COPYRIGHT = '© Skycoin.net 2018';
+
+const Wrapper = styled.div`
+  background: ${COLOR.dark};
+`;
 
 export default () => (
-  <div>
+  <Wrapper>
     <Container>
-      <Flex wrap my={[4, 8]} mx={-4}>
-        <Box width={[1 / 2, 1 / 4]} my={2} px={4}>
-          <Logo />
+      <Flex align="center" justify="space-between" wrap py={[4, 8]} mx={-4}>
+        <Logo blueWhite />
+        <Navigation white />
+      </Flex>
 
-          <Text fontSize={[1, 2, 3]} color="gray.8" heavy mt={2}>
+
+      <Flex>
+        <Box width={[1, 1 / 3]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" mt={2}>{COPYRIGHT}</Text>
+        </Box>
+        <Box width={[1, 1 / 3]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" mt={2} textAlign="center">
             <Email />
           </Text>
-
-          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" heavy>
+        </Box>
+        <Box width={[1, 1 / 3]}>
+          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" heavy mt={2}>
             <Languages />
           </Text>
         </Box>
-
-        {content.map(({ heading, links }, sectionIndex) => (
-          <Box width={[1 / 2, 1 / 4]} my={2} px={4} key={sectionIndex}>
-            <List heading={heading} links={links} />
-          </Box>
-        ))}
       </Flex>
     </Container>
-  </div>
+  </Wrapper>
 );

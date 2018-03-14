@@ -2,10 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Flag } from 'flag';
+import media from 'utils/media';
 
 const Languages = styled.div`
   list-style: none;
   margin: 0;
+  text-align: center;
+  
+  ${media.sm.css`
+    text-align: right;
+  `}
 `;
 
 const Language = styled.span`

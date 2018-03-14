@@ -9,7 +9,7 @@ import { FONT_FAMILIES } from 'config';
 const Text = createComponentFromTagProp({
   tag: 'p',
   prop: 'as',
-  propsToOmit: ['fontSize', 'color', 'mt', 'mb', 'my', 'heavy', 'caps'],
+  propsToOmit: ['fontSize', 'color', 'mt', 'mb', 'my', 'heavy', 'caps', 'textAlign'],
 });
 
 export default styled(Text)`
@@ -21,6 +21,7 @@ export default styled(Text)`
   font-family: ${FONT_FAMILIES.sans};
   line-height: ${rem(24)};
   text-transform: ${props => (props.caps ? 'uppercase' : 'none')};
+  text-align: ${props => (props.textAlign ? props.textAlign : 'left')};
 
   ${media.sm.css`
     line-height: ${rem(28)};

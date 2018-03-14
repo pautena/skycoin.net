@@ -34,7 +34,7 @@ const Hero = () => (
 
     <StyledFlex column justify="flex-start">
       <Box>
-        <Header white />
+        <Header white social />
       </Box>
       <Box mt={8}>
         <Container>
