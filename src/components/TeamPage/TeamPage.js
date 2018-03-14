@@ -5,13 +5,16 @@ import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { rem } from 'polished';
 
 import Header from 'components/Header';
+import SubHeading from 'components/SubHeading';
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
+import Text from 'components/Text';
 
-import { FONT_FAMILIES, BREAKPOINTS } from 'config';
+import { FONT_FAMILIES, BREAKPOINTS, FONT_SIZES } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 const Wrapper = styled.div`
@@ -46,7 +49,7 @@ const Bio = styled.p`
   line-height: 1.8;
 `;
 
-const StyledBox = styled(Box)`
+const StyledBox = styled(Box) `
   display: flex;
   flex-direction: column;
 `;
@@ -62,6 +65,30 @@ const getLocale = (locale) => {
   return language;
 };
 
+const SubheadingSeparator = styled.div`
+  width: 20px;
+  height: 1px;
+  background-color: #92A4BA;
+  margin-right: 12px;
+  display: inline-block;
+`;
+
+const QuoteLine = styled.div`
+  border: 1px solid #92A4BA;
+  border-radius: 2px;
+  width: 1px;
+  background-color: #92A4BA;
+`;
+
+const Quote = styled.div`
+  padding-left: 30px;
+`;
+
+const QuoteContainer = styled.div`
+  display: flex;
+  margin-top: 85px;
+`;
+
 const TeamPage = ({ intl }) => (
   <div>
     <Helmet>
@@ -74,11 +101,24 @@ const TeamPage = ({ intl }) => (
     <Header border />
     <Container>
       <Wrapper>
-        <Heading heavy as="h1" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+        <Heading bold as="h1" fontSize={[rem(FONT_SIZES[8]), rem(FONT_SIZES[8])]} color="black" mb={[rem(6)]}>
           {getLocale(intl.locale).title}
         </Heading>
+        <SubHeading fontSize={[1, 1, 2]} color="gray.9" normal>
+          <SubheadingSeparator />
+          {getLocale(intl.locale).subtitle}
+        </SubHeading>
+        <QuoteContainer>
+          <QuoteLine />
+          <Quote>
+            <Text style={{ margin: 0 }} fontSize={rem(FONT_SIZES[5])} color="#07172E">
+              {getLocale(intl.locale).quote}
+            </Text>
+          </Quote>
+        </QuoteContainer>
+
         <BioSection>
-          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
+          <Heading as="h2" fontSize={[rem(FONT_SIZES[3]), rem(FONT_SIZES[3])]} color="black" mb={[3, 5]}>
             {getLocale(intl.locale).founders.title}
           </Heading>
           {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
