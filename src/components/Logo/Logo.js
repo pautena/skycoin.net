@@ -21,7 +21,6 @@ const Img = styled.img.attrs({
 `;
 
 const getLogoSrc = (props) => {
-  console.log(props);
   if (props.white) {
     return logoWhite;
   } else if (props.blueWhite) {
