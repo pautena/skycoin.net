@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { rem } from 'polished';
 import Link from 'components/Link';
-import Text from 'components/Text';
+import { TableWrapper } from 'components/Table';
+
 import media from 'utils/media';
 
 import { COLORS, SPACE, BREAKPOINTS } from 'config';
@@ -30,20 +31,6 @@ const Table = styled.table`
   }
 
   margin-bottom: 100px;
-`;
-
-const TableWrapper = styled(Text).attrs({
-  as: 'div',
-  color: 'black',
-  fontSize: [1, 2],
-  heavy: true,
-}) `
-  overflow-x: auto;
-  margin-right: -${rem(SPACE[4])};
-  padding-right: ${rem(SPACE[4])};
-  margin-left: -${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};
-  margin-bottom: ${rem(SPACE[4])};
 `;
 
 const StyledTable = Table.extend`
@@ -76,7 +63,7 @@ const StyledTable = Table.extend`
 
 
 const DownloadTableSimple = ({ list }) => (
-  <TableWrapper>
+  <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[4]}>
     <StyledTable>
       <tbody>
         {list.map(({ name, download }, i) => (

@@ -6,6 +6,7 @@ import { rem } from 'polished';
 import styled from 'styled-components';
 import media from 'utils/media';
 
+import { TableWrapper } from 'components/Table';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
@@ -42,20 +43,6 @@ const Table = styled.table`
   margin-bottom: 100px;
 `;
 
-const TableWrapper = styled(Text).attrs({
-  as: 'div',
-  color: 'black',
-  fontSize: [1, 2],
-  heavy: true,
-}) `
-  overflow-x: auto;
-  margin-right: -${rem(SPACE[4])};
-  padding-right: ${rem(SPACE[4])};
-  margin-left: -${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};
-  margin-bottom: ${rem(SPACE[4])};
-`;
-
 const DownladsTable = ({ title, list, id }) => (
   <div>
     <Container>
@@ -65,7 +52,7 @@ const DownladsTable = ({ title, list, id }) => (
         </Heading>
       </Box>
 
-      <TableWrapper>
+      <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[4]}>
         <Table>
           <tbody>
             {list.map(({ name, download, filetype, filesize }, i) => (

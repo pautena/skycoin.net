@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 import { Flex, Box } from 'grid-styled';
 
-import { COLORS } from 'config';
 import Button from 'components/Button';
 import Buy from 'components/Buy';
 import Container from 'components/Container';

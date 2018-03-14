@@ -12,11 +12,6 @@ export const TableWrapper = styled(Text).attrs({
   heavy: true,
 })`
   overflow-x: auto;
-  margin-right: -${rem(SPACE[4])};
-  padding-right: ${rem(SPACE[4])};
-  margin-left: -${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};
-  margin-bottom: ${rem(SPACE[4])};
 `;
 
 export default styled.table`

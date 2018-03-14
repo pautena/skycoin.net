@@ -6,21 +6,9 @@ import { rem } from 'polished';
 import media from 'utils/media';
 import { SPACE, COLORS } from 'config';
 import Text from 'components/Text';
-import * as icons from './icons';
+import { TableWrapper } from 'components/Table';
 
-const TableWrapper = styled(Text).attrs({
-  as: 'div',
-  color: 'black',
-  fontSize: [1, 2],
-  heavy: true,
-}) `
-  overflow-x: auto;
-  margin-right: -${rem(SPACE[4])};
-  padding-right: ${rem(SPACE[4])};
-  margin-left: -${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};
-  margin-bottom: 100px;
-`;
+import * as icons from './icons';
 
 const Table = styled.table`
   width: 100%;
@@ -82,7 +70,7 @@ const Comment = styled(Text) `
 
 const TdPadding = styled.td`
   text-align:left;
-  padding-left: 100px;
+  padding-left: ${rem(SPACE[13])};
 `;
 
 const ApplicationTable = ({ list }) => {
@@ -93,7 +81,7 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
 
   return (
-    <TableWrapper>
+    <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[13]}>
       <Table>
         <tbody>
           {list.map(({ platform, icon, builds }, platformIndex) =>
