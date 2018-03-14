@@ -19,6 +19,9 @@ export default [{
     label: 'footer.market',
     to: 'markets',
   }, {
+    label: 'footer.jobs',
+    to: 'jobs',
+  }, {
     label: 'footer.bitcoinTalk',
     href: 'https://bitcointalk.org/index.php?topic=380441',
   }],
