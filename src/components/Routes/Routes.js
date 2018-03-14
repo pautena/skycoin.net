@@ -6,7 +6,6 @@ import Home from '../Home';
 import ArchitectureOverview from '../ArchitectureOverview';
 import Downloads from '../Downloads';
 import Infographics from '../Infographics';
-import Distribution from '../Distribution';
 import WhitepapersPage from '../WhitepapersPage';
 import NotFound from '../NotFound';
 import RoadmapPage from '../RoadmapPage';
@@ -23,7 +22,6 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}downloads`} exact component={Downloads} />
       <Route path={`${prefix}whitepapers`} component={WhitepapersPage} />
       <Route path={`${prefix}infographics`} exact component={Infographics} />
-      <Route path={`${prefix}distribution`} exact component={Distribution} />
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />

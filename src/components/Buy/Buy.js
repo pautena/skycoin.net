@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { eventInProgress } from 'components/Distribution/eventStatus';
 import Button from '../Button';
 
 const Wrapper = styled.div`
@@ -20,9 +19,7 @@ class Buy extends React.Component {
     const { asAnchor, ...rest } = this.props;
     const Component = asAnchor ? 'a' : Button;
 
-    const props = eventInProgress ? {
-      href: 'https://event.skycoin.net/',
-    } : {
+    const props = {
       to: 'markets',
     };
 
