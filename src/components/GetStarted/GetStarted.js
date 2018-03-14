@@ -9,8 +9,11 @@ import Buy from 'components/Buy';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 
+import bg from './bg-get-started.png';
+
 const GetStarted = styled.div`
-  background-color: ${COLORS.gray[1]};
+  background: url(${bg});
+  background-size: cover;
   text-align: center;
 `;
 
