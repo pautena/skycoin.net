@@ -63,6 +63,7 @@ const A = styled.a`
 const Platform = styled(Text) `
   display:block;
   margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-align: center;
 `;
@@ -83,7 +84,7 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
 
   return (
-    <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[13]}>
+    <TableWrapper mb={[7, 10, 13]}>
       <Table>
         <tbody>
           {list.map(({ platform, icon, builds }, platformIndex) =>

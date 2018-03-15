@@ -14,6 +14,7 @@ export default {
       team: 'Team',
       telegram: 'Telegram',
       discord: 'Discord',
+      getWallet: 'Buy Skycoin',
     },
   },
   footer: {

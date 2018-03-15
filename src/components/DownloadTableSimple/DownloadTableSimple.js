@@ -5,13 +5,10 @@ import { rem } from 'polished';
 import Link from 'components/Link';
 import { TableWrapper } from 'components/Table';
 
-import media from 'utils/media';
-
 import { COLORS, SPACE, BREAKPOINTS } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(800)};
 
   tr {
     padding-bottom: ${rem(10)};
@@ -19,18 +16,12 @@ const Table = styled.table`
 
   td, th {
     height: ${rem(15)};
-
-    ${media.sm.css`
-      height: ${rem(20)};
-    `}
   }
 
   a {
     color: ${COLORS.base};
     text-decoration: none;
   }
-
-  margin-bottom: 100px;
 `;
 
 const StyledTable = Table.extend`
@@ -61,9 +52,8 @@ const StyledTable = Table.extend`
   }
 `;
 
-
 const DownloadTableSimple = ({ list }) => (
-  <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[4]}>
+  <TableWrapper mb={[7, 10, 13]}>
     <StyledTable>
       <tbody>
         {list.map(({ name, download }, i) => (

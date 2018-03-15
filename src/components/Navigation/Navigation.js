@@ -5,8 +5,9 @@ import { Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 
-import { SPACE, FONT_SIZES, FONT_FAMILIES, COLORS } from 'config';
+import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
 import Link from 'components/Link';
+import Button from 'components/Button';
 import media from 'utils/media';
 import telegram from './telegram.svg';
 import discord from './discord.svg';
@@ -44,14 +45,16 @@ const Wrapper = styled(Flex)`
 
 const StyledLink = styled(Link)`
   margin-left: ${rem(SPACE[2])};
-  font-family: ${FONT_FAMILIES.sansBold};
-  color: ${props => (props.white ? 'white' : COLORS.black)};
+  font-family: ${FONT_FAMILIES.sans};
+  color: ${props => (props.white ? 'white' : COLOR.base)};
   text-decoration: none;
   display: flex;
   align-items: center;
 
   &:hover {
-    text-decoration: underline;
+    color: ${props => (props.white ? 'white' : COLOR.dark)};
+    opacity: ${props => (props.white ? '.7' : '1')};
+    text-decoration: none;
   }
 
   ${media.sm.css`
@@ -71,7 +74,7 @@ const Img = styled.img.attrs({
   max-width: 100%;
 `;
 
-const Navigation = ({ white, social }) => (
+const Navigation = ({ white, social, showBuy }) => (
   <Wrapper align="center" wrap>
     <GroupWrapper>
       <StyledLink white={white} to="/">
@@ -97,6 +100,11 @@ const Navigation = ({ white, social }) => (
       <StyledLink white={white} to="/">
         <FormattedMessage id="header.navigation.ecosystem" />
       </StyledLink>
+      {showBuy &&
+      <Button to="downloads" color="white" bg="base" pill ml={[2, 4, 7]}>
+        <FormattedMessage id="header.navigation.getWallet" />
+      </Button>
+      }
     </GroupWrapper>
     {social &&
     <GroupWrapper>
@@ -117,11 +125,13 @@ const Navigation = ({ white, social }) => (
 Navigation.propTypes = {
   white: PropTypes.bool,
   social: PropTypes.bool,
+  showBuy: PropTypes.bool,
 };
 
 Navigation.defaultProps = {
   white: false,
   social: false,
+  showBuy: false,
 };
 
 export default Navigation;

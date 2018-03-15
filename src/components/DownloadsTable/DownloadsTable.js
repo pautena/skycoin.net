@@ -11,7 +11,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
-import { COLORS, SPACE, FONT_SIZES } from 'config';
+import { COLORS } from 'config';
 
 const Table = styled.table`
   width: 100%;
@@ -39,8 +39,6 @@ const Table = styled.table`
     color: ${COLORS.base};
     text-decoration: none;
   }
-
-  margin-bottom: 100px;
 `;
 
 const FixedTd = styled.td`
@@ -56,7 +54,7 @@ const DownladsTable = ({ title, list, id }) => (
         </Heading>
       </Box>
 
-      <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[4]}>
+      <TableWrapper mb={[7, 10, 13]}>
         <Table>
           <tbody>
             {list.map(({ name, download, filetype, filesize }, i) => (
