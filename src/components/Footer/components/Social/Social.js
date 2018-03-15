@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Flex } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 
 import Link from 'components/Link';
@@ -30,18 +30,33 @@ const Wrapper = styled(Flex)`
 `;
 
 const StyledLink = styled(Link)`
-  margin-left: ${rem(SPACE[4])};
-  margin-right: ${rem(SPACE[4])};
+  display: inline-block;
   
   &:hover {
     opacity: .75;
   }
 `;
 
+const StyledBox = styled(Box)`
+  text-align: center;
+  font-size: 0;
+`;
+
+const Img = styled.img.attrs({
+  alt: '',
+})`
+  display: block;
+`;
+
+const columnsQty = socialLinks.length;
+const columnsQtySm = Math.round(socialLinks.length / 2);
+
 const SocialItem = ({ to, icon }) => (
-  <StyledLink to={to}>
-    <img src={icon} alt="" />
-  </StyledLink>
+  <StyledBox width={[1 / columnsQtySm, 1 / columnsQty]} py={[2, 4]}>
+    <StyledLink to={to}>
+      <Img src={icon} />
+    </StyledLink>
+  </StyledBox>
 );
 
 
@@ -56,7 +71,7 @@ SocialItem.defaultProps = {
 };
 
 const Social = () => (
-  <Wrapper align="center" justify="space-between" wrap py={[4, 6, 8]}>
+  <Wrapper align="center" justify="space-between" wrap py={[2, 4, 6]}>
     {socialLinks.map((item, i) => <SocialItem to={item.to} icon={item.icon} key={i} />)}
   </Wrapper>
 );

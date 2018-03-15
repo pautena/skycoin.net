@@ -34,6 +34,7 @@ const ecosystemItems = [
 
 const Wrapper = styled(Box)`
   background: ${COLOR.dark};
+  overflow: hidden;
 `;
 
 const Icon = styled.img.attrs({

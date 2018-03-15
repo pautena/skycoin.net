@@ -10,7 +10,7 @@ import Link from 'components/Link';
 import Text from 'components/Text';
 import { COLOR } from 'config';
 
-import obelisk from './obelisk.png';
+import obelisk from './obelisk.svg';
 
 const Graphic = styled.img.attrs({
   src: obelisk,

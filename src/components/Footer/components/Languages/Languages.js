@@ -7,11 +7,6 @@ import media from 'utils/media';
 const Languages = styled.div`
   list-style: none;
   margin: 0;
-  text-align: center;
-  
-  ${media.sm.css`
-    text-align: right;
-  `}
 `;
 
 const Language = styled.span`

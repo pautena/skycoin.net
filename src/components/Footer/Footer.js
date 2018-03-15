@@ -21,24 +21,24 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Container>
-      <Flex align="center" justify="space-between" wrap pb={[8, 10]} pt={[10, 12]}>
+      <Flex align="center" justify="space-between" wrap pb={[10, 12]} pt={[12, 13]}>
         <Logo blueWhite />
         <Navigation white />
       </Flex>
 
       <Social />
 
-      <Flex py={[6, 8]}>
-        <Box width={[1, 1 / 3]}>
-          <Text fontSize={[1, 1, 2]} color="gray.8" my={0}>{COPYRIGHT}</Text>
+      <Flex py={[6, 8]} wrap>
+        <Box width={[1, 1, 1 / 3]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>{COPYRIGHT}</Text>
         </Box>
-        <Box width={[1, 1 / 3]}>
+        <Box width={[1, 1, 1 / 3]}>
           <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">
             <Email />
           </Text>
         </Box>
-        <Box width={[1, 1 / 3]}>
-          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" my={0} heavy>
+        <Box width={[1, 1, 1 / 3]}>
+          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" my={0} heavy textAlign={['center', 'center', 'right']}>
             <Languages />
           </Text>
         </Box>

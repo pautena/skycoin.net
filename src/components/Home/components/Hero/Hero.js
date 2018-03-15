@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   position: relative;
   min-height: 56rem;
   height: auto;
+  overflow: hidden;
 
   ${media.sm.css`
     height: 40rem;
