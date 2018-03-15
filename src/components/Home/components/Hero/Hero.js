@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { Flag } from 'flag';
 
 import { COLOR } from 'config';
 import media from 'utils/media';
@@ -9,13 +8,13 @@ import Container from 'components/Container';
 import Header from 'components/Header';
 import CanvasBg from './components/CanvasBg';
 import Introduction from './components/Introduction';
-import Announcement from './components/Announcement';
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};
   position: relative;
   min-height: 56rem;
   height: auto;
+  overflow: hidden;
 
   ${media.sm.css`
     height: 40rem;
@@ -31,10 +30,9 @@ const StyledFlex = styled(Flex)`
 const Hero = () => (
   <Wrapper>
     <CanvasBg />
-
     <StyledFlex column justify="flex-start">
       <Box>
-        <Header white social />
+        <Header white social showBuy={false} />
       </Box>
       <Box mt={8}>
         <Container>
@@ -44,15 +42,6 @@ const Hero = () => (
             </Box>
           </Flex>
         </Container>
-      </Box>
-
-      <Box>
-        <Flag
-          name="announcement"
-          render={() => (
-            <Announcement />
-          )}
-        />
       </Box>
     </StyledFlex>
   </Wrapper>

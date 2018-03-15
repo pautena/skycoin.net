@@ -15,7 +15,7 @@ import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(800)};
+  min-width: ${rem(480)};
 
   tr {
     padding-bottom: ${rem(10)};
@@ -26,12 +26,12 @@ const Table = styled.table`
   }
 
   td, th {
-    height: 50px;
-    font-size: 14px;
-    padding: 12px 30px;
+    height: ${rem(50)};
+    padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
 
     ${media.sm.css`
       height: ${rem(20)};
+      padding: ${rem(SPACE[4])} ${rem(SPACE[8])};
     `}
   }
 
@@ -39,43 +39,45 @@ const Table = styled.table`
     color: ${COLORS.base};
     text-decoration: none;
   }
+`;
 
-  margin-bottom: 100px;
+const FixedTd = styled.td`
+  width: ${rem(70)}
 `;
 
 const DownladsTable = ({ title, list, id }) => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]} id={id}>
+        <Heading heavy as="h2" fontSize={[6, 7]} color="black" mb={[rem(40), rem(40)]} id={id}>
           <FormattedMessage id={title} />
         </Heading>
       </Box>
 
-      <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[4]}>
+      <TableWrapper mb={[7, 10, 13]}>
         <Table>
           <tbody>
             {list.map(({ name, download, filetype, filesize }, i) => (
               <tr key={i}>
                 <td>{name}</td>
 
-                <td>
+                <FixedTd>
                   {filesize && <Text as="span" color="gray.7" heavy>
                     {filesize}
                   </Text>}
-                </td>
+                </FixedTd>
 
-                <td>
+                <FixedTd>
                   <Text as="span" color="gray.7" heavy>
                     {filetype}
                   </Text>
-                </td>
+                </FixedTd>
 
-                <td>
+                <FixedTd>
                   {download && <Link target="_blank" href={download}>
                     <FormattedMessage id="downloads.whitepapers.download" />
                   </Link>}
-                </td>
+                </FixedTd>
               </tr>
             ))}
           </tbody>

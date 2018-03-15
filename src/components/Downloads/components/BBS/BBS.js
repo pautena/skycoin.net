@@ -11,7 +11,7 @@ import content from './content';
 const BBS = () => (
   <div>
     <Container>
-      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[0]}>
+      <Heading heavy as="h2" fontSize={[6, 7]} color="black" mb={[0]}>
         <FormattedMessage id="downloads.bbs.heading" />
       </Heading>
 

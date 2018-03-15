@@ -12,7 +12,7 @@ import * as icons from './icons';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(800)};
+  min-width: ${rem(480)};
 
   tr td, tr th {
     border-bottom: 1px solid rgba(146,164, 186, 0.2);
@@ -42,6 +42,17 @@ const Icon = styled.img`
 
 const Th = styled.th`
   padding: ${props => (props.count > 1 ? 'inherit' : `${rem(SPACE[4])} 0`)};
+  padding-right: ${rem(SPACE[4])};
+  padding-left: ${rem(SPACE[4])};  
+  
+  ${media.sm.css`
+    padding-right: ${rem(SPACE[6])};
+    padding-left: ${rem(SPACE[6])};
+  `}
+  ${media.md.css`
+    padding-right: ${rem(SPACE[10])};
+    padding-left: ${rem(SPACE[10])};
+  `}
 `;
 
 const Row = styled.tr`
@@ -54,14 +65,16 @@ const Row = styled.tr`
 `;
 
 const A = styled.a`
-  opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+  opacity: ${props => (props.linkcolor ? 1 : 0.5)};
   text-decoration: none;
 `;
 
 const Platform = styled(Text) `
   display:block;
   margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 `;
 
 const Comment = styled(Text) `
@@ -70,7 +83,15 @@ const Comment = styled(Text) `
 
 const TdPadding = styled.td`
   text-align:left;
-  padding-left: ${rem(SPACE[13])};
+  padding-left: ${rem(SPACE[5])};
+  
+    ${media.sm.css`
+      padding-left: ${rem(SPACE[10])};
+    `}
+    
+    ${media.md.css`
+      padding-left: ${rem(SPACE[13])};
+    `}
 `;
 
 const ApplicationTable = ({ list }) => {
@@ -81,7 +102,7 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
 
   return (
-    <TableWrapper mx={-SPACE[4]} px={SPACE[4]} mb={SPACE[13]}>
+    <TableWrapper mb={[7, 10, 13]}>
       <Table>
         <tbody>
           {list.map(({ platform, icon, builds }, platformIndex) =>
@@ -106,7 +127,7 @@ const ApplicationTable = ({ list }) => {
                   }
 
                   {architectureIndex === 0 &&
-                    <TdPadding rowSpan={build.architectures.length}>
+                    <TdPadding rowSpan={build.architectures.length} style={{ width: '210px' }}>
                       <FormattedMessage id={build.name} />
                       <Comment as="span">
                         <FormattedMessage id={`${build.name}Comment`} />

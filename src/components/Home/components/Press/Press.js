@@ -9,7 +9,7 @@ import Heading from 'components/Heading';
 import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
 import { rem } from 'polished';
 
-import award from './images/award.png';
+import award from './images/award.svg';
 
 /* eslint-disable global-require */
 const logos = [

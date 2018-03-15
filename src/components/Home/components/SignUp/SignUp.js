@@ -9,7 +9,7 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 import SignUpForm from './components/SignUpForm';
 
-import bg from './signUpBg.png';
+import bg from './signUpBg.svg';
 
 const Wrapper = styled.div`
   background: ${COLOR.base};
