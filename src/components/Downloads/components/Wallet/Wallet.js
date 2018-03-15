@@ -9,8 +9,6 @@ import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import ApplicationTable from 'components/ApplicationTable';
 
-import { FONT_SIZES } from 'config';
-
 import { downloads, version } from './downloads';
 
 const SubheadingSeparator = styled.div`

@@ -11,7 +11,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
-import { COLORS, SPACE, FONT_SIZES } from 'config';
+import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
   width: 100%;
