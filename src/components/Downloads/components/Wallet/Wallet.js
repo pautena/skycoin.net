@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
-import { rem } from 'polished';
 import styled from 'styled-components';
 
 import Container from 'components/Container';

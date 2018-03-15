@@ -62,6 +62,7 @@ const Platform = styled(Text) `
   display:block;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-align: center;
 `;
 
 const Comment = styled(Text) `
