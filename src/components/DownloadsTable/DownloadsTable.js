@@ -11,7 +11,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
-import { COLORS, SPACE } from 'config';
+import { COLORS, SPACE, FONT_SIZES } from 'config';
 
 const Table = styled.table`
   width: 100%;
@@ -43,11 +43,15 @@ const Table = styled.table`
   margin-bottom: 100px;
 `;
 
+const FixedTd = styled.td`
+  width: ${rem(70)}
+`;
+
 const DownladsTable = ({ title, list, id }) => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]} id={id}>
+        <Heading heavy as="h2" fontSize={[rem(FONT_SIZES[10]), rem(FONT_SIZES[10])]} color="black" mb={[rem(40), rem(40)]} id={id}>
           <FormattedMessage id={title} />
         </Heading>
       </Box>
@@ -59,23 +63,23 @@ const DownladsTable = ({ title, list, id }) => (
               <tr key={i}>
                 <td>{name}</td>
 
-                <td>
+                <FixedTd>
                   {filesize && <Text as="span" color="gray.7" heavy>
                     {filesize}
                   </Text>}
-                </td>
+                </FixedTd>
 
-                <td>
+                <FixedTd>
                   <Text as="span" color="gray.7" heavy>
                     {filetype}
                   </Text>
-                </td>
+                </FixedTd>
 
-                <td>
+                <FixedTd>
                   {download && <Link target="_blank" href={download}>
                     <FormattedMessage id="downloads.whitepapers.download" />
                   </Link>}
-                </td>
+                </FixedTd>
               </tr>
             ))}
           </tbody>

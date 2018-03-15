@@ -42,6 +42,7 @@ const Icon = styled.img`
 
 const Th = styled.th`
   padding: ${props => (props.count > 1 ? 'inherit' : `${rem(SPACE[4])} 0`)};
+  padding-right: ${rem(SPACE[13])};
 `;
 
 const Row = styled.tr`
@@ -71,7 +72,6 @@ const Comment = styled(Text) `
 
 const TdPadding = styled.td`
   text-align:left;
-  padding-left: ${rem(SPACE[13])};
 `;
 
 const ApplicationTable = ({ list }) => {
