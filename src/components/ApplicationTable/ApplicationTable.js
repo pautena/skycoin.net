@@ -42,7 +42,8 @@ const Icon = styled.img`
 
 const Th = styled.th`
   padding: ${props => (props.count > 1 ? 'inherit' : `${rem(SPACE[4])} 0`)};
-  padding-right: ${rem(SPACE[13])};
+  padding-right: ${rem(SPACE[11])};
+  padding-left: ${rem(SPACE[11])};
 `;
 
 const Row = styled.tr`
@@ -107,7 +108,7 @@ const ApplicationTable = ({ list }) => {
                   }
 
                   {architectureIndex === 0 &&
-                    <TdPadding rowSpan={build.architectures.length}>
+                    <TdPadding rowSpan={build.architectures.length} style={{ width: '210px' }}>
                       <FormattedMessage id={build.name} />
                       <Comment as="span">
                         <FormattedMessage id={`${build.name}Comment`} />
@@ -115,13 +116,13 @@ const ApplicationTable = ({ list }) => {
                     </TdPadding>
                   }
 
-                  <td>{architecture.name}</td>
+                  <td style={{ width: '250px' }}>{architecture.name}</td>
 
-                  <td>
+                  <TdPadding>
                     <Text as="span" color="gray.7" heavy>
                       {architecture.filetype}
                     </Text>
-                  </td>
+                  </TdPadding>
 
                   <td>
                     <A
