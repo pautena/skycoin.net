@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { rem } from 'polished';
 
 import Link from 'components/Link';
-import { SPACE } from 'config';
 
 import * as images from './images';
 

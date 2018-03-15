@@ -112,32 +112,38 @@ const PersonName = styled(Heading) `
 `;
 
 const A = styled.a`
-  opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+  opacity: ${props => (props.linkcolor ? 1 : 0.5)}; 
+  cursor: pointer; 
   text-decoration: none;
 `;
 
 class Expander extends React.Component {
-  state = {
-    collasped: true
+  constructor() {
+    super();
+
+    this.state = {
+      collapsed: true,
+    };
+    this.toggleExpander = this.toggleExpander.bind(this);
   }
-  toggleExpander = () => {
-    this.setState({ ...this.state, collasped: !this.state.collasped });
+  toggleExpander() {
+    this.setState({ ...this.state, collapsed: !this.state.collapsed });
   }
-  render = () => {
+  render() {
     const { children } = this.props;
-    const { collasped } = this.state;
-    return <div>
-      {!collasped && children}
-      {collasped && <A
+    const { collapsed } = this.state;
+    return (<div>
+      {!collapsed && children}
+      {collapsed && <A
         onClick={() => this.toggleExpander()}
       >
         {/* <FormattedMessage id="downloads.wallet.download" /> */}
         <Text color="#0072FF" fontSize={12}>
           Read BIO
-          <img src={ArrowIcon} />
+          <img src={ArrowIcon} alt="Arrow" />
         </Text>
       </A>}
-      {!collasped && <A
+      {!collapsed && <A
         onClick={() => this.toggleExpander()}
       >
         {/* <FormattedMessage id="downloads.wallet.download" /> */}
@@ -145,9 +151,13 @@ class Expander extends React.Component {
           Hide
         </Text>
       </A>}
-    </div>;
+    </div>);
   }
 }
+
+Expander.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 const TeamPage = ({ intl }) => (
   <div>
