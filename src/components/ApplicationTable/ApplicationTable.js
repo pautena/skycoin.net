@@ -12,7 +12,7 @@ import * as icons from './icons';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(420)};
+  min-width: ${rem(480)};
 
   tr td, tr th {
     border-bottom: 1px solid rgba(146,164, 186, 0.2);
@@ -135,13 +135,13 @@ const ApplicationTable = ({ list }) => {
                     </TdPadding>
                   }
 
-                  <td style={{ width: '250px' }}>{architecture.name}</td>
+                  <td>{architecture.name}</td>
 
-                  <TdPadding>
+                  <td>
                     <Text as="span" color="gray.7" heavy>
                       {architecture.filetype}
                     </Text>
-                  </TdPadding>
+                  </td>
 
                   <td>
                     <A

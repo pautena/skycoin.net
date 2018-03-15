@@ -15,7 +15,7 @@ import { COLORS, SPACE, FONT_SIZES } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(420)};
+  min-width: ${rem(480)};
 
   tr {
     padding-bottom: ${rem(10)};
