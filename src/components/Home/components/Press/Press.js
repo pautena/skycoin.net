@@ -35,6 +35,7 @@ const Logo = styled.img.attrs({
   src: props => props.src,
 })`
   display: block;
+  margin: ${SPACE[4]}px;
 `;
 
 const Paragraph = styled.p`
@@ -60,8 +61,8 @@ const Press = () => (
   <Section>
     <Container>
       <Wrapper py={[5, 7, 9]} px={[4, 6, 8]}>
-        <Flex>
-          <Box width={[4 / 5]}>
+        <Flex wrap>
+          <Box width={[1, 4 / 5]}>
             <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="white">
               <FormattedMessage id="home.press.heading" />
             </Heading>
@@ -69,11 +70,11 @@ const Press = () => (
               <FormattedMessage id="home.press.body" />
             </Paragraph>
           </Box>
-          <Flex row align="center" justify="flex-end" width={[1 / 5]}>
+          <Flex row align="center" justify="flex-end" width={[0, 1 / 5]}>
             <Graphic />
           </Flex>
         </Flex>
-        <Flex align="center" justify="space-between" wrap my={10}>
+        <Flex align="center" justify="space-between" wrap my={8} mx={-4}>
           {logos.map((item, i) => <Logo key={i} src={logos[i]} />)}
         </Flex>
       </Wrapper>
