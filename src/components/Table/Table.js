@@ -8,7 +8,7 @@ import { COLORS } from 'config';
 export const TableWrapper = styled(Text).attrs({
   as: 'div',
   color: 'black',
-  fontSize: [1, 2],
+  fontSize: [1, 1, 2],
   heavy: true,
 })`
   overflow-x: auto;

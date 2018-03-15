@@ -4,7 +4,7 @@ import { BREAKPOINTS } from 'config';
 
 export default mapValues(BREAKPOINTS, breakpoint => ({
   css: (...args) => css`
-    @media (min-width: ${breakpoint}rem) {
+    @media (min-width: ${breakpoint}) {
       ${css(...args)}
     }
   `,
