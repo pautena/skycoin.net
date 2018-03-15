@@ -42,8 +42,17 @@ const Icon = styled.img`
 
 const Th = styled.th`
   padding: ${props => (props.count > 1 ? 'inherit' : `${rem(SPACE[4])} 0`)};
-  padding-right: ${rem(SPACE[11])};
-  padding-left: ${rem(SPACE[11])};
+  padding-right: ${rem(SPACE[4])};
+  padding-left: ${rem(SPACE[4])};  
+  
+  ${media.sm.css`
+    padding-right: ${rem(SPACE[6])};
+    padding-left: ${rem(SPACE[6])};
+  `}
+  ${media.md.css`
+    padding-right: ${rem(SPACE[10])};
+    padding-left: ${rem(SPACE[10])};
+  `}
 `;
 
 const Row = styled.tr`
@@ -56,7 +65,7 @@ const Row = styled.tr`
 `;
 
 const A = styled.a`
-  opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+  opacity: ${props => (props.linkcolor ? 1 : 0.5)};
   text-decoration: none;
 `;
 

@@ -11,7 +11,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
-import { COLORS, SPACE } from 'config';
+import { COLORS, SPACE, FONT_SIZES } from 'config';
 
 const Table = styled.table`
   width: 100%;
@@ -49,7 +49,7 @@ const DownladsTable = ({ title, list, id }) => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[rem(FONT_SIZES[10]), rem(FONT_SIZES[10])]} color="black" mb={[rem(40), rem(40)]} id={id}>
+        <Heading heavy as="h2" fontSize={[6, 7]} color="black" mb={[rem(40), rem(40)]} id={id}>
           <FormattedMessage id={title} />
         </Heading>
       </Box>
