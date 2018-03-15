@@ -11,11 +11,11 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
-import { COLORS } from 'config';
+import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(800)};
+  min-width: ${rem(420)};
 
   tr {
     padding-bottom: ${rem(10)};
@@ -26,12 +26,12 @@ const Table = styled.table`
   }
 
   td, th {
-    height: 50px;
-    font-size: 14px;
-    padding: 12px 30px;
+    height: ${rem(50)};
+    padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
 
     ${media.sm.css`
       height: ${rem(20)};
+      padding: ${rem(SPACE[4])} ${rem(SPACE[8])};
     `}
   }
 

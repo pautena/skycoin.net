@@ -12,7 +12,7 @@ import * as icons from './icons';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(800)};
+  min-width: ${rem(420)};
 
   tr td, tr th {
     border-bottom: 1px solid rgba(146,164, 186, 0.2);
@@ -74,6 +74,15 @@ const Comment = styled(Text) `
 
 const TdPadding = styled.td`
   text-align:left;
+  padding-left: ${rem(SPACE[5])};
+  
+    ${media.sm.css`
+      padding-left: ${rem(SPACE[10])};
+    `}
+    
+    ${media.md.css`
+      padding-left: ${rem(SPACE[13])};
+    `}
 `;
 
 const ApplicationTable = ({ list }) => {

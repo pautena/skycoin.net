@@ -17,7 +17,7 @@ export const TableWrapper = styled(Text).attrs({
 export default styled.table`
   width: 100%;
   border-bottom: 1px solid #787A7D;
-  min-width: ${rem(800)};
+  min-width: ${rem(420)};
 
   td, th {
     border-top: 1px solid #787A7D;
