@@ -234,6 +234,9 @@ const SignUpButton = styled.button`
 const BoldHeading = styled(Heading) `
   font-weight: bold;
 `;
+Expander.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 const TeamPage = ({ intl }) => (
   <div>
