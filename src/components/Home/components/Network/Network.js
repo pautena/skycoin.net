@@ -33,7 +33,7 @@ export default () => (
       <Flex py={[7, 8]} align="center">
         <Box width={[1 / 1, 3 / 5]} mr={[4, 6]}>
           <StyledLink href="https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/" target="_blank">
-            <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="black">
+            <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
               <FormattedMessage id="home.network.heading" />
             </Heading>
             <SubHeading fontSize={2}>

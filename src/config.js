@@ -9,7 +9,10 @@ export const COLOR = {
   dark: '#101F34',
   white: '#fff',
   lightGrey: '#F2F5FA',
+  lightBlue: '#F4F9FF',
   textLight: '#B6C5D6',
+  textGrey: '#92A4BA',
+  textDark: '#07172E',
 };
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 30, 36, 40];

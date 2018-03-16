@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import Button from '../Button';
 
 const Wrapper = styled.div`
-  display: inline;
+  display: block;
+  width: 100%;
+  text-align: center;
 `;
 
 class Buy extends React.Component {

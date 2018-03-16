@@ -48,7 +48,7 @@ GraphicItem.defaultProps = {
 const Miner = () => (
   <Box my={13}>
     <Container>
-      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="black">
+      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.heading" />
       </Heading>
       <SubHeading fontSize={2}>

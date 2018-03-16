@@ -4,10 +4,10 @@ import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import SignUpForm from 'components/SignUpForm';
 import Text from 'components/Text';
 import { COLOR } from 'config';
 import media from 'utils/media';
-import SignUpForm from './components/SignUpForm';
 
 import bg from './signUpBg.svg';
 
@@ -41,7 +41,7 @@ const SignUp = () => (
   <Wrapper>
     <Container>
       <StyledBox width={[1, 1, 3 / 5]} py={[10, 13]}>
-        <Heading heavy as="h2" mb={[4, 6]} fontSize={[5, 6]} color="white">
+        <Heading heavy as="h2" mb={[4, 6]} fontSize={[5, 6, 7]} color="white">
           <FormattedMessage id="home.signup.heading" />
         </Heading>
         <Text fontSize={2} my={[4, 6]} color="white">

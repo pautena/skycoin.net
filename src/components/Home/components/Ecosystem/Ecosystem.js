@@ -71,7 +71,7 @@ InfoItem.defaultProps = {
 const Ecosystem = () => (
   <Wrapper pt={[10, 13]} pb={[7, 8]}>
     <Container>
-      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6]} color="white" width={[1, 2 / 3]}>
+      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="white" width={[1, 2 / 3]}>
         <FormattedMessage id="home.ecosystem.heading" />
       </Heading>
       <SubHeading fontSize={2} my={[4, 6]}>

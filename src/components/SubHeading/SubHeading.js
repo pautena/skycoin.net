@@ -19,5 +19,5 @@ export default styled(SubHeading)`
   font-weight: 'normal';
   line-height: 1.5;
   text-transform: uppercase;
-  color: ${COLOR.textLight};
+  color: ${props => props.color || COLOR.textLight};
 `;
