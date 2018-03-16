@@ -73,9 +73,8 @@ const withActiveProp = (Component) => {
 
 /* eslint-disable no-nested-ternary */
 const StyledLink = withRouter(withActiveProp(styled(Link)`
-  margin-left: ${rem(SPACE[2])};
-  padding-top: ${rem(SPACE[1])};
-  padding-bottom: ${rem(SPACE[1])};
+  margin-left: ${rem(SPACE[1])};
+  padding: ${rem(SPACE[1])};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white
                         ? 'white'
@@ -85,6 +84,8 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   text-decoration: none;
   display: flex;
   align-items: center;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
 
   &:hover {
     color: ${props => (props.white ? 'white' : COLOR.dark)};
