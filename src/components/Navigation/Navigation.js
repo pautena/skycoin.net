@@ -97,7 +97,7 @@ const Navigation = ({ white, social, showBuy }) => (
         <FormattedMessage id="header.navigation.team" />
       </StyledLink>
 
-      <StyledLink white={white} to="/">
+      <StyledLink white={white} to="ecosystem">
         <FormattedMessage id="header.navigation.ecosystem" />
       </StyledLink>
       {showBuy &&

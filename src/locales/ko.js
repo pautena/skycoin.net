@@ -315,4 +315,8 @@ export default {
   roadmapPage: {
     heading: '개발 로드맵',
   },
+  ecosystem: {
+    title: '',
+    description: '',
+  },
 };

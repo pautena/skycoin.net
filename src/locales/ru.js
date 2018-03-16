@@ -315,4 +315,8 @@ export default {
   roadmapPage: {
     heading: 'План разработки',
   },
+  ecosystem: {
+    title: '',
+    description: '',
+  },
 };

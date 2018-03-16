@@ -311,4 +311,8 @@ export default {
   roadmapPage: {
     heading: 'Development roadmap',
   },
+  ecosystem: {
+    title: '',
+    description: '',
+  },
 };
