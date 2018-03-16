@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
+import Container from 'components/Container';
 
 import { COLOR, COLORS } from 'config';
 import * as content from 'components/Ecosystem/content';
@@ -17,7 +18,7 @@ const ContentItem = styled(Flex)`
 `;
 
 const Ecosystem = () => (
-  <div>
+  <Container>
     <Heading heavy as="h2" my={[4, 6]} fontSize={[6, 7]} width={[1, 2 / 3]}>
       <FormattedMessage id="ecosystem.heading" />
     </Heading>
@@ -25,7 +26,7 @@ const Ecosystem = () => (
       <FormattedMessage id="ecosystem.subheading" />
     </SubHeading>
 
-    <ContentItem bg="lightBlue" py={10} pr={[6, 7, 8]} pl={[6, 0, 8]} wrap>
+    <ContentItem bg="lightBlue" py={10} pr={[6, 7, 8]} pl={[6, 0, 8]} wrap mt={[5, 8]}>
       <Box width={[1, 3 / 5, 1 / 2]}>
         <Info heading="ecosystem.skycoin.heading" body="ecosystem.skycoin.body" />
       </Box>
@@ -55,8 +56,7 @@ const Ecosystem = () => (
         <Illustrations items={content.experiments} />
       </Box>
     </ContentItem>
-
-  </div>
+  </Container>
 );
 
 export default Ecosystem;
