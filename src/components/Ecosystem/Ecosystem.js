@@ -9,6 +9,7 @@ import SignUpSection from 'components/SignUpSection';
 
 import EcosystemSection from './components/EcosystemSection';
 import About from './components/About';
+import Roadmap from './components/Roadmap';
 import Whitepaper from './components/Whitepaper';
 
 const Ecosystem = ({ intl }) => (
@@ -24,6 +25,7 @@ const Ecosystem = ({ intl }) => (
     <Header border />
     <EcosystemSection />
     <About />
+    <Roadmap />
     <Whitepaper />
     <SignUpSection />
     <Footer />

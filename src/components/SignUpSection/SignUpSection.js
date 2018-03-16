@@ -9,15 +9,17 @@ import media from 'utils/media';
 import bgSignUp from './bg-signup.png';
 import icArrow from './icArrow.png';
 
-const ArrowImg = styled.img`
-  margin-right: ${rem(50)};
-  margin-top: ${rem(5)};
-
+const ArrowContainer = styled(Box)`
   display: none;
-
+  
   ${media.sm.css`
     display: block;
   `}
+`;
+
+const ArrowImg = styled.img`
+  margin-right: ${rem(50)};
+  margin-top: ${rem(5)};
 `;
 
 const SignUp = styled(Flex) `
@@ -30,9 +32,9 @@ const SignUp = styled(Flex) `
 
 const SignUpSection = () => (
   <SignUp align="center" justify="center" wrap px={[rem(10), 0]}>
-    <Box mt={rem(1)} ml={rem(90)}>
+    <ArrowContainer mt={rem(1)} ml={rem(90)}>
       <ArrowImg src={icArrow} />
-    </Box>
+    </ArrowContainer>
     <Box mx={[0, rem(47)]}>
       <Text m={0} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
     </Box>

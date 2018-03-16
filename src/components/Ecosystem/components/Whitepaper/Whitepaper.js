@@ -39,7 +39,7 @@ const Whitepaper = () => (
   <Wrapper py={[6, 10, 13]}>
     <Container>
       <Flex>
-        <StyledBox width={[1, 1, 3 / 5]} py={[10, 13]}>
+        <StyledBox width={[1, 1, 3 / 5]} py={[0, 5, 13]}>
           <Heading heavy as="h2" my={[6, 8, 10]} fontSize={[6, 7]} width={[1, 2 / 3]}>
             <FormattedMessage id="ecosystem.whitepaper.heading" />
           </Heading>
