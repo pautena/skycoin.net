@@ -1,5 +1,5 @@
 export const en = {
-  title: 'Meat the Team',
+  title: 'Meet the Team',
   subtitle: 'Lorem Ipsum is simply dummy text of the printing',
   quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
   description: 'Bios of the Skycoin team',
@@ -137,7 +137,7 @@ export const en = {
 };
 
 export const zh = {
-  title: 'Meat the Team',
+  title: 'Meet the Team',
   subtitle: 'Lorem Ipsum is simply dummy text of the printing',
   quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
   description: 'Bios of the Skycoin team',
@@ -275,7 +275,7 @@ export const zh = {
 };
 
 export const ru = {
-  title: 'Meat the Team',
+  title: 'Meet the Team',
   subtitle: 'Lorem Ipsum is simply dummy text of the printing',
   quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
   description: 'Bios of the Skycoin team',
@@ -413,7 +413,7 @@ export const ru = {
 };
 
 export const ko = {
-  title: 'Meat the Team',
+  title: 'Meet the Team',
   subtitle: 'Lorem Ipsum is simply dummy text of the printing',
   quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
   description: 'Bios of the Skycoin team',
