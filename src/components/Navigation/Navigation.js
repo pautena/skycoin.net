@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
+import { withRouter, matchPath } from 'react-router-dom';
 
 import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
 import Link from 'components/Link';
@@ -43,12 +44,44 @@ const Wrapper = styled(Flex)`
   }
 `;
 
-const StyledLink = styled(Link)`
+const withActiveProp = (Component) => {
+  const C = (props) => {
+    const matched = matchPath(props.location.pathname, { path: props.to });
+    const active = props.to && (matched != null) && matched.isExact;
+    return (
+      <Component
+        {...props}
+        active={active}
+      />
+    );
+  };
+
+  C.displayName = `withActiveProp(${Component.displayName || Component.name})`;
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    location: PropTypes.shape({
+      pathname: PropTypes.string.isRequired,
+    }).isRequired,
+    to: PropTypes.string,
+  };
+  C.defaultProps = {
+    to: undefined,
+  };
+
+  return C;
+};
+
+/* eslint-disable no-nested-ternary */
+const StyledLink = withRouter(withActiveProp(styled(Link)`
   margin-left: ${rem(SPACE[2])};
   padding-top: ${rem(SPACE[1])};
   padding-bottom: ${rem(SPACE[1])};
   font-family: ${FONT_FAMILIES.sans};
-  color: ${props => (props.white ? 'white' : COLOR.base)};
+  color: ${props => (props.white
+                        ? 'white'
+                        : (props.active
+                            ? COLOR.dark
+                            : COLOR.base))};
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -66,7 +99,7 @@ const StyledLink = styled(Link)`
   ${media.md.css`
     margin-left: ${rem(SPACE[7])};
   `}
-`;
+`));
 
 const Img = styled.img.attrs({
   alt: props => props.alt || '',
@@ -91,11 +124,11 @@ const Navigation = ({ white, social, showBuy }) => (
         <FormattedMessage id="header.navigation.explorer" />
       </StyledLink>
 
-      <StyledLink white={white} to="downloads">
+      <StyledLink white={white} to="/downloads">
         <FormattedMessage id="header.navigation.wallet" />
       </StyledLink>
 
-      <StyledLink white={white} to="team">
+      <StyledLink white={white} to="/team">
         <FormattedMessage id="header.navigation.team" />
       </StyledLink>
 
@@ -110,7 +143,7 @@ const Navigation = ({ white, social, showBuy }) => (
     </GroupWrapper>
     {social &&
     <GroupWrapper>
-      <StyledLink white={white} to="https://t.me/Skycoin">
+      <StyledLink white={white} href="https://t.me/Skycoin">
         <Img src={telegram} alt="Telegram" />
         <FormattedMessage id="header.navigation.telegram" />
       </StyledLink>
