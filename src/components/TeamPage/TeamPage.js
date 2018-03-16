@@ -190,57 +190,9 @@ const ArrowImg = styled.img`
   margin-top: ${rem(5)};
 `;
 
-const EmailInput = styled.input`
-  background-color: transparent;
-  border: 1px solid white;
-  height: ${rem(44)};
-  border-radius: ${rem(22)};
-  color: white;
-  padding-left: ${rem(10)};
-  padding-right: ${rem(40)};
-  font-family: ${FONT_FAMILIES.sans};
-  font-size: ${rem(FONT_SIZES[2])};
-
-  &::placeholder {
-    color: white;
-    font-family: ${FONT_FAMILIES.sans};
-    font-size: ${rem(FONT_SIZES[2])};
-  }
-
-  outline: none;
-  & :focused {
-    outline: none;
-  }
-`;
-
-const SignUpButton = styled.button`
-  border: 10px solid white;
-  border-radius: ${rem(22)};
-  height: ${rem(49)};
-  padding: 0 ${rem(55)};
-  color: #0072FF;
-  text-transform: uppercase;
-  font-family: ${FONT_FAMILIES.sans};
-  margin-left: ${rem(-40)};
-  outline: none;
-
-  &:hover {
-    background-color: #f2f2f2;
-    border: 10px solid #f2f2f2;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25)
-  }
-`;
-
-const BoldHeading = styled(Heading) `
-  font-weight: bold;
-`;
 Expander.propTypes = {
   children: PropTypes.element.isRequired,
 };
-const ArrowImg = styled.img`
-  margin-right: ${rem(50)};
-  margin-top: ${rem(5)};
-`;
 
 const EmailInput = styled.input`
   background-color: transparent;
