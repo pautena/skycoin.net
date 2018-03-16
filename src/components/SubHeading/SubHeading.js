@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { space, width, fontSize, color } from 'styled-system';
+import { space, width, fontSize } from 'styled-system';
 import createComponentFromTagProp from 'react-create-component-from-tag-prop';
 
 import { FONT_FAMILIES, COLOR } from 'config';
