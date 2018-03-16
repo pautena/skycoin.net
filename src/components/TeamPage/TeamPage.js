@@ -18,7 +18,7 @@ import { FONT_FAMILIES, FONT_SIZES } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
-import bg from './bg.jpg';
+import bg from './bg.svg';
 import bgSignUp from './bg-signup.png';
 import icArrow from './icArrow.png';
 
@@ -156,25 +156,23 @@ class Expander extends React.Component {
     this.setState({ ...this.state, collapsed: !this.state.collapsed });
   }
   render() {
-    const { children } = this.props;
+    const { children, intl } = this.props;
     const { collapsed } = this.state;
     return (<div>
       {!collapsed && children}
       {collapsed && <A
         onClick={() => this.toggleExpander()}
       >
-        {/* <FormattedMessage id="downloads.wallet.download" /> */}
         <Text color="#0072FF" fontSize={12}>
-          Read BIO
+          {getLocale(intl.locale).readBio}
           <Arrow dir="up" src={ArrowIcon} />
         </Text>
       </A>}
       {!collapsed && <A
         onClick={() => this.toggleExpander()}
       >
-        {/* <FormattedMessage id="downloads.wallet.download" /> */}
         <Text color="#0072FF" fontSize={12}>
-          Hide
+          {getLocale(intl.locale).hide}
           <Arrow dir="down" src={ArrowIcon} />
         </Text>
       </A>}
@@ -184,6 +182,9 @@ class Expander extends React.Component {
 
 Expander.propTypes = {
   children: PropTypes.element.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 const ArrowImg = styled.img`
   margin-right: ${rem(50)};
@@ -239,6 +240,9 @@ const BoldHeading = styled(Heading) `
   font-weight: bold;
 `;
 
+const FounderImg = styled(Img) `
+`;
+
 const TeamPage = ({ intl }) => (
   <div>
     <Helmet>
@@ -285,13 +289,13 @@ const TeamPage = ({ intl }) => (
           <Flex wrap justify="center">
             {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
               <Person key={index} width={1 / 3}>
-                <Flex wrap row>
+                <Flex column>
                   <StyledBox>
                     <ImageContainer>
-                      {picture ?
+                      {(picture && picture !== '') ?
                         /* eslint-disable */
-                        <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                        <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                        <FounderImg src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                        <FounderImg src={require("./content/images/default.png")} alt="Anonymous team member" />
                         /* eslint-disable */
                       }
                     </ImageContainer>
@@ -299,7 +303,7 @@ const TeamPage = ({ intl }) => (
                   <StyledBox ml={4}>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
-                    {bio && <Expander><Bio>{bio}</Bio></Expander>}
+                    {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
                   </StyledBox>
                 </Flex>
               </Person>
@@ -326,7 +330,7 @@ const TeamPage = ({ intl }) => (
                 <Flex wrap row>
                   <StyledBox>
                     <ImageContainer>
-                      {picture ?
+                      {(picture && picture !== '') ?
                         /* eslint-disable */
                         <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
                         <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
@@ -337,7 +341,7 @@ const TeamPage = ({ intl }) => (
                   <StyledBox ml={4}>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
-                    {bio && <Expander><Bio>{bio}</Bio></Expander>}
+                    {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
                   </StyledBox>
                 </Flex>
               </Person>
@@ -364,7 +368,7 @@ const TeamPage = ({ intl }) => (
                 <Flex wrap row>
                   <StyledBox>
                     <ImageContainer>
-                      {picture ?
+                      {(picture && picture !== '') ?
                         /* eslint-disable */
                         <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
                         <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
@@ -375,7 +379,7 @@ const TeamPage = ({ intl }) => (
                   <StyledBox ml={4}>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
-                    {bio && <Expander><Bio>{bio}</Bio></Expander>}
+                    {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
                   </StyledBox>
                 </Flex>
               </Person>
