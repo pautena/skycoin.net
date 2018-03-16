@@ -5,7 +5,7 @@ import { injectIntl } from 'react-intl';
 
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Container from 'components/Container';
+import SignUpSection from 'components/SignUpSection';
 
 import EcosystemSection from './components/EcosystemSection';
 import Whitepaper from './components/Whitepaper';
@@ -23,6 +23,7 @@ const Ecosystem = ({ intl }) => (
     <Header border />
     <EcosystemSection />
     <Whitepaper />
+    <SignUpSection />
     <Footer />
   </div>
 );

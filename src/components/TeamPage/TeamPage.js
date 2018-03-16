@@ -14,14 +14,13 @@ import Heading from 'components/Heading';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
 import Text from 'components/Text';
+import SignUpSection from 'components/SignUpSection';
 
 import { FONT_FAMILIES, FONT_SIZES } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
-import bgSignUp from './bg-signup.png';
-import icArrow from './icArrow.png';
 
 const Wrapper = styled.div`
   padding: 2em 0;
@@ -142,14 +141,6 @@ const Arrow = styled.img`
   height: 12px;
 `;
 
-const SignUp = styled(Flex) `
-  background-image: url(${bgSignUp});
-  background-size: cover;
-  height: 122px;
-  text-align: center;
-  vertical-align: center;
-`;
-
 class Expander extends React.Component {
   constructor() {
     super();
@@ -193,63 +184,10 @@ Expander.propTypes = {
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };
-const ArrowImg = styled.img`
-  margin-right: ${rem(50)};
-  margin-top: ${rem(5)};
-
-  display: none;
-
-  ${media.sm.css`
-    display: block;
-  `}
-`;
 
 Expander.propTypes = {
   children: PropTypes.element.isRequired,
 };
-
-const EmailInput = styled.input`
-  background-color: transparent;
-  border: 1px solid white;
-  height: ${rem(44)};
-  border-radius: ${rem(22)};
-  color: white;
-  padding-left: ${rem(10)};
-  padding-right: ${rem(40)};
-  font-family: ${FONT_FAMILIES.sans};
-  font-size: ${rem(FONT_SIZES[2])};
-  width: 100%;
-
-  &::placeholder {
-    color: white;
-    font-family: ${FONT_FAMILIES.sans};
-    font-size: ${rem(FONT_SIZES[2])};
-  }
-
-  outline: none;
-  & :focused {
-    outline: none;
-  }
-`;
-
-const SignUpButton = styled.button`
-  border: 10px solid white;
-  background-color: white;
-  border-radius: ${rem(22)};
-  height: ${rem(49)};
-  padding: 0 ${rem(55)};
-  color: #0072FF;
-  text-transform: uppercase;
-  font-family: ${FONT_FAMILIES.sans};
-  margin-left: ${rem(-40)};
-  outline: none;
-  width: 100%;
-
-  &:hover {
-    background-color: #f2f2f2;
-    border: 10px solid #f2f2f2;
-  }
-`;
 
 const BoldHeading = styled(Heading) `
   font-weight: bold;
@@ -404,20 +342,7 @@ const TeamPage = ({ intl }) => (
       </Container>
     </Wrapper>
 
-    <SignUp align="center" justify="center" wrap px={[rem(10), 0]}>
-      <Box mt={rem(1)} ml={rem(90)}>
-        <ArrowImg src={icArrow} />
-      </Box>
-      <Box mx={[0, rem(47)]}>
-        <Text m={0} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
-      </Box>
-      <Box>
-        <Flex px={[rem(10), 0]}>
-          <EmailInput placeholder="Your email" />
-          <SignUpButton>Sign up</SignUpButton>
-        </Flex>
-      </Box>
-    </SignUp>
+    <SignUpSection />
 
     <Footer />
   </div>

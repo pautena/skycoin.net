@@ -4,10 +4,10 @@ import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import SignUpForm from 'components/SignUpForm';
 import Text from 'components/Text';
 import { COLOR } from 'config';
 import media from 'utils/media';
-import SignUpForm from './components/SignUpForm';
 
 import bg from './signUpBg.svg';
 
