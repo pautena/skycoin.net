@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 
+import media from 'utils/media';
 import Header from 'components/Header';
 import SubHeading from 'components/SubHeading';
 import Heading from 'components/Heading';
@@ -93,14 +94,19 @@ const QuoteContainer = styled.div`
   margin: ${rem(85)} 0;
 `;
 
-const Bg = styled.div`
+const Bg = styled(Flex) `
   background-image: url(${bg});
-  height: ${rem(340)};
+  
+  height: ${rem(70)};
+
+  ${media.sm.css`
+    height: ${rem(340)};
+  `}
+
   width: 100%;
   background-size: 100% auto;
   background-position-y: center;
   background-repeat: no-repeat;
-  margin-bottom: ${rem(77)};
 `;
 
 const FoundersHeading = styled(Heading) `
@@ -130,6 +136,7 @@ const Arrow = styled.img`
   & path {
     fill: #0072FF;
   }
+
   transform: rotate(${props => (props.dir === 'down' ? '180deg ' : '0deg')});
   width: 12px;
   height: 12px;
@@ -189,6 +196,12 @@ Expander.propTypes = {
 const ArrowImg = styled.img`
   margin-right: ${rem(50)};
   margin-top: ${rem(5)};
+
+  display: none;
+
+  ${media.sm.css`
+    display: block;
+  `}
 `;
 
 Expander.propTypes = {
@@ -205,6 +218,7 @@ const EmailInput = styled.input`
   padding-right: ${rem(40)};
   font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[2])};
+  width: 100%;
 
   &::placeholder {
     color: white;
@@ -220,6 +234,7 @@ const EmailInput = styled.input`
 
 const SignUpButton = styled.button`
   border: 10px solid white;
+  background-color: white;
   border-radius: ${rem(22)};
   height: ${rem(49)};
   padding: 0 ${rem(55)};
@@ -228,11 +243,11 @@ const SignUpButton = styled.button`
   font-family: ${FONT_FAMILIES.sans};
   margin-left: ${rem(-40)};
   outline: none;
+  width: 100%;
 
   &:hover {
     background-color: #f2f2f2;
     border: 10px solid #f2f2f2;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25)
   }
 `;
 
@@ -253,7 +268,7 @@ const TeamPage = ({ intl }) => (
       />
     </Helmet>
     <Header border />
-    <Bg />
+    <Bg mb={[0, rem(77)]} />
     <Container>
       <Wrapper>
         <BoldHeading
@@ -288,7 +303,7 @@ const TeamPage = ({ intl }) => (
           </FoundersHeading>
           <Flex wrap justify="center">
             {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={1 / 3}>
+              <Person key={index} width={[1, 1 / 3]}>
                 <Flex column>
                   <StyledBox>
                     <ImageContainer>
@@ -326,8 +341,8 @@ const TeamPage = ({ intl }) => (
           </FoundersHeading>
           <Flex wrap justify="center">
             {getLocale(intl.locale).investors.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={1 / 4}>
-                <Flex wrap row>
+              <Person key={index} width={[1, 1 / 4]}>
+                <Flex column>
                   <StyledBox>
                     <ImageContainer>
                       {(picture && picture !== '') ?
@@ -364,8 +379,8 @@ const TeamPage = ({ intl }) => (
           </FoundersHeading>
           <Flex wrap justify="center">
             {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={1 / 4}>
-                <Flex wrap row>
+              <Person key={index} width={[1, 1 / 4]}>
+                <Flex column>
                   <StyledBox>
                     <ImageContainer>
                       {(picture && picture !== '') ?
@@ -389,15 +404,15 @@ const TeamPage = ({ intl }) => (
       </Container>
     </Wrapper>
 
-    <SignUp align="center" justify="center">
+    <SignUp align="center" justify="center" wrap px={[rem(10), 0]}>
       <Box mt={rem(1)} ml={rem(90)}>
         <ArrowImg src={icArrow} />
       </Box>
-      <Box mx={rem(47)}>
+      <Box mx={[0, rem(47)]}>
         <Text m={0} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
       </Box>
       <Box>
-        <Flex>
+        <Flex px={[rem(10), 0]}>
           <EmailInput placeholder="Your email" />
           <SignUpButton>Sign up</SignUpButton>
         </Flex>
