@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
@@ -21,10 +22,33 @@ const ImageItem = ({ icon, label }) => (
   </StyledBox>
 );
 
+ImageItem.propTypes = {
+  icon: PropTypes.node.isRequired,
+  label: PropTypes.string.isRequired,
+};
+
+ImageItem.defaultProps = {
+  icon: '',
+  label: '',
+};
+
 const Illustrations = ({ items }) => (
   <Flex align="flex-start" wrap>
     {items.map((item, i) => <ImageItem icon={item.icon} label={item.label} key={i} />)}
   </Flex>
 );
+
+Illustrations.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.node.isRequired,
+      label: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
+
+Illustrations.defaultProps = {
+  items: [],
+};
 
 export default Illustrations;

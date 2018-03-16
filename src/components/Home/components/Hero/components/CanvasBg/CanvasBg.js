@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from 'utils/media';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -11,7 +12,11 @@ const Wrapper = styled.div`
 `;
 
 const Canvas = styled.canvas`
-  display: block; 
+  display: none;
+  
+  ${media.sm.css`
+    display: block;
+  `}
 `;
 
 class CanvasBg extends React.Component {

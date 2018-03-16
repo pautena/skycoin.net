@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import {  Box } from 'grid-styled';
+import { Box } from 'grid-styled';
 
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
@@ -17,5 +18,15 @@ const Info = ({ heading, body }) => (
     </Text>
   </Box>
 );
+
+Info.propTypes = {
+  heading: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+};
+
+Info.defaultProps = {
+  heading: '',
+  body: '',
+};
 
 export default Info;

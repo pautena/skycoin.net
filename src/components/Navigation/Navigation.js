@@ -45,6 +45,8 @@ const Wrapper = styled(Flex)`
 
 const StyledLink = styled(Link)`
   margin-left: ${rem(SPACE[2])};
+  padding-top: ${rem(SPACE[1])};
+  padding-bottom: ${rem(SPACE[1])};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white ? 'white' : COLOR.base)};
   text-decoration: none;
@@ -75,7 +77,7 @@ const Img = styled.img.attrs({
 `;
 
 const Navigation = ({ white, social, showBuy }) => (
-  <Wrapper align="center" wrap>
+  <Wrapper align="center" wrap mt={[5, 5, 0]}>
     <GroupWrapper>
       <StyledLink white={white} to="/">
         <FormattedMessage id="header.navigation.home" />
