@@ -129,7 +129,7 @@ const Navigation = ({ white, social, showBuy }) => (
         <FormattedMessage id="header.navigation.team" />
       </StyledLink>
 
-      <StyledLink white={white} to="ecosystem">
+      <StyledLink white={white} to="/ecosystem">
         <FormattedMessage id="header.navigation.ecosystem" />
       </StyledLink>
       {showBuy &&
@@ -140,12 +140,12 @@ const Navigation = ({ white, social, showBuy }) => (
     </GroupWrapper>
     {social &&
     <GroupWrapper>
-      <StyledLink white={white} href="https://t.me/Skycoin">
+      <StyledLink white={white} href="https://t.me/Skycoin" target="_blank">
         <Img src={telegram} alt="Telegram" />
         <FormattedMessage id="header.navigation.telegram" />
       </StyledLink>
 
-      <StyledLink white={white} to="/">
+      <StyledLink white={white} href="https://discordapp.com" target="_blank">
         <Img src={discord} alt="Discord" height={23} />
         <FormattedMessage id="header.navigation.discord" />
       </StyledLink>
