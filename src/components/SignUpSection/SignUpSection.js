@@ -12,7 +12,7 @@ import icArrow from './icArrow.png';
 const ArrowContainer = styled(Box)`
   display: none;
   
-  ${media.sm.css`
+  ${media.md.css`
     display: block;
   `}
 `;
@@ -23,20 +23,20 @@ const ArrowImg = styled.img`
 `;
 
 const SignUp = styled(Flex) `
+  min-height: 122px;
   background-image: url(${bgSignUp});
   background-size: cover;
-  height: 122px;
   text-align: center;
   vertical-align: center;
 `;
 
 const SignUpSection = () => (
-  <SignUp align="center" justify="center" wrap px={[rem(10), 0]}>
+  <SignUp align="center" justify="center" wrap px={[rem(10), 0]} py={[4, 5]}>
     <ArrowContainer mt={rem(1)} ml={rem(90)}>
       <ArrowImg src={icArrow} />
     </ArrowContainer>
     <Box mx={[0, rem(47)]}>
-      <Text m={0} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
+      <Text mb={[4, 0]} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
     </Box>
     <Box>
       <Flex px={[rem(10), 0]}>
