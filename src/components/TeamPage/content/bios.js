@@ -14,7 +14,7 @@ export const en = {
     title: 'Founders',
     bios: [
       {
-        name: 'Brandon Smietana',
+        name: 'Synth',
         email: '',
         picture: '',
         title: '',
@@ -152,7 +152,7 @@ export const zh = {
     title: 'Founders',
     bios: [
       {
-        name: 'Brandon Smietana',
+        name: 'Synth',
         email: '',
         picture: '',
         title: '',
@@ -290,7 +290,7 @@ export const ru = {
     title: 'Founders',
     bios: [
       {
-        name: 'Brandon Smietana',
+        name: 'Synth',
         email: '',
         picture: '',
         title: '',
@@ -428,7 +428,7 @@ export const ko = {
     title: 'Founders',
     bios: [
       {
-        name: 'Brandon Smietana',
+        name: 'Synth',
         email: '',
         picture: '',
         title: '',
