@@ -15,11 +15,16 @@ const Wrapper = styled.div`
   margin-right: ${rem(SPACE[6])};
   
   #mc-embedded-subscribe {
-    position: absolute;
-    top: -1px;
-    right: 0;
-    margin: 0;
-    width: ${rem(BUTTON_WIDTH)};
+    width: 100%;
+    margin: ${rem(SPACE[4])} 0 0;
+    
+    ${media.sm.css`
+      position: absolute;
+      top: -1px;
+      right: 0;
+      margin: 0;
+      width: ${rem(BUTTON_WIDTH)};
+    `}
   }
   
   .mce_inline_error {

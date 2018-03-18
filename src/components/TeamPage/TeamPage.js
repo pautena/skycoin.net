@@ -16,25 +16,35 @@ import Container from 'components/Container';
 import Text from 'components/Text';
 import SignUpSection from 'components/SignUpSection';
 
-import { FONT_FAMILIES, FONT_SIZES } from 'config';
+import { FONT_FAMILIES, FONT_SIZES, COLOR, BORDER_RADIUS, BOX_SHADOWS } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
 
-const Wrapper = styled.div`
-  padding: 2em 0;
-  background-color: ${props => (props.bg || 'inherited')};
+const Wrapper = styled(Box)`
+  background-color: ${props => (props.bg || 'transparent')};
 `;
 
 const ImageContainer = styled.div`
   position: relative;
-  width: 90%;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
   margin: auto;
+  background: ${COLOR.white};
+  border-radius: ${BORDER_RADIUS.base};
+  box-shadow: ${BOX_SHADOWS.image};
+  overflow: hidden;
 `;
 
 const Img = styled.img`
-  width: 100%;
+  position: absolute;
+  width: auto;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 `;
 
 const Title = styled.strong`
@@ -56,10 +66,6 @@ const Bio = styled.p`
 const StyledBox = styled(Box) `
   display: flex;
   flex-direction: column;
-`;
-
-const BioSection = styled.section`
-  margin-bottom: 3em;
 `;
 
 const localeList = { en, zh, ko, ru };
@@ -208,7 +214,7 @@ const TeamPage = ({ intl }) => (
     <Header border />
     <Bg mb={[0, rem(77)]} />
     <Container>
-      <Wrapper>
+      <Wrapper mb={[7, 9]}>
         <BoldHeading
           as="h1"
           fontSize={[rem(FONT_SIZES[8]), rem(FONT_SIZES[8])]}
@@ -230,7 +236,7 @@ const TeamPage = ({ intl }) => (
           </Quote>
         </QuoteContainer>
 
-        <BioSection>
+        <section>
           <FoundersHeading
             as="h2"
             fontSize={[rem(FONT_SIZES[3]), rem(FONT_SIZES[3])]}
@@ -239,9 +245,9 @@ const TeamPage = ({ intl }) => (
           >
             {getLocale(intl.locale).founders.title}
           </FoundersHeading>
-          <Flex wrap justify="center">
+          <Flex wrap justify="center" mx={[-6, -7]}>
             {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={[1, 1 / 3]}>
+              <Person key={index} width={[1, 1 / 3]} px={[6, 7]}>
                 <Flex column>
                   <StyledBox>
                     <ImageContainer>
@@ -253,7 +259,7 @@ const TeamPage = ({ intl }) => (
                       }
                     </ImageContainer>
                   </StyledBox>
-                  <StyledBox ml={4}>
+                  <StyledBox>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
@@ -262,13 +268,13 @@ const TeamPage = ({ intl }) => (
               </Person>
             ))}
           </Flex>
-        </BioSection>
+        </section>
       </Wrapper>
     </Container>
 
-    <Wrapper bg="#F4F9FF">
+    <Wrapper bg="#F4F9FF" pb={8} pt={[8, 11, 13]}>
       <Container>
-        <BioSection>
+        <section>
           <FoundersHeading
             as="h2"
             fontSize={[rem(FONT_SIZES[3]), rem(FONT_SIZES[3])]}
@@ -277,9 +283,9 @@ const TeamPage = ({ intl }) => (
           >
             {getLocale(intl.locale).investors.title}
           </FoundersHeading>
-          <Flex wrap justify="center">
+          <Flex wrap justify="flex-start" mx={[-6, -7]}>
             {getLocale(intl.locale).investors.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={[1, 1 / 4]}>
+              <Person key={index} width={[1, 1 / 4]} px={[6, 7]} mb={[4, 5, 6]}>
                 <Flex column>
                   <StyledBox>
                     <ImageContainer>
@@ -291,7 +297,7 @@ const TeamPage = ({ intl }) => (
                       }
                     </ImageContainer>
                   </StyledBox>
-                  <StyledBox ml={4}>
+                  <StyledBox>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
@@ -300,13 +306,13 @@ const TeamPage = ({ intl }) => (
               </Person>
             ))}
           </Flex>
-        </BioSection>
+        </section>
       </Container>
     </Wrapper>
 
-    <Wrapper>
+    <Wrapper pb={8} pt={[8, 11, 13]}>
       <Container>
-        <BioSection>
+        <section>
           <FoundersHeading
             as="h2"
             fontSize={[rem(FONT_SIZES[3]), rem(FONT_SIZES[3])]}
@@ -315,9 +321,9 @@ const TeamPage = ({ intl }) => (
           >
             {getLocale(intl.locale).west.title}
           </FoundersHeading>
-          <Flex wrap justify="center">
+          <Flex wrap justify="flex-start" mx={[-6, -7]}>
             {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
-              <Person key={index} width={[1, 1 / 4]}>
+              <Person key={index} width={[1, 1 / 4]} px={[6, 7]} mb={[4, 5, 6]}>
                 <Flex column>
                   <StyledBox>
                     <ImageContainer>
@@ -329,7 +335,7 @@ const TeamPage = ({ intl }) => (
                       }
                     </ImageContainer>
                   </StyledBox>
-                  <StyledBox ml={4}>
+                  <StyledBox>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
@@ -338,7 +344,7 @@ const TeamPage = ({ intl }) => (
               </Person>
             ))}
           </Flex>
-        </BioSection>
+        </section>
       </Container>
     </Wrapper>
 
