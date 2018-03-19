@@ -23,34 +23,48 @@ const logos = [
 
 const Section = styled.div`
   background: ${COLOR.lightGrey};
+  padding-bottom: ${SPACE[13] + SPACE[4]}px;
+  
+  ${media.sm.css`
+    padding-bottom: ${SPACE[13] + SPACE[6]}px;
+  `}
 `;
 
 const Wrapper = styled(Box)`
   position: relative;
   background: ${COLOR.base};
   z-index: 1;
-  margin: 0 -${rem(SPACE[4])};
+  margin: 0 -${rem(SPACE[7])} 0;
   
   ${media.sm.css`
-    margin: 0;
-    transform: translateY(-40%);
+    margin: -190px 0 0;
+  `}
+`;
+
+const LogoWrapper = styled(Box)`
+  text-align: center;
+  padding: ${rem(SPACE[3])};
+  
+  ${media.sm.css`
+    &:first-child {
+      text-align: left;
+    }
+    
+    &:last-child {
+      text-align: right;
+    }
   `}
 `;
 
 const Logo = styled.img.attrs({
   src: props => props.src,
 })`
-  display: block;
+  display: inline-block;
   margin-top: ${rem(SPACE[4])}px;
   margin-bottom: ${rem(SPACE[4])}px;
-  max-width: 140px;
+  max-width: 100%;
+  max-height: 94px;
   
-  ${media.sm.css`
-    max-width: 180px;
-  `}
-  ${media.md.css`
-    max-width: 200px;
-  `}
 `;
 
 const Paragraph = styled.p`
@@ -76,7 +90,7 @@ const Graphic = styled.img.attrs({
 const Press = () => (
   <Section>
     <Container>
-      <Wrapper py={[6, 8, 10]} px={[4, 10, 12]}>
+      <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
         <Flex wrap>
           <Box width={[1, 4 / 5]}>
             <Heading heavy as="h2" my={[4, 6]} mr={[13]} fontSize={[5, 6, 7]} color="white">
@@ -90,8 +104,12 @@ const Press = () => (
             <Graphic />
           </Flex>
         </Flex>
-        <Flex align="center" justify="space-between" wrap my={8} mx={-4} px={[4, 0, 0]}>
-          {logos.map((item, i) => <Logo key={i} src={logos[i]} />)}
+        <Flex align="center" justify="space-between" wrap my={[5, 8]} mx={0} px={0}>
+          {logos.map((item, i) => (
+            <LogoWrapper width={[1 / 2, 1 / 4]}>
+              <Logo key={i} src={logos[i]} />
+            </LogoWrapper>
+          ))}
         </Flex>
       </Wrapper>
     </Container>

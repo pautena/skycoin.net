@@ -16,7 +16,7 @@ import Container from 'components/Container';
 import Text from 'components/Text';
 import SignUpSection from 'components/SignUpSection';
 
-import { FONT_FAMILIES, FONT_SIZES, COLOR, BORDER_RADIUS, BOX_SHADOWS } from 'config';
+import { FONT_FAMILIES, FONT_SIZES, COLOR, BORDER_RADIUS, BOX_SHADOWS, SPACE } from 'config';
 import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
@@ -75,14 +75,6 @@ const getLocale = (locale) => {
   return language;
 };
 
-const SubheadingSeparator = styled.div`
-  width: 20px;
-  height: 1px;
-  background-color: #92A4BA;
-  margin-right: 12px;
-  display: inline-block;
-`;
-
 const QuoteLine = styled.div`
   border: 1px solid #92A4BA;
   border-radius: 2px;
@@ -99,19 +91,17 @@ const QuoteContainer = styled.div`
   margin: ${rem(85)} 0;
 `;
 
-const Bg = styled(Flex) `
-  background-image: url(${bg});
-  
-  height: ${rem(70)};
-
-  ${media.sm.css`
-    height: ${rem(340)};
-  `}
-
+const Banner = styled.img`
   width: 100%;
-  background-size: 100% auto;
-  background-position-y: center;
-  background-repeat: no-repeat;
+  margin-bottom: ${rem(SPACE[8])};
+  
+  ${media.sm.css`
+    margin-bottom: ${rem(SPACE[10])};    
+  `}
+  
+  ${media.md.css`
+    margin-bottom: ${rem(SPACE[13])};
+  `}
 `;
 
 const FoundersHeading = styled(Heading) `
@@ -195,10 +185,6 @@ Expander.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-const BoldHeading = styled(Heading) `
-  font-weight: bold;
-`;
-
 const FounderImg = styled(Img) `
 `;
 
@@ -212,19 +198,19 @@ const TeamPage = ({ intl }) => (
       />
     </Helmet>
     <Header border />
-    <Bg mb={[0, rem(77)]} />
+    <Banner src={bg} />
     <Container>
       <Wrapper mb={[7, 9]}>
-        <BoldHeading
+        <Heading
           as="h1"
-          fontSize={[rem(FONT_SIZES[8]), rem(FONT_SIZES[8])]}
-          color="#07172E"
-          mb={[rem(6)]}
+          heavy
+          fontSize={[6, 7]}
+          mb={2}
+          color={COLOR.textDark}
         >
           {getLocale(intl.locale).title}
-        </BoldHeading>
-        <SubHeading fontSize={[1, 1, 2]} color="gray.9" normal>
-          <SubheadingSeparator />
+        </Heading>
+        <SubHeading fontSize={[1, 1, 2]} normal>
           {getLocale(intl.locale).subtitle}
         </SubHeading>
         <QuoteContainer>

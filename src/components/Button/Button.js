@@ -62,6 +62,10 @@ const Button = styled(Link)`
   ${props => props.big && media.sm.css`
     padding: ${rem(SPACE[4])};
   `}
+  
+  ${props => props.xxl && media.sm.css`
+    padding: ${rem(SPACE[7])} ${rem(SPACE[4])};
+  `}
 `;
 
 Button.defaultProps = {

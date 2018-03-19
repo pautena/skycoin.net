@@ -19,14 +19,14 @@ const ContentItem = styled(Flex)`
 
 const Ecosystem = () => (
   <Container>
-    <Heading heavy as="h2" my={[4, 6]} fontSize={[6, 7]} width={[1, 2 / 3]}>
+    <Heading heavy as="h2" mb={2} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
       <FormattedMessage id="ecosystem.heading" />
     </Heading>
-    <SubHeading fontSize={2} my={[4, 6]}>
+    <SubHeading fontSize={2} mb={[8, 10]}>
       <FormattedMessage id="ecosystem.subheading" />
     </SubHeading>
 
-    <ContentItem bg="lightBlue" py={10} pr={[6, 7, 8]} pl={[6, 0, 8]} wrap mt={[5, 8]}>
+    <ContentItem bg="lightBlue" py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mt={[5, 8]} mx={[-7, 0]}>
       <Box width={[1, 3 / 5, 1 / 2]}>
         <Info heading="ecosystem.skycoin.heading" body="ecosystem.skycoin.body" />
       </Box>
@@ -35,7 +35,7 @@ const Ecosystem = () => (
       </Box>
     </ContentItem>
 
-    <ContentItem py={10} pr={[6, 7, 8]} pl={[6, 0, 8]} wrap>
+    <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
       <Box width={[1, 3 / 5, 1 / 2]}>
         <Info heading="ecosystem.skywire.heading" body="ecosystem.skywire.body" />
       </Box>
@@ -44,11 +44,11 @@ const Ecosystem = () => (
       </Box>
     </ContentItem>
 
-    <ContentItem bg="lightBlue" py={10} pr={[6, 7, 8]} pl={[6, 6, 8]} wrap>
+    <ContentItem bg="lightBlue" py={10} pr={[7, 7, 8]} pl={[7, 6, 8]} wrap mx={[-7, 0]}>
       <Info heading="ecosystem.skyledger.heading" body="ecosystem.skyledger.body" />
     </ContentItem>
 
-    <ContentItem py={10} pr={[6, 7, 8]} pl={[6, 0, 8]} wrap>
+    <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
       <Box width={[1, 3 / 5, 1 / 2]}>
         <Info heading="ecosystem.experiments.heading" body="ecosystem.experiments.body" />
       </Box>
