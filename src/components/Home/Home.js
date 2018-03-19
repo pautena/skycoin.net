@@ -9,6 +9,7 @@ import Network from './components/Network';
 import Miner from './components/Miner';
 import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
+import News from './components/News';
 import SignUp from './components/SignUp';
 
 const Home = ({ intl }) => (
@@ -26,6 +27,7 @@ const Home = ({ intl }) => (
     <Miner />
     <Network />
     <Ecosystem />
+    <News />
     <SignUp />
     <Footer />
   </div>
