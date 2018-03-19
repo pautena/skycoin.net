@@ -21,7 +21,13 @@ const Header = ({ white, blueWhite, border, social, showBuy }) => (
     <Wrapper border={border}>
       <Flex align="center" justify="space-between" wrap>
         <Logo white={white} />
-        <Navigation white={white} social={social} blueWhite={blueWhite} showBuy={showBuy} />
+        <Navigation
+          white={white}
+          social={social}
+          blueWhite={blueWhite}
+          showBuy={showBuy}
+          isMobile
+        />
       </Flex>
     </Wrapper>
   </Container>

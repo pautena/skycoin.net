@@ -222,6 +222,9 @@ export default {
         text: 'Decentralized Social Network running on Skywire.',
       },
     },
+    news: {
+      heading: 'News',
+    },
     signup: {
       heading: 'Free Skycoin. No Joke. Check It Out.',
       body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win.',

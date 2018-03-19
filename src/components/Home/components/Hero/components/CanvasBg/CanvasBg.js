@@ -4,7 +4,6 @@ import media from 'utils/media';
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   max-height: 100%;

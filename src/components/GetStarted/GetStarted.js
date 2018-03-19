@@ -16,8 +16,13 @@ const GetStarted = styled.div`
   text-align: center;
 `;
 
-const Buttons = styled.div`
+const Buttons = styled(Flex)`
   margin: 0 auto;
+  
+  & > div {
+    display: inline-block;
+    width: auto;
+  }
 `;
 
 export default () => (
@@ -29,15 +34,15 @@ export default () => (
             <FormattedMessage id="getStarted.heading" />
           </Heading>
         </Box>
-        <Buttons>
+        <Buttons wrap justify="center">
           <Buy
             big
             to="downloads"
             color="base"
-            ml={[2, 5]}
             fontSize={[1, 3]}
             bg="white"
             width={'200px'}
+            mx={[1, 2]}
             pill
             mt={5}
           >
@@ -48,10 +53,10 @@ export default () => (
             outlined
             to="downloads"
             color="white"
-            ml={[2, 5]}
             fontSize={[1, 3]}
             bg="rgba(0,0,0,0)"
             width={'200px'}
+            mx={[1, 2]}
             pill
             mt={5}
           >
