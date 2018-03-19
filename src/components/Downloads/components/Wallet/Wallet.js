@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
-import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
@@ -15,7 +14,7 @@ const Wallet = () => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[6, 7]}  color={COLOR.textDark} mb={2}>
+        <Heading heavy as="h2" fontSize={[6, 7]} color={COLOR.textDark} mb={2}>
           <FormattedMessage id="downloads.wallet.heading" />
         </Heading>
 
