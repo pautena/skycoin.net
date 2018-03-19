@@ -9,35 +9,78 @@ import PropTypes from 'prop-types';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import Text from 'components/Text';
+import Link from 'components/Link';
 
-import { COLOR, BOX_SHADOWS, BORDER_RADIUS } from 'config';
+import { COLOR, SPACE, BOX_SHADOWS, BORDER_RADIUS } from 'config';
+import { rem } from 'polished';
+
+import placeholder from './images/placeholder.svg';
 
 const Wrapper = styled(Box)`
   background: ${COLOR.white};
   overflow: hidden;
 `;
 
-const NewsItem = ({ title, date }) => (
-  <Flex width={[1, 1 / 2, 1 / 3]} px={[6, 6, 8]} mb={[6, 8]} align="flex-start">
-    <NewsContainer>
-      {date.format('MMMM DD, YYYY')}
-      <Heading heavy as="h4" mb={1} fontSize={4}>
-        {title}
-      </Heading>
-    </NewsContainer>
-  </Flex>
-);
+const ImageContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const PlaceholderImage = styled.img.attrs({
+  src: placeholder,
+})`
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: ${rem(SPACE[12])};
+  margin-bottom: ${rem(SPACE[12])};
+`;
 
 const NewsContainer = styled.div`
-  display: block;
   width: 100%;
   box-shadow: ${BOX_SHADOWS.box};
   border-radius: ${BORDER_RADIUS.base};
 `;
 
+const InfoContainer = styled.div`
+  padding-left: ${rem(SPACE[7])};
+  padding-bottom: ${rem(SPACE[10])};
+  min-height: ${rem(80)};
+`;
+
+const Date = styled(Text)`
+  margin: 0;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #000;
+`;
+
+const NewsItem = ({ title, date, href }) => (
+  <Flex width={[1, 1 / 2, 1 / 3]} px={[6, 6, 8]} mb={[6, 8]} align="flex-start">
+    <NewsContainer>
+      <ImageContainer>
+        <PlaceholderImage />
+      </ImageContainer>
+      <InfoContainer>
+        <StyledLink href={href} target="_blank">
+          <Date color={COLOR.textLight} fontSize={2}>{date.format('MMMM DD, YYYY')}</Date>
+          <Heading as="h4" mb={1} fontSize={4}>
+            {title}
+          </Heading>
+        </StyledLink>
+      </InfoContainer>
+    </NewsContainer>
+  </Flex>
+);
+
 NewsItem.propTypes = {
   title: PropTypes.string.isRequired,
   date: momentPropTypes.momentObj.isRequired,
+  href: PropTypes.string.isRequired,
 };
 
 class News extends PureComponent {
@@ -89,7 +132,13 @@ class News extends PureComponent {
           </Heading>
           {this.state.loaded &&
           <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-6, -6, -8]}>
-            {this.state.posts.map((p, i) => <NewsItem title={p.title} date={p.date} key={i} />)}
+            {this.state.posts.map((p, i) => (
+              <NewsItem
+                title={p.title}
+                date={p.date}
+                href={p.href}
+                key={i}
+              />))}
           </Flex>}
         </Container>
       </Wrapper>
