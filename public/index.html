@@ -49,7 +49,7 @@
     -->
   <title>Skycoin</title>
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-  <script src="/anim_vector.js?1520338634078" charset="utf-8"></script>
+  <script src="/anim_vector_dark.js?1520338634078" charset="utf-8"></script>
 
   <script>
     var canvas, stage, exportRoot, initialized;
@@ -63,7 +63,7 @@
     }
     function handleComplete() {
       //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-      exportRoot = new lib.anim_vector();
+      exportRoot = new lib.anim_vector_dark();
       stage = new createjs.Stage(canvas);
       stage.addChild(exportRoot);
       //Registers the "tick" event listener.

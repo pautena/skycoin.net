@@ -8,7 +8,7 @@ import Link from 'components/Link';
 import * as images from './images';
 
 const socialLinks = [
-  { to: '/', icon: images.medium },
+  { to: 'https://medium.com/@Skycoinproject', icon: images.medium },
   { to: 'https://twitter.com/skycoinproject', icon: images.twitter },
   { to: 'https://www.facebook.com/skycoinproject', icon: images.facebook },
   { to: 'https://www.instagram.com/skycoinproject/', icon: images.instagram },
@@ -51,7 +51,7 @@ const columnsQtySm = Math.round(socialLinks.length / 2);
 
 const SocialItem = ({ to, icon }) => (
   <StyledBox width={[1 / columnsQtySm, 1 / columnsQty]} py={[2, 4]}>
-    <StyledLink to={to}>
+    <StyledLink href={to} target="_blank">
       <Img src={icon} />
     </StyledLink>
   </StyledBox>
