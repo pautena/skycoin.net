@@ -5,7 +5,6 @@ import { Flex, Box } from 'grid-styled';
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 import Container from 'components/Container';
-import Header from 'components/Header';
 import CanvasBg from './components/CanvasBg';
 import Introduction from './components/Introduction';
 
@@ -32,9 +31,6 @@ const Hero = () => (
   <Wrapper>
     <CanvasBg />
     <StyledFlex column justify="flex-start">
-      <Box>
-        <Header white social showBuy={false} />
-      </Box>
       <Box mt={[0, 8, 8]}>
         <Container>
           <Flex row wrap align="center">

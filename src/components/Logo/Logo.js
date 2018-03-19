@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
+import media from 'utils/media';
 
 import Link from 'components/Link';
 import logo from './logo.svg';
@@ -16,8 +17,12 @@ const Img = styled.img.attrs({
   alt: 'Skycoin',
 })`
   display: block;
-  height: ${props => (props.white ? rem(49) : rem(38))};
+  height: ${props => (props.white || !props.blueWhite ? rem(33) : rem(38))};
   max-width: 100%;
+  
+  ${media.md.css`
+    height: ${props => (props.white ? rem(49) : rem(38))};    
+  `}
 `;
 
 const getLogoSrc = (props) => {
