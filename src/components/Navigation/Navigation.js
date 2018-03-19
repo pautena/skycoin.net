@@ -157,6 +157,11 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
     border-top: 2px solid transparent;
     border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
     color: ${props => (props.white ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+    
+    &:hover {
+      color: ${props => (props.white ? 'white' : COLOR.dark)};
+      opacity: ${props => (props.white ? '.7' : '1')};
+    }
   `}
 `));
 
@@ -252,7 +257,7 @@ Navigation.defaultProps = {
   white: false,
   social: false,
   showBuy: false,
-  isMobile: true,
+  isMobile: false,
 };
 
 export default Navigation;
