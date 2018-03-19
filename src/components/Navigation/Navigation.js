@@ -43,14 +43,14 @@ const MenuClose = ToggleButton.extend`
 `;
 
 const MenuOpen = ToggleButton.extend`
-  background: url(${props => props.white ? menuIc : menuBlueIc}) 0 0 no-repeat;
+  background: url(${props => (props.white ? menuIc : menuBlueIc)}) 0 0 no-repeat;
 `;
 
 const Container = styled.div`
-  position: ${props => props.isMobile ? 'fixed' : 'relative'};
-  top: ${props => props.isMobile ? '0' : 'auto'};
-  bottom: ${props => props.isMobile ? '0' : 'auto'};
-  right: ${props => props.isMobile ? '-280px' : 'auto'};
+  position: ${props => (props.isMobile ? 'fixed' : 'relative')};
+  top: ${props => (props.isMobile ? '0' : 'auto')};
+  bottom: ${props => (props.isMobile ? '0' : 'auto')};
+  right: ${props => (props.isMobile ? '-280px' : 'auto')};
   z-index: 1;
   
   ${media.md.css`
@@ -64,8 +64,8 @@ const Container = styled.div`
 const GroupWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ${props => props.isMobile ? 'column' : 'row'};
-  padding: ${props => props.isMobile ? rem(SPACE[5]) : '0'}  0;
+  flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+  padding: ${props => (props.isMobile ? rem(SPACE[5]) : '0')}  0;
   font-size: ${rem(FONT_SIZES[2])};
   text-align: left;
   
@@ -76,12 +76,12 @@ const GroupWrapper = styled.div`
 `;
 
 const Wrapper = styled(Flex)`
-  flex-direction: ${props => props.isMobile ? 'column' : 'row'};
-  width: ${props => props.isMobile ? '270px' : 'auto'};
-  height: ${props => props.isMobile ? '100%' : 'auto'};
-  background: ${props => props.isMobile ? COLOR.white : 'transparent'};
-  box-shadow: ${props => props.isMobile ? BOX_SHADOWS.menu : 'none'};
-  transform: translateX(${props => props.menuVisible ? '-280px' : '0'});
+  flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+  width: ${props => (props.isMobile ? '270px' : 'auto')};
+  height: ${props => (props.isMobile ? '100%' : 'auto')};
+  background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
+  box-shadow: ${props => (props.isMobile ? BOX_SHADOWS.menu : 'none')};
+  transform: translateX(${props => (props.menuVisible ? '-280px' : '0')});
   transition: transform 400ms ease-in-out;
   text-align: left;
   
@@ -136,11 +136,11 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   display: flex;
   align-items: center;
   margin: 0;
-  margin-left: ${props => props.isMobile ? '0' : rem(SPACE[7])};
-  padding-top: ${props => props.isMobile ? rem(SPACE[3]) : rem(SPACE[1])}; 
-  padding-bottom: ${props => props.isMobile ? rem(SPACE[3]) : rem(SPACE[1])};
-  padding-left: ${props => props.isMobile ? rem(SPACE[7]) : rem(SPACE[1])}; 
-  padding-right: ${props => props.isMobile ? rem(SPACE[7]) : rem(SPACE[1])};
+  margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
+  padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
+  padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
+  padding-left: ${props => (props.isMobile ? rem(SPACE[7]) : rem(SPACE[1]))}; 
+  padding-right: ${props => (props.isMobile ? rem(SPACE[7]) : rem(SPACE[1]))};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
   text-decoration: none;  
@@ -174,17 +174,17 @@ class Navigation extends React.PureComponent {
     this.state = {
       menuVisible: false,
     };
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  toggleMenu = () => {
+  toggleMenu() {
     const { menuVisible } = this.state;
     this.setState({ menuVisible: !menuVisible });
-  };
+  }
 
   render() {
     const { white, social, showBuy, isMobile } = this.props;
     const { menuVisible } = this.state;
-    console.log(isMobile);
     return (
       <div>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
@@ -215,8 +215,8 @@ class Navigation extends React.PureComponent {
 
             {showBuy &&
             <GroupWrapper isMobile={isMobile}>
-              <Button to="downloads" color="white" bg="base" pill ml={[7, 0, 0 ]} mr={[7, 7, 0]}>
-                <FormattedMessage id="header.navigation.getWallet"/>
+              <Button to="downloads" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                <FormattedMessage id="header.navigation.getWallet" />
               </Button>
             </GroupWrapper>
             }
@@ -245,12 +245,14 @@ Navigation.propTypes = {
   white: PropTypes.bool,
   social: PropTypes.bool,
   showBuy: PropTypes.bool,
+  isMobile: PropTypes.bool,
 };
 
 Navigation.defaultProps = {
   white: false,
   social: false,
   showBuy: false,
+  isMobile: true,
 };
 
 export default Navigation;
