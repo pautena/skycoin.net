@@ -113,10 +113,6 @@ const Img = styled.img.attrs({
 const Navigation = ({ white, social, showBuy }) => (
   <Wrapper align="center" wrap mt={[5, 5, 0]}>
     <GroupWrapper>
-      <StyledLink white={white} to="/">
-        <FormattedMessage id="header.navigation.home" />
-      </StyledLink>
-
       <StyledLink white={white} href="https://www.skycoin.net/blog">
         <FormattedMessage id="header.navigation.blog" />
       </StyledLink>

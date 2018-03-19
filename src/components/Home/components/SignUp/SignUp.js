@@ -48,7 +48,7 @@ const SignUp = () => (
           <FormattedMessage id="home.signup.body" />
         </Text>
         <Box pr={[0, 0, 8]}>
-          <SignUpForm />
+          <SignUpForm home />
         </Box>
       </StyledBox>
     </Container>

@@ -12,14 +12,19 @@ const BUTTON_WIDTH = 140;
 /* todo: clarify necessity of id selector usage */
 const Wrapper = styled.div`
   position: relative;
-  margin-right: ${rem(SPACE[6])};
+  margin: ${props => (props.home ? rem(SPACE[6]) : 0)} 0 0;
   
   #mc-embedded-subscribe {
-    position: absolute;
-    top: -1px;
-    right: 0;
-    margin: 0;
-    width: ${rem(BUTTON_WIDTH)};
+    width: 100%;
+    margin: ${rem(SPACE[4])} 0 0;
+    
+    ${media.sm.css`
+      position: absolute;
+      top: -1px;
+      right: 0;
+      margin: 0;
+      width: ${rem(BUTTON_WIDTH)};
+    `}
   }
   
   .mce_inline_error {

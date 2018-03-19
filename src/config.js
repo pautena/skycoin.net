@@ -41,6 +41,7 @@ export const BOX_SHADOWS = {
   base: '0 1px 2px rgba(0, 0, 0, 0.25)',
   hover: '0 1px 4px rgba(0, 0, 0, 0.25)',
   box: '0 2px 20px #DFE9F4',
+  image: '0 0 18px 0 rgba(223, 233, 244, .52)',
 };
 
 export const FLAGS = {

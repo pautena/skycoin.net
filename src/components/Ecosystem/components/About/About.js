@@ -7,6 +7,7 @@ import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
 import { rem } from 'polished';
+import media from 'utils/media';
 
 import { COLOR, SPACE } from 'config';
 
@@ -16,8 +17,10 @@ const Wrapper = styled(Box)`
 `;
 
 const StyledText = styled(Text)`
-  column-count: 2;
-  column-gap: ${rem(SPACE[7])};
+  ${media.sm.css`
+    column-count: 2;
+    column-gap: ${rem(SPACE[7])};  
+  `}
 `;
 
 

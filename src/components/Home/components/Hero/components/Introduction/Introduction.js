@@ -21,7 +21,7 @@ const Paragraph = styled.p`
 `;
 
 const Intro = styled.div`
-  background-color: ${COLOR.dark};
+  background-color: rgba(16, 31, 52, 0.9);
   padding: ${rem(SPACE[5])} 0;
   
   ${media.sm.css`
@@ -31,8 +31,8 @@ const Intro = styled.div`
 `;
 
 const Introduction = () => (
-  <Flex wrap row px={[0, 6, 6]}>
-    <Box width={[1, 1, 2 / 3]} pr={[1, 0, 4]} mb={[0, 4, 4]}>
+  <Flex wrap row px={0} mx={[-5]}>
+    <Box width={[1, 1, 2 / 3]} px={5} mb={[0, 4, 4]}>
       <Intro>
         <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
           <FormattedMessage id="home.hero.heading" values={{ break: <br /> }} />
@@ -42,11 +42,11 @@ const Introduction = () => (
         </Paragraph>
       </Intro>
     </Box>
-    <Flex column align="center" width={[1, 1, 1 / 3]} pl={[1, 0, 4]} pt={[0, 5, 7]}>
-      <Buy color="white" bg="base" big width={['100%', '200px', '200px']} pill >
+    <Flex column align="center" width={[1, 1, 1 / 3]} px={5} pt={[0, 5, 7]}>
+      <Buy color="white" bg="base" xxl width={'100%'} pill>
         <FormattedMessage id="home.hero.buy" />
       </Buy>
-      <Button to="downloads" color="base" bg="white" big width={['100%', '200px', '200px']} pill mt={5} >
+      <Button to="downloads" color="base" bg="white" xxl width={'100%'} pill mt={5} >
         <FormattedMessage id="home.hero.wallet.get" />
       </Button>
     </Flex>
