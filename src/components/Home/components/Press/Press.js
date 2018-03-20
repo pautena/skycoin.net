@@ -43,7 +43,7 @@ const Wrapper = styled(Box)`
 
 const LogoWrapper = styled(Box)`
   text-align: center;
-  padding: ${rem(SPACE[3])};
+  padding: ${rem(SPACE[2])};
   
   ${media.sm.css`
     &:first-child {
@@ -104,9 +104,9 @@ const Press = () => (
             <Graphic />
           </Flex>
         </Flex>
-        <Flex align="center" justify="space-between" wrap my={[5, 8]} mx={0} px={0}>
+        <Flex align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
           {logos.map((item, i) => (
-            <LogoWrapper width={[1 / 2, 1 / 4]}>
+            <LogoWrapper width={[1 / 2, 1 / 4, 'auto']}>
               <Logo key={i} src={logos[i]} />
             </LogoWrapper>
           ))}
