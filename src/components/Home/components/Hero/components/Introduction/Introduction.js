@@ -22,16 +22,20 @@ const Paragraph = styled.p`
 
 const Intro = styled.div`
   background-color: rgba(16, 31, 52, 0.9);
-  padding: ${rem(SPACE[5])} 0;
+  padding: ${rem(SPACE[5])} ${rem(SPACE[7])};
+  margin: 0 -${rem(SPACE[7])};
   
   ${media.sm.css`
-    padding: ${rem(SPACE[5])} ${rem(SPACE[7])} ${rem(SPACE[5])} ${rem(SPACE[4])};  
-    margin-left: -${rem(SPACE[4])};
+    padding: ${rem(SPACE[5])} ${rem(SPACE[7])};  
+  `}
+  
+  ${media.md.css`
+    margin-right: 0;
   `}
 `;
 
 const Introduction = () => (
-  <Flex wrap row px={0} mx={[-5]}>
+  <Flex wrap row px={0} mx={-5}>
     <Box width={[1, 1, 2 / 3]} px={5} mb={[0, 4, 4]}>
       <Intro>
         <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
