@@ -10,14 +10,6 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 
-const Canvas = styled.canvas`
-  display: none;
-  
-  ${media.sm.css`
-    display: block;
-  `}
-`;
-
 class CanvasBg extends React.Component {
   componentDidMount() {
     const waitForAnimationInit = () => {
@@ -38,7 +30,7 @@ class CanvasBg extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Canvas id="bgCanvas" ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
+        <canvas id="bgCanvas" ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
       </Wrapper>
     );
   }
