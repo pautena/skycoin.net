@@ -7,7 +7,7 @@ import { rem, rgba } from 'polished';
 import { withRouter, matchPath } from 'react-router-dom';
 import disableScroll from 'disable-scroll';
 
-import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR, BOX_SHADOWS } from 'config';
+import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
 import Link from 'components/Link';
 import Button from 'components/Button';
 import media from 'utils/media';
