@@ -5,6 +5,7 @@ import { Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem, rgba } from 'polished';
 import { withRouter, matchPath } from 'react-router-dom';
+import disableScroll from 'disable-scroll';
 
 import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR, BOX_SHADOWS } from 'config';
 import Link from 'components/Link';
@@ -37,8 +38,8 @@ const ToggleButton = styled.button`
 const MenuClose = ToggleButton.extend`
   background: url(${cancelIc}) 0 0 no-repeat;
   position: absolute;
-  top: 26px;
-  right: 26px;
+  top: 32px;
+  right: 36px;
   cursor: pointer;
 `;
 
@@ -50,8 +51,8 @@ const Container = styled.div`
   position: ${props => (props.isMobile ? 'fixed' : 'relative')};
   top: ${props => (props.isMobile ? '0' : 'auto')};
   bottom: ${props => (props.isMobile ? '0' : 'auto')};
-  right: ${props => (props.isMobile ? '-280px' : 'auto')};
-  z-index: 1;
+  right: ${props => (props.isMobile ? '-270px' : 'auto')};
+  z-index: 2;
   
   ${media.md.css`
     position: relative;
@@ -62,14 +63,15 @@ const Container = styled.div`
 `;
 
 const GroupWrapper = styled.div`
-  display: flex;
+  display: ${props => (props.show || props.isMobile ? 'flex' : 'none')};;
   flex-wrap: wrap;
   flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
-  padding: ${props => (props.isMobile ? rem(SPACE[5]) : '0')}  0;
+  padding: ${props => (props.isMobile ? rem(28) : '0')}  0;
   font-size: ${rem(FONT_SIZES[2])};
   text-align: left;
   
   ${media.md.css`
+    display: ${props => (props.show ? 'flex' : 'none')};
     flex-direction: row;
     padding: 0;
   `}
@@ -80,19 +82,9 @@ const Wrapper = styled(Flex)`
   width: ${props => (props.isMobile ? '270px' : 'auto')};
   height: ${props => (props.isMobile ? '100%' : 'auto')};
   background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
-  box-shadow: ${props => (props.isMobile ? BOX_SHADOWS.menu : 'none')};
-  transform: translateX(${props => (props.menuVisible ? '-280px' : '0')});
+  transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
   transition: transform 400ms ease-in-out;
   text-align: left;
-  
-  ${GroupWrapper} + ${GroupWrapper} {
-    border-top: 2px solid ${rgba(COLOR.textGrey, 0.2)};  
-    
-    ${media.md.css`
-      border-top: none;
-      margin-left: ${rem(SPACE[4])};
-    `}
-  }
 
   ${media.md.css`
     flex-direction: row;
@@ -102,6 +94,15 @@ const Wrapper = styled(Flex)`
     box-shadow: none;
     transform: translateX(0);
   `}
+  
+  ${GroupWrapper} + ${GroupWrapper} {
+    border-top: 2px solid ${rgba(COLOR.textGrey, 0.2)};  
+    
+    ${media.md.css`
+      border-top: none;
+      margin-left: ${rem(SPACE[4])};
+    `}
+  }
 `;
 
 const withActiveProp = (Component) => {
@@ -139,11 +140,15 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
   padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
   padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
-  padding-left: ${props => (props.isMobile ? rem(SPACE[7]) : rem(SPACE[1]))}; 
-  padding-right: ${props => (props.isMobile ? rem(SPACE[7]) : rem(SPACE[1]))};
+  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : rem(SPACE[1]))}; 
+  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : rem(SPACE[1]))};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
   text-decoration: none;  
+  
+  &:first-child {
+    margin-left: 0;
+  }
   
   &:hover {
     color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
@@ -157,6 +162,10 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
     border-top: 2px solid transparent;
     border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
     color: ${props => (props.white ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+    
+    &:first-child {
+      margin-left: 0;
+    }
     
     &:hover {
       color: ${props => (props.white ? 'white' : COLOR.dark)};
@@ -173,6 +182,23 @@ const Img = styled.img.attrs({
   width: 23px;
 `;
 
+const Overlay = styled.div`
+  display: ${props => (props.visible ? 'block' : 'none')};
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: ${rgba(COLOR.textDark, 0.5)};
+  opacity: ${props => (props.visible ? '1' : '0')};
+  transition: opacity 400ms linear;
+  z-index: 1;
+  
+  ${media.md.css`
+    display: none;
+  `}
+`;
+
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -184,7 +210,13 @@ class Navigation extends React.PureComponent {
 
   toggleMenu() {
     const { menuVisible } = this.state;
-    this.setState({ menuVisible: !menuVisible });
+    this.setState({ menuVisible: !menuVisible }, () => {
+      if (this.state.menuVisible) {
+        disableScroll.on();
+      } else {
+        disableScroll.off();
+      }
+    });
   }
 
   render() {
@@ -193,10 +225,11 @@ class Navigation extends React.PureComponent {
     return (
       <div>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
+        <Overlay visible={menuVisible} />
         <Container isMobile={isMobile}>
           <Wrapper wrap menuVisible={menuVisible} isMobile={isMobile}>
             {isMobile && <MenuClose onClick={this.toggleMenu} />}
-            <GroupWrapper isMobile={isMobile}>
+            <GroupWrapper isMobile={isMobile} show>
               <StyledLink white={white} isMobile={isMobile} href="https://www.skycoin.net/blog">
                 <FormattedMessage id="header.navigation.blog" />
               </StyledLink>
@@ -218,16 +251,7 @@ class Navigation extends React.PureComponent {
               </StyledLink>
             </GroupWrapper>
 
-            {showBuy &&
-            <GroupWrapper isMobile={isMobile}>
-              <Button to="downloads" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
-                <FormattedMessage id="header.navigation.getWallet" />
-              </Button>
-            </GroupWrapper>
-            }
-
-            {social &&
-            <GroupWrapper isMobile={isMobile}>
+            <GroupWrapper isMobile={isMobile} show={social}>
               <StyledLink white={white} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
                 <Img src={telegram} alt="Telegram" />
                 <FormattedMessage id="header.navigation.telegram" />
@@ -238,7 +262,12 @@ class Navigation extends React.PureComponent {
                 <FormattedMessage id="header.navigation.discord" />
               </StyledLink>
             </GroupWrapper>
-            }
+
+            <GroupWrapper isMobile={isMobile} show={showBuy}>
+              <Button to="downloads" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                <FormattedMessage id="header.navigation.getWallet" />
+              </Button>
+            </GroupWrapper>
           </Wrapper>
         </Container>
       </div>

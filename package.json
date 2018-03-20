@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "createjs-collection": "^0.8.2-1",
+    "disable-scroll": "^0.4.0",
     "flag": "^2.0.2",
     "flat": "^2.0.1",
     "glamor": "^2.20.25",
