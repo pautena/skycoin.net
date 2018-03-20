@@ -31,17 +31,15 @@ const SignUp = styled(Flex) `
 `;
 
 const SignUpSection = () => (
-  <SignUp align="center" justify="center" wrap px={[rem(10), 0]} py={[4, 5]}>
+  <SignUp align="center" justify="center" wrap py={[4, 5]} px={7}>
     <ArrowContainer mt={rem(1)} ml={rem(90)}>
       <ArrowImg src={icArrow} />
     </ArrowContainer>
     <Box mx={[0, rem(47)]}>
       <Text mb={[4, 0]} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white">Sign up to receive updates</Text>
     </Box>
-    <Box>
-      <Flex px={[rem(10), 0]}>
-        <SignUpForm />
-      </Flex>
+    <Box width={[1, 'auto']}>
+      <SignUpForm />
     </Box>
   </SignUp>
 );

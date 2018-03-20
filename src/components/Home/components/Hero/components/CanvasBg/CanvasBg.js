@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import media from 'utils/media';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -8,14 +7,6 @@ const Wrapper = styled.div`
   transform: translateX(-50%);
   max-height: 100%;
   overflow: hidden;
-`;
-
-const Canvas = styled.canvas`
-  display: none;
-  
-  ${media.sm.css`
-    display: block;
-  `}
 `;
 
 class CanvasBg extends React.Component {
@@ -38,7 +29,7 @@ class CanvasBg extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Canvas id="bgCanvas" ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
+        <canvas id="bgCanvas" ref={(ref) => { this.canvas = ref; }} width="1400" height="710" />
       </Wrapper>
     );
   }

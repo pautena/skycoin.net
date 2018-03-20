@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
 import { rem } from 'polished';
+import media from 'utils/media';
 
 import Container from 'components/Container';
 import Navigation from 'components/Navigation';
@@ -11,9 +12,13 @@ import Logo from 'components/Logo';
 import { SPACE, COLORS } from 'config';
 
 const Wrapper = styled.div`
-  padding: ${rem(SPACE[6])} 0;
+  padding: ${rem(SPACE[7])} 0;
   width: 100%;
   border-bottom: ${props => (props.border ? `2px solid ${COLORS.gray[1]}` : 'none')}
+  
+  ${media.sm.css`
+    padding: ${rem(SPACE[6])} 0;
+  `}
 `;
 
 const Header = ({ white, blueWhite, border, social, showBuy }) => (
