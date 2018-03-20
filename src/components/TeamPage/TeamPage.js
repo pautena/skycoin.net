@@ -63,11 +63,6 @@ const Bio = styled.p`
   font-size: 14px;
 `;
 
-const StyledBox = styled(Box) `
-  display: flex;
-  flex-direction: column;
-`;
-
 const localeList = { en, zh, ko, ru };
 
 const getLocale = (locale) => {
