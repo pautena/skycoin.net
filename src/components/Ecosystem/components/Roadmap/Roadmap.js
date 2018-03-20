@@ -6,6 +6,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 
 import devRoadmap from './development_roadmap.svg';
+import marketingRoadmap from './marketing_roadmap.svg';
 
 const Graphic = styled.img.attrs({
   src: props => props.src,
@@ -22,6 +23,9 @@ const Roadmap = () => (
         <FormattedMessage id="ecosystem.roadmap.heading" />
       </Heading>
       <Graphic src={devRoadmap} />
+      <Box mt={[8, 10, 12]}>
+        <Graphic src={marketingRoadmap} />
+      </Box>
     </Container>
   </Box>
 );
