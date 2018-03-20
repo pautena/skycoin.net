@@ -65,10 +65,14 @@ const Container = styled.div`
 const GroupWrapper = styled.div`
   display: ${props => (props.show || props.isMobile ? 'flex' : 'none')};;
   flex-wrap: wrap;
-  flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+  flex-direction: column;
   padding: ${props => (props.isMobile ? rem(28) : '0')}  0;
   font-size: ${rem(FONT_SIZES[2])};
   text-align: left;
+  
+  ${media.sm.css`
+    flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+  `};
   
   ${media.md.css`
     display: ${props => (props.show ? 'flex' : 'none')};
@@ -137,7 +141,6 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   display: flex;
   align-items: center;
   margin: 0;
-  margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
   padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
   padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
   padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : rem(SPACE[1]))}; 
@@ -145,16 +148,16 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
   text-decoration: none;  
-  
-  &:first-child {
-    margin-left: 0;
-  }
-  
+    
   &:hover {
     color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
     opacity: ${props => (props.white && !props.isMobile ? '.7' : '1')};
     text-decoration: none;
   }
+  
+  ${media.sm.css`
+    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
+  `};
   
   ${media.md.css`
     margin-left: ${rem(SPACE[7])};

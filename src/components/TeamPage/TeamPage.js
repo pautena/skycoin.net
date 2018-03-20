@@ -235,7 +235,7 @@ const TeamPage = ({ intl }) => (
             {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
               <Person key={index} width={[1, 1 / 3]} px={[6, 7]}>
                 <Flex column>
-                  <StyledBox>
+                  <Box>
                     <ImageContainer>
                       {(picture && picture !== '') ?
                         /* eslint-disable */
@@ -244,12 +244,12 @@ const TeamPage = ({ intl }) => (
                         /* eslint-disable */
                       }
                     </ImageContainer>
-                  </StyledBox>
-                  <StyledBox>
+                  </Box>
+                  <Box>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
-                  </StyledBox>
+                  </Box>
                 </Flex>
               </Person>
             ))}
@@ -273,7 +273,7 @@ const TeamPage = ({ intl }) => (
             {getLocale(intl.locale).investors.bios.map(({ name, picture, title, bio }, index) => (
               <Person key={index} width={[1, 1 / 4]} px={[6, 7]} mb={[4, 5, 6]}>
                 <Flex column>
-                  <StyledBox>
+                  <Box>
                     <ImageContainer>
                       {(picture && picture !== '') ?
                         /* eslint-disable */
@@ -282,12 +282,12 @@ const TeamPage = ({ intl }) => (
                         /* eslint-disable */
                       }
                     </ImageContainer>
-                  </StyledBox>
-                  <StyledBox>
+                  </Box>
+                  <Box>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
-                  </StyledBox>
+                  </Box>
                 </Flex>
               </Person>
             ))}
@@ -311,7 +311,7 @@ const TeamPage = ({ intl }) => (
             {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
               <Person key={index} width={[1, 1 / 4]} px={[6, 7]} mb={[4, 5, 6]}>
                 <Flex column>
-                  <StyledBox>
+                  <Box>
                     <ImageContainer>
                       {(picture && picture !== '') ?
                         /* eslint-disable */
@@ -320,12 +320,12 @@ const TeamPage = ({ intl }) => (
                         /* eslint-disable */
                       }
                     </ImageContainer>
-                  </StyledBox>
-                  <StyledBox>
+                  </Box>
+                  <Box>
                     <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
                     {title && <Title>{title}</Title>}
                     {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
-                  </StyledBox>
+                  </Box>
                 </Flex>
               </Person>
             ))}

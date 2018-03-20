@@ -43,13 +43,13 @@ const Input = styled.input`
   border: 1px solid ${COLOR.white};
   background: transparent;
   cursor: pointer;
-  line-height: 1;
+  line-height: 20px;
   box-sizing: border-box;
   text-align: left;
   border-radius: ${BORDER_RADIUS.pill};
   font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[2])};
-  padding: ${rem(SPACE[2])} ${rem(BUTTON_WIDTH)} ${rem(SPACE[2])} ${rem(SPACE[4])};
+  padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
   color: ${COLOR.white};
   
   ${media.sm.css`
@@ -74,6 +74,10 @@ const Input = styled.input`
   }
 `;
 
+const Form = styled.form`
+  width: 100%;
+`;
+
 const Submit = Button.withComponent('button');
 
 class SignUpForm extends PureComponent {
@@ -89,7 +93,7 @@ class SignUpForm extends PureComponent {
     /* eslint-disable max-len */
     return (
       <Wrapper>
-        <form
+        <Form
           action="//skycoin.us16.list-manage.com/subscribe/post?u=47a93630ab9172f29aff78b99&amp;id=264afe24a1"
           method="post"
           id="mc-embedded-subscribe-form"
@@ -113,7 +117,7 @@ class SignUpForm extends PureComponent {
           <Submit color="base" bg="white" big width={'200px'} pill type="submit" name="subscribe" id="mc-embedded-subscribe">
             <FormattedMessage id="home.signup.button" />
           </Submit>
-        </form>
+        </Form>
       </Wrapper>
     );
     /* eslint-enable max-len */

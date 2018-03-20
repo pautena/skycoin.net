@@ -7,6 +7,7 @@ import Navigation from 'components/Navigation';
 import Text from 'components/Text';
 import Logo from 'components/Logo';
 import { COLOR } from 'config';
+import media from 'utils/media';
 
 import Languages from './components/Languages';
 import Email from './components/Email';
@@ -18,13 +19,22 @@ const Wrapper = styled.div`
   background: ${COLOR.dark};
 `;
 
+const FooterNavWrapper = styled(Flex)`
+  flex-direction: column;
+  
+  ${media.sm.css`
+    flex-direction: row;
+    align-items: center;
+  `}
+`;
+
 export default () => (
   <Wrapper>
     <Container>
-      <Flex align="center" justify="space-between" wrap pb={[10, 12]} pt={[12, 13]}>
+      <FooterNavWrapper align="flex-start" justify="space-between" wrap pb={[8, 12]} pt={[8, 13]}>
         <Logo blueWhite />
         <Navigation white />
-      </Flex>
+      </FooterNavWrapper>
 
       <Social />
 
