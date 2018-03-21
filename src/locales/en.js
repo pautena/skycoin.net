@@ -56,9 +56,11 @@ export default {
     distributionEvent: 'Distribution event',
   },
   notFound: {
+    404: '404',
+    message: 'Whoops! Looks like you\'re lost </br> This page does not exist anymore or has been moved to a new URL',
     title: 'Page not found',
     heading: 'Page not found',
-    home: 'Skycoin homepage',
+    home: 'Main page',
   },
   architectureOverview: {
     title: 'Architecture overview',

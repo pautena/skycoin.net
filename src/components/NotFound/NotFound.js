@@ -1,33 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, FormattedMessage } from 'react-intl';
+import { injectIntl, FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import media from 'utils/media';
 import { rem } from 'polished';
+import { COLOR, FONT_FAMILIES } from 'config';
 
 import Heading from 'components/Heading';
-import Button from 'components/Button';
+import Link from 'components/Link';
 import notFound from './images/404.svg';
 
 const Wrapper = styled.div`
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100vh;
+  padding-top: ${rem(100)};
 `;
 
-const NotFoundImage = styled.img.attrs({
-  src: notFound,
-})`
-  display: block;
-  width: ${rem(300)};
+const MessageContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 
-  ${media.sm.css`
-      border-top: none;
-      width: ${rem(600)};
+  width:100%;
+  height: 100vh;
+  padding-left: ${rem(50)};
+
+  ${media.md.css`
+    padding-left: ${rem(300)};
+    background-image: url(${notFound});
+    background-repeat: no-repeat;
+    background-position: 60% 25%;
+    background-size: auto;
   `}
+`;
+
+const StyledLink = styled(Link)`
+  color: ${COLOR.base};
+  text-decoration: none; 
+  font-size: 15;
+  font-family: ${FONT_FAMILIES.sans};
+
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+const Message = styled.div`
+  text-align: left;
+  font-size: 15;
+  width: ${rem(260)};
+  color=${COLOR.black};
+  margin-bottom: ${rem(20)};
+  font-family: ${FONT_FAMILIES.sans};
 `;
 
 const NotFound = ({ intl }) => (
@@ -36,17 +65,23 @@ const NotFound = ({ intl }) => (
       <title>{intl.formatMessage({ id: 'notFound.title' })}</title>
     </Helmet>
 
-    <div>
-      <NotFoundImage />
+    <MessageContainer>
+      <Heading heavy fontSize={[100, 140]} color="base" mb={[0]}>
+        <FormattedMessage id="notFound.404" />
+      </Heading>
 
-      <Heading heavy as="h1" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+      <Heading heavy as="h1" fontSize={[36, 36]} color="black" mb={[5]}>
         <FormattedMessage id="notFound.heading" />
       </Heading>
 
-      <Button to="/" color="white" bg="base" pill fontSize={[1, 3]}>
+      <Message>
+        <FormattedHTMLMessage id="notFound.message" />
+      </Message>
+
+      <StyledLink to="/">
         <FormattedMessage id="notFound.home" />
-      </Button>
-    </div>
+      </StyledLink>
+    </MessageContainer>
   </Wrapper>
 );
 

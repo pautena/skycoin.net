@@ -56,6 +56,8 @@ export default {
     distributionEvent: '배포 이벤트',
   },
   notFound: {
+    404: '404',
+    message: 'Whoops! Looks like you\'re lost! This page does not exist anymore or has been moved to a new URL',
     title: '페이지를 찾을 수 없습니다.',
     heading: '페이지를 찾을 수 없습니다.',
     home: '스카이코인 홈페이지',

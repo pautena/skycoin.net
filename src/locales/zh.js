@@ -56,6 +56,8 @@ export default {
     distributionEvent: 'Distribution event',
   },
   notFound: {
+    404: '404',
+    message: 'Whoops! Looks like you\'re lost! This page does not exist anymore or has been moved to a new URL',
     title: '页面没有找到',
     heading: '页面没有找到',
     home: '天空币首页',
