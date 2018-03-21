@@ -23,7 +23,6 @@ const logos = [
 
 const Section = styled.div`
   background: ${COLOR.lightGrey};
-  padding-bottom: ${SPACE[13] + SPACE[4]}px;
   
   ${media.sm.css`
     padding-bottom: ${SPACE[13] + SPACE[6]}px;
