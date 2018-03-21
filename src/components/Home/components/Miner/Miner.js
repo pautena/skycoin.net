@@ -9,16 +9,13 @@ import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
 
-import { BOX_SHADOWS, BORDER_RADIUS } from 'config';
-
+import miner1 from './miner1.png';
 /* eslint-disable global-require */
 const miners = [
-  require('./img1.jpg'),
-  require('./img2.jpg'),
-  require('./img3.jpg'),
-  require('./img4.jpg'),
-  require('./img5.jpg'),
-  require('./img6.jpg'),
+  require('./miner2.png'),
+  require('./miner3.png'),
+  require('./miner4.png'),
+  require('./miner5.png'),
 ];
 /* eslint-enable global-require */
 
@@ -27,15 +24,74 @@ const Graphic = styled.img.attrs({
 })`
   display: block;
   width: 100%;
-  box-shadow: ${BOX_SHADOWS.box};
-  border-radius: ${BORDER_RADIUS.base};
+`;
+
+const MinersWrapper = styled(Flex)`
+  height: 100%;
+`;
+const StyledBox = styled(Box)`
+  // flex: 1 0 auto;
+  position: relative;
+`;
+
+const Miners = styled(Flex)`
+  flex-grow: 1;
+  min-height: 100%;
+
+  ${StyledBox}:nth-child(1) {
+    width: 37%;
+    div {
+      background: url(${miners[0]}) center center no-repeat;
+      background-size: cover;
+    }
+  }
+  ${StyledBox}:nth-child(2) {
+    width: 63%;
+    div {
+      background: url(${miners[1]}) center center no-repeat;
+      background-size: cover;
+    }
+  }
+  ${StyledBox}:nth-child(3) {
+    width: 63%;
+    div {
+      background: url(${miners[2]}) center center no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  ${StyledBox}:nth-child(4) {
+    width: 37%;
+    div {
+      background: url(${miners[3]}) center center no-repeat;
+      background-size: cover;
+    }
+  }
+`;
+
+const ImgWrap = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
 const GraphicItem = ({ i }) => (
-  <Box width={[1, 1 / 2, 1 / 3]} px={2} py={2}>
-    <Graphic src={miners[i]} />
-  </Box>
+  <StyledBox p={3}>
+    <ImgWrap />
+  </StyledBox>
 );
+
+const MinersSection = styled.div`
+  height: 100%;
+  padding-top: 44.6%;
+  position: relative;
+`;
+
+const MinersContent = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+`;
 
 GraphicItem.propTypes = {
   i: PropTypes.number,
@@ -54,9 +110,20 @@ const Miner = () => (
       <SubHeading fontSize={2}>
         <FormattedMessage id="home.miner.subheading" />
       </SubHeading>
-      <Flex align="center" wrap mx={[-2]} mt={8} mb={10}>
-        {miners.map((item, i) => <GraphicItem key={i} i={i} />)}
-      </Flex>
+
+      <MinersSection>
+        <MinersContent>
+          <MinersWrapper align="stretch" column wrap mx={-3}>
+            <Box width={1 / 3} px={3}>
+              <Graphic src={miner1} />
+            </Box>
+            <Miners row wrap width={2 / 3} my={-3}>
+              {miners.map((item, i) => <GraphicItem key={i} i={i} />)}
+            </Miners>
+          </MinersWrapper>
+        </MinersContent>
+      </MinersSection>
+
       <Flex align="flex-end" column wrap>
         <Button to="/" color="white" bg="base" big width={'200px'} pill mt={5} >
           <FormattedMessage id="home.miner.link" />
