@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
-
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
+import media from 'utils/media';
 
 import miner1 from './miner1.png';
 /* eslint-disable global-require */
@@ -19,79 +19,122 @@ const miners = [
 ];
 /* eslint-enable global-require */
 
-const Graphic = styled.img.attrs({
-  src: props => props.src,
-})`
-  display: block;
-  width: 100%;
-`;
-
 const MinersWrapper = styled(Flex)`
   height: 100%;
+  flex-wrap: wrap;
+  
+  ${media.sm.css`
+    flex-wrap: nowrap;  
+  `}
 `;
+
+const MainImageBox = styled(Box)`
+  height: 100%;
+  overflow: hidden;
+`;
+
 const StyledBox = styled(Box)`
-  // flex: 1 0 auto;
   position: relative;
+`;
+
+const ImgWrap = styled.div`
+  width: 100%;
+  background-size: contain;
+  background: url(${props => props.img}) center center no-repeat;
 `;
 
 const Miners = styled(Flex)`
   flex-grow: 1;
   min-height: 100%;
+  
+  position: relative;
+  
+  ${ImgWrap} {
+    position: relative;
+    height: 0;
+    
+    ${media.sm.css`
+      height: 100%;
+    `}
+    
+  }
 
-  ${StyledBox}:nth-child(1) {
-    width: 37%;
-    div {
-      background: url(${miners[0]}) center center no-repeat;
-      background-size: cover;
+  ${StyledBox}:nth-child(1){
+    width: 50%;
+    order: 1;
+    
+    
+    ${media.sm.css`
+      width: 37%;
+    `}
+  
+    ${ImgWrap} {
+      padding-top: 91.6%;
+    }
+  }
+  ${StyledBox}:nth-child(4) {
+    width: 50%;
+    order: 2;
+    
+    ${media.sm.css`
+      width: 37%;
+      order: 4;
+    `}
+  
+    ${ImgWrap} {
+      padding-top: 91.6%;
     }
   }
   ${StyledBox}:nth-child(2) {
-    width: 63%;
-    div {
-      background: url(${miners[1]}) center center no-repeat;
-      background-size: cover;
+    width: 100%;
+    order: 3;
+    
+    ${media.sm.css`
+      width: 63%;
+      order: 2;
+    `}
+  
+    ${ImgWrap} {
+      padding-top: 53.4%;
     }
   }
   ${StyledBox}:nth-child(3) {
-    width: 63%;
-    div {
-      background: url(${miners[2]}) center center no-repeat;
-      background-size: cover;
+    width: 100%;
+    order: 4;
+    
+    ${media.sm.css`
+      width: 63%;
+      order: 3;
+    `}
+  
+    ${ImgWrap} {
+      padding-top: 53.4%;
     }
   }
   
+  ${StyledBox}:nth-child(1),
+  ${StyledBox}:nth-child(2),
+  ${StyledBox}:nth-child(3),
   ${StyledBox}:nth-child(4) {
-    width: 37%;
-    div {
-      background: url(${miners[3]}) center center no-repeat;
-      background-size: cover;
+    ${ImgWrap} {
+      ${media.sm.css`
+        padding-top: 0;
+      `}
     }
   }
 `;
 
-const ImgWrap = styled.div`
+const Graphic = styled.img`
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const GraphicItem = ({ i }) => (
   <StyledBox p={3}>
-    <ImgWrap />
+    <ImgWrap img={miners[i]} />
   </StyledBox>
 );
-
-const MinersSection = styled.div`
-  height: 100%;
-  padding-top: 44.6%;
-  position: relative;
-`;
-
-const MinersContent = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-`;
 
 GraphicItem.propTypes = {
   i: PropTypes.number,
@@ -111,21 +154,19 @@ const Miner = () => (
         <FormattedMessage id="home.miner.subheading" />
       </SubHeading>
 
-      <MinersSection>
-        <MinersContent>
-          <MinersWrapper align="stretch" column wrap mx={-3}>
-            <Box width={1 / 3} px={3}>
-              <Graphic src={miner1} />
-            </Box>
-            <Miners row wrap width={2 / 3} my={-3}>
-              {miners.map((item, i) => <GraphicItem key={i} i={i} />)}
-            </Miners>
-          </MinersWrapper>
-        </MinersContent>
-      </MinersSection>
+      <Box my={[7, 8, 10]}>
+        <MinersWrapper align="stretch" row mx={-3}>
+          <MainImageBox width={[1, 1 / 3, 1 / 3]} px={3}>
+            <Graphic src={miner1} />
+          </MainImageBox>
+          <Miners row wrap width={[1, 2 / 3, 2 / 3]} my={[3, -3, -3]}>
+            {miners.map((item, i) => <GraphicItem key={i} i={i} />)}
+          </Miners>
+        </MinersWrapper>
+      </Box>
 
       <Flex align="flex-end" column wrap>
-        <Button to="/" color="white" bg="base" big width={'200px'} pill mt={5} >
+        <Button to="/" color="white" bg="base" big width={'200px'} pill >
           <FormattedMessage id="home.miner.link" />
         </Button>
       </Flex>
