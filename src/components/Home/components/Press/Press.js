@@ -47,6 +47,7 @@ const LogoWrapper = styled(Box)`
   `}
 `;
 
+
 const Logo = styled.img.attrs({
   src: props => props.src,
 })`
