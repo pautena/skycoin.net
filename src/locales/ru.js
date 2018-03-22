@@ -56,9 +56,11 @@ export default {
     distributionEvent: 'Распространение',
   },
   notFound: {
+    404: '404',
+    message: 'Whoops! Looks like you\'re lost! This page does not exist anymore or has been moved to a new URL',
     title: 'Страница не найдена',
     heading: 'Страница не найдена',
-    home: 'Главная страница Skycoin',
+    home: 'Главная страница',
   },
   architectureOverview: {
     title: 'Architecture overview',
@@ -82,7 +84,7 @@ export default {
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | ru',
-      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | ru',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today. | ru',
       buy: 'Купить Skycoin',
       community: 'Сообщество',
       whitepapers: 'Документация',
@@ -275,7 +277,7 @@ export default {
     },
     bbs: {
       heading: 'Скачать Skycoin BBS',
-      lead: 'Skycoin BBS - это децентрализованная социальная сеть следующего поколения, построенная с использованием экосистемы Skycoin.',
+      lead: 'Skycoin BBS is a next generation decentralized social network built using Fiber, Skycoin\'s blockhain technology.',
       githublink: 'Find the latest binaries on Github.',
       thinclient: 'Access a BBS thin client.',
     },
@@ -359,7 +361,12 @@ export default {
       body: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
     },
     roadmap: {
-      heading: 'Skycoin Roadmap',
+      dev: {
+        heading: 'Skycoin Development Roadmap',
+      },
+      marketing: {
+        heading: 'Skycoin Marketing Roadmap',
+      },
     },
     whitepaper: {
       heading: 'Whitepaper',

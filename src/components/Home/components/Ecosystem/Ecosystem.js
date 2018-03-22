@@ -20,7 +20,6 @@ const ecosystemItems = [
   'skycoin',
   'coinHours',
   'coinJoin',
-  'skyledger',
   'skywire',
   'skyminer',
   'nodes',
@@ -77,7 +76,7 @@ const Ecosystem = () => (
       <SubHeading fontSize={2} my={[4, 6]}>
         <FormattedMessage id="home.ecosystem.subheading" />
       </SubHeading>
-      <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-6, -6, -8]}>
+      <Flex align="flex-start" justify="flex-start" wrap mt={12} mx={[-6, -6, -8]}>
         {ecosystemItems.map((item, i) => <InfoItem name={item} key={i} />)}
       </Flex>
     </Container>
