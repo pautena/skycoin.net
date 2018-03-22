@@ -64,7 +64,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const NewsItem = ({ title, date, href, image }) => (
-  <Flex width={[1, 1 / 2, 1 / 3]} px={[6, 6, 8]} mb={[6, 8]} align="flex-start">
+  <Flex width={[1, 1 / 2, 1 / 3]} px={[3]} pb={4} mb={[6, 8]} align="flex-start">
     <StyledLink href={href} target="_blank">
       <NewsContainer>
         <ImageContainer>
@@ -139,7 +139,7 @@ class News extends PureComponent {
             <FormattedMessage id="home.news.heading" />
           </Heading>
           {this.state.loaded &&
-          <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-6, -6, -8]}>
+          <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-3]}>
             {this.state.posts.map((p, i) => (
               <NewsItem
                 title={p.title}
