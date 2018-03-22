@@ -4,15 +4,21 @@ import styled from 'styled-components';
 import { Box } from 'grid-styled';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import media from 'utils/media';
 
 import devRoadmap from './development_roadmap.svg';
 import marketingRoadmap from './marketing_roadmap.svg';
+import marketingRoadmapSm from './mobile_marketing_roadmap.svg';
 
 const Graphic = styled.img.attrs({
   src: props => props.src,
 })`
-  display: block;
+  display: ${props => (props.mobile ? 'block' : 'none')};
   width: 100%;
+  
+  ${media.sm.css`
+    display: ${props => (props.mobile ? 'none' : 'block')};
+  `}
 `;
 
 
@@ -29,6 +35,7 @@ const Roadmap = () => (
         <FormattedMessage id="ecosystem.roadmap.marketing.heading" />
       </Heading>
       <Graphic src={marketingRoadmap} />
+      <Graphic src={marketingRoadmapSm} mobile />
     </Box>
   </Container>
 );
