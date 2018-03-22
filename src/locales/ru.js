@@ -277,7 +277,7 @@ export default {
     },
     bbs: {
       heading: 'Скачать Skycoin BBS',
-      lead: 'Skycoin BBS - это децентрализованная социальная сеть следующего поколения, построенная с использованием экосистемы Skycoin.',
+      lead: 'Skycoin BBS is a next generation decentralized social network built using Fiber, Skycoin\'s blockhain technology.',
       githublink: 'Find the latest binaries on Github.',
       thinclient: 'Access a BBS thin client.',
     },

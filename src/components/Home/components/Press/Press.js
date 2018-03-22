@@ -21,14 +21,6 @@ const logos = [
 ];
 /* eslint-enable global-require */
 
-const Section = styled.div`
-  background: ${COLOR.lightGrey};
-  
-  ${media.sm.css`
-    padding-bottom: ${SPACE[13] + SPACE[6]}px;
-  `}
-`;
-
 const Wrapper = styled(Box)`
   position: relative;
   background: ${COLOR.base};
@@ -36,7 +28,7 @@ const Wrapper = styled(Box)`
   margin: 0 -${rem(SPACE[7])} 0;
   
   ${media.sm.css`
-    margin: -190px 0 0;
+    margin: -233px 0 0;
   `}
 `;
 
@@ -87,7 +79,7 @@ const Graphic = styled.img.attrs({
 `;
 
 const Press = () => (
-  <Section>
+  <div>
     <Container>
       <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
         <Flex wrap>
@@ -112,7 +104,7 @@ const Press = () => (
         </Flex>
       </Wrapper>
     </Container>
-  </Section>
+  </div>
 );
 
 export default Press;

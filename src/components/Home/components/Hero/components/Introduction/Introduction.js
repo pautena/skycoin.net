@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
-import { rem } from 'polished';
+import { rem, rgba } from 'polished';
 
 import Button from 'components/Button';
 import Buy from 'components/Buy';
@@ -21,12 +21,12 @@ const Paragraph = styled.p`
 `;
 
 const Intro = styled.div`
-  background-color: rgba(16, 31, 52, 0.9);
   padding: ${rem(SPACE[5])} ${rem(SPACE[7])};
   margin: 0 -${rem(SPACE[7])};
   
   ${media.sm.css`
     padding: ${rem(SPACE[5])} ${rem(SPACE[7])};  
+    background-color: ${rgba(COLOR.dark, 0.9)};
   `}
   
   ${media.md.css`
