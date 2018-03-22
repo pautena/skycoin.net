@@ -1,7 +1,7 @@
 export const en = {
   title: 'Meet the Team',
-  subtitle: 'Lorem Ipsum is simply dummy text of the printing',
-  quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
+  subtitle: 'ARCHITECTS OF THE NEW INTERNET',
+  quote: '"These are the architects of the new internet, the most advanced blockchain application platform in the world. We trust them, and they will deliver." - Synth',
   description: 'Bios of the Skycoin team',
   readBio: 'Read BIO',
   hide: 'Hide',
@@ -138,8 +138,8 @@ export const en = {
 
 export const zh = {
   title: 'Meet the Team',
-  subtitle: 'Lorem Ipsum is simply dummy text of the printing',
-  quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
+  subtitle: 'ARCHITECTS OF THE NEW INTERNET',
+  quote: '"These are the architects of the new internet, the most advanced blockchain application platform in the world. We trust them, and they will deliver." - Synth',
   description: 'Bios of the Skycoin team',
   readBio: 'Read BIO',
   hide: 'Hide',
@@ -276,8 +276,8 @@ export const zh = {
 
 export const ru = {
   title: 'Meet the Team',
-  subtitle: 'Lorem Ipsum is simply dummy text of the printing',
-  quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
+  subtitle: 'ARCHITECTS OF THE NEW INTERNET',
+  quote: '"These are the architects of the new internet, the most advanced blockchain application platform in the world. We trust them, and they will deliver." - Synth',
   description: 'Bios of the Skycoin team',
   readBio: 'Read BIO',
   hide: 'Hide',
@@ -414,8 +414,8 @@ export const ru = {
 
 export const ko = {
   title: 'Meet the Team',
-  subtitle: 'Lorem Ipsum is simply dummy text of the printing',
-  quote: 'It takes extraordinary people to do extraordinary things. The Skycoin team is an assembly of the best and brightest to create the future.',
+  subtitle: 'ARCHITECTS OF THE NEW INTERNET',
+  quote: '"These are the architects of the new internet, the most advanced blockchain application platform in the world. We trust them, and they will deliver." - Synth',
   description: 'Bios of the Skycoin team',
   readBio: 'Read BIO',
   hide: 'Hide',
