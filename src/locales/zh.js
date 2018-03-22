@@ -84,7 +84,7 @@ export default {
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | zh',
-      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | zh',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today. | zh',
       buy: '购买天空币',
       community: 'Community',
       whitepapers: 'Whitepapers',

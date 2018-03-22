@@ -84,7 +84,7 @@ export default {
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | ru',
-      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | ru',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today. | ru',
       buy: 'Купить Skycoin',
       community: 'Сообщество',
       whitepapers: 'Документация',

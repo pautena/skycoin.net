@@ -84,7 +84,7 @@ export default {
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | ko',
-      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now. | ko',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today. | ko',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',

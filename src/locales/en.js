@@ -84,7 +84,7 @@ export default {
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins.',
-      paragraph: 'Created by original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet. Get yours now.',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
