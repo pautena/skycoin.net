@@ -13,12 +13,10 @@ const socialLinks = [
   { to: 'https://www.facebook.com/skycoinproject', icon: images.facebook },
   { to: 'https://www.instagram.com/skycoinproject/', icon: images.instagram },
   { to: 'https://github.com/skycoin/skycoin', icon: images.github },
-  { to: '/', icon: images.q },
   { to: 'https://www.youtube.com/c/Skycoin', icon: images.youtube },
-  { to: '/', icon: images.snapchat },
   { to: 'https://www.reddit.com/r/SkycoinProject', icon: images.reddit },
-  { to: '/', icon: images.apple },
-  { to: '/', icon: images.discord },
+  { to: 'https://itunes.apple.com/nl/podcast/skycoin/id1348472259?l=en', icon: images.apple },
+  { to: 'https://discord.gg/EgBenrW', icon: images.discord },
   { to: 'https://t.me/Skycoin', icon: images.telegram },
 ];
 
