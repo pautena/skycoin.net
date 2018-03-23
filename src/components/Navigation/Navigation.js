@@ -211,6 +211,10 @@ class Navigation extends React.PureComponent {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
+  componentWillUnmount() {
+    disableScroll.off();
+  }
+
   toggleMenu() {
     const { menuVisible } = this.state;
     this.setState({ menuVisible: !menuVisible }, () => {

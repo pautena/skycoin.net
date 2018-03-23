@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { rgba } from 'polished';
 
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
@@ -27,19 +26,11 @@ const StyledFlex = styled(Flex)`
   z-index: 1;
 `;
 
-const StyledBox = styled(Box)`
-  background: ${rgba(COLOR.dark, 0.9)};
-  
-  ${media.sm.css`
-    background: transparent;
-  `}
-`;
-
 const Hero = () => (
   <Wrapper>
     <CanvasBg />
     <StyledFlex column justify="flex-start">
-      <StyledBox mt={[0, 8, 8]} pb={[8, 8, 0]}>
+      <Box mt={[0, 8, 8]} pb={[8, 8, 0]}>
         <Container>
           <Flex row wrap align="center">
             <Box width={[1 / 1]}>
@@ -47,7 +38,7 @@ const Hero = () => (
             </Box>
           </Flex>
         </Container>
-      </StyledBox>
+      </Box>
     </StyledFlex>
   </Wrapper>
 );
