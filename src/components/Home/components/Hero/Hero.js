@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { rgba } from 'polished';
 
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
