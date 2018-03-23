@@ -27,13 +27,25 @@ const Wrapper = styled.div`
     `}
   }
   
+  .response,
   .mce_inline_error {
     margin: 0;  
     color: ${COLOR.white};
+    padding-left: ${rem(SPACE[4])};
+    font-size: ${rem(FONT_SIZES[2])};
+    font-family: ${FONT_FAMILIES.sans};
   }
   
+  #mce-success-response, 
+  #mce-error-response, 
   div.mce_inline_error {
     margin-top: ${rem(SPACE[2])};
+  }
+  
+  .response a {
+    color: ${COLOR.white};
+    font-size: ${rem(FONT_SIZES[2])};
+    font-family: ${FONT_FAMILIES.sans};  
   }
 `;
 
