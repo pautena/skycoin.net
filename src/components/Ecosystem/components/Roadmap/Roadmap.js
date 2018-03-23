@@ -7,6 +7,7 @@ import Heading from 'components/Heading';
 import media from 'utils/media';
 
 import devRoadmap from './development_roadmap.svg';
+import devRoadmapSm from './mobile_development_roadmap.svg';
 import marketingRoadmap from './marketing_roadmap.svg';
 import marketingRoadmapSm from './mobile_marketing_roadmap.svg';
 
@@ -29,6 +30,7 @@ const Roadmap = () => (
         <FormattedMessage id="ecosystem.roadmap.dev.heading" />
       </Heading>
       <Graphic src={devRoadmap} />
+      <Graphic src={devRoadmapSm} mobile />
     </Box>
     <Box pt={[6, 10]} pb={[0, 8]}>
       <Heading heavy as="h2" fontSize={[6, 7]} width={[1, 2 / 3]} my={[6, 10, 12]} color="black">
