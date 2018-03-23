@@ -34,6 +34,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   position: absolute;
   width: auto;
+  min-width: 50%;
   max-width: 100%;
   top: 50%;
   left: 50%;
