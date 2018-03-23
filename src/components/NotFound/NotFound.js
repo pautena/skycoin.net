@@ -9,6 +9,7 @@ import { rem } from 'polished';
 import { COLOR, FONT_FAMILIES } from 'config';
 
 import Container from 'components/Container';
+import Header from 'components/Header';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
@@ -16,8 +17,14 @@ import notFound from './images/404.svg';
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
+`;
+
+const Page = styled.div`
+  display: flex;
   align-items: center;
+  flex-grow: 1;
 `;
 
 const Content = styled(Flex)`
@@ -71,30 +78,33 @@ const NotFound = ({ intl }) => (
       <title>{intl.formatMessage({ id: 'notFound.title' })}</title>
     </Helmet>
 
-    <Container>
-      <Content align="flex-start" justify="center">
-        <MessageContainer>
-          <Heading heavy fontSize={[100, 100, 140]} color="base" mb={0} lineHeight="1">
-            <FormattedMessage id="notFound.404" />
-          </Heading>
+    <Header border />
+    <Page>
+      <Container>
+        <Content align="flex-start" justify="center">
+          <MessageContainer>
+            <Heading heavy fontSize={[100, 100, 140]} color="base" mb={0} lineHeight="1">
+              <FormattedMessage id="notFound.404" />
+            </Heading>
 
-          <Heading heavy as="h1" fontSize={[32, 32, 36]} color="black" mb={5}>
-            <FormattedMessage id="notFound.heading" />
-          </Heading>
+            <Heading heavy as="h1" fontSize={[32, 32, 36]} color="black" mb={5}>
+              <FormattedMessage id="notFound.heading" />
+            </Heading>
 
-          <Text fontSize={3} textAlign="left" color={COLOR.darkGrey} mb={5}>
-            <FormattedHTMLMessage id="notFound.message" />
-          </Text>
+            <Text fontSize={3} textAlign="left" color={COLOR.darkGrey} mb={5}>
+              <FormattedHTMLMessage id="notFound.message" />
+            </Text>
 
-          <StyledLink to="/">
-            <FormattedMessage id="notFound.home" />
-          </StyledLink>
-        </MessageContainer>
-        <ImageWrapper>
-          <Graphic src={notFound} alt="" />
-        </ImageWrapper>
-      </Content>
-    </Container>
+            <StyledLink to="/">
+              <FormattedMessage id="notFound.home" />
+            </StyledLink>
+          </MessageContainer>
+          <ImageWrapper>
+            <Graphic src={notFound} alt="" />
+          </ImageWrapper>
+        </Content>
+      </Container>
+    </Page>
 
   </Wrapper>
 );
