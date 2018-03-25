@@ -5,7 +5,6 @@ import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
-import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
 import media from 'utils/media';
 
