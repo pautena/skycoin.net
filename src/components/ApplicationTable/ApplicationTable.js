@@ -29,7 +29,7 @@ const Row = styled.tr`
 `;
 
 const A = styled.a`
-  opacity: ${props => (props.linkcolor ? 1 : 0.5)};  
+  opacity: ${props => (props.linkcolor ? 1 : 0.5)};
 `;
 
 
@@ -78,17 +78,22 @@ const ApplicationTable = ({ list }) => {
                       <FormattedMessage id="downloads.wallet.download" />
                     </A>
                   </td>
+
+                  {architecture.signature &&
+                    <td>
+                      <a
+                        href={architecture.signature}
+                        linkcolor={platformIndex === OSName || OSName < 0}
+                      >
+                        <FormattedMessage id="downloads.wallet.signature" />
+                      </a>
+                    </td>}
+
                   <td>
                     <Text as="span" color="gray.7" heavy>
                       {architecture.filetype}
                     </Text>
                   </td>
-
-                  {architecture.torrent && <td>
-                    <a href={architecture.torrent}>
-                      <FormattedMessage id="downloads.wallet.torrent" />
-                    </a>
-                  </td>}
 
                   <td>
                     <Text as="span" color="gray.7" heavy>

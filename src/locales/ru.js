@@ -190,6 +190,7 @@ export default {
       withElectron: 'Installer (recommended)',
       withoutElectron: 'Portable (advanced)',
       download: 'Скачать',
+      signature: 'Signature',
       torrent: 'Torrent',
     },
     bbs: {
