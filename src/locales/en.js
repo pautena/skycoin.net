@@ -60,7 +60,7 @@ export default {
     message: 'Whoops! Looks like you\'re lost </br> This page does not exist anymore or has been moved to a new URL',
     title: 'Page not found',
     heading: 'Page not found',
-    home: 'Main page',
+    home: 'Home page',
   },
   architectureOverview: {
     title: 'Architecture overview',
@@ -84,7 +84,7 @@ export default {
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins.',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today.',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary blockchain technology, Fiber, makes Skycoin fast, free, scalable, secure, private, fully programmable, eco-friendly, and, most importantly, ISP independent. Skycoin is the first platform capable of fulfilling Satoshi’s original vision.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -153,7 +153,7 @@ export default {
     },
     miner: {
       heading: 'Explore Skyminer',
-      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep.',
+      subheading: 'Introducing the backbone of the new decentralized Internet. Individuals who operate Skyminers become Nodes on Skywire, our wireless mesh network capable of removing ISP dependence. No other platform currently offers this, making us the most powerful blockchain application platform in the world. Every other ledger’s distribution can be stopped by governments and corporations. Not Skycoin. Get your miner and become a node on the new Internet. You’ll earn money while you sleep by processing bandwidth for your friends.',
       link: 'Become a node',
     },
     press: {

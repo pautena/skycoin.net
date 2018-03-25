@@ -150,9 +150,9 @@ const Miner = () => (
       <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.heading" />
       </Heading>
-      <SubHeading fontSize={2}>
+      <Heading fontSize={2}>
         <FormattedMessage id="home.miner.subheading" />
-      </SubHeading>
+      </Heading>
 
       <Box my={[7, 8, 10]}>
         <MinersWrapper align="stretch" row mx={-3}>
