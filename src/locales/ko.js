@@ -190,7 +190,7 @@ export default {
       withElectron: 'Installer (recommended)',
       withoutElectron: 'Portable (advanced)',
       download: '다운로드',
-      signature: "Signature",
+      signature: 'Signature',
       torrent: '토렌트',
     },
     bbs: {
