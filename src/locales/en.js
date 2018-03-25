@@ -60,7 +60,7 @@ export default {
     message: 'Whoops! Looks like you\'re lost </br> This page does not exist anymore or has been moved to a new URL',
     title: 'Page not found',
     heading: 'Page not found',
-    home: 'Main page',
+    home: 'Home page',
   },
   architectureOverview: {
     title: 'Architecture overview',
@@ -84,7 +84,7 @@ export default {
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
       heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins.',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today.',
+      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary blockchain technology, Fiber, makes Skycoin fast, free, scalable, secure, private, fully programmable, eco-friendly, and, most importantly, ISP independent. Skycoin is the first platform capable of fulfilling Satoshi’s original vision.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -153,7 +153,7 @@ export default {
     },
     miner: {
       heading: 'Explore Skyminer',
-      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep.',
+      subheading: 'Introducing the backbone of the new decentralized Internet. Individuals who operate Skyminers become Nodes on Skywire, our wireless mesh network capable of removing ISP dependence. No other platform currently offers this, making us the most powerful blockchain application platform in the world. Every other ledger’s distribution can be stopped by governments and corporations. Not Skycoin. Get your miner and become a node on the new Internet. You’ll earn money while you sleep by processing bandwidth for your friends.',
       link: 'Become a node',
     },
     press: {
@@ -324,22 +324,22 @@ export default {
     title: 'Ecosystem',
     description: 'Ecosystem',
     heading: 'Ecosystem',
-    subheading: 'Lorem Ipsum is simply dummy text of the printing',
+    subheading: 'Architecture of the new internet',
     skycoin: {
       heading: 'Skycoin',
-      body: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.',
+      body: 'Skycoin is our cryptocurrency. It is used to incentive the people to process bandwidth on our the new Internet. Fast, free, secure, scalable, private, fully programmable, eco-friendly, and ISP independent, it is the most complete cryptocurrency to date, offering nearly every other value added benefit and feature currently on the market. Capable of everything from the IoT to Smart Contracts, Skycoin is the complete package and the only coin capable of fulfilling Satoshi’s original vision.',
     },
     skywire: {
       heading: 'Skywire',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+      body: 'Skywire is the new Internet, a decentralized wireless mesh network that runs on top of our hardware platform, the Skyminer, and utilizes Skycoin, our cryptocurrency, to incentivize individuals like to you become nodes on the network and earn money while you sleep by processing bandwidth for their friends. Just plug your ethernet cable into the Skyminer and you become an exit node for the current Internet. Want more? Phase two involves the opportunity for you to help build the new Internet. Soon we will need a new Netflix.',
     },
     skyledger: {
-      heading: 'Skyledger',
-      body: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.',
+      heading: 'Fiber',
+      body: 'Bitcoin had blockchain, Ethereum had ERC-20, Iota had the Tangle, Hedera had Hash Graph; Skycoin has Fiber. Fiber is other most advanced blockchain technology in the world, making Skycoin the most advanced blockchain application platform in the world. Anyone can utilize Fiber technology to take full advantage of the change distributed ledgers bring to the world. What Apple did to the cell phone and the centralized Internet, we are doing to the blockchain and the decentralized web.',
     },
     experiments: {
       heading: 'Experiments',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      body: 'Ethereum had Cryptokitties, we have Kitty Cash. Cryptokitties was an attempt to test Ethereum’s scalability. How slow and expensive does the network get when bogged down with hundreds or thousands of large transactions at a time? Cryptokitties showed that Ethereum wasn’t as scalable as we would have hoped. KittyCash is showing that the Skycoin’s Fiber is entirely scalable. It remains fast, free, and secure, even under heavy loads. Check out all of the experiments we have in development that show the capabilities of Skycoin’s technology.',
     },
     iconLabel: {
       fiber: 'Fiber',
@@ -357,8 +357,7 @@ export default {
     },
     about: {
       heading: 'What is Skycoin?',
-      subheading: 'Lorem Ipsum is simply dummy text of the printing',
-      body: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
+      body: 'Bitcoin’s historic 100,000x run began 8 years ago. Six years ago, lead developers of Bitcoin and Ethereum quietly broke off and teamed up to begin work on a new project, Skycoin. Their goal was to perfect the blockchain technology that Satoshi introduced to the world. Why? Satoshi’s original vision of peer-to-peer cash is the reason many believe Bitcoin and Ether moved as dramatically as it did, changing our world and many lives along the way. The developers began at the core, producing Obelisk, a new consensus algorithm based on new mathematics that makes Proof-of-Work and Proof-of-Stake completely obsolete, guaranteeing decentralization at the network level in a way no other project has before. Their new consensus algorithm, combined with their elimination of the need for mining, allowed them to solve many of the problems Bitcoin faced, and add many of the features Bitcoin was missing. Fiber, their blockchain technology, can be used to make fast, free, secure, scalable, private, fully programmable, and eco-friendly cryptocurrencies from scratch. However, their foresight showed them this wasn’t enough. Blockchain technology faced a deeper problem and a bigger threat: ISP dependence. Even if they designed the ledger perfectly built for distribution, if ISPs and governments have the ability to stop the people from distributing that ledger, Satoshi’s vision hadn’t been fulfilled. So they began looking toward building a new Internet, a wireless mesh network named Skywire. Skycoin now offers the most advanced blockchain application platform in the world, and the only platform with the possibility of ISP independence.',
     },
     roadmap: {
       dev: {
@@ -370,7 +369,7 @@ export default {
     },
     whitepaper: {
       heading: 'Whitepaper',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      body: 'Obelisk, Skywire, Coin Join, etc. - it’s all here and fleshed out for you. Satoshi began the tradition of white papers in the crypto space and we are happy to continue it. We want it to be easy for you to do your due diligence and get answers to your questions. There are more technical white papers available, and this white paper is continuously being updated by our team with new data and developments. If you have any questions about the content in the white paper, please contact us.',
       download: 'Download',
     },
   },

@@ -14,7 +14,7 @@ const socialLinks = [
   { to: 'https://www.instagram.com/skycoinproject/', icon: images.instagram },
   { to: 'https://github.com/skycoin/skycoin', icon: images.github },
   { to: 'https://www.youtube.com/c/Skycoin', icon: images.youtube },
-  { to: 'https://www.reddit.com/r/SkycoinProject', icon: images.reddit },
+  { to: 'https://www.reddit.com/r/skycoin/', icon: images.reddit },
   { to: 'https://itunes.apple.com/nl/podcast/skycoin/id1348472259?l=en', icon: images.apple },
   { to: 'https://discord.gg/EgBenrW', icon: images.discord },
   { to: 'https://t.me/Skycoin', icon: images.telegram },
