@@ -26,6 +26,7 @@ const ecosystemItems = [
   'cx',
   'cxo',
   'kittyCash',
+  'skyVpn',
   'skyMessenger',
   'bbs',
 ];

@@ -212,7 +212,7 @@ export default {
         text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | ru',
       },
       skyVpn: {
-        title: 'SkyVPN | ru',
+        title: 'SDN | ru',
         text: 'Decentralized Virtual Private Network running on Skywire. | ru',
       },
       skyMessenger: {
@@ -352,7 +352,7 @@ export default {
       cxo: 'CXO',
       bbs: 'BBS',
       skyMessenger: 'SkyMessenger',
-      skyVPN: 'SkyVPN',
+      skyVPN: 'SDN',
       kittyCash: 'Kitty Cash',
     },
     about: {
