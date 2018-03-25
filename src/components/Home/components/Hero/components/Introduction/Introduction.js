@@ -35,7 +35,7 @@ const Intro = styled.div`
 `;
 
 const Introduction = () => (
-  <Flex wrap row px={0} mx={-5}>
+  <Flex wrap row px={0} mx={-5} pt={[0, 0, 9]}>
     <Box width={[1, 1, 2 / 3]} px={5} mb={[0, 4, 4]}>
       <Intro>
         <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
