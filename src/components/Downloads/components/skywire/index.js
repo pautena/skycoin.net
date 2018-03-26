@@ -1,1 +1,1 @@
-export { default } from './skywire';
+export { default } from './Skywire';

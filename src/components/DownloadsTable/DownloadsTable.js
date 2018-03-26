@@ -15,7 +15,7 @@ import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(480)};
+  // min-width: ${rem(480)};
 
   tr {
     padding-bottom: ${rem(10)};
@@ -26,7 +26,6 @@ const Table = styled.table`
   }
 
   td, th {
-    height: ${rem(50)};
     padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
 
     ${media.sm.css`
@@ -34,7 +33,26 @@ const Table = styled.table`
       padding: ${rem(SPACE[4])} ${rem(SPACE[8])};
     `}
   }
-
+  
+  tr {
+    display: block;    
+    ${media.sm.css`
+      display: table-row;
+    `}
+  }
+  
+  td {
+    display: inline-block;
+    
+    &:first-child {
+      display: block;
+    }
+    
+    ${media.sm.css`
+      display: table-cell;
+    `}
+  } 
+  
   a {
     color: ${COLORS.base};
     text-decoration: none;
@@ -42,7 +60,9 @@ const Table = styled.table`
 `;
 
 const FixedTd = styled.td`
-  width: ${rem(70)}
+  ${media.sm.css`
+    width: ${rem(70)};
+  `}
 `;
 
 const DownladsTable = ({ title, list, id }) => (

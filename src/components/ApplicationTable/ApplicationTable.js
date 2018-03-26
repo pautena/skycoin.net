@@ -10,17 +10,22 @@ import { TableWrapper } from 'components/Table';
 
 import * as icons from './icons';
 
+const TdLink = styled.td`
+  display: block;
+`;
+
 const Table = styled.table`
   width: 100%;
-  min-width: ${rem(480)};
+  border-bottom: 2px solid white;
 
-  tr td, tr th {
-    border-bottom: 1px solid rgba(146,164, 186, 0.2);
+  tr td, 
+  tr th {
+    ${media.sm.css`
+      border-bottom: 1px solid rgba(146,164, 186, 0.2);
+    `}
   }
 
   td, th {
-    height: ${rem(40)};
-
     ${media.sm.css`
       height: ${rem(50)};
     `}
@@ -30,7 +35,29 @@ const Table = styled.table`
     color: ${COLORS.base};
   }
 
-  border-bottom: 2px solid white;
+
+  tr {
+    display: block;
+    
+    ${media.sm.css`
+      display: table-row;
+    `}
+  }
+  
+  td {
+    display: inline-block;
+    ${media.sm.css`
+      display: table-cell;
+    `}
+  } 
+  
+  th, 
+  ${TdLink} {
+    display: block;
+    ${media.sm.css`
+      display: table-cell;
+    `}
+  }
 `;
 
 const Icon = styled.img`
@@ -41,27 +68,25 @@ const Icon = styled.img`
 `;
 
 const Th = styled.th`
-  padding: ${props => (props.count > 1 ? 'inherit' : `${rem(SPACE[4])} 0`)};
-  padding-right: ${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};  
+  padding: ${rem(SPACE[4])}; 
   
   ${media.sm.css`
-    padding-right: ${rem(SPACE[6])};
-    padding-left: ${rem(SPACE[6])};
+    padding: 0 ${rem(SPACE[6])};
   `}
   ${media.md.css`
-    padding-right: ${rem(SPACE[10])};
-    padding-left: ${rem(SPACE[10])};
+    padding: 0 ${rem(SPACE[10])};
   `}
 `;
 
 const Row = styled.tr`
   text-align: center;
-  height: 80px;
   background-color: ${props => (props.light ? '#F4F9FF' : 'white')};
 
-  border-bottom: 1px solid ${props => (props.light ? '#F4F9FF' : 'white')};
-  border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? '#F4F9FF' : 'white')};
+  ${media.sm.css`
+    height: 80px;
+    border-bottom: 1px solid ${props => (props.light ? '#F4F9FF' : 'white')};
+    border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? '#F4F9FF' : 'white')};
+  `}
 `;
 
 const A = styled.a`
@@ -83,16 +108,16 @@ const Comment = styled(Text) `
 
 const TdPadding = styled.td`
   text-align:left;
-  padding-left: ${rem(SPACE[5])};
   
-    ${media.sm.css`
-      padding-left: ${rem(SPACE[10])};
-    `}
-    
-    ${media.md.css`
-      padding-left: ${rem(SPACE[13])};
-    `}
+  ${media.sm.css`
+    padding-left: ${rem(SPACE[10])};
+  `}
+
+  ${media.md.css`
+    padding-left: ${rem(SPACE[13])};
+  `}
 `;
+
 
 const ApplicationTable = ({ list }) => {
   let OSName = -1;
@@ -127,7 +152,7 @@ const ApplicationTable = ({ list }) => {
                   }
 
                   {architectureIndex === 0 &&
-                    <TdPadding rowSpan={build.architectures.length} style={{ width: '210px' }}>
+                    <TdPadding rowSpan={build.architectures.length}>
                       <FormattedMessage id={build.name} />
                       <Comment as="span">
                         <FormattedMessage id={`${build.name}Comment`} />
@@ -143,14 +168,14 @@ const ApplicationTable = ({ list }) => {
                     </Text>
                   </td>
 
-                  <td>
+                  <TdLink>
                     <A
                       href={architecture.download}
                       linkcolor={platformIndex === OSName || OSName < 0}
                     >
                       <FormattedMessage id="downloads.wallet.download" />
                     </A>
-                  </td>
+                  </TdLink>
 
                   {architecture.signature && <td>
                     <A
