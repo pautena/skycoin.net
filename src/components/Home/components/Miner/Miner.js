@@ -6,6 +6,7 @@ import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
+import Text from 'components/Text';
 import media from 'utils/media';
 
 import miner1 from './miner1.png';
@@ -149,9 +150,9 @@ const Miner = () => (
       <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.heading" />
       </Heading>
-      <Heading fontSize={2}>
+      <Text fontSize={2} color="black">
         <FormattedMessage id="home.miner.subheading" />
-      </Heading>
+      </Text>
 
       <Box my={[7, 8, 10]}>
         <MinersWrapper align="stretch" row mx={-3}>
