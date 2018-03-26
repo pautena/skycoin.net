@@ -16,6 +16,7 @@ import award from './images/award.svg';
 const logos = [
   require('./images/icBlockchain.png'),
   require('./images/icForbes.png'),
+  require('./images/icAlphabit.png'),
   require('./images/icCoinTelegrph.png'),
   require('./images/icCionAgenda.png'),
 ];
@@ -98,7 +99,7 @@ const Press = () => (
         </Flex>
         <Flex align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
           {logos.map((item, i) => (
-            <LogoWrapper width={[1 / 2, 1 / 4, 'auto']}>
+            <LogoWrapper width={[1 / 2, 1 / 5, 'auto']}>
               <Logo key={i} src={logos[i]} />
             </LogoWrapper>
           ))}
