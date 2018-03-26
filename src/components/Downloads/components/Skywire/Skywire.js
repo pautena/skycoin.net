@@ -3,8 +3,8 @@ import DownloadsTable from 'components/DownloadsTable';
 
 import content from './content';
 
-const skywire = () => (
+const Skywire = () => (
   <DownloadsTable title="downloads.skywire.heading" list={content} id="skywire" />
 );
 
-export default skywire;
+export default Skywire;

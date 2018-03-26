@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
 import Container from 'components/Container';
@@ -30,7 +30,7 @@ const About = () => (
         <FormattedMessage id="ecosystem.about.heading" />
       </Heading>
       <StyledText fontSize={2} my={[4, 6]} color="white">
-        <FormattedMessage id="ecosystem.about.body" />
+        <FormattedHTMLMessage id="ecosystem.about.body" />
       </StyledText>
     </Container>
   </Wrapper>

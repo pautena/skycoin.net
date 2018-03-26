@@ -10,7 +10,7 @@ import Whitepappers from 'components/WhitepapersPage/components/Whitepapers';
 import Assets from './components/Assets';
 import Wallet from './components/Wallet';
 import BBS from './components/BBS';
-import Skywire from './components/skywire';
+import Skywire from './components/Skywire';
 
 const Downloads = ({ intl }) => (
   <div>

@@ -273,6 +273,7 @@ export default {
       withoutElectron: 'Переносной',
       withoutElectronComment: ' (продвинутый)',
       download: 'Скачать',
+      signature: 'Signature',
       torrent: 'Torrent',
     },
     bbs: {
