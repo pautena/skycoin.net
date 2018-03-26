@@ -21,6 +21,7 @@ import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
+import userPlaceholder from './content/images/deafult.svg';
 
 const Wrapper = styled(Box)`
   background-color: ${props => (props.bg || 'transparent')};
@@ -180,7 +181,8 @@ Expander.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-const FounderImg = styled(Img) `
+const ImgPlaceholder = styled(Img)`
+  width: 70%;
 `;
 
 const TeamPage = ({ intl }) => (
@@ -234,8 +236,8 @@ const TeamPage = ({ intl }) => (
                     <ImageContainer>
                       {(picture && picture !== '') ?
                         /* eslint-disable */
-                        <FounderImg src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                        <FounderImg src={require("./content/images/default.png")} alt="Anonymous team member" />
+                        <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                        <ImgPlaceholder src={userPlaceholder} alt="Anonymous team member" />
                         /* eslint-disable */
                       }
                     </ImageContainer>
@@ -273,7 +275,7 @@ const TeamPage = ({ intl }) => (
                       {(picture && picture !== '') ?
                         /* eslint-disable */
                         <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                        <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                        <ImgPlaceholder src={userPlaceholder} alt="Anonymous team member" />
                         /* eslint-disable */
                       }
                     </ImageContainer>
@@ -311,7 +313,7 @@ const TeamPage = ({ intl }) => (
                       {(picture && picture !== '') ?
                         /* eslint-disable */
                         <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
-                        <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                        <ImgPlaceholder src={userPlaceholder} alt="Anonymous team member" />
                         /* eslint-disable */
                       }
                     </ImageContainer>

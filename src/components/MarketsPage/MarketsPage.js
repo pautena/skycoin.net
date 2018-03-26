@@ -19,7 +19,7 @@ const CryptowolfWrapper = styled.div`
 
 class MarketsPage extends PureComponent {
   componentDidMount() {
-    const geturlvar = 'https://cryptowolf.eu/skyexternal-backend/';
+    const geturlvar = 'https://staging.cryptowolf.eu/skyexternal-backend/';
     $('#cryptowolf-container').load(geturlvar);
     $.getScript('https://www.google.com/recaptcha/api.js');
     $.getScript(`${geturlvar}js/cryptowolf.js`);
