@@ -269,6 +269,7 @@ export default {
       withoutElectron: 'Portable',
       withoutElectronComment: ' (advanced)',
       download: '下载',
+      signature: 'Signature',
       torrent: '种子',
     },
     bbs: {

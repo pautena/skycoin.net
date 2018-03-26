@@ -152,10 +152,13 @@ const ApplicationTable = ({ list }) => {
                     </A>
                   </td>
 
-                  {architecture.torrent && <td>
-                    <a href={architecture.torrent}>
-                      <FormattedMessage id="downloads.wallet.torrent" />
-                    </a>
+                  {architecture.signature && <td>
+                    <A
+                      href={architecture.signature}
+                      linkcolor={platformIndex === OSName || OSName < 0}
+                    >
+                      <FormattedMessage id="downloads.wallet.signature" />
+                    </A>
                   </td>}
 
                   <td>
