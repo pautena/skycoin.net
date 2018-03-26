@@ -38,9 +38,11 @@ const Table = styled.table`
 
   tr {
     display: block;
+    padding-bottom: ${rem(SPACE[4])};
     
     ${media.sm.css`
       display: table-row;
+      padding-bottom: 0; 
     `}
   }
   
