@@ -14,15 +14,17 @@ import Container from 'components/Container';
 
 const CryptowolfWrapper = styled.div`
   width: 100%;
-  height: ${rem(400)};
+  min-height: ${rem(400)};
 `;
 
 class MarketsPage extends PureComponent {
   componentDidMount() {
-    const geturlvar = 'https://staging.cryptowolf.eu/skyexternal-backend/';
-    $('#cryptowolf-container').load(geturlvar);
-    $.getScript('https://www.google.com/recaptcha/api.js');
-    $.getScript(`${geturlvar}js/cryptowolf.js`);
+    const cryptoUrl = 'https://external.cryptowolf.eu/main-backend/';
+    /* eslint-disable */
+    external = 'sky';
+    $('#cryptowolf-container').load(`${cryptoUrl}ext.html`);
+    $.getScript(`${cryptoUrl}js/cryptowolf-ext.js`);
+    /* eslint-enable */
   }
   render() {
     return (<div>
@@ -36,7 +38,7 @@ class MarketsPage extends PureComponent {
       <Header border />
       <Container>
         {/* <MarketsList /> */}
-        <link rel="stylesheet" type="text/css" href="https://cryptowolf.eu/wp-content/themes/orfeo/css/mine.css" />
+        <link rel="stylesheet" id="pl-style-css" href="https://external.cryptowolf.eu/main-backend/css/orfeo-alt.css" type="text/css" media="all" />
         <CryptowolfWrapper id="cryptowolf-container" />
       </Container>
       <Footer />

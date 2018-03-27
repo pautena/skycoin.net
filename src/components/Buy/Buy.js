@@ -22,7 +22,7 @@ class Buy extends React.Component {
     const Component = asAnchor ? 'a' : Button;
 
     const props = {
-      to: 'markets',
+      to: 'buy',
     };
 
     return (
