@@ -65,13 +65,16 @@ const Container = styled.div`
 const GroupWrapper = styled.div`
   display: ${props => (props.show || props.isMobile ? 'flex' : 'none')};;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+  width: ${props => (props.isMobile ? 'auto' : '100%')};
+  margin-top: ${props => (props.isMobile ? '0' : rem(SPACE[6]))};
   padding: ${props => (props.isMobile ? rem(28) : '0')}  0;
   font-size: ${rem(FONT_SIZES[2])};
   text-align: left;
   
   ${media.sm.css`
-    flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
+    width: auto;
+    margin-top: 0;
   `};
   
   ${media.md.css`
@@ -140,14 +143,15 @@ const withActiveProp = (Component) => {
 const StyledLink = withRouter(withActiveProp(styled(Link)`
   display: flex;
   align-items: center;
+  width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
   margin: 0;
   padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
   padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
-  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : rem(SPACE[1]))}; 
-  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : rem(SPACE[1]))};
+  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')}; 
+  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
-  text-decoration: none;  
+  text-decoration: none;
     
   &:hover {
     color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
@@ -156,6 +160,7 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   }
   
   ${media.sm.css`
+    width: auto;
     margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
   `};
   
@@ -202,6 +207,14 @@ const Overlay = styled.div`
   `}
 `;
 
+const NavWrapper = styled.div`
+  width: ${props => (props.isMobile ? 'auto' : '100%')};
+  
+  ${media.sm.css`
+    width: auto;
+  `}
+`;
+
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -230,7 +243,7 @@ class Navigation extends React.PureComponent {
     const { white, social, showBuy, isMobile } = this.props;
     const { menuVisible } = this.state;
     return (
-      <div>
+      <NavWrapper isMobile={isMobile}>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
         <Overlay visible={menuVisible} />
         <Container isMobile={isMobile}>
@@ -277,7 +290,7 @@ class Navigation extends React.PureComponent {
             </GroupWrapper>
           </Wrapper>
         </Container>
-      </div>
+      </NavWrapper>
     );
   }
 }
