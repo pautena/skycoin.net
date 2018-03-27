@@ -74,7 +74,7 @@ export default {
     wallet: '지갑 얻기',
   },
   markets: {
-    title: 'Markets',
+    title: 'Buy',
     description: 'List of Skycoin markets',
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',

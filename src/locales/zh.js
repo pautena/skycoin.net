@@ -74,7 +74,7 @@ export default {
     wallet: '下载钱包',
   },
   markets: {
-    title: 'Markets',
+    title: 'Buy',
     description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
