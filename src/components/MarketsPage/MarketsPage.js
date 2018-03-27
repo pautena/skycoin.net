@@ -38,7 +38,7 @@ class MarketsPage extends PureComponent {
       <Header border />
       <Container>
         {/* <MarketsList /> */}
-        <link rel="stylesheet" id="pl-style-css" href="https://external.cryptowolf.eu/main-backend/css/orfeo-alt.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="pl-style-css" href={`${process.env.PUBLIC_URL}/orfeo-alt.css`} type="text/css" media="all" />
         <CryptowolfWrapper id="cryptowolf-container" />
       </Container>
       <Footer />
