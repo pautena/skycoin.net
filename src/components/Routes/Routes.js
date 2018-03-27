@@ -26,7 +26,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
-      <Route path={`${prefix}markets`} exact component={MarketsPage} />
+      <Route path={`${prefix}buy`} exact component={MarketsPage} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />

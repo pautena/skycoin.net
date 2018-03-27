@@ -9,7 +9,6 @@ import Button from 'components/Button';
 import media from 'utils/media';
 
 import bg from './mail.svg';
-import whitepaper from './skycoin_whitepaper.pdf';
 
 const Wrapper = styled(Box)`
   overflow: hidden;
@@ -36,6 +35,8 @@ const StyledBox = styled(Box)`
   }
 `;
 
+const Btn = Button.withComponent('a');
+
 const Whitepaper = () => (
   <Wrapper py={[6, 10, 13]}>
     <Container>
@@ -47,9 +48,8 @@ const Whitepaper = () => (
           <Text fontSize={2} my={[4, 6]} color="black">
             <FormattedMessage id="ecosystem.whitepaper.body" />
           </Text>
-          <Button
-            href={whitepaper}
-            download="skycoin_whitepaper.pdf"
+          <Btn
+            href={`${process.env.PUBLIC_URL}/skycoin_whitepaper.pdf`}
             color="base"
             bg="white"
             pill
@@ -57,7 +57,7 @@ const Whitepaper = () => (
             mt={[5, 6]}
           >
             <FormattedMessage id="ecosystem.whitepaper.download" />
-          </Button>
+          </Btn>
         </StyledBox>
       </Flex>
     </Container>

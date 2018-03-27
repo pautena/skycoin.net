@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Navigation from 'components/Navigation';
 import Text from 'components/Text';
 import Logo from 'components/Logo';
-import { COLOR } from 'config';
+import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 
 // import Languages from './components/Languages';
@@ -21,17 +22,19 @@ const Wrapper = styled.div`
 
 const FooterNavWrapper = styled(Flex)`
   flex-direction: column;
+  padding-bottom: ${rem(SPACE[6])};
   
   ${media.sm.css`
     flex-direction: row;
     align-items: center;
+    padding-bottom: ${rem(SPACE[12])};
   `}
 `;
 
 export default () => (
   <Wrapper>
     <Container>
-      <FooterNavWrapper align="flex-start" justify="space-between" wrap pb={[8, 12]} pt={[8, 13]}>
+      <FooterNavWrapper align="flex-start" justify="space-between" wrap pt={[8, 13]}>
         <Logo blueWhite />
         <Navigation white />
       </FooterNavWrapper>
