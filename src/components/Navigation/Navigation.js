@@ -284,7 +284,7 @@ class Navigation extends React.PureComponent {
             </GroupWrapper>
 
             <GroupWrapper isMobile={isMobile} show={showBuy}>
-              <Button to="downloads" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+              <Button to="buy" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
                 <FormattedMessage id="header.navigation.getWallet" />
               </Button>
             </GroupWrapper>
