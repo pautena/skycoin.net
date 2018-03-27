@@ -21,7 +21,7 @@ export const en = {
         email: '',
         picture: 'chen.jpg',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the developers behind Ethereum, creator of Pyethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -143,7 +143,7 @@ export const zh = {
         email: '',
         picture: 'chen.jpg',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the developers behind Ethereum, creator of Pyethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -265,7 +265,7 @@ export const ru = {
         email: '',
         picture: 'chen.jpg',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the developers behind Ethereum, creator of Pyethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
@@ -387,7 +387,7 @@ export const ko = {
         email: '',
         picture: 'chen.jpg',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
+        bio: 'Houwu is one of the developers behind Ethereum, creator of Pyethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a researcher at Tsinghua University.',
       },
       {
         name: 'Steve Leonard',
