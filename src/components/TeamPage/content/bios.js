@@ -110,7 +110,7 @@ export const en = {
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.jpg',
+        picture: 'tokenkey.png',
         bio: 'Founded by Chris Emms –Tokenkey is a specialized global team that provides assistance with blockchain projects, ranging from initial idea to delivery, allowing teams to remain project focused. Their services cover assisting projects to procure : whitepapers and business plans, token economics, auditing and rating, structuring and compliance, corporate entity and legal, digital asset creation, advisory board, token issuance and exchange listing, custodial and escrow, marketing and PR, community management and bounty, and cryptocurrency trading and arbitrage.',
       },
       {
@@ -241,7 +241,7 @@ export const zh = {
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.jpg',
+        picture: 'tokenkey.png',
         bio: 'Founded by Chris Emms –Tokenkey is a specialized global team that provides assistance with blockchain projects, ranging from initial idea to delivery, allowing teams to remain project focused. Their services cover assisting projects to procure : whitepapers and business plans, token economics, auditing and rating, structuring and compliance, corporate entity and legal, digital asset creation, advisory board, token issuance and exchange listing, custodial and escrow, marketing and PR, community management and bounty, and cryptocurrency trading and arbitrage.',
       },
       {
@@ -372,7 +372,7 @@ export const ru = {
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.jpg',
+        picture: 'tokenkey.png',
         bio: 'Founded by Chris Emms –Tokenkey is a specialized global team that provides assistance with blockchain projects, ranging from initial idea to delivery, allowing teams to remain project focused. Their services cover assisting projects to procure : whitepapers and business plans, token economics, auditing and rating, structuring and compliance, corporate entity and legal, digital asset creation, advisory board, token issuance and exchange listing, custodial and escrow, marketing and PR, community management and bounty, and cryptocurrency trading and arbitrage.',
       },
       {
@@ -503,7 +503,7 @@ export const ko = {
       {
         name: 'TokenKey',
         title: '',
-        picture: 'tokenkey.jpg',
+        picture: 'tokenkey.png',
         bio: 'Founded by Chris Emms –Tokenkey is a specialized global team that provides assistance with blockchain projects, ranging from initial idea to delivery, allowing teams to remain project focused. Their services cover assisting projects to procure : whitepapers and business plans, token economics, auditing and rating, structuring and compliance, corporate entity and legal, digital asset creation, advisory board, token issuance and exchange listing, custodial and escrow, marketing and PR, community management and bounty, and cryptocurrency trading and arbitrage.',
       },
       {

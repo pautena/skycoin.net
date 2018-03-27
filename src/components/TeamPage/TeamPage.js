@@ -21,7 +21,7 @@ import { en, zh, ko, ru } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
-import userPlaceholder from './content/images/deafult.svg';
+import userPlaceholder from './content/images/default.svg';
 
 const Wrapper = styled(Box)`
   background-color: ${props => (props.bg || 'transparent')};
@@ -41,8 +41,7 @@ const ImageContainer = styled.div`
 
 const Img = styled.img`
   position: absolute;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
