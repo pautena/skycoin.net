@@ -40,6 +40,7 @@ export default {
     team: '팀',
     subscribe: '구독 리스트',
     market: '마켓',
+    jobs: 'Jobs',
     bitcoinTalk: '비트코인토크 ANN',
     instagram: '인스타그램',
     facebook: '페이스북',

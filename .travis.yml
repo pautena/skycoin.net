@@ -6,9 +6,12 @@ script:
 - yarn test
 - yarn build
 
+<<<<<<< HEAD
 # This will work on develop (the new website in progress) if the branch is triggered by a commit, not by a tag.  I.e. the staging robots.txt will be deployed (deny all robots)
 # This will also work when this becomes the master, replacing the current site.
 # Note: the branch:master parts of this file will be ignored while this code is on the develop branch.
+=======
+>>>>>>> master
 before_deploy:
 - if [[ -z "$TRAVIS_TAG" ]]; then cp robots.txt.staging build/robots.txt; else cp robots.txt build/; fi
 
