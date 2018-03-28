@@ -165,11 +165,11 @@ const Miner = () => (
         </MinersWrapper>
       </Box>
 
-      {/*<Flex align="flex-end" column wrap>*/}
-        {/*<Button to="/" color="white" bg="base" big width={'200px'} pill >*/}
-          {/*<FormattedMessage id="home.miner.link" />*/}
-        {/*</Button>*/}
-      {/*</Flex>*/}
+      {/* <Flex align="flex-end" column wrap> */}
+      {/* <Button to="/" color="white" bg="base" big width={'200px'} pill > */}
+      {/* <FormattedMessage id="home.miner.link" /> */}
+      {/* </Button> */}
+      {/* </Flex> */}
     </Container>
   </Box>
 );
