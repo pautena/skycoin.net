@@ -9,7 +9,6 @@ import Heading from 'components/Heading';
 import Text from 'components/Text';
 import media from 'utils/media';
 
-<<<<<<< HEAD
 import miner1 from './miner1.png';
 /* eslint-disable global-require */
 const miners = [
@@ -19,10 +18,6 @@ const miners = [
   require('./miner5.png'),
 ];
 /* eslint-enable global-require */
-=======
-import miner from './miner.jpg';
-import background from './background.png';
->>>>>>> master
 
 const MinersWrapper = styled(Flex)`
   height: 100%;
@@ -38,7 +33,6 @@ const MainImageBox = styled(Box)`
   overflow: hidden;
 `;
 
-<<<<<<< HEAD
 const StyledBox = styled(Box)`
   position: relative;
 `;
@@ -48,13 +42,6 @@ const ImgWrap = styled.div`
   background-size: contain;
   background: url(${props => props.img}) center center no-repeat;
 `;
-=======
-const StyledLink = styled(Link)`
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  margin: 1em 0 0;
->>>>>>> master
 
 const Miners = styled(Flex)`
   flex-grow: 1;
@@ -160,7 +147,6 @@ GraphicItem.defaultProps = {
 const Miner = () => (
   <Box my={13}>
     <Container>
-<<<<<<< HEAD
       <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.heading" />
       </Heading>
@@ -184,34 +170,6 @@ const Miner = () => (
       {/* <FormattedMessage id="home.miner.link" /> */}
       {/* </Button> */}
       {/* </Flex> */}
-=======
-      <Flex py={[7, 8]} align="center">
-        <Box width={[1 / 3, 1 / 4]} mr={[4, 6]}>
-          <StyledLink href="https://www.skycoin.net/blog/statement/skywire-miner-hardware-for-the-next-internet/">
-            <Graphic />
-          </StyledLink>
-        </Box>
-
-        <Box width={[2 / 3, 3 / 4]}>
-          <Heading heavy as="h2" mt={[4, 5]} mb={0} fontSize={[5, 6]} color="white">
-            <FormattedMessage id="home.miner.heading" />
-          </Heading>
-          <Heading heavy as="div" mt={5} mb={0} fontSize={[3]} color="white">
-            <FormattedMessage id="home.miner.subscribe" />
-          </Heading>
-          <StyledLink href="https://www.skycoin.net/blog/statement/skywire-miner-hardware-for-the-next-internet/">
-            <Label>
-              <FormattedMessage id="home.miner.label" />
-            </Label>
-          </StyledLink>
-          <StyledLink to="mailing-list">
-            <Label>
-              <FormattedMessage id="home.miner.mailingList" />
-            </Label>
-          </StyledLink>
-        </Box>
-      </Flex>
->>>>>>> master
     </Container>
   </Box>
 );

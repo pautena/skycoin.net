@@ -12,11 +12,7 @@ import RoadmapPage from '../RoadmapPage';
 import MailingPage from '../MailingPage';
 import MarketsPage from '../MarketsPage';
 import TeamPage from '../TeamPage';
-<<<<<<< HEAD
 import Ecosystem from '../Ecosystem';
-=======
-import JobsPage from '../JobsPage';
->>>>>>> master
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -30,15 +26,9 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
-<<<<<<< HEAD
       <Route path={`${prefix}buy`} exact component={MarketsPage} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
-=======
-      <Route path={`${prefix}markets`} exact component={MarketsPage} />
-      <Route path={`${prefix}team`} exact component={TeamPage} />
-      <Route path={`${prefix}jobs`} exact component={JobsPage} />
->>>>>>> master
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />

@@ -81,7 +81,6 @@ const DownladsTable = ({ title, list, id }) => (
               <tr key={i}>
                 <td>{name}</td>
 
-<<<<<<< HEAD
                 <FixedTd>
                   {filesize && <Text as="span" color="gray.7" heavy>
                     {filesize}
@@ -99,21 +98,6 @@ const DownladsTable = ({ title, list, id }) => (
                     <FormattedMessage id="downloads.whitepapers.download" />
                   </Link>}
                 </FixedTd>
-=======
-                <td>
-                  {download && <Link target="_blank" href={download}>
-                    <FormattedMessage id="downloads.whitepapers.download" />
-                    &nbsp;
-                    ({filetype})
-                  </Link>}
-                </td>
-
-                <td>
-                  {filesize && <Text as="span" color="gray.7" heavy>
-                    {filesize}
-                  </Text>}
-                </td>
->>>>>>> master
               </tr>
             ))}
           </tbody>
