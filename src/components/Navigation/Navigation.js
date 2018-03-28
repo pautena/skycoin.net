@@ -259,7 +259,7 @@ class Navigation extends React.PureComponent {
               </StyledLink>
 
               <StyledLink white={white} isMobile={isMobile} to="/downloads">
-                <FormattedMessage id="header.navigation.wallet" />
+                <FormattedMessage id="header.navigation.downloads" />
               </StyledLink>
 
               <StyledLink white={white} isMobile={isMobile} to="/team">
