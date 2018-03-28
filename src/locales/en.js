@@ -74,7 +74,8 @@ export default {
     wallet: 'Get Wallet',
   },
   markets: {
-    title: 'Buy',
+    title: 'Buy Skycoin',
+    loading: 'Loading, please wait...',
     description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
