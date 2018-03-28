@@ -1,5 +1,13 @@
 export default [{
   name: 'Skywire White Paper — coming soon',
+<<<<<<< HEAD
+=======
+}, {
+  name: '加密货币网络分布式共识算法白皮书',
+  download: 'https://downloads.skycoin.net/whitepapers/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E7%BD%91%E7%BB%9C%E5%88%86%E5%B8%83%E5%BC%8F%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf',
+  filetype: '.pdf',
+  filesize: '884kb',
+>>>>>>> master
 }, {
   name: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
   download: 'http://downloads.skycoin.net/whitepapers/sky-an-opinion-dynamics-framework-and-model-for-consensus-over-p2-p-network.pdf',

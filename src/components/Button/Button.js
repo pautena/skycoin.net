@@ -18,11 +18,18 @@ const Button = styled(Link)`
 
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
   box-shadow: ${BOX_SHADOWS.base};
+<<<<<<< HEAD
   font-family: ${FONT_FAMILIES.sans};
   font-size: ${rem(FONT_SIZES[2])};
   padding: ${rem(SPACE[3])} ${rem(SPACE[6])};
   transition: 150ms ease-in-out;
   text-transform: ${props => (props.uppercase ? 'uppercase' : 'none')};
+=======
+  font-family: ${FONT_FAMILIES.sansBold};
+  font-size: ${rem(FONT_SIZES[3])};
+  padding: ${rem(SPACE[3])} ${rem(SPACE[6])};
+  transition: 150ms ease-in-out;
+>>>>>>> master
 
   ${fontSize}
   ${color}

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+<<<<<<< HEAD
 import { rem } from 'polished';
 
 import media from 'utils/media';
@@ -25,11 +26,33 @@ import userPlaceholder from './content/images/default.svg';
 
 const Wrapper = styled(Box)`
   background-color: ${props => (props.bg || 'transparent')};
+=======
+
+import Header from 'components/Header';
+import Heading from 'components/Heading';
+import Footer from 'components/Footer';
+import Container from 'components/Container';
+
+import { FONT_FAMILIES, BREAKPOINTS } from 'config';
+import { en, zh, ko, ru } from './content/bios';
+
+const Wrapper = styled.div`
+  padding: 2em 0;
+`;
+
+const Person = styled.article`
+  border-bottom: 1px solid #eceef0;
+
+  @media (max-width: ${BREAKPOINTS.sm}rem) {
+
+  }
+>>>>>>> master
 `;
 
 const ImageContainer = styled.div`
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   height: 0;
   padding-top: 100%;
   margin: auto;
@@ -45,20 +68,32 @@ const Img = styled.img`
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+=======
+`;
+
+const Img = styled.img`
+  width: 100%;
+>>>>>>> master
 `;
 
 const Title = styled.strong`
   display: block;
+<<<<<<< HEAD
   font-family: ${FONT_FAMILIES.sans};
   color: #92A4BA;
   font-size: 14px;
   margin: 0 0 1em;
   margin-top: 8px;
+=======
+  font-family: ${FONT_FAMILIES.sansItalic};
+  margin: 0 0 1em;
+>>>>>>> master
 `;
 
 const Bio = styled.p`
   font-family: ${FONT_FAMILIES.sans};
   line-height: 1.8;
+<<<<<<< HEAD
   margin-top: 26px;
   font-size: 14px;
 `;
@@ -184,6 +219,26 @@ const ImgPlaceholder = styled(Img)`
   width: 70%;
 `;
 
+=======
+`;
+
+const StyledBox = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+const BioSection = styled.section`
+  margin-bottom: 3em;
+`;
+
+const localeList = { en, zh, ko, ru };
+
+const getLocale = (locale) => {
+  const language = localeList[locale];
+  return language;
+};
+
+>>>>>>> master
 const TeamPage = ({ intl }) => (
   <div>
     <Helmet>
@@ -194,6 +249,7 @@ const TeamPage = ({ intl }) => (
       />
     </Helmet>
     <Header border />
+<<<<<<< HEAD
     <Banner src={bg} />
     <Container>
       <Wrapper mb={[7, 9]}>
@@ -332,6 +388,95 @@ const TeamPage = ({ intl }) => (
 
     <SignUpSection />
 
+=======
+    <Container>
+      <Wrapper>
+        <Heading heavy as="h1" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+          {getLocale(intl.locale).title}
+        </Heading>
+        <BioSection>
+          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
+            {getLocale(intl.locale).founders.title}
+          </Heading>
+          {getLocale(intl.locale).founders.bios.map(({ name, picture, title, bio }, index) => (
+            <Person key={index}>
+              <Flex wrap py={[7, 8]}>
+                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
+                  <ImageContainer>
+                    {picture ?
+                      /* eslint-disable */
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                      /* eslint-disable */
+                    }
+                  </ImageContainer>
+                </StyledBox>
+                <StyledBox width={[1 / 1, 3 / 4]}>
+                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
+                </StyledBox>
+              </Flex>
+            </Person>
+          ))}
+        </BioSection>
+        <BioSection>
+          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
+            {getLocale(intl.locale).investors.title}
+          </Heading>
+          {getLocale(intl.locale).investors.bios.map(({ name, picture, title, bio }, index) => (
+            <Person key={index}>
+              <Flex wrap py={[7, 8]}>
+                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
+                  <ImageContainer>
+                    {picture ?
+                      /* eslint-disable */
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                      /* eslint-disable */
+                    }
+                  </ImageContainer>
+                </StyledBox>
+                <StyledBox width={[1 / 1, 3 / 4]}>
+                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
+                </StyledBox>
+              </Flex>
+            </Person>
+          ))}
+        </BioSection>
+        <BioSection>
+          <Heading as="h2" fontSize={[4, 5]} color="black" mb={[3, 5]}>
+            {getLocale(intl.locale).west.title}
+          </Heading>
+          {getLocale(intl.locale).west.bios.map(({ name, picture, title, bio }, index) => (
+            <Person key={index}>
+              <Flex wrap py={[7, 8]}>
+                <StyledBox width={[1 / 1, 1 / 4]} pr={[4, 6]}>
+                  <ImageContainer>
+                    {picture ?
+                      /* eslint-disable */
+                      <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                      <Img src={require("./content/images/default.png")} alt="Anonymous team member" />
+                      /* eslint-disable */
+                    }
+                  </ImageContainer>
+                </StyledBox>
+                <StyledBox width={[1 / 1, 3 / 4]}>
+                  <Heading heavy as="h2" fontSize={[3, 4]}>{name}</Heading>
+                  {title && <Title>{title}</Title>}
+                  {bio && <Bio>{bio}</Bio>}
+                </StyledBox>
+              </Flex>
+            </Person>
+          ))}
+        </BioSection>
+
+
+      </Wrapper>
+    </Container>
+>>>>>>> master
     <Footer />
   </div>
 );

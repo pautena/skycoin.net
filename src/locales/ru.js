@@ -40,6 +40,7 @@ export default {
     team: 'Команда',
     subscribe: 'Рассылка',
     market: 'Markets',
+    jobs: 'Jobs',
     bitcoinTalk: 'Bitcointalk ANN',
     instagram: 'Instagram',
     facebook: 'Facebook',
