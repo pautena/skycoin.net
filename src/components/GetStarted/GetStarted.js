@@ -37,7 +37,7 @@ export default () => (
         <Buttons wrap justify="center">
           <Buy
             big
-            to="downloads"
+            to="buy"
             color="base"
             fontSize={[1, 3]}
             bg="white"
