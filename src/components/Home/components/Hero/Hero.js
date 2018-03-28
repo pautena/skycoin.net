@@ -7,7 +7,6 @@ import media from 'utils/media';
 import Container from 'components/Container';
 import CanvasBg from './components/CanvasBg';
 import Introduction from './components/Introduction';
-import Announcement from './components/Announcement';
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};
