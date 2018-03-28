@@ -5,7 +5,7 @@ import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
-import Button from 'components/Button';
+// import Button from 'components/Button';
 import Text from 'components/Text';
 import media from 'utils/media';
 
@@ -165,11 +165,11 @@ const Miner = () => (
         </MinersWrapper>
       </Box>
 
-      <Flex align="flex-end" column wrap>
-        <Button to="/" color="white" bg="base" big width={'200px'} pill >
-          <FormattedMessage id="home.miner.link" />
-        </Button>
-      </Flex>
+      {/*<Flex align="flex-end" column wrap>*/}
+        {/*<Button to="/" color="white" bg="base" big width={'200px'} pill >*/}
+          {/*<FormattedMessage id="home.miner.link" />*/}
+        {/*</Button>*/}
+      {/*</Flex>*/}
     </Container>
   </Box>
 );
