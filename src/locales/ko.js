@@ -1,14 +1,20 @@
 export default {
   header: {
     navigation: {
+      home: 'Home',
       distribution: '배포',
       distributionEvent: '배포 이벤트',
       whitepapers: '백서',
       downloads: '다운로드',
+      wallet: 'Wallet',
       explorer: '익스플로러',
+      ecosystem: 'Ecosystem',
       blog: '블로그',
       buy: '스카이코인 구매',
       team: 'Team',
+      telegram: 'Telegram',
+      discord: 'Discord',
+      getWallet: 'Buy Skycoin',
     },
   },
   footer: {
@@ -51,6 +57,8 @@ export default {
     distributionEvent: '배포 이벤트',
   },
   notFound: {
+    404: '404',
+    message: 'Whoops! Looks like you\'re lost! This page does not exist anymore or has been moved to a new URL',
     title: '페이지를 찾을 수 없습니다.',
     heading: '페이지를 찾을 수 없습니다.',
     home: '스카이코인 홈페이지',
@@ -67,7 +75,8 @@ export default {
     wallet: '지갑 얻기',
   },
   markets: {
-    title: 'Markets',
+    title: 'Buy Skycoin',
+    loading: 'Loading, please wait...',
     description: 'List of Skycoin markets',
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',
@@ -76,8 +85,8 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Skycoin is the Most Advanced Blockchain Application Platform in the World',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the new fast, free, secure, scalable, eco-friendly, private and programmable cryptocurrency built to power Skywire, the new Internet.',
+      heading: 'New Internet, New World',
+      paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',
@@ -140,16 +149,90 @@ export default {
     },
     network: {
       label: '더 보기',
-      heading: 'Obelisk: 스카이코인 합의 알고리즘',
-      emphasis: 'Bitcoin is completely controlled by three mining pools.',
-      body: 'Bitcoin is no longer decentralized. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s vision of a truly decentralized cryptocurrency.',
-      link: '네트워크 합의에 대해 알아보기',
+      heading: 'Obelisk',
+      subheading: '스카이코인 합의 알고리즘',
+      body: 'Bitcoin is no longer decentralized. It is completely controlled by three mining pools. Skycoin’s consensus algorithm is designed from the ground up to achieve Satoshi’s original vision of truly peer-to-peer cash.',
     },
     miner: {
-      label: 'Explore the First Generation of Skyminers',
-      heading: '스카이와이어 채굴기 : 차세대 인터넷을 위한 하드웨어',
-      subscribe: 'Skycoin’s meticulously designed miners are the backbone of the new internet. Energy-efficient Skyminers transmit information to our state-of-the-art mesh network to earn Skycoin without the environmental cost of traditional mining.',
-      mailingList: 'Sign up to be notified about our next release of miners',
+      heading: 'Explore Skyminer | ko',
+      subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. | ko',
+      link: 'Become a node | ko',
+    },
+    press: {
+      heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ko',
+      body: '“Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.”',
+    },
+    ecosystem: {
+      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | ko',
+      subheading: 'Skycoin Ecosystem | ko',
+      fiber: {
+        title: 'Fiber | ko',
+        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together.  | ko',
+      },
+      obelisk: {
+        title: 'Obelisk | ko',
+        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date. | ko',
+      },
+      skycoin: {
+        title: 'Skycoin | ko',
+        text: 'The most powerful and complete cryptocurrency ever created. | ko',
+      },
+      coinHours: {
+        title: 'Coin Hours | ko',
+        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact. | ko',
+      },
+      coinJoin: {
+        title: 'Coin Join | ko',
+        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology. | ko',
+      },
+      skyledger: {
+        title: 'Skyledger | ko',
+        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology. | ko',
+      },
+      skywire: {
+        title: 'Skywire | ko',
+        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth. | ko',
+      },
+      skyminer: {
+        title: 'Skyminer | ko',
+        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep. | ko',
+      },
+      nodes: {
+        title: 'Nodes | ko',
+        text: 'Our community members, and anyone who processes bandwith on Skywire. | ko',
+      },
+      cx: {
+        title: 'CX | ko',
+        text: 'The most powerful programming language on the market. | ko',
+      },
+      cxo: {
+        title: 'CXO | ko',
+        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet. | ko',
+      },
+      kittyCash: {
+        title: 'Kitty Cash | ko',
+        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | ko',
+      },
+      skyVpn: {
+        title: 'SDN | ko',
+        text: 'Decentralized Virtual Private Network running on Skywire. | ko',
+      },
+      skyMessenger: {
+        title: 'SkyMessenger | ko',
+        text: 'Decentralized Encrypted Messenger running on Skywire. | ko',
+      },
+      bbs: {
+        title: 'BBS | ko',
+        text: 'Decentralized Social Network running on Skywire. | ko',
+      },
+    },
+    news: {
+      heading: 'News',
+    },
+    signup: {
+      heading: 'Join Our Newsletter, Earn Skycoin.',
+      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | ko',
+      button: 'Sign Up | ko',
     },
     roadmap: {
       heading: '로드맵',
@@ -187,15 +270,17 @@ export default {
       macos: 'MacOS',
       linux: '리눅스',
       windows: '윈도우',
-      withElectron: 'Installer (recommended)',
-      withoutElectron: 'Portable (advanced)',
+      withElectron: 'Installer',
+      withElectronComment: ' (recommended)',
+      withoutElectron: 'Portable',
+      withoutElectronComment: ' (advanced)',
       download: '다운로드',
       signature: 'Signature',
       torrent: '토렌트',
     },
     bbs: {
       heading: 'Download Skycoin BBS',
-      lead: '스카이코인 BBS는 스카이코인 생태계와 함께 차세대 분산 소셜 네트워크를 구축하였습니다.',
+      lead: 'Skycoin BBS is a next generation decentralized social network built using Fiber, Skycoin\'s blockhain technology.',
       githublink: 'Find the latest binaries on Github.',
       thinclient: 'Access a BBS thin client.',
     },
@@ -237,5 +322,59 @@ export default {
   },
   roadmapPage: {
     heading: '개발 로드맵',
+  },
+  ecosystem: {
+    title: 'Ecosystem',
+    description: 'Ecosystem',
+    heading: 'Ecosystem',
+    subheading: 'Lorem Ipsum is simply dummy text of the printing',
+    skycoin: {
+      heading: 'Skycoin',
+      body: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.',
+    },
+    skywire: {
+      heading: 'Skywire',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    },
+    skyledger: {
+      heading: 'Skyledger',
+      body: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.',
+    },
+    experiments: {
+      heading: 'Experiments',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    },
+    iconLabel: {
+      fiber: 'Fiber',
+      coinHours: 'Coin Hours',
+      cx: 'CX',
+      obelisk: 'Obelisk',
+      coinJoin: 'Coin Join',
+      skyminer: 'Skyminer',
+      node: 'Node',
+      cxo: 'CXO',
+      bbs: 'BBS',
+      skyMessenger: 'SkyMessenger',
+      skyVPN: 'SDN',
+      kittyCash: 'Kitty Cash',
+    },
+    about: {
+      heading: 'What is Skycoin?',
+      subheading: 'Lorem Ipsum is simply dummy text of the printing',
+      body: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
+    },
+    roadmap: {
+      dev: {
+        heading: 'Skycoin Development Roadmap',
+      },
+      marketing: {
+        heading: 'Skycoin Marketing Roadmap',
+      },
+    },
+    whitepaper: {
+      heading: 'Whitepaper',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      download: 'Download',
+    },
   },
 };

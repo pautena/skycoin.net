@@ -3,75 +3,105 @@ import PropTypes from 'prop-types';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
+import styled from 'styled-components';
+import media from 'utils/media';
 
+import { TableWrapper } from 'components/Table';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import Table, { TableWrapper } from 'components/Table';
 import Link from 'components/Link';
-import { COLORS, SPACE, BREAKPOINTS } from 'config';
+import { COLORS, SPACE } from 'config';
 
-const StyledTable = Table.extend`
+const Table = styled.table`
+  width: 100%;
+  // min-width: ${rem(480)};
+
+  tr {
+    padding-bottom: ${rem(10)};
+
+    &:nth-child(odd){
+      background: #F4F9FF;
+    }
+  }
+
+  td, th {
+    padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
+
+    ${media.sm.css`
+      height: ${rem(20)};
+      padding: ${rem(SPACE[4])} ${rem(SPACE[8])};
+    `}
+  }
+  
+  tr {
+    display: block;    
+    ${media.sm.css`
+      display: table-row;
+    `}
+  }
+  
   td {
-    &:first-of-type {
-      width: 77.33%;
-    }
-  }
-  @media (max-width: ${BREAKPOINTS.sm}rem) {
-    min-width: 0;
-    border: 0;
-
-    tr {
+    display: inline-block;
+    
+    &:first-child {
       display: block;
-      padding: ${rem(SPACE[4])} 0;
-      border-top: 1px solid ${COLORS.gray[1]};
     }
-
-    td {
-      border: 0;
-      display: block;
-      height: auto;
-
-      &:first-of-type {
-        width: auto;
-      }
-    }
+    
+    ${media.sm.css`
+      display: table-cell;
+    `}
+  } 
+  
+  a {
+    color: ${COLORS.base};
+    text-decoration: none;
   }
+`;
+
+const FixedTd = styled.td`
+  ${media.sm.css`
+    width: ${rem(70)};
+  `}
 `;
 
 const DownladsTable = ({ title, list, id }) => (
   <div>
     <Container>
       <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-        <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]} id={id}>
+        <Heading heavy as="h2" fontSize={[6, 7]} color="black" mb={[rem(40), rem(40)]} id={id}>
           <FormattedMessage id={title} />
         </Heading>
       </Box>
 
-      <TableWrapper>
-        <StyledTable>
+      <TableWrapper mb={[7, 10, 13]}>
+        <Table>
           <tbody>
             {list.map(({ name, download, filetype, filesize }, i) => (
               <tr key={i}>
                 <td>{name}</td>
 
-                <td>
-                  {download && <Link target="_blank" href={download}>
-                    <FormattedMessage id="downloads.whitepapers.download" />
-                    &nbsp;
-                    ({filetype})
-                  </Link>}
-                </td>
-
-                <td>
+                <FixedTd>
                   {filesize && <Text as="span" color="gray.7" heavy>
                     {filesize}
                   </Text>}
-                </td>
+                </FixedTd>
+
+                <FixedTd>
+                  <Text as="span" color="gray.7" heavy>
+                    {filetype}
+                  </Text>
+                </FixedTd>
+
+                <FixedTd>
+                  {download && <Link target="_blank" href={download}>
+                    <FormattedMessage id="downloads.whitepapers.download" />
+                  </Link>}
+                </FixedTd>
               </tr>
             ))}
           </tbody>
-        </StyledTable>
+        </Table>
       </TableWrapper>
     </Container>
   </div>

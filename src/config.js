@@ -4,8 +4,19 @@ import moment from 'moment';
 export const DISTRIBUTION_START = moment('2017-08-08T12:00:00.000Z');
 export const DISTRIBUTION_END = moment('2017-08-31T12:00:00.000Z');
 export const COLORS = palx('#0072FF');
-export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
-export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 28, 36, 40];
+export const COLOR = {
+  base: '#0072FF',
+  dark: '#101F34',
+  white: '#fff',
+  lightGrey: '#F2F5FA',
+  lightBlue: '#F4F9FF',
+  textLight: '#B6C5D6',
+  textGrey: '#92A4BA',
+  textDark: '#07172E',
+  darkGrey: '#333',
+};
+export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80];
+export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 30, 36, 40];
 
 export const BREAKPOINTS = {
   sm: 40,
@@ -30,6 +41,9 @@ export const BORDER_RADIUS = {
 export const BOX_SHADOWS = {
   base: '0 1px 2px rgba(0, 0, 0, 0.25)',
   hover: '0 1px 4px rgba(0, 0, 0, 0.25)',
+  box: '0 2px 20px #DFE9F4',
+  image: '0 0 18px 0 rgba(223, 233, 244, .52)',
+  menu: '0 2px 10px rgba(0, 0, 0, 0.25)',
 };
 
 export const FLAGS = {

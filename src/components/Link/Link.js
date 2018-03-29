@@ -15,7 +15,7 @@ const filterProps = props =>
   omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',
     'white', 'bg', 'big', 'color', 'fontSize', 'm', 'ml', 'mr', 'mt', 'mb']);
 
-const Link = ({ to, href, match, children, ...props }) => {
+const Link = ({ to, href, location, match, children, ...props }) => {
   if (to) {
     return (
       <RouterLink to={getURL(match, to)} {...filterProps(props)}>
@@ -34,6 +34,9 @@ const Link = ({ to, href, match, children, ...props }) => {
 Link.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
       locale: PropTypes.string,
