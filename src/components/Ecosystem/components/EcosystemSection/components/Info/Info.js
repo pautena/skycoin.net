@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { Box } from 'grid-styled';
 
 import SubHeading from 'components/SubHeading';
@@ -14,7 +14,7 @@ const Info = ({ heading, body }) => (
       <FormattedMessage id={heading} />
     </SubHeading>
     <Text fontSize={2} color={COLOR.textDark}>
-      <FormattedMessage id={body} />
+      <FormattedHTMLMessage id={body} />
     </Text>
   </Box>
 );

@@ -85,8 +85,8 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins.',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary blockchain technology, Fiber, makes Skycoin fast, free, scalable, secure, private, fully programmable, eco-friendly, and, most importantly, ISP independent. Skycoin is the first platform capable of fulfilling Satoshi’s original vision.',
+      heading: 'New Internet, New World',
+      paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -155,12 +155,12 @@ export default {
     },
     miner: {
       heading: 'Explore Skyminer',
-      subheading: 'Introducing the backbone of the new decentralized Internet. Individuals who operate Skyminers become Nodes on Skywire, our wireless mesh network capable of removing ISP dependence. No other platform currently offers this, making us the most powerful blockchain application platform in the world. Every other ledger’s distribution can be stopped by governments and corporations. Not Skycoin. Get your miner and become a node on the new Internet. You’ll earn money while you sleep by processing bandwidth for your friends.',
+      subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security.',
       link: 'Become a node',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018',
-      body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.”',
+      body: '“Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.”',
     },
     ecosystem: {
       heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World',
@@ -230,7 +230,7 @@ export default {
       heading: 'News',
     },
     signup: {
-      heading: 'Free Skycoin. No Joke. Check It Out.',
+      heading: 'Join Our Newsletter, Earn Skycoin.',
       body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win.',
       button: 'Sign Up',
     },
@@ -330,11 +330,11 @@ export default {
     subheading: 'Architecture of the new internet',
     skycoin: {
       heading: 'Skycoin',
-      body: 'Skycoin is our cryptocurrency. It is used to incentive the people to process bandwidth on our the new Internet. Fast, free, secure, scalable, private, fully programmable, eco-friendly, and ISP independent, it is the most complete cryptocurrency to date, offering nearly every other value added benefit and feature currently on the market. Capable of everything from the IoT to Smart Contracts, Skycoin is the complete package and the only coin capable of fulfilling Satoshi’s original vision.',
+      body: 'The aim of the developers of Skycoin was to correct the major security flaws and “centralizing tendencies” associated with blockchain networks in which consensus is based on PoW or PoS algorithms and coin creation is linked to a mining process. Skycoin is a cryptocurrency that better fulfills Satoshi’s original vision of a fully decentralized digital currency system.</br></br>Skycoin is the currency of Skywire, giving it a practical application beyond just a digital currency. When the user forwards traffic or provide network resources, he or she receives Skycoin. Likewise, when the user consumes network resources or media, he or she spends Skycoin. Users can maximize their coins in two ways: having high bandwidth in high-traffic areas, or having highly sought-after content.',
     },
     skywire: {
       heading: 'Skywire',
-      body: 'Skywire is the new Internet, a decentralized wireless mesh network that runs on top of our hardware platform, the Skyminer, and utilizes Skycoin, our cryptocurrency, to incentivize individuals like to you become nodes on the network and earn money while you sleep by processing bandwidth for their friends. Just plug your ethernet cable into the Skyminer and you become an exit node for the current Internet. Want more? Phase two involves the opportunity for you to help build the new Internet. Soon we will need a new Netflix.',
+      body: 'How can we create a truly free and open internet? To answer this question, we developed Skywire, the new alternative internet. Skywire is a groundbreaking, novel technology that takes control from large internet service providers (ISPs) and gives it back to the users. Its peer-to-peer model promotes net neutrality and sharing of content without blocking, slowdowns, or censorship. Skywire’s open-access network preserves privacy and encourages free speech. Our mission in creating Skywire is to shape the internet’s future for the better.',
     },
     skyledger: {
       heading: 'Fiber',
@@ -360,7 +360,7 @@ export default {
     },
     about: {
       heading: 'What is Skycoin?',
-      body: 'Bitcoin’s historic 100,000x run began 8 years ago. Six years ago, lead developers of Bitcoin and Ethereum quietly broke off and teamed up to begin work on a new project, Skycoin. Their goal was to perfect the blockchain technology that Satoshi introduced to the world. Why? Satoshi’s original vision of peer-to-peer cash is the reason many believe Bitcoin and Ether moved as dramatically as it did, changing our world and many lives along the way.</br></br> The developers began at the core, producing Obelisk, a new consensus algorithm based on new mathematics that makes Proof-of-Work and Proof-of-Stake completely obsolete, guaranteeing decentralization at the network level in a way no other project has before. Their new consensus algorithm, combined with their elimination of the need for mining, allowed them to solve many of the problems Bitcoin faced, and add many of the features Bitcoin was missing.</br></br> Fiber, their blockchain technology, can be used to make fast, free, secure, scalable, private, fully programmable, and eco-friendly cryptocurrencies from scratch. However, their foresight showed them this wasn’t enough. Blockchain technology faced a deeper problem and a bigger threat: ISP dependence. Even if they designed the ledger perfectly built for distribution, if ISPs and governments have the ability to stop the people from distributing that ledger, Satoshi’s vision hadn’t been fulfilled.</br></br>So they began looking toward building a new Internet, a wireless mesh network named Skywire. Skycoin now offers the most advanced blockchain application platform in the world, and the only platform with the possibility of ISP independence.',
+      body: 'The original purpose of digital currency was to reinvent the economy so that users could be independently empowered to trade in a peer-to-peer fashion, without interference from centralized powers. At Skycoin, we believe strongly in this mission. That’s why the Skycoin blockchain is designed to benefit all users, not just a select few. With Obelisk, we’re solving the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network.</br></br>Satoshi envisioned Bitcoin as a decentralized digital currency. Blockchain networks were intended to democratize finance, eliminating corporate control and spreading power among users. However, Bitcoin and related currencies have become centralized due to their reliance on Proof of Work (PoW) and Proof of Stake (PoS) algorithms, as well as their use of mining to create coins. This centralization defeats the original purpose of digital currencies.</br></br>We created the Skycoin blockchain to correct these flaws. The Skycoin blockchain uses a novel consensus algorithm to replace PoW and PoS. It also fixes security problems associated with other blockchain networks and decouples coin creation from the mining process. The result is a fully decentralized cryptocurrency that fulfills Satoshi’s original vision.</br></br>The Skycoin blockchain does not use mining, so user power cannot be concentrated in a few large mining pools as it is with Bitcoin today. Coin creation doesn’t give certain users disproportionate control over the network. The supply of Skycoin is fixed. Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
     },
     roadmap: {
       dev: {
@@ -372,7 +372,7 @@ export default {
     },
     whitepaper: {
       heading: 'Whitepaper',
-      body: 'Obelisk, Skywire, Coin Join, etc. - it’s all here and fleshed out for you. Satoshi began the tradition of white papers in the crypto space and we are happy to continue it. We want it to be easy for you to do your due diligence and get answers to your questions. There are more technical white papers available, and this white paper is continuously being updated by our team with new data and developments. If you have any questions about the content in the white paper, please contact us.',
+      body: 'Skycoin does not have signature mutability, does not have transaction mutability, does not have duplicate coinbase outputs and dozens of other changes and improvements from Bitcoin. Skycoin makes dozens of changes from Bitcoin.</br></br>Skycoin produces both academic and technical whitepapers. The academic whitepaper lays out the theoretical and mathematical foundation of Skycoin’s distributed consensus system and its inspirations. The academic paper is focused on the mathematical formalisms, assumptions which allow us to prove security guarantees. The technical papers outlines implementation details, milestones and software architecture. The technical paper is focused on security as a process and defense in depth.',
       download: 'Download',
     },
   },

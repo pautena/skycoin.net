@@ -85,8 +85,8 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     hero: {
-      heading: 'Bitcoin is broken; we’ve fixed it — and we\'re building a new Internet to distribute the coins. | ko',
-      paragraph: 'Created by the original developers of Bitcoin and Ethereum, Skycoin is the most advanced blockchain application platform in the world. Our proprietary Fiber technology makes Skycoin fast, free, scalable, secure, private, programmable, eco-friendly, and, most importantly, ISP independent; and so is everyone else who runs on top of it. Get involved today. | ko',
+      heading: 'New Internet, New World',
+      paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
       buy: '스카이코인 구매',
       community: '커뮤니티',
       whitepapers: '백서',
@@ -155,12 +155,12 @@ export default {
     },
     miner: {
       heading: 'Explore Skyminer | ko',
-      subheading: 'Hardware for the New Internet. Get paid to process bandwidth while you sleep. | ko',
+      subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. | ko',
       link: 'Become a node | ko',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ko',
-      body: '“Unless you’ve been living under a rock, you’re already well aware of the success Bitcoin and other cryptocurrencies have had this year. Billions of dollars are traded on a daily basis, with some coins and tokens seeing growth above 5,000% in a matter of weeks or even days, and hundreds of rags to riches stories appearing as a result.” | ko',
+      body: '“Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.”',
     },
     ecosystem: {
       heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | ko',
@@ -230,7 +230,7 @@ export default {
       heading: 'News',
     },
     signup: {
-      heading: 'Free Skycoin. No Joke. Check It Out. | ko',
+      heading: 'Join Our Newsletter, Earn Skycoin.',
       body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | ko',
       button: 'Sign Up | ko',
     },
