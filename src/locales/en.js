@@ -337,12 +337,12 @@ export default {
       body: 'How can we create a truly free and open internet? To answer this question, we developed Skywire, the new alternative internet. Skywire is a groundbreaking, novel technology that takes control from large internet service providers (ISPs) and gives it back to the users. Its peer-to-peer model promotes net neutrality and sharing of content without blocking, slowdowns, or censorship. Skywire’s open-access network preserves privacy and encourages free speech. Our mission in creating Skywire is to shape the internet’s future for the better.',
     },
     skyledger: {
-      heading: 'Fiber',
-      body: 'Bitcoin had blockchain, Ethereum had ERC-20, Iota had the Tangle, Hedera had Hash Graph; Skycoin has Fiber. Fiber is other most advanced blockchain technology in the world, making Skycoin the most advanced blockchain application platform in the world. Anyone can utilize Fiber technology to take full advantage of the change distributed ledgers bring to the world. What Apple did to the cell phone and the centralized Internet, we are doing to the blockchain and the decentralized web.',
+      heading: 'Obelisk',
+      body: 'To tackle this centralization problem, Skycoin moves beyond PoW/PoS. It uses a distributed consensus algorithm, called Obelisk, which distributes influence over the network according to a “web of trust”. In essence, every node has a list of other nodes that it subscribes to, and the density of a node’s network of subscribers determines its influence on the network. Each node is assigned a personal blockchain which acts as a “public broadcasting channel” on which all of a node’s actions are visible and publicly recorded. As all consensus decisions and communication occur through the personal blockchains of each node, the community can very easily audit nodes for cheating or collusion. How decisions on the network are made and which nodes influence those decisions is completely transparent.',
     },
     experiments: {
-      heading: 'Experiments',
-      body: 'Ethereum had Cryptokitties, we have Kitty Cash. Cryptokitties was an attempt to test Ethereum’s scalability. How slow and expensive does the network get when bogged down with hundreds or thousands of large transactions at a time? Cryptokitties showed that Ethereum wasn’t as scalable as we would have hoped. KittyCash is showing that the Skycoin’s Fiber is entirely scalable. It remains fast, free, and secure, even under heavy loads. Check out all of the experiments we have in development that show the capabilities of Skycoin’s technology.',
+      heading: 'Applications',
+      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform.</br></br>Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS.</br></br>Scalable, collectible, breedable, adorable, Kitty Cash is a fun and exciting game that shows the capabilities of our network’s design.',
     },
     iconLabel: {
       fiber: 'Fiber',

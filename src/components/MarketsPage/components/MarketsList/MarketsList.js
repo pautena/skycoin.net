@@ -165,14 +165,6 @@ const MarketsList = () => (
         <Item href="https://openledger.io/market/OPEN.SKY_OBITS" target="_blank">OPEN.SKY/OBITS</Item>
       </Row>
     </List>
-    <Heading heavy as="h2" fontSize={[5, 6]} color="black" my={[4, 6]}>
-      Skycoin OTC
-    </Heading>
-    <List>
-      <Row>
-        <Item href="https://otc.skycoin.net" target="_blank">Buy Skycoin directly with BTC</Item>
-      </Row>
-    </List>
   </Wrap>
 );
 
