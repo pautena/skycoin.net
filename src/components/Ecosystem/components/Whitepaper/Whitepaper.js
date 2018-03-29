@@ -38,7 +38,7 @@ const StyledBox = styled(Box)`
 const Btn = Button.withComponent('a');
 
 const Whitepaper = () => (
-  <Wrapper py={[6, 10, 13]}>
+  <Wrapper pb={[6, 10, 13]}>
     <Container>
       <Flex>
         <StyledBox width={[1, 1, 3 / 5]} py={[0, 5, 13]}>
