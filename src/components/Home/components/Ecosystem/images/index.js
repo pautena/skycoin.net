@@ -1,0 +1,15 @@
+export { default as fiber } from './icFiber.svg';
+export { default as obelisk } from './icObelisk.svg';
+export { default as skycoin } from './icSkycoin.svg';
+export { default as coinHours } from './icGasPump.svg';
+export { default as coinJoin } from './icCoinJoin.svg';
+export { default as skyledger } from './icSkyladger.svg';
+export { default as skywire } from './icSkywir.svg';
+export { default as skyminer } from './icSkyminer.svg';
+export { default as nodes } from './icNode.svg';
+export { default as cx } from './icCx.svg';
+export { default as cxo } from './icCxo.svg';
+export { default as kittyCash } from './icKitty.svg';
+export { default as skyVpn } from './icSkyvpn.svg';
+export { default as skyMessenger } from './icSkyMessenger.svg';
+export { default as bbs } from './icBbs.svg';

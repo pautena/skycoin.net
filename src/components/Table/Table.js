@@ -3,7 +3,7 @@ import { rem } from 'polished';
 import media from 'utils/media';
 
 import Text from 'components/Text';
-import { COLORS, SPACE } from 'config';
+import { COLORS } from 'config';
 
 export const TableWrapper = styled(Text).attrs({
   as: 'div',
@@ -12,17 +12,12 @@ export const TableWrapper = styled(Text).attrs({
   heavy: true,
 })`
   overflow-x: auto;
-  margin-right: -${rem(SPACE[4])};
-  padding-right: ${rem(SPACE[4])};
-  margin-left: -${rem(SPACE[4])};
-  padding-left: ${rem(SPACE[4])};
-  margin-bottom: ${rem(SPACE[4])};
 `;
 
 export default styled.table`
   width: 100%;
   border-bottom: 1px solid #787A7D;
-  min-width: ${rem(800)};
+  min-width: ${rem(480)};
 
   td, th {
     border-top: 1px solid #787A7D;
