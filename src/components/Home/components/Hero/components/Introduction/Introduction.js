@@ -12,11 +12,11 @@ import media from 'utils/media';
 import { FONT_FAMILIES, COLOR, SPACE, FONT_SIZES } from 'config';
 
 const Paragraph = styled.p`
-  font-size: ${rem(FONT_SIZES[3])};
+  font-size: ${rem(FONT_SIZES[4])};
   color: ${COLOR.white};
   font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2rem;
   text-transform: none;
 `;
 
