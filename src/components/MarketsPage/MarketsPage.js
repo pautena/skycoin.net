@@ -46,7 +46,7 @@ class MarketsPage extends PureComponent {
   componentDidMount() {
     const cryptoUrl = 'https://external.cryptowolf.eu/main-backend/';
     /* eslint-disable */
-    external = 'sky';
+    window.external = 'sky';
     $('#cryptowolf-container').load(`${cryptoUrl}ext.html`);
     $.getScript(`${cryptoUrl}js/cryptowolf-ext.js`);
     /* eslint-enable */
