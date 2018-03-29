@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
@@ -46,7 +46,7 @@ const Whitepaper = () => (
             <FormattedMessage id="ecosystem.whitepaper.heading" />
           </Heading>
           <Text fontSize={2} my={[4, 6]} color="black">
-            <FormattedMessage id="ecosystem.whitepaper.body" />
+            <FormattedHTMLMessage id="ecosystem.whitepaper.body" />
           </Text>
           <Btn
             href={`${process.env.PUBLIC_URL}/skycoin_whitepaper.pdf`}
