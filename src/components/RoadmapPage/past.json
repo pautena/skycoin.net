@@ -3,12 +3,6 @@
         {
             "year": 2017,
             "quarter": 4,
-            "weight": 3,
-            "body": "Open Skycoin OTC market"
-        },
-        {
-            "year": 2017,
-            "quarter": 4,
             "weight": 2,
             "body": "Extended Skycoin divisibility to three decimal places"
         },
