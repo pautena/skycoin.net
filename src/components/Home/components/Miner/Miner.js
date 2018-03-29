@@ -39,8 +39,8 @@ const StyledBox = styled(Box)`
 
 const ImgWrap = styled.div`
   width: 100%;
-  background-size: contain;
-  background: url(${props => props.img}) center center no-repeat;
+  background: url(${props => props.img}) 0 0 no-repeat;
+  background-size: cover;
 `;
 
 const Miners = styled(Flex)`
