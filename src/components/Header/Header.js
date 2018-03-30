@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Header = ({ white, blueWhite, border, social, showBuy }) => (
+const Header = ({ white, blueWhite, border, social, showBuy, showNav }) => (
   <Container>
     <Wrapper border={border}>
       <Flex align="center" justify="space-between" wrap>
@@ -31,6 +31,7 @@ const Header = ({ white, blueWhite, border, social, showBuy }) => (
           social={social}
           blueWhite={blueWhite}
           showBuy={showBuy}
+          showNav={showNav}
           isMobile
         />
       </Flex>
@@ -44,6 +45,7 @@ Header.propTypes = {
   social: PropTypes.bool,
   blueWhite: PropTypes.bool,
   showBuy: PropTypes.bool,
+  showNav: PropTypes.bool,
 };
 
 Header.defaultProps = {
@@ -52,6 +54,7 @@ Header.defaultProps = {
   social: false,
   blueWhite: false,
   showBuy: true,
+  showNav: true,
 };
 
 export default Header;
