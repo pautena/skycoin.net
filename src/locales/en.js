@@ -342,7 +342,7 @@ export default {
     },
     experiments: {
       heading: 'Applications',
-      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform. Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS. Scalable, collectible, breedable, adorable, KittyCash is a fun and exciting game that shows the capabilities of our network’s design.',
+      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform.</br></br>Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS.</br></br>Scalable, collectible, breedable, adorable, KittyCash is a fun and exciting game that shows the capabilities of our network’s design.',
     },
     iconLabel: {
       fiber: 'Fiber',
