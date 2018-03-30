@@ -77,7 +77,7 @@ export default {
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
-    description: 'List of Skycoin markets',
+    description: 'Buy Skycoin',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
   },
