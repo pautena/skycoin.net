@@ -25,7 +25,7 @@ const Ecosystem = ({ intl }) => (
     <Header border />
     <EcosystemSection />
     <About />
-     <Roadmap />
+    <Roadmap />
     <Whitepaper />
     <SignUpSection />
     <Footer />
