@@ -330,7 +330,7 @@ const TeamPage = ({ intl }) => (
       </Container>
     </Wrapper>
 
-    <Wrapper bg="#F4F9FF" pb={8} pt={[8, 11, 13]}>
+    {/* <Wrapper bg="#F4F9FF" pb={8} pt={[8, 11, 13]}>
       <Container>
         <section>
           <FoundersHeading
@@ -348,10 +348,8 @@ const TeamPage = ({ intl }) => (
                   <Box>
                     <ImageContainer>
                       {(picture && picture !== '') ?
-                        /* eslint-disable */
                         <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
                         <ImgPlaceholder src={userPlaceholder} alt="Anonymous team member" />
-                        /* eslint-disable */
                       }
                     </ImageContainer>
                   </Box>
@@ -366,7 +364,7 @@ const TeamPage = ({ intl }) => (
           </Flex>
         </section>
       </Container>
-    </Wrapper>
+    </Wrapper> */}
 
     <SignUpSection />
 
