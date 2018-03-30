@@ -62,8 +62,8 @@ export const en = {
       },
     ],
   },
-  investors: {
-    title: 'Key Investors and Advisors',
+  advisors: {
+    title: 'Key Advisors',
     bios: [
       {
         name: 'Michael Terpin',
@@ -90,22 +90,10 @@ export const en = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Patrick Dai',
-        title: 'Founder and CEO of Qtum',
-        picture: 'patrick_dai.jpg',
-        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
-      },
-      {
         name: 'Josh Ogle',
         title: 'CEO of Samples.com and The Original Agency | Angel Investor',
         picture: '',
         bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
-        name: 'Alphabit',
-        title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
-        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
@@ -118,6 +106,23 @@ export const en = {
         title: 'Marketing and Strategy',
         picture: 'shark_cia.png',
         bio: 'SharkCIA is a cryptocurrency intelligence agency specializing in the research, investing, and marketing of blockchain-based companies. With members from around the world, SharkCIA’s experienced team provides growth-hacking, public relations, grassroots community outreach, strategic advisement roles and has helped to propel relatively obscure projects towards wider recognition and increased market capitalization.',
+      },
+    ],
+  },
+  investors: {
+    title: 'Key Investors',
+    bios: [
+      {
+        name: 'Patrick Dai',
+        title: 'Founder and CEO of Qtum',
+        picture: 'patrick_dai.jpg',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+      },
+      {
+        name: 'Alphabit',
+        title: 'Digital Currency Fund',
+        picture: 'alphabit.png',
+        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'Hive Chain Labs',
@@ -193,8 +198,8 @@ export const zh = {
       },
     ],
   },
-  investors: {
-    title: 'Key Investors and Advisors',
+  advisors: {
+    title: 'Key Advisors',
     bios: [
       {
         name: 'Michael Terpin',
@@ -221,22 +226,10 @@ export const zh = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Patrick Dai',
-        title: 'Founder and CEO of Qtum',
-        picture: 'patrick_dai.jpg',
-        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
-      },
-      {
         name: 'Josh Ogle',
         title: 'CEO of Samples.com and The Original Agency | Angel Investor',
         picture: '',
         bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
-        name: 'Alphabit',
-        title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
-        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
@@ -249,6 +242,23 @@ export const zh = {
         title: 'Marketing and Strategy',
         picture: 'shark_cia.png',
         bio: 'SharkCIA is a cryptocurrency intelligence agency specializing in the research, investing, and marketing of blockchain-based companies. With members from around the world, SharkCIA’s experienced team provides growth-hacking, public relations, grassroots community outreach, strategic advisement roles and has helped to propel relatively obscure projects towards wider recognition and increased market capitalization.',
+      },
+    ],
+  },
+  investors: {
+    title: 'Key Investors',
+    bios: [
+      {
+        name: 'Patrick Dai',
+        title: 'Founder and CEO of Qtum',
+        picture: 'patrick_dai.jpg',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+      },
+      {
+        name: 'Alphabit',
+        title: 'Digital Currency Fund',
+        picture: 'alphabit.png',
+        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'Hive Chain Labs',
@@ -324,8 +334,8 @@ export const ru = {
       },
     ],
   },
-  investors: {
-    title: 'Key Investors and Advisors',
+  advisors: {
+    title: 'Key Advisors',
     bios: [
       {
         name: 'Michael Terpin',
@@ -352,22 +362,10 @@ export const ru = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Patrick Dai',
-        title: 'Founder and CEO of Qtum',
-        picture: 'patrick_dai.jpg',
-        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
-      },
-      {
         name: 'Josh Ogle',
         title: 'CEO of Samples.com and The Original Agency | Angel Investor',
         picture: '',
         bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
-        name: 'Alphabit',
-        title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
-        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
@@ -380,6 +378,23 @@ export const ru = {
         title: 'Marketing and Strategy',
         picture: 'shark_cia.png',
         bio: 'SharkCIA is a cryptocurrency intelligence agency specializing in the research, investing, and marketing of blockchain-based companies. With members from around the world, SharkCIA’s experienced team provides growth-hacking, public relations, grassroots community outreach, strategic advisement roles and has helped to propel relatively obscure projects towards wider recognition and increased market capitalization.',
+      },
+    ],
+  },
+  investors: {
+    title: 'Key Investors',
+    bios: [
+      {
+        name: 'Patrick Dai',
+        title: 'Founder and CEO of Qtum',
+        picture: 'patrick_dai.jpg',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+      },
+      {
+        name: 'Alphabit',
+        title: 'Digital Currency Fund',
+        picture: 'alphabit.png',
+        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'Hive Chain Labs',
@@ -455,8 +470,8 @@ export const ko = {
       },
     ],
   },
-  investors: {
-    title: 'Key Investors and Advisors',
+  advisors: {
+    title: 'Key Advisors',
     bios: [
       {
         name: 'Michael Terpin',
@@ -483,22 +498,10 @@ export const ko = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Patrick Dai',
-        title: 'Founder and CEO of Qtum',
-        picture: 'patrick_dai.jpg',
-        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
-      },
-      {
         name: 'Josh Ogle',
         title: 'CEO of Samples.com and The Original Agency | Angel Investor',
         picture: '',
         bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
-        name: 'Alphabit',
-        title: 'Digital Currency Fund',
-        picture: 'alphabit.png',
-        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'TokenKey',
@@ -511,6 +514,23 @@ export const ko = {
         title: 'Marketing and Strategy',
         picture: 'shark_cia.png',
         bio: 'SharkCIA is a cryptocurrency intelligence agency specializing in the research, investing, and marketing of blockchain-based companies. With members from around the world, SharkCIA’s experienced team provides growth-hacking, public relations, grassroots community outreach, strategic advisement roles and has helped to propel relatively obscure projects towards wider recognition and increased market capitalization.',
+      },
+    ],
+  },
+  investors: {
+    title: 'Key Investors',
+    bios: [
+      {
+        name: 'Patrick Dai',
+        title: 'Founder and CEO of Qtum',
+        picture: 'patrick_dai.jpg',
+        bio: 'Dai graduated from Draper University and departed from the Chinese Academy of Sciences before completing the doctoral program. Patrick formerly worked at Alibaba. He has expertise in blockchain technology development and remains committed to its advancement.',
+      },
+      {
+        name: 'Alphabit',
+        title: 'Digital Currency Fund',
+        picture: 'alphabit.png',
+        bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
       {
         name: 'Hive Chain Labs',
