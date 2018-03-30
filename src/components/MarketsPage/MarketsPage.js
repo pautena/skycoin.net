@@ -30,16 +30,18 @@ const CryptowolfWrapper = styled.div`
 const LoadingMessage = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: ${rem(SPACE[8])};
 `;
 
+const ImageContainer = styled.div`
+  padding-top: ${rem(SPACE[4])};
+`;
+
 const Image = styled.img`
-  position: absolute;
   width: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
 `;
 
 class MarketsPage extends PureComponent {
@@ -73,8 +75,10 @@ class MarketsPage extends PureComponent {
           <CryptowolfWrapper id="cryptowolf-container">
             <LoadingMessage>
               <FormattedMessage id="markets.loading" />
+              <ImageContainer px={2}>
+                <Image src={loading} />
+              </ImageContainer>
             </LoadingMessage>
-            <Image src={loading} />
           </CryptowolfWrapper>
         </Wrap>
       </Container>

@@ -16,6 +16,9 @@ const Wrapper = styled(Box)`
 `;
 
 const StyledText = styled(Text)`
+`;
+
+const Article = styled.article`
   ${media.sm.css`
     column-count: 2;
     column-gap: ${rem(SPACE[7])};  
@@ -29,9 +32,20 @@ const About = () => (
       <Heading heavy as="h2" fontSize={[6, 7]} width={[1, 2 / 3]} color="white">
         <FormattedMessage id="ecosystem.about.heading" />
       </Heading>
-      <StyledText fontSize={2} my={[4, 6]} color="white">
-        <FormattedHTMLMessage id="ecosystem.about.body" />
-      </StyledText>
+      <Article>
+        <StyledText fontSize={2} color="white">
+          <FormattedHTMLMessage id="ecosystem.about.paragraph1" />
+        </StyledText>
+        <StyledText fontSize={2} color="white">
+          <FormattedHTMLMessage id="ecosystem.about.paragraph2" />
+        </StyledText>
+        <StyledText fontSize={2} color="white">
+          <FormattedHTMLMessage id="ecosystem.about.paragraph3" />
+        </StyledText>
+        <StyledText fontSize={2} color="white">
+          <FormattedHTMLMessage id="ecosystem.about.paragraph4" />
+        </StyledText>
+      </Article>
     </Container>
   </Wrapper>
 );

@@ -77,7 +77,7 @@ export default {
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
-    description: 'List of Skycoin markets',
+    description: 'Buy Skycoin',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
   },
@@ -210,7 +210,7 @@ export default {
         text: 'Peer-to-peer cloud storage. Dropbox for the new Internet.',
       },
       kittyCash: {
-        title: 'Kitty Cash',
+        title: 'KittyCash',
         text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute.',
       },
       skyVpn: {
@@ -342,7 +342,7 @@ export default {
     },
     experiments: {
       heading: 'Applications',
-      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform.</br></br>Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS.</br></br>Scalable, collectible, breedable, adorable, Kitty Cash is a fun and exciting game that shows the capabilities of our network’s design.',
+      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform.</br></br>Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS.</br></br>Scalable, collectible, breedable, adorable, KittyCash is a fun and exciting game that shows the capabilities of our network’s design.',
     },
     iconLabel: {
       fiber: 'Fiber',
@@ -356,11 +356,14 @@ export default {
       bbs: 'BBS',
       skyMessenger: 'SkyMessenger',
       skyVPN: 'SDN',
-      kittyCash: 'Kitty Cash',
+      kittyCash: 'KittyCash',
     },
     about: {
       heading: 'What is Skycoin?',
-      body: 'The original purpose of digital currency was to reinvent the economy so that users could be independently empowered to trade in a peer-to-peer fashion, without interference from centralized powers. At Skycoin, we believe strongly in this mission. That’s why the Skycoin blockchain is designed to benefit all users, not just a select few. With Obelisk, we’re solving the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network.</br></br>Satoshi envisioned Bitcoin as a decentralized digital currency. Blockchain networks were intended to democratize finance, eliminating corporate control and spreading power among users. However, Bitcoin and related currencies have become centralized due to their reliance on Proof of Work (PoW) and Proof of Stake (PoS) algorithms, as well as their use of mining to create coins. This centralization defeats the original purpose of digital currencies.</br></br>We created the Skycoin blockchain to correct these flaws. The Skycoin blockchain uses a novel consensus algorithm to replace PoW and PoS. It also fixes security problems associated with other blockchain networks and decouples coin creation from the mining process. The result is a fully decentralized cryptocurrency that fulfills Satoshi’s original vision.</br></br>The Skycoin blockchain does not use mining, so user power cannot be concentrated in a few large mining pools as it is with Bitcoin today. Coin creation doesn’t give certain users disproportionate control over the network. The supply of Skycoin is fixed. Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
+      paragraph1: 'The original purpose of digital currency was to reinvent the economy so that users could be independently empowered to trade in a peer-to-peer fashion, without interference from centralized powers. At Skycoin, we believe strongly in this mission. That’s why the Skycoin blockchain is designed to benefit all users, not just a select few. With Obelisk, we’re solving the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network.',
+      paragraph2: 'Satoshi envisioned Bitcoin as a decentralized digital currency. Blockchain networks were intended to democratize finance, eliminating corporate control and spreading power among users. However, Bitcoin and related currencies have become centralized due to their reliance on Proof of Work (PoW) and Proof of Stake (PoS) algorithms, as well as their use of mining to create coins. This centralization defeats the original purpose of digital currencies.',
+      paragraph3: 'We created the Skycoin blockchain to correct these flaws. The Skycoin blockchain uses a novel consensus algorithm to replace PoW and PoS. It also fixes security problems associated with other blockchain networks and decouples coin creation from the mining process. The result is a fully decentralized cryptocurrency that fulfills Satoshi’s original vision.',
+      paragraph4: 'The Skycoin blockchain does not use mining, so user power cannot be concentrated in a few large mining pools as it is with Bitcoin today. Coin creation doesn’t give certain users disproportionate control over the network. The supply of Skycoin is fixed. Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
     },
     roadmap: {
       dev: {
