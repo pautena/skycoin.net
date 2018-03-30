@@ -15,7 +15,6 @@ import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
   width: 100%;
-  // min-width: ${rem(480)};
 
   tr {
     padding-bottom: ${rem(10)};
@@ -29,7 +28,6 @@ const Table = styled.table`
     padding: ${rem(SPACE[2])} ${rem(SPACE[4])};
 
     ${media.sm.css`
-      height: ${rem(20)};
       padding: ${rem(SPACE[4])} ${rem(SPACE[8])};
     `}
   }
