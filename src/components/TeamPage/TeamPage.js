@@ -263,6 +263,44 @@ const TeamPage = ({ intl }) => (
             color="#07172E"
             mb={[3, 5]}
           >
+            {getLocale(intl.locale).advisors.title}
+          </FoundersHeading>
+          <Flex wrap justify="flex-start" mx={[-6, -7]}>
+            {getLocale(intl.locale).advisors.bios.map(({ name, picture, title, bio }, index) => (
+              <Person key={index} width={[1, 1 / 4]} px={[6, 7]} mb={[4, 5, 6]}>
+                <Flex column>
+                  <Box>
+                    <ImageContainer>
+                      {(picture && picture !== '') ?
+                        /* eslint-disable */
+                        <Img src={require(`./content/images/${picture}`)} alt={`Picture of ${name}`} /> :
+                        <ImgPlaceholder src={userPlaceholder} alt="Anonymous team member" />
+                        /* eslint-disable */
+                      }
+                    </ImageContainer>
+                  </Box>
+                  <Box>
+                    <PersonName heavy as="h2" fontSize={[3, 4]} my={0}>{name}</PersonName>
+                    {title && <Title>{title}</Title>}
+                    {bio && <Expander intl={intl}><Bio>{bio}</Bio></Expander>}
+                  </Box>
+                </Flex>
+              </Person>
+            ))}
+          </Flex>
+        </section>
+      </Container>
+    </Wrapper>
+
+    <Wrapper pb={8} pt={[8, 11, 13]}>
+      <Container>
+        <section>
+          <FoundersHeading
+            as="h2"
+            fontSize={[rem(FONT_SIZES[3]), rem(FONT_SIZES[3])]}
+            color="#07172E"
+            mb={[3, 5]}
+          >
             {getLocale(intl.locale).investors.title}
           </FoundersHeading>
           <Flex wrap justify="flex-start" mx={[-6, -7]}>
@@ -292,7 +330,7 @@ const TeamPage = ({ intl }) => (
       </Container>
     </Wrapper>
 
-    <Wrapper pb={8} pt={[8, 11, 13]}>
+    <Wrapper bg="#F4F9FF" pb={8} pt={[8, 11, 13]}>
       <Container>
         <section>
           <FoundersHeading

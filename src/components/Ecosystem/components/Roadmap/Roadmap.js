@@ -25,7 +25,7 @@ const Graphic = styled.img.attrs({
 
 const Roadmap = () => (
   <Container>
-    <Box pt={[6, 10]} pb={[0, 8]}>
+    <Box pt={[6, 10]} pb={8}>
       <Heading heavy as="h2" fontSize={[6, 7]} width={[1, 2 / 3]} my={[6, 10, 12]} color="black">
         <FormattedMessage id="ecosystem.roadmap.dev.heading" />
       </Heading>
