@@ -401,6 +401,10 @@ export default {
         item5: 'Gigabit ethernet, 8+1 port switch',
       },
     },
+    video: {
+      heading1: 'What Is A Skycoin Skyminer?',
+      heading2: 'The Power of Skyminer And The Scalability Of The Platform',
+    },
     gallery: {
       heading: 'Gallery',
     },

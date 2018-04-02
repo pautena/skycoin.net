@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
@@ -31,16 +32,28 @@ const FooterNavWrapper = styled(Flex)`
   `}
 `;
 
-export default () => (
+const Footer = ({ isLanding }) => (
   <Wrapper>
     <Container>
-      <FooterNavWrapper align="flex-start" justify="space-between" wrap pt={[8, 13]}>
+      <FooterNavWrapper
+        align="flex-start"
+        justify="space-between"
+        wrap
+        pt={[8, 13]}
+        isLanding={isLanding}
+      >
         <Logo blueWhite />
-        <Navigation white />
+        {!isLanding && <Navigation white />}
+        {isLanding &&
+        <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">
+          <Email />
+        </Text>
+        }
       </FooterNavWrapper>
 
       <Social />
 
+      {!isLanding &&
       <Flex py={[6, 8]} wrap>
         <Box width={[1, 1, 1 / 3]}>
           <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>{COPYRIGHT}</Text>
@@ -50,6 +63,7 @@ export default () => (
             <Email />
           </Text>
         </Box>
+
         {/* <Box width={[1, 1, 1 / 3]}>
           <Text
             as="div"
@@ -62,6 +76,25 @@ export default () => (
           </Text>
         </Box> */}
       </Flex>
+      }
+      {isLanding &&
+      <Flex py={[6, 8]} wrap>
+        <Box width={1}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">{COPYRIGHT}</Text>
+        </Box>
+      </Flex>
+      }
     </Container>
   </Wrapper>
 );
+
+Footer.propTypes = {
+  isLanding: PropTypes.bool,
+};
+
+Footer.defaultProps = {
+  isLanding: false,
+};
+
+
+export default Footer;

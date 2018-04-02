@@ -377,4 +377,34 @@ export default {
       download: 'Download',
     },
   },
+  skyminer: {
+    title: 'Explore Skyminer',
+    description: 'Skywire Miner: hardware for the new internet',
+    hero: {
+      heading: 'Skywire Miner: <br>hardware for the new internet',
+      button: 'JOIN THE WAIT LIST',
+    },
+    about: {
+      heading: 'Explore Skyminer',
+      subheading: 'Skywire Miner: hardware for the new internet',
+      paragraph1: 'The Skywire "miner" is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using the following hardware configuration:',
+      paragraph2: 'Each board features an ARM processor, 2 GB of RAM, and anywhere from 32 to 256 GB flash storage. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. The setup can be further customized to consist of 4, 8, 16, or 32 boards.',
+      paragraph3: 'Nodes operating on the Skywire network will be receiving a network incentive reward to help build out the network, in addition to traffic forwarding payments. For the Skywire miners, we’d like to increase this network incentive reward. However, we’re still working out a mechanism for distinguishing the Skywire miners from other nodes, which could be any machine on the network.',
+      list: {
+        item0: '8 CPU boards',
+        item1: '2 GB of RAM per board',
+        item2: '4 CPU cores per board',
+        item3: '64 GB of storage per board',
+        item4: '64-bit Linux (Alpine Linux)',
+        item5: 'Gigabit ethernet, 8+1 port switch',
+      },
+    },
+    video: {
+      heading1: 'What Is A Skycoin Skyminer?',
+      heading2: 'The Power of Skyminer And The Scalability Of The Platform',
+    },
+    gallery: {
+      heading: 'Gallery',
+    },
+  },
 };
