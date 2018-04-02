@@ -165,7 +165,7 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   `};
   
   ${media.md.css`
-    margin-left: ${rem(SPACE[7])};
+    margin-left: ${rem(SPACE[4])};
     padding: ${rem(SPACE[1])};
     border-top: 2px solid transparent;
     border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
@@ -179,6 +179,10 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
       color: ${props => (props.white ? 'white' : COLOR.dark)};
       opacity: ${props => (props.white ? '.7' : '1')};
     }
+  `}
+  
+  ${media.lg.css`
+    margin-left: ${rem(SPACE[7])};
   `}
 `));
 
