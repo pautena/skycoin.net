@@ -165,7 +165,7 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
   `};
   
   ${media.md.css`
-    margin-left: ${rem(SPACE[7])};
+    margin-left: ${rem(SPACE[4])};
     padding: ${rem(SPACE[1])};
     border-top: 2px solid transparent;
     border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
@@ -179,6 +179,10 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
       color: ${props => (props.white ? 'white' : COLOR.dark)};
       opacity: ${props => (props.white ? '.7' : '1')};
     }
+  `}
+  
+  ${media.lg.css`
+    margin-left: ${rem(SPACE[7])};
   `}
 `));
 
@@ -240,7 +244,7 @@ class Navigation extends React.PureComponent {
   }
 
   render() {
-    const { white, social, showBuy, isMobile } = this.props;
+    const { white, social, showBuy, showNav, isMobile } = this.props;
     const { menuVisible } = this.state;
     return (
       <NavWrapper isMobile={isMobile}>
@@ -249,6 +253,7 @@ class Navigation extends React.PureComponent {
         <Container isMobile={isMobile}>
           <Wrapper wrap menuVisible={menuVisible} isMobile={isMobile}>
             {isMobile && <MenuClose onClick={this.toggleMenu} />}
+            {showNav &&
             <GroupWrapper isMobile={isMobile} show>
               <StyledLink white={white} isMobile={isMobile} href="https://www.skycoin.net/blog">
                 <FormattedMessage id="header.navigation.blog" />
@@ -270,6 +275,7 @@ class Navigation extends React.PureComponent {
                 <FormattedMessage id="header.navigation.ecosystem" />
               </StyledLink>
             </GroupWrapper>
+            }
 
             <GroupWrapper isMobile={isMobile} show={social}>
               <StyledLink white={white} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
@@ -299,6 +305,7 @@ Navigation.propTypes = {
   white: PropTypes.bool,
   social: PropTypes.bool,
   showBuy: PropTypes.bool,
+  showNav: PropTypes.bool,
   isMobile: PropTypes.bool,
 };
 
@@ -306,6 +313,7 @@ Navigation.defaultProps = {
   white: false,
   social: false,
   showBuy: false,
+  showNav: true,
   isMobile: false,
 };
 

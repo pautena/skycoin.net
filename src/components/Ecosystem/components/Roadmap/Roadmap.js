@@ -6,8 +6,8 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import media from 'utils/media';
 
-import devRoadmap from './desktop_development_roadmap.svg';
-import devRoadmapSm from './mobile_development_roadmap.svg';
+import devRoadmap from './roadmap_desktop.svg';
+import devRoadmapSm from './roadmap_mobile.svg';
 // import marketingRoadmap from './marketing_roadmap.svg';
 // import marketingRoadmapSm from './mobile_marketing_roadmap.svg';
 
