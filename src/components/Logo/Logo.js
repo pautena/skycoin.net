@@ -21,7 +21,11 @@ const Img = styled.img.attrs({
   max-width: 100%;
   
   ${media.md.css`
-    height: ${props => (props.white ? rem(49) : rem(38))};    
+    height: ${rem(38)};
+  `}
+  
+  ${media.lg.css`
+    height: ${props => (props.white ? rem(49) : rem(38))};
   `}
 `;
 

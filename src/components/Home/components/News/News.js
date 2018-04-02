@@ -47,7 +47,7 @@ const NewsContainer = styled.div`
   border-radius: ${BORDER_RADIUS.base};
 `;
 
-const Date = styled(Text)`
+const DateText = styled(Text)`
   margin: 0;
 `;
 
@@ -72,7 +72,7 @@ const NewsItem = ({ title, date, href, image }) => (
           {image ? <Image src={image} /> : <Image src={placeholder} />}
         </ImageContainer>
         <Box px={7} pb={10} pt={6}>
-          <Date color={COLOR.textLight} fontSize={2}>{date.format('MMMM DD, YYYY')}</Date>
+          <DateText color={COLOR.textLight} fontSize={2}>{date.format('MMMM DD, YYYY')}</DateText>
           <StyledHeading as="h4" mb={1} fontSize={4}>
             {title}
           </StyledHeading>
@@ -97,9 +97,8 @@ class News extends PureComponent {
       posts: [],
       loaded: false,
     };
-    // this.rss = 'https://www.skycoin.net/blog/index.xml';
-    // TODO: remove blog.xml from /public when finished testing
-    this.rss = 'blog.xml';
+    // this.rss = 'blog.xml';
+    this.rss = 'https://www.skycoin.net/blog/index.xml';
   }
 
   componentDidMount() {
@@ -114,7 +113,8 @@ class News extends PureComponent {
       .then((items) => {
         const posts = [];
         items.forEach((item) => {
-          const date = moment(new Date(item.getElementsByTagName('pubDate')[0].textContent)).locale('en');
+          const dt = new Date(item.getElementsByTagName('pubDate')[0].textContent);
+          const date = moment(dt).locale('en');
           const enclosure = item.getElementsByTagName('enclosure');
           const image = enclosure.length ? enclosure[0].getAttribute('url') : '';
           posts.push({
