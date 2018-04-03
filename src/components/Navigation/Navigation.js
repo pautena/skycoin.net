@@ -13,6 +13,8 @@ import Button from 'components/Button';
 import media from 'utils/media';
 import telegram from './telegram.svg';
 import discord from './discord.svg';
+import telegramWhite from './telegramWhite.svg';
+import discordWhite from './discordWhite.svg';
 
 import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
@@ -194,6 +196,19 @@ const Img = styled.img.attrs({
   width: 23px;
 `;
 
+const Icon = styled.i`
+  width: 23px;
+  height: 23px;
+  margin-right: ${rem(SPACE[2])};
+  background-image: url(${props => props.srcXs});
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  ${media.sm.css`
+    background-image: url(${props => props.src});
+  `}
+`;
+
 const Overlay = styled.div`
   display: ${props => (props.visible ? 'block' : 'none')};
   position: fixed;
@@ -244,7 +259,7 @@ class Navigation extends React.PureComponent {
   }
 
   render() {
-    const { white, social, showBuy, showNav, isMobile } = this.props;
+    const { white, social, showBuy, showNav, isMobile, socialWhite } = this.props;
     const { menuVisible } = this.state;
     return (
       <NavWrapper isMobile={isMobile}>
@@ -278,13 +293,15 @@ class Navigation extends React.PureComponent {
             }
 
             <GroupWrapper isMobile={isMobile} show={social}>
-              <StyledLink white={white} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
-                <Img src={telegram} alt="Telegram" />
+              <StyledLink white={white} icon={telegram} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
+                {socialWhite && <Icon srcXs={telegram} src={telegramWhite} />}
+                {!socialWhite && <Img src={telegram} alt="Telegram" />}
                 <FormattedMessage id="header.navigation.telegram" />
               </StyledLink>
 
               <StyledLink white={white} isMobile={isMobile} href="https://discordapp.com" target="_blank">
-                <Img src={discord} alt="Discord" />
+                {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
+                {!socialWhite && <Img src={discord} alt="Discord" />}
                 <FormattedMessage id="header.navigation.discord" />
               </StyledLink>
             </GroupWrapper>
@@ -307,6 +324,7 @@ Navigation.propTypes = {
   showBuy: PropTypes.bool,
   showNav: PropTypes.bool,
   isMobile: PropTypes.bool,
+  socialWhite: PropTypes.bool,
 };
 
 Navigation.defaultProps = {
@@ -315,6 +333,7 @@ Navigation.defaultProps = {
   showBuy: false,
   showNav: true,
   isMobile: false,
+  socialWhite: false,
 };
 
 export default Navigation;
