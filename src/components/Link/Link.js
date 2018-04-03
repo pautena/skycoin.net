@@ -6,7 +6,7 @@ import omit from 'lodash/omit';
 import trimEnd from 'lodash/trimEnd';
 
 const getURL = (match, url) => trimEnd(
-  url.includes('://')
+  (url.includes('://') || url.includes('.pdf'))
     ? url
     : join('/', match.params.locale, url, url.includes('#') ? '' : '/'),
   );

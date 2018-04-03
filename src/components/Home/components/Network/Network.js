@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
@@ -41,10 +41,10 @@ export default () => (
             </SubHeading>
           </StyledLink>
           <Text fontSize={2} mb={0} color="black">
-            <FormattedMessage id="home.network.body" />
+            <FormattedHTMLMessage id="home.network.body" />
           </Text>
           <Text mt={4} color="base" big fontSize={2}>
-            <StyledLink to="/whitepapers">
+            <StyledLink target="_blank" href={'/skycoin_whitepaper.pdf'}>
               <FormattedMessage id="home.about.whitepaper" />
             </StyledLink>
           </Text>
