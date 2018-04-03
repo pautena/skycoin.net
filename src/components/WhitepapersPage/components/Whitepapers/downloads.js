@@ -1,5 +1,7 @@
 export default [{
   name: 'Skywire whitepaper — coming soon',
+}, {
+  name: 'Skycoin whitepaper',
   download: `${process.env.PUBLIC_URL}/skycoin_whitepaper.pdf`,
   filetype: '.pdf',
   filesize: '1.8mb',
