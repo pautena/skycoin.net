@@ -10,7 +10,6 @@ import { TableWrapper } from 'components/Table';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import Link from 'components/Link';
 import { COLORS, SPACE } from 'config';
 
 const Table = styled.table`
@@ -61,6 +60,11 @@ const FixedTd = styled.td`
   ${media.sm.css`
     width: ${rem(70)};
   `}
+`;
+
+const Link = styled.a`
+  color: ${COLORS.base};
+  text-decoration: none;
 `;
 
 const DownladsTable = ({ title, list, id }) => (
