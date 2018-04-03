@@ -15,8 +15,5 @@ export const skywire = [
 ];
 
 export const experiments = [
-  { icon: images.bbs, label: 'ecosystem.iconLabel.bbs' },
-  { icon: images.skyMessenger, label: 'ecosystem.iconLabel.skyMessenger' },
-  { icon: images.skyVPN, label: 'ecosystem.iconLabel.skyVPN' },
-  { icon: images.kittyCash, label: 'ecosystem.iconLabel.kittyCash' },
+  { icon: images.fiber, label: 'ecosystem.iconLabel.fiber' },
 ];

@@ -15,18 +15,18 @@ import { rem } from 'polished';
 import * as images from './images';
 
 const ecosystemItems = [
-  'fiber',
-  'obelisk',
   'skycoin',
-  'coinHours',
-  'coinJoin',
+  'obelisk',
+  'fiber',
   'skywire',
   'skyminer',
-  'nodes',
   'cx',
+  'coinHours',
+  'nodes',
   'cxo',
-  'kittyCash',
+  'coinJoin',
   'skyVpn',
+  'kittyCash',
   'skyMessenger',
   'bbs',
 ];

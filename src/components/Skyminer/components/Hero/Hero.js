@@ -29,7 +29,7 @@ const Intro = styled(Flex)`
 
 const MinerHero = () => (
   <Wrapper pb={[8, 12]} column>
-    <Header white social showNav={false} showBuy={false} />
+    <Header white social socialWhite showNav={false} showBuy={false} />
     <Intro align="center">
       <Container>
         <Heading heavy as="h1" fontSize={[7, 9]} color="white">

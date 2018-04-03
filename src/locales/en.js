@@ -70,7 +70,7 @@ export default {
   },
   getStarted: {
     heading: 'Get Started with Skycoin',
-    paragraph: '<p>True decentralization means no government can censor Skywire, no corporate interest can stop it.</p><p>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
+    paragraph: 'True decentralization means no government can censor Skywire, no corporate interest can stop it.<br/><br/>The internet began as a community of people wanting to share information — the time has come to bring back that vision of the internet using a cryptocurrency that truly fulfills Satoshi’s vision of a decentralized cryptocurrency with Skycoin.</p>',
     buy: 'Buy Skycoin',
     wallet: 'Get Wallet',
   },
@@ -85,8 +85,8 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     hero: {
-      heading: 'New Internet, New World',
-      paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
+      heading: 'The New Internet For The New World',
+      paragraph: 'The Skycoin Platform is the most advanced blockchain application ecosystem in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin’s platform is completely secure, infinitely scalable, and ISP independent. Backed by bandwidth, storage, and computation power Skycoin is built to fulfill Satoshi’s original vision.',
       buy: 'Buy Skycoin',
       community: 'Community',
       whitepapers: 'Whitepapers',
@@ -129,7 +129,7 @@ export default {
       heading: 'What is Skycoin?',
       lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
       paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
-      whitepaper: 'Whitepaper',
+      whitepaper: 'Read Whitepaper',
       speed: {
         heading: 'Speed',
         body: 'We built Skycoin to compete with credit cards and services like AliPay/Apple Pay. Transactions happen in seconds, not minutes.',
@@ -151,11 +151,11 @@ export default {
       label: 'Digging deeper',
       heading: 'Obelisk',
       subheading: 'The Skycoin Consensus Algorithm',
-      body: 'At Skycoin, we want to bring users what they asked for: a true, decentralized network without central authority. To accomplish this task, we went beyond PoW and PoS to create a wholly new decentralized algorithm that reconfigures the inner workings of blockchain. Our distributed consensus algorithm, Obelisk, succeeds in delivering just such a network.',
+      body: 'At Skycoin, we want to bring users what they asked for: a true, decentralized network without central authority. To accomplish this task, we went beyond PoW and PoS to create a wholly new decentralized algorithm that reconfigures the inner workings of blockchain. Our distributed consensus algorithm, Obelisk, succeeds in delivering just such a network.<br/><br/>Its web-of-trust style consensus prevents the development of centralized power. Skycoin requires no mining, is immune to 51% attack, and transactions occur in seconds. Decisions are made through community consensus, not based on the wishes of a few majority stakeholders.</p>',
     },
     miner: {
       heading: 'Explore Skyminer',
-      subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security.',
+      subheading: 'The Skycoin Skyminer is meticulously designed and configured to provide a rock-solid telecom backbone for the Skywire infrastructure. The custom-built hardware is focused on delivering maximum security, efficiency and performance to the software-defined network. The multi-board architecture enables each node to support an independent service on Skywire. By isolating the nodes, each service can safely operate independently of attacks on peripheral services. These service-providing nodes are managed by an OpenWRT router with strict packet forwarding and access control rules for additional security. Skyminers are paid in Coin Hours for providing services and security to the Skywire network.',
       link: 'Become a node',
     },
     press: {
@@ -167,23 +167,23 @@ export default {
       subheading: 'Skycoin Ecosystem',
       fiber: {
         title: 'Fiber',
-        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together. ',
+        text: 'The infinitely-scalable and highly customizable parallel peer-chain architecture of the Skycoin platform.',
       },
       obelisk: {
         title: 'Obelisk',
-        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date.',
+        text: 'The “web of trust”, a new kind of consensus algorithm solving the fundamental flaws with PoW & PoS.',
       },
       skycoin: {
         title: 'Skycoin',
-        text: 'The most powerful and complete cryptocurrency ever created.',
+        text: 'The most powerful and complete cryptocurrency platform ever created.',
       },
       coinHours: {
         title: 'Coin Hours',
-        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact.',
+        text: 'Accrued by holding Skycoin, Coin Hours are the payment mechanism for services on the Skycoin platform.',
       },
       coinJoin: {
         title: 'Coin Join',
-        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology.',
+        text: 'Native platform support for CoinJoin to provide completely private, untraceable transactions.',
       },
       skyledger: {
         title: 'Skyledger',
@@ -191,39 +191,39 @@ export default {
       },
       skywire: {
         title: 'Skywire',
-        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth.',
+        text: 'The new Decentralized Internet, a wireless mesh network that pays you for supporting it.',
       },
       skyminer: {
         title: 'Skyminer',
-        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep.',
+        text: 'The hardware backbone for an unbreakable decentralized internet. Get paid for providing bandwidth, storage, and cpu power while you sleep.',
       },
       nodes: {
         title: 'Nodes',
-        text: 'Our community members, and anyone who processes bandwith on Skywire.',
+        text: 'The building blocks of the Skywire network, deployable by anyone to ensure decentralization of the Skywire ecosystem.',
       },
       cx: {
         title: 'CX',
-        text: 'The most powerful programming language on the market.',
+        text: 'A custom built programming language, developed on top of Golang. Designed to be easy to learn and fast to implement.',
       },
       cxo: {
         title: 'CXO',
-        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet.',
+        text: 'A peer-to-peer cloud storage service tailored to service the distributed network of Skywire.',
       },
       kittyCash: {
         title: 'KittyCash',
-        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute.',
+        text: 'The most popular application currently built on Fiber. Kittycash is a complete gaming ecosystem, powered by cats.',
       },
       skyVpn: {
         title: 'SDN',
-        text: 'Decentralized Virtual Private Network running on Skywire.',
+        text: 'Built-in end-to-end virtual private encryption over the Skywire network to ensure privacy.',
       },
       skyMessenger: {
         title: 'SkyMessenger',
-        text: 'Decentralized Encrypted Messenger running on Skywire.',
+        text: 'Our fully encrypted messenger service, free from prying eyes or bad actors.',
       },
       bbs: {
         title: 'BBS',
-        text: 'Decentralized Social Network running on Skywire.',
+        text: 'The framework for building distributed social network services.',
       },
     },
     news: {
@@ -330,19 +330,19 @@ export default {
     subheading: 'Architecture of the new internet',
     skycoin: {
       heading: 'Skycoin',
-      body: 'The aim of the developers of Skycoin was to correct the major security flaws and “centralizing tendencies” associated with blockchain networks in which consensus is based on PoW or PoS algorithms and coin creation is linked to a mining process. Skycoin is a cryptocurrency that better fulfills Satoshi’s original vision of a fully decentralized digital currency system.</br></br>Skycoin is the currency of Skywire, giving it a practical application beyond just a digital currency. When the user forwards traffic or provide network resources, he or she receives Skycoin. Likewise, when the user consumes network resources or media, he or she spends Skycoin. Users can maximize their coins in two ways: having high bandwidth in high-traffic areas, or having highly sought-after content.',
+      body: 'Skycoin was created as an answer to the shortcomings of both Bitcoin and Ethereum. Born out of necessity, no other coin was fulfilling Satoshi’s original vision of a fully decentralized digital currency.<br/><br/>Skycoin’s platform is free from centralization and manipulation through its proprietary Obelisk consensus algorithm. It features CX, a turing complete programming language built from the ground up to allow hundreds of thousands of devs to easily deploy applications to the blockchain. Skycoin functions as a currency with virtually-free transactions, soon-to-be-implemented absolute privacy, and Visa-like speeds with inherent asset-backed value not based on speculation.<br/><br/>Holding Skycoin generates Coin Hours which are used to purchase services on the Skywire network and can be exchanged for more Skycoin.</p>',
     },
     skywire: {
       heading: 'Skywire',
-      body: 'How can we create a truly free and open internet? To answer this question, we developed Skywire, the new alternative internet. Skywire is a groundbreaking, novel technology that takes control from large internet service providers (ISPs) and gives it back to the users. Its peer-to-peer model promotes net neutrality and sharing of content without blocking, slowdowns, or censorship. Skywire’s open-access network preserves privacy and encourages free speech. Our mission in creating Skywire is to shape the internet’s future for the better.',
+      body: 'It is fast. It doesn’t suffer from throttling and other service disruptions that you get with large ISPs.<br/><br/>It is private. This means that you can’t be tracked as you browse. Instead of paying $$$ per month to be tracked by the ISP (which then sells your browsing data without permission), the Skywire community will have internet service that protects their privacy.<br/><br/>It is incentivized. Skywire will develop to be a wireless mesh network (WMN). Users can earn both Skycoin and Coin Hours for running hardware nodes that provide both bandwidth and storage to the entire network. Users can then spend earned Coin Hours on content and other network resources, as they choose.<br/><br/>It is secure. Skywire is created by users for users. Users dictate the decisions made on the network and the network operates on a web of trust system where malicious nodes can be cut off from the main Skywire network via collective agreement of the community. This consensus model allows Skywire to be immune from attacks, exploitation and manipulation.<br/><br/>In an era where consumers are consistently being taken advantage of by large corporations in the name of profit, Skycoin’s Skywire network is a breath of fresh air. Skywire gives the power back to the people and creates a stronger, faster, and more secure internet in the process.</p>',
     },
     skyledger: {
       heading: 'Obelisk',
-      body: 'To tackle this centralization problem, Skycoin moves beyond PoW/PoS. It uses a distributed consensus algorithm, called Obelisk, which distributes influence over the network according to a “web of trust”. In essence, every node has a list of other nodes that it subscribes to, and the density of a node’s network of subscribers determines its influence on the network. Each node is assigned a personal blockchain which acts as a “public broadcasting channel” on which all of a node’s actions are visible and publicly recorded. As all consensus decisions and communication occur through the personal blockchains of each node, the community can very easily audit nodes for cheating or collusion. How decisions on the network are made and which nodes influence those decisions is completely transparent.',
+      body: 'Decentralization in a centralized world.<br/><br/>Obelisk was created out of the shortcomings in the Proof of Work (PoW) and Proof of Stake (PoS) algorithms. Obelisk can never be centralized by mining pools or manipulated by shareholders, meaning it is truly decentralized. Obelisk distributes influence over the network according to a web-of-trust architecture. Instead of miners, the network consists of nodes. Each node gets its own personal blockchain which prevents and quarantines any potential bad actors. These nodes are substantially less expensive to produce, acquire and operate than any traditional miner used for Bitcoin or Ethereum. Obelisk was designed to be a scalable, computationally-inexpensive, zero-waste alternative to PoW. These features enable the algorithm to be run on budget hardware in a sustainable fashion, without wasting electricity or consuming valuable natural resources. Centralization becomes nigh-impossible when virtually anyone is able to operate a node.</p>',
     },
     experiments: {
-      heading: 'Applications',
-      body: 'Skycoin BBS is a peer-to-peer replicated social media application built on immutable data structures (CXO) on top of the Skycoin platform.</br></br>Skycoin Messenger is an anonymous instant messenger. You can send messages to others by public keys on the messenger. It also provides discovery service, which is being used by Skywire, CXO, and BBS.</br></br>Scalable, collectible, breedable, adorable, KittyCash is a fun and exciting game that shows the capabilities of our network’s design.',
+      heading: 'Fiber',
+      body: 'The infinitely-scalable and highly customizable parallel peer-chain architecture of the Skycoin platform. Fiber is a better-than-blockchain solution, which is transformational in the way that it solves existing problems with distributed ledger technology.<br/><br/>Fiber is the foundation of “cryptocurrency 3.0”, an infinitely scalable network of blockchains laid side-by-side, like strands. Each project hosted on Fiber gets its own fully customizable, private blockchain capable of Visa-like speeds. Each strand added to Fiber strengthens the whole network and constructs the fabric of the entire ecosystem.<br/><br/>Skycoin Fiber does not compete with first and second generation cryptocurrency architectures, it replaces them. From fledgling blockchain projects to enterprises looking for solutions, Fiber is the answer.</p>',
     },
     iconLabel: {
       fiber: 'Fiber',
@@ -400,6 +400,10 @@ export default {
         item4: '64-bit Linux (Alpine Linux)',
         item5: 'Gigabit ethernet, 8+1 port switch',
       },
+    },
+    video: {
+      heading1: 'What Is A Skycoin Skyminer?',
+      heading2: 'The Power of Skyminer And The Scalability Of The Platform',
     },
     gallery: {
       heading: 'Gallery',
