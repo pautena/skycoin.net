@@ -230,8 +230,8 @@ export default {
       heading: 'Новости',
     },
     signup: {
-      heading: 'Join Our Newsletter, Earn Skycoin.',
-      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win.| ru',
+      heading: 'Join Our Skyfleet Newsletter and Soar to New Heights with Skycoin!',
+      body: 'Stay current, receive updates from the Skycoin team, and enjoy the progress by subscribing to our newsletter! Enter your personal email address & prepare for liftoff today.',
       button: 'Sign Up| ru',
     },
     roadmap: {

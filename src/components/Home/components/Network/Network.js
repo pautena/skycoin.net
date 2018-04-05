@@ -6,6 +6,7 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
+import Button from 'components/Button';
 import Link from 'components/Link';
 import Text from 'components/Text';
 import { COLOR } from 'config';
@@ -43,11 +44,16 @@ export default () => (
           <Text fontSize={2} mb={0} color="black">
             <FormattedHTMLMessage id="home.network.body" />
           </Text>
-          <Text mt={4} color="base" big fontSize={2}>
-            <StyledLink target="_blank" href={'/skycoin_whitepaper.pdf'}>
-              <FormattedMessage id="home.about.whitepaper" />
-            </StyledLink>
-          </Text>
+          <Button
+            href={'/skycoin_whitepaper.pdf'}
+            target="_blank"
+            color="base"
+            pill
+            outlined
+            mt={4}
+          >
+            <FormattedMessage id="home.about.whitepaper" />
+          </Button>
         </Box>
 
         <Box width={[0, 2 / 5]}>
