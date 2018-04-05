@@ -20,7 +20,7 @@ import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
 import cancelIc from './icCancel.svg';
 
-const MenuHeight = '510px';
+const menuHeight = '510px';
 
 const ToggleButton = styled.button`
   height: 30px;
@@ -97,7 +97,7 @@ const Wrapper = styled(Flex)`
   transition: transform 400ms ease-in-out;
   text-align: left;
 
-  @media (max-height: ${MenuHeight}) {
+  @media (max-height: ${menuHeight}) {
     flex-direction: row;
     overflow-y: scroll;
   }
@@ -114,7 +114,7 @@ const Wrapper = styled(Flex)`
   ${GroupWrapper} + ${GroupWrapper} {
     border-top: 2px solid ${rgba(COLOR.textGrey, 0.2)};  
     
-    @media (max-height: ${MenuHeight}) {
+    @media (max-height: ${menuHeight}) {
       width: 100%;
     }
 
