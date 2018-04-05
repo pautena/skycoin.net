@@ -39,7 +39,7 @@ const Article = styled.article`
 
 
 const About = () => (
-  <Wrapper py={[6, 10, 13]}>
+  <Wrapper pt={[6, 10, 13]}>
     <Container>
       <Heading heavy as="h2" fontSize={[6, 7]} width={[1, 2 / 3]} color="black">
         <FormattedMessage id="skyminer.about.heading" />
