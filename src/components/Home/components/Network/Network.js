@@ -51,6 +51,7 @@ export default () => (
             pill
             outlined
             mt={4}
+            mb={[4, 6]}
           >
             <FormattedMessage id="home.about.whitepaper" />
           </Button>
