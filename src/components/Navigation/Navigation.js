@@ -64,6 +64,24 @@ const Container = styled.div`
   `}
 `;
 
+const Scrollable = styled.div`
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  overflow-y: auto;
+  background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
+  transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
+  transition: transform 400ms ease-in-out;
+  
+  ${media.md.css`
+    width: auto;
+    height: auto;
+    background: transparent;
+    transform: translateX(0);
+  `}
+`;
+
 const GroupWrapper = styled.div`
   display: ${props => (props.show || props.isMobile ? 'flex' : 'none')};;
   flex-wrap: wrap;
@@ -89,10 +107,7 @@ const GroupWrapper = styled.div`
 const Wrapper = styled(Flex)`
   flex-direction: ${props => (props.isMobile ? 'column' : 'row')};
   width: ${props => (props.isMobile ? '270px' : 'auto')};
-  height: ${props => (props.isMobile ? '100%' : 'auto')};
-  background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
-  transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
-  transition: transform 400ms ease-in-out;
+  min-height: ${props => (props.isMobile ? '100%' : 'auto')};
   text-align: left;
 
   ${media.md.css`
@@ -100,13 +115,11 @@ const Wrapper = styled(Flex)`
     width: auto;
     height: auto;
     background: transparent;
-    box-shadow: none;
-    transform: translateX(0);
   `}
   
   ${GroupWrapper} + ${GroupWrapper} {
-    border-top: 2px solid ${rgba(COLOR.textGrey, 0.2)};  
-    
+    border-top: 2px solid ${rgba(COLOR.textGrey, 0.2)};
+
     ${media.md.css`
       border-top: none;
       margin-left: ${rem(SPACE[4])};
@@ -266,52 +279,54 @@ class Navigation extends React.PureComponent {
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
         <Overlay visible={menuVisible} />
         <Container isMobile={isMobile}>
-          <Wrapper wrap menuVisible={menuVisible} isMobile={isMobile}>
-            {isMobile && <MenuClose onClick={this.toggleMenu} />}
-            {showNav &&
-            <GroupWrapper isMobile={isMobile} show>
-              <StyledLink white={white} isMobile={isMobile} href="https://www.skycoin.net/blog">
-                <FormattedMessage id="header.navigation.blog" />
-              </StyledLink>
+          <Scrollable menuVisible={menuVisible} isMobile={isMobile}>
+            <Wrapper wrap isMobile={isMobile}>
+              {isMobile && <MenuClose onClick={this.toggleMenu} />}
+              {showNav &&
+              <GroupWrapper isMobile={isMobile} show>
+                <StyledLink white={white} isMobile={isMobile} href="https://www.skycoin.net/blog">
+                  <FormattedMessage id="header.navigation.blog" />
+                </StyledLink>
 
-              <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
-                <FormattedMessage id="header.navigation.explorer" />
-              </StyledLink>
+                <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
+                  <FormattedMessage id="header.navigation.explorer" />
+                </StyledLink>
 
-              <StyledLink white={white} isMobile={isMobile} to="/downloads">
-                <FormattedMessage id="header.navigation.downloads" />
-              </StyledLink>
+                <StyledLink white={white} isMobile={isMobile} to="/downloads">
+                  <FormattedMessage id="header.navigation.downloads" />
+                </StyledLink>
 
-              <StyledLink white={white} isMobile={isMobile} to="/team">
-                <FormattedMessage id="header.navigation.team" />
-              </StyledLink>
+                <StyledLink white={white} isMobile={isMobile} to="/team">
+                  <FormattedMessage id="header.navigation.team" />
+                </StyledLink>
 
-              <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
-                <FormattedMessage id="header.navigation.ecosystem" />
-              </StyledLink>
-            </GroupWrapper>
-            }
+                <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
+                  <FormattedMessage id="header.navigation.ecosystem" />
+                </StyledLink>
+              </GroupWrapper>
+              }
 
-            <GroupWrapper isMobile={isMobile} show={social}>
-              <StyledLink white={white} icon={telegram} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
-                {socialWhite && <Icon srcXs={telegram} src={telegramWhite} />}
-                {!socialWhite && <Img src={telegram} alt="Telegram" />}
-                <FormattedMessage id="header.navigation.telegram" />
-              </StyledLink>
+              <GroupWrapper isMobile={isMobile} show={social}>
+                <StyledLink white={white} icon={telegram} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
+                  {socialWhite && <Icon srcXs={telegram} src={telegramWhite} />}
+                  {!socialWhite && <Img src={telegram} alt="Telegram" />}
+                  <FormattedMessage id="header.navigation.telegram" />
+                </StyledLink>
 
-              <StyledLink white={white} isMobile={isMobile} href="https://discordapp.com" target="_blank">
-                {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
-                {!socialWhite && <Img src={discord} alt="Discord" />}
-                <FormattedMessage id="header.navigation.discord" />
-              </StyledLink>
-            </GroupWrapper>
+                <StyledLink white={white} isMobile={isMobile} href="https://discordapp.com" target="_blank">
+                  {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
+                  {!socialWhite && <Img src={discord} alt="Discord" />}
+                  <FormattedMessage id="header.navigation.discord" />
+                </StyledLink>
+              </GroupWrapper>
 
-            <GroupWrapper isMobile={isMobile} show={showBuy}>
-              <Button to="buy" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
-                <FormattedMessage id="header.navigation.getWallet" />
-              </Button>
-            </GroupWrapper>
-          </Wrapper>
+              <GroupWrapper isMobile={isMobile} show={showBuy}>
+                <Button to="buy" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                  <FormattedMessage id="header.navigation.getWallet" />
+                </Button>
+              </GroupWrapper>
+            </Wrapper>
+          </Scrollable>
         </Container>
       </NavWrapper>
     );
