@@ -20,8 +20,6 @@ import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
 import cancelIc from './icCancel.svg';
 
-const menuHeight = '510px';
-
 const ToggleButton = styled.button`
   height: 30px;
   width: 30px;
