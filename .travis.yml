@@ -19,7 +19,7 @@ before_deploy:
 
 deploy:
 - provider: script
-  script: sh $TRAVIS_BUILD_DIR/.travis/staging2.deploy.sh
+  script: sh $TRAVIS_BUILD_DIR/.travis/staging.deploy.sh
   skip_cleanup: true
   on:
     branch: develop
