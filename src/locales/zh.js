@@ -84,6 +84,10 @@ export default {
   home: {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
+    banner: {
+      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      button: 'Read more',
+    },
     hero: {
       heading: 'New Internet, New World',
       paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
@@ -230,8 +234,8 @@ export default {
       heading: 'News',
     },
     signup: {
-      heading: 'Join Our Newsletter, Earn Skycoin.',
-      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | zh',
+      heading: 'Join Our Skyfleet Newsletter and Soar to New Heights with Skycoin!',
+      body: 'Stay current, receive updates from the Skycoin team, and enjoy the progress by subscribing to our newsletter! Enter your personal email address & prepare for liftoff today.',
       button: 'Sign Up | zh',
     },
     roadmap: {

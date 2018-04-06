@@ -84,6 +84,10 @@ export default {
   home: {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
+    banner: {
+      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      button: 'Read more',
+    },
     hero: {
       heading: 'New Internet, New World',
       paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
@@ -230,8 +234,8 @@ export default {
       heading: 'News',
     },
     signup: {
-      heading: 'Join Our Newsletter, Earn Skycoin.',
-      body: 'We give away thousands of Skycoin to our most active newsletter subscribers each month. Join our newsletter now for your chance to win. | ko',
+      heading: 'Join Our Skyfleet Newsletter and Soar to New Heights with Skycoin!',
+      body: 'Stay current, receive updates from the Skycoin team, and enjoy the progress by subscribing to our newsletter! Enter your personal email address & prepare for liftoff today.',
       button: 'Sign Up | ko',
     },
     roadmap: {
