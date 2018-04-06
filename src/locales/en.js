@@ -84,6 +84,10 @@ export default {
   home: {
     title: 'Skycoin - Blockchain Internet',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
+    banner: {
+      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      button: 'Read more',
+    },
     hero: {
       heading: 'The New Internet For The New World',
       paragraph: 'The Skycoin Platform is the most advanced blockchain application ecosystem in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin’s platform is completely secure, infinitely scalable, and ISP independent. Backed by bandwidth, storage, and computation power Skycoin is built to fulfill Satoshi’s original vision.',

@@ -84,6 +84,10 @@ export default {
   home: {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
+    banner: {
+      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      button: 'Read more',
+    },
     hero: {
       heading: 'New Internet, New World',
       paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
