@@ -18,7 +18,7 @@ const Graphic = styled.img`
 `;
 
 const ImageItem = ({ icon, label }) => (
-  <StyledBox width={[1 / 2, 1 / 2, 1 / 3]}>
+  <StyledBox width={[1 / 2, 1 / 2]}>
     <Graphic src={icon} alt="" />
     <Text fontSize={[1, 1, 2]} caps>
       <FormattedMessage id={label} />
