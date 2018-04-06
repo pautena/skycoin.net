@@ -27,19 +27,19 @@ const Ecosystem = () => (
     </SubHeading>
 
     <ContentItem bg="lightBlue" py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mt={[5, 8]} mx={[-7, 0]}>
-      <Box width={[1, 3 / 5, 1 / 2]}>
+      <Box width={[1, 3 / 5, 4 / 6]}>
         <Info heading="ecosystem.skycoin.heading" body="ecosystem.skycoin.body" />
       </Box>
-      <Box width={[1, 2 / 5, 1 / 2]}>
+      <Box width={[1, 2 / 5, 2 / 6]}>
         <Illustrations items={content.skycoin} />
       </Box>
     </ContentItem>
 
     <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
-      <Box width={[1, 3 / 5, 1 / 2]}>
+      <Box width={[1, 3 / 5, 4 / 6]}>
         <Info heading="ecosystem.skywire.heading" body="ecosystem.skywire.body" />
       </Box>
-      <Box width={[1, 2 / 5, 1 / 2]}>
+      <Box width={[1, 2 / 5, 2 / 6]}>
         <Illustrations items={content.skywire} />
       </Box>
     </ContentItem>
@@ -49,10 +49,10 @@ const Ecosystem = () => (
     </ContentItem>
 
     <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
-      <Box width={[1, 3 / 5, 1 / 2]}>
+      <Box width={[1, 3 / 5, 4 / 6]}>
         <Info heading="ecosystem.experiments.heading" body="ecosystem.experiments.body" />
       </Box>
-      <Box width={[1, 2 / 5, 1 / 2]}>
+      <Box width={[1, 2 / 5, 2 / 6]}>
         <Illustrations items={content.experiments} />
       </Box>
     </ContentItem>
