@@ -1,6 +1,11 @@
 language: node_js
 node_js:
 - '8'
+
+install:
+- yarn
+- sudo pip install awscli
+
 script:
 - yarn lint
 - yarn test
@@ -8,18 +13,15 @@ script:
 
 before_deploy:
 - if [[ -z "$TRAVIS_TAG" ]]; then cp robots.txt.staging build/robots.txt; else cp robots.txt build/; fi
+- echo $AWS_ACCESS_KEY_ID
+- aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+- aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
 
 deploy:
-- provider: s3
-  access_key_id: AKIAIMA7VGNP6PRLOIBQ
-  secret_access_key:
-    secure: JdpAOIor8CICYpKuZoxLk/DpKnKA3QyVBnOxUCd7DaTgQ0ZlQ78yarqII61QY+7CKiEeW/cBSR0/EgzTsIJ/S2CadWK77/1akaW9y+y82DAEsODpbh+Hle/WFyHwlf3nz0Sshan7KQxUW8sfiqWrZbFEXk67vGXMwqRGQcfDDYWlncNYIgg1ZhsTqmpA1T9JYLa1OuU8lVhwUuteaiw3yXDY9FIMQ6IfGYz+9hQ1b2lrQ3wIMbT8SBwUMMqC8cs/LNWlePIvhJ1P8YvYH3ltfpQsyx46Nkehfg8xPrhuh0glgKVO7nTTvT35bdgqPP9p5YAf59cS0DCzjhtFMJTMQXxqPku7XeagReGZMlHcWElNcuAqxQJ2aZyO0d6DL2FsIvqrV/kkGz50sUwGcNTtZReiOHUo6TU/S0R4zSPm7dP+Cnwj7XKAClD5lSZouoCq9UtUpIpjUXG3lJDeHd2xd8y3kCaNgcUNhOi+NUBamV+1yhNGOeLpqURiizJiw2+KUGp6MWvIel3JNc34riiiPkteHTZ7EyteGUXWSOVuIxPXofTtsg0N6yHYQwl71VTm1PuL+MbCUzHaFYgGRNOxVxfvUhlhs331X9Si5A9DrqXYB1fLv26S9oYNYSN2G1oZ4Gp0s0Tw4njLQlBC4kM45khJnyBtC422FpF4ncltx/c=
-  bucket: staging2.skycoin.net
-  region: ap-southeast-1
-  local_dir: build
-  skip_cleanup: true
-  acl: public_read
-  cache_control: "no-cache"
+- provider: script
+  script:
+    - aws s3 sync build s3://staging2.skycoin.net --region ap-southeast-1 --delete --cache-control no-cache
+    - aws s3 cp s3://staging2.skycoin.net/index.html s3://staging2.skycoin.net/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
   on:
     branch: develop
     repo: skycoin/skycoin.net
