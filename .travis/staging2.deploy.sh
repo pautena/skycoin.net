@@ -9,4 +9,10 @@ echo "done."
 
 echo "setting no cache for html files ..."
 aws s3 cp s3://staging2.skycoin.net/index.html s3://staging2.skycoin.net/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/200.html s3://staging2.skycoin.net/200.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/buy/index.html s3://staging2.skycoin.net/buy/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/downloads/index.html s3://staging2.skycoin.net/downloads/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/ecosystem/index.html s3://staging2.skycoin.net/ecosystem/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/team/index.html s3://staging2.skycoin.net/team/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://staging2.skycoin.net/whitepapers/index.html s3://staging2.skycoin.net/whitepapers/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
 echo "done."
