@@ -313,7 +313,7 @@ class Navigation extends React.PureComponent {
                   <FormattedMessage id="header.navigation.telegram" />
                 </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} href="https://discordapp.com" target="_blank">
+                <StyledLink white={white} isMobile={isMobile} href="https://discord.gg/EgBenrW" target="_blank">
                   {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
                   {!socialWhite && <Img src={discord} alt="Discord" />}
                   <FormattedMessage id="header.navigation.discord" />
