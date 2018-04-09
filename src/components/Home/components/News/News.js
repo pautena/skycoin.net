@@ -16,6 +16,8 @@ import { COLOR, BOX_SHADOWS, BORDER_RADIUS, FONT_SIZES } from 'config';
 
 import placeholder from './images/placeholder.svg';
 
+const DEFAULT_LOCALE = 'en';
+
 const Wrapper = styled(Box)`
   background: ${COLOR.white};
   overflow: hidden;
@@ -90,7 +92,7 @@ NewsItem.propTypes = {
 };
 
 class News extends PureComponent {
-  constructor() {
+  constructor(props) {
     super();
 
     this.state = {
@@ -98,7 +100,7 @@ class News extends PureComponent {
       loaded: false,
     };
     // this.rss = 'blog.xml';
-    this.rss = 'https://www.skycoin.net/blog/index.xml';
+    this.rss = props.locale !== DEFAULT_LOCALE ? `https://www.skycoin.net/blog/${props.locale}/index.xml` : 'https://www.skycoin.net/blog/index.xml';
   }
 
   componentDidMount() {
@@ -156,5 +158,8 @@ class News extends PureComponent {
   }
 }
 
+News.propTypes = {
+  locale: PropTypes.string.isRequired,
+};
 
 export default News;

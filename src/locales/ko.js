@@ -74,6 +74,10 @@ export default {
     buy: '스카이코인 구매',
     wallet: '지갑 얻기',
   },
+  newsletter: {
+    heading: 'Sign up to receive updates',
+    button: 'Sign up',
+  },
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',

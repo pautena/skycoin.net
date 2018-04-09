@@ -74,6 +74,10 @@ export default {
     buy: '购买天空币',
     wallet: '下载钱包',
   },
+  newsletter: {
+    heading: 'Sign up to receive updates',
+    button: 'Sign up',
+  },
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
@@ -85,7 +89,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     banner: {
-      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      heading: '4์10෭ࣁӤၹԈېॠᑮ᱾ኞாᔮᕹݎ૲տ',
       button: 'Read more',
     },
     hero: {
