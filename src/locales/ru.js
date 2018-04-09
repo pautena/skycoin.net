@@ -74,6 +74,10 @@ export default {
     buy: 'Купить Skycoin',
     wallet: 'Получить Кошелёк',
   },
+  newsletter: {
+    heading: 'Sign up to receive updates',
+    button: 'Sign up',
+  },
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',

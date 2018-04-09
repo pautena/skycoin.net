@@ -11,7 +11,7 @@ import Logo from 'components/Logo';
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 
-// import Languages from './components/Languages';
+import Languages from './components/Languages';
 import Email from './components/Email';
 import Social from './components/Social';
 
@@ -64,17 +64,17 @@ const Footer = ({ isLanding }) => (
           </Text>
         </Box>
 
-        {/* <Box width={[1, 1, 1 / 3]}>
+        <Box width={[1, 1, 1 / 3]}>
           <Text
             as="div"
             fontSize={[0, 0, 1]}
             color="gray.8"
             my={0}
             heavy
-            textAlign={['center', 'center', 'right']}>
+            textAlign={['center', 'center', 'right']} >
             <Languages />
           </Text>
-        </Box> */}
+        </Box>
       </Flex>
       }
       {isLanding &&

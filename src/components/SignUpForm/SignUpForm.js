@@ -127,7 +127,7 @@ class SignUpForm extends PureComponent {
           </div>
 
           <Submit color="base" bg="white" big width={'200px'} pill type="submit" name="subscribe" id="mc-embedded-subscribe">
-            <FormattedMessage id="home.signup.button" />
+            <FormattedMessage id="newsletter.button" />
           </Submit>
         </Form>
       </Wrapper>
