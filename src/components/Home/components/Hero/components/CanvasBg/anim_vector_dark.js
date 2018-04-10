@@ -1,3 +1,6 @@
+// Code below is generated automatically
+/* eslint-disable */
+
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
@@ -2810,4 +2813,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,7,7);
 p.nominalBounds = new cjs.Rectangle(1030.3,354.6,1765.8,704.1);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
-var lib, images, createjs, ss;
+var lib, images, ss;
+
+export { lib, images, ss }
