@@ -41,7 +41,7 @@ const Home = ({ intl }) => (
     <Miner />
     <Network />
     <Ecosystem />
-    <News />
+    <News locale={intl.locale} />
     <SignUp />
     <Footer />
   </div>

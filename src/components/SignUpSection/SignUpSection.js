@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
+import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Text from 'components/Text';
 import SignUpForm from 'components/SignUpForm';
@@ -42,7 +43,9 @@ const SignUpSection = () => (
           <ArrowImg src={icArrow} />
         </ArrowContainer>
         <Box width={[1, 1, 35 / 100]}>
-          <Text mb={[5, 0]} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white" textAlign="center">Sign up to receive updates</Text>
+          <Text mb={[5, 0]} fontSize={rem(20)} style={{ fontWeight: 'bold' }} color="white" textAlign="center">
+            <FormattedMessage id="newsletter.heading" />
+          </Text>
         </Box>
         <Box width={[1, 1, 1 / 2]}>
           <SignUpForm />
