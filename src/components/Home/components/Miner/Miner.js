@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Gallery from 'components/Gallery';
-// import Button from 'components/Button';
+import Button from 'components/Button';
 import Text from 'components/Text';
 
 import miner1 from './miner1.png';
@@ -26,6 +26,12 @@ const Miner = () => (
       <Text fontSize={2} color="black">
         <FormattedMessage id="home.miner.subheading" />
       </Text>
+
+      <Flex align="flex-end" column wrap mt={[7, 8, 10]}>
+        <Button to="skyminer" color="base" pill outlined>
+          <FormattedMessage id="home.miner.more" />
+        </Button>
+      </Flex>
 
       <Box my={[7, 8, 10]}>
         <Gallery imgMain={miner1} imgList={miners} />
