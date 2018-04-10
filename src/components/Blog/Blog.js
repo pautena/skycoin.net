@@ -91,13 +91,12 @@ class News extends PureComponent {
       posts: [],
       loaded: false,
     };
-    // this.rss = 'https://www.skycoin.net/blog/index.xml';
-    // TODO: remove blog.xml from /public when finished testing
-    this.rss = 'blog.xml';
   }
 
   componentDidMount() {
-    axios.get(this.rss)
+    const rss = this.props.rss || '/index.xml';
+
+    axios.get(rss)
       .then((response) => {
         const parser = new DOMParser();
         const xml = parser.parseFromString(response.data, 'text/xml');
@@ -145,5 +144,8 @@ class News extends PureComponent {
   }
 }
 
+News.propTypes = {
+  rss: PropTypes.string.isRequired,
+};
 
 export default News;
