@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default {
   header: {
     navigation: {
@@ -418,3 +419,5 @@ export default {
     },
   },
 };
+
+/* eslint-enable max-len */

@@ -71,7 +71,8 @@ const Footer = ({ isLanding }) => (
             color="gray.8"
             my={0}
             heavy
-            textAlign={['center', 'center', 'right']} >
+            textAlign={['center', 'center', 'right']}
+          >
             <Languages />
           </Text>
         </Box>
