@@ -135,9 +135,9 @@ export const en = {
 };
 
 export const zh = {
-  title: 'Meet the Team',
-  subtitle: 'ARCHITECTS OF THE NEW INTERNET',
-  quote: '"These are the architects of the new internet, the most advanced blockchain application platform in the world. We trust them, and they will deliver." - Synth',
+  title: '团队简介',
+  subtitle: '新互联网的架构师',
+  quote: '“这些是全球最先进的区块链应用平台 - 新互联网的架构师，我们相信他们，我们将会被拯救。” - Synth',
   description: 'Bios of the Skycoin team',
   readBio: 'Read BIO',
   hide: 'Hide',
@@ -147,28 +147,28 @@ export const zh = {
     paragraph: 'You may have noticed that some members of Skycoin share their full name and others do not. At Skycoin, we believe in every individual’s right to privacy on the internet. And we walk the walk for both our users and our team. While professional vetting happens on the internal level, no team member is required to give up personal information publicly that they don’t wish to share.',
   },
   founders: {
-    title: 'Founders',
+    title: '创始人',
     bios: [
       {
         name: 'Synth',
         email: '',
         picture: 'synth.png',
         title: '',
-        bio: 'Synth, one of the earliest contributors behind Bitcoin, started Skycoin 8 years ago with a vision of creating a new, decentralized Internet. He sits on the advisory boards of several cryptocurrency projects. Synth has a background in mathematics, distributed systems, and symbolic logic.',
+        bio: '创始人 Synth是比特币最早的开发者之一。8年前创办了skycoin，以期创造一个崭新的去中心 化的网络。目前为数个加密货币项目担任顾问。Synth有数学、分布式系统和符号逻辑学背景。',
       },
       {
         name: 'Houwu Chen',
         email: '',
         picture: '',
         title: '',
-        bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a PHD at Tsinghua University.',
+        bio: '创始人 Houwu是以太坊的开发者之一，也是Skycoin分布式网络及加密货币的中心共识协 议Oblelisk白皮书的作者。他曾在清华大学攻读博士学位。    ',
       },
       {
         name: 'Steve Leonard',
         email: 'tokenc@skycoin.net',
         picture: '',
         title: '',
-        bio: 'Steve wrote most of the original Skycoin software. Prior to Skycoin, he developed several popular enterprise eCommerce backends. His background includes software development, mathematics, and chemistry.',
+        bio: '创始人 Steve编写了Skycoin多数初始软件。在Skycoin之前，他创建了几个广为流行的商务电子 后端。他具有函数编程、化学和数学背景。',
       },
     ],
   },
