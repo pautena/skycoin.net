@@ -74,6 +74,10 @@ export default {
     buy: '购买天空币',
     wallet: '下载钱包',
   },
+  newsletter: {
+    heading: 'Sign up to receive updates',
+    button: 'Sign up',
+  },
   markets: {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
@@ -85,7 +89,7 @@ export default {
     title: 'Skycoin - Blockchain Internet',
     description: '天空币的设计是用来实现中本聪对比特币的原初规划，并解决比特币的现存问题。',
     banner: {
-      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
+      heading: '4์10෭ࣁӤၹԈېॠᑮ᱾ኞாᔮᕹݎ૲տ',
       button: 'Read more',
     },
     hero: {
@@ -161,6 +165,7 @@ export default {
       heading: 'Explore Skyminer | zh',
       subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. | zh',
       link: 'Become a node | zh',
+      more: 'Learn more',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | zh',
@@ -405,6 +410,10 @@ export default {
     },
     gallery: {
       heading: 'Gallery',
+    },
+    signup: {
+      heading: 'Join the Waitlist to be Able to Buy a Skyminer',
+      body: 'Receive updates about the Skyminer and get notified as soon as Skyminers are available for purchase.',
     },
   },
 };
