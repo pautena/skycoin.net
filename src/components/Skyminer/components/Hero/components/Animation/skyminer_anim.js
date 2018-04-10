@@ -1,6 +1,8 @@
 // Code below is generated automatically
 /* eslint-disable */
 
+import * as createjs from 'createjs-module';
+
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
@@ -2431,7 +2433,7 @@ p.nominalBounds = new cjs.Rectangle(125,0,9.8,9.8);
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(1568.2,390.2,1123.9,749.5);
 
-})(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
+})(lib = lib||{}, images = images||{}, createjs, ss = ss||{});
 var lib, images, ss;
 
 export { lib, images, ss };

@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "createjs-collection": "^0.8.2-1",
+    "createjs-module": "^0.8.3",
     "disable-scroll": "^0.4.0",
     "flag": "^2.0.2",
     "flat": "^2.0.1",

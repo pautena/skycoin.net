@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { rgba } from 'polished';
 import { COLOR } from 'config';
 import media from 'utils/media';
+import * as createjs from 'createjs-module';
 
 import { lib } from './skyminer_anim';
 
