@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 import Button from 'components/Button';
@@ -86,6 +87,55 @@ const Input = styled.input`
   }
 `;
 
+const Checkbox = styled.input.attrs({
+  type: 'checkbox',
+})``;
+
+const Label = styled.label`
+  font-family: ${FONT_FAMILIES.sans};
+  font-size: ${rem(FONT_SIZES[2])};
+  color: ${COLOR.white};
+`;
+
+
+const OptionRow = styled.div`
+  position: relative;
+  margin-top: ${rem(SPACE[4])};
+  
+  ${Checkbox} {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  ${Label} {
+    padding-left: 32px;
+  
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background: ${COLOR.white};
+    }  
+  }
+  
+  ${Checkbox}:checked ~ ${Label} {
+    &::after {
+      content: '\\2713';
+      display: block;
+      position: absolute;
+      width: 20px;
+      top: 0;
+      font-size: 18px;
+      line-height: 20px;
+      color: ${COLOR.base};
+      text-align: center;
+    }  
+  }
+`;
+
 const Form = styled.form`
   width: 100%;
 `;
@@ -102,6 +152,7 @@ class SignUpForm extends PureComponent {
   }
 
   render() {
+    const { skyminerOption } = this.props;
     /* eslint-disable max-len */
     return (
       <Wrapper>
@@ -118,6 +169,14 @@ class SignUpForm extends PureComponent {
           <div className="mc-field-group">
             <Input placeholder="Enter Your Email" type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
           </div>
+          {skyminerOption &&
+            <OptionRow className="mc-field-group input-group">
+              <Checkbox value="1" name="group[1057][1]" id="mce-group[1057]-1057-0" />
+              <Label htmlFor="mce-group[1057]-1057-0" checked>
+                <FormattedMessage id="newsletter.skyminerOption" />
+              </Label>
+            </OptionRow>
+          }
           <div id="mce-responses" className="clear">
             <div className="response" id="mce-error-response" style={{ display: 'none' }} />
             <div className="response" id="mce-success-response" style={{ display: 'none' }} />
@@ -135,5 +194,13 @@ class SignUpForm extends PureComponent {
     /* eslint-enable max-len */
   }
 }
+
+SignUpForm.propTypes = {
+  skyminerOption: PropTypes.bool,
+};
+
+SignUpForm.defaultProps = {
+  skyminerOption: false,
+};
 
 export default SignUpForm;

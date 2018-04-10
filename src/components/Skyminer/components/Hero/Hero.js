@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
 import Container from 'components/Container';
@@ -7,15 +7,14 @@ import Header from 'components/Header';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
 import media from 'utils/media';
+import { COLOR } from 'config';
 import Animation from './components/Animation';
-
-import bg from './bg.png';
 
 const Wrapper = styled(Flex)`
   position: relative;
   height: auto;
   box-sizing: border-box;
-  background: url(${bg}) center center no-repeat;
+  background: ${COLOR.dark};
   background-size: cover;
   overflow: hidden;
 
@@ -25,7 +24,13 @@ const Wrapper = styled(Flex)`
 `;
 
 const Intro = styled(Flex)`
+  position: relative;
   flex-grow: 1;
+  z-index: 1;
+  
+  ${media.sm.css`
+    max-width: 25rem;
+  `}
 `;
 
 const MinerHero = () => (
@@ -35,7 +40,7 @@ const MinerHero = () => (
     <Intro align="center">
       <Container>
         <Heading heavy as="h1" fontSize={[7, 9]} color="white">
-          <FormattedHTMLMessage id="skyminer.hero.heading" />
+          <FormattedMessage id="skyminer.hero.heading" />
         </Heading>
 
         <Button to="downloads" color="white" bg="base" xxl width={['100%', '260px']} pill mt={5} >

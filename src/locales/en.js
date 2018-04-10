@@ -78,6 +78,7 @@ export default {
   newsletter: {
     heading: 'Sign up to receive updates',
     button: 'Sign up',
+    skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
     title: 'Buy Skycoin',
@@ -166,6 +167,7 @@ export default {
       heading: 'Explore Skyminer',
       subheading: 'The Skycoin Skyminer is meticulously designed and configured to provide a rock-solid telecom backbone for the Skywire infrastructure. The custom-built hardware is focused on delivering maximum security, efficiency and performance to the software-defined network. The multi-board architecture enables each node to support an independent service on Skywire. By isolating the nodes, each service can safely operate independently of attacks on peripheral services. These service-providing nodes are managed by an OpenWRT router with strict packet forwarding and access control rules for additional security. Skyminers are paid in Coin Hours for providing services and security to the Skywire network.',
       link: 'Become a node',
+      more: 'Learn more',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018',
@@ -392,7 +394,7 @@ export default {
     title: 'Explore Skyminer',
     description: 'Skywire Miner: hardware for the new internet',
     hero: {
-      heading: 'Skywire Miner: <br>hardware for the new internet',
+      heading: 'Skywire Miner: hardware for the new internet',
       button: 'JOIN THE WAIT LIST',
     },
     about: {
@@ -416,6 +418,10 @@ export default {
     },
     gallery: {
       heading: 'Gallery',
+    },
+    signup: {
+      heading: 'Join the Waitlist to be Able to Buy a Skyminer',
+      body: 'Receive updates about the Skyminer and get notified as soon as Skyminers are available for purchase.',
     },
   },
 };
