@@ -2432,7 +2432,7 @@ p.nominalBounds = new cjs.Rectangle(125,0,9.8,9.8);
 p.nominalBounds = new cjs.Rectangle(1568.2,390.2,1123.9,749.5);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
-// var lib, images, createjs, ss;
+var lib, images, ss;
 
-export { lib, images, createjs, ss };
+export { lib, images, ss };
 

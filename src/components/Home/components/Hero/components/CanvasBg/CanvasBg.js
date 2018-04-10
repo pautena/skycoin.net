@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { rgba } from 'polished';
 import { COLOR } from 'config';
 import media from 'utils/media';
+import { lib } from './anim_vector_dark';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -27,20 +28,59 @@ const Overlay = styled.div`
 
 class CanvasBg extends React.Component {
   componentDidMount() {
-    const waitForAnimationInit = () => {
-      if (window.initialized) {
-        window.startAnimation();
-      } else {
-        setTimeout(() => {
-          waitForAnimationInit();
-        }, 500);
-      }
-    };
-
-    waitForAnimationInit();
+    /* eslint-disable */
+    this.canvas = document.getElementById("bgCanvas");
+    createjs.MotionGuidePlugin.install();
+    this.handleComplete();
+    
+    /* eslint-enable */
   }
   shouldComponentUpdate() {
     return false;
+  }
+  handleComplete() {
+    /* eslint-disable */
+    //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+    var exportRoot = new lib.anim_vector_dark();
+    var stage = new createjs.Stage(this.canvas);
+    stage.addChild(exportRoot);
+    //Registers the "tick" event listener.
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+    //Code to support hidpi screens and responsive scaling.
+    (function (canvas, isResp, respDim, isScale, scaleType) {
+      var lastW, lastH, lastS = 1;
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      function resizeCanvas() {
+        var w = lib.properties.width, h = lib.properties.height;
+        var iw = window.innerWidth, ih = window.innerHeight;
+        var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+        if (isResp) {
+          if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+            sRatio = lastS;
+          }
+          else if (!isScale) {
+            if (iw < w || ih < h)
+              sRatio = Math.min(xRatio, yRatio);
+          }
+          else if (scaleType == 1) {
+            sRatio = Math.min(xRatio, yRatio);
+          }
+          else if (scaleType == 2) {
+            sRatio = Math.max(xRatio, yRatio);
+          }
+        }
+        canvas.width = w * pRatio * sRatio;
+        canvas.height = h * pRatio * sRatio;
+        canvas.style.width = w * sRatio + 'px';
+        canvas.style.height = h * sRatio + 'px';
+        stage.scaleX = pRatio * sRatio;
+        stage.scaleY = pRatio * sRatio;
+        lastW = iw; lastH = ih; lastS = sRatio;
+      }
+    })(this.canvas, false, 'both', false, 1);
+    /* eslint-enable */
   }
   render() {
     return (
