@@ -27,7 +27,9 @@ const Intro = styled(Flex)`
   position: relative;
   flex-grow: 1;
   z-index: 1;
-  
+`;
+
+const IntroContent = styled.div`
   ${media.sm.css`
     max-width: 25rem;
   `}
@@ -39,13 +41,15 @@ const MinerHero = () => (
     <Header white social showBuy={false} />
     <Intro align="center">
       <Container>
-        <Heading heavy as="h1" fontSize={[7, 9]} color="white">
-          <FormattedMessage id="skyminer.hero.heading" />
-        </Heading>
+        <IntroContent>
+          <Heading heavy as="h1" fontSize={[7, 9]} color="white">
+            <FormattedMessage id="skyminer.hero.heading" />
+          </Heading>
 
-        <Button to="downloads" color="white" bg="base" xxl width={['100%', '260px']} pill mt={5} >
-          <FormattedMessage id="skyminer.hero.button" />
-        </Button>
+          <Button to="downloads" color="white" bg="base" xxl width={['100%', '260px']} pill mt={5} >
+            <FormattedMessage id="skyminer.hero.button" />
+          </Button>
+        </IntroContent>
       </Container>
     </Intro>
   </Wrapper>
