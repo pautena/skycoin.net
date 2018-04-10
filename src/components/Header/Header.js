@@ -12,9 +12,11 @@ import Logo from 'components/Logo';
 import { SPACE, COLORS } from 'config';
 
 const Wrapper = styled.div`
+  position: relative;
   padding: ${rem(SPACE[7])} 0;
   width: 100%;
-  border-bottom: ${props => (props.border ? `2px solid ${COLORS.gray[1]}` : 'none')}
+  border-bottom: ${props => (props.border ? `2px solid ${COLORS.gray[1]}` : 'none')};
+  z-index: 2;
   
   ${media.sm.css`
     padding: ${rem(SPACE[6])} 0;

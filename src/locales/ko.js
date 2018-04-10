@@ -165,6 +165,7 @@ export default {
       heading: 'Explore Skyminer | ko',
       subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. | ko',
       link: 'Become a node | ko',
+      more: 'Learn more',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ko',
@@ -413,6 +414,10 @@ export default {
     },
     gallery: {
       heading: 'Gallery',
+    },
+    signup: {
+      heading: 'Join the Waitlist to be Able to Buy a Skyminer',
+      body: 'Receive updates about the Skyminer and get notified as soon as Skyminers are available for purchase.',
     },
   },
 };
