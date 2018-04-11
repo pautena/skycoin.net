@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
-import moment from 'moment';
 import momentPropTypes from 'react-moment-proptypes';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -11,6 +9,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Link from 'components/Link';
+import Blog from 'components/Blog';
 
 import { COLOR, BOX_SHADOWS, BORDER_RADIUS, FONT_SIZES } from 'config';
 
@@ -92,46 +91,12 @@ NewsItem.propTypes = {
 };
 
 class News extends PureComponent {
-  constructor(props) {
+  constructor({ locale }) {
     super();
 
-    this.state = {
-      posts: [],
-      loaded: false,
-    };
-    // this.rss = 'blog.xml';
-    this.rss = props.locale !== DEFAULT_LOCALE ? `https://www.skycoin.net/blog/${props.locale}/index.xml` : 'https://www.skycoin.net/blog/index.xml';
-  }
-
-  componentDidMount() {
-    axios.get(this.rss)
-      .then((response) => {
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(response.data, 'text/xml');
-        const items = xml.getElementsByTagName('item');
-
-        return Array.prototype.slice.call(items, 0, 3);
-      })
-      .then((items) => {
-        const posts = [];
-        items.forEach((item) => {
-          const dt = new Date(item.getElementsByTagName('pubDate')[0].textContent);
-          const date = moment(dt).locale('en');
-          const enclosure = item.getElementsByTagName('enclosure');
-          const image = enclosure.length ? enclosure[0].getAttribute('url') : '';
-          posts.push({
-            title: item.getElementsByTagName('title')[0].textContent,
-            href: item.getElementsByTagName('link')[0].textContent,
-            image,
-            date,
-          });
-        });
-
-        this.setState({
-          posts,
-          loaded: true,
-        });
-      });
+    this.rss = locale !== DEFAULT_LOCALE
+    ? `https://www.skycoin.net/blog/${locale}/index.xml`
+    : 'https://www.skycoin.net/blog/index.xml';
   }
 
   render() {
@@ -141,17 +106,7 @@ class News extends PureComponent {
           <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} width={[1, 2 / 3]}>
             <FormattedMessage id="home.news.heading" />
           </Heading>
-          {this.state.loaded &&
-          <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-3]}>
-            {this.state.posts.map((p, i) => (
-              <NewsItem
-                title={p.title}
-                date={p.date}
-                href={p.href}
-                image={p.image}
-                key={i}
-              />))}
-          </Flex>}
+          <Blog rss={this.rss} />
         </Container>
       </Wrapper>
     );
