@@ -171,12 +171,25 @@ export default {
     whitepapers: {
       heading: '下载天空链 Consensus白皮书',
       download: '下载',
+      skywireWhitepaper: 'Skywire白皮书 - 即将推出',
+      skycoinWhitepaper: '天空链白皮书',
+      skycoinWhitepaperV32: 'Skycoin whitepaper V3.2中文版',
+      cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
+      skyFramework: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
+      skyHashConsensus: 'SkyHash: an Opinion Dynamics Model for Hash Consensus over P2P network',
+      skyHash: 'SkyHash: a Hash Opinion Dynamics Model',
+      sznajd2: 'Sznajd2: a Community-aware Opinion Dynamics Model',
+      distributedAlgorithm: 'A Distributed Consensus Algorithm for Cryptocurrency Networks',
     },
     assets: {
       heading: '下载天空链品牌指南',
+      guidelines: '天空链品牌指南[pdf]',
+      logo: '天空链 Logo PNGs链',
+      font: '天空链 Sans字体',
     },
     skywire: {
       heading: 'Skywire',
+      minerAssemblyManual: 'Skywire矿工装配手册[pdf]',
     },
     roadmap: {
       heading: 'Roadmap',
