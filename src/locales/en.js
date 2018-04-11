@@ -78,6 +78,7 @@ export default {
   newsletter: {
     heading: 'Sign up to receive updates',
     button: 'Sign up',
+    input: 'Enter Your Email',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
@@ -298,12 +299,25 @@ export default {
     whitepapers: {
       heading: 'Download Skycoin Consensus Whitepapers',
       download: 'Download',
+      skywireWhitepaper: 'Skywire whitepaper — coming soon',
+      skycoinWhitepaper: 'Skycoin whitepaper',
+      skycoinWhitepaperV32: 'Skycoin whitepaper V3.2中文版',
+      cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
+      skyFramework: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
+      skyHashConsensus: 'SkyHash: an Opinion Dynamics Model for Hash Consensus over P2P network',
+      skyHash: 'SkyHash: a Hash Opinion Dynamics Model',
+      sznajd2: 'Sznajd2: a Community-aware Opinion Dynamics Model',
+      distributedAlgorithm: 'A Distributed Consensus Algorithm for Cryptocurrency Networks',
     },
     assets: {
       heading: 'Download Skycoin Branding Guide',
+      guidelines: 'Skycoin Brand Guidelines [pdf]',
+      logo: 'Skycoin Logo PNGs',
+      font: 'Skycoin Sans font',
     },
     skywire: {
       heading: 'Skywire',
+      minerAssemblyManual: 'Skywire Miner Assembly Manual [pdf]',
     },
     roadmap: {
       heading: 'Roadmap',

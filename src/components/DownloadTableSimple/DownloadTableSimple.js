@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 import Link from 'components/Link';
 import { TableWrapper } from 'components/Table';
@@ -60,7 +61,7 @@ const DownloadTableSimple = ({ list }) => (
           <tr key={i}>
             <td>
               <Link target="_blank" href={download}>
-                {name}
+                <FormattedMessage id={name} />
               </Link>
             </td>
           </tr>

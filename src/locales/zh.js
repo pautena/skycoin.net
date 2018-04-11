@@ -29,6 +29,7 @@ export default {
   newsletter: {
     heading: '注册接收天空链团队的更新',
     button: ' 注册',
+    input: '输入你的邮件',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
@@ -66,7 +67,7 @@ export default {
       heading: '探索天空挖矿机',
       subheading: '天空链 天空挖矿机经过精心设计和配置，为Skywire基础设施提供坚如磐石的电信基础网络。定制的硬件专注于为软件定义的网络提供最高的安全性，效率和性能。多板架构使每个节点都可以在Skywire上支持独立的服务。通过隔离节点，每个服务都可以独立于外围服务攻击而安全运行。这些服务提供节点由OpenWRT路由器管理，具有严格的数据包转发和访问控制规则以提高安全性。 天空挖矿机在币时中为Skywire网络提供服务和安全。',
       link: 'Become a node',
-      more: 'Learn more',
+      more: '了解更多',
     },
     press: {
       heading: '2018年，天空链被选为前5大加密项目',
@@ -129,11 +130,11 @@ export default {
       },
       skyMessenger: {
         title: 'SkyMessenger',
-        text: 'Our fully encrypted messenger service, free from prying eyes or bad actors.',
+        text: '我们完全加密的信使服务，免于窥探和混进者。',
       },
       bbs: {
         title: 'BBS',
-        text: 'The framework for building distributed social network services.',
+        text: '构建分布式社交网络服务的框架。',
       },
     },
     news: {
@@ -171,12 +172,25 @@ export default {
     whitepapers: {
       heading: '下载天空链 Consensus白皮书',
       download: '下载',
+      skywireWhitepaper: 'Skywire白皮书 - 即将推出',
+      skycoinWhitepaper: '天空链白皮书',
+      skycoinWhitepaperV32: 'Skycoin whitepaper V3.2中文版',
+      cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
+      skyFramework: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
+      skyHashConsensus: 'SkyHash: an Opinion Dynamics Model for Hash Consensus over P2P network',
+      skyHash: 'SkyHash: a Hash Opinion Dynamics Model',
+      sznajd2: 'Sznajd2: a Community-aware Opinion Dynamics Model',
+      distributedAlgorithm: 'A Distributed Consensus Algorithm for Cryptocurrency Networks',
     },
     assets: {
       heading: '下载天空链品牌指南',
+      guidelines: '天空链品牌指南[pdf]',
+      logo: '天空链 Logo PNGs链',
+      font: '天空链 Sans字体',
     },
     skywire: {
       heading: 'Skywire',
+      minerAssemblyManual: 'Skywire矿工装配手册[pdf]',
     },
     roadmap: {
       heading: 'Roadmap',
@@ -209,8 +223,8 @@ export default {
       cx: 'CX',
       obelisk: 'Obelisk',
       coinJoin: '合币',
-      skyminer: 'Skyminer',
-      node: 'Node',
+      skyminer: '天空矿机',
+      node: '节点',
       cxo: 'CXO',
       bbs: 'BBS',
       skyMessenger: 'SkyMessenger',
