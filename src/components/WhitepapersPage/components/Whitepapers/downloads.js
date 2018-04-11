@@ -6,8 +6,8 @@ export default [{
   filetype: '.pdf',
   filesize: '1.8mb',
 }, {
-  name: 'Skycoin whitepaper V3.1中文版',
-  download: 'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-V3.1%E4%B8%AD%E6%96%87%E7%89%88.pdf',
+  name: 'Skycoin whitepaper V3.2中文版',
+  download: 'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-V3.2%E4%B8%AD%E6%96%87%E7%89%88.pdf',
   filetype: '.pdf',
   filesize: '3.9mb',
 }, {
