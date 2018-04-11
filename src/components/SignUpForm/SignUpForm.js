@@ -87,53 +87,8 @@ const Input = styled.input`
   }
 `;
 
-const Checkbox = styled.input.attrs({
-  type: 'checkbox',
-})``;
-
-const Label = styled.label`
-  font-family: ${FONT_FAMILIES.sans};
-  font-size: ${rem(FONT_SIZES[2])};
-  color: ${COLOR.white};
-`;
-
-
 const OptionRow = styled.div`
-  position: relative;
-  margin-top: ${rem(SPACE[4])};
-  
-  ${Checkbox} {
-    position: absolute;
-    opacity: 0;
-  }
-  
-  ${Label} {
-    padding-left: 32px;
-  
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
-      background: ${COLOR.white};
-    }  
-  }
-  
-  ${Checkbox}:checked ~ ${Label} {
-    &::after {
-      content: '\\2713';
-      display: block;
-      position: absolute;
-      width: 20px;
-      top: 0;
-      font-size: 18px;
-      line-height: 20px;
-      color: ${COLOR.base};
-      text-align: center;
-    }  
-  }
+  display:none;
 `;
 
 const Form = styled.form`
@@ -171,10 +126,10 @@ class SignUpForm extends PureComponent {
           </div>
           {skyminerOption &&
             <OptionRow className="mc-field-group input-group">
-              <Checkbox value="1" name="group[1057][1]" id="mce-group[1057]-1057-0" />
-              <Label htmlFor="mce-group[1057]-1057-0" checked>
+              <input type="checkbox" value="1" name="group[1057][1]" id="mce-group[1057]-1057-0" checked aria-hidden="true" />
+              <label htmlFor="mce-group[1057]-1057-0">
                 <FormattedMessage id="newsletter.skyminerOption" />
-              </Label>
+              </label>
             </OptionRow>
           }
           <div id="mce-responses" className="clear">
