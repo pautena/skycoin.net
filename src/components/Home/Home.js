@@ -7,7 +7,6 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import { COLOR } from 'config';
 
-import Banner from './components/Banner';
 import Hero from './components/Hero';
 import Network from './components/Network';
 import Miner from './components/Miner';
@@ -31,8 +30,6 @@ const Home = ({ intl }) => (
         content={intl.formatMessage({ id: 'home.description' })}
       />
     </Helmet>
-
-    <Banner />
     <HeaderWrapper>
       <Header white social showBuy={false} />
     </HeaderWrapper>
