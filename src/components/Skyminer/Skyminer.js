@@ -23,7 +23,7 @@ const Ecosystem = ({ intl }) => (
 
     <Hero />
     <About />
-    <News />
+    <News locale={intl.locale} />
     <Video />
     <Gallery />
     <Newsletter />
