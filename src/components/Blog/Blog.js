@@ -22,7 +22,6 @@ const ImageContainer = styled.div`
   padding-top: 65%;
   border-radius: ${BORDER_RADIUS.base} ${BORDER_RADIUS.base} 0 0;
   overflow: hidden;
-  
 `;
 
 const Image = styled.img`
@@ -66,7 +65,9 @@ const NewsItem = ({ title, date, href, image }) => (
           {image ? <Image src={image} /> : <Image src={placeholder} />}
         </ImageContainer>
         <Box px={7} pb={10} pt={6}>
-          <Date color={COLOR.textLight} fontSize={2}>{date.format('MMMM DD, YYYY')}</Date>
+          <Date color={COLOR.textLight} fontSize={2}>
+            {date.format('MMMM DD, YYYY')}
+          </Date>
           <StyledHeading as="h4" mb={1} fontSize={4}>
             {title}
           </StyledHeading>
@@ -94,7 +95,8 @@ class News extends PureComponent {
   }
 
   componentDidMount() {
-    const rss = this.props.rss || '/index.xml';
+    const isLocal = window.location.hostname === 'localhost';
+    const rss = isLocal ? 'blog.xml' : this.props.rss;
 
     axios.get(rss)
       .then((response) => {
@@ -146,6 +148,10 @@ class News extends PureComponent {
 
 News.propTypes = {
   rss: PropTypes.string.isRequired,
+};
+
+News.defaultProps = {
+  rss: 'https://www.skycoin.net/blog/index.xml',
 };
 
 export default News;
