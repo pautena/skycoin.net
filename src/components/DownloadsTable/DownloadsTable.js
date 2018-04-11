@@ -81,7 +81,9 @@ const DownladsTable = ({ title, list, id }) => (
           <tbody>
             {list.map(({ name, download, filetype, filesize }, i) => (
               <tr key={i}>
-                <td>{name}</td>
+                <td>
+                  <FormattedMessage id={name} />
+                </td>
 
                 <FixedTd>
                   {filesize && <Text as="span" color="gray.7" heavy>

@@ -1,7 +1,7 @@
 export default [{
-  name: 'Find the latest binaries on Github.',
+  name: 'downloads.bbs.githublink',
   download: 'https://github.com/skycoin/bbs/releases',
 }, {
-  name: 'Access a BBS thin client.',
+  name: 'downloads.bbs.thinclient',
   download: 'http://bbs.skycoin.net/',
 }];
