@@ -29,6 +29,7 @@ export default {
   newsletter: {
     heading: '注册接收天空链团队的更新',
     button: ' 注册',
+    input: '输入你的邮件',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
