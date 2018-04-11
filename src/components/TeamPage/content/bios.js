@@ -139,7 +139,7 @@ export const zh = {
   subtitle: '新互联网的架构师',
   quote: '“这些是全球最先进的区块链应用平台 - 新互联网的架构师，我们相信他们，我们将会被拯救。” - Synth',
   description: 'Bios of the Skycoin team',
-  readBio: 'Read BIO',
+  readBio: '个人档案',
   hide: 'Hide',
   heading: '',
   anonymous: {
