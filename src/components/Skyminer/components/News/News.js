@@ -21,7 +21,7 @@ const SkyminerNews = () => (
       <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} width={[1, 2 / 3]}>
         <FormattedMessage id="home.news.heading" />
       </Heading>
-      <Blog rss="/categories/skyminer/index.xml" />
+      <Blog rss="https://www.skycoin.net/blog/categories/skyminer/index.xml" />
     </Container>
   </Wrapper>
 );
