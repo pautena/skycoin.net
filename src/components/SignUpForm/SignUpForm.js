@@ -122,7 +122,9 @@ class SignUpForm extends PureComponent {
           noValidate
         >
           <div className="mc-field-group">
-            <Input placeholder="Enter Your Email" type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
+            <FormattedMessage id="newsletter.input">
+              {message => <Input placeholder={message} type="email" name="EMAIL" className="required email" id="mce-EMAIL" />}
+            </FormattedMessage>
           </div>
           {skyminerOption &&
             <OptionRow className="mc-field-group input-group">

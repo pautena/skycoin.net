@@ -77,6 +77,8 @@ export default {
   newsletter: {
     heading: 'Sign up to receive updates',
     button: 'Sign up',
+    input: 'Enter Your Email',
+    skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
     title: 'Buy Skycoin',
