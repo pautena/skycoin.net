@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 import { rem, rgba } from 'polished';
 import { withRouter, matchPath } from 'react-router-dom';
 import disableScroll from 'disable-scroll';
-import { injectIntl } from 'react-intl';
 
 import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
 import Link from 'components/Link';
