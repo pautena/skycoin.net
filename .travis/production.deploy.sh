@@ -14,5 +14,6 @@ aws s3 cp s3://www.skycoin.net/buy/index.html s3://www.skycoin.net/buy/index.htm
 aws s3 cp s3://www.skycoin.net/downloads/index.html s3://www.skycoin.net/downloads/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
 aws s3 cp s3://www.skycoin.net/ecosystem/index.html s3://www.skycoin.net/ecosystem/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
 aws s3 cp s3://www.skycoin.net/team/index.html s3://www.skycoin.net/team/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
+aws s3 cp s3://www.skycoin.net/skyminer/index.html s3://www.skycoin.net/skyminer/index.html --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html --acl public-read
 echo "done."
 
