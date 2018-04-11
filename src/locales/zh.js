@@ -129,11 +129,11 @@ export default {
       },
       skyMessenger: {
         title: 'SkyMessenger',
-        text: 'Our fully encrypted messenger service, free from prying eyes or bad actors.',
+        text: '我们完全加密的信使服务，免于窥探和混进者。',
       },
       bbs: {
         title: 'BBS',
-        text: 'The framework for building distributed social network services.',
+        text: '构建分布式社交网络服务的框架。',
       },
     },
     news: {
