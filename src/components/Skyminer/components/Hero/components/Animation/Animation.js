@@ -5,10 +5,11 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 import * as createjs from 'createjs-module';
 
-import { lib } from './skyminer_anim';
+import { lib } from './skyminer_animation';
 
 const Wrapper = styled.div`
   position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   max-height: 100%;

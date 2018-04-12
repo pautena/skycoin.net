@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -40,8 +41,8 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const Newsletter = () => (
-  <Wrapper>
+const Newsletter = ({ setRef }) => (
+  <Wrapper ref={c => setRef(c)}>
     <Container>
       <StyledBox width={[1, 1, 3 / 5]} py={[10, 13]}>
         <Heading heavy as="h2" mb={[4, 6]} fontSize={[5, 6, 7]} color="white">
@@ -57,5 +58,9 @@ const Newsletter = () => (
     </Container>
   </Wrapper>
 );
+
+Newsletter.propTypes = {
+  setRef: PropTypes.func.isRequired,
+};
 
 export default Newsletter;
