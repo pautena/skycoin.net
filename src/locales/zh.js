@@ -38,6 +38,7 @@ export default {
     description: 'Buy Skycoin',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
+    video: '如何从 Skycoin.net直接购买天空币',
   },
   home: {
     title: 'Skycoin - Blockchain Internet',

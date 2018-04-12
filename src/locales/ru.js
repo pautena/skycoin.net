@@ -86,6 +86,7 @@ export default {
     description: 'List of Skycoin markets',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
+    video: 'How To Buy Skycoin Direct From Skycoin.net',
   },
   home: {
     title: 'Skycoin - третье поколение криптовалюты',
