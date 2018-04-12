@@ -276,7 +276,9 @@ export default {
     },
     video: {
       heading1: 'What Is A Skycoin Skyminer?',
-      heading2: 'The Power of Skyminer And The Scalability Of The Platform',
+      heading2: 'Introducing The Skycoin Skyminer',
+      heading3: 'Unboxing the Skyminer',
+      more: 'Watch more videos',
     },
     gallery: {
       heading: 'Gallery',

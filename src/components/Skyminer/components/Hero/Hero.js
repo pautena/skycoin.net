@@ -1,7 +1,8 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import PropTypes from 'prop-types';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
-import { Flex } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
 import Header from 'components/Header';
 import Heading from 'components/Heading';
@@ -29,24 +30,27 @@ const Intro = styled(Flex)`
   z-index: 1;
 `;
 
-const IntroContent = styled.div`
+const IntroContent = styled(Box)`
+  position: relative;
+  z-index: 1;
+  
   ${media.sm.css`
     max-width: 25rem;
   `}
 `;
 
-const MinerHero = () => (
-  <Wrapper pb={[8, 12]} column>
-    <Animation />
+const MinerHero = ({ onClick }) => (
+  <Wrapper column>
     <Header white social showBuy={false} />
     <Intro align="center">
+      <Animation />
       <Container>
-        <IntroContent>
+        <IntroContent pb={[8, 12]}>
           <Heading heavy as="h1" fontSize={[7, 9]} color="white">
-            <FormattedMessage id="skyminer.hero.heading" />
+            <FormattedHTMLMessage id="skyminer.hero.heading" />
           </Heading>
 
-          <Button to="downloads" color="white" bg="base" xxl width={['100%', '260px']} pill mt={5} >
+          <Button color="white" bg="base" xxl width={['100%', '260px']} pill mt={5} onClick={onClick}>
             <FormattedMessage id="skyminer.hero.button" />
           </Button>
         </IntroContent>
@@ -54,5 +58,9 @@ const MinerHero = () => (
     </Intro>
   </Wrapper>
 );
+
+MinerHero.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default MinerHero;
