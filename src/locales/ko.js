@@ -86,6 +86,7 @@ export default {
     description: 'List of Skycoin markets',
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',
+    video: 'How To Buy Skycoin Direct From Skycoin.net',
   },
   home: {
     title: '스카이코인 - 제 3세대 암호화폐',

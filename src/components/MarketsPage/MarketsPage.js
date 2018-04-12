@@ -6,7 +6,9 @@ import { Helmet } from 'react-helmet';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import $ from 'jquery';
 import { SPACE, COLOR } from 'config';
+import YouTube from 'react-youtube';
 
+import media from 'utils/media';
 import Heading from 'components/Heading';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -24,7 +26,6 @@ const Title = styled.div`
 
 const CryptowolfWrapper = styled.div`
   width: 100%;
-  min-height: ${rem(400)};
 `;
 
 const LoadingMessage = styled.div`
@@ -43,6 +44,40 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   width: 30px;
 `;
+
+const VideoWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  padding-bottom: 25px;
+  height: 0;
+  margin-top: ${rem(SPACE[6])};
+  margin-bottom: ${rem(SPACE[10])};
+  
+  ${media.sm.css` 
+    margin-top: ${rem(SPACE[8])};
+    margin-bottom: ${rem(SPACE[13])};
+  `}
+  
+  & > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  iframe {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+const videoId = 'Ymh6m5B8hcA';
 
 class MarketsPage extends PureComponent {
   componentDidMount() {
@@ -81,6 +116,14 @@ class MarketsPage extends PureComponent {
             </LoadingMessage>
           </CryptowolfWrapper>
         </Wrap>
+
+        <Heading heavy as="h2" fontSize={[6, 7]} color="black" mt={[20, 100]}>
+          <FormattedMessage id="markets.video" />
+        </Heading>
+        <VideoWrapper>
+          <YouTube videoId={videoId} />
+        </VideoWrapper>
+
       </Container>
       <Footer />
     </div>);
