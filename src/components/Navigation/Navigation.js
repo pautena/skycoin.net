@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 import { rem, rgba } from 'polished';
 import { withRouter, matchPath } from 'react-router-dom';
 import disableScroll from 'disable-scroll';
@@ -272,8 +272,10 @@ class Navigation extends React.PureComponent {
   }
 
   render() {
-    const { white, social, showBuy, showNav, isMobile, socialWhite } = this.props;
+    const { white, social, showBuy, showNav, isMobile, socialWhite, intl } = this.props;
     const { menuVisible } = this.state;
+    const linkSuffix = intl.locale !== intl.defaultLocale ? intl.locale : '';
+
     return (
       <NavWrapper isMobile={isMobile}>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
@@ -284,7 +286,7 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
               <GroupWrapper isMobile={isMobile} show>
-                <StyledLink white={white} isMobile={isMobile} href="https://www.skycoin.net/blog">
+                <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
                   <FormattedMessage id="header.navigation.blog" />
                 </StyledLink>
 
@@ -340,6 +342,9 @@ Navigation.propTypes = {
   showNav: PropTypes.bool,
   isMobile: PropTypes.bool,
   socialWhite: PropTypes.bool,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 Navigation.defaultProps = {
@@ -351,4 +356,4 @@ Navigation.defaultProps = {
   socialWhite: false,
 };
 
-export default Navigation;
+export default injectIntl(Navigation);

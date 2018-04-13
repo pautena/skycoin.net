@@ -78,6 +78,7 @@ export default {
   newsletter: {
     heading: 'Sign up to receive updates',
     button: 'Sign up',
+    input: 'Enter Your Email',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
@@ -86,6 +87,7 @@ export default {
     description: 'Buy Skycoin',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
+    video: 'How To Buy Skycoin Direct From Skycoin.net',
   },
   home: {
     title: 'Skycoin - Blockchain Internet',
@@ -96,7 +98,7 @@ export default {
     },
     hero: {
       heading: 'The New Internet For The New World',
-      paragraph: 'The Skycoin Platform is the most advanced blockchain application ecosystem in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin’s platform is completely secure, infinitely scalable, and ISP independent. Backed by bandwidth, storage, and computation power Skycoin is built to fulfill Satoshi’s original vision.',
+      paragraph: 'The Skycoin Platform is the most advanced blockchain application ecosystem in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin’s platform is completely secure, infinitely scalable, and ISP independent. Backed by bandwidth, storage, and computational power Skycoin is built to fulfill Satoshi’s original vision.',
       buy: 'Buy Skycoin',
       // community: 'Community',
       // whitepapers: 'Whitepapers',
@@ -298,12 +300,25 @@ export default {
     whitepapers: {
       heading: 'Download Skycoin Consensus Whitepapers',
       download: 'Download',
+      skywireWhitepaper: 'Skywire whitepaper — coming soon',
+      skycoinWhitepaper: 'Skycoin whitepaper',
+      skycoinWhitepaperV32: 'Skycoin whitepaper V3.2中文版',
+      cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
+      skyFramework: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
+      skyHashConsensus: 'SkyHash: an Opinion Dynamics Model for Hash Consensus over P2P network',
+      skyHash: 'SkyHash: a Hash Opinion Dynamics Model',
+      sznajd2: 'Sznajd2: a Community-aware Opinion Dynamics Model',
+      distributedAlgorithm: 'A Distributed Consensus Algorithm for Cryptocurrency Networks',
     },
     assets: {
       heading: 'Download Skycoin Branding Guide',
+      guidelines: 'Skycoin Brand Guidelines [pdf]',
+      logo: 'Skycoin Logo PNGs',
+      font: 'Skycoin Sans font',
     },
     skywire: {
       heading: 'Skywire',
+      minerAssemblyManual: 'Skywire Miner Assembly Manual [pdf]',
     },
     roadmap: {
       heading: 'Roadmap',
@@ -394,7 +409,7 @@ export default {
     title: 'Explore Skyminer',
     description: 'Skywire Miner: hardware for the new internet',
     hero: {
-      heading: 'Skywire Miner: hardware for the new internet',
+      heading: 'Skyminer: <br/>Hardware for the new internet.',
       button: 'JOIN THE WAIT LIST',
     },
     about: {
@@ -414,14 +429,16 @@ export default {
     },
     video: {
       heading1: 'What Is A Skycoin Skyminer?',
-      heading2: 'The Power of Skyminer And The Scalability Of The Platform',
+      heading2: 'Introducing The Skycoin Skyminer',
+      heading3: 'Unboxing the Skyminer',
+      more: 'Watch more videos',
     },
     gallery: {
       heading: 'Gallery',
     },
     signup: {
-      heading: 'Join the Waitlist to be Able to Buy a Skyminer',
-      body: 'Receive updates about the Skyminer and get notified as soon as Skyminers are available for purchase.',
+      heading: 'Join The Skyminer Waitlist',
+      body: 'Reserve your spot in the internet of tomorrow, today!',
     },
   },
 };

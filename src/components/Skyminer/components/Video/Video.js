@@ -1,10 +1,11 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import { Box } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import YouTube from 'react-youtube';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import Button from 'components/Button';
 
 import { rem } from 'polished';
 import { COLOR, SPACE } from 'config';
@@ -13,10 +14,16 @@ import media from 'utils/media';
 const playerOptions = {
   height: '480',
   width: '854',
+  playerVars: {
+    rel: 0,
+  },
 };
 
 const videoId1 = 'vG1QdyZzBzo';
-const videoId2 = '6KnSb_tDbMQ';
+const videoId2 = '-CbSdVIwr8E';
+const videoId3 = '1F27ZWZPd8A';
+
+const channelUrl = 'https://www.youtube.com/channel/UCzLASufel2No4vSt4rudHSQ/videos';
 
 const Wrapper = styled(Box)`
   background: ${COLOR.lightBlue};
@@ -69,6 +76,18 @@ const Video = () => (
       <VideoWrapper>
         <YouTube videoId={videoId2} opts={playerOptions} />
       </VideoWrapper>
+
+      <Heading heavy as="h2" fontSize={[6, 7]} color="black" mt={[8, 13]}>
+        <FormattedMessage id="skyminer.video.heading3" />
+      </Heading>
+      <VideoWrapper>
+        <YouTube videoId={videoId3} opts={playerOptions} />
+      </VideoWrapper>
+      <Flex row justify="flex-end">
+        <Button href={channelUrl} target="_blank" color="white" bg="base" pill mt={[6, 10]} >
+          <FormattedMessage id="skyminer.video.more" />
+        </Button>
+      </Flex>
     </Container>
   </Wrapper>
 );
