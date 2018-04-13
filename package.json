@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-eslint": "^8.2.2",
     "createjs-module": "^0.8.3",
     "disable-scroll": "^0.4.0",
     "flag": "^2.0.2",
@@ -36,7 +37,7 @@
     "styled-system": "1.0.0-4"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
