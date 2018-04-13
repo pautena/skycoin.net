@@ -95,7 +95,7 @@ function getXml(rss) {
       return Array.prototype.slice.call(items, 0, 3);
     })
     .then((items) => {
-      return items.map((item) => {
+      const posts = items.map((item) => {
         const date = moment(new Date(item.getElementsByTagName('pubDate')[0].textContent)).locale('en');
         const enclosure = item.getElementsByTagName('enclosure');
         const image = enclosure.length ? enclosure[0].getAttribute('url') : '';
@@ -107,6 +107,7 @@ function getXml(rss) {
           date,
         };
       });
+      return posts;
     });
 }
 
