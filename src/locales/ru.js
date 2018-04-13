@@ -406,7 +406,7 @@ export default {
     title: 'Explore Skyminer',
     description: 'Skywire Miner: hardware for the new internet',
     hero: {
-      heading: 'Skywire Miner: <br>hardware for the new internet',
+      heading: 'Skyminer: <br/>Hardware for the new internet.',
       button: 'JOIN THE WAIT LIST',
     },
     about: {
@@ -434,8 +434,8 @@ export default {
       heading: 'Gallery',
     },
     signup: {
-      heading: 'Join the Waitlist to be Able to Buy a Skyminer',
-      body: 'Receive updates about the Skyminer and get notified as soon as Skyminers are available for purchase.',
+      heading: 'Join The Skyminer Waitlist',
+      body: 'Reserve your spot in the internet of tomorrow, today!',
     },
   },
 };
