@@ -47,7 +47,7 @@ class Ecosystem extends React.PureComponent {
         <Gallery />
         <Newsletter setRef={this.setRef} />
 
-        <Footer isLanding />
+        <Footer />
       </div>
     );
   }
