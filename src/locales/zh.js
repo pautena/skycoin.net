@@ -15,10 +15,10 @@ export default {
   },
   notFound: {
     404: '404',
-    message: 'Whoops! Looks like you\'re lost </br> This page does not exist anymore or has been moved to a new URL',
-    title: 'Page not found',
-    heading: 'Page not found',
-    home: 'Home page',
+    message: '哎！看来你迷失了，这个页面不存在或者已经转到新的URL',
+    title: '没法找到页面',
+    heading: '没法找到页面',
+    home: '主页',
   },
   getStarted: {
     heading: '天空链之旅',

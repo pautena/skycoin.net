@@ -286,24 +286,24 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
               <GroupWrapper isMobile={isMobile} show>
-                <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
-                  <FormattedMessage id="header.navigation.blog" />
-                </StyledLink>
-
-                <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
-                  <FormattedMessage id="header.navigation.explorer" />
-                </StyledLink>
-
                 <StyledLink white={white} isMobile={isMobile} to="/downloads">
                   <FormattedMessage id="header.navigation.downloads" />
+                </StyledLink>
+
+                <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
+                  <FormattedMessage id="header.navigation.ecosystem" />
                 </StyledLink>
 
                 <StyledLink white={white} isMobile={isMobile} to="/team">
                   <FormattedMessage id="header.navigation.team" />
                 </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
-                  <FormattedMessage id="header.navigation.ecosystem" />
+                <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
+                  <FormattedMessage id="header.navigation.blog" />
+                </StyledLink>
+
+                <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
+                  <FormattedMessage id="header.navigation.explorer" />
                 </StyledLink>
               </GroupWrapper>
               }
