@@ -90,13 +90,28 @@ NewsItem.propTypes = {
   image: PropTypes.string.isRequired,
 };
 
-class News extends PureComponent {
-  constructor({ locale }) {
-    super();
+function getRssPath(locale) {
+  return locale === DEFAULT_LOCALE
+    ? 'https://www.skycoin.net/blog/index.xml'
+    : `https://www.skycoin.net/blog/${locale}/index.xml`;
+}
 
-    this.rss = locale !== DEFAULT_LOCALE
-    ? `https://www.skycoin.net/blog/${locale}/index.xml`
-    : 'https://www.skycoin.net/blog/index.xml';
+class News extends PureComponent {
+  constructor(props) {
+    super(props);
+    const rss = getRssPath(this.props.locale);
+
+    this.state = {
+      rss,
+    };
+  }
+
+  componentWillReceiveProps({ locale }) {
+    if (locale !== this.props.locale) {
+      const rss = getRssPath(locale);
+
+      this.setState({ rss });
+    }
   }
 
   render() {
@@ -106,7 +121,7 @@ class News extends PureComponent {
           <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} width={[1, 2 / 3]}>
             <FormattedMessage id="home.news.heading" />
           </Heading>
-          <Blog rss={this.rss} />
+          <Blog rss={this.state.rss} />
         </Container>
       </Wrapper>
     );
