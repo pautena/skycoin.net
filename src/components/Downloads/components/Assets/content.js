@@ -3,7 +3,14 @@ export default [{
   download: 'https://downloads.skycoin.net/branding/Skycoin-Brand_Guidelines-v1.6.pdf',
   filetype: '.pdf',
   filesize: '2.7mb',
-}, {
+},
+{
+  name: 'Skycoin品牌视觉规范 v1.6.1',
+  download: '/Skycoin-v1.6.1_zh.pdf',
+  filetype: '.pdf',
+  filesize: '3.3mb',
+},
+{
   name: 'downloads.assets.logo',
   download: 'https://downloads.skycoin.net/branding/Skycoin-Logo-PNGs.zip',
   filetype: '.zip',
