@@ -135,9 +135,14 @@ class News extends PureComponent {
     }
   }
 
-  componentWillReceiveProps({ rss }) {
+  async componentWillReceiveProps({ rss }) {
     if (rss !== this.props.rss) {
-      getXml(rss);
+      const posts = await getXml(rss);
+
+      this.setState({
+        posts,
+        loaded: true,
+      });
     }
   }
 
