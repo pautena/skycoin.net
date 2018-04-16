@@ -36,6 +36,7 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
