@@ -175,6 +175,12 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
     text-decoration: none;
   }
   
+  > span {
+      ${media.md.css`
+        display: ${props => (props.social ? 'none' : 'inline-block')};
+      `}
+  }
+  
   ${media.sm.css`
     width: auto;
     margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
@@ -208,6 +214,9 @@ const Img = styled.img.attrs({
   height: auto;
   margin-right: ${rem(SPACE[2])};
   width: 23px;
+  ${media.md.css`
+    margin-right: ${props => (props.social ? rem(SPACE[2]) : 0)};
+  `}
 `;
 
 const Icon = styled.i`
@@ -295,6 +304,10 @@ class Navigation extends React.PureComponent {
                   <FormattedMessage id="header.navigation.ecosystem" />
                 </StyledLink>
 
+                <StyledLink white={white} isMobile={isMobile} to="/skyminer">
+                  <FormattedMessage id="header.navigation.skyminer" />
+                </StyledLink>
+
                 <StyledLink white={white} isMobile={isMobile} to="/team">
                   <FormattedMessage id="header.navigation.team" />
                 </StyledLink>
@@ -310,13 +323,13 @@ class Navigation extends React.PureComponent {
               }
 
               <GroupWrapper isMobile={isMobile} show={social}>
-                <StyledLink white={white} icon={telegram} isMobile={isMobile} href="https://t.me/Skycoin" target="_blank">
+                <StyledLink white={white} icon={telegram} isMobile={isMobile} social={social} href="https://t.me/Skycoin" target="_blank">
                   {socialWhite && <Icon srcXs={telegram} src={telegramWhite} />}
                   {!socialWhite && <Img src={telegram} alt="Telegram" />}
                   <FormattedMessage id="header.navigation.telegram" />
                 </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} href="https://discord.gg/EgBenrW" target="_blank">
+                <StyledLink white={white} isMobile={isMobile} social={social} href="https://discord.gg/EgBenrW" target="_blank">
                   {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
                   {!socialWhite && <Img src={discord} alt="Discord" />}
                   <FormattedMessage id="header.navigation.discord" />

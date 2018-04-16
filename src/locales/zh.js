@@ -6,6 +6,7 @@ export default {
       wallet: 'Wallet',
       explorer: '浏览器',
       ecosystem: '生态系统',
+      skyminer: '天空矿机',
       blog: '博客',
       team: '团队',
       telegram: 'Telegram',

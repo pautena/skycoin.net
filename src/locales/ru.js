@@ -9,6 +9,7 @@ export default {
       wallet: 'Wallet',
       explorer: 'Обозреватель',
       ecosystem: 'Экосистема',
+      skyminer: 'Skyminer',
       blog: 'Блог',
       buy: 'Купить Skycoin',
       team: 'Team',
