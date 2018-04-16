@@ -97,18 +97,18 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translateX(-50%);
     background-image: url(
-      ${(props) => {
-        switch (props.status) {
-          case 'in-progress':
-            return inProgress;
-          case 'slated':
-            return slated;
-          case 'completed':
-            return completed;
-          default:
-            return '';
-        }
-      }});
+    ${(props) => {
+    switch (props.status) {
+      case 'in-progress':
+        return inProgress;
+      case 'slated':
+        return slated;
+      case 'completed':
+        return completed;
+      default:
+        return '';
+    }
+  }});
 
     ${media.sm.css`
       top: 50%;

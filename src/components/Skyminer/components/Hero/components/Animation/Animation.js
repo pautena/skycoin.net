@@ -31,7 +31,7 @@ const Overlay = styled.div`
 
 class Animation extends React.Component {
   componentDidMount() {
-     /* eslint-disable */
+    /* eslint-disable */
     this.canvas = document.getElementById("canvasSkyminerAnim");
     createjs.MotionGuidePlugin.install();
     this.handleComplete();

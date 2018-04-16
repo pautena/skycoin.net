@@ -41,7 +41,7 @@ const MenuClose = ToggleButton.extend`
   background: url(${cancelIc}) 0 0 no-repeat;
   position: absolute;
   top: 32px;
-  right: 36px;
+  right: 53px;
   cursor: pointer;
 `;
 
@@ -68,12 +68,15 @@ const Scrollable = styled.div`
   display: block;
   width: 100%;
   height: 100%;
-  
+
   overflow-y: auto;
   background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
   transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
   transition: transform 400ms ease-in-out;
-  
+  position: relative;
+  padding-right: 17px;
+  right: -17px;
+
   ${media.md.css`
     width: auto;
     height: auto;
@@ -91,7 +94,6 @@ const GroupWrapper = styled.div`
   padding: ${props => (props.isMobile ? rem(28) : '0')}  0;
   font-size: ${rem(FONT_SIZES[2])};
   text-align: left;
-  
   ${media.sm.css`
     width: auto;
     margin-top: 0;
@@ -109,7 +111,6 @@ const Wrapper = styled(Flex)`
   width: ${props => (props.isMobile ? '270px' : 'auto')};
   min-height: ${props => (props.isMobile ? '100%' : 'auto')};
   text-align: left;
-
   ${media.md.css`
     flex-direction: row;
     width: auto;
@@ -321,7 +322,6 @@ class Navigation extends React.PureComponent {
                   <FormattedMessage id="header.navigation.discord" />
                 </StyledLink>
               </GroupWrapper>
-
               <GroupWrapper isMobile={isMobile} show={showBuy}>
                 <Button to="buy" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
                   <FormattedMessage id="header.navigation.getWallet" />

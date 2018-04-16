@@ -5,6 +5,7 @@ import moment from 'moment';
 import momentPropTypes from 'react-moment-proptypes';
 import { Flex, Box } from 'grid-styled';
 import PropTypes from 'prop-types';
+import isEqual from 'lodash/isEqual';
 
 import Heading from 'components/Heading';
 import Text from 'components/Text';
@@ -84,6 +85,32 @@ NewsItem.propTypes = {
   image: PropTypes.string.isRequired,
 };
 
+function getXml(rss) {
+  return axios.get(rss)
+    .then((response) => {
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(response.data, 'text/xml');
+      const items = xml.getElementsByTagName('item');
+
+      return Array.prototype.slice.call(items, 0, 3);
+    })
+    .then((items) => {
+      const posts = items.map((item) => {
+        const date = moment(new Date(item.getElementsByTagName('pubDate')[0].textContent)).locale('en');
+        const enclosure = item.getElementsByTagName('enclosure');
+        const image = enclosure.length ? enclosure[0].getAttribute('url') : '';
+
+        return {
+          title: item.getElementsByTagName('title')[0].textContent,
+          href: item.getElementsByTagName('link')[0].textContent,
+          image,
+          date,
+        };
+      });
+      return posts;
+    });
+}
+
 class News extends PureComponent {
   constructor() {
     super();
@@ -94,37 +121,24 @@ class News extends PureComponent {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const isLocal = window.location.hostname === 'localhost';
     const rss = isLocal ? 'blog.xml' : this.props.rss;
+    const posts = await getXml(rss);
 
-    axios.get(rss)
-      .then((response) => {
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(response.data, 'text/xml');
-        const items = xml.getElementsByTagName('item');
-
-        return Array.prototype.slice.call(items, 0, 3);
-      })
-      .then((items) => {
-        const posts = [];
-        items.forEach((item) => {
-          const date = moment(new Date(item.getElementsByTagName('pubDate')[0].textContent)).locale('en');
-          const enclosure = item.getElementsByTagName('enclosure');
-          const image = enclosure.length ? enclosure[0].getAttribute('url') : '';
-          posts.push({
-            title: item.getElementsByTagName('title')[0].textContent,
-            href: item.getElementsByTagName('link')[0].textContent,
-            image,
-            date,
-          });
-        });
-
-        this.setState({
-          posts,
-          loaded: true,
-        });
+    if (!isEqual(this.state.posts, posts)) {
+      // eslint-disable-next-line react/no-did-mount-set-state
+      this.setState({
+        posts,
+        loaded: true,
       });
+    }
+  }
+
+  componentWillReceiveProps({ rss }) {
+    if (rss !== this.props.rss) {
+      getXml(rss);
+    }
   }
 
   render() {

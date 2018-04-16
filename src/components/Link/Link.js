@@ -9,7 +9,7 @@ const getURL = (match, url) => trimEnd(
   (url.includes('://') || url.includes('.pdf'))
     ? url
     : join('/', match.params.locale, url, url.includes('#') ? '' : '/'),
-  );
+);
 
 const filterProps = props =>
   omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',
