@@ -9,6 +9,7 @@ export default {
       wallet: 'Wallet',
       explorer: '익스플로러',
       ecosystem: 'Ecosystem',
+      skyminer: 'Skyminer',
       blog: '블로그',
       buy: '스카이코인 구매',
       team: 'Team',

@@ -10,6 +10,7 @@ export default {
       wallet: 'Wallet',
       explorer: 'Explorer',
       ecosystem: 'Ecosystem',
+      skyminer: 'Skyminer',
       blog: 'Blog',
       // buy: 'Buy Skycoin',
       team: 'Team',
