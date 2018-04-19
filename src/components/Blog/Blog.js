@@ -41,7 +41,7 @@ const NewsContainer = styled.div`
   border-radius: ${BORDER_RADIUS.base};
 `;
 
-const Date = styled(Text)`
+const DateText = styled(Text)`
   margin: 0;
 `;
 
@@ -66,9 +66,9 @@ const NewsItem = ({ title, date, href, image }) => (
           {image ? <Image src={image} /> : <Image src={placeholder} />}
         </ImageContainer>
         <Box px={7} pb={10} pt={6}>
-          <Date color={COLOR.textLight} fontSize={2}>
+          <DateText color={COLOR.textLight} fontSize={2}>
             {date.format('MMMM DD, YYYY')}
-          </Date>
+          </DateText>
           <StyledHeading as="h4" mb={1} fontSize={4}>
             {title}
           </StyledHeading>
