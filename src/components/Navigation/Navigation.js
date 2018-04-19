@@ -40,7 +40,7 @@ const ToggleButton = styled.button`
 const MenuClose = ToggleButton.extend`
   background: url(${cancelIc}) 0 0 no-repeat;
   position: absolute;
-  top: 32px;
+  top: 82px;
   right: 53px;
   cursor: pointer;
 `;
@@ -55,7 +55,7 @@ const Container = styled.div`
   bottom: ${props => (props.isMobile ? '0' : 'auto')};
   right: ${props => (props.isMobile ? '-270px' : 'auto')};
   z-index: 2;
-  
+
   ${media.md.css`
     position: relative;
     top: auto;
@@ -76,8 +76,12 @@ const Scrollable = styled.div`
   position: relative;
   padding-right: 17px;
   right: -17px;
+  top: -60px;
+  padding-top: 60px;
 
   ${media.md.css`
+    top: 0;
+    padding-top: 0;
     width: auto;
     height: auto;
     background: transparent;
@@ -210,7 +214,7 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
 
 const Img = styled.img.attrs({
   alt: props => props.alt || '',
-})`
+}) `
   height: auto;
   margin-right: ${rem(SPACE[2])};
   width: 23px;
@@ -235,7 +239,9 @@ const Icon = styled.i`
 const Overlay = styled.div`
   display: ${props => (props.visible ? 'block' : 'none')};
   position: fixed;
-  top: 0;
+  top: -60px;
+  padding-top: 60px;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -243,7 +249,7 @@ const Overlay = styled.div`
   opacity: ${props => (props.visible ? '1' : '0')};
   transition: opacity 400ms linear;
   z-index: 1;
-  
+
   ${media.md.css`
     display: none;
   `}
@@ -272,13 +278,9 @@ class Navigation extends React.PureComponent {
 
   toggleMenu() {
     const { menuVisible } = this.state;
-    this.setState({ menuVisible: !menuVisible }, () => {
-      if (this.state.menuVisible) {
-        disableScroll.on();
-      } else {
-        disableScroll.off();
-      }
-    });
+
+    document.body.style.overflowY = menuVisible ? 'auto' : 'hidden';
+    this.setState({ menuVisible: !menuVisible });
   }
 
   render() {
@@ -295,31 +297,31 @@ class Navigation extends React.PureComponent {
             <Wrapper wrap isMobile={isMobile}>
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
-              <GroupWrapper isMobile={isMobile} show>
-                <StyledLink white={white} isMobile={isMobile} to="/downloads">
-                  <FormattedMessage id="header.navigation.downloads" />
-                </StyledLink>
+                <GroupWrapper isMobile={isMobile} show>
+                  <StyledLink white={white} isMobile={isMobile} to="/downloads">
+                    <FormattedMessage id="header.navigation.downloads" />
+                  </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
-                  <FormattedMessage id="header.navigation.ecosystem" />
-                </StyledLink>
+                  <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
+                    <FormattedMessage id="header.navigation.ecosystem" />
+                  </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} to="/skyminer">
-                  <FormattedMessage id="header.navigation.skyminer" />
-                </StyledLink>
+                  <StyledLink white={white} isMobile={isMobile} to="/skyminer">
+                    <FormattedMessage id="header.navigation.skyminer" />
+                  </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} to="/team">
-                  <FormattedMessage id="header.navigation.team" />
-                </StyledLink>
+                  <StyledLink white={white} isMobile={isMobile} to="/team">
+                    <FormattedMessage id="header.navigation.team" />
+                  </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
-                  <FormattedMessage id="header.navigation.blog" />
-                </StyledLink>
+                  <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
+                    <FormattedMessage id="header.navigation.blog" />
+                  </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
-                  <FormattedMessage id="header.navigation.explorer" />
-                </StyledLink>
-              </GroupWrapper>
+                  <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
+                    <FormattedMessage id="header.navigation.explorer" />
+                  </StyledLink>
+                </GroupWrapper>
               }
 
               <GroupWrapper isMobile={isMobile} show={social}>

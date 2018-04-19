@@ -33,11 +33,17 @@
   src: url('./resources/fonts/inconsolata-regular-webfont.woff2') format('woff2'),
          url('./resources/fonts/inconsolata-regular-webfont.woff') format('woff');
 }
+body {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+}
 
 html {
   box-sizing: border-box;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 * {
