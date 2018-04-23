@@ -312,13 +312,13 @@ export default {
     },
     assets: {
       heading: 'Скачать активы бренда Skycoin',
-      guidelines: 'Skycoin Brand Guidelines [pdf]',
+      guidelines: 'Skycoin Brand Guidelines',
       logo: 'Skycoin Logo PNGs',
       font: 'Skycoin Sans font',
     },
     skywire: {
       heading: 'Skywire',
-      minerAssemblyManual: 'Skywire Miner Assembly Manual [pdf]',
+      minerAssemblyManual: 'Skywire Miner Assembly Manual',
     },
     roadmap: {
       heading: 'План',
