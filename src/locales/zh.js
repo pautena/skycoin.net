@@ -186,13 +186,13 @@ export default {
     },
     assets: {
       heading: '下载天空链品牌指南',
-      guidelines: '天空链品牌指南[pdf]',
+      guidelines: '天空链品牌指南',
       logo: '天空链 Logo PNGs链',
       font: '天空链 Sans字体',
     },
     skywire: {
       heading: 'Skywire',
-      minerAssemblyManual: 'Skywire矿工装配手册[pdf]',
+      minerAssemblyManual: 'Skywire矿工装配手册',
     },
     roadmap: {
       heading: 'Roadmap',
