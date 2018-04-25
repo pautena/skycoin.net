@@ -85,7 +85,7 @@ class MarketsPage extends PureComponent {
     /* eslint-disable */
     window.external = 'sky';
     $('#cryptowolf-container').load(`${cryptoUrl}ext.html`);
-    $.getScript(`${cryptoUrl}js/cryptowolf-ext.js`);
+    $.getScript(`${cryptoUrl}js/cryptowolf.js`);
     /* eslint-enable */
   }
   render() {
