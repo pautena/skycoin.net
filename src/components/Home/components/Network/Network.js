@@ -45,7 +45,7 @@ export default () => (
             <FormattedHTMLMessage id="home.network.body" />
           </Text>
           <Button
-            href={'/skycoin_whitepaper.pdf'}
+            href={'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf'}
             target="_blank"
             color="base"
             pill
