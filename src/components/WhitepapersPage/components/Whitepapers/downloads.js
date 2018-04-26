@@ -2,7 +2,7 @@ export default [{
   name: 'downloads.whitepapers.skywireWhitepaper',
 }, {
   name: 'downloads.whitepapers.skycoinWhitepaper',
-  download: `${process.env.PUBLIC_URL}/skycoin_whitepaper.pdf`,
+  download: 'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf',
   filetype: '.pdf',
   filesize: '1.8mb',
 }, {
