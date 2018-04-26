@@ -6,7 +6,7 @@ export default [{
 },
 {
   name: 'Skycoin品牌视觉规范 v1.6.1',
-  download: '/Skycoin-v1.6.1_zh.pdf',
+  download: 'https://downloads.skycoin.net/branding/Skycoin-v1.6.1_zh.pdf',
   filetype: '.pdf',
   filesize: '3.3mb',
 },

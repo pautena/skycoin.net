@@ -6,7 +6,7 @@ export default [{
 },
 {
   name: 'Skyminer矿机安装手册 v2.2',
-  download: '/Skyminer_v2.2.pdf',
+  download: 'https://downloads.skycoin.net/skywire/Skyminer-v2.2_zh.pdf',
   filetype: '.pdf',
   filesize: '7mb',
 },
