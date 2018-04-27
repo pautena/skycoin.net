@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 87 87" style="enable-background:new 0 0 87 87;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#0072FF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-</style>
-<line class="st0" x1="43" y1="19" x2="43" y2="2.1"/>
-<line class="st0" x1="53.1" y1="46.9" x2="71.5" y2="12.7"/>
-<line class="st0" x1="15.2" y1="13.3" x2="33.4" y2="47.6"/>
-<line class="st0" x1="54.3" y1="59.4" x2="84.4" y2="43.1"/>
-<line class="st0" x1="2.1" y1="43.1" x2="32.2" y2="59.6"/>
-<line class="st0" x1="55.3" y1="69.3" x2="71" y2="74.3"/>
-<line class="st0" x1="15.5" y1="74.3" x2="31.2" y2="69.3"/>
-<polyline class="st1" points="30,82.3 35.9,25.1 43.2,19.4 50.7,25.1 56.7,82.5 "/>
-<line class="st1" x1="43.2" y1="19.4" x2="43.2" y2="84"/>
-<circle class="st1" cx="43.2" cy="43.1" r="41.1"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="85px" viewBox="0 0 100 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icObelisk (2)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icObelisk-(2)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(9.000000, 1.000000)">
+            <path d="M41,17 L41,0.1" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M51.1,44.9 L69.5,10.7" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13.2,11.3 L31.4,45.6" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M52.3,57.4 L82.4,41.1" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M0.1,41.1 L30.2,57.6" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M53.3,67.3 L69,72.3" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13.5,72.3 L29.2,67.3" id="Shape" stroke="#0072FF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Shape" stroke="#FFFFFF" stroke-width="2" points="28 80.3 33.9 23.1 41.2 17.4 48.7 23.1 54.7 80.5"></polyline>
+            <path d="M41.2,17.4 L41.2,82" id="Shape" stroke="#FFFFFF" stroke-width="2"></path>
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="41.2" cy="41.1" r="41.1"></circle>
+        </g>
+    </g>
 </svg>
