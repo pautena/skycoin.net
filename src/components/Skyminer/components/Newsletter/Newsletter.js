@@ -42,7 +42,7 @@ const StyledBox = styled(Box)`
 `;
 
 const Newsletter = ({ setRef }) => (
-  <Wrapper ref={c => setRef(c)}>
+  <Wrapper innerRef={c => setRef(c)}>
     <Container>
       <StyledBox width={[1, 1, 3 / 5]} py={[10, 13]}>
         <Heading heavy as="h2" mb={[4, 6]} fontSize={[5, 6, 7]} color="white">

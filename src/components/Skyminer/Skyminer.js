@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
-import scrollToComponent from 'react-scroll-to-component';
 
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
@@ -25,7 +24,7 @@ class Ecosystem extends React.PureComponent {
   }
 
   handleScrollToSection() {
-    scrollToComponent(this.newsletter, { offset: 0, align: 'top', duration: 1000 });
+    this.newsletter.scrollIntoView({ behavior: 'smooth' });
   }
 
   render() {
