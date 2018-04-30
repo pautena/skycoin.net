@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { values } from 'ramda';
-import { FONT_FAMILIES, FONT_SIZES, COLORS } from 'config';
-import { rem } from 'polished';
 import styled from 'styled-components';
+import { values } from 'ramda';
+import { rem } from 'polished';
+import { FONT_FAMILIES, FONT_SIZES, COLORS, SPACE } from 'config';
 import Container from 'components/Container';
 import Quarter from '../Quarter/Quarter';
 
@@ -35,7 +35,7 @@ const YearWrapper = styled.div`
   width: 100%;
 
   &:last-of-type {
-    padding-bottom: 300px;
+    padding-bottom: ${rem(SPACE[13])};
 
     &::after {
       bottom: -9999px;

@@ -2,52 +2,81 @@
     "data": [
         {
             "year": 2018,
-            "quarter": 1,
-            "weight": 2,
-            "title": "Skywire Miner Release"
+            "quarter": 4,
+            "weight": 5,
+            "title": "Desktop-lite Wallet"
         },
         {
             "year": 2018,
-            "quarter": 1,
-            "weight": 9,
-            "body": "List Skycoin on next.exchange"
-        },
-        {
-            "year": 2017,
-            "quarter": 4,
-            "weight": 8,
-            "body": "Implement exchange federation protocol for decentralized exchange (DEX) integration"
-        },
-        {
-            "year": 2017,
-            "quarter": 4,
-            "weight": 7,
-            "body": "Launch Skywire test network"
-        },
-        {
-            "year": 2017,
-            "quarter": 4,
-            "weight": 5,
-            "body": "Wallet encryption"
-        },
-        {
-            "year": 2017,
             "quarter": 4,
             "weight": 4,
-            "title": "Android Wallet"
+            "title": "Web Wallet"
         },
         {
-            "year": 2017,
+            "year": 2018,
             "quarter": 4,
             "weight": 3,
-            "title": "New Wallet",
-            "body": "Redesigned Skycoin wallet"
+            "title": "Coinjoin"
         },
         {
-            "year": 2017,
+            "year": 2018,
+            "quarter": 4,
+            "weight": 2,
+            "title": "BBS"
+        },
+        {
+            "year": 2018,
             "quarter": 4,
             "weight": 1,
-            "body": "Skycoin design improvements"
+            "title": "SDN"
+        },
+        {
+            "year": 2018,
+            "quarter": 3,
+            "weight": 4,
+            "title": "Sky Exchange"
+        },
+        {
+            "year": 2018,
+            "quarter": 3,
+            "weight": 3,
+            "title": "Advanced Spend Builder"
+        },
+        {
+            "year": 2018,
+            "quarter": 3,
+            "weight": 2,
+            "title": "Hardware wallet"
+        },
+        {
+            "year": 2018,
+            "quarter": 3,
+            "weight": 1,
+            "title": "Signal"
+        },
+        {
+            "year": 2018,
+            "quarter": 2,
+            "weight": 4,
+            "title": "Affiliate program (OTC)"
+        },
+        {
+            "year": 2018,
+            "quarter": 2,
+            "weight": 3,
+            "title": "Mobile Wallet IOS"
+        },
+        {
+            "year": 2018,
+            "quarter": 2,
+            "weight": 2,
+            "title": "Mobile Wallet Android"
+        },
+        {
+            "year": 2018,
+            "quarter": 2,
+            "weight": 1,
+            "title": "OTC passthrough"
         }
     ]
 }
