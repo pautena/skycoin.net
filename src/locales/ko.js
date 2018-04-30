@@ -439,4 +439,9 @@ export default {
       body: 'Reserve your spot in the internet of tomorrow, today!',
     },
   },
+  roadmap: {
+    title: 'Skycoin Roadmap',
+    description: 'Skycoin Development Roadmap',
+    heading: 'Skycoin Development Roadmap',
+  },
 };

@@ -1,6 +1,67 @@
 {
     "data": [
         {
+            "year": 2018,
+            "quarter": 1,
+            "weight": 4,
+            "title": "Wallet Encryption"
+        },
+        {
+            "year": 2018,
+            "quarter": 1,
+            "weight": 5,
+            "title": "Fiber support desk"
+        },
+        {
+            "year": 2018,
+            "quarter": 1,
+            "weight": 6,
+            "title": "New Website"
+        },
+        {
+            "year": 2018,
+            "quarter": 1,
+            "weight": 3,
+            "title": "OTC"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 8,
+            "body": "Implement exchange federation protocol for decentralized exchange (DEX) integration"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 7,
+            "body": "Launch Skywire test network"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 5,
+            "body": "Wallet encryption"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 4,
+            "title": "Android Wallet"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 3,
+            "title": "New Wallet",
+            "body": "Redesigned Skycoin wallet"
+        },
+        {
+            "year": 2017,
+            "quarter": 4,
+            "weight": 1,
+            "body": "Skycoin design improvements"
+        },
+        {
             "year": 2017,
             "quarter": 4,
             "weight": 2,

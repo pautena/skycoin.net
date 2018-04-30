@@ -290,4 +290,9 @@ export default {
       body: '在下一代互联网上给你的未来留一个位置，就是现在！',
     },
   },
+  roadmap: {
+    title: 'Skycoin Roadmap',
+    description: 'Skycoin Roadmap',
+    heading: 'Skycoin Development Roadmap',
+  },
 };
