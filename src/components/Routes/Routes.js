@@ -14,6 +14,7 @@ import MarketsPage from '../MarketsPage';
 import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
+import Skywire from '../Skywire';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -31,6 +32,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
+      <Route path={`${prefix}skywire`} exact component={Skywire} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
