@@ -12,11 +12,10 @@ import { COLOR } from 'config';
 import * as images from './images';
 
 const featureItems = [
-  'speed',
+  'sharing',
   'privacy',
   'security',
-  'ecosystem',
-  'internet',
+  'apps',
 ];
 
 const Icon = styled.img.attrs({
@@ -25,7 +24,6 @@ const Icon = styled.img.attrs({
   display: block;
   max-width: 100%;
   height: auto;
-  margin: auto;
 `;
 
 const FeatureWrapper = styled(Flex)`
@@ -43,10 +41,10 @@ const Feature = ({ name, even }) => (
     </Flex>
     <Box width={[1, 2 / 3]}>
       <SubHeading heavy as="h4" mb={4} fontSize={3} color="black">
-        <FormattedMessage id={`skywire.features.${name}.title`} />
+        <FormattedMessage id={`cxo.features.${name}.title`} />
       </SubHeading>
       <Text fontSize={2} color="black" m={0}>
-        <FormattedMessage id={`skywire.features.${name}.text`} />
+        <FormattedMessage id={`cxo.features.${name}.text`} />
       </Text>
     </Box>
   </FeatureWrapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>CXO_app_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="CXO_app_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(6.000000, 25.000000)">
+            <g id="Vector" transform="translate(0.000000, 47.000000)">
+                <path d="M90.7,74 L10.5,74 C4.7,74 0,69.3 0,63.5 L0,10.5 C0,4.7 4.7,0 10.5,0 L90.7,0 C96.5,0 101.2,4.7 101.2,10.5 L101.2,63.5 C101.2,69.3 96.5,74 90.7,74 Z" id="Shape" fill="#F4F9FF" fill-rule="nonzero"></path>
+                <path d="M90.7,74 L10.5,74 C4.7,74 0,69.3 0,63.5 L0,10.5 C0,4.7 4.7,0 10.5,0 L90.7,0 C96.5,0 101.2,4.7 101.2,10.5 L101.2,63.5 C101.2,69.3 96.5,74 90.7,74 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Vector_2" transform="translate(0.000000, 60.000000)" stroke="#92A4BA" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M0,0 L100.4,0" id="Shape"></path>
+            </g>
+            <g id="Vector_3" transform="translate(43.000000, 74.000000)" stroke="#0072FF" stroke-width="2">
+                <path d="M0.700000763,22.4996 L0.700000763,3.89962 C0.700000763,0.899624 4.1,-0.80038 6.5,1.099621 L18.4,10.3996 C20.2,11.7996 20.2,14.5996 18.4,15.9996 L6.5,25.2996 C4.2,27.1996 0.700000763,25.4996 0.700000763,22.4996 Z" id="Shape"></path>
+            </g>
+            <g id="Vector_4" transform="translate(57.000000, 0.000000)">
+                <path d="M90.8,74 L11.6,74 C5.6,74 0.599998474,69.1 0.599998474,63 L0.599998474,11 C0.599998474,5 5.5,0 11.6,0 L90.9,0 C96.9,0 101.9,4.9 101.9,11 L101.9,63 C101.8,69.1 96.9,74 90.8,74 Z" id="Shape" fill="#F4F9FF" fill-rule="nonzero"></path>
+                <path d="M90.8,74 L11.6,74 C5.6,74 0.599998474,69.1 0.599998474,63 L0.599998474,11 C0.599998474,5 5.5,0 11.6,0 L90.9,0 C96.9,0 101.9,4.9 101.9,11 L101.9,63 C101.8,69.1 96.9,74 90.8,74 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Vector_5" transform="translate(57.000000, 13.000000)" stroke="#92A4BA" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M0.599998474,0 L101,0" id="Shape"></path>
+            </g>
+            <g id="Group_2" transform="translate(126.000000, 4.000000)">
+                <g id="Vector_6" transform="translate(17.000000, 0.000000)">
+                    <path d="M3,5.40039 C4.38071,5.40039 5.5,4.2811 5.5,2.90039 C5.5,1.51968 4.38071,0.40039 3,0.40039 C1.61929,0.40039 0.5,1.51968 0.5,2.90039 C0.5,4.2811 1.61929,5.40039 3,5.40039 Z" id="Shape" fill="#F4F9FF" fill-rule="nonzero"></path>
+                    <path d="M5.5,2.90039005 C5.5,4.28110007 4.38071,5.4003901 3,5.4003901 C1.61929,5.4003901 0.5,4.28110007 0.5,2.90039005 C0.5,1.51968002 1.61929,0.400390095 3,0.400390095 C4.38071,0.400390095 5.5,1.51968002 5.5,2.90039005 Z" id="Shape" stroke="#92A4BA" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="Vector_7" transform="translate(9.000000, 0.000000)">
+                    <path d="M2.69999847,5.40039 C4.08070763,5.40039 5.19999695,4.2811 5.19999695,2.90039 C5.19999695,1.51968 4.08070763,0.40039 2.69999847,0.40039 C1.31927932,0.40039 0.199996948,1.51968 0.199996948,2.90039 C0.199996948,4.2811 1.31927932,5.40039 2.69999847,5.40039 Z" id="Shape" fill="#F4F9FF" fill-rule="nonzero"></path>
+                    <path d="M5.19999695,2.90039005 C5.19999695,4.28110007 4.08070763,5.4003901 2.69999847,5.4003901 C1.31927932,5.4003901 0.199996948,4.28110007 0.199996948,2.90039005 C0.199996948,1.51968002 1.31927932,0.400390095 2.69999847,0.400390095 C4.08070763,0.400390095 5.19999695,1.51968002 5.19999695,2.90039005 Z" id="Shape" stroke="#92A4BA" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="Vector_8">
+                    <path d="M3.39999,5.40039 C4.78071,5.40039 5.89999,4.2811 5.89999,2.90039 C5.89999,1.51968 4.78071,0.40039 3.39999,0.40039 C2.01928,0.40039 0.9,1.51968 0.9,2.90039 C0.9,4.2811 2.01928,5.40039 3.39999,5.40039 Z" id="Shape" fill="#F4F9FF" fill-rule="nonzero"></path>
+                    <path d="M5.89999,2.90039 C5.89999,4.2811 4.78071,5.40039 3.39999,5.40039 C2.01928,5.40039 0.900001526,4.2811 0.900001526,2.90039 C0.900001526,1.51968 2.01928,0.400390095 3.39999,0.400390095 C4.78071,0.400390095 5.89999,1.51968 5.89999,2.90039 Z" id="Shape" stroke="#92A4BA" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+            <g id="Vector_9" transform="translate(102.000000, 29.000000)" stroke="#0072FF" stroke-width="2">
+                <path d="M0.5,20.7991 L0.5,3.5991 C0.5,0.899101 3.7,-0.700898 5.8,0.999102 L16.8,9.5991 C18.5,10.8991 18.5,13.4991 16.8,14.7991 L5.8,23.3991 C3.6,25.0991 0.5,23.4991 0.5,20.7991 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
