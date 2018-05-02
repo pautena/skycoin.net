@@ -478,4 +478,46 @@ export default {
       },
     },
   },
+  cxo: {
+    title: 'CXO - CX Object Systems',
+    description: 'CXO - CX Object Systems',
+    about: {
+      heading: 'What is CXO?',
+      subheading: 'CX Object Systems',
+      quote: 'Skycoin is building a new ecosystem, consisting of the following components:',
+      paragraph1: 'CXO (CX Object Systems) is the Skycoin immutable object system, previously called Aether. Designed to replace current conventional methods of peer-to-peer sharing, CXO creates a robust storage system that supersedes services like BitTorrent, Dropbox, and Google Drive. Data is replicated peer-to-peer utilizing the Skycoin CXO library.',
+      paragraph2: 'CXO incorporates and expands on the protocols utilized in other blockchain-based storage networks. CXO is an IPLD, with a built-in schema that sets constraints to classify relatable databases. InterPlanetary File Systems (IPFS) can be built on top of CXO. CXO provides data distribution over the Skywire network and is useful for data that must be secure and verifiable yet doesn\'t need storage on the blockchain.',
+      skywire: {
+        title: 'Skywire',
+        text: 'Skywire - Peer-to-peer community-driven decentralized',
+      },
+      cx: {
+        title: 'CX',
+        text: 'Specification and programming language',
+      },
+      cxo: {
+        title: 'CXO',
+        text: 'Low-level library designed to house applications for sharing objects',
+      },
+    },
+    features: {
+      heading: 'Key Features:',
+      sharing: {
+        title: 'Data Sharing',
+        text: 'Useful for data owners who want to share information, as it can share many feeds like public keys. CXO nodes can subscribe to a feed to receive updates and can connect using the discovery server, interconnecting data based on interests.',
+      },
+      privacy: {
+        title: 'Privacy',
+        text: 'CXO data exists collectively over the network. Once data is published, it cannot be destroyed, and data feeds are downloaded from peer subscribers. For privacy, the publisher’s location cannot be tracked as the publisher becomes merely a peer on the decentralized network',
+      },
+      security: {
+        title: 'Security',
+        text: 'CXO exists within a self-contained standard ecosystem that is mathematically strict and is implemented from the ground up. The owners sign data using private keys, and users who receive the data can audit the signature through the use of public key feeds to be sure the data comes from the desired owner. Security is ensured because nodes cannot alter data without the use of the owner’s private keys.',
+      },
+      apps: {
+        title: 'CXO Applications',
+        text: 'Applications on CXO are currently being tested with light use. SkyBBS is a social network similar to Facebook, Steemit, and Twitter, and is built on top of CXO, with many more to come.',
+      },
+    },
+  },
 };
