@@ -447,6 +447,82 @@ export default {
     description: 'Skycoin Roadmap',
     heading: 'Skycoin Development Roadmap',
   },
+  skywire: {
+    title: 'Skywire',
+    description: 'Skywire - The Foundation of a New Internet',
+    about: {
+      heading: 'What is Skywire?',
+      subheading: 'The Foundation of a New Internet ',
+      quote: 'Everyone will be able to contribute to and benefit from Skywire.',
+      paragraph1: 'Skywire is the next evolutionary step in the internet’s development and use. We want to break the  chokehold that internet service providers (ISPs) have on the market by giving the power back to the  people. We are doing this by providing a decentralized community-driven mesh network where users  themselves will own and control the network’s infrastructure. Our goal is to provide everyone with access  to fast, secure, private and reliable internet.',
+      paragraph2: 'It is time to leave ISPs as a relic of the past. Customers routinely have their browsing data tracked, stored  and sold by ISPs, and at the same time experience unreliable coverage and poor customer service.  Instead of relying on corporate-owned networks, the Skywire mesh network runs on widespread  user-owned nodes which come together to provide the infrastructure for the network,  allowing  communities to power their internet access.',
+    },
+    features: {
+      heading: 'Key Features:',
+      speed: {
+        title: 'Speed',
+        text: 'We’ve all experienced the network delays, outages and throttling that go hand in hand with current ISPs.  Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.    Skywire supports channel bonding which provides unmatched speed and reliability. The ability to connect  to multiple nodes at once drastically increases throughput and redundancy, democratizing previously  difficult use cases.',
+      },
+      privacy: {
+        title: 'Privacy',
+        text: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold. Third parties will not be able to connect individual packets to any user  or IP address, and they will not be able to read the contents of any network traffic. Relaying nodes will  only have routing information for one single prior and subsequent node for movement of the encrypted  data packet. Users will finally be able to browse with real privacy.',
+      },
+      security: {
+        title: 'Security',
+        text: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system. The consensus model allows nodes to be cut off if  deemed malicious, or strengthened if considered trustworthy through collective community agreement.  By making sure everyone has their say, Skywire becomes immune to exploitation, manipulation, and  attack, and safer for all.',
+      },
+      ecosystem: {
+        title: 'Self-sustaining Ecosystem',
+        text: 'The backbone of Skywire will be the community itself. By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network and in turn, they’ll have Coin  Hours to use for resources and applications on the network. The more the network is used, the stronger,  faster and more robust it becomes, creating a closed-loop, self-sustaining economy.',
+      },
+      internet: {
+        title: 'The Foundation of a New Internet',
+        text: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet. In the future, this holy trinity of digital commodities will be affordable and easily  accessible to the world through Skywire. And in the not-too-distant future Skywire combined with the  ubiquity of Skywire Miners will provide the nodes to efficiently decentralize the limitless number of  blockchain applications that will run on Skycoin’s Fiber architecture.',
+      },
+    },
+  },
+  cxo: {
+    title: 'CXO - CX Object Systems',
+    description: 'CXO - CX Object Systems',
+    about: {
+      heading: 'What is CXO?',
+      subheading: 'CX Object Systems',
+      quote: 'Skycoin is building a new ecosystem, consisting of the following components:',
+      paragraph1: 'CXO (CX Object Systems) is the Skycoin immutable object system, previously called Aether. Designed to replace current conventional methods of peer-to-peer sharing, CXO creates a robust storage system that supersedes services like BitTorrent, Dropbox, and Google Drive. Data is replicated peer-to-peer utilizing the Skycoin CXO library.',
+      paragraph2: 'CXO incorporates and expands on the protocols utilized in other blockchain-based storage networks. CXO is an IPLD, with a built-in schema that sets constraints to classify relatable databases. InterPlanetary File Systems (IPFS) can be built on top of CXO. CXO provides data distribution over the Skywire network and is useful for data that must be secure and verifiable yet doesn\'t need storage on the blockchain.',
+      skywire: {
+        title: 'Skywire',
+        text: 'Skywire - Peer-to-peer community-driven decentralized',
+      },
+      cx: {
+        title: 'CX',
+        text: 'Specification and programming language',
+      },
+      cxo: {
+        title: 'CXO',
+        text: 'Low-level library designed to house applications for sharing objects',
+      },
+    },
+    features: {
+      heading: 'Key Features:',
+      sharing: {
+        title: 'Data Sharing',
+        text: 'Useful for data owners who want to share information, as it can share many feeds like public keys. CXO nodes can subscribe to a feed to receive updates and can connect using the discovery server, interconnecting data based on interests.',
+      },
+      privacy: {
+        title: 'Privacy',
+        text: 'CXO data exists collectively over the network. Once data is published, it cannot be destroyed, and data feeds are downloaded from peer subscribers. For privacy, the publisher’s location cannot be tracked as the publisher becomes merely a peer on the decentralized network',
+      },
+      security: {
+        title: 'Security',
+        text: 'CXO exists within a self-contained standard ecosystem that is mathematically strict and is implemented from the ground up. The owners sign data using private keys, and users who receive the data can audit the signature through the use of public key feeds to be sure the data comes from the desired owner. Security is ensured because nodes cannot alter data without the use of the owner’s private keys.',
+      },
+      apps: {
+        title: 'CXO Applications',
+        text: 'Applications on CXO are currently being tested with light use. SkyBBS is a social network similar to Facebook, Steemit, and Twitter, and is built on top of CXO, with many more to come.',
+      },
+    },
+  },
 };
 
 /* eslint-enable max-len */

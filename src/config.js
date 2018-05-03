@@ -8,6 +8,7 @@ export const COLOR = {
   base: '#0072FF',
   dark: '#101F34',
   white: '#fff',
+  paleGrey: '#F4F9FF',
   lightGrey: '#F2F5FA',
   lightBlue: '#F4F9FF',
   textLight: '#B6C5D6',
