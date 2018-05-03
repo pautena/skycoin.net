@@ -45,7 +45,12 @@ const Ecosystem = () => (
     </ContentItem>
 
     <ContentItem bg="lightBlue" py={10} pr={[7, 7, 8]} pl={[7, 6, 8]} wrap mx={[-7, 0]}>
-      <Info heading="ecosystem.skyledger.heading" body="ecosystem.skyledger.body" />
+      <Box width={[1, 3 / 5, 4 / 6]}>
+        <Info heading="ecosystem.skyledger.heading" body="ecosystem.skyledger.body" />
+      </Box>
+      <Box width={[1, 2 / 5, 2 / 6]}>
+        <Illustrations items={content.obelisk} />
+      </Box>
     </ContentItem>
 
     <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
