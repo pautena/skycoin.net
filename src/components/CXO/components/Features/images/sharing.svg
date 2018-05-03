@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>data_sharing_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="data_sharing_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(6.000000, 22.000000)">
+            <g id="Vector" transform="translate(31.000000, 23.000000)" stroke="#0072FF" stroke-width="2">
+                <path d="M0.200000763,48.5008 C0.200000763,21.9008 21.8,0.300799237 48.4,0.300799237 C75,0.300799237 96.6,21.9008 96.6,48.5008" id="Shape"></path>
+            </g>
+            <g id="Group_2" transform="translate(0.000000, 27.000000)">
+                <g id="Group_3">
+                    <g id="Group_4">
+                        <g id="Vector_2" transform="translate(13.000000, 0.000000)">
+                            <path d="M8.4,20.6 C4,20.6 0.5,17.1 0.5,12.7 L0.5,8.4 C0.5,4 4,0.5 8.4,0.5 C12.8,0.5 16.3,4 16.3,8.4 L16.3,12.7 C16.3,17.1 12.7,20.6 8.4,20.6 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M8.4,20.6 C4,20.6 0.5,17.1 0.5,12.7 L0.5,8.4 C0.5,4 4,0.5 8.4,0.5 C12.8,0.5 16.3,4 16.3,8.4 L16.3,12.7 C16.3,17.1 12.7,20.6 8.4,20.6 Z" id="Shape" stroke="#92A4BA" stroke-width="2"></path>
+                        </g>
+                        <g id="Vector_3" transform="translate(0.000000, 25.000000)">
+                            <path d="M0,38.5992 L0,13.0992 C0,8.1992 3,3.9992 7.2,2.6992 C10.8,1.599201 15.6,0.699200763 21.1,0.699200763 C27.2,0.699200763 32,1.599198 35.6,2.5992 C39.8,3.7992 42.8,8.0992 42.8,12.8992 L42.8,38.4992" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M0,38.5992 L0,13.0992 C0,8.1992 3,3.9992 7.2,2.6992 C10.8,1.599201 15.6,0.699200763 21.1,0.699200763 C27.2,0.699200763 32,1.599198 35.6,2.5992 C39.8,3.7992 42.8,8.0992 42.8,12.8992 L42.8,38.4992" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                        </g>
+                        <g id="Group_5" transform="translate(10.000000, 39.000000)">
+                            <g id="Vector_4">
+                                <polyline id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="0.100000381 0.5 0.100000381 60.8 22.7 60.8 22.7 0.5"></polyline>
+                                <polyline id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round" points="0.100000381 0.5 0.100000381 60.8 22.7 60.8 22.7 0.5"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Vector_5" transform="translate(21.000000, 67.000000)" stroke="#92A4BA" stroke-linecap="round">
+                        <path d="M0,32.6992 L0,0.199196948" id="Shape"></path>
+                    </g>
+                </g>
+                <g id="Group_6" transform="translate(116.000000, 0.000000)">
+                    <g id="Group_7">
+                        <g id="Vector_6" transform="translate(13.000000, 0.000000)">
+                            <path d="M8.39999,20.6 C3.99999,20.6 0.5,17.1 0.5,12.7 L0.5,8.4 C0.5,4 3.99999,0.5 8.39999,0.5 C12.8,0.5 16.3,4 16.3,8.4 L16.3,12.7 C16.3,17.1 12.7,20.6 8.39999,20.6 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M8.39999,20.6 C3.99999,20.6 0.5,17.1 0.5,12.7 L0.5,8.4 C0.5,4 3.99999,0.5 8.39999,0.5 C12.8,0.5 16.3,4 16.3,8.4 L16.3,12.7 C16.3,17.1 12.7,20.6 8.39999,20.6 Z" id="Shape" stroke="#92A4BA" stroke-width="2"></path>
+                        </g>
+                        <g id="Vector_7" transform="translate(0.000000, 25.000000)">
+                            <path d="M0,38.5992 L0,13.0992 C0,8.1992 3,3.9992 7.2,2.6992 C10.8,1.599201 15.6,0.699200763 21.1,0.699200763 C27.2,0.699200763 32,1.599198 35.6,2.5992 C39.8,3.7992 42.8,8.0992 42.8,12.8992 L42.8,38.4992" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M0,38.5992 L0,13.0992 C0,8.1992 3,3.9992 7.2,2.6992 C10.8,1.599201 15.6,0.699200763 21.1,0.699200763 C27.2,0.699200763 32,1.599198 35.6,2.5992 C39.8,3.7992 42.8,8.0992 42.8,12.8992 L42.8,38.4992" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                        </g>
+                        <g id="Group_8" transform="translate(10.000000, 39.000000)">
+                            <g id="Vector_8">
+                                <polyline id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="0.0999984741 0.5 0.0999984741 60.8 22.7 60.8 22.7 0.5"></polyline>
+                                <polyline id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round" points="0.0999984741 0.5 0.0999984741 60.8 22.7 60.8 22.7 0.5"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Vector_9" transform="translate(21.000000, 67.000000)" stroke="#92A4BA" stroke-linecap="round">
+                        <path d="M0,32.6992 L0,0.199196948" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_9" transform="translate(55.000000, 0.000000)">
+                <g id="Vector_10" transform="translate(0.000000, 28.000000)">
+                    <path d="M41.7,5.4008 C37.4,2.3008 31.1,0.300799237 24,0.300799237 C16.9,0.300799237 10.6,2.3008 6.3,5.4008 L0.799999237,5.4008 L0.799999237,14.8008 C0.799999237,22.8008 11.2,29.3008 24,29.3008 C36.8,29.3008 47.2,22.8008 47.2,14.8008 L47.2,5.4008 L41.7,5.4008 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M41.7,5.4008 C37.4,2.3008 31.1,0.300799237 24,0.300799237 C16.9,0.300799237 10.6,2.3008 6.3,5.4008 L0.799999237,5.4008 L0.799999237,14.8008 C0.799999237,22.8008 11.2,29.3008 24,29.3008 C36.8,29.3008 47.2,22.8008 47.2,14.8008 L47.2,5.4008 L41.7,5.4008 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+                <g id="Vector_11" transform="translate(0.000000, 18.000000)">
+                    <path d="M41.7,5.7992 C37.4,2.6992 31.1,0.699200763 24,0.699200763 C16.9,0.699200763 10.6,2.6992 6.3,5.7992 L0.799999237,5.7992 L0.799999237,15.1992 C0.799999237,23.1992 11.2,29.6992 24,29.6992 C36.8,29.6992 47.2,23.1992 47.2,15.1992 L47.2,5.7992 L41.7,5.7992 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M41.7,5.7992 C37.4,2.6992 31.1,0.699200763 24,0.699200763 C16.9,0.699200763 10.6,2.6992 6.3,5.7992 L0.799999237,5.7992 L0.799999237,15.1992 C0.799999237,23.1992 11.2,29.6992 24,29.6992 C36.8,29.6992 47.2,23.1992 47.2,15.1992 L47.2,5.7992 L41.7,5.7992 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+                <g id="Vector_12" transform="translate(0.000000, 9.000000)">
+                    <path d="M41.7,5.5004 C37.4,2.4004 31.1,0.400399619 24,0.400399619 C16.9,0.400399619 10.6,2.4004 6.3,5.5004 L0.799999237,5.5004 L0.799999237,15.0004 C0.799999237,23.0004 11.2,29.5004 24,29.5004 C36.8,29.5004 47.2,23.0004 47.2,15.0004 L47.2,5.6004 L41.7,5.6004 L41.7,5.5004 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M41.7,5.5004 C37.4,2.4004 31.1,0.400399619 24,0.400399619 C16.9,0.400399619 10.6,2.4004 6.3,5.5004 L0.799999237,5.5004 L0.799999237,15.0004 C0.799999237,23.0004 11.2,29.5004 24,29.5004 C36.8,29.5004 47.2,23.0004 47.2,15.0004 L47.2,5.6004 L41.7,5.6004 L41.7,5.5004 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+                <g id="Vector_13">
+                    <path d="M24,29 C36.813,29 47.2,22.5081 47.2,14.5 C47.2,6.49187 36.813,0 24,0 C11.187,0 0.8,6.49187 0.8,14.5 C0.8,22.5081 11.187,29 24,29 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M47.2,14.5 C47.2,22.5081 36.813,29 24,29 C11.187,29 0.799999237,22.5081 0.799999237,14.5 C0.799999237,6.49187 11.187,0 24,0 C36.813,0 47.2,6.49187 47.2,14.5 Z" id="Shape" stroke="#92A4BA" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

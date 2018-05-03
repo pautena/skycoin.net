@@ -6,40 +6,38 @@ import { injectIntl } from 'react-intl';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
-import SignUpSection from 'components/SignUpSection';
-
-import EcosystemSection from './components/EcosystemSection';
+import SignUpSection from 'components/SignUpSectionSecondary';
 import About from './components/About';
-import Roadmap from './components/Roadmap';
-import Whitepaper from './components/Whitepaper';
+import Video from './components/Video';
+import Features from './components/Features';
 
-import banner from './ecosystem.svg';
 
-const Ecosystem = ({ intl }) => (
+import banner from './CXO.svg';
+
+const CXO = ({ intl }) => (
   <div>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'ecosystem.title' })}</title>
+      <title>{intl.formatMessage({ id: 'cxo.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'ecosystem.description' })}
+        content={intl.formatMessage({ id: 'cxo.description' })}
       />
     </Helmet>
 
     <Header />
     <TopBanner src={banner} />
-    <EcosystemSection />
     <About />
-    <Roadmap />
-    <Whitepaper />
+    <Video />
+    <Features />
     <SignUpSection />
     <Footer />
   </div>
 );
 
-Ecosystem.propTypes = {
+CXO.propTypes = {
   intl: PropTypes.shape({
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };
 
-export default injectIntl(Ecosystem);
+export default injectIntl(CXO);

@@ -78,7 +78,7 @@ const QuoteLine = styled.div`
 `;
 
 const Quote = styled.div`
-  padding-left: 30px;
+  padding-left: ${rem(SPACE[7])};
 `;
 
 const QuoteContainer = styled.div`
