@@ -17,7 +17,7 @@ export default [{
   filesize: '7mb',
 },
 {
-  name: 'Skywire Miner Software Installation Manua',
+  name: 'Skywire Miner Software Installation Manual',
   download: 'https://downloads.skycoin.net/skywire/Skywire-Miner-Software-Installation-Manual.pdf',
   filetype: '.pdf',
   filesize: '2.6mb',
