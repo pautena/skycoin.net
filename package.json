@@ -1,6 +1,6 @@
 {
   "name": "skycoin.net",
-  "version": "0.7.34",
+  "version": "0.7.35",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
