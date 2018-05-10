@@ -5,9 +5,10 @@ import { Flex, Box } from 'grid-styled';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Container from 'components/Container';
-
+import media from 'utils/media';
 import { COLOR, COLORS } from 'config';
 import * as content from 'components/Ecosystem/content';
+import Button from 'components/Button';
 
 import Illustrations from './components/Illustrations';
 import Info from './components/Info';
@@ -15,6 +16,20 @@ import Info from './components/Info';
 const ContentItem = styled(Flex)`
   background-color: ${props => ((props.bg && COLOR[props.bg]) || (props.bg && COLORS[props.bg]) || 'transparent')};
   flex-direction: row-reverse;
+`;
+const Btn = styled(Button)`
+  margin-left: 25px;
+`;
+
+const BtnContainer = styled(Flex)`
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  ${media.md.css`
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  `}
 `;
 
 const Ecosystem = () => (
@@ -38,6 +53,28 @@ const Ecosystem = () => (
     <ContentItem py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mx={[-7, 0]}>
       <Box width={[1, 3 / 5, 4 / 6]}>
         <Info heading="ecosystem.skywire.heading" body="ecosystem.skywire.body" />
+        <BtnContainer px={[0, 4, 8]}>
+          <Btn
+            href="/skywire"
+            color="base"
+            bg="white"
+            pill
+            outlined
+            mt={[5, 6]}
+          >
+            <FormattedMessage id="ecosystem.skywire.skywireBtn" />
+          </Btn>
+          <Btn
+            href="/cxo"
+            color="base"
+            bg="white"
+            pill
+            outlined
+            mt={[5, 6]}
+          >
+            <FormattedMessage id="ecosystem.skywire.cxoBtn" />
+          </Btn>
+        </BtnContainer>
       </Box>
       <Box width={[1, 2 / 5, 2 / 6]}>
         <Illustrations items={content.skywire} />

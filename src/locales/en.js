@@ -362,6 +362,8 @@ export default {
     skywire: {
       heading: 'Skywire',
       body: 'It is fast. It doesn’t suffer from throttling and other service disruptions that you get with large ISPs.<br/><br/>It is private. This means that you can’t be tracked as you browse. Instead of paying $$$ per month to be tracked by the ISP (which then sells your browsing data without permission), the Skywire community will have internet service that protects their privacy.<br/><br/>It is incentivized. Skywire will develop to be a wireless mesh network (WMN). Users can earn both Skycoin and Coin Hours for running hardware nodes that provide both bandwidth and storage to the entire network. Users can then spend earned Coin Hours on content and other network resources, as they choose.<br/><br/>It is secure. Skywire is created by users for users. Users dictate the decisions made on the network and the network operates on a web of trust system where malicious nodes can be cut off from the main Skywire network via collective agreement of the community. This consensus model allows Skywire to be immune from attacks, exploitation and manipulation.<br/><br/>In an era where consumers are consistently being taken advantage of by large corporations in the name of profit, Skycoin’s Skywire network is a breath of fresh air. Skywire gives the power back to the people and creates a stronger, faster, and more secure internet in the process.</p>',
+      skywireBtn: 'learn more about skywire',
+      cxoBtn: 'learn more about cxo',
     },
     skyledger: {
       heading: 'Obelisk',
