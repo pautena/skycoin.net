@@ -17,6 +17,7 @@ export default {
       telegram: 'Telegram',
       discord: 'Discord',
       getWallet: 'Buy Skycoin',
+      jobs: 'Jobs',
     },
   },
   // footer: {

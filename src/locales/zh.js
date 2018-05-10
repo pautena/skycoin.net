@@ -12,6 +12,7 @@ export default {
       telegram: 'Telegram',
       discord: 'Discord',
       getWallet: '购买天空链',
+      jobs: '工作',
     },
   },
   notFound: {
