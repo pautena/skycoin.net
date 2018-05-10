@@ -321,6 +321,10 @@ class Navigation extends React.PureComponent {
                   <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
                     <FormattedMessage id="header.navigation.explorer" />
                   </StyledLink>
+
+                  <StyledLink white={white} isMobile={isMobile} to="/jobs">
+                    <FormattedMessage id="header.navigation.jobs" />
+                  </StyledLink>
                 </GroupWrapper>
               }
 
