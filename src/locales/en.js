@@ -222,7 +222,6 @@ export default {
       cxo: {
         title: 'CXO',
         text: 'A peer-to-peer cloud storage service tailored to service the distributed network of Skywire.',
-        btnText: 'learn more about cxo',
       },
       kittyCash: {
         title: 'KittyCash',
