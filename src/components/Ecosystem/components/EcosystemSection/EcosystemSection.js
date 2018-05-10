@@ -18,12 +18,17 @@ const ContentItem = styled(Flex)`
   flex-direction: row-reverse;
 `;
 const Btn = styled(Button)`
-  margin-left: 25px;
+  margin-left: 0;
+
+  ${media.md.css`
+    margin-left: 25px;
+  `}
 `;
 
 const BtnContainer = styled(Flex)`
   flex-direction: column;
   margin-bottom: 30px;
+  align-items: center;
 
   ${media.md.css`
     flex-direction: row;
