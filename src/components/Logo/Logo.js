@@ -22,10 +22,12 @@ const Img = styled.img.attrs({
   
   ${media.md.css`
     height: ${rem(38)};
+    margin-right: 15px;
   `}
   
   ${media.lg.css`
     height: ${props => (props.white ? rem(49) : rem(38))};
+    margin-right: 0;
   `}
 `;
 

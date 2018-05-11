@@ -20,6 +20,8 @@ import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
 import cancelIc from './icCancel.svg';
 
+const menuBreakpoint = '1035px';
+
 const ToggleButton = styled.button`
   height: 30px;
   width: 30px;
@@ -78,15 +80,20 @@ const Scrollable = styled.div`
   right: -17px;
   top: -60px;
   padding-top: 60px;
-
+  
   ${media.md.css`
     top: 0;
+    left: 0;
     padding-top: 0;
     width: auto;
     height: auto;
     background: transparent;
     transform: translateX(0);
-  `}
+  `};
+
+  @media (min-width: ${menuBreakpoint}) {
+    left: auto;
+  };
 `;
 
 const GroupWrapper = styled.div`
@@ -206,10 +213,11 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
       opacity: ${props => (props.white ? '.7' : '1')};
     }
   `}
-  
-  ${media.lg.css`
+
+  @media (min-width: ${menuBreakpoint}) {
     margin-left: ${rem(SPACE[7])};
-  `}
+  };
+  
 `));
 
 const Img = styled.img.attrs({
