@@ -48,6 +48,6 @@ export default styled(Text)`
   `}
 
   a {
-    color: inherit;
+    color: ${props => (props.linkColor ? props.linkColor : 'inherit')};
   }
 `;

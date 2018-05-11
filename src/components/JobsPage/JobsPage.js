@@ -9,8 +9,11 @@ import Header from 'components/Header';
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
+import Text from 'components/Text';
+import Link from 'components/Link';
+import { rem } from 'polished';
 
-import { FONT_FAMILIES } from 'config';
+import { SPACE, FONT_FAMILIES, FONT_SIZES, COLOR } from 'config';
 
 const Wrapper = styled.div`
   padding: 2em 0;
@@ -24,43 +27,26 @@ const Divider = styled.hr`
   width: 100%;
 `;
 
-const Subheading = styled.strong`
-  color: #394049;
-  display: block;
-  font-family: ${FONT_FAMILIES.sansBold};
-  font-size: 1.25em;
-  line-height: 1.4;
-  margin: 0 0 1em;
-`;
-
-const Strong = styled.strong`
-  display: block;
-  font-family: ${FONT_FAMILIES.sansBold};
-  font-size: 1em;
-  line-height: 1.3;
-  margin: 0 0 0.5em;
-`;
-
-const Paragraph = styled.p`
-  font-family: ${FONT_FAMILIES.sans};
-  line-height: 1.3;
-  margin-bottom: 0.75em;
-`;
-
 const StyledList = styled.ul`
+  margin: 0 0 ${rem(SPACE[4])};
+  font-size: ${FONT_SIZES[2]}px;
+  color: #394049;
   font-family: ${FONT_FAMILIES.sans};
+  line-height: 1.75rem;
 `;
 
-const ListItem = styled.li`
-  margin-bottom: 0.4em;
+const StyledListItem = styled.li`
+  list-style-position: inside;
 `;
 
 const Section = styled.section`
   margin-bottom: 3em;
 `;
 
-const StyledLink = styled.a`
-  color: #0072FF;
+const StyledLink = styled(Link)`
+  margin-left: 7px;
+  text-decoration: none;
+  color: ${COLOR.base};
 `;
 
 const JobsPage = () => (
@@ -75,36 +61,36 @@ const JobsPage = () => (
     <Header border />
     <Container>
       <Wrapper>
-        <Heading heavy as="h1" fontSize={[6, 7]} color="black" mb={[4, 6]}>
-            Skycoin is hiring developers.
+        <Heading heavy as="h2" fontSize={[6, 7]} color="black" mb={[0]}>
+          Skycoin is hiring developers.
         </Heading>
-        <Subheading>
-          {
-            // eslint-disable-next-line max-len
-          }If you would like to work with us, send an email to jobs@skycoin.net with this information:
-        </Subheading>
+        <Text fontSize={[2, 2, 3]} color="black" heavy>
+          If you would like to work with us, send an email to jobs@skycoin.net with
+          this information:
+        </Text>
         <Section>
           <StyledList>
-            <ListItem>Name</ListItem>
-            <ListItem>Skills</ListItem>
-            <ListItem>Full-time or part-time</ListItem>
-            <ListItem>Timezone</ListItem>
-            <ListItem>Which of Skycoin’s projects you’re most interested in</ListItem>
-            <ListItem>Brief résumé</ListItem>
+            <StyledListItem>Name</StyledListItem>
+            <StyledListItem>Name</StyledListItem>
+            <StyledListItem>Skills</StyledListItem>
+            <StyledListItem>Full-time or part-time</StyledListItem>
+            <StyledListItem>Timezone</StyledListItem>
+            <StyledListItem>Which of Skycoin’s projects you’re most interested in</StyledListItem>
+            <StyledListItem>Brief résumé</StyledListItem>
           </StyledList>
+
           <Divider />
-          <Strong>
-            {
-              // eslint-disable-next-line max-len
-            }All of our projects are developed in Go. For frontend work, we use Angular 2 or React.js.
-          </Strong>
-          <Paragraph>
-            Our team is spread across the world and you will be working remotely.  We communicate using <StyledLink href="https://t.me/skycoindev" rel="noopener noreferrer" target="_blank">telegram</StyledLink> and <StyledLink href="https://discord.gg/EgBenrW" rel="noopener noreferrer" target="_blank">discord</StyledLink>.
-          </Paragraph>
-          <Paragraph>Some of our open positions include:</Paragraph>
+          <Text fontSize={2} color="black" linkColor={COLOR.base}>
+            All of our projects are developed in Go. For frontend work, we use Angular 2
+            or React.js. <br />
+            Our team is spread across the world and you will be working remotely.
+            We communicate using
+            <StyledLink href="https://t.me/skycoindev" target="_blank">telegram</StyledLink> and
+            <StyledLink href="https://discord.gg/EgBenrW" target="_blank">discord</StyledLink>.
+            <br /> Some of our open positions include:</Text>
           <StyledList>
-            <ListItem>Sr. Go Developer [golang] [multiple positions]</ListItem>
-            <ListItem>Sr. Angular 2 Developer</ListItem>
+            <StyledListItem>Sr. Go Developer [golang] [multiple positions]</StyledListItem>
+            <StyledListItem>Sr. Angular 2 Developer</StyledListItem>
           </StyledList>
         </Section>
       </Wrapper>
