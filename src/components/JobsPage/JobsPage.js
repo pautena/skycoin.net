@@ -71,7 +71,6 @@ const JobsPage = () => (
         <Section>
           <StyledList>
             <StyledListItem>Name</StyledListItem>
-            <StyledListItem>Name</StyledListItem>
             <StyledListItem>Skills</StyledListItem>
             <StyledListItem>Full-time or part-time</StyledListItem>
             <StyledListItem>Timezone</StyledListItem>
