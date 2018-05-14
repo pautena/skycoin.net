@@ -137,7 +137,7 @@ export const en = {
 export const zh = {
   title: '团队简介',
   subtitle: '新互联网的架构师',
-  quote: '“这些是全球最先进的区块链应用平台 - 新互联网的架构师，我们相信他们，我们将会被拯救。” - Synth',
+  quote: '“他们是新互联网-- 世界上最先进的区块链应用平台—的架构师。我们相信他们，他们也会 不负众望。“ - Synth',
   description: 'Bios of the Skycoin team',
   readBio: '个人档案',
   hide: '隐藏',
@@ -161,7 +161,7 @@ export const zh = {
         email: '',
         picture: '',
         title: '',
-        bio: '创始人 Houwu是以太坊的开发者之一，也是Skycoin分布式网络及加密货币的中心共识协 议Oblelisk白皮书的作者。他曾在清华大学攻读博士学位。    ',
+        bio: '创始人Houwu也是以太坊的开发者之一，也是我们分布式网络以及加密货币的关键--Obelisk白皮书的作者。他曾在清华大学攻读博士学位。 ',
       },
       {
         name: 'Steve Leonard',
@@ -229,7 +229,7 @@ export const zh = {
         name: 'Josh Ogle',
         title: 'Samples.com和The Original Agency首席执行官|天使投资人',
         picture: '',
-        bio: 'Josh有着引导和扩大企业、帮助企业重新定义市场领域的经验。不管是商业渠道还是 代理工作，在他的指引下，每家企业都走向繁荣。他为企业带来了一种通过凝聚力和 生产力经营和发挥规模效应的方式，以最大限度地发挥他们的潜力。作为康奈尔大学 的校友，他对未来科技和区块链技术的发展充满信心。',
+        bio: 'Samples.com 以及The Original Agency首席执行官 | 天使投资人 Josh在引导和扩大企业、帮助企业重新定义他们的利基市场从而走向强大等方面有着成功 的经验。不管是领先的企业还是仅仅是代理工作，在他的指引下，每家企业都走向繁荣。 他为企业带来了一种通过富有凝聚力和创造力的方法来发挥规模效应的方式，从而最大限 度地发挥他们的潜力。作为康奈尔大学的校友，他对未来科技和区块链技术的发展充满信 心。',
       },
       {
         name: 'TokenKey',
@@ -264,7 +264,7 @@ export const zh = {
         name: 'Hive Chain Labs',
         title: '',
         picture: 'hive_chain_labs.jpg',
-        bio: '来自硅谷的Hive Chan Labs和Hchain资本致力于跨学科区块链项目的研究和孵化。Hchain是区块链的信仰者，并持有“使区块链无处不在”的愿景。他们的投资案例包括ICO.com、 TKN.com、Scry、 RChain以及Polkadot等。',
+        bio: '来自硅谷的Hive Chain Labs和HChain资本致力于跨学科区块链基础项目的研究和孵化。HChain是区块链技术的信徒，并怀有“让区块链无处不在”的愿景。他们的投资案例包括 ICO.com, TKN.com. Scry, RChain以及Polkadot等。',
       },
     ],
   },
