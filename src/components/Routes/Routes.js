@@ -17,6 +17,7 @@ import Skyminer from '../Skyminer';
 import Skywire from '../Skywire';
 import CXO from '../CXO';
 import Jobs from '../JobsPage';
+import Whitelist from '../Whitelist';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -37,6 +38,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}skywire`} exact component={Skywire} />
       <Route path={`${prefix}cxo`} exact component={CXO} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
+      <Route path={`${prefix}whiteList`} exact component={Whitelist} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
