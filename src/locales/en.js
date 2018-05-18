@@ -536,7 +536,7 @@ export default {
       skills: 'Skills',
       time: 'Full-time or part-time',
       timezone: 'Timezone',
-      projects: 'Which of Skycoin’s projects you’re most interested&nbsp;in',
+      projects: 'Which of Skycoin’s projects you’re most interested in',
       resume: 'Brief résumé',
     },
     ourProject: 'All of our projects are developed in Go. For frontend work, we use ',
@@ -708,7 +708,7 @@ export default {
     },
     accordion6: {
       title: 'Hardware Internship Engineer',
-      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skill and proficiency in English are requirements for admission; experiences in large international companies are preferred.  <br /> Upon completion of the internship period, satisfactory trainees shall be given permanent posts. ',
+      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skill and proficiency in English are requirements for admission; experiences in large international companies are preferred. Upon completion of the internship period, satisfactory trainees shall be given permanent posts. ',
       responsibilities: {
         title: 'Responsibilities',
         item1: 'Take part in the design, development and testing of hardware projects;',
@@ -732,7 +732,7 @@ export default {
     },
     accordion7: {
       title: 'Blockchain Internship Engineer',
-      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skills and proficiency in English are requirements for admission; experiences in large international companies are preferred. <br /> Upon completion of the internship period, satisfactory trainees shall be given permanent posts.',
+      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skills and proficiency in English are requirements for admission; experiences in large international companies are preferred. Upon completion of the internship period, satisfactory trainees shall be given permanent posts.',
       responsibilities: {
         title: 'Responsibilities',
         item1: 'Study the principle of blockchain, operation mechanism and relevant algorithms;',
