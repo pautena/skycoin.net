@@ -394,7 +394,7 @@ export default {
     ourTeam: 'Our team is spread across the world and you will be working remotely. We communicate using',
     accordion1: {
       title: 'Mechanical Engineer OR Intern',
-      description: 'Descriptions',
+      description: 'Description',
       study: 'Study relevant technical materials to compile the proper English materials for foreign members making up 80% of total team members. Good proficiency in English reading and writing is a requirement for admission',
       responsibilities: {
         title: 'Responsibilities',
