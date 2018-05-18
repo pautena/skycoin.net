@@ -811,7 +811,7 @@ const JobsPage = () => (
           </Box>
           <Box width={[1, 65 / 100]} pl={[0, 35]}>
 
-            <Expander collapsed title={<FormattedMessage id="jobs.accordion1.title" />}>
+            <Expander title={<FormattedMessage id="jobs.accordion1.title" />}>
               {renderAccordion1Content()}
             </Expander>
 
