@@ -15,9 +15,10 @@ import award from './images/award.svg';
 /* eslint-disable global-require */
 const logos = [
   require('./images/icBlockchain.png'),
-  require('./images/icForbes.png'),
   require('./images/icAlphabit.png'),
   require('./images/icCoinTelegrph.png'),
+  require('./images/icNasdaq.png'),
+  require('./images/icForbes.png'),
   require('./images/icCionAgenda.png'),
 ];
 /* eslint-enable global-require */
@@ -80,6 +81,14 @@ const Graphic = styled.img.attrs({
   margin-right: ${rem(SPACE[8])}px;
 `;
 
+const LogosWrapper = styled(Flex)`
+  flex-wrap: wrap;
+  
+  ${media.md.css`
+    flex-wrap: nowrap;  
+  `}
+`;
+
 const Press = () => (
   <div>
     <Container>
@@ -97,13 +106,13 @@ const Press = () => (
             <Graphic />
           </Flex>
         </Flex>
-        <Flex align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
+        <LogosWrapper align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
           {logos.map((item, i) => (
-            <LogoWrapper width={[1 / 2, 1 / 5, 'auto']}>
+            <LogoWrapper width={[1 / 2, 1 / 3, 'auto']}>
               <Logo key={i} src={logos[i]} />
             </LogoWrapper>
           ))}
-        </Flex>
+        </LogosWrapper>
       </Wrapper>
     </Container>
   </div>
