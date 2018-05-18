@@ -92,7 +92,7 @@ export default {
     video: 'How To Buy Skycoin Direct From Skycoin.net',
   },
   home: {
-    title: 'Skycoin - Blockchain Internet',
+    title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
       heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
