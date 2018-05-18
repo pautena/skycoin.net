@@ -87,5 +87,10 @@ export default class Expander extends React.Component {
 
 Expander.propTypes = {
   children: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
   collapsed: PropTypes.bool,
+};
+
+Expander.defaultProps = {
+  collapsed: false,
 };

@@ -735,7 +735,6 @@ const renderAccordion8Content = () => (
 );
 
 
-
 const JobsPage = () => (
   <div>
     <Helmet>
