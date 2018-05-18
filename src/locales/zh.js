@@ -631,4 +631,7 @@ export default {
       },
     },
   },
+  whitelist: {
+    heading: 'Skywire Testnet Reward Application Form',
+  },
 };

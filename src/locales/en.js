@@ -783,6 +783,9 @@ export default {
       },
     },
   },
+  whitelist: {
+    heading: 'Skywire Testnet Reward Application Form',
+  },
 };
 
 /* eslint-enable max-len */
