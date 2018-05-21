@@ -35,6 +35,17 @@ const Image = styled.img`
   transform: translateY(-50%) translateX(-50%);
 `;
 
+const ImageBg = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(${props => props.bg});
+  background-size: cover;
+  background-position: center center;
+`;
+
 const NewsContainer = styled.div`
   width: 100%;
   box-shadow: ${BOX_SHADOWS.box};
@@ -58,12 +69,13 @@ const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
+
 const NewsItem = ({ title, date, href, image }) => (
   <Flex width={[1, 1 / 2, 1 / 3]} px={[3]} pb={4} mb={[6, 8]} align="flex-start">
     <StyledLink href={href} target="_blank">
       <NewsContainer>
         <ImageContainer>
-          {image ? <Image src={image} /> : <Image src={placeholder} />}
+          {image ? <ImageBg bg={image} /> : <Image src={placeholder} />}
         </ImageContainer>
         <Box px={7} pb={10} pt={6}>
           <DateText color={COLOR.textLight} fontSize={2}>
