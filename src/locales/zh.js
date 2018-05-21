@@ -311,24 +311,24 @@ export default {
     features: {
       heading: 'Key Features:',
       speed: {
-        title: 'Speed',
-        text: 'We’ve all experienced the network delays, outages and throttling that go hand in hand with current ISPs.  Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.    Skywire supports channel bonding which provides unmatched speed and reliability. The ability to connect  to multiple nodes at once drastically increases throughput and redundancy, democratizing previously  difficult use cases.',
+        title: '速度快',
+        text: '我们在使用现有的ISP服务时，都曾遇到过网络延迟、中断和节流问题。Skywire的协议基于软件定义网络，这将使过时和低效的“热土豆”（hot-potato）路由成为历史。Skywire支持频道绑定，实现无与伦比的快速连接，且具有高度的可靠性，能一次连接到多个节点，大大提高其吞吐量和冗余，使之前难以实现的应用场景实现民主化。',
       },
       privacy: {
-        title: 'Privacy',
-        text: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold. Third parties will not be able to connect individual packets to any user  or IP address, and they will not be able to read the contents of any network traffic. Relaying nodes will  only have routing information for one single prior and subsequent node for movement of the encrypted  data packet. Users will finally be able to browse with real privacy.',
+        title: '保护隐私',
+        text: '通过默认的端到端加密，Skywire确保所有流量都是私密的，用户的数据永远不会被跟踪、存储、出售。第三方无法将单个数据包连接到任何用户或IP地址，并且他们将无法读取网络中的任何内容。中继节点仅可获得用于加密数据包传输的前一个和后一个节点的路由信息。 用户最终能在上网的同时其隐私能获得真正的保护。',
       },
       security: {
-        title: 'Security',
-        text: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system. The consensus model allows nodes to be cut off if  deemed malicious, or strengthened if considered trustworthy through collective community agreement.  By making sure everyone has their say, Skywire becomes immune to exploitation, manipulation, and  attack, and safer for all.',
+        title: '安全性高',
+        text: '今天，互联网用户对于ISP的运营方式没有任何发言权。Skywire通过网络信任系统重新赋予用户决策权。在共识模式下，当节点被认定为恶意节点时，会被切断，如果改节点通过社区集体达成共识被认为是可信的，其连接就会获得增强。通过确保每个人都有发言权，Skywire不会被利用、操纵和攻击，并且对所有用户而言都更为安全',
       },
       ecosystem: {
-        title: 'Self-sustaining Ecosystem',
-        text: 'The backbone of Skywire will be the community itself. By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network and in turn, they’ll have Coin  Hours to use for resources and applications on the network. The more the network is used, the stronger,  faster and more robust it becomes, creating a closed-loop, self-sustaining economy.',
+        title: '自给自足的生态系统',
+        text: 'Skywire的骨干为社区本身。通过向节点运营者提供Skycoin和币时奖励，我们采取激励措施，鼓励用户为网络做出贡献，相应地，他们将获得币时，使用币时可获得网络上的资源和应用服务。网络被使用得越多，它就越强大、越快、越稳健，从而创建一个闭环、自给自足的生态经济体系。',
       },
       internet: {
-        title: 'The Foundation of a New Internet',
-        text: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet. In the future, this holy trinity of digital commodities will be affordable and easily  accessible to the world through Skywire. And in the not-too-distant future Skywire combined with the  ubiquity of Skywire Miners will provide the nodes to efficiently decentralize the limitless number of  blockchain applications that will run on Skycoin’s Fiber architecture.',
+        title: '一个全新的互联网的基础',
+        text: 'Skywire为分布式带宽、存储和计算奠定了基础，这对于新的P2P网络来说至关重要。未来，用户将以低廉的价格购买到这种三合一的数字商品，并且可以通过Skywire轻松访问到全球的信息。在不久的将来，Skywire与无处不在的Skywire矿机将提供节点，让将运行在Skycoin架构上的无数区块链应用实现高效去中心化运作。',
       },
     },
   },
@@ -357,20 +357,20 @@ export default {
     features: {
       heading: 'Key Features:',
       sharing: {
-        title: 'Data Sharing',
-        text: 'Useful for data owners who want to share information, as it can share many feeds like public keys. CXO nodes can subscribe to a feed to receive updates and can connect using the discovery server, interconnecting data based on interests.',
+        title: '数据共享',
+        text: '对于想要共享信息的数据所有者而言很有帮助，因为它可以共享许多信息，如公钥。 CXO节点可订阅信息源以接收更新信息，并可使用发现服务器进行连接，从而根据兴趣连接获得数据。',
       },
       privacy: {
-        title: 'Privacy',
-        text: 'CXO data exists collectively over the network. Once data is published, it cannot be destroyed, and data feeds are downloaded from peer subscribers. For privacy, the publisher’s location cannot be tracked as the publisher becomes merely a peer on the decentralized network',
+        title: '保护隐私',
+        text: 'CXO数据集中存在于网络上。一旦数据发布，它就不能被销毁，并且数据将被对等用户（订阅者）下载。 为了保护隐私，发布者的位置不能被追踪，因为发布者仅仅是去中心化网络上的一个点（对等用户）。',
       },
       security: {
-        title: 'Security',
-        text: 'CXO exists within a self-contained standard ecosystem that is mathematically strict and is implemented from the ground up. The owners sign data using private keys, and users who receive the data can audit the signature through the use of public key feeds to be sure the data comes from the desired owner. Security is ensured because nodes cannot alter data without the use of the owner’s private keys.',
+        title: '安全性高',
+        text: 'CXO存在于自给自足的标准生态系统，该生态系统数据精准，是一个从零开始打造的生态系统。 所有者使用私钥签署数据，接收数据的用户可以使用公钥来审核签名，以确保数据来自设想的信息所有者。若没有数据所有者私钥，节点不无法对数据进行更改，从而保障数据的安全。',
       },
       apps: {
-        title: 'CXO Applications',
-        text: 'Applications on CXO are currently being tested with light use. SkyBBS is a social network similar to Facebook, Steemit, and Twitter, and is built on top of CXO, with many more to come.',
+        title: 'CXO应用',
+        text: 'CXO上的应用目前正在进行少量测试。SkyBBS是一个类似于Facebook、Steemit和Twitter的社交网络，且建立在CXO上。敬请期待即将发布的更多应用。',
       },
     },
   },
