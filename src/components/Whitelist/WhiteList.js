@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FormattedMessage } from 'react-intl';
 
-import { whiteListFormSrc } from 'config';
+import { COLOR, whiteListFormSrc } from 'config';
+import Container from 'components/Container';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import Heading from 'components/Heading';
 
-
-const Container = styled.div`
+const FormWrapper = styled.div`
   overflow: hidden;
 `;
 const Iframe = styled.iframe`
@@ -17,6 +19,7 @@ const Iframe = styled.iframe`
   height: 100%;
   overflow-y: scroll;
   margin-bottom: -94px;
+  border: 0;
 `;
 
 export default class WhiteList extends React.PureComponent {
@@ -28,7 +31,12 @@ export default class WhiteList extends React.PureComponent {
       <div>
         <Header border />
         <Container>
-          <Iframe src={whiteListFormSrc} />
+          <FormWrapper>
+            <Heading heavy as="h2" fontSize={[6, 7]} color={COLOR.textDark} mt={[8, 10]} mb={[5, 7]}>
+              <FormattedMessage id="whitelist.heading" />
+            </Heading>
+            <Iframe src={whiteListFormSrc} />
+          </FormWrapper>
         </Container>
         <Footer />
       </div>);

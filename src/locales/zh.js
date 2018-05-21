@@ -43,7 +43,7 @@ export default {
     video: '如何从 Skycoin.net直接购买天空币',
   },
   home: {
-    title: 'Skycoin - Blockchain Internet',
+    title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
       heading: '4月10日在上海举办天空链生态系统发布会',
@@ -630,5 +630,8 @@ export default {
         item3: 'Use Adobe Illustrator or other same type graphic design software proficiently;',
       },
     },
+  },
+  whitelist: {
+    heading: 'Skywire Testnet Reward Application Form',
   },
 };
