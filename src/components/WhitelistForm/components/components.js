@@ -6,7 +6,7 @@ import RSelect from 'react-select';
 import 'react-select/dist/react-select.css';
 import media from 'utils/media';
 
-import { FONT_FAMILIES, FONT_SIZES, COLOR, SPACE } from 'config';
+import { FONT_FAMILIES, FONT_SIZES, COLOR } from 'config';
 import Container from 'components/Container';
 import Link from 'components/Link';
 /* eslint-disable react/prop-types */
