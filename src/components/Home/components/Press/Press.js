@@ -5,23 +5,23 @@ import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import Link from 'components/Link';
 
 import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
 import { rem } from 'polished';
 import media from 'utils/media';
 
 import award from './images/award.svg';
+import * as logos from './images';
 
-/* eslint-disable global-require */
-const logos = [
-  require('./images/icBlockchain.png'),
-  require('./images/icAlphabit.png'),
-  require('./images/icCoinTelegrph.png'),
-  require('./images/icNasdaq.png'),
-  require('./images/icForbes.png'),
-  require('./images/icCionAgenda.png'),
+const partners = [
+  { image: logos.blockchain, url: '' },
+  { image: logos.alphabit, url: '' },
+  { image: logos.coinTelegraph, url: '' },
+  { image: logos.nasdaq, url: 'https://twitter.com/Nasdaq/status/996785167527235584' },
+  { image: logos.forbes, url: 'https://www.forbes.com/sites/julesschroeder/2018/01/09/millennials-heres-how-cryptocurrency-could-transform-your-future/' },
+  { image: logos.coinAgenda, url: '' },
 ];
-/* eslint-enable global-require */
 
 const Wrapper = styled(Box)`
   position: relative;
@@ -107,9 +107,11 @@ const Press = () => (
           </Flex>
         </Flex>
         <LogosWrapper align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
-          {logos.map((item, i) => (
+          {partners.map((item, i) => (
             <LogoWrapper width={[1 / 2, 1 / 3, 'auto']}>
-              <Logo key={i} src={logos[i]} />
+              <Link href={item.url} target="_blank">
+                <Logo key={i} src={item.image} />
+              </Link>
             </LogoWrapper>
           ))}
         </LogosWrapper>
