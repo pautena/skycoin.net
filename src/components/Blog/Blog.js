@@ -149,7 +149,7 @@ class News extends PureComponent {
   render() {
     if (this.state.loaded) {
       return (
-        <Flex align="flex-start" justify="space-between" wrap mt={12} mx={[-3]}>
+        <Flex align="flex-start" justify="space-between" wrap mt={9} mx={[-3]}>
           {this.state.posts.map((p, i) => (
             <NewsItem
               title={p.title}
