@@ -7,6 +7,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
 import SignUpSection from 'components/SignUpSectionSecondary';
+import WhitelistSignUp from 'components/WhitelistSignUp/WhitelistSignUp';
 import About from './components/About';
 import Video from './components/Video';
 import Features from './components/Features';
@@ -27,6 +28,7 @@ const Skywire = ({ intl }) => (
     <Header />
     <TopBanner src={banner} />
     <About />
+    <WhitelistSignUp />
     <Video />
     <Features />
     <SignUpSection />

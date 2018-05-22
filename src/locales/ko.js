@@ -782,5 +782,8 @@ export default {
   },
   whitelist: {
     heading: 'Skywire Testnet Reward Application Form',
+    signUp: {
+      title: 'Get Cennected, Join Skywire Testned & Get Rewarded!',
+    },
   },
 };
