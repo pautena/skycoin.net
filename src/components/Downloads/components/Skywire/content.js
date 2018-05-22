@@ -1,8 +1,8 @@
 export default [{
-  name: 'Skywire Installation Manual',
-  download: 'https://downloads.skycoin.net/skywire/Skywire-Installation-Manual.pdf',
+  name: 'Skywire Installation Guide v1.0',
+  download: 'https://downloads.skycoin.net/skywire/Skywire-Installation-Guide-v1.0.pdf',
   filetype: '.pdf',
-  filesize: '2.4mb',
+  filesize: '477kb',
 },
 {
   name: 'downloads.skywire.minerAssemblyManual',
