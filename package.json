@@ -61,10 +61,5 @@
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
     "eject": "react-scripts eject"
-  },
-  "reactSnapshot": {
-    "include": [
-      "/whitelist"
-    ]
   }
 }
