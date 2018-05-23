@@ -786,4 +786,39 @@ export default {
       title: 'Get Connected, Join Skywire Testned & Get Rewarded!',
     },
   },
+  fiber: {
+    title: 'Fiber',
+    description: 'Fiber is Blockchain 3.0 Innovation with Advanced Peer-Chain Architecture',
+    about: {
+      heading: 'What is Fiber?',
+      subheading: 'Blockchain 3.0 Innovation with Advanced Peer-Chain Architecture',
+      quote: '“Skycoin’s Fiber architecture is a transformational, better-than-blockchain solution which solves existing problems using distributed ledger technology. Fiber is the foundation of blockchain 3.0 and can be best described as an infinitely scalable network of blockchains laid side by side, like strands. This is a technological feat that cryptocurrencies such as Bitcoin or Ethereum will never be able to achieve, as they were never engineered to scale infinitely.”',
+      author: 'medium source',
+      paragraph1: 'Fiber is the structural layer of Skycoin’s blockchain platform that is custom built to be adaptable to any blockchain application’s needs.  Running on an innovative and extremely efficient code, Fiber enables the Skycoin platform to scale into and disrupt veritably every industry with blockchain solutions.',
+      paragraph2: 'Fiber is as sophisticated as it is elegant, capable of expanding and adapting to the needs of numerous types of distributed applications.',
+    },
+    features: {
+      heading: 'The Advantages of Fiber',
+      system: {
+        title: 'Truly Symbiotic Peer-Chain System',
+        text: 'Skycoin’s Fiber architecture enables scaling of the Skycoin platform laterally as well as vertically without compromising dependencies or network deficiencies at scale.  Thanks to Skycoin’s Obelisk consensus mechanism, every token supported by Fiber will be fundamentally isolated from others such that they will never impact one another regarding network stability, security, or throughput.  Additionally, through the Skycoin Coin Hour system, every project that leverages Fiber will advance the entire Skycoin platform forward, without hindering the existing platform operations.  Fiber creates an unprecedented level of symbiosis between projects while maintaining enough isolation such that no one tokens can negatively impact the remainder of the network.',
+      },
+      forking: {
+        title: 'Forking Done Right',
+        text: 'Tokens running on Fiber will be forks of the Skycoin core code, which means that every project will have the same level of advanced features, throughput, security, and security as Skycoin.',
+      },
+      blockchain: {
+        title: 'Customized Blockchain',
+        text: 'Projects running on Skycoin Fiber will have their own fully independent and highly customizable blockchain to fit their unique needs. It is fundamentally naive to assume that one set of rules or operations will fulfill the requirements of a wide range of projects, meaning adaptability is the most crucial factor of a blockchain platform that aims to successfully scale both vertically and laterally.',
+      },
+      token: {
+        title: 'True Token Support',
+        text: 'Tokens built on Skycoin’s Fiber architecture will have an unprecedented level of network support. Tokens will be able to run on our groundbreaking peer-to-peer network, Skywire, and each token will have immediate wallet and exchange support within the Skycoin ecosystem.  That’s right, a project can launch and trade within a matter of minutes on our world-class platform.',
+      },
+      operation: {
+        title: 'Independent Operation',
+        text: 'As Skywire develops into a global peer-to-peer mesh network, Fiber tokens running on Skywire will be completely independent of reliance on traditional network infrastructure like internet service providers.  This platform independence is unique to Skycoin’s Fiber and its distributed applications and projects.',
+      },
+    },
+  },
 };
