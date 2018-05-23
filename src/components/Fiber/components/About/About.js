@@ -31,7 +31,7 @@ const Author = styled.span`
 `;
 
 const About = () => (
-  <Box pt={[8, 10]}>
+  <Box>
     <Container>
       <Heading heavy as="h2" mb={2} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
         <FormattedMessage id="fiber.about.heading" />

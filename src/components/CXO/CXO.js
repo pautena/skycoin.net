@@ -6,13 +6,20 @@ import { injectIntl } from 'react-intl';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
+import Features from 'components/Features';
 import SignUpSection from 'components/SignUpSectionSecondary';
 import About from './components/About';
 import Video from './components/Video';
-import Features from './components/Features';
-
 
 import banner from './CXO.svg';
+import * as images from './images';
+
+const featureItems = [
+  'sharing',
+  'privacy',
+  'security',
+  'apps',
+];
 
 const CXO = ({ intl }) => (
   <div>
@@ -28,7 +35,7 @@ const CXO = ({ intl }) => (
     <TopBanner src={banner} />
     <About />
     <Video />
-    <Features />
+    <Features items={featureItems} images={images} textId="cxo.features" />
     <SignUpSection />
     <Footer />
   </div>
