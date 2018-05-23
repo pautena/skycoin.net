@@ -29,6 +29,7 @@ const Home = ({ intl }) => (
         name="description"
         content={intl.formatMessage({ id: 'home.description' })}
       />
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
     </Helmet>
     <HeaderWrapper>
       <Header white social showBuy={false} />
