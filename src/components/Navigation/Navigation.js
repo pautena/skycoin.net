@@ -288,6 +288,8 @@ class Navigation extends React.PureComponent {
     const { menuVisible } = this.state;
 
     document.body.style.overflowY = menuVisible ? 'auto' : 'hidden';
+    document.body.style.position = menuVisible ? 'static' : 'relative';
+    document.body.style.height = menuVisible ? 'auto' : '100%';
     this.setState({ menuVisible: !menuVisible });
   }
 

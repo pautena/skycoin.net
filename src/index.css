@@ -34,9 +34,7 @@
          url('./resources/fonts/inconsolata-regular-webfont.woff') format('woff');
 }
 body {
-  position: relative;
   overflow-x: hidden;
-  height: 100%;
 }
 
 html {
