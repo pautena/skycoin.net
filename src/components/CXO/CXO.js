@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 
-import WhitelistSignUp from 'components/WhitelistSignUp/WhitelistSignUp';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
@@ -28,7 +27,6 @@ const CXO = ({ intl }) => (
     <Header />
     <TopBanner src={banner} />
     <About />
-    <WhitelistSignUp />
     <Video />
     <Features />
     <SignUpSection />
