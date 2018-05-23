@@ -8,43 +8,43 @@ import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
 import Features from 'components/Features';
 import SignUpSection from 'components/SignUpSectionSecondary';
-import About from './components/About';
-import Video from './components/Video';
 
-import banner from './CXO.svg';
+import About from './components/About';
+
+import banner from './fiber.svg';
 import * as images from './images';
 
-const featureItems = [
-  'sharing',
-  'privacy',
-  'security',
-  'apps',
+const features = [
+  'system',
+  'forking',
+  'blockchain',
+  'token',
+  'operation',
 ];
 
-const CXO = ({ intl }) => (
+const Ecosystem = ({ intl }) => (
   <div>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'cxo.title' })}</title>
+      <title>{intl.formatMessage({ id: 'fiber.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'cxo.description' })}
+        content={intl.formatMessage({ id: 'fiber.description' })}
       />
     </Helmet>
 
     <Header />
     <TopBanner src={banner} />
     <About />
-    <Video />
-    <Features items={featureItems} images={images} textId="cxo.features" />
+    <Features items={features} images={images} textId="fiber.features" />
     <SignUpSection />
     <Footer />
   </div>
 );
 
-CXO.propTypes = {
+Ecosystem.propTypes = {
   intl: PropTypes.shape({
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };
 
-export default injectIntl(CXO);
+export default injectIntl(Ecosystem);

@@ -6,14 +6,22 @@ import { injectIntl } from 'react-intl';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
+import Features from 'components/Features';
 import SignUpSection from 'components/SignUpSectionSecondary';
 import WhitelistSignUp from 'components/WhitelistSignUp/WhitelistSignUp';
 import About from './components/About';
 import Video from './components/Video';
-import Features from './components/Features';
-
 
 import banner from './skywire.svg';
+import * as images from './images';
+
+const featureItems = [
+  'speed',
+  'privacy',
+  'security',
+  'ecosystem',
+  'internet',
+];
 
 const Skywire = ({ intl }) => (
   <div>
@@ -30,7 +38,7 @@ const Skywire = ({ intl }) => (
     <About />
     <WhitelistSignUp />
     <Video />
-    <Features />
+    <Features items={featureItems} images={images} textId="skywire.features" />
     <SignUpSection />
     <Footer />
   </div>

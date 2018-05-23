@@ -16,6 +16,7 @@ import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
 import Skywire from '../Skywire';
 import CXO from '../CXO';
+import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
 import Whitelist from '../Whitelist';
 import WhitelistForm from '../WhitelistForm';
@@ -38,6 +39,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
       <Route path={`${prefix}skywire`} exact component={Skywire} />
       <Route path={`${prefix}cxo`} exact component={CXO} />
+      <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
       <Route path={`${prefix}whiteList`} exact component={Whitelist} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
