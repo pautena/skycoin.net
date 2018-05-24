@@ -821,4 +821,7 @@ export default {
       },
     },
   },
+  skyminerForm: {
+    title: 'Skyminer Order Information',
+  },
 };
