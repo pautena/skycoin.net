@@ -20,6 +20,7 @@ import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
 import Whitelist from '../Whitelist';
 import WhitelistForm from '../WhitelistForm';
+import SkyminerForm from '../SkyminerForm';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -42,6 +43,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
       <Route path={`${prefix}whiteList`} exact component={Whitelist} />
+      <Route path={`${prefix}skyminerForm`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />

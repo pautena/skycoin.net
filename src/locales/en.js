@@ -824,6 +824,9 @@ export default {
       },
     },
   },
+  skyminerForm: {
+    title: 'Skyminer Order Information',
+  },
 };
 
 /* eslint-enable max-len */
