@@ -373,6 +373,7 @@ export default {
     experiments: {
       heading: 'Fiber',
       body: 'The infinitely-scalable and highly customizable parallel peer-chain architecture of the Skycoin platform. Fiber is a better-than-blockchain solution, which is transformational in the way that it solves existing problems with distributed ledger technology.<br/><br/>Fiber is the foundation of “cryptocurrency 3.0”, an infinitely scalable network of blockchains laid side-by-side, like strands. Each project hosted on Fiber gets its own fully customizable, private blockchain capable of Visa-like speeds. Each strand added to Fiber strengthens the whole network and constructs the fabric of the entire ecosystem.<br/><br/>Skycoin Fiber does not compete with first and second generation cryptocurrency architectures, it replaces them. From fledgling blockchain projects to enterprises looking for solutions, Fiber is the answer.</p>',
+      btn: 'learn more about fiber',
     },
     iconLabel: {
       fiber: 'Fiber',
