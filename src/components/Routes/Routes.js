@@ -50,6 +50,7 @@ const Routes = ({ match }) => {
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
       <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
+      <Redirect from={`${prefix}skyminerform`} to={`${prefix}orderskyminer`} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );
