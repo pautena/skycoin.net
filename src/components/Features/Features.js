@@ -31,6 +31,11 @@ const FeatureWrapper = styled(Flex)`
   ${media.sm.css`
     padding-left: 0;
   `}
+  
+  a {
+    color: ${COLOR.base};
+    text-decoration: none;
+  }
 `;
 
 const Feature = ({ name, image, even, textId }) => (
