@@ -6,10 +6,13 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
+import Link from 'components/Link';
 import { rem } from 'polished';
 import media from 'utils/media';
 
 import { COLOR, SPACE } from 'config';
+
+const mediumLink = 'https://medium.com/skycoin/skycoin-fiber-platform-bf64debfc60f';
 
 const Article = styled.article`
   margin-bottom: ${rem(SPACE[5])};
@@ -21,14 +24,20 @@ const Article = styled.article`
   `}
 `;
 
-const Quote = styled(Text)`
-  padding: ${rem(SPACE[3])} 0 ${rem(SPACE[3])} ${rem(SPACE[7])};
-  border-left: 3px solid ${COLOR.textGrey}
+const StyledLink = styled(Link)`
+  color: ${COLOR.base};
+  text-decoration: none;
 `;
 
-const Author = styled.span`
-  color: ${COLOR.base}
+const Quote = styled(Text)`
+  padding: ${rem(SPACE[3])} 0 ${rem(SPACE[3])} ${rem(SPACE[7])};
+  border-left: 3px solid ${COLOR.textGrey};
+  
+  ${StyledLink} {
+    color: ${COLOR.base};
+  }
 `;
+
 
 const About = () => (
   <Box>
@@ -41,7 +50,7 @@ const About = () => (
       </SubHeading>
       <Quote fontSize={5} my={[5, 7]}>
         <FormattedMessage id="fiber.about.quote" />
-        (<Author><FormattedMessage id="fiber.about.author" /></Author>)
+        (<StyledLink href={mediumLink}><FormattedMessage id="fiber.about.author" /></StyledLink>)
       </Quote>
       <Article>
         <Text fontSize={2} color={COLOR.textDark}>
