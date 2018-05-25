@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
@@ -43,7 +43,7 @@ const Feature = ({ name, image, even, textId }) => (
         <FormattedMessage id={`${textId}.${name}.title`} />
       </SubHeading>
       <Text fontSize={2} color="black" m={0}>
-        <FormattedMessage id={`${textId}.${name}.text`} />
+        <FormattedHTMLMessage id={`${textId}.${name}.text`} />
       </Text>
     </Box>
   </FeatureWrapper>
