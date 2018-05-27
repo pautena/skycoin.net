@@ -99,7 +99,7 @@ export default {
     },
     hero: {
       heading: 'New Internet, New World',
-      paragraph: 'Skycoin is the most advanced blockchain application platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
+      paragraph: 'The Skycoin Platform is the most advanced blockchain platform in the world. Developed by early contributors to both Bitcoin and Ethereum, Skycoin is completely secure, infinitely scalable, and ISP independent. Skycoin is the only platform capable of fulfilling Satoshi’s original vision.',
       buy: 'Купить Skycoin',
       community: 'Сообщество',
       whitepapers: 'Документация',
