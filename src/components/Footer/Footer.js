@@ -14,6 +14,7 @@ import media from 'utils/media';
 import Languages from './components/Languages';
 import Email from './components/Email';
 import Social from './components/Social';
+import PageLinks from './components/PageLinks';
 
 const COPYRIGHT = '© Skycoin.net 2018';
 
@@ -85,6 +86,7 @@ const Footer = ({ isLanding }) => (
         </Box>
       </Flex>
       }
+      <PageLinks />
     </Container>
   </Wrapper>
 );
