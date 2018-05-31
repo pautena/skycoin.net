@@ -68,3 +68,6 @@ To release to production:
     $ git push origin master --tags
     ```
 
+## Important! When adding a new page (without a link to it), you need to add hidden link to `/src/components/Footer/components/PageLinks`
+This is necessary in order for react-snapshot to generate correct static *.html file and avoid home page rendering before any new page renders.
+Also modify production deploy script to remove cache for new static html files in `.travis/production.deploy.sh`.
