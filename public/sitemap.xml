@@ -2,30 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://www.skycoin.net/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.skycoin.net/skyminer/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.skycoin.net/ecosystem/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.skycoin.net/downloads/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.skycoin.net/buy/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.skycoin.net/jobs/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://www.skycoin.net/team/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/skywire/</loc>
+    <priority>1.00</priority>
+  </url>
+   <url>
+    <loc>https://www.skycoin.net/cn/</loc>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/skyminer/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/ecosystem/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/downloads/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/buy/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/jobs/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/team/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.skycoin.net/cn/skywire/</loc>
+    <priority>0.64</priority>
+  </url>
+ <url>
     <loc>https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/team/</loc>
   </url>
-  <url>
-    <loc>https://www.skycoin.net/cn/</loc>
+ <url>
+    <loc>https://www.skycoin.net/blog/statement/obelisk-the-skycoin-consensus-algorithm/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/</loc>
@@ -3574,5 +3619,4 @@
     <loc>https://www.skycoin.net/blog/page/19/</loc>
   </url>
 </urlset>
-<!--<guid value="260fb7ae-54ad-449e-bcc0-b04f8e1fda0d" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
