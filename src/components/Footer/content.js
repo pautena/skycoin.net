@@ -72,7 +72,7 @@ export default [{
     href: 'https://discord.gg/EgBenrW',
   }, {
     label: 'footer.facebook',
-    href: 'https://www.facebook.com/skycoinproject',
+    href: 'https://www.facebook.com/SkycoinOfficial/',
   }, {
     label: 'footer.instagram',
     href: 'https://www.instagram.com/skycoinproject/',
