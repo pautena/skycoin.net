@@ -10,7 +10,7 @@ import * as images from './images';
 const socialLinks = [
   { to: 'https://medium.com/@Skycoinproject', icon: images.medium },
   { to: 'https://twitter.com/skycoinproject', icon: images.twitter },
-  { to: 'https://www.facebook.com/skycoinproject', icon: images.facebook },
+  { to: 'https://www.facebook.com/SkycoinOfficial/', icon: images.facebook },
   { to: 'https://www.instagram.com/skycoinproject/', icon: images.instagram },
   { to: 'https://github.com/skycoin/skycoin', icon: images.github },
   { to: 'https://www.youtube.com/c/Skycoin', icon: images.youtube },
