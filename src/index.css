@@ -41,7 +41,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  height: 100%;
+  min-height: 100%;
 }
 
 * {

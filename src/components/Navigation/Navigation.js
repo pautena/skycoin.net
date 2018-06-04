@@ -280,6 +280,11 @@ class Navigation extends React.PureComponent {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
+  componentDidMount() {
+    document.body.style.minHeight = '100%';
+    document.body.style.height = '100%';
+  }
+
   componentWillUnmount() {
     disableScroll.off();
   }
@@ -289,7 +294,9 @@ class Navigation extends React.PureComponent {
 
     document.body.style.overflowY = menuVisible ? 'auto' : 'hidden';
     document.body.style.position = menuVisible ? 'static' : 'relative';
-    document.body.style.height = menuVisible ? 'auto' : '100%';
+    document.body.style.minHeight = menuVisible ? '100%' : '0';
+    document.body.style.height = menuVisible ? '100%' : 'calc(100vh - 70px)';
+
     this.setState({ menuVisible: !menuVisible });
   }
 
