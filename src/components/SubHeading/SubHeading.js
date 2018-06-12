@@ -16,7 +16,7 @@ export default styled(SubHeading)`
   ${width}
 
   font-family: ${props => (props.heavy ? `${FONT_FAMILIES.sansBold}` : `${FONT_FAMILIES.sans}`)};
-  font-weight: 'normal';
+  font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
   color: ${props => props.color || COLOR.textLight};

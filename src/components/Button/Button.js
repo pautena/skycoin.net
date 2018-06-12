@@ -31,14 +31,14 @@ const Button = styled(Link)`
 
   &:hover {
     background-color: ${props =>
-    props.bg && darken(0.05, get(COLORS, props.bg) || props.bg)};
+    (props.bg && darken(0.05, get(COLORS, props.bg) || props.bg)) || 'transparent'};
 
     box-shadow: ${BOX_SHADOWS.hover};
   }
 
   &:active {
     background-color: ${props =>
-    props.bg && darken(0.1, get(COLORS, props.bg) || props.bg)};
+    (props.bg && darken(0.1, get(COLORS, props.bg) || props.bg)) || 'transparent'};
   }
 
   ${props => props.outlined && css`
