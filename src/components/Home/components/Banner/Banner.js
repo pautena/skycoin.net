@@ -56,7 +56,7 @@ const Banner = () => (
             <FormattedMessage id="home.banner.subheading" />
           </Text>
         </TextContainer>
-        <Button target="_blank" href="https://www.skycoin.net/blog/development-updates/development-update-134/" pill bg="white" color="base" my={2} mx={2}>
+        <Button target="_blank" href="https://www.skycoin.net/blog/statement/skycoin-team-status-update/" pill bg="white" color="base" my={2} mx={2}>
           <FormattedMessage id="home.banner.button" />
         </Button>
       </Content>
