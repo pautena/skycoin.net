@@ -95,8 +95,9 @@ export default {
     title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
-      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
-      button: 'Read more',
+      heading: 'Skycoin Official Announcement: Status Update',
+      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
+      button: 'More info',
     },
     hero: {
       heading: 'The New Internet For The New World',
