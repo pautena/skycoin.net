@@ -94,8 +94,9 @@ export default {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     banner: {
-      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
-      button: 'Read more',
+      heading: 'Skycoin Official Announcement: Status Update',
+      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
+      button: 'More info',
     },
     hero: {
       heading: 'New Internet, New World',

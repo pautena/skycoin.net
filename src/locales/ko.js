@@ -94,8 +94,9 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     banner: {
-      heading: 'Announcing Skycoin Ecosystem Event in Shanghai on April 10th',
-      button: 'Read more',
+      heading: 'Skycoin Official Announcement: Status Update',
+      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
+      button: 'More info',
     },
     hero: {
       heading: 'New Internet, New World',
