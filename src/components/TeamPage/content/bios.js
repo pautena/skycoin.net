@@ -90,12 +90,6 @@ export const en = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Josh Ogle',
-        title: 'CEO of Samples.com and The Original Agency | Angel Investor',
-        picture: '',
-        bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
         name: 'TokenKey',
         title: '',
         picture: 'tokenkey.png',
@@ -224,12 +218,6 @@ export const zh = {
         title: '首席创新官 / Swytch.io创始人 / Tokencommons.org创始人 / MIT媒体实验室的科学家',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger目前是麻省理工学院媒体实验室人类动力学小组的研究科学 家，同时还是ID3的共同创始人和执行董事。此前，Clippinger博士是哈佛大学法律实验 室的创始人兼联合主任。他同时也是eG8论坛、全球领导力电信委员会以及世界经济 论坛风险分析网络的成员。',
-      },
-      {
-        name: 'Josh Ogle',
-        title: 'Samples.com和The Original Agency首席执行官|天使投资人',
-        picture: '',
-        bio: 'Samples.com 以及The Original Agency首席执行官 | 天使投资人 Josh在引导和扩大企业、帮助企业重新定义他们的利基市场从而走向强大等方面有着成功 的经验。不管是领先的企业还是仅仅是代理工作，在他的指引下，每家企业都走向繁荣。 他为企业带来了一种通过富有凝聚力和创造力的方法来发挥规模效应的方式，从而最大限 度地发挥他们的潜力。作为康奈尔大学的校友，他对未来科技和区块链技术的发展充满信 心。',
       },
       {
         name: 'TokenKey',
@@ -362,12 +350,6 @@ export const ru = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Josh Ogle',
-        title: 'CEO of Samples.com and The Original Agency | Angel Investor',
-        picture: '',
-        bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
-      },
-      {
         name: 'TokenKey',
         title: '',
         picture: 'tokenkey.png',
@@ -496,12 +478,6 @@ export const ko = {
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
-      },
-      {
-        name: 'Josh Ogle',
-        title: 'CEO of Samples.com and The Original Agency | Angel Investor',
-        picture: '',
-        bio: 'Josh has a proven track record of bootstrapping and scaling up companies to powerhouses that help redefine their respective niches. From lead generation to agency work, under his watch each venture has flourished. He brings a savvy understanding of how to operate and scale businesses in a cohesive and productive way to maximize their potential. A Cornell University Alumnus, Josh is passionate about the future of technology and blockchain.',
       },
       {
         name: 'TokenKey',
