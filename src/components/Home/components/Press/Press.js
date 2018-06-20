@@ -54,8 +54,8 @@ const Logo = styled.img.attrs({
   src: props => props.src,
 })`
   display: inline-block;
-  margin-top: ${rem(SPACE[4])}px;
-  margin-bottom: ${rem(SPACE[4])}px;
+  margin-top: ${rem(SPACE[4])};
+  margin-bottom: ${rem(SPACE[4])};
   max-width: 100%;
   max-height: 94px;
   
@@ -68,7 +68,7 @@ const Paragraph = styled.p`
   font-weight: 400;
   line-height: 1.5rem;
   margin-bottom: 0.5em;
-  margin-right: ${SPACE[13]};
+  margin-right: ${rem(SPACE[13])};
   text-transform: none;
 `;
 
@@ -78,7 +78,7 @@ const Graphic = styled.img.attrs({
   display: block;
   max-width: 100%;
   max-height: 155px;
-  margin-right: ${rem(SPACE[8])}px;
+  margin-right: ${rem(SPACE[8])};
 `;
 
 const LogosWrapper = styled(Flex)`
