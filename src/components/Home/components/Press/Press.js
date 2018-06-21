@@ -16,11 +16,13 @@ import * as logos from './images';
 
 const partners = [
   { image: logos.blockchain, url: '' },
-  { image: logos.alphabit, url: '' },
-  { image: logos.coinTelegraph, url: '' },
-  { image: logos.nasdaq, url: 'https://twitter.com/Nasdaq/status/996785167527235584' },
   { image: logos.forbes, url: 'https://www.forbes.com/sites/julesschroeder/2018/01/09/millennials-heres-how-cryptocurrency-could-transform-your-future/' },
+  { image: logos.coinTelegraph, url: '' },
   { image: logos.coinAgenda, url: '' },
+  { image: logos.nasdaq, url: 'https://twitter.com/Nasdaq/status/996785167527235584' },
+  { image: logos.alphabit, url: '' },
+  { image: logos.cnbc, url: '' },
+  { image: logos.inc, url: '' },
 ];
 
 const Wrapper = styled(Box)`
@@ -35,20 +37,14 @@ const Wrapper = styled(Box)`
 `;
 
 const LogoWrapper = styled(Box)`
+  flex-wrap: wrap;
   text-align: center;
   padding: ${rem(SPACE[2])};
-  
-  ${media.sm.css`
-    &:first-child {
-      text-align: left;
-    }
-    
-    &:last-child {
-      text-align: right;
-    }
-  `}
-`;
 
+  ${media.md.css`
+    padding: ${rem(SPACE[2])} ${rem(SPACE[6])};
+  `};
+`;
 
 const Logo = styled.img.attrs({
   src: props => props.src,
@@ -81,18 +77,10 @@ const Graphic = styled.img.attrs({
   margin-right: ${rem(SPACE[8])};
 `;
 
-const LogosWrapper = styled(Flex)`
-  flex-wrap: wrap;
-  
-  ${media.md.css`
-    flex-wrap: nowrap;  
-  `}
-`;
-
 const Press = () => (
   <div>
     <Container>
-      <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
+      <Wrapper pt={[6, 8, 10]} px={[7, 10, 12]}>
         <Flex wrap>
           <Box width={[1, 4 / 5]}>
             <Heading heavy as="h2" my={[4, 6]} mr={[13]} fontSize={[5, 6, 7]} color="white">
@@ -106,15 +94,15 @@ const Press = () => (
             <Graphic />
           </Flex>
         </Flex>
-        <LogosWrapper align="center" justify="space-between" wrap my={[5, 8]} mx={-2} px={0}>
+        <Flex align="center" wrap my={[5, 8]} mx={-2} px={0}>
           {partners.map((item, i) => (
-            <LogoWrapper width={[1 / 2, 1 / 3, 'auto']}>
+            <LogoWrapper width={[1 / 2, 1 / 4]}>
               <Link href={item.url} target="_blank">
                 <Logo key={i} src={item.image} />
               </Link>
             </LogoWrapper>
           ))}
-        </LogosWrapper>
+        </Flex>
       </Wrapper>
     </Container>
   </div>
