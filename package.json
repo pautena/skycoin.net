@@ -44,7 +44,8 @@
     "react-youtube": "^7.5.0",
     "styled-components": "^2.1.0",
     "styled-system": "1.0.0-4",
-    "yup": "^0.24.1"
+    "yup": "^0.24.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -53,13 +54,16 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
