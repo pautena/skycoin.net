@@ -80,7 +80,7 @@ const Graphic = styled.img.attrs({
 const Press = () => (
   <div>
     <Container>
-      <Wrapper pt={[6, 8, 10]} px={[7, 10, 12]}>
+      <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
         <Flex wrap>
           <Box width={[1, 4 / 5]}>
             <Heading heavy as="h2" my={[4, 6]} mr={[13]} fontSize={[5, 6, 7]} color="white">
@@ -94,7 +94,7 @@ const Press = () => (
             <Graphic />
           </Flex>
         </Flex>
-        <Flex align="center" wrap my={[5, 8]} mx={-2} px={0}>
+        <Flex align="center" wrap mt={[5, 8]} mb={3} mx={-2} px={0}>
           {partners.map((item, i) => (
             <LogoWrapper width={[1 / 2, 1 / 4]}>
               <Link href={item.url} target="_blank">
