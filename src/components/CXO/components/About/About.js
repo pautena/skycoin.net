@@ -7,6 +7,7 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
+import Quote from 'components/Quote';
 import { rem } from 'polished';
 import media from 'utils/media';
 
@@ -21,11 +22,6 @@ const Article = styled.article`
     column-gap: ${rem(SPACE[7])};  
     margin-bottom: ${rem(SPACE[7])};
   `}
-`;
-
-const Quote = styled(Text)`
-  padding: ${rem(SPACE[3])} 0 ${rem(SPACE[3])} ${rem(SPACE[7])};
-  border-left: 3px solid ${COLOR.textGrey}
 `;
 
 const ecosystemItems = [

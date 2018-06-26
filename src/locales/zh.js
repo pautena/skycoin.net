@@ -677,4 +677,35 @@ export default {
   skyminerForm: {
     title: 'Skyminer Order Information',
   },
+  obelisk: {
+    title: 'Obelisk',
+    description: 'Obelisk - The Revolutionary Skycoin Consensus Algorithm',
+    about: {
+      heading: 'What Is Obelisk?',
+      subheading: 'The Revolutionary Skycoin Consensus Algorithm',
+      quote: '“Centralization issues, 51% attacks, mining problems, slow transaction speeds and energy waste are only a few of the critical disadvantages that old consensus algorithms face. To counter this, Skycoin has developed Obelisk, the new distributed consensus algorithm that solves the problems of previous generations and makes them obsolete.”',
+      author: 'medium source',
+      paragraph1: 'Obelisk is a revolutionary web-of-trust consensus algorithm built to eliminate the issues that previous generations of consensus have introduced into the blockchain space. Web-of-trust architecture creates a perfect system of checks and balances, allowing the community and other nodes the ability to audit network behavior with a high degree of accuracy.',
+      paragraph2: 'With the ability to cut off suspicious nodes for malicious behavior, the network becomes stronger as trust is maintained. The quarantine of nodes can manage trust, and at the same time, this process allows the community to rebalance power in the network.',
+    },
+    features: {
+      heading: 'Features of Obelisk',
+      consumption: {
+        title: 'Low Energy Consumption & Highly Scalable',
+        text: 'The consensus algorithm was designed to be a scalable and computationally inexpensive alternative to Proof-of-Work (PoW), enabling both the algorithm and block-making to run on budget open-source hardware.',
+      },
+      attack: {
+        title: 'Immune to 51% Attack',
+        text: 'Web-of-trust consensus prevents the development of centralized power. Skycoin does not rely on mining incentives and therefore is not susceptible to the same PoW/PoS vulnerabilities.',
+      },
+      defence: {
+        title: 'Robust Defense',
+        text: 'Obelisk can withstand a large-scale coordinated attack by a well-organized network of malicious nodes. The algorithm is non-iterative, converges fast, and can run on a sparse arrangement of nodes with only nearest-neighbor connectivity, as it would on a mesh network.',
+      },
+      structure: {
+        title: 'Two-Node Structure',
+        text: 'A Consensus Node receives its input from one or more Block-Making nodes. The algorithms are separate for each, yet they both operate on the same data structures. Both type of nodes always perform authorship verification and fraud detection of incoming data. Fraudulent or invalid messages are detected, dropped, and never propagated, thus peer nodes engaged in suspicious activities will be severed, and their public keys are banned.',
+      },
+    },
+  },
 };
