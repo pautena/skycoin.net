@@ -1,0 +1,12 @@
+<svg width="166" height="156" viewBox="0 0 166 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 106.105L6.70722 11.2558L20.7442 0L35.1362 11.3623L41.8435 106.46" transform="translate(61.7202 48.4961)" stroke="#92A4BA" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 152.449L16.5696 33.957L58.9951 0L102.43 34.1224L119 153" transform="translate(23 2)" stroke="#0072FF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="7 7"/>
+<path d="M0 0V106.504" transform="translate(82.4648 48.4961)" stroke="#92A4BA" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 0H166" transform="translate(0 155)" stroke="#92A4BA" stroke-width="2"/>
+<path d="M20 0H0" transform="translate(39 99.5)" stroke="#0072FF" stroke-width="2"/>
+<path d="M7.44186 0L0 7.5L7.44186 15" transform="translate(39 92)" stroke="#0072FF" stroke-width="2"/>
+<path d="M20 0H0" transform="translate(126 99.5) scale(-1 1)" stroke="#0072FF" stroke-width="2"/>
+<path d="M7.44186 0L0 7.5L7.44186 15" transform="translate(126 92) scale(-1 1)" stroke="#0072FF" stroke-width="2"/>
+<path d="M20 0H0" transform="translate(82.5 19) scale(-1 1) rotate(90)" stroke="#0072FF" stroke-width="2"/>
+<path d="M7.44186 0L0 7.5L7.44186 15" transform="translate(75 19) scale(-1 1) rotate(90)" stroke="#0072FF" stroke-width="2"/>
+</svg>

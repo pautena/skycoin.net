@@ -7,6 +7,7 @@ import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import Text from 'components/Text';
 import Link from 'components/Link';
+import Quote from 'components/Quote';
 import { rem } from 'polished';
 import media from 'utils/media';
 
@@ -28,16 +29,6 @@ const StyledLink = styled(Link)`
   color: ${COLOR.base};
   text-decoration: none;
 `;
-
-const Quote = styled(Text)`
-  padding: ${rem(SPACE[3])} 0 ${rem(SPACE[3])} ${rem(SPACE[7])};
-  border-left: 3px solid ${COLOR.textGrey};
-  
-  ${StyledLink} {
-    color: ${COLOR.base};
-  }
-`;
-
 
 const About = () => (
   <Box>

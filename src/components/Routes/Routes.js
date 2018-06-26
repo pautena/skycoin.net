@@ -21,6 +21,7 @@ import Jobs from '../JobsPage';
 import Whitelist from '../Whitelist';
 import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
+import Obelisk from '../Obelisk';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -45,6 +46,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}whiteList`} exact component={Whitelist} />
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
+      <Route path={`${prefix}obelisk`} exact component={Obelisk} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />

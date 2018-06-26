@@ -11,40 +11,39 @@ import SignUpSection from 'components/SignUpSectionSecondary';
 
 import About from './components/About';
 
-import banner from './fiber.svg';
+import banner from './obelisk.svg';
 import * as images from './images';
 
 const features = [
-  'system',
-  'forking',
-  'blockchain',
-  'token',
-  'operation',
+  'consumption',
+  'attack',
+  'defence',
+  'structure',
 ];
 
-const Fiber = ({ intl }) => (
+const Obelisk = ({ intl }) => (
   <div>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'fiber.title' })}</title>
+      <title>{intl.formatMessage({ id: 'obelisk.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'fiber.description' })}
+        content={intl.formatMessage({ id: 'obelisk.description' })}
       />
     </Helmet>
 
     <Header />
     <TopBanner src={banner} />
     <About />
-    <Features items={features} images={images} textId="fiber.features" />
+    <Features items={features} images={images} textId="obelisk.features" />
     <SignUpSection />
     <Footer />
   </div>
 );
 
-Fiber.propTypes = {
+Obelisk.propTypes = {
   intl: PropTypes.shape({
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };
 
-export default injectIntl(Fiber);
+export default injectIntl(Obelisk);
