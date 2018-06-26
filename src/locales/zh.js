@@ -60,6 +60,7 @@ export default {
     },
     about: {
       whitepaper: '阅读白皮书',
+      obelisk: 'learn more about obelisk',
     },
     network: {
       label: 'Digging deeper',
