@@ -144,6 +144,7 @@ export default {
       lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
       paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
       whitepaper: 'Документация',
+      obelisk: 'learn more about obelisk',
       speed: {
         heading: 'Скорость',
         body: 'Мы создали Skycoin, чтобы посоревноваться в скорости с кредитными картами и сервисами вроде AliPay/Apple Pay. Проведение транзакций занимает секунды, а не минуты.',

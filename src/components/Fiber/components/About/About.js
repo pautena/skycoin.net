@@ -41,7 +41,7 @@ const About = () => (
       </SubHeading>
       <Quote fontSize={5} my={[5, 7]}>
         <FormattedMessage id="fiber.about.quote" />
-        (<StyledLink href={mediumLink}><FormattedMessage id="fiber.about.author" /></StyledLink>)
+        (<StyledLink href={mediumLink} target="_blank"><FormattedMessage id="fiber.about.author" /></StyledLink>)
       </Quote>
       <Article>
         <Text fontSize={2} color={COLOR.textDark}>

@@ -13,7 +13,7 @@ import media from 'utils/media';
 
 import { COLOR, SPACE } from 'config';
 
-const mediumLink = 'https://medium.com/';
+const mediumLink = 'https://medium.com/skycoin/skycoin-obelisk-8cc32bc9ca37';
 
 const Article = styled.article`
   margin-bottom: ${rem(SPACE[5])};
@@ -41,7 +41,7 @@ const About = () => (
       </SubHeading>
       <Quote fontSize={5} my={[5, 7]}>
         <FormattedMessage id="obelisk.about.quote" />
-        (<StyledLink href={mediumLink}><FormattedMessage id="obelisk.about.author" /></StyledLink>)
+        (<StyledLink href={mediumLink} target="_blank"><FormattedMessage id="obelisk.about.author" /></StyledLink>)
       </Quote>
       <Article>
         <Text fontSize={2} color={COLOR.textDark}>

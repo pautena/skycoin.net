@@ -44,17 +44,21 @@ export default () => (
           <Text fontSize={2} mb={0} color="black">
             <FormattedHTMLMessage id="home.network.body" />
           </Text>
-          <Button
-            href={'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf'}
-            target="_blank"
-            color="base"
-            pill
-            outlined
-            mt={4}
-            mb={[4, 6]}
-          >
-            <FormattedMessage id="home.about.whitepaper" />
-          </Button>
+          <Flex mt={2} mb={[2, 4]} mx={-2} wrap>
+            <Button
+              href={'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf'}
+              target="_blank"
+              color="base"
+              pill
+              outlined
+              m={2}
+            >
+              <FormattedMessage id="home.about.whitepaper" />
+            </Button>
+            <Button to="/obelisk" color="base" pill outlined m={2}>
+              <FormattedMessage id="home.about.obelisk" />
+            </Button>
+          </Flex>
         </Box>
 
         <Box width={[0, 2 / 5]}>

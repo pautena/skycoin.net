@@ -145,6 +145,7 @@ export default {
       //   lead: 'A currency for digital bandwidth, backed by the new internet. Fast transactions, no transaction fees, Skycoin is a third-generation cryptocurrency supporting a new free and open internet.',
       //   paragraph: 'Skycoin is the cryptocurrency of Skywire. That means Skycoin has a practical application more than simply acting as another digital currency. The way Skycoin works is this: When you pass something along the Skywire network, you earn Skycoin. When you need to access the bandwidth yourself, pay via Skycoin. It only takes seconds to send and receive, with thousands of transactions per second.',
       whitepaper: 'Read Whitepaper',
+      obelisk: 'learn more about obelisk',
       //   speed: {
       //     heading: 'Speed',
       //     body: 'We built Skycoin to compete with credit cards and services like AliPay/Apple Pay. Transactions happen in seconds, not minutes.',
@@ -367,9 +368,10 @@ export default {
       skywireBtn: 'learn more about skywire',
       cxoBtn: 'learn more about cxo',
     },
-    skyledger: {
+    obelisk: {
       heading: 'Obelisk',
       body: 'Decentralization in a centralized world.<br/><br/>Obelisk was created out of the shortcomings in the Proof of Work (PoW) and Proof of Stake (PoS) algorithms. Obelisk can never be centralized by mining pools or manipulated by shareholders, meaning it is truly decentralized. Obelisk distributes influence over the network according to a web-of-trust architecture. Instead of miners, the network consists of nodes. Each node gets its own personal blockchain which prevents and quarantines any potential bad actors. These nodes are substantially less expensive to produce, acquire and operate than any traditional miner used for Bitcoin or Ethereum. Obelisk was designed to be a scalable, computationally-inexpensive, zero-waste alternative to PoW. These features enable the algorithm to be run on budget hardware in a sustainable fashion, without wasting electricity or consuming valuable natural resources. Centralization becomes nigh-impossible when virtually anyone is able to operate a node.</p>',
+      btn: 'learn more about obelisk',
     },
     experiments: {
       heading: 'Fiber',
