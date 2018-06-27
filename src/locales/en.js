@@ -87,6 +87,7 @@ export default {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
     description: 'Buy Skycoin',
+    disclaimer: 'Please note that sending funds to crypto wolf before hitting "Start Transaction" will lead to transaction failure. Moreover, sending a different amount from the one indicated will also lead to transaction failure. Make sure that you have calculated the miner\'s fee in order to send the exact amount indicated',
     data: 'Market Data',
     contact: 'To list Skycoin and put your exchange here email ',
     video: 'How To Buy Skycoin Direct From Skycoin.net',

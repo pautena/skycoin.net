@@ -10,6 +10,7 @@ import YouTube from 'react-youtube';
 
 import media from 'utils/media';
 import Heading from 'components/Heading';
+import Text from 'components/Text';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
@@ -18,10 +19,6 @@ import loading from './images/loading.svg';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
-`;
-
-const Title = styled.div`
-  margin-bottom: ${rem(SPACE[8])};
 `;
 
 const CryptowolfWrapper = styled.div`
@@ -101,11 +98,12 @@ class MarketsPage extends PureComponent {
       <Container>
         {/* <MarketsList /> */}
         <Wrap>
-          <Title>
-            <Heading heavy as="h2" mb={2} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
-              <FormattedMessage id="markets.title" />
-            </Heading>
-          </Title>
+          <Heading heavy as="h2" mb={5} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
+            <FormattedMessage id="markets.title" />
+          </Heading>
+          <Text fontSize={2} color={COLOR.textDark} mb={8}>
+            <FormattedMessage id="markets.disclaimer" />
+          </Text>
           <link rel="stylesheet" id="pl-style-css" href={`${process.env.PUBLIC_URL}/orfeo-alt.css`} type="text/css" media="all" />
           <CryptowolfWrapper id="cryptowolf-container">
             <LoadingMessage>
