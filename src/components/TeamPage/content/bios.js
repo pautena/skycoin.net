@@ -72,12 +72,6 @@ export const en = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Mike Doty',
-        title: 'Co-Founder of ARK | Co-Founder of Bitseed',
-        picture: 'mike_doty.jpg',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
-      },
-      {
         name: 'Richard Kastelein',
         title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
         picture: 'richard_kastelein.jpg',
