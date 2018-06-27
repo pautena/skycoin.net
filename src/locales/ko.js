@@ -86,6 +86,7 @@ export default {
     title: 'Buy Skycoin',
     loading: 'Loading, please wait...',
     description: 'List of Skycoin markets',
+    disclaimer: 'Please note that sending funds to crypto wolf before hitting "Start Transaction" will lead to transaction failure. Moreover, sending a different amount from the one indicated will also lead to transaction failure. Make sure that you have calculated the miner\'s fee in order to send the exact amount indicated',
     data: '시장 데이터',
     contact: '스카이코인을 상장시키기 원하는 당신의 거래소를 써서 이메일로 보내세요.',
     video: 'How To Buy Skycoin Direct From Skycoin.net',
