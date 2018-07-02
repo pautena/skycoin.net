@@ -8,7 +8,6 @@ import Footer from 'components/Footer';
 import { COLOR } from 'config';
 
 import Hero from './components/Hero';
-import Banner from './components/Banner';
 import Network from './components/Network';
 import Miner from './components/Miner';
 import Press from './components/Press';
@@ -33,7 +32,6 @@ const Home = ({ intl }) => (
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
     </Helmet>
     <HeaderWrapper>
-      <Banner />
       <Header white social showBuy={false} />
     </HeaderWrapper>
     <Hero />
