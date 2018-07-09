@@ -84,6 +84,12 @@ export const en = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
+        name: 'Joe Blackburn',
+        title: 'The Creator and Co-founder of Crypto Coin Trader',
+        picture: 'joe_blackburn.png',
+        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
+      },
+      {
         name: 'TokenKey',
         title: '',
         picture: 'tokenkey.png',
@@ -196,12 +202,6 @@ export const zh = {
         bio: 'Michael Terpin，Transform Group的创始人兼首席执行官，Marketwired创始人。2013年 初共同创立了BitAngels，推动CoinAgenda系列会议。联合创立了早期的区块链孵化 器bCommerce Labs和Dapps基金。目前担任Alphabit基金ICO投资委员会主席，并为众多区块链公司和基金会提供建议。Terpin为150多家区块链公司和基金会的公关工作贡献力量。',
       },
       {
-        name: 'Mike Doty',
-        title: 'ARK联合创始人| Bitseed联合创始人',
-        picture: 'mike_doty.jpg',
-        bio: 'Mike Doty拥有超过25年的机械工程和设计经验，专长涵盖制造、设计、分析、测试和 系统集成。Doty拥有加州理工学院的工程和应用科学学士学位。他是注册质量工程 师(CQE)和注册可靠性工程师(CRE)。',
-      },
-      {
         name: 'Richard Kastelein',
         title: 'Blockchain News创始人(2017年并购) Cryptoassets设计集团总监 Blockchain Partners合伙人',
         picture: 'richard_kastelein.jpg',
@@ -212,6 +212,12 @@ export const zh = {
         title: '首席创新官 / Swytch.io创始人 / Tokencommons.org创始人 / MIT媒体实验室的科学家',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger目前是麻省理工学院媒体实验室人类动力学小组的研究科学 家，同时还是ID3的共同创始人和执行董事。此前，Clippinger博士是哈佛大学法律实验 室的创始人兼联合主任。他同时也是eG8论坛、全球领导力电信委员会以及世界经济 论坛风险分析网络的成员。',
+      },
+      {
+        name: 'Joe Blackburn',
+        title: 'The Creator and Co-founder of Crypto Coin Trader',
+        picture: 'joe_blackburn.png',
+        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
       },
       {
         name: 'TokenKey',
@@ -326,12 +332,6 @@ export const ru = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Mike Doty',
-        title: 'Co-Founder of ARK | Co-Founder of Bitseed',
-        picture: 'mike_doty.jpg',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
-      },
-      {
         name: 'Richard Kastelein',
         title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
         picture: 'richard_kastelein.jpg',
@@ -342,6 +342,12 @@ export const ru = {
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
+      },
+      {
+        name: 'Joe Blackburn',
+        title: 'The Creator and Co-founder of Crypto Coin Trader',
+        picture: 'joe_blackburn.png',
+        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
       },
       {
         name: 'TokenKey',
@@ -456,12 +462,6 @@ export const ko = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Mike Doty',
-        title: 'Co-Founder of ARK | Co-Founder of Bitseed',
-        picture: 'mike_doty.jpg',
-        bio: 'Mike Doty has over 25 years of experience in mechanical engineering and design, including manufacturing, design, analysis, testing, and systems integration. Doty holds a BS Degree in Engineering and Applied Science from the California Institute of Technology. He is a Certified Quality Engineer (CQE) and Certified Reliability Engineer (CRE).',
-      },
-      {
         name: 'Richard Kastelein',
         title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
         picture: 'richard_kastelein.jpg',
@@ -472,6 +472,12 @@ export const ko = {
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
+      },
+      {
+        name: 'Joe Blackburn',
+        title: 'The Creator and Co-founder of Crypto Coin Trader',
+        picture: 'joe_blackburn.png',
+        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
       },
       {
         name: 'TokenKey',
