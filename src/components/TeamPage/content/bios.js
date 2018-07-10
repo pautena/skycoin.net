@@ -215,9 +215,9 @@ export const zh = {
       },
       {
         name: 'Joe Blackburn',
-        title: 'The Creator and Co-founder of Crypto Coin Trader',
+        title: 'Crypto Coin Trader的创造者和共同创始人',
         picture: 'joe_blackburn.png',
-        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
+        bio: 'Joe Blackburn 培养和发展了一个最大和最有影响力的社交媒体平台的区块链技术。Joe一直在20多个区块链相关项目担任顾问, 在社会媒体和社区建设方面有着丰富的经验。',
       },
       {
         name: 'TokenKey',
