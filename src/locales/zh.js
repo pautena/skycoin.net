@@ -47,9 +47,8 @@ export default {
     title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
-      heading: 'Skycoin Official Announcement: Status Update',
-      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
-      button: 'More info',
+      heading: 'Look at our new hardware wallet updates',
+      button: 'View photos',
     },
     hero: {
       heading: '新时代的新互联网',
@@ -74,6 +73,7 @@ export default {
       subheading: 'Skyminer 矿机经过精心设计和配置，为Skywire基础设施提供了坚如磐石的电信主干 网。定制的硬件将为软件定义网络（SDN）提供最高级别的安全保障、效率和性能。 多板架构使每个节点都可以支持Skywire上的独立服务。通过隔离节点，每项服务即便 在遭遇外部服务攻击时也能安全运行。这些提供服务的节点由 OpenWRT 路由器管理，路由器具有严格的数据包转发和访问控制规则以提供额外的保障。为Skywire网络提 供服务和安全保障的Skyminer 会获得币时作为奖励。',
       link: 'Become a node',
       more: '了解更多',
+      headingHardware: 'The Skycoin hardware suite continues to materialize',
     },
     press: {
       heading: 'Skycoin 入选2018年最值得关注的五大密码工程之一',

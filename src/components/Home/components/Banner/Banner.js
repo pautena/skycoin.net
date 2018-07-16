@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box, Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -43,7 +44,7 @@ const TextContainer = styled(Flex)`
   `};
 `;
 
-const Banner = () => (
+const Banner = ({ onClick }) => (
   <Wrapper py={[3, 7]}>
     <Container>
       <Content>
@@ -52,16 +53,17 @@ const Banner = () => (
           <StyledText color="white" my={2} mx={[0, 5]}>
             <FormattedMessage id="home.banner.heading" />
           </StyledText>
-          <Text color="white" mb={2} mx={[0, 5]} fontSize={FONT_SIZES[4]}>
-            <FormattedMessage id="home.banner.subheading" />
-          </Text>
         </TextContainer>
-        <Button target="_blank" href="https://www.skycoin.net/blog/statement/skycoin-team-status-update/" pill bg="white" color="base" my={2} mx={2}>
+        <Button onClick={onClick} pill bg="white" color="base" my={2} mx={2}>
           <FormattedMessage id="home.banner.button" />
         </Button>
       </Content>
     </Container>
   </Wrapper>
 );
+
+Banner.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Banner;

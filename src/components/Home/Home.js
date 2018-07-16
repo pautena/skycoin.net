@@ -6,10 +6,13 @@ import styled from 'styled-components';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import { COLOR } from 'config';
+import scrollToComponent from 'react-scroll-to-component';
 
+import Banner from './components/Banner';
 import Hero from './components/Hero';
 import Network from './components/Network';
 import Miner from './components/Miner';
+import Wallet from './components/Wallet';
 import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
 import News from './components/News';
@@ -21,29 +24,43 @@ const HeaderWrapper = styled.div`
   z-index: 2;
 `;
 
-const Home = ({ intl }) => (
-  <div>
-    <Helmet>
-      <title>{intl.formatMessage({ id: 'home.title' })}</title>
-      <meta
-        name="description"
-        content={intl.formatMessage({ id: 'home.description' })}
-      />
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
-    </Helmet>
-    <HeaderWrapper>
-      <Header white social showBuy={false} />
-    </HeaderWrapper>
-    <Hero />
-    <Press />
-    <Miner />
-    <Network />
-    <Ecosystem />
-    <News locale={intl.locale} />
-    <SignUp />
-    <Footer />
-  </div>
-);
+class Home extends React.PureComponent {
+  handleScroll() {
+    scrollToComponent(this.Miner);
+  }
+
+  render() {
+    const { intl } = this.props;
+
+    return (
+      <div>
+        <Helmet>
+          <title>{intl.formatMessage({ id: 'home.title' })}</title>
+          <meta
+            name="description"
+            content={intl.formatMessage({ id: 'home.description' })}
+          />
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
+        </Helmet>
+        <Banner onClick={() => this.handleScroll()} />
+        <HeaderWrapper>
+          <Header white social showBuy={false} />
+        </HeaderWrapper>
+        <Hero />
+        <Press />
+        <Miner />
+        <div ref={(section) => { this.Miner = section; }} >
+          <Wallet />
+        </div>
+        <Network />
+        <Ecosystem />
+        <News locale={intl.locale} />
+        <SignUp />
+        <Footer />
+      </div>
+    );
+  }
+}
 
 Home.propTypes = {
   intl: PropTypes.shape({
