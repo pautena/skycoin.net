@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import Container from 'components/Container';
@@ -17,6 +18,10 @@ const miners = [
 ];
 /* eslint-enable global-require */
 
+const StyledFlex = styled(Flex)`
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+`;
+
 const Miner = () => (
   <Box my={[8, 10, 13]}>
     <Container>
@@ -31,17 +36,12 @@ const Miner = () => (
         <Gallery imgMain={miner1} imgList={miners} />
       </Box>
 
-      <Flex align="flex-end" column wrap mt={[8, 10, 13]}>
+      <StyledFlex align="flex-end" column wrap my={8} pb={9}>
         <Button to="skyminer" color="base" pill outlined>
           <FormattedMessage id="home.miner.more" />
         </Button>
-      </Flex>
+      </StyledFlex>
 
-      {/* <Flex align="flex-end" column wrap> */}
-      {/* <Button to="/" color="white" bg="base" big width={'200px'} pill > */}
-      {/* <FormattedMessage id="home.miner.link" /> */}
-      {/* </Button> */}
-      {/* </Flex> */}
     </Container>
   </Box>
 );

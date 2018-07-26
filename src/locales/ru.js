@@ -95,9 +95,8 @@ export default {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     banner: {
-      heading: 'Skycoin Official Announcement: Status Update',
-      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
-      button: 'More info',
+      heading: 'Look at our new hardware wallet updates',
+      button: 'View photos',
     },
     hero: {
       heading: 'New Internet, New World',
@@ -174,6 +173,7 @@ export default {
       subheading: 'The Skyminer is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using a custom hardware configuration. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. | ru',
       link: 'Become a node | ru',
       more: 'Learn more',
+      headingHardware: 'The Skycoin hardware suite continues to materialize',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018 | ru',

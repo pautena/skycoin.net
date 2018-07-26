@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box, Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -9,7 +10,7 @@ import Button from 'components/Button';
 
 import media from 'utils/media';
 import { COLOR, FONT_SIZES } from 'config';
-import banner from './icon2.svg';
+import banner from './icon3.png';
 
 const Wrapper = styled(Box)`
   background: ${COLOR.base};
@@ -43,25 +44,31 @@ const TextContainer = styled(Flex)`
   `};
 `;
 
-const Banner = () => (
-  <Wrapper py={[3, 7]}>
+const StyledImg = styled.img`
+  width: 102px;
+  height: auto;
+`;
+
+const Banner = ({ onClick }) => (
+  <Wrapper py={[3, 6]}>
     <Container>
       <Content>
-        <img src={banner} alt="img" />
+        <StyledImg src={banner} alt="img" />
         <TextContainer>
           <StyledText color="white" my={2} mx={[0, 5]}>
             <FormattedMessage id="home.banner.heading" />
           </StyledText>
-          <Text color="white" mb={2} mx={[0, 5]} fontSize={FONT_SIZES[4]}>
-            <FormattedMessage id="home.banner.subheading" />
-          </Text>
         </TextContainer>
-        <Button target="_blank" href="https://www.skycoin.net/blog/statement/skycoin-team-status-update/" pill bg="white" color="base" my={2} mx={2}>
+        <Button onClick={onClick} pill bg="white" color="base" my={2} mx={2}>
           <FormattedMessage id="home.banner.button" />
         </Button>
       </Content>
     </Container>
   </Wrapper>
 );
+
+Banner.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Banner;

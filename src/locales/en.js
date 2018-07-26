@@ -96,9 +96,8 @@ export default {
     title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
-      heading: 'Skycoin Official Announcement: Status Update',
-      subheading: 'Official announcement regarding recent incident with Chinese marketing team members',
-      button: 'More info',
+      heading: 'Look at our new hardware wallet updates',
+      button: 'View photos',
     },
     hero: {
       heading: 'The New Internet For The New World',
@@ -175,6 +174,7 @@ export default {
       subheading: 'The Skycoin Skyminer is meticulously designed and configured to provide a rock-solid telecom backbone for the Skywire infrastructure. The custom-built hardware is focused on delivering maximum security, efficiency and performance to the software-defined network. The multi-board architecture enables each node to support an independent service on Skywire. By isolating the nodes, each service can safely operate independently of attacks on peripheral services. These service-providing nodes are managed by an OpenWRT router with strict packet forwarding and access control rules for additional security. Skyminers are paid in Coin Hours for providing services and security to the Skywire network.',
       link: 'Become a node',
       more: 'Learn more',
+      headingHardware: 'The Skycoin hardware suite continues to materialize',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018',
