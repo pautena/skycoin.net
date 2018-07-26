@@ -10,7 +10,7 @@ import Button from 'components/Button';
 
 import media from 'utils/media';
 import { COLOR, FONT_SIZES } from 'config';
-import banner from './icon2.svg';
+import banner from './icon3.png';
 
 const Wrapper = styled(Box)`
   background: ${COLOR.base};
@@ -44,11 +44,16 @@ const TextContainer = styled(Flex)`
   `};
 `;
 
+const StyledImg = styled.img`
+  width: 102px;
+  height: auto;
+`;
+
 const Banner = ({ onClick }) => (
-  <Wrapper py={[3, 7]}>
+  <Wrapper py={[3, 6]}>
     <Container>
       <Content>
-        <img src={banner} alt="img" />
+        <StyledImg src={banner} alt="img" />
         <TextContainer>
           <StyledText color="white" my={2} mx={[0, 5]}>
             <FormattedMessage id="home.banner.heading" />
