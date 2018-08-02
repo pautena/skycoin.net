@@ -126,6 +126,53 @@ export const en = {
       },
     ],
   },
+  asia: {
+    title: 'Asia Marketing Team',
+    bios: [
+      {
+        name: 'Chris',
+        title: 'SKYCOIN China Region Marketing Leader',
+        picture: '',
+        bio: 'Blockchain enthusiast, investor. Over 9 years of working experience in finance and Internet industries. Working experiences in marketing, strategic planning, business development. Experienced in market strategies, marketing cooperation, has led a few strategic collaboration',
+      },
+      {
+        name: 'Tien',
+        title: 'SKYCOIN China Region Tech Leader',
+        picture: '',
+        bio: 'Early adopter of Bitcoin, blockchain enthusiast, coding geek. Has led a team in a hackathon and got the championship. Participated throughout the whole developing, assembling and improving process of SKYMINER. Tien has his contribution in SKYCOIN recognized generously by the team and the community',
+      },
+      {
+        name: 'Sherry',
+        title: 'SKYCOIN China Region Financial Leader',
+        picture: '',
+        bio: 'Over 10 years of financial management experience. Proficient in accounting and financial analysis',
+      },
+      {
+        name: 'Rae',
+        title: 'SKYCOIN China Region Aftersales Service Leader',
+        picture: '',
+        bio: 'Blockchain Believer. Years of planning and operation management experience, highly experienced in procedure planning. Has planned a comprehensive aftersales management procedure',
+      },
+      {
+        name: 'Mimi',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 1 year of market operation experience. Over 2 years of community building and operation experience, good community interaction management ability',
+      },
+      {
+        name: 'Greeny',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 3 years of market operation and media planning experience. Has planned a few marketing events, highly experienced in self-media operation',
+      },
+      {
+        name: 'Jeremiah',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 4 years of market operation and media planning experience. Outgoing and easy-going, good at communicating with people from diverse backgrounds. Has participated in a few event planning and execution tasks.',
+      },
+    ],
+  },
 };
 
 export const zh = {
@@ -253,6 +300,53 @@ export const zh = {
         title: '',
         picture: 'hive_chain_labs.jpg',
         bio: '来自硅谷的Hive Chain Labs和HChain资本致力于跨学科区块链基础项目的研究和孵化。HChain是区块链技术的信徒，并怀有“让区块链无处不在”的愿景。他们的投资案例包括 ICO.com, TKN.com. Scry, RChain以及Polkadot等。',
+      },
+    ],
+  },
+  asia: {
+    title: 'Asia Marketing Team',
+    bios: [
+      {
+        name: 'Chris',
+        title: 'SKYCOIN China Region Marketing Leader',
+        picture: '',
+        bio: 'Blockchain enthusiast, investor. Over 9 years of working experience in finance and Internet industries. Working experiences in marketing, strategic planning, business development. Experienced in market strategies, marketing cooperation, has led a few strategic collaboration',
+      },
+      {
+        name: 'Tien',
+        title: 'SKYCOIN China Region Tech Leader',
+        picture: '',
+        bio: 'Early adopter of Bitcoin, blockchain enthusiast, coding geek. Has led a team in a hackathon and got the championship. Participated throughout the whole developing, assembling and improving process of SKYMINER. Tien has his contribution in SKYCOIN recognized generously by the team and the community',
+      },
+      {
+        name: 'Sherry',
+        title: 'SKYCOIN China Region Financial Leader',
+        picture: '',
+        bio: 'Over 10 years of financial management experience. Proficient in accounting and financial analysis',
+      },
+      {
+        name: 'Rae',
+        title: 'SKYCOIN China Region Aftersales Service Leader',
+        picture: '',
+        bio: 'Blockchain Believer. Years of planning and operation management experience, highly experienced in procedure planning. Has planned a comprehensive aftersales management procedure',
+      },
+      {
+        name: 'Mimi',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 1 year of market operation experience. Over 2 years of community building and operation experience, good community interaction management ability',
+      },
+      {
+        name: 'Greeny',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 3 years of market operation and media planning experience. Has planned a few marketing events, highly experienced in self-media operation',
+      },
+      {
+        name: 'Jeremiah',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 4 years of market operation and media planning experience. Outgoing and easy-going, good at communicating with people from diverse backgrounds. Has participated in a few event planning and execution tasks.',
       },
     ],
   },
@@ -386,6 +480,53 @@ export const ru = {
       },
     ],
   },
+  asia: {
+    title: 'Asia Marketing Team',
+    bios: [
+      {
+        name: 'Chris',
+        title: 'SKYCOIN China Region Marketing Leader',
+        picture: '',
+        bio: 'Blockchain enthusiast, investor. Over 9 years of working experience in finance and Internet industries. Working experiences in marketing, strategic planning, business development. Experienced in market strategies, marketing cooperation, has led a few strategic collaboration',
+      },
+      {
+        name: 'Tien',
+        title: 'SKYCOIN China Region Tech Leader',
+        picture: '',
+        bio: 'Early adopter of Bitcoin, blockchain enthusiast, coding geek. Has led a team in a hackathon and got the championship. Participated throughout the whole developing, assembling and improving process of SKYMINER. Tien has his contribution in SKYCOIN recognized generously by the team and the community',
+      },
+      {
+        name: 'Sherry',
+        title: 'SKYCOIN China Region Financial Leader',
+        picture: '',
+        bio: 'Over 10 years of financial management experience. Proficient in accounting and financial analysis',
+      },
+      {
+        name: 'Rae',
+        title: 'SKYCOIN China Region Aftersales Service Leader',
+        picture: '',
+        bio: 'Blockchain Believer. Years of planning and operation management experience, highly experienced in procedure planning. Has planned a comprehensive aftersales management procedure',
+      },
+      {
+        name: 'Mimi',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 1 year of market operation experience. Over 2 years of community building and operation experience, good community interaction management ability',
+      },
+      {
+        name: 'Greeny',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 3 years of market operation and media planning experience. Has planned a few marketing events, highly experienced in self-media operation',
+      },
+      {
+        name: 'Jeremiah',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 4 years of market operation and media planning experience. Outgoing and easy-going, good at communicating with people from diverse backgrounds. Has participated in a few event planning and execution tasks.',
+      },
+    ],
+  },
 };
 
 export const ko = {
@@ -513,6 +654,53 @@ export const ko = {
         title: '',
         picture: 'hive_chain_labs.jpg',
         bio: 'Hive Chain Labs alongside HChain capital originates from Silicon valley and focuses on the researching and incubation of interdisciplinary blockchain base projects. HChain are believer of blockchain technology and have a vision to “Make BLockchain Everywhere”. Their investment cases include ICO.com, TKN.com, Scry, RChain, Polkadot amongst others.',
+      },
+    ],
+  },
+  asia: {
+    title: 'Asia Marketing Team',
+    bios: [
+      {
+        name: 'Chris',
+        title: 'SKYCOIN China Region Marketing Leader',
+        picture: '',
+        bio: 'Blockchain enthusiast, investor. Over 9 years of working experience in finance and Internet industries. Working experiences in marketing, strategic planning, business development. Experienced in market strategies, marketing cooperation, has led a few strategic collaboration',
+      },
+      {
+        name: 'Tien',
+        title: 'SKYCOIN China Region Tech Leader',
+        picture: '',
+        bio: 'Early adopter of Bitcoin, blockchain enthusiast, coding geek. Has led a team in a hackathon and got the championship. Participated throughout the whole developing, assembling and improving process of SKYMINER. Tien has his contribution in SKYCOIN recognized generously by the team and the community',
+      },
+      {
+        name: 'Sherry',
+        title: 'SKYCOIN China Region Financial Leader',
+        picture: '',
+        bio: 'Over 10 years of financial management experience. Proficient in accounting and financial analysis',
+      },
+      {
+        name: 'Rae',
+        title: 'SKYCOIN China Region Aftersales Service Leader',
+        picture: '',
+        bio: 'Blockchain Believer. Years of planning and operation management experience, highly experienced in procedure planning. Has planned a comprehensive aftersales management procedure',
+      },
+      {
+        name: 'Mimi',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 1 year of market operation experience. Over 2 years of community building and operation experience, good community interaction management ability',
+      },
+      {
+        name: 'Greeny',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 3 years of market operation and media planning experience. Has planned a few marketing events, highly experienced in self-media operation',
+      },
+      {
+        name: 'Jeremiah',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 4 years of market operation and media planning experience. Outgoing and easy-going, good at communicating with people from diverse backgrounds. Has participated in a few event planning and execution tasks.',
       },
     ],
   },
