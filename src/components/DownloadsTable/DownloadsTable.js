@@ -10,7 +10,7 @@ import { TableWrapper } from 'components/Table';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import { COLORS, SPACE } from 'config';
+import { COLORS, SPACE, COLOR } from 'config';
 
 const Table = styled.table`
   width: 100%;
@@ -19,7 +19,7 @@ const Table = styled.table`
     padding-bottom: ${rem(10)};
 
     &:nth-child(odd){
-      background: #F4F9FF;
+      background: ${COLOR.lightBlueGrey};
     }
   }
 

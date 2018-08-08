@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import media from 'utils/media';
-import { SPACE, COLORS } from 'config';
+import { SPACE, COLORS, COLOR, FONT_FAMILIES } from 'config';
 import Text from 'components/Text';
 import { TableWrapper } from 'components/Table';
 
@@ -82,17 +82,18 @@ const Th = styled.th`
 
 const Row = styled.tr`
   text-align: center;
-  background-color: ${props => (props.light ? '#F4F9FF' : 'white')};
+  background-color: ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
+  opacity: ${props => (props.recommended ? 1 : 0.7)};
+  font-family: ${props => (props.recommended ? FONT_FAMILIES.sansBold : FONT_FAMILIES.sans)};
 
   ${media.sm.css`
     height: 80px;
-    border-bottom: 1px solid ${props => (props.light ? '#F4F9FF' : 'white')};
-    border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? '#F4F9FF' : 'white')};
+    border-bottom: 1px solid ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
+    border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
   `}
 `;
 
 const A = styled.a`
-  opacity: ${props => (props.linkcolor ? 1 : 0.5)};
   text-decoration: none;
 `;
 
@@ -127,6 +128,7 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('Mac') !== -1) OSName = 0;
   if (navigator.appVersion.indexOf('X11') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
+  if (navigator.appVersion.indexOf('Android') !== -1) OSName = 3;
 
   return (
     <TableWrapper mb={[7, 10, 13]}>
@@ -140,6 +142,7 @@ const ApplicationTable = ({ list }) => {
                   key={`${platformIndex}-${buildIndex}-${architectureIndex}`}
                   display={platformIndex === OSName}
                   isFirst={buildIndex === 0 && architectureIndex === 0}
+                  recommended={platformIndex === OSName || OSName < 0}
                 >
                   {buildIndex === 0 &&
                     <Th
@@ -173,7 +176,6 @@ const ApplicationTable = ({ list }) => {
                   <TdLink>
                     <A
                       href={architecture.download}
-                      linkcolor={platformIndex === OSName || OSName < 0}
                     >
                       <FormattedMessage id="downloads.wallet.download" />
                     </A>
@@ -182,7 +184,6 @@ const ApplicationTable = ({ list }) => {
                   {architecture.signature && <td>
                     <A
                       href={architecture.signature}
-                      linkcolor={platformIndex === OSName || OSName < 0}
                     >
                       <FormattedMessage id="downloads.wallet.signature" />
                     </A>
