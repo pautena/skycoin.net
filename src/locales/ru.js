@@ -287,6 +287,7 @@ export default {
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
+      android: 'Android',
       withElectron: 'Инсталлятор',
       withElectronComment: ' (рекомендуемый)',
       withoutElectron: 'Переносной',
