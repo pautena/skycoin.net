@@ -48,7 +48,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Route path={`${prefix}obelisk`} exact component={Obelisk} />
-      {/*<Route path={`${prefix}gallery`} exact component={GalleryPage} />*/}
+      {/* <Route path={`${prefix}gallery`} exact component={GalleryPage} /> */}
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
