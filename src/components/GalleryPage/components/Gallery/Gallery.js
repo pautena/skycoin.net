@@ -131,6 +131,14 @@ const Item = ({ item, onClick }) => (
   </Figure>
 );
 
+Item.propTypes = {
+  item: PropTypes.shape({
+    caption: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
+  }).isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 class Gallery extends React.PureComponent {
   state = {
     lightboxIsOpen: false,
