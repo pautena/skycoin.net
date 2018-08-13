@@ -84,7 +84,6 @@ const Row = styled.tr`
   text-align: center;
   background-color: ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
   opacity: ${props => (props.recommended ? 1 : 0.7)};
-  font-family: ${props => (props.recommended ? FONT_FAMILIES.sansBold : FONT_FAMILIES.sans)};
 
   ${media.sm.css`
     height: 80px;
@@ -100,6 +99,7 @@ const Row = styled.tr`
 
 const A = styled.a`
   text-decoration: none;
+  font-family: ${props => (props.recommended ? FONT_FAMILIES.sansBold : FONT_FAMILIES.sans)};
 `;
 
 const Platform = styled(Text) `
@@ -112,10 +112,12 @@ const Platform = styled(Text) `
 
 const Comment = styled(Text) `
   color:#92A4BA;
+  font-family: ${props => (props.recommended ? FONT_FAMILIES.sansBold : FONT_FAMILIES.sans)};
 `;
 
 const TdPadding = styled.td`
   text-align:left;
+  font-family: ${props => (props.recommended ? FONT_FAMILIES.sansBold : FONT_FAMILIES.sans)};
   
   ${media.sm.css`
     padding-left: ${rem(SPACE[10])};
@@ -162,9 +164,14 @@ const ApplicationTable = ({ list }) => {
                   }
 
                   {architectureIndex === 0 &&
-                    <TdPadding rowSpan={build.architectures.length}>
+                    <TdPadding
+                      rowSpan={build.architectures.length}
+                      recommended={
+                        platformIndex === OSName && buildIndex === 0 && architectureIndex === 0
+                      }
+                    >
                       <FormattedMessage id={build.name} />
-                      <Comment as="span">
+                      <Comment as="span" recommended={platformIndex === OSName && buildIndex === 0 && architectureIndex === 0}>
                         <FormattedMessage id={`${build.name}Comment`} />
                       </Comment>
                     </TdPadding>
@@ -181,6 +188,9 @@ const ApplicationTable = ({ list }) => {
                   <TdLink>
                     <A
                       href={architecture.download}
+                      recommended={
+                        platformIndex === OSName && buildIndex === 0 && architectureIndex === 0
+                      }
                     >
                       <FormattedMessage id="downloads.wallet.download" />
                     </A>
@@ -189,6 +199,9 @@ const ApplicationTable = ({ list }) => {
                   {architecture.signature && <td>
                     <A
                       href={architecture.signature}
+                      recommended={
+                        platformIndex === OSName && buildIndex === 0 && architectureIndex === 0
+                      }
                     >
                       <FormattedMessage id="downloads.wallet.signature" />
                     </A>
