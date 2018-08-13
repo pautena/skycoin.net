@@ -89,7 +89,12 @@ const Row = styled.tr`
   ${media.sm.css`
     height: 80px;
     border-bottom: 1px solid ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
-    border-top: ${props => (props.isFirst ? '2px' : '1px')} solid ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
+    border-top: 1px solid ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
+    box-shadow: inset 0 1px 0 ${props => (props.isFirst ? COLOR.darkGrey : 'transparent')};
+    
+    &:first-child {
+      box-shadow: inset 0 1px 0 transparent;
+    }   
   `}
 `;
 
@@ -124,8 +129,8 @@ const TdPadding = styled.td`
 
 const ApplicationTable = ({ list }) => {
   let OSName = -1;
-  if (navigator.appVersion.indexOf('Win') !== -1) OSName = 1;
-  if (navigator.appVersion.indexOf('Mac') !== -1) OSName = 0;
+  if (navigator.appVersion.indexOf('Win') !== -1) OSName = 0;
+  if (navigator.appVersion.indexOf('Mac') !== -1) OSName = 1;
   if (navigator.appVersion.indexOf('X11') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Android') !== -1) OSName = 3;
