@@ -104,7 +104,7 @@ export const downloads = [
           filetype: '.apk',
           filesize: 'mb',
         }],
-      }
+      },
     ],
   },
 ];
