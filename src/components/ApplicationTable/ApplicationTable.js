@@ -73,10 +73,10 @@ const Th = styled.th`
   padding: ${rem(SPACE[4])}; 
   
   ${media.sm.css`
-    padding: 0 ${rem(SPACE[6])};
+    padding: ${rem(SPACE[4])} ${rem(SPACE[6])};
   `}
   ${media.md.css`
-    padding: 0 ${rem(SPACE[10])};
+    padding: ${rem(SPACE[4])} ${rem(SPACE[10])};
   `}
 `;
 
