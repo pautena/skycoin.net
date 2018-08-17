@@ -85,16 +85,16 @@ export const downloads = [
     platform: 'downloads.wallet.android',
     icon: 'android',
     builds: [
-      // {
-      //   name: 'downloads.wallet.androidRecommended',
-      //   architectures: [{
-      //     name: '',
-      //     download: '',
-      //     signature: '',
-      //     filetype: ' ',
-      //     filesize: 'mb',
-      //   }],
-      // },
+      {
+        name: 'downloads.wallet.androidRecommended',
+        architectures: [{
+          name: '',
+          download: 'https://play.google.com/store/apps/details?id=com.skycoin.wallet',
+          signature: '',
+          filetype: ' ',
+          filesize: 'mb',
+        }],
+      },
       {
         name: 'downloads.wallet.androidAdvanced',
         architectures: [{
