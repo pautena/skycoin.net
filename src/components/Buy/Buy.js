@@ -10,6 +10,8 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
+const StyledLink = Button.withComponent('a');
+
 class Buy extends React.Component {
   constructor() {
     super();
@@ -19,15 +21,16 @@ class Buy extends React.Component {
 
   render() {
     const { asAnchor, ...rest } = this.props;
-    const Component = asAnchor ? 'a' : Button;
+    const Component = asAnchor ? StyledLink : Button;
 
-    const props = {
-      to: 'buy',
+    const attrs = {
+      href: 'https://exchange.skycoin.net/',
+      target: '_blank',
     };
 
     return (
       <Wrapper>
-        <Component {...props} {...rest} />
+        <Component {...attrs} {...rest} />
       </Wrapper>
     );
   }
@@ -38,7 +41,7 @@ Buy.propTypes = {
 };
 
 Buy.defaultProps = {
-  asAnchor: false,
+  asAnchor: true,
 };
 
 export default Buy;
