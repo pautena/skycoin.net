@@ -53,6 +53,11 @@ const Routes = ({ match }) => {
       <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}skyminerform`} to={`${prefix}orderskyminer`} />
+      <Route
+        path={`${prefix}buy`}
+        component={// eslint-disable-next-line no-return-assign
+          () => window.location = 'https://exchange.skycoin.net'}
+      />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );
