@@ -10,6 +10,7 @@ import WhitepapersPage from '../WhitepapersPage';
 import NotFound from '../NotFound';
 import RoadmapPage from '../RoadmapPage';
 import MailingPage from '../MailingPage';
+import MarketsPage from '../MarketsPage';
 import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
@@ -35,6 +36,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
+      <Route path={`${prefix}buy`} exact component={MarketsPage} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
@@ -53,11 +55,6 @@ const Routes = ({ match }) => {
       <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
       <Redirect from={`${prefix}skyminerform`} to={`${prefix}orderskyminer`} />
-      <Route
-        path={`${prefix}buy`}
-        component={// eslint-disable-next-line no-return-assign
-          () => window.location = 'https://exchange.skycoin.net'}
-      />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );
