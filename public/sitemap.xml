@@ -33,34 +33,34 @@
     <priority>1.00</priority>
   </url>
    <url>
-    <loc>https://www.skycoin.net/cn/</loc>
+    <loc>https://www.skycoin.net/zh/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/skyminer/</loc>
+    <loc>https://www.skycoin.net/zh/skyminer/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/ecosystem/</loc>
+    <loc>https://www.skycoin.net/zh/ecosystem/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/downloads/</loc>
+    <loc>https://www.skycoin.net/zh/downloads/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/buy/</loc>
+    <loc>https://www.skycoin.net/zh/buy/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/jobs/</loc>
+    <loc>https://www.skycoin.net/zh/jobs/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/team/</loc>
+    <loc>https://www.skycoin.net/zh/team/</loc>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/skywire/</loc>
+    <loc>https://www.skycoin.net/zh/skywire/</loc>
     <priority>0.64</priority>
   </url>
  <url>
@@ -142,16 +142,16 @@
     <loc>https://www.skycoin.net/blog/statement/april-ecosystem-development-update/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/jobs/</loc>
+    <loc>https://www.skycoin.net/zh/jobs/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/guest-post/its-time-for-a-new-internet/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/skyminer/</loc>
+    <loc>https://www.skycoin.net/zh/skyminer/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/buy/</loc>
+    <loc>https://www.skycoin.net/zh/buy/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/categories/overview/</loc>
@@ -160,16 +160,16 @@
     <loc>https://www.skycoin.net/blog/categories/exchange-listing/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/team/</loc>
+    <loc>https://www.skycoin.net/zh/team/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/categories/net-neutrality/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/ecosystem/</loc>
+    <loc>https://www.skycoin.net/zh/ecosystem/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/downloads/</loc>
+    <loc>https://www.skycoin.net/zh/downloads/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/categories/ask-the-developers/</loc>
@@ -676,7 +676,7 @@
     <loc>https://www.skycoin.net/blog/ask-the-developers/question-regarding-latency-and-privacy-of-the-meshnet/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/cxo/</loc>
+    <loc>https://www.skycoin.net/zh/cxo/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/categories/ask-the-developers/page/3/</loc>
@@ -754,7 +754,7 @@
     <loc>https://www.skycoin.net/blog/infographics/what-is-the-difference-skycoin-vs-skywire/</loc>
   </url>
   <url>
-    <loc>https://www.skycoin.net/cn/skywire/</loc>
+    <loc>https://www.skycoin.net/zh/skywire/</loc>
   </url>
   <url>
     <loc>https://www.skycoin.net/blog/statement/understanding-the-skycoin-supply--distribution/</loc>
