@@ -555,7 +555,7 @@ export default {
     react: 'React.js.',
     ourTeam: 'Our team is spread across the world and you will be working remotely. We communicate using',
     accordion1: {
-      title: 'Mechanical Engineer OR Intern',
+      title: 'Mechanical Engineer',
       description: 'Description',
       study: 'Study relevant technical materials to compile the proper English materials for foreign members making up 80% of total team members. Good proficiency in English reading and writing is a requirement for admission',
       responsibilities: {
@@ -573,6 +573,7 @@ export default {
         item3: 'Use SolidWorks or related software proficiently in response to the independent conduct for establishment, modification and derivation of model. Experience in designing and managing model documents with components whose total volume is more than 100 are preferred;',
         item4: 'Understand the supply chain of ordinary mechanical components well;',
         item5: 'Think clearly, take initiative in working process with the ability in both strong executive and excellent self-study, and maintain good teamwork spirit.',
+        item6: 'Must be on site in Shanghai.',
       },
       priority: {
         title: 'High-priority candidates include those with any of the following conditions',
@@ -606,6 +607,7 @@ export default {
         item4: 'Use SolidWorks or relevant 3D modeling software skillfully in response to the independent conduct for establishment, modification and derivation of model.',
         item5: 'Possess the ability to be familiar with processing technology of common materials, and have a certain understanding of the supply chain for relevant parts;',
         item6: 'Possess the ability to outstanding aesthetic judgment and creative thinking skill, take initiative in working process, good cooperation spirit and will of study. ',
+        item7: 'Must be on site in Shanghai.',
       },
       priority: {
         title: 'High-priority candidates include those with any of the following conditions',
@@ -716,30 +718,6 @@ export default {
         item2: 'Welcome to all of outstanding undergraduates and fresh graduates to take part in internship plan. Upon completion of the internship period, satisfactory trainees shall be given permanent posts.',
       },
     },
-    accordion6: {
-      title: 'Hardware Internship Engineer',
-      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skill and proficiency in English are requirements for admission; experiences in large international companies are preferred. Upon completion of the internship period, satisfactory trainees shall be given permanent posts. ',
-      responsibilities: {
-        title: 'Responsibilities',
-        item1: 'Take part in the design, development and testing of hardware projects;',
-        item2: 'Solve problems during development and testing;',
-        item3: 'Study knowledge in related fields;',
-        item4: 'Write technical documents and file them.',
-      },
-      requirements: {
-        title: 'Requirements',
-        item1: 'Undergraduates and fresh graduates majoring in electronic science, communication studies and machinery studies;',
-        item2: 'Process the outstanding ability to excellent communication skills and good English reading and writing skills;',
-        item3: 'Think clearly, take initiative in working process, hold the ability in excellent self-study, and maintain good teamwork spirit.',
-        item4: 'Submit your GitHub account and at least one work, and relevant cites must be marked if any;',
-      },
-      priority: {
-        title: 'High-priority candidates include those with any of the following conditions',
-        item1: 'Possess the ability to be familiar with relevant professional English vocabularies, and to communicate and express English freely;',
-        item2: 'Have experience in circuit design, mechanical control program, 3D modeling and engineering drawing, open source hardware development, etc.;',
-        item3: 'Have experience in research, development and practitioner of the projects related to blockchain;',
-      },
-    },
     accordion7: {
       title: 'Blockchain Internship Engineer',
       description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skills and proficiency in English are requirements for admission; experiences in large international companies are preferred. Upon completion of the internship period, satisfactory trainees shall be given permanent posts.',
@@ -766,30 +744,6 @@ export default {
         item1: 'Possess the ability to be familiar with relevant professional English vocabularies, and to communicate and express English freely;',
         item2: 'Have experience in research, development and practitioner of the projects related to blockchain;',
         item3: 'Have experience in the network protocol development, such as DNP, P2P, etc. ',
-      },
-    },
-    accordion8: {
-      title: 'Technical File Engineer OR Trainee',
-      description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skills and proficiency in English are requirements for admission; experiences in large international companies are preferred.',
-      responsibilities: {
-        title: 'Responsibilities',
-        item1: 'Complete the preparation of technical documents, information graphs and flow diagram in English and Chinese according to the requirements of the company;',
-        item2: "Conduct daily maintenance of existing and new technical documents according to the company's document development regulations;",
-        item3: 'Manage the storage of all kinds of documents, establish the index table of document information, and ensure the consistency of document version and code version, and regularly backup the documents;',
-        item4: 'Send and receive, settle, and submit documents for project requirements and progress reports;',
-        item5: 'Participate in the standardization, normalization and institutionalization of documents.',
-      },
-      requirements: {
-        title: 'Requirements',
-        item1: "Hold a bachelor's degree or above with outstanding integrated English language competence, and have a certain kind of ability to communicate with people fluently in English;",
-        item2: 'Enable to edit Markdown documents skillfully, use Office software skillfully and compile flow charts;',
-        item3: 'Be familiar with software development process or mechanical engineering.',
-      },
-      priority: {
-        title: 'High-priority candidates include those with any of the following conditions',
-        item1: 'Possess the ability to be familiar with professional English vocabulary in the fields of technology, machinery and electronics;',
-        item2: 'Possess the ability to use a programming language and to understand basic data structures and algorithms, or have experience in participating in blockchain projects;',
-        item3: 'Use Adobe Illustrator or other same type graphic design software proficiently;',
       },
     },
   },

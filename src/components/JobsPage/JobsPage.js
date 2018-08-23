@@ -177,6 +177,9 @@ const renderAccordion1Content = () => (
       <NumberedListItem>
         <FormattedMessage id="jobs.accordion1.requirements.item5" />
       </NumberedListItem>
+      <NumberedListItem>
+        <FormattedMessage id="jobs.accordion1.requirements.item6" />
+      </NumberedListItem>
     </NumberedList>
 
     <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
@@ -258,6 +261,9 @@ const renderAccordion2Content = () => (
       </NumberedListItem>
       <NumberedListItem>
         <FormattedMessage id="jobs.accordion2.requirements.item6" />
+      </NumberedListItem>
+      <NumberedListItem>
+        <FormattedMessage id="jobs.accordion2.requirements.item7" />
       </NumberedListItem>
     </NumberedList>
 
@@ -538,67 +544,6 @@ const renderAccordion5Content = () => (
     </NumberedList>
   </div>
 );
-const renderAccordion6Content = () => (
-  <div>
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion2.description" />
-    </Subtitle>
-    <Text fontSize={[2]} color="black" heavy mb={[6]}>
-      <FormattedMessage id="jobs.accordion6.description" />
-    </Text>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion6.responsibilities.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.responsibilities.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.responsibilities.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.responsibilities.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.responsibilities.item4" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion6.requirements.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.requirements.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.requirements.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.requirements.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.requirements.item4" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion6.priority.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.priority.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.priority.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion6.priority.item3" />
-      </NumberedListItem>
-    </NumberedList>
-  </div>
-);
 const renderAccordion7Content = () => (
   <div>
     <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
@@ -672,68 +617,6 @@ const renderAccordion7Content = () => (
     </NumberedList>
   </div>
 );
-const renderAccordion8Content = () => (
-  <div>
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion2.description" />
-    </Subtitle>
-    <Text fontSize={[2]} color="black" heavy mb={[6]}>
-      <FormattedMessage id="jobs.accordion8.description" />
-    </Text>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion8.responsibilities.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.responsibilities.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.responsibilities.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.responsibilities.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.responsibilities.item4" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.responsibilities.item5" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion8.requirements.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.requirements.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.requirements.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.requirements.item3" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion8.priority.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.priority.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.priority.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion8.priority.item3" />
-      </NumberedListItem>
-    </NumberedList>
-  </div>
-);
-
 
 const JobsPage = () => (
   <div>
@@ -831,17 +714,10 @@ const JobsPage = () => (
               {renderAccordion5Content()}
             </Expander>
 
-            <Expander title={<FormattedMessage id="jobs.accordion6.title" />}>
-              {renderAccordion6Content()}
-            </Expander>
-
             <Expander title={<FormattedMessage id="jobs.accordion7.title" />}>
               {renderAccordion7Content()}
             </Expander>
 
-            <Expander title={<FormattedMessage id="jobs.accordion8.title" />}>
-              {renderAccordion8Content()}
-            </Expander>
             <Line />
           </Box>
         </ContentOuter>
