@@ -28,7 +28,7 @@ export default () => (
     <Flag
       name="chinese"
       render={() => (
-        <Language><StyledLink to="/cn/">中文</StyledLink></Language>
+        <Language><StyledLink to="/zh/">中文</StyledLink></Language>
       )}
     />
     {/* <Flag

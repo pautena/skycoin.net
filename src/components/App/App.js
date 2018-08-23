@@ -57,7 +57,7 @@ export default () => (
     <Router>
       <ScrollToTop>
         <Switch>
-          <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
+          <Route path="/zh" render={props => <Root {...props} locale="zh" />} />
           <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
           <Route path="/ko" render={props => <Root {...props} locale="ko" />} />
           <Route path="/" render={props => <Root {...props} locale="en" />} />
