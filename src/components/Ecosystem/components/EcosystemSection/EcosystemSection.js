@@ -48,6 +48,11 @@ const Ecosystem = () => (
     <ContentItem bg="lightBlue" py={10} pr={[7, 7, 8]} pl={[7, 0, 8]} wrap mt={[5, 8]} mx={[-7, 0]}>
       <Box width={[1, 3 / 5, 4 / 6]}>
         <Info heading="ecosystem.skycoin.heading" body="ecosystem.skycoin.body" />
+        <BtnContainer px={[0, 4, 8]}>
+          <Btn href="/cx" color="base" bg={COLOR.lightBlue} pill outlined mt={[5, 6]} >
+            <FormattedMessage id="ecosystem.skycoin.btn" />
+          </Btn>
+        </BtnContainer>
       </Box>
       <Box width={[1, 2 / 5, 2 / 6]}>
         <Illustrations items={content.skycoin} />

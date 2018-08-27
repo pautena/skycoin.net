@@ -215,6 +215,7 @@ export default {
     skycoin: {
       heading: '天空链',
       body: 'Skycoin是为了解决比特币和以太坊的缺点而创建的。它的应运而生是由于当时还没有其他币种可以实现中本聪最初的完全去中心化数字货币的愿景。<br/><br/> 通过其专有的Obelisk共识算法，Skycoin的平台可以免于中心化和人为操控。它的特色编 程语言CX，允许成千上万的开发人员轻松地将应用程序部署到区块链上。Skycoin作为加 密货币，具有免费交易的功能，其绝对隐私功能即将落实，同时具有类似Visa支付处理系 统的速度，其价值基于内在资产支持而不是基于投机。<br/><br/> 持有Skycoin产生的币时可用于在Skywire网络上购买服务，并且可以兑换更多的Skycoin。',
+      btn: '了解更多CX',
     },
     skywire: {
       heading: 'Skywire',
