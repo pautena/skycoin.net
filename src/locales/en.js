@@ -536,6 +536,47 @@ export default {
       },
     },
   },
+  cx: {
+    title: 'CX - CX programming language',
+    description: 'CX - programming language',
+    about: {
+      heading: 'What is CX?',
+      subheading: 'Programming language',
+      paragraph1: 'CX is Skycoin’s specification and programming language, packed full of features. CX will provide numerous advancements within the Skycoin project. It allows for the creation of complex contractual agreements that are built with security in mind.',
+      paragraph2: 'CX will deploy amendable obligations for projects built on the platform. These attributes are all part of the CX multi-purpose programming language:',
+    },
+    features: {
+      heading: 'Features of CX:',
+      affordances: {
+        title: 'Affordances',
+        text: 'The utilization of affordances allows the permission of packages to be granted or rejected from specific users, aiding in the ability of programmers to confidently create secure code. The affordance system can be queried to obtain a list of actions that can be placed on functions.',
+      },
+      programming: {
+        title: 'Genetic programming (GP)',
+        text: 'Genetic programming is an evolution in the creation of programs in CX. As a machine learning tool, GP will aid programmers by providing automatic problem-solving engines and the ability to perform curve-fitting and create predictive models.',
+      },
+      deterministic: {
+        title: 'Determinisministic Language',
+        text: 'Determinism allows CX programs to be created in confidence, negating the need for programmers to be concerned about the underlying machine in embedded environments, as outputs are produced invariably regardless of machinery.',
+      },
+      typing: {
+        title: 'Strict Typing System',
+        text: 'The strict typing system of CX provides another layer or redundancy and ease of use, making the process of debugging a straightforward affair. Explicit type casting reduces errors and makes CX constitutionally secure for programmers.',
+      },
+      complied: {
+        title: 'Compiled & Interpreted Language',
+        text: 'Functioning as both a compiled and interpreted language. This gives programmers the ability to leverage its advanced features with the added function of being flexible and interactive.',
+      },
+      garbage: {
+        title: 'Garbage Collector',
+        text: 'A form of automatic memory management, the CX garbage collector automatically reclaims unused objects in the queue, freeing up valuable memory for necessary operations. CX finds data objects in the program that cannot be accessed in the future and disposes of them.',
+      },
+      object: {
+        title: 'Object Explorer',
+        text: 'Programmers will have access to an object explorer which will show a graphical view of all objects and their current memory allocation. Those objects can be serialized and delivered, while code stepping will allow programmers to resume execution of those objects at the last state observed.',
+      },
+    },
+  },
   jobs: {
     title: 'Skycoin is hiring developers.',
     subtitle: 'We are hiring',
