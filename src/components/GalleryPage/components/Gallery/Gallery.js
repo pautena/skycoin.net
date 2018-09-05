@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
+import { FormattedMessage } from 'react-intl';
 import media from 'utils/media';
 import { rem } from 'polished';
 import { FONT_FAMILIES, COLOR } from 'config';
@@ -21,14 +22,6 @@ const Wrapper = styled(Box)`
   ${media.md.css`
     column-count: 4;
   `}
-`;
-
-const Container = styled.div`
-  &:last-child {
-    ${Wrapper} {
-      border-bottom: 0;
-    }
-  }
 `;
 
 const Figure = styled.figure`
@@ -139,8 +132,10 @@ class Gallery extends React.PureComponent {
     const { lightboxIsOpen, activeIndex } = this.state;
 
     return (
-      <Container>
-        <Heading as="h3" fontSize={5} mt={9} mb={7}>{heading}</Heading>
+      <div>
+        {heading && <Heading as="h3" fontSize={5} mt={9} mb={7}>
+          <FormattedMessage id={heading} />
+        </Heading>}
         <Wrapper>
           {items.map((item, i) => <Item key={i} item={item} onClick={() => this.gotoImage(i)} />)}
         </Wrapper>
@@ -152,14 +147,18 @@ class Gallery extends React.PureComponent {
           onClickNext={this.gotoNext}
           onClose={this.close}
         />
-      </Container>
+      </div>
     );
   }
 }
 
 Gallery.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  heading: PropTypes.string.isRequired,
+  heading: PropTypes.string,
+};
+
+Gallery.defaultProps = {
+  heading: '',
 };
 
 export default Gallery;

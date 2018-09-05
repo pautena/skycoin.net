@@ -864,4 +864,21 @@ export default {
       },
     },
   },
+  gallery: {
+    title: 'Gallery',
+    description: 'Gallery',
+    heading: 'Gallery',
+    antennas: {
+      heading: 'Antennas',
+    },
+    wallet: {
+      heading: 'Hardware Wallet',
+    },
+    skyminer: {
+      heading: 'Skyminer',
+    },
+    diySkyminer: {
+      heading: 'DIY Skyminers',
+    },
+  },
 };
