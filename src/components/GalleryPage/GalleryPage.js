@@ -8,9 +8,8 @@ import Footer from 'components/Footer';
 import SignUpSection from 'components/SignUpSectionSecondary';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
-import Gallery from './components/Gallery';
-
 import { COLOR } from 'config';
+import Gallery from './components/Gallery';
 
 import { wallet, antenna, skyminer, diySkyminer } from './content';
 
@@ -28,7 +27,6 @@ const GalleryPage = ({ intl }) => (
     <Container>
       <Heading heavy as="h2" mb={0} mt={[7, 9]} fontSize={[6, 7]} color={COLOR.textDark}>
         Gallery
-        {/*<FormattedMessage id="skywire.about.heading" />*/}
       </Heading>
       <Gallery items={antenna} heading="Antennas" />
       <Gallery items={wallet} heading="Hardware Wallet" />
