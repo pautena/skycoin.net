@@ -38,7 +38,6 @@ const Link = styled.a`
 `;
 
 class GalleryPage extends React.PureComponent {
-
   render() {
     const { intl } = this.props;
 

@@ -1,6 +1,4 @@
 /* eslint-disable max-len */
-import {antenna, diySkyminer, wallet} from "../components/GalleryPage/content";
-
 export default {
   header: {
     navigation: {
