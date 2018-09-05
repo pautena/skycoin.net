@@ -5,6 +5,7 @@ const PageLinks = () => (
   <div style={{ opacity: 0, position: 'absolute' }}>
     <Link to="/orderskyminer" />
     <Link to="/buy" />
+    <Link to="/gallery" />
   </div>
 );
 
