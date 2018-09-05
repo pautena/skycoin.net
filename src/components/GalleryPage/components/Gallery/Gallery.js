@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
+import { isMobile } from 'react-device-detect';
 import media from 'utils/media';
 import { rem } from 'polished';
 import { FONT_FAMILIES, COLOR } from 'config';
@@ -68,7 +69,7 @@ const ImgWrapper = styled.div`
     }
   
     &:before {
-      visibility: visible;
+      visibility: ${isMobile ? 'hidden' : 'visible'};
     }
   }
 `;
@@ -116,6 +117,10 @@ class Gallery extends React.PureComponent {
   };
 
   gotoImage = (index) => {
+    if (isMobile) {
+      return;
+    }
+
     this.setState({ activeIndex: index, lightboxIsOpen: true });
   };
 
@@ -139,7 +144,7 @@ class Gallery extends React.PureComponent {
         <Wrapper>
           {items.map((item, i) => <Item key={i} item={item} onClick={() => this.gotoImage(i)} />)}
         </Wrapper>
-        <Lightbox
+        {!isMobile && <Lightbox
           images={items}
           isOpen={lightboxIsOpen}
           currentImage={activeIndex}
@@ -147,6 +152,7 @@ class Gallery extends React.PureComponent {
           onClickNext={this.gotoNext}
           onClose={this.close}
         />
+        }
       </div>
     );
   }

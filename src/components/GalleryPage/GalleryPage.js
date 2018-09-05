@@ -57,7 +57,7 @@ class GalleryPage extends React.PureComponent {
             <FormattedMessage id="gallery.heading" />
           </Heading>
 
-          <Flex mt={9} mb={7}>
+          <Flex mt={9} mb={7} wrap>
             <Link onClick={() => scrollToComponent(this.Antennas, scrollOptions)} active>
               <FormattedMessage id="gallery.antennas.heading" />
             </Link>
