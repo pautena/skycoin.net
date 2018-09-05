@@ -6,9 +6,13 @@ import { injectIntl } from 'react-intl';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import SignUpSection from 'components/SignUpSectionSecondary';
+import Container from 'components/Container';
+import Heading from 'components/Heading';
 import Gallery from './components/Gallery';
 
-import content from './content';
+import { COLOR } from 'config';
+
+import { wallet, antenna, skyminer, diySkyminer } from './content';
 
 const GalleryPage = ({ intl }) => (
   <div>
@@ -21,7 +25,16 @@ const GalleryPage = ({ intl }) => (
     </Helmet>
 
     <Header border />
-    <Gallery items={content} />
+    <Container>
+      <Heading heavy as="h2" mb={0} mt={[7, 9]} fontSize={[6, 7]} color={COLOR.textDark}>
+        Gallery
+        {/*<FormattedMessage id="skywire.about.heading" />*/}
+      </Heading>
+      <Gallery items={antenna} heading="Antennas" />
+      <Gallery items={wallet} heading="Hardware Wallet" />
+      <Gallery items={skyminer} heading="Skyminer" />
+      <Gallery items={diySkyminer} heading="DIY Skyminers" />
+    </Container>
     <SignUpSection />
     <Footer />
   </div>

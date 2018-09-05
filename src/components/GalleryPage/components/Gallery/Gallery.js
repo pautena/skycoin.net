@@ -5,12 +5,14 @@ import { Box } from 'grid-styled';
 import media from 'utils/media';
 import { rem } from 'polished';
 import { FONT_FAMILIES, COLOR } from 'config';
-import Container from 'components/Container';
+import Heading from 'components/Heading';
 import Lightbox from 'components/Lightbox';
 
 const Wrapper = styled(Box)`
   column-count: 1;
   column-gap: ${props => props.theme.space[7]}px;
+  padding-bottom: ${props => props.theme.space[5]}px;
+  border-bottom: 1px solid ${COLOR.borderGrey};
   
   ${media.sm.css`
     column-count: 2;
@@ -21,11 +23,20 @@ const Wrapper = styled(Box)`
   `}
 `;
 
+const Container = styled.div`
+  &:last-child {
+    ${Wrapper} {
+      border-bottom: 0;
+    }
+  }
+`;
+
 const Figure = styled.figure`
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
-  margin-bottom: ${props => props.theme.space[7]}px;
+  padding-bottom: ${props => props.theme.space[7]}px;
+  margin: 0;
 `;
 
 const Img = styled.img.attrs({
@@ -38,7 +49,6 @@ const Img = styled.img.attrs({
 const ImgWrapper = styled.div`
   position: relative;
   font-size: 0;
-  margin-bottom: ${props => props.theme.space[5]}px;
   
   &:before {
     content: '+';
@@ -46,13 +56,13 @@ const ImgWrapper = styled.div`
     position: absolute;
     bottom: ${props => props.theme.space[3]}px;
     right: ${props => props.theme.space[3]}px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: ${COLOR.base};
     border-radius: 100%;
     color: ${COLOR.white};
-    font-size: ${props => rem(props.theme.fontSizes[5])};
-    line-height: 18px;
+    font-size: ${props => rem(props.theme.fontSizes[6])};
+    line-height: 21px;
     text-align: center;
     visibility: hidden;
   }
@@ -74,6 +84,7 @@ const Figcaption = styled.figcaption`
   font-family: ${FONT_FAMILIES.sans};
   font-size: ${props => rem(props.theme.fontSizes[2])};
   color: ${COLOR.textGrey};
+  margin-top: ${props => props.theme.space[5]}px;
 `;
 
 const Item = ({ item, onClick }) => (
@@ -81,7 +92,7 @@ const Item = ({ item, onClick }) => (
     <ImgWrapper>
       <Img src={item.src} onClick={onClick} />
     </ImgWrapper>
-    <Figcaption>{item.caption}</Figcaption>
+    {item.caption && <Figcaption>{item.caption}</Figcaption>}
   </Figure>
 );
 
@@ -124,12 +135,13 @@ class Gallery extends React.PureComponent {
   };
 
   render() {
-    const { items } = this.props;
+    const { items, heading } = this.props;
     const { lightboxIsOpen, activeIndex } = this.state;
 
     return (
       <Container>
-        <Wrapper my={[8, 10, 12]}>
+        <Heading as="h3" fontSize={5} mt={9} mb={7}>{heading}</Heading>
+        <Wrapper>
           {items.map((item, i) => <Item key={i} item={item} onClick={() => this.gotoImage(i)} />)}
         </Wrapper>
         <Lightbox
@@ -147,6 +159,7 @@ class Gallery extends React.PureComponent {
 
 Gallery.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  heading: PropTypes.string.isRequired,
 };
 
 export default Gallery;
