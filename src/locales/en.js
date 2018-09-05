@@ -1,4 +1,6 @@
 /* eslint-disable max-len */
+import {antenna, diySkyminer, wallet} from "../components/GalleryPage/content";
+
 export default {
   header: {
     navigation: {
@@ -863,6 +865,11 @@ export default {
         text: 'A Consensus Node receives its input from one or more Block-Making nodes. The algorithms are separate for each, yet they both operate on the same data structures. Both type of nodes always perform authorship verification and fraud detection of incoming data. Fraudulent or invalid messages are detected, dropped, and never propagated, thus peer nodes engaged in suspicious activities will be severed, and their public keys are banned.',
       },
     },
+  },
+  gallery: {
+    title: 'Gallery',
+    description: 'Gallery',
+    heading: 'Gallery',
   },
 };
 

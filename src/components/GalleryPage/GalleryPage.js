@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { injectIntl } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -16,17 +16,17 @@ import { wallet, antenna, skyminer, diySkyminer } from './content';
 const GalleryPage = ({ intl }) => (
   <div>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'cxo.title' })}</title>
+      <title>{intl.formatMessage({ id: 'gallery.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'cxo.description' })}
+        content={intl.formatMessage({ id: 'gallery.description' })}
       />
     </Helmet>
 
     <Header border />
     <Container>
       <Heading heavy as="h2" mb={0} mt={[7, 9]} fontSize={[6, 7]} color={COLOR.textDark}>
-        Gallery
+        <FormattedMessage id="gallery.heading" />
       </Heading>
       <Gallery items={antenna} heading="Antennas" />
       <Gallery items={wallet} heading="Hardware Wallet" />
