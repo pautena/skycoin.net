@@ -577,6 +577,7 @@ export default {
         text: 'Programmers will have access to an object explorer which will show a graphical view of all objects and their current memory allocation. Those objects can be serialized and delivered, while code stepping will allow programmers to resume execution of those objects at the last state observed.',
       },
     },
+    roadmap: 'Skycoin Roadmap',
   },
   jobs: {
     title: 'Skycoin is hiring developers.',
