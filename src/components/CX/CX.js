@@ -4,13 +4,16 @@ import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
+import media from 'utils/media';
 
+import Container from 'components/Container';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopBanner from 'components/TopBanner';
 import Features from 'components/Features';
 import SignUpSection from 'components/SignUpSectionSecondary';
 import About from './components/About';
+import Roadmap from './components/Roadmap';
 
 import banner from './CX.svg';
 import * as images from './images';
@@ -28,6 +31,12 @@ const Banner = styled(TopBanner)`
   background-color: #101F34;
 `;
 
+const Line = styled.div`
+  ${media.sm.css`
+    border-bottom: 1px solid #ccc;
+  `};
+`;
+
 const CX = ({ intl }) => (
   <div>
     <Helmet>
@@ -41,9 +50,13 @@ const CX = ({ intl }) => (
     <Header />
     <Banner src={banner} />
     <About />
-    <Box mb={[5, 10]}>
+    <Box>
       <Features items={featureItems} images={images} textId="cx.features" />
+      <Container>
+        <Line />
+      </Container>
     </Box>
+    <Roadmap />
     <SignUpSection />
     <Footer />
   </div>
