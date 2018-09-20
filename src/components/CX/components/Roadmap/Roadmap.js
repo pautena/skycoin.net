@@ -22,11 +22,9 @@ const Graphic = styled.img.attrs({
 `;
 
 const Wrap = styled(Box)`
-  background-color: #fcfcfc;
   padding-top: 20px;
 
   ${media.sm.css`
-    background-color: transparent;
     padding-top: 0;
   `}
 `;
