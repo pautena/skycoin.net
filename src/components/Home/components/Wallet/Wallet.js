@@ -1,9 +1,13 @@
 import React from 'react';
-import { Box } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 import Container from 'components/Container';
+import Button from 'components/Button';
 import Heading from 'components/Heading';
 import Gallery from './components/Gallery';
+
+
 import * as img from './images';
 
 const images = [
@@ -14,6 +18,10 @@ const images = [
   img.wallet5,
   img.wallet6,
 ];
+
+const StyledFlex = styled(Flex)`
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+`;
 
 const Wallet = () => (
   <Box my={[8, 10, 13]}>
@@ -26,6 +34,12 @@ const Wallet = () => (
       <Box my={[7, 8, 10]}>
         <Gallery imgList={images} />
       </Box>
+
+      <StyledFlex align="flex-end" column wrap my={8} pb={9}>
+        <Button to="gallery" color="base" pill outlined>
+          <FormattedMessage id="home.miner.morePhotos" />
+        </Button>
+      </StyledFlex>
 
     </Container>
   </Box>
