@@ -82,9 +82,9 @@ const Figcaption = styled.figcaption`
 `;
 
 const Item = ({ item, onClick }) => (
-  <Figure>
+  <Figure onClick={onClick}>
     <ImgWrapper>
-      <Img src={item.src} onClick={onClick} />
+      <Img src={item.src} />
     </ImgWrapper>
     {item.caption && <Figcaption>{item.caption}</Figcaption>}
   </Figure>

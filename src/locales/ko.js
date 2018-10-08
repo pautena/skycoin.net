@@ -95,7 +95,7 @@ export default {
     title: '스카이코인 - 제 3세대 암호화폐',
     description: '스카이코인은 사토시의 원래 비전을 발전, 비트코인의 문제점을 개선하였습니다.',
     banner: {
-      heading: 'Look at our new hardware wallet updates',
+      heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
     },
     hero: {
@@ -544,6 +544,7 @@ export default {
       timezone: 'Timezone',
       projects: 'Which of Skycoin’s projects you’re most interested&nbsp;in',
       resume: 'Brief résumé',
+      telegram: 'Telegram username',
     },
     ourProject: 'All of our projects are developed in Go. For frontend work, we use ',
     angular: 'Angular 2',

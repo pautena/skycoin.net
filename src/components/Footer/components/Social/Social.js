@@ -18,6 +18,7 @@ const socialLinks = [
   { to: 'https://itunes.apple.com/nl/podcast/skycoin/id1348472259?l=en', icon: images.apple },
   { to: 'https://discord.gg/EgBenrW', icon: images.discord },
   { to: 'https://t.me/Skycoin', icon: images.telegram },
+  { to: 'https://www.linkedin.com/company/skycoin/', icon: images.linkedin },
 ];
 
 const Wrapper = styled(Flex)`

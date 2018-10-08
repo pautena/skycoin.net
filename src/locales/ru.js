@@ -95,7 +95,7 @@ export default {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     banner: {
-      heading: 'Look at our new hardware wallet updates',
+      heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
     },
     hero: {
@@ -544,6 +544,7 @@ export default {
       timezone: 'Timezone',
       projects: 'Which of Skycoin’s projects you’re most interested&nbsp;in',
       resume: 'Brief résumé',
+      telegram: 'Telegram username',
     },
     ourProject: 'All of our projects are developed in Go. For frontend work, we use ',
     angular: 'Angular 2',

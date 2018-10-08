@@ -47,7 +47,7 @@ export default {
     title: 'Skycoin - Decentralize the Web',
     description: 'Skycoin is a new blockchain-based mesh-internet.',
     banner: {
-      heading: 'Look at our new hardware wallet updates',
+      heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
     },
     hero: {
@@ -439,6 +439,7 @@ export default {
       timezone: 'Timezone',
       projects: 'Which of Skycoin’s projects you’re most interested&nbsp;in',
       resume: 'Brief résumé',
+      telegram: 'Telegram username',
     },
     ourProject: 'All of our projects are developed in Go. For frontend work, we use ',
     angular: 'Angular 2',

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Box, Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
@@ -49,7 +48,7 @@ const StyledImg = styled.img`
   height: auto;
 `;
 
-const Banner = ({ onClick }) => (
+const Banner = () => (
   <Wrapper py={[3, 6]}>
     <Container>
       <Content>
@@ -59,16 +58,12 @@ const Banner = ({ onClick }) => (
             <FormattedMessage id="home.banner.heading" />
           </StyledText>
         </TextContainer>
-        <Button onClick={onClick} pill bg="white" color="base" my={2} mx={2}>
+        <Button to="/gallery" pill bg="white" color="base" my={2} mx={2}>
           <FormattedMessage id="home.banner.button" />
         </Button>
       </Content>
     </Container>
   </Wrapper>
 );
-
-Banner.propTypes = {
-  onClick: PropTypes.func.isRequired,
-};
 
 export default Banner;
