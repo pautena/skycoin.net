@@ -10,3 +10,4 @@ export { default as reddit } from './reddit.svg';
 export { default as apple } from './apple.svg';
 export { default as discord } from './discord.svg';
 export { default as telegram } from './telegram.svg';
+export { default as linkedin } from './linkedin.svg';
