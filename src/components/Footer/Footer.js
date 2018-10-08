@@ -6,12 +6,12 @@ import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Navigation from 'components/Navigation';
+import Languages from 'components/Languages';
 import Text from 'components/Text';
 import Logo from 'components/Logo';
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 
-import Languages from './components/Languages';
 import Email from './components/Email';
 import Social from './components/Social';
 import PageLinks from './components/PageLinks';
