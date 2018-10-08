@@ -674,6 +674,9 @@ const JobsPage = () => (
                   <StyledListItem>
                     <FormattedMessage id="jobs.sidebarList.resume" />
                   </StyledListItem>
+                  <StyledListItem>
+                    <FormattedMessage id="jobs.sidebarList.telegram" />
+                  </StyledListItem>
                 </StyledList>
               </Text>
             </ContentInner>
