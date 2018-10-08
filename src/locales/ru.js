@@ -95,7 +95,7 @@ export default {
     title: 'Skycoin - третье поколение криптовалюты',
     description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
     banner: {
-      heading: 'Look at our new hardware wallet updates',
+      heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
     },
     hero: {

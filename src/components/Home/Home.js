@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import { COLOR } from 'config';
-import scrollToComponent from 'react-scroll-to-component';
 
 import Banner from './components/Banner';
 import Hero from './components/Hero';
@@ -25,10 +24,6 @@ const HeaderWrapper = styled.div`
 `;
 
 class Home extends React.PureComponent {
-  handleScroll() {
-    scrollToComponent(this.Miner);
-  }
-
   render() {
     const { intl } = this.props;
 
@@ -49,9 +44,7 @@ class Home extends React.PureComponent {
         <Hero />
         <Press />
         <Miner />
-        <div ref={(section) => { this.Miner = section; }} >
-          <Wallet />
-        </div>
+        <Wallet />
         <Network />
         <Ecosystem />
         <News locale={intl.locale} />
