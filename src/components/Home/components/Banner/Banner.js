@@ -12,6 +12,7 @@ import { COLOR } from 'config';
 import banner from './banner.png';
 
 const Wrapper = styled(Box)`
+  min-height: 110px;
   background: ${COLOR.base};
   text-align: center;
 `;
