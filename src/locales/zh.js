@@ -78,7 +78,8 @@ export default {
     },
     press: {
       heading: 'Skycoin 入选2018年最值得关注的五大密码工程之一',
-      body: '“网络中立性和消费者数据隐私是2017年两大关键技术性问题。如果您不想为 ISP 提供 的不可靠服务买单，担心您的数据被售卖，或被政府监控和审查 - Skycoin 将给您带来 希望。这些都是 Skycoin 试图解决的核心问题。“',
+      forbes: 'Holding itself out as the “third generation cryptocurrency,” Skycoin aims to provide a “new internet” that is global, decentralized, and not controlled by any country, corporation, or government entity.  For privacy gurus or net neutrality enthusiasts, this is a project to stay on top of.',
+      huffingtonPost: 'Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.',
     },
     ecosystem: {
       heading: '天空链是世界上最先进的区块链应用平台',
