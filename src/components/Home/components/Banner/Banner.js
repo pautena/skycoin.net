@@ -4,12 +4,11 @@ import { Box, Flex } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
-import Text from 'components/Text';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
 
 import media from 'utils/media';
-import { COLOR, FONT_SIZES } from 'config';
+import { COLOR } from 'config';
 import banner from './banner.png';
 
 const Wrapper = styled(Box)`
@@ -28,11 +27,8 @@ const Content = styled(Flex)`
 `;
 
 const TextContainer = styled(Flex)`
-  // flex-direction: column;
-  // align-items: center;
 
   ${media.md.css`
-    // align-items: flex-start;
     width: 40%;
   `};
 `;
