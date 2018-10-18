@@ -72,10 +72,10 @@ export const en = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Richard Kastelein',
-        title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
-        picture: 'richard_kastelein.jpg',
-        bio: 'Richard Kastelein is an award-winning publisher, innovation executive, and entrepreneur. He sits on the advisory boards of half a dozen Blockchain startups. Kastelein has written over 1200 articles on Blockchain technology and startups at Blockchain News, and is published in reputable publications including Harvard Business Review, Wired, and Venturebeat.',
+        name: 'John Otto Peters',
+        title: 'Chairman of SIWA therapeutics, Inc',
+        picture: 'john_otto_peters.jpg',
+        bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
       },
       {
         name: 'Dr. John Henry Clippinger',
@@ -249,10 +249,10 @@ export const zh = {
         bio: 'Michael Terpin，Transform Group的创始人兼首席执行官，Marketwired创始人。2013年 初共同创立了BitAngels，推动CoinAgenda系列会议。联合创立了早期的区块链孵化 器bCommerce Labs和Dapps基金。目前担任Alphabit基金ICO投资委员会主席，并为众多区块链公司和基金会提供建议。Terpin为150多家区块链公司和基金会的公关工作贡献力量。',
       },
       {
-        name: 'Richard Kastelein',
-        title: 'Blockchain News创始人(2017年并购) Cryptoassets设计集团总监 Blockchain Partners合伙人',
-        picture: 'richard_kastelein.jpg',
-        bio: 'Richard Kastelein是一位多项奖项加身的出版商、创新执行官和企业家，是六家区块链 初创公司咨询委员会成员。Kastelein在Blockchain News上撰写了超过1200篇关于区块链 技术和创业公司的文章，并发表在《哈佛商业评论》、 《Wired》和《Venturebeat》等知名刊物。 ',
+        name: 'John Otto Peters',
+        title: 'Chairman of SIWA therapeutics, Inc',
+        picture: 'john_otto_peters.jpg',
+        bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
       },
       {
         name: 'Dr. John Henry Clippinger',
@@ -426,10 +426,10 @@ export const ru = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Richard Kastelein',
-        title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
-        picture: 'richard_kastelein.jpg',
-        bio: 'Richard Kastelein is an award-winning publisher, innovation executive, and entrepreneur. He sits on the advisory boards of half a dozen Blockchain startups. Kastelein has written over 1200 articles on Blockchain technology and startups at Blockchain News, and is published in reputable publications including Harvard Business Review, Wired, and Venturebeat.',
+        name: 'John Otto Peters',
+        title: 'Chairman of SIWA therapeutics, Inc',
+        picture: 'john_otto_peters.jpg',
+        bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
       },
       {
         name: 'Dr. John Henry Clippinger',
@@ -603,10 +603,10 @@ export const ko = {
         bio: 'Michael Terpin is the Founder and CEO of Transform Group and the Founder of Marketwired. In early 2013, Terpin co-founded BitAngels, which gave birth to the CoinAgenda conference series. He also co-founded early blockchain incubator bCommerce Labs and the Dapps Fund. Currently, Terpin heads the ICO investment committee for the Alphabit Fund and advises numerous blockchain companies and foundations. Terpin has led the PR efforts for more than 150 blockchain companies and foundations.',
       },
       {
-        name: 'Richard Kastelein',
-        title: 'Founder of the Blockchain News (acquired in 2017). Director of Cryptoassets Design Group Partner at Blockchain Partners',
-        picture: 'richard_kastelein.jpg',
-        bio: 'Richard Kastelein is an award-winning publisher, innovation executive, and entrepreneur. He sits on the advisory boards of half a dozen Blockchain startups. Kastelein has written over 1200 articles on Blockchain technology and startups at Blockchain News, and is published in reputable publications including Harvard Business Review, Wired, and Venturebeat.',
+        name: 'John Otto Peters',
+        title: 'Chairman of SIWA therapeutics, Inc',
+        picture: 'john_otto_peters.jpg',
+        bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
       },
       {
         name: 'Dr. John Henry Clippinger',
