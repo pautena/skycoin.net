@@ -10,13 +10,13 @@ import Link from 'components/Link';
 import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
 import { rem } from 'polished';
 import media from 'utils/media';
-
-import award from './images/award.svg';
 import * as logos from './images';
+
+const forbes = logos.forbes;
+const huffingtonPost = logos.huffingtonPost;
 
 const partners = [
   { image: logos.blockchain, url: '' },
-  { image: logos.forbes, url: 'https://www.forbes.com/sites/julesschroeder/2018/01/09/millennials-heres-how-cryptocurrency-could-transform-your-future/' },
   { image: logos.coinTelegraph, url: '' },
   { image: logos.coinAgenda, url: '' },
   { image: logos.nasdaq, url: 'https://twitter.com/Nasdaq/status/996785167527235584' },
@@ -34,6 +34,10 @@ const Wrapper = styled(Box)`
   ${media.sm.css`
     margin: -233px 0 0;
   `}
+`;
+
+const Logos = styled(Flex)`
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 `;
 
 const LogoWrapper = styled(Box)`
@@ -57,52 +61,75 @@ const Logo = styled.img.attrs({
   
 `;
 
-const Paragraph = styled.p`
+const Quote = styled.blockquote`
+  position: relative;
   font-size: ${rem(FONT_SIZES[2])};
   color: ${COLOR.white};
   font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
   line-height: 1.5rem;
   margin-bottom: 0.5em;
-  margin-right: ${rem(SPACE[13])};
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
   text-transform: none;
-`;
-
-const Graphic = styled.img.attrs({
-  src: award,
-})`
-  display: block;
-  max-width: 100%;
-  max-height: 155px;
-  margin-right: ${rem(SPACE[8])};
+  
+  a, a:visited, a:focus, a:hover, a:active {
+    color: ${COLOR.white};
+    text-decoration: none;
+  }
+  
+  &:before {
+    content: '\\201c';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 `;
 
 const Press = () => (
   <div>
     <Container>
       <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
-        <Flex wrap>
-          <Box width={[1, 4 / 5]}>
-            <Heading heavy as="h2" my={[4, 6]} mr={[13]} fontSize={[5, 6, 7]} color="white">
-              <FormattedMessage id="home.press.heading" />
-            </Heading>
-            <Paragraph>
-              <FormattedMessage id="home.press.body" />
-            </Paragraph>
+        <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="white">
+          <FormattedMessage id="home.press.heading" />
+        </Heading>
+        <Flex wrap align="flex-start">
+          <Box width={[1, 1, 1 / 2]}>
+            <Quote>
+              <Link href="http://forbes.com/sites/andrewrossow/2018/10/04/trick-or-treat-13-blockchain-companies-by-industry-that-will-have-your-cauldrons-bubbling-for-2019/" target="_blank">
+                <p>
+                  <FormattedMessage id="home.press.forbes" />
+                </p>
+                <Logo src={forbes} />
+              </Link>
+            </Quote>
           </Box>
-          <Flex row align="center" justify="flex-end" width={[0, 1 / 5]}>
-            <Graphic />
+          <Flex row align="center" justify="flex-end" width={[1, 1, 1 / 2]}>
+            <Quote>
+              <Link href="https://www.huffingtonpost.com/entry/the-top-5-crypto-projects-to-watch-in-2018_us_5a4c6a77e4b06cd2bd03e359" target="_blank">
+                <p>
+                  <FormattedMessage id="home.press.huffingtonPost" />
+                </p>
+                <Logo src={huffingtonPost} />
+              </Link>
+            </Quote>
           </Flex>
         </Flex>
-        <Flex align="center" wrap mt={[5, 8]} mb={3} mx={-2} px={0}>
+
+        <Logos align="center" wrap mt={[5, 7]} pt={[3, 5]} mb={3} mx={-2} px={0}>
           {partners.map((item, i) => (
-            <LogoWrapper width={[1 / 2, 1 / 4]}>
+            <LogoWrapper width={[1 / 4, 1 / 4, 1 / 7]}>
               <Link href={item.url} target="_blank">
                 <Logo key={i} src={item.image} />
               </Link>
             </LogoWrapper>
           ))}
-        </Flex>
+        </Logos>
       </Wrapper>
     </Container>
   </div>
