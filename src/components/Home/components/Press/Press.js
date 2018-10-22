@@ -97,6 +97,9 @@ const Press = () => (
       <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
         <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="white">
           <FormattedMessage id="home.press.heading" />
+          <p>
+            <FormattedMessage as="p" id="home.press.subheading" />
+          </p>
         </Heading>
         <Flex wrap align="flex-start">
           <Box width={[1, 1, 1 / 2]}>
