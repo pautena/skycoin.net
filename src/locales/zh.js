@@ -78,6 +78,7 @@ export default {
     },
     press: {
       heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
+      subheading: 'The #1 Project to watch out for in 2019',
       forbes: 'Holding itself out as the “third generation cryptocurrency,” Skycoin aims to provide a “new internet” that is global, decentralized, and not controlled by any country, corporation, or government entity.  For privacy gurus or net neutrality enthusiasts, this is a project to stay on top of.',
       huffingtonPost: 'Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.',
     },
