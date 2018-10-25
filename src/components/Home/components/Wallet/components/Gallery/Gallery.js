@@ -116,7 +116,7 @@ GraphicItem.propTypes = {
 };
 
 const Gallery = ({ imgList }) => (
-  <GalleryWrapper wrap width={1} mx={-3} my={3}>
+  <GalleryWrapper wrap mx={-3} my={3}>
     {imgList.map((item, i) => <GraphicItem key={i} src={item} />)}
   </GalleryWrapper>
 );
