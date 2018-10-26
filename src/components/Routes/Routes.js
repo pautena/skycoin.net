@@ -24,6 +24,7 @@ import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
+import BuyFiat from '../BuyFiat';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -38,6 +39,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
       <Route path={`${prefix}buy`} exact component={MarketsPage} />
+      <Route path={`${prefix}buy/fiat`} exact component={BuyFiat} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
