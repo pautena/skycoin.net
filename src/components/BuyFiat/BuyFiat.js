@@ -2,9 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { Helmet } from 'react-helmet';
 import { injectIntl, FormattedMessage } from 'react-intl';
-import $ from 'jquery';
 import { SPACE, COLOR } from 'config';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
@@ -12,72 +10,42 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
 import Button from '../Button/Button';
-import Link from '../Link/Link';
-import IndacoinApi from '../../services/IndacoinApi/IndacoinApi';
-// import MarketsList from './components/MarketsList/MarketsList';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
 `;
 
-class MarketsPage extends PureComponent {
-  constructor() {
-    super();
-    this.api = new IndacoinApi();
-    this.state = { url: '' };
+const Label = styled.label`
+`;
+
+const Input = styled.input`
+  margin-bottom: ${rem(SPACE[4])};
+`;
+
+class BuyFiatPage extends PureComponent {
+  static getIndacoinUrl(email, amount, currency, wallet) {
+    return `https://indacoin.com/gw/payment_form?partner=skycoin&cur_from=${currency}&cur_to=SKY&amount=${amount}&address=${wallet}&user_id=${email}`;
   }
 
-  componentDidMount() {
-    const cryptoUrl = 'https://external.cryptowolf.eu/main-backend/';
-    /* eslint-disable */
-    window.external = 'sky';
-    $('#cryptowolf-container').load(`${cryptoUrl}ext.html`);
-    $.getScript(`${cryptoUrl}js/cryptowolf.js`);
-    /* eslint-enable */
+  static navigateToIndacoin(email, amount, currency, wallet) {
+    window.location = BuyFiatPage.getIndacoinUrl(email, amount, currency, wallet);
   }
 
-  onCreateTransactionClicked() {
-    this.api.createTransaction(
-      'info@abitari.com',
-      50,
-      'USD',
-      'egnYzM4Yzfxik7GszjGthn2DE3fGAsdGgP',
-    ).then(response => this.onTransactionCreationSuccess(response.data))
-      .catch(error => this.showError(error));
-  }
+  componentDidMount() {}
 
-  onTransactionCreationSuccess(data) {
-    console.log(data);
-    const { transactionId } = data;
-    this.api.getTransactionUrl(transactionId).then(url => this.onUrlGetSuccess(url))
-      .catch(error => this.showError(error));
-  }
+  onFormSuccess() {
+    const email = 'info@abitari.com';
+    const amount = 50;
+    const currency = 'USD';
+    const wallet = '10da8c33c00d2b2384ea6e302cdb27b9a959f82ed0a5eb364971b36ffe9195d408d1e99d54131a37698e0b146d39bbd0ce75ba4adecaf8f718baec0d63544e439ee07a2dcb66ae8f92cd56b012ae7ff62b1e46824d6ad9e0f931458acf53daee31ebe471ccec58f56760e460d3de23143286e61d902bc7125f59514a49f9b4613458dfbc9dc07a89d358611ab7ac544e49876375ff965b9a1ed75f065df9a73998c72076eb34492b0d83033a10cd327b7646f118dfd1072931746602aa920febe922be43a92bcedffce7747128c5571e48e932bf16523e266d171b4cd1c86053c4d65d6ef22d05321679d94b824b523b03d99a2d92aa0cdad76721a9542c5e43';
 
-  onUrlGetSuccess(url) {
-    this.setState({ url });
-  }
-
-  showError(error) {
-    // TODO: implement this
-    console.error(error || 'Server error');
-    if (error.config) {
-      console.error(error.config);
-    }
+    BuyFiatPage.navigateToIndacoin(email, amount, currency, wallet);
   }
 
   render() {
-    const { url } = this.state;
     return (<div>
-      <Helmet>
-        <title>{this.props.intl.formatMessage({ id: 'markets.title' })}</title>
-        <meta
-          name="description"
-          content={this.props.intl.formatMessage({ id: 'markets.description' })}
-        />
-      </Helmet>
       <Header border />
       <Container>
-        {/* <MarketsList /> */}
         <Wrap>
           <Heading heavy as="h2" mb={5} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
             <FormattedMessage id="markets.title" />
@@ -86,10 +54,21 @@ class MarketsPage extends PureComponent {
             <FormattedMessage id="markets.disclaimer" />
           </Text>
           <Container>
-            <Button onClick={() => this.onCreateTransactionClicked()}>Create transaction</Button>
-            <Text fontSize={2} color={COLOR.textDark} mb={8}>
-              <Link href={url} />
-            </Text>
+            <form style={{ display: 'flex', flexDirection: 'column' }}>
+              <Label htmlFor={'inputEmail'}>Email</Label>
+              <Input id={'inputEmail'} type={'email'} placeholder={'email'} />
+
+              <Label htmlFor={'inputAmount'}>Amount</Label>
+              <Input id={'inputAmount'} type={'number'} placeholder={'50'} min={50} />
+
+              <Label htmlFor={'inputCurrency'}>Currency</Label>
+              <Input placeholder={'USD'} />
+
+              <Label htmlFor={'inputWallet'}>Address</Label>
+              <Input placeholder={'Wallet address'} />
+
+              <Button onClick={() => this.onFormSuccess()}>Buy SKY</Button>
+            </form>
           </Container>
         </Wrap>
       </Container>
@@ -98,10 +77,10 @@ class MarketsPage extends PureComponent {
   }
 }
 
-MarketsPage.propTypes = {
+BuyFiatPage.propTypes = {
   intl: PropTypes.shape({
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };
 
-export default injectIntl(MarketsPage);
+export default injectIntl(BuyFiatPage);
