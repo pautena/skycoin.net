@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import $ from 'jquery';
 import { SPACE, COLOR } from 'config';
-import media from 'utils/media';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Header from 'components/Header';
@@ -19,51 +18,6 @@ import IndacoinApi from '../../services/IndacoinApi/IndacoinApi';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
-`;
-
-const CryptowolfWrapper = styled.div`
-  width: 100%;
-`;
-
-const LoadingMessage = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: ${rem(SPACE[8])};
-`;
-
-const VideoWrapper = styled.div`
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  padding-bottom: 25px;
-  height: 0;
-  margin-top: ${rem(SPACE[6])};
-  margin-bottom: ${rem(SPACE[10])};
-  
-  ${media.sm.css` 
-    margin-top: ${rem(SPACE[8])};
-    margin-bottom: ${rem(SPACE[13])};
-  `}
-  
-  & > span {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-  }
-  
-  iframe {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 class MarketsPage extends PureComponent {
@@ -105,7 +59,10 @@ class MarketsPage extends PureComponent {
 
   showError(error) {
     // TODO: implement this
-    console.log(error || 'Server error');
+    console.error(error || 'Server error');
+    if (error.config) {
+      console.error(error.config);
+    }
   }
 
   render() {

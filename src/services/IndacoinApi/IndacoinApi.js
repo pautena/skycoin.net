@@ -48,7 +48,11 @@ export default class IndacoinApi {
    */
   createTransaction(email, amount, currency, walletAddress) {
     console.log(`createTransaction(${amount}, ${currency}, ${walletAddress}`);
-    return this.http.post('/api/exgw_createTransaction', this.transactionData(email, amount, currency, walletAddress));
+    return this.post('/api/exgw_createTransaction', this.transactionData(email, amount, currency, walletAddress));
+  }
+
+  post(path, data) {
+    return this.http.post(path, data, this.headers);
   }
 
   transactionData(email, amount, currency, walletAddress) {

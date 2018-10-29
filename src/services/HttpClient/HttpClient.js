@@ -8,15 +8,11 @@ export default class HttpClient {
     });
   }
 
-  url(path) {
-    return `${this.baseUrl}${path}`;
-  }
-
   get(path, headers = {}) {
-    return axios.get(this.url(path), { headers });
+    return this.axios.get(path, { headers });
   }
 
   post(path, data, headers = {}) {
-    return axios.post(this.url(path), data, { headers });
+    return this.axios.post(path, data, { headers });
   }
 }
