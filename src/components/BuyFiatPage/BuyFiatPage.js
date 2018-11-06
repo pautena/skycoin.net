@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
@@ -9,18 +8,68 @@ import Text from 'components/Text';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
-import Button from '../Button/Button';
+import Button from 'components/Button';
+import { Box } from 'grid-styled';
+import { Flex } from 'glamor/jsxstyle';
+import background from './back.svg';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
 `;
 
-const Label = styled.label`
-`;
-
 const Input = styled.input`
   margin-bottom: ${rem(SPACE[4])};
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  border: 0;
+  padding: 13px;
 `;
+
+const StyledDiv = styled.div`
+  background: url('${background}') ${COLOR.base};
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+`;
+
+const Form = styled.form`
+  max-width: 560px;
+  background: #F2F2F2;
+  padding: 30px 40px 30px 40px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const StyledContainer = styled(Container)`
+  padding: 0;
+`;
+
+const Submit = Button.withComponent('button');
+
+const buttonsProps = {
+  color: 'white',
+  bg: 'base',
+  pill: false,
+  my: 4,
+};
+
+const LabelC = ({ label, htmlFor }) => (<Heading htmlFor={htmlFor} as="label" mb={1} fontSize={[1]} color={COLOR.textDark}>
+  <FormattedMessage id={label} />
+</Heading>);
+
+const FlexCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
+const InputGroup = ({ label, inputId, type, placeholder, required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
+  <LabelC label={label} htmlFor={inputId} {...labelProps} />
+  <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />
+</FlexCol>);
 
 class BuyFiatPage extends PureComponent {
   static getIndacoinUrl(email, amount, currency, wallet) {
@@ -43,35 +92,73 @@ class BuyFiatPage extends PureComponent {
   }
 
   render() {
+    const height = window.innerHeight - 200;
     return (<div>
       <Header border />
-      <Container>
-        <Wrap>
-          <Heading heavy as="h2" mb={5} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
-            <FormattedMessage id="markets.title" />
-          </Heading>
-          <Text fontSize={2} color={COLOR.textDark} mb={8}>
-            <FormattedMessage id="markets.disclaimer" />
-          </Text>
-          <Container>
-            <form style={{ display: 'flex', flexDirection: 'column' }}>
-              <Label htmlFor={'inputEmail'}>Email</Label>
-              <Input id={'inputEmail'} type={'email'} placeholder={'email'} />
-
-              <Label htmlFor={'inputAmount'}>Amount</Label>
-              <Input id={'inputAmount'} type={'number'} placeholder={'50'} min={50} />
-
-              <Label htmlFor={'inputCurrency'}>Currency</Label>
-              <Input placeholder={'USD'} />
-
-              <Label htmlFor={'inputWallet'}>Address</Label>
-              <Input placeholder={'Wallet address'} />
-
-              <Button onClick={() => this.onFormSuccess()}>Buy SKY</Button>
-            </form>
-          </Container>
-        </Wrap>
-      </Container>
+      <StyledDiv style={{ height }}>
+        <Container>
+          <Wrap>
+            <Heading heavy as="h2" mb={5} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
+              <FormattedMessage id="markets.title" />
+            </Heading>
+            <Text fontSize={2} color={COLOR.textDark} mb={8}>
+              <FormattedMessage id="markets.disclaimer" />
+            </Text>
+            <StyledContainer>
+              <Form>
+                <InputGroup
+                  label={'buyFiat.labelEmail'}
+                  inputId={'inputEmail'}
+                  type={'email'}
+                  placeholder={'email'}
+                  required
+                />
+                <Box width={3 / 4} pr={4}>
+                  <InputGroup
+                    label={'buyFiat.labelAmount'}
+                    inputId={'inputAmount'}
+                    type={'number'}
+                    placeholder={'50'}
+                    required
+                    inputProps={{ min: 50 }}
+                  />
+                </Box>
+                <Box width={1 / 4}>
+                  <InputGroup
+                    label={'buyFiat.labelCurrency'}
+                    inputId={'inputCurrency'}
+                    type={'text'}
+                    placeholder={'USD'}
+                    required
+                  />
+                </Box>
+                <Box width={1}>
+                  <InputGroup
+                    label={'buyFiat.labelAddress'}
+                    inputId={'inputWallet'}
+                    type={'text'}
+                    placeholder={'Wallet address'}
+                    required
+                  />
+                </Box>
+                <Heading as="label" mb={1} fontSize={[1]} color={COLOR.textDark}>
+                  <FormattedMessage id={'buyFiat.note'} />
+                </Heading>
+                <Flex justifyContent={'flex-end'} flex={1}>
+                  <Submit {...buttonsProps}>
+                    <FormattedMessage id={'buyFiat.formBtn'} />
+                  </Submit>
+                </Flex>
+                <Box width={1}>
+                  <Heading as="p" mb={1} fontSize={[1]} color={COLOR.textDark} style={{textAlign: 'center'}}>
+                    <FormattedMessage id={'buyFiat.footNote'} />
+                  </Heading>
+                </Box>
+              </Form>
+            </StyledContainer>
+          </Wrap>
+        </Container>
+      </StyledDiv>
       <Footer />
     </div>);
   }
