@@ -4,7 +4,6 @@ import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { SPACE, COLOR } from 'config';
 import Heading from 'components/Heading';
-import Text from 'components/Text';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Container from 'components/Container';
@@ -23,6 +22,7 @@ const Input = styled.input`
   border-radius: 5px;
   border: 0;
   padding: 13px;
+  font-weight: bold;
 `;
 
 const StyledDiv = styled.div`
@@ -53,7 +53,8 @@ const buttonsProps = {
   color: 'white',
   bg: 'base',
   pill: false,
-  my: 4,
+  my: 6,
+  style: { width: 200 },
 };
 
 const LabelC = ({ label, htmlFor }) => (<Heading htmlFor={htmlFor} as="label" mb={1} fontSize={[1]} color={COLOR.textDark}>
@@ -66,7 +67,7 @@ const FlexCol = styled.div`
   flex: 1;
 `;
 
-const InputGroup = ({ label, inputId, type, placeholder, required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
+const InputGroup = ({ label, inputId, type, placeholder = '', required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
   <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />
 </FlexCol>);
@@ -98,19 +99,15 @@ class BuyFiatPage extends PureComponent {
       <StyledDiv style={{ height }}>
         <Container>
           <Wrap>
-            <Heading heavy as="h2" mb={5} mt={[5, 7]} fontSize={[6, 7]} color={COLOR.textDark}>
-              <FormattedMessage id="markets.title" />
-            </Heading>
-            <Text fontSize={2} color={COLOR.textDark} mb={8}>
-              <FormattedMessage id="markets.disclaimer" />
-            </Text>
             <StyledContainer>
+              <Heading style={{ textAlign: 'center' }} heavy as="h2" mb={5} mt={7} fontSize={[6, 7]} color={COLOR.white}>
+                <FormattedMessage id="buyFiat.title" />
+              </Heading>
               <Form>
                 <InputGroup
                   label={'buyFiat.labelEmail'}
                   inputId={'inputEmail'}
                   type={'email'}
-                  placeholder={'email'}
                   required
                 />
                 <Box width={3 / 4} pr={4}>
@@ -118,7 +115,6 @@ class BuyFiatPage extends PureComponent {
                     label={'buyFiat.labelAmount'}
                     inputId={'inputAmount'}
                     type={'number'}
-                    placeholder={'50'}
                     required
                     inputProps={{ min: 50 }}
                   />
@@ -128,7 +124,6 @@ class BuyFiatPage extends PureComponent {
                     label={'buyFiat.labelCurrency'}
                     inputId={'inputCurrency'}
                     type={'text'}
-                    placeholder={'USD'}
                     required
                   />
                 </Box>
@@ -137,20 +132,19 @@ class BuyFiatPage extends PureComponent {
                     label={'buyFiat.labelAddress'}
                     inputId={'inputWallet'}
                     type={'text'}
-                    placeholder={'Wallet address'}
                     required
                   />
                 </Box>
                 <Heading as="label" mb={1} fontSize={[1]} color={COLOR.textDark}>
                   <FormattedMessage id={'buyFiat.note'} />
                 </Heading>
-                <Flex justifyContent={'flex-end'} flex={1}>
+                <Flex justifyContent={'center'} flex={1}>
                   <Submit {...buttonsProps}>
                     <FormattedMessage id={'buyFiat.formBtn'} />
                   </Submit>
                 </Flex>
                 <Box width={1}>
-                  <Heading as="p" mb={1} fontSize={[1]} color={COLOR.textDark} style={{textAlign: 'center'}}>
+                  <Heading as="p" mb={1} fontSize={[1]} color={COLOR.textDark} style={{ textAlign: 'center', fontStyle: 'italic' }}>
                     <FormattedMessage id={'buyFiat.footNote'} />
                   </Heading>
                 </Box>
