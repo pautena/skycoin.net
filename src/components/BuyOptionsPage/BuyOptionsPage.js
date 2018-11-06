@@ -1,21 +1,13 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
-import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
-import { SPACE, COLOR } from 'config';
+import { COLOR } from 'config';
 import Heading from 'components/Heading';
-import Text from 'components/Text';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
 import Button from '../Button/Button';
 import background from './back.svg';
-
-const Wrap = styled.div`
-  margin-bottom: ${rem(SPACE[9])};
-`;
 
 const LinkButton = Button.withComponent('a');
 
@@ -51,35 +43,27 @@ const FlexRow = styled(Container)`
   justify-content: center;
 `;
 
-class BuyOptionsPage extends PureComponent {
-  render() {
-    const height = window.innerHeight - 200;
-    return (<div>
-      <Header border />
-      <StyledDiv style={{ height }}>
-        <StyledContainer>
-          <Heading heavy as="h2" mb={10} fontSize={[6, 7]} color={COLOR.white}>
-            <FormattedMessage id="buyOptions.title" />
-          </Heading>
-          <FlexRow>
-            <LinkButton href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
-              <FormattedMessage id="buyOptions.bitcoin" />
-            </LinkButton>
-            <Button to="/buy-fiat" {...buttonsProps} >
-              <FormattedMessage id="buyOptions.creditCard" />
-            </Button>
-          </FlexRow>
-        </StyledContainer>
-      </StyledDiv>
-      <Footer />
-    </div>);
-  }
-}
-
-BuyOptionsPage.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func.isRequired,
-  }).isRequired,
+const BuyOptionsPage = () => {
+  const height = window.innerHeight - 200;
+  return (<div>
+    <Header border />
+    <StyledDiv style={{ height }}>
+      <StyledContainer>
+        <Heading heavy as="h2" mb={10} fontSize={[6, 7]} color={COLOR.white}>
+          <FormattedMessage id="buyOptions.title" />
+        </Heading>
+        <FlexRow>
+          <LinkButton href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
+            <FormattedMessage id="buyOptions.bitcoin" />
+          </LinkButton>
+          <Button to="/buy-fiat" {...buttonsProps} >
+            <FormattedMessage id="buyOptions.creditCard" />
+          </Button>
+        </FlexRow>
+      </StyledContainer>
+    </StyledDiv>
+    <Footer />
+  </div>);
 };
 
 export default injectIntl(BuyOptionsPage);

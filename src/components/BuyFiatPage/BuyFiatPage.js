@@ -77,10 +77,4 @@ class BuyFiatPage extends PureComponent {
   }
 }
 
-BuyFiatPage.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func.isRequired,
-  }).isRequired,
-};
-
 export default injectIntl(BuyFiatPage);
