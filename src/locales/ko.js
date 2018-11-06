@@ -883,4 +883,9 @@ export default {
       heading: 'DIY Skyminers',
     },
   },
+  buyOptions: {
+    title: 'You can buy SKY using Bitcoin or your credit card',
+    bitcoin: 'Bitcoin',
+    creditCard: 'Credit card',
+  },
 };
