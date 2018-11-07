@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
@@ -18,17 +18,21 @@ const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
 `;
 
-const Input = styled.input`
+const CommonInputStyle = css`
   margin-bottom: ${rem(SPACE[4])};
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   border: 0;
-  height: 50px;
+  height: 45px;
   display: flex;
   padding: 0 13px 5px 13px;
   align-items: center;
   font-weight: bold;
   font-family: ${FONT_FAMILIES.sansBold};
+`;
+
+const Input = styled.input`
+  ${CommonInputStyle}
 `;
 
 const StyledDiv = styled.div`
@@ -99,16 +103,7 @@ Select.defaultProps = {
 };
 
 const StyledSelect = styled(Select)`
-  margin-bottom: ${rem(SPACE[4])};
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
-  border-radius: 5px;
-  border: 0;
-  height: 50px;
-  display: flex;
-  padding: 0 13px 5px 13px;
-  align-items: center;
-  font-weight: bold;
-  font-family: ${FONT_FAMILIES.sansBold};
+  ${CommonInputStyle}
   text-transform: uppercase;
 `;
 
