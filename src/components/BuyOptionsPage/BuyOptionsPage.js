@@ -46,7 +46,7 @@ const FlexRow = styled(Container)`
 const BuyOptionsPage = () => {
   const height = window.innerHeight - 200;
   return (<div>
-    <Header border />
+    <Header border showBuy={false} />
     <StyledDiv style={{ height }}>
       <StyledContainer>
         <Heading heavy as="h2" mb={10} fontSize={[6, 7]} color={COLOR.white}>

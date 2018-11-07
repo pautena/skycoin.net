@@ -195,7 +195,7 @@ class BuyFiatPage extends PureComponent {
   render() {
     const height = window.innerHeight - 200;
     return (<div>
-      <Header border />
+      <Header border showBuy={false} />
       <StyledDiv style={{ height }}>
         <Container>
           <Wrap>
