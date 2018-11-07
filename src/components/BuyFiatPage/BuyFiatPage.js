@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { SPACE, COLOR } from 'config';
@@ -61,6 +62,11 @@ const LabelC = ({ label, htmlFor }) => (<Heading htmlFor={htmlFor} as="label" mb
   <FormattedMessage id={label} />
 </Heading>);
 
+LabelC.propTypes = {
+  label: PropTypes.string.isRequired,
+  htmlFor: PropTypes.string.isRequired,
+};
+
 const FlexCol = styled.div`
   display: flex;
   flex-direction: column;
@@ -71,6 +77,23 @@ const InputGroup = ({ label, inputId, type, placeholder = '', required = false, 
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
   <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />
 </FlexCol>);
+
+InputGroup.propTypes = {
+  label: PropTypes.string.isRequired,
+  inputId: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool,
+  labelProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+};
+
+InputGroup.defaultProps = {
+  placeholder: '',
+  required: false,
+  labelProps: {},
+  inputProps: {},
+};
 
 class BuyFiatPage extends PureComponent {
   static getIndacoinUrl(email, amount, currency, wallet) {
