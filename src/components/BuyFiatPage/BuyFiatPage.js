@@ -78,22 +78,24 @@ const FlexCol = styled.div`
   flex: 1;
 `;
 
-const Select = ({ className, inputId, required = false, options = [] }) => (
-  <select className={className} id={inputId} required={required}>
-    {options.map(option => <option>{option}</option>)}
+const Select = ({ className, id, onChange = null, required = false, options = [] }) => (
+  <select name={id} onChange={onChange} className={className} id={id} required={required}>
+    {options.map(option => <option value={option}>{option}</option>)}
   </select>
 );
 
 Select.propTypes = {
   className: PropTypes.string.isRequired,
-  inputId: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   required: PropTypes.bool,
   options: PropTypes.arrayOf(PropTypes.string),
+  onChange: PropTypes.func,
 };
 
 Select.defaultProps = {
   required: false,
   options: [],
+  onChange: null,
 };
 
 const StyledSelect = styled(Select)`
@@ -110,10 +112,10 @@ const StyledSelect = styled(Select)`
   text-transform: uppercase;
 `;
 
-const InputGroup = ({ label, inputId, type, placeholder = '', required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
+const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
-  {type !== 'select' && <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
-  {type === 'select' && <StyledSelect {...inputId} {...required} options={inputProps.options} /> }
+  {type !== 'select' && <Input name={inputId} onChange={onChange} id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
+  {type === 'select' && <StyledSelect name={inputId} onChange={onChange} id={inputId} required={required} options={inputProps.options} /> }
 </FlexCol>);
 
 InputGroup.propTypes = {
@@ -122,6 +124,7 @@ InputGroup.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
+  onChange: PropTypes.func,
   labelProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 };
@@ -131,7 +134,10 @@ InputGroup.defaultProps = {
   required: false,
   labelProps: {},
   inputProps: {},
+  onChange: null,
 };
+
+const currencies = ['usd', 'eur'];
 
 class BuyFiatPage extends PureComponent {
   static getIndacoinUrl(email, amount, currency, wallet) {
@@ -142,20 +148,52 @@ class BuyFiatPage extends PureComponent {
     window.location = BuyFiatPage.getIndacoinUrl(email, amount, currency, wallet);
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      currency: currencies[0],
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
   componentDidMount() {}
 
-  onFormSuccess() {
+  onFormSuccess(email, amount, currency, wallet) {
+    /*
     const email = 'info@abitari.com';
     const amount = 50;
     const currency = 'USD';
-    const wallet = '10da8c33c00d2b2384ea6e302cdb27b9a959f82ed0a5eb364971b36ffe9195d408d1e99d54131a37698e0b146d39bbd0ce75ba4adecaf8f718baec0d63544e439ee07a2dcb66ae8f92cd56b012ae7ff62b1e46824d6ad9e0f931458acf53daee31ebe471ccec58f56760e460d3de23143286e61d902bc7125f59514a49f9b4613458dfbc9dc07a89d358611ab7ac544e49876375ff965b9a1ed75f065df9a73998c72076eb34492b0d83033a10cd327b7646f118dfd1072931746602aa920febe922be43a92bcedffce7747128c5571e48e932bf16523e266d171b4cd1c86053c4d65d6ef22d05321679d94b824b523b03d99a2d92aa0cdad76721a9542c5e43';
+    const wallet = '10da8c33c00d2b2384ea6e302cdb27b9a959f82ed0a5eb364971b36ffe9195d40
+    8d1e99d54131a37698e0b146d39bbd0ce75ba4adecaf8f718baec0d63544e439ee07a2dcb66ae8f92
+    cd56b012ae7ff62b1e46824d6ad9e0f931458acf53daee31ebe471ccec58f56760e460d3de2314328
+    6e61d902bc7125f59514a49f9b4613458dfbc9dc07a89d358611ab7ac544e49876375ff965b9a1ed7
+    5f065df9a73998c72076eb34492b0d83033a10cd327b7646f118dfd1072931746602aa920febe922b
+    e43a92bcedffce7747128c5571e48e932bf16523e266d171b4cd1c86053c4d65d6ef22d05321679d9
+    4b824b523b03d99a2d92aa0cdad76721a9542c5e43';
+    */
 
     BuyFiatPage.navigateToIndacoin(email, amount, currency, wallet);
   }
 
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value,
+    });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const { email, amount, currency, wallet } = this.state;
+    this.onFormSuccess(email, amount, currency, wallet);
+  }
+
   render() {
     const height = window.innerHeight - 200;
-    const currencies = ['usd', 'eur'];
     return (<div>
       <Header border />
       <StyledDiv style={{ height }}>
@@ -165,36 +203,40 @@ class BuyFiatPage extends PureComponent {
               <Heading style={{ textAlign: 'center' }} heavy as="h2" mb={5} mt={7} fontSize={[6, 7]} color={COLOR.white}>
                 <FormattedMessage id="buyFiat.title" />
               </Heading>
-              <Form>
+              <Form onSubmit={this.handleSubmit}>
                 <InputGroup
                   label={'buyFiat.labelEmail'}
-                  inputId={'inputEmail'}
+                  inputId={'email'}
                   type={'email'}
                   required
+                  onChange={this.handleInputChange}
                 />
                 <Box width={3 / 4} pr={4}>
                   <InputGroup
                     label={'buyFiat.labelAmount'}
-                    inputId={'inputAmount'}
+                    inputId={'amount'}
                     type={'number'}
                     required
                     inputProps={{ min: 50 }}
+                    onChange={this.handleInputChange}
                   />
                 </Box>
                 <Box width={1 / 4}>
                   <InputGroup
                     label={'buyFiat.labelCurrency'}
-                    inputId={'inputCurrency'}
+                    inputId={'currency'}
                     type={'select'}
                     inputProps={{ options: currencies }}
+                    onChange={this.handleInputChange}
                     required
                   />
                 </Box>
                 <Box width={1}>
                   <InputGroup
                     label={'buyFiat.labelAddress'}
-                    inputId={'inputWallet'}
+                    inputId={'wallet'}
                     type={'text'}
+                    onChange={this.handleInputChange}
                     required
                   />
                 </Box>
