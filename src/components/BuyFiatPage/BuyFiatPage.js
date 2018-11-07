@@ -29,6 +29,11 @@ const CommonInputStyle = css`
   align-items: center;
   font-weight: bold;
   font-family: ${FONT_FAMILIES.sansBold};
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 const Input = styled.input`
@@ -189,6 +194,8 @@ class BuyFiatPage extends PureComponent {
 
   render() {
     const height = window.innerHeight - 200;
+    const MIN_TRANSACTION_AMOUNT = 30;
+    const MAX_TRANSACTION_AMOUNT = 3000;
     return (<div>
       <Header border showBuy={false} />
       <StyledDiv style={{ height }}>
@@ -212,7 +219,7 @@ class BuyFiatPage extends PureComponent {
                     inputId={'amount'}
                     type={'number'}
                     required
-                    inputProps={{ min: 50 }}
+                    inputProps={{ min: MIN_TRANSACTION_AMOUNT, max: MAX_TRANSACTION_AMOUNT }}
                     onChange={this.handleInputChange}
                   />
                 </Box>
