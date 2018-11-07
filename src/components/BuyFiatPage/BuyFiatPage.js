@@ -12,6 +12,7 @@ import Button from 'components/Button';
 import { Box } from 'grid-styled';
 import { Flex } from 'glamor/jsxstyle';
 import background from './back.svg';
+import { FONT_FAMILIES } from '../../config';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
@@ -22,8 +23,12 @@ const Input = styled.input`
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   border: 0;
-  padding: 13px;
+  height: 50px;
+  display: flex;
+  padding: 0 13px 5px 13px;
+  align-items: center;
   font-weight: bold;
+  font-family: ${FONT_FAMILIES.sansBold};
 `;
 
 const StyledDiv = styled.div`
@@ -73,9 +78,42 @@ const FlexCol = styled.div`
   flex: 1;
 `;
 
+const Select = ({ className, inputId, required = false, options = [] }) => (
+  <select className={className} id={inputId} required={required}>
+    {options.map(option => <option>{option}</option>)}
+  </select>
+);
+
+Select.propTypes = {
+  className: PropTypes.string.isRequired,
+  inputId: PropTypes.string.isRequired,
+  required: PropTypes.bool,
+  options: PropTypes.arrayOf(PropTypes.string),
+};
+
+Select.defaultProps = {
+  required: false,
+  options: [],
+};
+
+const StyledSelect = styled(Select)`
+  margin-bottom: ${rem(SPACE[4])};
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  border: 0;
+  height: 50px;
+  display: flex;
+  padding: 0 13px 5px 13px;
+  align-items: center;
+  font-weight: bold;
+  font-family: ${FONT_FAMILIES.sansBold};
+  text-transform: uppercase;
+`;
+
 const InputGroup = ({ label, inputId, type, placeholder = '', required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
-  <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />
+  {type !== 'select' && <Input id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
+  {type === 'select' && <StyledSelect {...inputId} {...required} options={inputProps.options} /> }
 </FlexCol>);
 
 InputGroup.propTypes = {
@@ -117,6 +155,7 @@ class BuyFiatPage extends PureComponent {
 
   render() {
     const height = window.innerHeight - 200;
+    const currencies = ['usd', 'eur'];
     return (<div>
       <Header border />
       <StyledDiv style={{ height }}>
@@ -146,7 +185,8 @@ class BuyFiatPage extends PureComponent {
                   <InputGroup
                     label={'buyFiat.labelCurrency'}
                     inputId={'inputCurrency'}
-                    type={'text'}
+                    type={'select'}
+                    inputProps={{ options: currencies }}
                     required
                   />
                 </Box>
