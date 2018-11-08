@@ -24,6 +24,12 @@ body {
     background: transparent;
 }
 
+@media (min-width: 576px) {
+  .page {
+    margin-top: 190px;
+  }
+}
+
 /***** FORM HEADER *****/
 
 .wizard-header {
@@ -42,6 +48,7 @@ body {
 
 .indacoin-wizard form .phone .flag-container {
     border: 0;
+    min-width: 50px;
 }
 
 .indacoin-wizard form .phone {
@@ -108,7 +115,7 @@ body {
     max-width: 560px;
     width: 100%;
     background: #F2F2F2;
-    padding: 30px 40px 30px 40px;
+    padding: 30px;
     box-sizing: border-box;
     border-radius: 2px;
     margin: 0 auto;
@@ -125,7 +132,7 @@ body {
 
 .btn-indacoin {
     width: 200px;
-    margin: 20px 0 0 0 !important;
+    margin: 30px 0 0 0 !important;
     display: inline-block;
     border: 1px solid transparent;
     cursor: pointer;
@@ -148,6 +155,10 @@ body {
     background-color: #0072FF;
 }
 
+.btn-indacoin * {
+    color: white !important;
+}
+
 input {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -166,14 +177,35 @@ input {
     outline: none;
 }
 
-.indacoin-wizard input[type="text"], .indacoin-wizard input[type="tel"], .indacoin-wizard input[type="password"] {
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #B7B7B7 !important;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #B7B7B7 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #B7B7B7 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.indacoin-wizard input[type="password"], .indacoin-wizard input[type="text"], .indacoin-wizard input[type="tel"], .indacoin-wizard input[type="password"] {
     margin: 0 !important;
-    width: 100%;
-    padding: 0 13px 5px 13px;
+    width: 100% !important;
     box-sizing: border-box;
 }
 
-.indacoin-wizard form input[type="tel"]:focus, .indacoin-wizard form input[type="text"]:focus {
+.indacoin-wizard form input[type="password"]:focus, .indacoin-wizard form input[type="tel"]:focus, .indacoin-wizard form input[type="text"]:focus {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     outline: none;
     border: none;
@@ -184,10 +216,10 @@ input {
     color: #07172E;
     font-family: "SkycoinSansBold", sans-serif;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1;
 }
 
-.indacoin-wizard form .form-el label {
+.indacoin-wizard form .form-el.phone label {
     color: red !important;
     font-size: 15px !important;
     margin: 10px 0 0 0 !important;
@@ -202,8 +234,46 @@ input {
     text-align: start;
 }
 
+.indacoin-wizard .wizard-footer img {
+    width: 100% !important;
+}
+
 .indacoin-wizard .wizard-footer {
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+/***** CARD PAGE ******/
+.indacoin-wizard .wizard-body .card-wrapper {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.indacoin-wizard .card-type {
+    top: inherit !important;
+}
+
+.card-wrapper .form-el {
+    margin-bottom: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.indacoin-wizard form .form-group .form-el label {
+    font-size: 14px;
+    color: #1E2227;
+    text-transform: uppercase;
+}
+
+.card-wrapper .form-group {
+    align-items: flex-end !important;
+}
+
+.card-wrapper .form-group .form-el {
+    margin-bottom: 5px !important;
+    display: flex;
+    align-items: center;
 }
 
 
