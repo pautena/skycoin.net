@@ -193,7 +193,7 @@ class BuyFiatPage extends PureComponent {
   }
 
   render() {
-    const height = window.innerHeight - 200;
+    const height = window.innerHeight;
     const MIN_TRANSACTION_AMOUNT = 30;
     const MAX_TRANSACTION_AMOUNT = 3000;
     return (<div>
