@@ -23,12 +23,13 @@ const CommonInputStyle = css`
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   border: 0;
-  height: 45px;
+  height: 50px;
   display: flex;
   padding: 0 13px 5px 13px;
   align-items: center;
   font-weight: bold;
   font-family: ${FONT_FAMILIES.sansBold};
+  box-sizing: border-box;
   
   &:focus {
     outline: none;
@@ -217,6 +218,7 @@ class BuyFiatPage extends PureComponent {
                   <InputGroup
                     label={'buyFiat.labelAmount'}
                     inputId={'amount'}
+                    placeholder={'30'}
                     type={'number'}
                     required
                     inputProps={{ min: MIN_TRANSACTION_AMOUNT, max: MAX_TRANSACTION_AMOUNT }}
