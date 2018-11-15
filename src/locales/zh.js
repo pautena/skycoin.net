@@ -733,4 +733,19 @@ export default {
       heading: 'DIY Skyminers',
     },
   },
+  buyOptions: {
+    title: 'You can buy SKY using Bitcoin or your credit card',
+    bitcoin: 'Bitcoin',
+    creditCard: 'Credit card',
+  },
+  buyFiat: {
+    title: 'Buy SKY with credit card',
+    labelEmail: 'Email',
+    labelAmount: 'Amount',
+    labelCurrency: 'Currency',
+    labelAddress: 'Send to your Skycoin wallet',
+    formBtn: 'send',
+    note: 'NOTE: The actual amount received may be different due to changes in the exchange rate.',
+    footNote: '*You will be redirected to our partners website to complete your purchase',
+  },
 };
