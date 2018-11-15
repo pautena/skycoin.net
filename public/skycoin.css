@@ -1,3 +1,5 @@
+/*** Skycoin styles for Indacoin ***/
+
 /***** GENERAL *****/
 @font-face {
     font-family: SkycoinSans;
@@ -15,9 +17,8 @@
 }
 
 html {
-    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI5MzciIHZpZXdCb3g9IjAgMCAxNDAwIDkzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik03NTYuODc5IC00NS4yMTEzTDEwNjQuNDEgMTc5LjI3M0wxMjg1LjM0IDMwOC44MzdMMTQ2Mi41NSA3NjQuNjk4TDEwMTEuNDkgMTExMC40NE0xMjAuMzUxIC00NS4yMTE0TC0xOTAuNTMzIDYxNy41MjhMNDQ0LjI3MyAxMTEwLjQ0IiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTA2NC40MSAxNzkuMjc1TDgzNC43MjcgMTA1Mi44TDE0NjIuNTUgNzY0LjdMMTA2NC40MSAxNzkuMjc1WiIgc3Ryb2tlPSIjMzM4RUZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEwNjQuNzIgMTc5LjUzTDEzMjMuOTUgLTY5LjI3NTRMMTI4NS4zNCAzMDguODM3TDE1MTIuNyAzNzAuNzM1IiBzdHJva2U9IiMzMzhFRkYiLz4KPHBhdGggZD0iTTk2NC44MSAxMTA5LjAzTDgzNC43MjQgMTA1Mi44TDU0Ny41MyAxMTA5LjAyIiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNLTE5MC41MzggNjE3LjUzNEw4MzQuNzIzIDEwNTIuODFMMzIxLjE3MiAzNzEuMjkxTC0xOTAuNTM4IDYxNy41MzRaIiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNOTY0LjgwOSAyMDMuNzM2TDMyMS4xNzMgMzcxLjI5TDEyOC44MzYgLTQ2LjYzMUwxMDY0LjQxIDE3OS4yNzhMOTY0LjgwOSAyMDMuNzM2WiIgc3Ryb2tlPSIjMzM4RUZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSIxNDAwIiBoZWlnaHQ9IjkzNyIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K')
- #0072FF;
- background-size: cover;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSI5MzciIHZpZXdCb3g9IjAgMCAxNDAwIDkzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik03NTYuODc5IC00NS4yMTEzTDEwNjQuNDEgMTc5LjI3M0wxMjg1LjM0IDMwOC44MzdMMTQ2Mi41NSA3NjQuNjk4TDEwMTEuNDkgMTExMC40NE0xMjAuMzUxIC00NS4yMTE0TC0xOTAuNTMzIDYxNy41MjhMNDQ0LjI3MyAxMTEwLjQ0IiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTA2NC40MSAxNzkuMjc1TDgzNC43MjcgMTA1Mi44TDE0NjIuNTUgNzY0LjdMMTA2NC40MSAxNzkuMjc1WiIgc3Ryb2tlPSIjMzM4RUZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEwNjQuNzIgMTc5LjUzTDEzMjMuOTUgLTY5LjI3NTRMMTI4NS4zNCAzMDguODM3TDE1MTIuNyAzNzAuNzM1IiBzdHJva2U9IiMzMzhFRkYiLz4KPHBhdGggZD0iTTk2NC44MSAxMTA5LjAzTDgzNC43MjQgMTA1Mi44TDU0Ny41MyAxMTA5LjAyIiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNLTE5MC41MzggNjE3LjUzNEw4MzQuNzIzIDEwNTIuODFMMzIxLjE3MiAzNzEuMjkxTC0xOTAuNTM4IDYxNy41MzRaIiBzdHJva2U9IiMzMzhFRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNOTY0LjgwOSAyMDMuNzM2TDMyMS4xNzMgMzcxLjI5TDEyOC44MzYgLTQ2LjYzMUwxMDY0LjQxIDE3OS4yNzhMOTY0LjgwOSAyMDMuNzM2WiIgc3Ryb2tlPSIjMzM4RUZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSIxNDAwIiBoZWlnaHQ9IjkzNyIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K') #0072FF;
+    background-size: cover;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 
 @media (min-width: 576px) {
   .page {
-    margin-top: 190px;
+    margin-top: 5%;
   }
 }
 
@@ -113,6 +114,8 @@ body {
 
 .wrapper > .indacoin-wizard {
     max-width: 560px;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background: #F2F2F2;
     padding: 30px;
@@ -202,6 +205,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .indacoin-wizard input[type="password"], .indacoin-wizard input[type="text"], .indacoin-wizard input[type="tel"], .indacoin-wizard input[type="password"] {
     margin: 0 !important;
     width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box;
 }
 
@@ -252,6 +256,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 .indacoin-wizard .card-type {
     top: inherit !important;
+    right: 10px !important;
 }
 
 .card-wrapper .form-el {
