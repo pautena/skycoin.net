@@ -84,12 +84,6 @@ export const en = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Joe Blackburn',
-        title: 'The Creator and Co-founder of Crypto Coin Trader',
-        picture: 'joe_blackburn.png',
-        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
-      },
-      {
         name: 'TokenKey',
         title: '',
         picture: 'tokenkey.png',
@@ -259,12 +253,6 @@ export const zh = {
         title: '首席创新官 / Swytch.io创始人 / Tokencommons.org创始人 / MIT媒体实验室的科学家',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger目前是麻省理工学院媒体实验室人类动力学小组的研究科学 家，同时还是ID3的共同创始人和执行董事。此前，Clippinger博士是哈佛大学法律实验 室的创始人兼联合主任。他同时也是eG8论坛、全球领导力电信委员会以及世界经济 论坛风险分析网络的成员。',
-      },
-      {
-        name: 'Joe Blackburn',
-        title: 'Crypto Coin Trader的创造者和共同创始人',
-        picture: 'joe_blackburn.png',
-        bio: 'Joe Blackburn 培养和发展了一个最大和最有影响力的社交媒体平台的区块链技术。Joe一直在20多个区块链相关项目担任顾问, 在社会媒体和社区建设方面有着丰富的经验。',
       },
       {
         name: 'TokenKey',
@@ -438,12 +426,6 @@ export const ru = {
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
-        name: 'Joe Blackburn',
-        title: 'The Creator and Co-founder of Crypto Coin Trader',
-        picture: 'joe_blackburn.png',
-        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
-      },
-      {
         name: 'TokenKey',
         title: '',
         picture: 'tokenkey.png',
@@ -613,12 +595,6 @@ export const ko = {
         title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
         picture: 'john_clippinger.jpg',
         bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
-      },
-      {
-        name: 'Joe Blackburn',
-        title: 'The Creator and Co-founder of Crypto Coin Trader',
-        picture: 'joe_blackburn.png',
-        bio: 'Joe Blackburn has cultivated and grown one of the largest and most influential social media platforms in Crypto. Joe has been an advisor for over 20 Blockchain related projects and has a vast history in social media and community building.',
       },
       {
         name: 'TokenKey',
