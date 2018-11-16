@@ -24,8 +24,7 @@ class Buy extends React.Component {
     const Component = asAnchor ? StyledLink : Button;
 
     const attrs = {
-      href: 'https://exchange.skycoin.net/',
-      target: '_blank',
+      href: '/buy-options',
     };
 
     return (
