@@ -118,11 +118,11 @@ const HelpText = styled.span`
   font-size: ${rem(FONT_SIZES[1])};
 `;
 
-const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {}, helpText = '' }) => (<FlexCol style={{ marginBottom: rem(SPACE[4]) }}>
+const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {}, helpText = '' }) => (<FlexCol style={{ marginBottom: rem(SPACE[5]) }}>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
   {type !== 'select' && <Input name={inputId} onChange={onChange} id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
   {type === 'select' && <StyledSelect name={inputId} onChange={onChange} id={inputId} required={required} options={inputProps.options} /> }
-  {helpText && <HelpText style={{ marginTop: 5 }}><FormattedMessage id={helpText} /></HelpText>}
+  {helpText && <HelpText style={{ marginTop: 5 }}>*<FormattedMessage id={helpText} /></HelpText>}
 </FlexCol>);
 
 InputGroup.propTypes = {
