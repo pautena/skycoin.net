@@ -14,6 +14,7 @@ export default {
       blog: 'Blog',
       // buy: 'Buy Skycoin',
       team: 'Team',
+      store: 'Store',
       telegram: 'Telegram',
       discord: 'Discord',
       getWallet: 'Buy Skycoin',
@@ -98,6 +99,10 @@ export default {
     banner: {
       heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
+    },
+    bannerStore: {
+      heading: 'Order a Skyminer today!',
+      button: 'Visit store',
     },
     hero: {
       heading: 'The New Internet For The New World',

@@ -333,6 +333,10 @@ class Navigation extends React.PureComponent {
                     <FormattedMessage id="header.navigation.team" />
                   </StyledLink>
 
+                  <StyledLink white={white} isMobile={isMobile} to="/store">
+                    <FormattedMessage id="header.navigation.store" />
+                  </StyledLink>
+
                   <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
                     <FormattedMessage id="header.navigation.blog" />
                   </StyledLink>

@@ -19,6 +19,7 @@ import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
 import News from './components/News';
 import SignUp from './components/SignUp';
+import BannerStore from "./components/BannerStore/BannerStore";
 
 const HeaderWrapper = styled.div`
   position: relative;
@@ -40,7 +41,7 @@ class Home extends React.PureComponent {
           />
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
         </Helmet>
-        <Banner onClick={() => this.handleScroll()} />
+        <BannerStore onClick={() => this.handleScroll()} />
         <HeaderWrapper>
           <Container>
             <Text as="div" fontSize={[0, 0, 1]} color="gray.8" pt={5} mt={0} mb={-3} textAlign="right">
