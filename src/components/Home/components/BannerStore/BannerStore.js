@@ -15,6 +15,8 @@ const Wrapper = styled(Box)`
   min-height: 110px;
   background: ${COLOR.white};
   text-align: center;
+  display: flex;
+  align-items: center;
 `;
 
 const Content = styled(Flex)`
@@ -75,7 +77,7 @@ const BannerStore = () => (
         <ImgContainer>
           <StyledImg src={banner} alt="img" />
         </ImgContainer>
-        <StyledButton to="/gallery" pill bg={COLOR.base} color={COLOR.white} my={2} mx={2}>
+        <StyledButton href={'https://store.skycoin.net/'} target="_blank" pill bg={COLOR.base} color={COLOR.white} my={2} mx={2}>
           <FormattedMessage id="home.bannerStore.button" />
         </StyledButton>
       </Content>
