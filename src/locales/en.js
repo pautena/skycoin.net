@@ -895,6 +895,7 @@ export default {
     title: 'Buy SKY with credit card',
     labelEmail: 'Email',
     labelAmount: 'Amount',
+    helpTextAmount: 'The minimum required amount is 30 EUR / USD',
     labelCurrency: 'Currency',
     labelAddress: 'Send to your Skycoin wallet',
     formBtn: 'send',
