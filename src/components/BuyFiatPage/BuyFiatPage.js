@@ -12,14 +12,13 @@ import Button from 'components/Button';
 import { Box } from 'grid-styled';
 import { Flex } from 'glamor/jsxstyle';
 import background from './back.svg';
-import { FONT_FAMILIES } from '../../config';
+import { FONT_FAMILIES, FONT_SIZES } from '../../config';
 
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
 `;
 
 const CommonInputStyle = css`
-  margin-bottom: ${rem(SPACE[4])};
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   border: 0;
@@ -113,10 +112,17 @@ const StyledSelect = styled(Select)`
   text-transform: uppercase;
 `;
 
-const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {} }) => (<FlexCol>
+const HelpText = styled.span`
+  font-family: ${FONT_FAMILIES.sans};
+  color: ${COLOR.darkGrey};
+  font-size: ${rem(FONT_SIZES[1])};
+`;
+
+const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {}, helpText = '' }) => (<FlexCol style={{ marginBottom: rem(SPACE[5]) }}>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
   {type !== 'select' && <Input name={inputId} onChange={onChange} id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
   {type === 'select' && <StyledSelect name={inputId} onChange={onChange} id={inputId} required={required} options={inputProps.options} /> }
+  {helpText && <HelpText style={{ marginTop: 5 }}>*<FormattedMessage id={helpText} /></HelpText>}
 </FlexCol>);
 
 InputGroup.propTypes = {
@@ -128,10 +134,12 @@ InputGroup.propTypes = {
   onChange: PropTypes.func,
   labelProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  helpText: PropTypes.string,
 };
 
 InputGroup.defaultProps = {
   placeholder: '',
+  helpText: '',
   required: false,
   labelProps: {},
   inputProps: {},
@@ -223,6 +231,7 @@ class BuyFiatPage extends PureComponent {
                     required
                     inputProps={{ min: MIN_TRANSACTION_AMOUNT, max: MAX_TRANSACTION_AMOUNT }}
                     onChange={this.handleInputChange}
+                    helpText={'buyFiat.helpTextAmount'}
                   />
                 </Box>
                 <Box width={1 / 4}>
