@@ -12,11 +12,16 @@ import { COLOR } from 'config';
 import banner from './banner.png';
 
 const Wrapper = styled(Box)`
-  min-height: 110px;
+  ${media.md.css`
+    min-height: auto;
+    align-items: flex-end;
+  `};
+  
   background: ${COLOR.white};
   text-align: center;
   display: flex;
   align-items: center;
+  min-height: 110px;
 `;
 
 const Content = styled(Flex)`
@@ -31,9 +36,6 @@ const Content = styled(Flex)`
 
 const TextContainer = styled(Flex)`
 
-  ${media.md.css`
-    width: 40%;
-  `};
 `;
 
 const StyledText = styled(Text)`
@@ -51,13 +53,14 @@ const ImgContainer = styled.div`
   
   ${media.md.css`
     display: block;
-    width: 40%;
+    flex: 1;
   `}
 `;
 const StyledImg = styled.img`
   display: block;
   width: auto;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
 `;
 
 const StyledButton = styled(Button)`
