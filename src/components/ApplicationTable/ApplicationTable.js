@@ -162,6 +162,8 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('X11') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Android') !== -1) OSName = 3;
+  if (navigator.appVersion.indexOf('iPhone') !== -1) OSName = 4;
+  if (navigator.appVersion.indexOf('iPad') !== -1) OSName = 4;
 
   return (
     <TableWrapper mb={[7, 10, 13]}>
