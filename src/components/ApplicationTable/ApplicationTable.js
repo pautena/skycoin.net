@@ -128,6 +128,29 @@ const TdPadding = styled.td`
   `}
 `;
 
+function sendDownloadWalletEvent(eventName) {
+  // eslint-disable-next-line no-undef
+  ga('send', 'event', 'Download', 'Download Wallet', eventName);
+}
+
+function handleDownloadClick(platform) {
+  switch (platform) {
+    case 'downloads.wallet.windows':
+      sendDownloadWalletEvent('Download Wallet Windows');
+      break;
+    case 'downloads.wallet.macos':
+      sendDownloadWalletEvent('Download Wallet MACOS');
+      break;
+    case 'downloads.wallet.linux':
+      sendDownloadWalletEvent('Download Wallet Linux');
+      break;
+    case 'downloads.wallet.android':
+      sendDownloadWalletEvent('Download Wallet Android');
+      break;
+    default:
+      break;
+  }
+}
 
 const ApplicationTable = ({ list }) => {
   let OSName = -1;
@@ -187,6 +210,7 @@ const ApplicationTable = ({ list }) => {
 
                   <TdLink>
                     <A
+                      onClick={() => handleDownloadClick(platform)}
                       href={architecture.download}
                       recommended={
                         platformIndex === OSName && buildIndex === 0 && architectureIndex === 0
