@@ -50,6 +50,7 @@ const ImgContainer = styled.div`
   display: none;
   flex-grow: 1;
   text-align: left;
+  padding: 0 15px 0 15px;
   
   ${media.md.css`
     display: block;
@@ -61,6 +62,7 @@ const StyledImg = styled.img`
   width: auto;
   height: auto;
   max-width: 100%;
+  margin: 0 auto;
 `;
 
 const StyledButton = styled(Button)`
