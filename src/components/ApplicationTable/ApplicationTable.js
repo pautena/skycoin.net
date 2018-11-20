@@ -147,6 +147,9 @@ function handleDownloadClick(platform) {
     case 'downloads.wallet.android':
       sendDownloadWalletEvent('Download Wallet Android');
       break;
+    case 'downloads.wallet.ios':
+      sendDownloadWalletEvent('Download Wallet iOS');
+      break;
     default:
       break;
   }

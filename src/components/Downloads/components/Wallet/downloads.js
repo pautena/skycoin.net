@@ -107,4 +107,20 @@ export const downloads = [
       },
     ],
   },
+  {
+    platform: 'downloads.wallet.ios',
+    icon: 'macos',
+    builds: [
+      {
+        name: 'downloads.wallet.iosRecommended',
+        architectures: [{
+          name: '',
+          download: 'https://itunes.apple.com/gb/app/skycoin/id1439949089?mt=8',
+          signature: '',
+          filetype: ' ',
+          filesize: '',
+        }],
+      },
+    ],
+  },
 ];
