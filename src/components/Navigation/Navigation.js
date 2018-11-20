@@ -19,6 +19,7 @@ import discordWhite from './discordWhite.svg';
 import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
 import cancelIc from './icCancel.svg';
+import { BUY_SKY_LINK } from '../../config';
 
 const menuBreakpoint = '1035px';
 
@@ -361,7 +362,7 @@ class Navigation extends React.PureComponent {
                 </StyledLink>
               </GroupWrapper>
               <GroupWrapper isMobile={isMobile} show={showBuy}>
-                <LinkButton href="/buy-options" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                <LinkButton href={BUY_SKY_LINK} color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
                   <FormattedMessage id="header.navigation.getWallet" />
                 </LinkButton>
               </GroupWrapper>

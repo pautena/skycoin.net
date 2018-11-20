@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Button from '../Button';
+import {BUY_SKY_LINK} from "../../config";
 
 const Wrapper = styled.div`
   display: block;
@@ -24,7 +25,7 @@ class Buy extends React.Component {
     const Component = asAnchor ? StyledLink : Button;
 
     const attrs = {
-      href: '/buy-options',
+      href: BUY_SKY_LINK,
     };
 
     return (
