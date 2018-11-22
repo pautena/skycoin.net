@@ -11,7 +11,7 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 
 import bg from './skyminerSignupBg.svg';
-import { Analytics } from '../../../../utils/analytics';
+import Analytics from '../../../../utils/analytics';
 
 const Wrapper = styled.div`
   background: ${COLOR.base};
