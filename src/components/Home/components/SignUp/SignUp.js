@@ -10,6 +10,7 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 
 import bg from './signUpBg.svg';
+import {Analytics} from "../../../../utils/analytics";
 
 const Wrapper = styled.div`
   background: ${COLOR.base};
@@ -37,6 +38,10 @@ const StyledBox = styled(Box)`
   }
 `;
 
+function handleSubmit() {
+  Analytics.sendEvent('Email', 'Sign Up', 'Newsletter', false);
+}
+
 const SignUp = () => (
   <Wrapper>
     <Container>
@@ -48,7 +53,7 @@ const SignUp = () => (
           <FormattedMessage id="home.signup.body" />
         </Text>
         <Box pr={[0, 0, 8]}>
-          <SignUpForm home />
+          <SignUpForm onSubmitCallback={handleSubmit} home />
         </Box>
       </StyledBox>
     </Container>

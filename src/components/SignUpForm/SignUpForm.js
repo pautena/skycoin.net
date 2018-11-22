@@ -98,6 +98,7 @@ const Form = styled.form`
 const Submit = Button.withComponent('button');
 
 class SignUpForm extends PureComponent {
+  
   componentWillMount() {
     const script = document.createElement('script');
     script.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js';
@@ -107,7 +108,7 @@ class SignUpForm extends PureComponent {
   }
 
   render() {
-    const { skyminerOption } = this.props;
+    const { skyminerOption, onSubmitCallback } = this.props;
     /* eslint-disable max-len */
     return (
       <Wrapper>
@@ -120,6 +121,7 @@ class SignUpForm extends PureComponent {
           ref={(node) => { this.form = node; }}
           target="_blank"
           noValidate
+          onSubmit={onSubmitCallback}
         >
           <div className="mc-field-group">
             <FormattedMessage id="newsletter.input">
@@ -154,10 +156,12 @@ class SignUpForm extends PureComponent {
 
 SignUpForm.propTypes = {
   skyminerOption: PropTypes.bool,
+  onSubmitCallback: PropTypes.func,
 };
 
 SignUpForm.defaultProps = {
   skyminerOption: false,
+  onSubmitCallback: null
 };
 
 export default SignUpForm;
