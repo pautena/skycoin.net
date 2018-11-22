@@ -98,7 +98,6 @@ const Form = styled.form`
 const Submit = Button.withComponent('button');
 
 class SignUpForm extends PureComponent {
-  
   componentWillMount() {
     const script = document.createElement('script');
     script.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js';
@@ -161,7 +160,7 @@ SignUpForm.propTypes = {
 
 SignUpForm.defaultProps = {
   skyminerOption: false,
-  onSubmitCallback: null
+  onSubmitCallback: null,
 };
 
 export default SignUpForm;
