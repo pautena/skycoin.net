@@ -24,7 +24,7 @@ import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
-import BuyFiatPage from "../BuyFiatPage/BuyFiatPage";
+import BuyFiatPage from '../BuyFiatPage/BuyFiatPage';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
