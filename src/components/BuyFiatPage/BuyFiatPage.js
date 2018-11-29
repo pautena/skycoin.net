@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled, { css } from 'styled-components';
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import { rem } from 'polished';
 import { injectIntl, FormattedMessage } from 'react-intl';
@@ -38,6 +39,13 @@ const CommonInputStyle = css`
 
 const Input = styled.input`
   ${CommonInputStyle}
+  
+  &:disabled {
+    box-shadow: none;
+    border: 1px solid #C5C5C5;
+    background: transparent;
+    color: black;
+  }
 `;
 
 const StyledDiv = styled.div`
@@ -160,7 +168,12 @@ class BuyFiatPage extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
+      email: '',
+      amount: '',
+      wallet: '',
       currency: currencies[0],
+      skyAmount: '',
+      error: null,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -185,10 +198,38 @@ class BuyFiatPage extends PureComponent {
     BuyFiatPage.navigateToIndacoin(email, amount, currency, wallet);
   }
 
+  getAmountConversion(amount) {
+    const { currency } = this.state;
+    axios.get(`https://indacoin.com/api/GetCoinConvertAmount/${currency}/SKY/${amount}`)
+      .then(resp => this.handleAmountConversionResponse(resp))
+      .catch(error => this.handleAmountConversionError(error));
+  }
+
+  handleAmountConversionResponse(response) {
+    const { status, data, error } = response;
+    if (status === 200) {
+      this.setState({ skyAmount: data });
+    } else {
+      this.handleAmountConversionError(error);
+    }
+  }
+
+  handleAmountConversionError(error) {
+    this.setState({ error });
+  }
+
   handleInputChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
+
+    if (name === 'amount') {
+      if (value === '') {
+        this.setState({ skyAmount: 0 });
+      } else {
+        this.getAmountConversion(value);
+      }
+    }
 
     this.setState({
       [name]: value,
@@ -205,6 +246,8 @@ class BuyFiatPage extends PureComponent {
     const height = window.innerHeight;
     const MIN_TRANSACTION_AMOUNT = 30;
     const MAX_TRANSACTION_AMOUNT = 3000;
+    const { skyAmount } = this.state;
+
     return (<div>
       <Header border showBuy={false} />
       <StyledDiv style={{ height }}>
@@ -241,6 +284,14 @@ class BuyFiatPage extends PureComponent {
                     type={'select'}
                     inputProps={{ options: currencies }}
                     onChange={this.handleInputChange}
+                    required
+                  />
+                </Box>
+                <Box width={1}>
+                  <InputGroup
+                    label={'buyFiat.labelSkyAmount'}
+                    inputId={'skyAmount'}
+                    inputProps={{ disabled: true, value: `${skyAmount} SKY` }}
                     required
                   />
                 </Box>

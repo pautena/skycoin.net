@@ -895,6 +895,7 @@ export default {
     helpTextAmount: 'The minimum required amount is 30 EUR / USD',
     labelCurrency: 'Currency',
     labelAddress: 'Send to your Skycoin wallet',
+    labelSkyAmount: 'You get',
     formBtn: 'send',
     note: 'NOTE: The actual amount received may be different due to changes in the exchange rate.',
     footNote: '*You will be redirected to our partners website to complete your purchase',
