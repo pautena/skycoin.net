@@ -32,9 +32,17 @@ body {
 }
 
 /***** FORM HEADER *****/
+.indacoin-wizard .icon-space .icon-phone {
+    display: none;
+}
 
 .wizard-header {
-    display: none;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    height: 80px;
+    background: transparent url(https://www.skycoin.net/static/media/logoWhite.070120ac.svg) no-repeat center;
 }
 
 /***** FORM BODY *****/
