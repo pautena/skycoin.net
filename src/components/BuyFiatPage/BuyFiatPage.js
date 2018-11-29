@@ -188,7 +188,7 @@ class BuyFiatPage extends PureComponent {
       amount: '',
       wallet: '',
       currency: currencies[0],
-      skyAmount: '',
+      skyAmount: 0,
       conversionError: null,
       conversionLoading: false,
       transactionRangeError: null,
@@ -301,7 +301,6 @@ class BuyFiatPage extends PureComponent {
                   <InputGroup
                     label={'buyFiat.labelAmount'}
                     inputId={'amount'}
-                    placeholder={'30'}
                     type={'number'}
                     required
                     inputProps={{ min: MIN_TRANSACTION_AMOUNT, max: MAX_TRANSACTION_AMOUNT }}
