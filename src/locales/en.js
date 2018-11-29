@@ -1,4 +1,6 @@
 /* eslint-disable max-len */
+import { MAX_TRANSACTION_AMOUNT, MIN_TRANSACTION_AMOUNT } from '../components/BuyFiatPage/BuyFiatPage';
+
 export default {
   header: {
     navigation: {
@@ -905,6 +907,8 @@ export default {
     formBtn: 'send',
     note: 'NOTE: The actual amount received may be different due to changes in the exchange rate.',
     footNote: '*You will be redirected to our partners website to complete your purchase',
+    conversionError: 'Error: unable to get currency conversion. Try again later.',
+    transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`
   },
 };
 

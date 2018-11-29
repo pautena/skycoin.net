@@ -15,6 +15,9 @@ import { Flex } from 'glamor/jsxstyle';
 import background from './back.svg';
 import { FONT_FAMILIES, FONT_SIZES } from '../../config';
 
+export const MIN_TRANSACTION_AMOUNT = 30;
+export const MAX_TRANSACTION_AMOUNT = 3000;
+
 const Wrap = styled.div`
   margin-bottom: ${rem(SPACE[9])};
 `;
@@ -97,7 +100,7 @@ const FlexCol = styled.div`
 
 const Select = ({ className, id, onChange = null, required = false, options = [] }) => (
   <select name={id} onChange={onChange} className={className} id={id} required={required}>
-    {options.map(option => <option value={option}>{option}</option>)}
+    {options.map((option, index) => <option key={index} value={option}>{option}</option>)}
   </select>
 );
 
@@ -120,38 +123,51 @@ const StyledSelect = styled(Select)`
   text-transform: uppercase;
 `;
 
-const HelpText = styled.span`
+const CommonInputTextsStyle = css`
   font-family: ${FONT_FAMILIES.sans};
-  color: ${COLOR.darkGrey};
   font-size: ${rem(FONT_SIZES[1])};
 `;
 
-const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {}, helpText = '' }) => (<FlexCol style={{ marginBottom: rem(SPACE[5]) }}>
+const HelpText = styled.span`
+  ${CommonInputTextsStyle}
+  color: ${COLOR.darkGrey};
+`;
+
+const ErrorText = styled.span`
+  ${CommonInputTextsStyle}
+  color: ${COLOR.red};
+`;
+
+const InputGroup = ({ label, inputId, type, onChange = null, placeholder = '', required = false, labelProps = {}, inputProps = {}, helpText = '', errorText = '' }) => (<FlexCol style={{ marginBottom: rem(SPACE[5]) }}>
   <LabelC label={label} htmlFor={inputId} {...labelProps} />
   {type !== 'select' && <Input name={inputId} onChange={onChange} id={inputId} type={type} placeholder={placeholder} required={required} {...inputProps} />}
   {type === 'select' && <StyledSelect name={inputId} onChange={onChange} id={inputId} required={required} options={inputProps.options} /> }
   {helpText && <HelpText style={{ marginTop: 5 }}>*<FormattedMessage id={helpText} /></HelpText>}
+  {errorText && <ErrorText style={{ marginTop: 5 }}><FormattedMessage id={errorText} /></ErrorText>}
 </FlexCol>);
 
 InputGroup.propTypes = {
   label: PropTypes.string.isRequired,
   inputId: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
   labelProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   helpText: PropTypes.string,
+  errorText: PropTypes.string,
 };
 
 InputGroup.defaultProps = {
   placeholder: '',
   helpText: '',
+  errorText: '',
   required: false,
   labelProps: {},
   inputProps: {},
   onChange: null,
+  type: 'text',
 };
 
 const currencies = ['usd', 'eur'];
@@ -173,7 +189,9 @@ class BuyFiatPage extends PureComponent {
       wallet: '',
       currency: currencies[0],
       skyAmount: '',
-      error: null,
+      conversionError: null,
+      conversionLoading: false,
+      transactionRangeError: null,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -200,22 +218,33 @@ class BuyFiatPage extends PureComponent {
 
   getAmountConversion(amount) {
     const { currency } = this.state;
+    this.clearConversionTimeout();
+    this.conversionsetTimeout = setTimeout(() => this.setState({ conversionLoading: true }), 1000);
+
     axios.get(`https://indacoin.com/api/GetCoinConvertAmount/${currency}/SKY/${amount}`)
       .then(resp => this.handleAmountConversionResponse(resp))
-      .catch(error => this.handleAmountConversionError(error));
+      .catch(() => this.handleAmountConversionError());
   }
 
-  handleAmountConversionResponse(response) {
-    const { status, data, error } = response;
-    if (status === 200) {
-      this.setState({ skyAmount: data });
-    } else {
-      this.handleAmountConversionError(error);
+  clearConversionTimeout() {
+    if (this.conversionsetTimeout) {
+      clearTimeout(this.conversionsetTimeout);
     }
   }
 
-  handleAmountConversionError(error) {
-    this.setState({ error });
+  handleAmountConversionResponse(response) {
+    this.clearConversionTimeout();
+    const { status, data } = response;
+    if (status === 200) {
+      this.setState({ conversionLoading: false, skyAmount: data });
+    } else {
+      this.handleAmountConversionError();
+    }
+  }
+
+  handleAmountConversionError() {
+    this.clearConversionTimeout();
+    this.setState({ conversionLoading: false });
   }
 
   handleInputChange(event) {
@@ -223,9 +252,13 @@ class BuyFiatPage extends PureComponent {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
+    this.setState({ transactionRangeError: null });
+
     if (name === 'amount') {
       if (value === '') {
         this.setState({ skyAmount: 0 });
+      } else if (value < MIN_TRANSACTION_AMOUNT || value > MAX_TRANSACTION_AMOUNT) {
+        this.setState({ skyAmount: 0, transactionRangeError: 'buyFiat.transactionRangeError' });
       } else {
         this.getAmountConversion(value);
       }
@@ -244,9 +277,8 @@ class BuyFiatPage extends PureComponent {
 
   render() {
     const height = window.innerHeight;
-    const MIN_TRANSACTION_AMOUNT = 30;
-    const MAX_TRANSACTION_AMOUNT = 3000;
-    const { skyAmount } = this.state;
+    const { skyAmount, conversionError, conversionLoading, transactionRangeError } = this.state;
+    const skyAmountText = conversionLoading ? 'Loading...' : `${skyAmount} SKY`;
 
     return (<div>
       <Header border showBuy={false} />
@@ -275,6 +307,7 @@ class BuyFiatPage extends PureComponent {
                     inputProps={{ min: MIN_TRANSACTION_AMOUNT, max: MAX_TRANSACTION_AMOUNT }}
                     onChange={this.handleInputChange}
                     helpText={'buyFiat.helpTextAmount'}
+                    errorText={transactionRangeError}
                   />
                 </Box>
                 <Box width={1 / 4}>
@@ -291,7 +324,8 @@ class BuyFiatPage extends PureComponent {
                   <InputGroup
                     label={'buyFiat.labelSkyAmount'}
                     inputId={'skyAmount'}
-                    inputProps={{ disabled: true, value: `${skyAmount} SKY` }}
+                    inputProps={{ disabled: true, value: skyAmountText }}
+                    errorText={conversionError}
                     required
                   />
                 </Box>
