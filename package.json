@@ -65,7 +65,8 @@
     "lint": "eslint src",
     "eject": "react-scripts eject",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "release": "npm version patch -m 'chore: bump version to [version %s]'"
   },
   "snyk": true
 }
