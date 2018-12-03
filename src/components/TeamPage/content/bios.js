@@ -27,13 +27,6 @@ export const en = {
         title: '',
         bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a PHD at Tsinghua University.',
       },
-      {
-        name: 'Steve Leonard',
-        email: 'tokenc@skycoin.net',
-        picture: '',
-        title: '',
-        bio: 'Steve wrote most of the original Skycoin software. Prior to Skycoin, he developed several popular enterprise eCommerce backends. His background includes software development, mathematics, and chemistry.',
-      },
     ],
   },
   west: {
@@ -76,12 +69,6 @@ export const en = {
         title: 'Chairman of SIWA therapeutics, Inc',
         picture: 'john_otto_peters.jpg',
         bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
-      },
-      {
-        name: 'Dr. John Henry Clippinger',
-        title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john_clippinger.jpg',
-        bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'TokenKey',
@@ -198,13 +185,6 @@ export const zh = {
         title: '',
         bio: '创始人Houwu也是以太坊的开发者之一，也是我们分布式网络以及加密货币的关键--Obelisk白皮书的作者。他曾在清华大学攻读博士学位。 ',
       },
-      {
-        name: 'Steve Leonard',
-        email: 'tokenc@skycoin.net',
-        picture: '',
-        title: '',
-        bio: '创始人 Steve编写了Skycoin多数初始软件。在Skycoin之前，他创建了几个广为流行的商务电子 后端。他具有函数编程、化学和数学背景。',
-      },
     ],
   },
   west: {
@@ -247,12 +227,6 @@ export const zh = {
         title: 'Chairman of SIWA therapeutics, Inc',
         picture: 'john_otto_peters.jpg',
         bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
-      },
-      {
-        name: 'Dr. John Henry Clippinger',
-        title: '首席创新官 / Swytch.io创始人 / Tokencommons.org创始人 / MIT媒体实验室的科学家',
-        picture: 'john_clippinger.jpg',
-        bio: 'John Henry Clippinger目前是麻省理工学院媒体实验室人类动力学小组的研究科学 家，同时还是ID3的共同创始人和执行董事。此前，Clippinger博士是哈佛大学法律实验 室的创始人兼联合主任。他同时也是eG8论坛、全球领导力电信委员会以及世界经济 论坛风险分析网络的成员。',
       },
       {
         name: 'TokenKey',
@@ -369,13 +343,6 @@ export const ru = {
         title: '',
         bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a PHD at Tsinghua University.',
       },
-      {
-        name: 'Steve Leonard',
-        email: 'tokenc@skycoin.net',
-        picture: '',
-        title: '',
-        bio: 'Steve wrote most of the original Skycoin software. Prior to Skycoin, he developed several popular enterprise eCommerce backends. His background includes software development, mathematics, and chemistry.',
-      },
     ],
   },
   west: {
@@ -418,12 +385,6 @@ export const ru = {
         title: 'Chairman of SIWA therapeutics, Inc',
         picture: 'john_otto_peters.jpg',
         bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
-      },
-      {
-        name: 'Dr. John Henry Clippinger',
-        title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john_clippinger.jpg',
-        bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'TokenKey',
@@ -540,13 +501,6 @@ export const ko = {
         title: '',
         bio: 'Houwu is one of the creators behind Ethereum, and the author of the Obelisk whitepaper which sits at the heart of our decentralized Internet and currency. He was formerly a PHD at Tsinghua University.',
       },
-      {
-        name: 'Steve Leonard',
-        email: 'tokenc@skycoin.net',
-        picture: '',
-        title: '',
-        bio: 'Steve wrote most of the original Skycoin software. Prior to Skycoin, he developed several popular enterprise eCommerce backends. His background includes software development, mathematics, and chemistry.',
-      },
     ],
   },
   west: {
@@ -589,12 +543,6 @@ export const ko = {
         title: 'Chairman of SIWA therapeutics, Inc',
         picture: 'john_otto_peters.jpg',
         bio: 'John Otto Peters is currently Chairman of SIWA therapeutics, Inc. He is a former financial executive with more than thirty years of experience across several different industries including technology, manufacturing and government services. Most recently he was a founder, board member and the original Chief Financial Officer of Triple Canopy, Inc.',
-      },
-      {
-        name: 'Dr. John Henry Clippinger',
-        title: 'Chief Innovation Officer | Founder of Swytch.io | Founder of Tokencommons.org | Scientist at the MIT Media Lab',
-        picture: 'john_clippinger.jpg',
-        bio: 'John Henry Clippinger is currently a research scientist at the MIT Media Lab’s Human Dynamics Group. He is also Co-Founder and Executive Director of ID3. Previously, Dr. Clippinger was Founder and Co-director of The Law Lab at Harvard University. He is also a member of the eG8 Forum and the Global Leadership Telco Council and the Risk Analysis Network for the World Economic Forum.',
       },
       {
         name: 'TokenKey',
