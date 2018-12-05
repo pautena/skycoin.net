@@ -325,7 +325,9 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
                 <GroupWrapper isMobile={isMobile} show>
-                  {this.renderDropdown(white, isMobile)}
+                  <StyledLink white={white} isMobile={isMobile} to="/downloads">
+                    <FormattedMessage id="header.navigation.downloads" />
+                  </StyledLink>
 
                   <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
                     <FormattedMessage id="header.navigation.ecosystem" />
