@@ -4,6 +4,10 @@
 /**
 * Commented because the fonts cause a CORS exception and aren't loaded. We would need to setup CORS policy rules in our
 * bucket, as explained here: https://docs.aws.amazon.com/es_es/AmazonS3/latest/dev/cors.html
+* and here: https://docs.aws.amazon.com/AmazonS3/latest/user-guide/add-cors-configuration.html
+*
+**/
+/*
 @font-face {
     font-family: SkycoinSans;
     src: url(https://downloads.skycoin.net/web/skycoin-regular-webfont.1647bb8e.woff2);
