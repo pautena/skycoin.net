@@ -19,6 +19,7 @@ import discordWhite from './discordWhite.svg';
 import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
 import cancelIc from './icCancel.svg';
+import Dropdown from './Components/Dropdown';
 
 const menuBreakpoint = '1035px';
 
@@ -70,8 +71,6 @@ const Scrollable = styled.div`
   display: block;
   width: 100%;
   height: 100%;
-
-  overflow-y: auto;
   background: ${props => (props.isMobile ? COLOR.white : 'transparent')};
   transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
   transition: transform 400ms ease-in-out;
@@ -166,8 +165,7 @@ const withActiveProp = (Component) => {
   return C;
 };
 
-/* eslint-disable no-nested-ternary */
-const StyledLink = withRouter(withActiveProp(styled(Link)`
+export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
@@ -218,7 +216,10 @@ const StyledLink = withRouter(withActiveProp(styled(Link)`
     margin-left: ${rem(SPACE[7])};
   };
   
-`));
+`;
+
+/* eslint-disable no-nested-ternary */
+export const StyledLink = withRouter(withActiveProp(NavLink));
 
 const Img = styled.img.attrs({
   alt: props => props.alt || '',
@@ -302,6 +303,13 @@ class Navigation extends React.PureComponent {
     this.setState({ menuVisible: !menuVisible });
   }
 
+  renderDropdown(white, isMobile) {
+    const links = ['a', 'b', 'c', 'd'];
+    return (
+      <Dropdown links={links} white={white} isMobile={isMobile} to="/downloads" />
+    );
+  }
+
   render() {
     const { white, social, showBuy, showNav, isMobile, socialWhite, intl } = this.props;
     const { menuVisible } = this.state;
@@ -317,9 +325,7 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
                 <GroupWrapper isMobile={isMobile} show>
-                  <StyledLink white={white} isMobile={isMobile} to="/downloads">
-                    <FormattedMessage id="header.navigation.downloads" />
-                  </StyledLink>
+                  {this.renderDropdown(white, isMobile)}
 
                   <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
                     <FormattedMessage id="header.navigation.ecosystem" />
