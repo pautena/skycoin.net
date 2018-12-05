@@ -1,15 +1,18 @@
 /*** Skycoin styles for Indacoin ***/
 
 /***** GENERAL *****/
+/**
+* Commented because the fonts cause a CORS exception and aren't loaded. We would need to setup CORS policy rules in our
+* bucket, as explained here: https://docs.aws.amazon.com/es_es/AmazonS3/latest/dev/cors.html
 @font-face {
     font-family: SkycoinSans;
-    src: url(http://downloads.skycoin.net/web/skycoin-regular-webfont.1647bb8e.woff2);
+    src: url(https://downloads.skycoin.net/web/skycoin-regular-webfont.1647bb8e.woff2);
 }
 
 @font-face {
     font-family: SkycoinSansBold;
-    src: url(http://downloads.skycoin.net/web/skycoin-bold-webfont.993cd488.woff2);
-}
+    src: url(https://downloads.skycoin.net/web/skycoin-bold-webfont.993cd488.woff2);
+}*/
 
 * {
     font-family: "SkycoinSans", sans-serif !important;
@@ -25,10 +28,8 @@ body {
     background: transparent;
 }
 
-@media (min-width: 576px) {
-  .page {
-    margin-top: 5%;
-  }
+.page {
+    margin-top: 60px;
 }
 
 /***** FORM HEADER *****/
@@ -37,12 +38,20 @@ body {
 }
 
 .wizard-header {
-    width: 400px;
+    display: block;
+    width: 300px;
     position: absolute;
     top: 0;
     margin-top: 20px;
     height: 80px;
-    background: transparent url(http://downloads.skycoin.net/web/skycoin_white.svg) no-repeat center;
+    /*background: transparent url(https://www.skycoin.net/static/media/logoWhite.070120ac.svg) no-repeat center;*/
+    background: transparent url(https://downloads.skycoin.net/web/skycoin_white.svg) no-repeat center;
+}
+
+@media (min-width: 576px) {
+    .wizard-header {
+        width: 400px;
+    }
 }
 
 /***** FORM BODY *****/
@@ -129,7 +138,7 @@ body {
     padding: 30px;
     box-sizing: border-box;
     border-radius: 2px;
-    margin: 0 auto;
+    margin: 60px auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -138,7 +147,6 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .btn-indacoin {
