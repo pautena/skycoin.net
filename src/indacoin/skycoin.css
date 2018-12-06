@@ -18,6 +18,18 @@
     src: url(https://downloads.skycoin.net/web/skycoin-bold-webfont.993cd488.woff2);
 }*/
 
+@font-face {
+    font-family: SkycoinSans;
+    src: url(https://assets.skycoin.net/web/skycoin-regular-webfont.1647bb8e.woff2);
+    /*src: url(https://www.skycoin.net/static/media/skycoin-regular-webfont.1647bb8e.woff2);*/
+}
+
+@font-face {
+    font-family: SkycoinSansBold;
+    /*src: url(https://www.skycoin.net/static/media/skycoin-bold-webfont.993cd488.woff2);*/
+    src: url(https://assets.skycoin.net/web/skycoin-bold-webfont.993cd488.woff2);
+}
+
 * {
     font-family: "SkycoinSans", sans-serif !important;
     color: #1E2227;
@@ -38,18 +50,22 @@ body {
 
 /***** FORM HEADER *****/
 .indacoin-wizard .icon-space .icon-phone {
-    display: none;
+    display: none !important;
+}
+
+.indacoin-wizard .icon-space .icon-kyc {
+    display: none !important;
 }
 
 .wizard-header {
     display: block;
-    width: 300px;
+    width: 70%;
     position: absolute;
     top: 0;
     margin-top: 20px;
     height: 80px;
     /*background: transparent url(https://www.skycoin.net/static/media/logoWhite.070120ac.svg) no-repeat center;*/
-    background: transparent url(https://downloads.skycoin.net/web/skycoin_white.svg) no-repeat center;
+    background: transparent url(https://assets.skycoin.net/web/skycoin_white.svg) no-repeat center;
 }
 
 @media (min-width: 576px) {
@@ -130,7 +146,7 @@ body {
 }
 
 .intl-tel-input .country-list .country.active .dial-code {
-    color: white;   
+    color: white;
 }
 
 .wrapper > .indacoin-wizard {
@@ -234,7 +250,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     outline: none;
     border: none;
 }
-   
+
 .indacoin-wizard .wizard-body p {
     font-size: 24px;
     color: #07172E;
