@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
   constructor() {
     super();
     this.state = {
-      hovering: false,
+      hovering: true,
     };
 
     this.handleClose = this.handleClose.bind(this);
@@ -51,7 +51,7 @@ class Dropdown extends React.Component {
 
   handleClose() {
     this.setState({
-      hovering: false,
+      hovering: true,
     });
   }
 
@@ -66,17 +66,20 @@ class Dropdown extends React.Component {
     const { hovering } = this.state;
     const background = white ? COLOR.dark : '#fff';
 
-    const LinksContainer = styled.div`
+    const LinksContainer = styled.ul`
       position: absolute;
-      min-width: 100px;
+      min-width: 100%;
       border-top: 1px solid white;
       top: calc(100%);
       background: ${background};
       border-radius: 0 0 3px 3px;
       padding: 10px;
+      margin-left: 0;
+      box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
       
       a {
         margin: 5px 0 5px 0;
+        white-space: nowrap;
       }
     `;
 

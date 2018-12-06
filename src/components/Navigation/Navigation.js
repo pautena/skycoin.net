@@ -325,7 +325,6 @@ export const StyledDropdown = styled(Dropdown)`
 `;
 
 export const renderMenu = (menuItem, white, isMobile) => {
-  const links = ['a', 'b', 'c', 'd'];
 
   if (menuItem.to) {
     return (<StyledLink white={white} isMobile={isMobile} to={menuItem.to}>
