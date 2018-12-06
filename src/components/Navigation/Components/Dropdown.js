@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
   constructor() {
     super();
     this.state = {
-      hovering: true,
+      hovering: false,
     };
 
     this.handleClose = this.handleClose.bind(this);
@@ -51,7 +51,7 @@ class Dropdown extends React.Component {
 
   handleClose() {
     this.setState({
-      hovering: true,
+      hovering: false,
     });
   }
 

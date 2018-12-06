@@ -291,7 +291,7 @@ const NavWrapper = styled.div`
 
 const LinkButton = Button.withComponent('a');
 
-export const StyledDropdown = styled(withRouter(withParentActiveProp(Dropdown)))`
+const StyledDropdown = styled(Dropdown)`
   display: flex;
   align-items: center;
   width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
@@ -343,6 +343,8 @@ export const StyledDropdown = styled(withRouter(withParentActiveProp(Dropdown)))
   };
 `;
 
+export const RouteredDropdown = withRouter(withParentActiveProp(StyledDropdown));
+
 export const renderMenu = (menuItem, white, isMobile) => {
   if (menuItem.to) {
     return (<StyledLink white={white} isMobile={isMobile} to={menuItem.to}>
@@ -354,7 +356,7 @@ export const renderMenu = (menuItem, white, isMobile) => {
     </StyledLink>);
   }
   return (
-    <StyledDropdown menuItem={menuItem} white={white} isMobile={isMobile} />
+    <RouteredDropdown menuItem={menuItem} white={white} isMobile={isMobile} />
   );
 };
 
