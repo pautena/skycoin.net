@@ -215,10 +215,8 @@ export const NavLink = styled(Link)`
   @media (min-width: ${menuBreakpoint}) {
     margin-left: ${rem(SPACE[7])};
   };
-  
 `;
 
-/* eslint-disable no-nested-ternary */
 export const StyledLink = withRouter(withActiveProp(NavLink));
 
 const Img = styled.img.attrs({
@@ -274,6 +272,75 @@ const NavWrapper = styled.div`
 
 const LinkButton = Button.withComponent('a');
 
+export const StyledDropdown = styled(Dropdown)`
+  display: flex;
+  align-items: center;
+  width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
+  margin: 0;
+  padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
+  padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
+  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')}; 
+  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
+  font-family: ${FONT_FAMILIES.sans};
+  color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+  text-decoration: none;
+    
+  &:hover {
+    color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
+    opacity: ${props => (props.white && !props.isMobile ? '.7' : '1')};
+    text-decoration: none;
+  }
+  
+  > span {
+      ${media.md.css`
+        display: ${props => (props.social ? 'none' : 'inline-block')};
+      `}
+  }
+  
+  ${media.sm.css`
+    width: auto;
+    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
+  `};
+  
+  ${media.md.css`
+    margin-left: ${rem(SPACE[4])};
+    padding: ${rem(SPACE[1])};
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
+    color: ${props => (props.white ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    &:hover {
+      color: ${props => (props.white ? 'white' : COLOR.dark)};
+      opacity: ${props => (props.white ? '.7' : '1')};
+    }
+  `}
+
+  @media (min-width: ${menuBreakpoint}) {
+    margin-left: ${rem(SPACE[7])};
+  };
+`;
+
+export const renderMenu = (menuItem, white, isMobile) => {
+  const links = ['a', 'b', 'c', 'd'];
+
+  if (menuItem.to) {
+    return (<StyledLink white={white} isMobile={isMobile} to={menuItem.to}>
+      <FormattedMessage id={menuItem.name} />
+    </StyledLink>);
+  } else if (menuItem.href) {
+    return (<StyledLink white={white} isMobile={isMobile} href={menuItem.href} target="_blank">
+      <FormattedMessage id={menuItem.name} />
+    </StyledLink>);
+  }
+  return (
+    <StyledDropdown menuItem={menuItem} white={white} isMobile={isMobile} />
+  );
+};
+
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -303,17 +370,82 @@ class Navigation extends React.PureComponent {
     this.setState({ menuVisible: !menuVisible });
   }
 
-  renderDropdown(white, isMobile) {
-    const links = ['a', 'b', 'c', 'd'];
-    return (
-      <Dropdown links={links} white={white} isMobile={isMobile} to="/downloads" />
-    );
-  }
-
   render() {
     const { white, social, showBuy, showNav, isMobile, socialWhite, intl } = this.props;
     const { menuVisible } = this.state;
     const linkSuffix = intl.locale !== intl.defaultLocale ? intl.locale : '';
+    const menu = [
+      {
+        name: 'header.navigation.downloads',
+        to: '/downloads',
+      },
+      {
+        name: 'header.navigation.ecosystem',
+        menu: [
+          {
+            name: 'header.navigation.overview',
+            to: '/ecosystem',
+          },
+          {
+            name: 'header.navigation.skywire',
+            to: '/skywire',
+          },
+          {
+            name: 'header.navigation.obelisk',
+            to: '/obelisk',
+          },
+          {
+            name: 'header.navigation.fiber',
+            to: '/fiber',
+          },
+          {
+            name: 'header.navigation.cx',
+            to: '/cx',
+          },
+          {
+            name: 'header.navigation.cxo',
+            to: '/cxo',
+          },
+        ],
+      },
+      {
+        name: 'header.navigation.skyminer',
+        to: '/skyminer',
+      },
+      {
+        name: 'header.navigation.blog',
+        href: `https://www.skycoin.net/blog/${linkSuffix}`,
+      },
+      {
+        name: 'header.navigation.store',
+        href: 'https://store.skycoin.net/',
+      },
+      {
+        name: 'header.navigation.other',
+        menu: [
+          {
+            name: 'header.navigation.team',
+            to: '/team',
+          },
+          {
+            name: 'header.navigation.gallery',
+            to: '/XXXX',
+          },
+          {
+            name: 'header.navigation.events',
+            to: '/events',
+          },
+          {
+            name: 'header.navigation.jobs',
+            to: '/jobs',
+          },
+          {
+            name: 'header.navigation.explorer',
+            href: 'https://explorer.skycoin.net',
+          },
+        ],
+      },
+    ];
 
     return (
       <NavWrapper isMobile={isMobile}>
@@ -325,37 +457,7 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
                 <GroupWrapper isMobile={isMobile} show>
-                  <StyledLink white={white} isMobile={isMobile} to="/downloads">
-                    <FormattedMessage id="header.navigation.downloads" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} to="/ecosystem">
-                    <FormattedMessage id="header.navigation.ecosystem" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} to="/skyminer">
-                    <FormattedMessage id="header.navigation.skyminer" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} to="/team">
-                    <FormattedMessage id="header.navigation.team" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} href={'https://store.skycoin.net/'} target="_blank">
-                    <FormattedMessage id="header.navigation.store" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} href={`https://www.skycoin.net/blog/${linkSuffix}`}>
-                    <FormattedMessage id="header.navigation.blog" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} href="https://explorer.skycoin.net" target="_blank">
-                    <FormattedMessage id="header.navigation.explorer" />
-                  </StyledLink>
-
-                  <StyledLink white={white} isMobile={isMobile} to="/jobs">
-                    <FormattedMessage id="header.navigation.jobs" />
-                  </StyledLink>
+                  {menu.map(item => renderMenu(item, white, isMobile))}
                 </GroupWrapper>
               }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
-import {NavLink, StyledLink} from '../Navigation';
+import {NavLink, renderMenu, StyledLink} from '../Navigation';
 import Fa from "@fortawesome/react-fontawesome";
 import { Flex, Box } from 'grid-styled';
 import {COLOR} from "../../../config";
@@ -22,6 +22,11 @@ const IconStyle = {
 
 const Container = styled(Flex)`
   position: relative;
+  margin-left: 2rem;
+  
+  &:first-child {
+    margin-left: 0;
+  }
 `;
 
 export const Icon = props => <Fa icon={props.icon} style={IconStyle} />;
@@ -57,7 +62,7 @@ class Dropdown extends React.Component {
   }
 
   render() {
-    const { links, white } = this.props;
+    const { isMobile, white, menuItem } = this.props;
     const { hovering } = this.state;
     const background = white ? COLOR.dark : '#fff';
 
@@ -83,14 +88,14 @@ class Dropdown extends React.Component {
         <StyledLink
           {...this.props}
         >
-          <FormattedMessage id="header.navigation.downloads" />
+          <FormattedMessage id={menuItem.name} />
           <IconWrap>
             <Icon icon={faAngleDown} />
           </IconWrap>
         </StyledLink>
         {hovering &&
           <LinksContainer>
-            {links.map(link => <ChildLink white={white}>{link}</ChildLink>)}
+            {menuItem.menu.map(item => renderMenu(item, white, isMobile))}
           </LinksContainer>}
       </Container>
     );
