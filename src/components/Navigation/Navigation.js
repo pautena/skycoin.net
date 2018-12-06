@@ -138,6 +138,25 @@ const Wrapper = styled(Flex)`
   }
 `;
 
+const withParentActiveProp = (Component) => {
+  const C = (props) => {
+    const items = props.menuItem.menu;
+    const active = undefined !== items.find((item) => {
+      const matched = matchPath(props.location.pathname, { path: item.to });
+      return item.to && (matched != null) && matched.isExact;
+    });
+
+    return (
+      <Component
+        {...props}
+        active={active}
+      />
+    );
+  };
+
+  return C;
+};
+
 const withActiveProp = (Component) => {
   const C = (props) => {
     const matched = matchPath(props.location.pathname, { path: props.to });
@@ -272,7 +291,7 @@ const NavWrapper = styled.div`
 
 const LinkButton = Button.withComponent('a');
 
-export const StyledDropdown = styled(Dropdown)`
+export const StyledDropdown = styled(withRouter(withParentActiveProp(Dropdown)))`
   display: flex;
   align-items: center;
   width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
@@ -283,7 +302,7 @@ export const StyledDropdown = styled(Dropdown)`
   padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
   font-family: ${FONT_FAMILIES.sans};
   color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
-  text-decoration: none;
+  text-decoration: none;withParentActiveProp
     
   &:hover {
     color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
@@ -325,7 +344,6 @@ export const StyledDropdown = styled(Dropdown)`
 `;
 
 export const renderMenu = (menuItem, white, isMobile) => {
-
   if (menuItem.to) {
     return (<StyledLink white={white} isMobile={isMobile} to={menuItem.to}>
       <FormattedMessage id={menuItem.name} />
