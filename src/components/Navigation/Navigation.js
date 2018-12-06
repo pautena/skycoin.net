@@ -383,7 +383,7 @@ class Navigation extends React.PureComponent {
         name: 'header.navigation.ecosystem',
         menu: [
           {
-            name: 'header.navigation.overview',
+            name: 'header.navigation.ecosystem_overview',
             to: '/ecosystem',
           },
           {

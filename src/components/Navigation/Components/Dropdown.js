@@ -68,11 +68,16 @@ class Dropdown extends React.Component {
 
     const LinksContainer = styled.div`
       position: absolute;
-      width: 100%;
+      min-width: 100px;
       border-top: 1px solid white;
-      top: calc(100% + 1px);
+      top: calc(100%);
       background: ${background};
       border-radius: 0 0 3px 3px;
+      padding: 10px;
+      
+      a {
+        margin: 5px 0 5px 0;
+      }
     `;
 
     const ChildLink = styled(NavLink)`
