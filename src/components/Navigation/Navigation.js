@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
 import { FormattedMessage, injectIntl } from 'react-intl';
@@ -184,7 +184,7 @@ const withActiveProp = (Component) => {
   return C;
 };
 
-export const NavLink = styled(Link)`
+export const LinkCSS = css`
   display: flex;
   align-items: center;
   width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
@@ -234,6 +234,10 @@ export const NavLink = styled(Link)`
   @media (min-width: ${menuBreakpoint}) {
     margin-left: ${rem(SPACE[7])};
   };
+`;
+
+export const NavLink = styled(Link)`
+  ${LinkCSS}
 `;
 
 export const StyledLink = withRouter(withActiveProp(NavLink));
@@ -291,59 +295,7 @@ const NavWrapper = styled.div`
 
 const LinkButton = Button.withComponent('a');
 
-const StyledDropdown = styled(Dropdown)`
-  display: flex;
-  align-items: center;
-  width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
-  margin: 0;
-  padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
-  padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
-  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')}; 
-  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
-  font-family: ${FONT_FAMILIES.sans};
-  color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
-  text-decoration: none;withParentActiveProp
-    
-  &:hover {
-    color: ${props => (props.white && !props.isMobile ? 'white' : COLOR.dark)};
-    opacity: ${props => (props.white && !props.isMobile ? '.7' : '1')};
-    text-decoration: none;
-  }
-  
-  > span {
-      ${media.md.css`
-        display: ${props => (props.social ? 'none' : 'inline-block')};
-      `}
-  }
-  
-  ${media.sm.css`
-    width: auto;
-    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
-  `};
-  
-  ${media.md.css`
-    margin-left: ${rem(SPACE[4])};
-    padding: ${rem(SPACE[1])};
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
-    color: ${props => (props.white ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
-    
-    &:first-child {
-      margin-left: 0;
-    }
-    
-    &:hover {
-      color: ${props => (props.white ? 'white' : COLOR.dark)};
-      opacity: ${props => (props.white ? '.7' : '1')};
-    }
-  `}
-
-  @media (min-width: ${menuBreakpoint}) {
-    margin-left: ${rem(SPACE[7])};
-  };
-`;
-
-export const RouteredDropdown = withRouter(withParentActiveProp(StyledDropdown));
+export const RouteredDropdown = withRouter(withParentActiveProp(Dropdown));
 
 export const renderMenu = (menuItem, white, isMobile) => {
   if (menuItem.to) {

@@ -2,10 +2,14 @@ import React from 'react';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
-import {NavLink, renderMenu, StyledLink} from '../Navigation';
+import {LinkCSS, NavLink, renderMenu, StyledLink} from '../Navigation';
 import Fa from "@fortawesome/react-fontawesome";
 import { Flex, Box } from 'grid-styled';
-import {COLOR} from "../../../config";
+import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
+import { rem, rgba } from 'polished';
+import media from '../../../utils/media';
+
+const menuBreakpoint = '1035px';
 
 const IconWrap = styled.div`
   position: relative;
@@ -22,11 +26,21 @@ const IconStyle = {
 
 const Container = styled(Flex)`
   position: relative;
-  margin-left: 2rem;
+  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
   
-  &:first-child {
-    margin-left: 0;
-  }
+  ${media.sm.css`
+    width: auto;
+    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[7]))};
+  `};
+  
+  ${media.md.css`
+    width: auto;
+    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[4]))};
+  `};
+  
+  @media (min-width: ${menuBreakpoint}) {
+    margin-left: ${rem(SPACE[7])};
+  };
 `;
 
 export const Icon = props => <Fa icon={props.icon} style={IconStyle} />;
@@ -74,17 +88,14 @@ class Dropdown extends React.Component {
       background: ${background};
       border-radius: 0 0 3px 3px;
       padding: 10px;
-      margin-left: 0;
       box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+      margin-left: 0;
       
       a {
         margin: 5px 0 5px 0;
         white-space: nowrap;
+        padding: 0;
       }
-    `;
-
-    const ChildLink = styled(NavLink)`
-      margin-left: 0;
     `;
 
     return (
