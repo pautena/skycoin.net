@@ -1,12 +1,13 @@
 import React from 'react';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
+import { Flex } from 'grid-styled';
+import { rem } from 'polished';
+import PropTypes from 'prop-types';
+import { SPACE, FONT_FAMILIES, COLOR } from 'config';
+import Fa from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
-import {LinkCSS, NavLink, renderMenu, StyledLink} from '../Navigation';
-import Fa from "@fortawesome/react-fontawesome";
-import { Flex, Box } from 'grid-styled';
-import { SPACE, FONT_SIZES, FONT_FAMILIES, COLOR } from 'config';
-import { rem, rgba } from 'polished';
+import { renderMenu, StyledLink } from '../Navigation';
 import media from '../../../utils/media';
 
 const menuBreakpoint = '1035px';
@@ -25,32 +26,59 @@ const IconStyle = {
 };
 
 const LinksContainer = styled.ul`
-  position: absolute;
-  min-width: 100%;
-  border-top: 1px solid white;
-  top: calc(100%);
   background: white;
-  
-  ${media.sm.css`
-    background: ${props => (props.white ? COLOR.dark : '#fff')};
-  `};
-  
-  border-radius: 0 0 3px 3px;
-  padding: 10px;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-  margin-left: 0;
+  padding: 0px;
+  margin: 5px 0 0 15px;
+  transition: height 1s linear;
+  height: auto;
   
   a {
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
     white-space: nowrap;
     padding: 0;
   }
+  
+  ${media.md.css`
+    background: ${props => (props.white ? COLOR.dark : '#fff')};
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    border-top: 1px solid white;
+    margin: -2px 0 0 0;
+    min-width: 100%;
+    position: absolute;
+    top: calc(100%);
+    
+    a, a:first-child {
+      margin: 5px;
+      padding: 5px;
+    }
+  `};
+  
+  /*&.example-enter {
+    transform: translateY(-100%);
+    transition: .3s cubic-bezier(0, 1, 0.5, 1);
+  
+    &.example-enter-active {
+      transform: translateY(0%);
+    }
+  }
+  
+  &.example-leave {
+    transform: translateY(0%);
+    transition: .3s ease-in-out;
+  
+    &.example-leave-active {
+      transform: translateY(-100%);
+    }
+  }*/
 `;
 
 const Container = styled(Flex)`
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
   margin: 0;
   padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
@@ -67,6 +95,7 @@ const Container = styled(Flex)`
   `};
   
   ${media.md.css`
+    align-items: center;
     margin-left: ${rem(SPACE[4])};
     padding: ${rem(SPACE[1])};
     border-top: 2px solid transparent;
@@ -85,11 +114,15 @@ const Container = styled(Flex)`
 
 export const Icon = props => <Fa icon={props.icon} style={IconStyle} />;
 
+Icon.propTypes = {
+  icon: PropTypes.string.isRequired,
+};
+
 class Dropdown extends React.Component {
-  constructor() {
+  constructor({ active }) {
     super();
     this.state = {
-      hovering: false,
+      menuOpen: active || false,
     };
 
     this.handleClose = this.handleClose.bind(this);
@@ -99,28 +132,30 @@ class Dropdown extends React.Component {
 
   handleOpen() {
     this.setState({
-      hovering: true,
+      menuOpen: true,
     });
   }
 
   handleClose() {
     this.setState({
-      hovering: false,
+      menuOpen: false,
     });
   }
 
   toggleOpen() {
     this.setState({
-      hovering: !this.state.hovering,
+      menuOpen: !this.state.menuOpen,
     });
   }
 
   render() {
     const { isMobile, white, menuItem } = this.props;
-    const { hovering } = this.state;
     const DropdownLink = styled(StyledLink)`
       padding: 0;
+      cursor: pointer;
+      color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
     `;
+    const { menuOpen } = this.state;
 
     return (
       <Container
@@ -137,16 +172,23 @@ class Dropdown extends React.Component {
             <Icon icon={faAngleDown} />
           </IconWrap>
         </DropdownLink>
-        {hovering &&
-          <LinksContainer
-            {...this.props}
-          >
-            {menuItem.menu.map(item => renderMenu(item, white, isMobile))}
-          </LinksContainer>}
+        {menuOpen && <LinksContainer>
+          {menuItem.menu.map((item, index) => renderMenu(item, white, isMobile, index))}
+        </LinksContainer>}
       </Container>
     );
   }
 }
+
+Dropdown.propTypes = {
+  white: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
+  menuItem: PropTypes.shape({
+    menu: PropTypes.array,
+    to: PropTypes.string,
+    href: PropTypes.string,
+  }).isRequired,
+};
 
 export default Dropdown;
 

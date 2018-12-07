@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Flex } from 'grid-styled';
 import { FormattedMessage, injectIntl } from 'react-intl';
@@ -154,6 +154,21 @@ const withParentActiveProp = (Component) => {
     );
   };
 
+  C.propTypes = {
+    menuItem: PropTypes.shape({
+      menu: PropTypes.array,
+      to: PropTypes.string,
+      href: PropTypes.string,
+    }).isRequired,
+    location: PropTypes.shape({
+      pathname: PropTypes.string.isRequired,
+    }).isRequired,
+  };
+  C.defaultProps = {
+    to: undefined,
+  };
+
+
   return C;
 };
 
@@ -297,18 +312,18 @@ const LinkButton = Button.withComponent('a');
 
 export const RouteredDropdown = withRouter(withParentActiveProp(Dropdown));
 
-export const renderMenu = (menuItem, white, isMobile) => {
+export const renderMenu = (menuItem, white, isMobile, index = 0) => {
   if (menuItem.to) {
-    return (<StyledLink white={white} isMobile={isMobile} to={menuItem.to}>
+    return (<StyledLink key={index} white={white} isMobile={isMobile} to={menuItem.to}>
       <FormattedMessage id={menuItem.name} />
     </StyledLink>);
   } else if (menuItem.href) {
-    return (<StyledLink white={white} isMobile={isMobile} href={menuItem.href} target="_blank">
+    return (<StyledLink key={index} white={white} isMobile={isMobile} href={menuItem.href} target="_blank">
       <FormattedMessage id={menuItem.name} />
     </StyledLink>);
   }
   return (
-    <RouteredDropdown menuItem={menuItem} white={white} isMobile={isMobile} />
+    <RouteredDropdown key={index} menuItem={menuItem} white={white} isMobile={isMobile} />
   );
 };
 
@@ -418,8 +433,6 @@ class Navigation extends React.PureComponent {
       },
     ];
 
-    console.log(`is mobile : ${isMobile}`);
-
     return (
       <NavWrapper isMobile={isMobile}>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
@@ -430,7 +443,7 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
                 <GroupWrapper isMobile={isMobile} show>
-                  {menu.map(item => renderMenu(item, white, isMobile))}
+                  {menu.map((item, index) => renderMenu(item, white, isMobile, index))}
                 </GroupWrapper>
               }
 
