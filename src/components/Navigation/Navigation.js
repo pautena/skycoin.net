@@ -76,15 +76,14 @@ const Scrollable = styled.div`
   transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
   transition: transform 400ms ease-in-out;
   position: relative;
-  padding-right: 17px;
   right: -17px;
   top: -60px;
-  padding-top: 60px;
+  padding: 60px 20px 60px 20px;
   
   ${media.md.css`
     top: 0;
     left: 0;
-    padding-top: 0;
+    padding: 0;
     width: auto;
     height: auto;
     background: transparent;
@@ -465,7 +464,7 @@ class Navigation extends React.PureComponent {
                 </StyledLink>
               </GroupWrapper>
               <GroupWrapper isMobile={isMobile} show={showBuy}>
-                <LinkButton href="/buy-options" color="white" bg="base" pill ml={[0, 0, 0]} mr={[7, 7, 0]}>
+                <LinkButton href="/buy-options" color="white" bg="base" pill ml={[0, 0, 0]} mr={[7, 0, 0]}>
                   <FormattedMessage id="header.navigation.getWallet" />
                 </LinkButton>
               </GroupWrapper>
