@@ -384,7 +384,7 @@ function getMenu(intl) {
         },
         {
           name: 'header.navigation.gallery',
-          to: '/XXXX',
+          to: '/gallery',
         },
         {
           name: 'header.navigation.events',

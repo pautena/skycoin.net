@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
+import MediaQuery from 'react-responsive';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
@@ -10,6 +11,7 @@ import Fa from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
 import { renderMenu, StyledLink } from '../Navigation';
 import media from '../../../utils/media';
+import {BREAKPOINTS} from "../../../config";
 
 const menuBreakpoint = '1035px';
 
@@ -145,11 +147,11 @@ class Dropdown extends React.Component {
     const { menuOpen } = this.state;
 
     return (
-      <Container
+      <MediaQueryContainer
         {...this.props}
-        onMouseEnter={this.handleOpen}
-        onMouseLeave={this.handleClose}
-        onClick={this.toggleOpen}
+        handleOpen={this.handleOpen}
+        handleClose={this.handleClose}
+        toggleOpen={this.toggleOpen}
       >
         <DropdownLink
           {...this.props}
@@ -162,9 +164,36 @@ class Dropdown extends React.Component {
         {menuOpen && <LinksContainer {...this.props}>
           {menuItem.menu.map((item, index) => renderMenu(item, white, isMobile, index))}
         </LinksContainer>}
-      </Container>
+      </MediaQueryContainer>
     );
   }
+}
+
+const MediaQueryContainer = logProps(Container);
+
+const Mobile = props => <MediaQuery {...props} maxWidth={831} />;
+const Default = props => <MediaQuery {...props} minWidth={832} />;
+
+function logProps(WrappedComponent) {
+  return class extends React.Component {
+    render() {
+      return (<div>
+        <Default>
+          <WrappedComponent
+            {...this.props}
+            onMouseEnter={this.props.handleOpen}
+            onMouseLeave={this.props.handleClose}
+          />
+        </Default>
+        <Mobile>
+          <WrappedComponent
+            onClick={this.props.toggleOpen}
+            {...this.props}
+          />
+        </Mobile>
+      </div>);
+    }
+  };
 }
 
 Dropdown.propTypes = {
