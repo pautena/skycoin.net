@@ -24,9 +24,42 @@ const IconStyle = {
   zIndex: 2,
 };
 
+const LinksContainer = styled.ul`
+  position: absolute;
+  min-width: 100%;
+  border-top: 1px solid white;
+  top: calc(100%);
+  background: white;
+  
+  ${media.sm.css`
+    background: ${props => (props.white ? COLOR.dark : '#fff')};
+  `};
+  
+  border-radius: 0 0 3px 3px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+  margin-left: 0;
+  
+  a {
+    margin: 5px 0 5px 0;
+    white-space: nowrap;
+    padding: 0;
+  }
+`;
+
 const Container = styled(Flex)`
   position: relative;
-  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
+  display: flex;
+  align-items: center;
+  width: ${props => (props.isMobile ? 'auto' : '33.3333%')};
+  margin: 0;
+  padding-top: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))}; 
+  padding-bottom: ${props => (props.isMobile ? rem(SPACE[3]) : rem(SPACE[1]))};
+  padding-left: ${props => (props.isMobile ? rem(SPACE[8]) : '0')}; 
+  padding-right: ${props => (props.isMobile ? rem(SPACE[8]) : '0')};
+  font-family: ${FONT_FAMILIES.sans};
+  color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+  text-decoration: none;
   
   ${media.sm.css`
     width: auto;
@@ -34,8 +67,15 @@ const Container = styled(Flex)`
   `};
   
   ${media.md.css`
-    width: auto;
-    margin-left: ${props => (props.isMobile ? '0' : rem(SPACE[4]))};
+    margin-left: ${rem(SPACE[4])};
+    padding: ${rem(SPACE[1])};
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid ${props => (props.active ? COLOR.base : 'transparent')};
+    color: ${props => (props.white ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
+    
+    &:first-child {
+      margin-left: 0;
+    }
   `};
   
   @media (min-width: ${menuBreakpoint}) {
@@ -78,42 +118,29 @@ class Dropdown extends React.Component {
   render() {
     const { isMobile, white, menuItem } = this.props;
     const { hovering } = this.state;
-    const background = white ? COLOR.dark : '#fff';
-
-    const LinksContainer = styled.ul`
-      position: absolute;
-      min-width: 100%;
-      border-top: 1px solid white;
-      top: calc(100%);
-      background: ${background};
-      border-radius: 0 0 3px 3px;
-      padding: 10px;
-      box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-      margin-left: 0;
-      
-      a {
-        margin: 5px 0 5px 0;
-        white-space: nowrap;
-        padding: 0;
-      }
+    const DropdownLink = styled(StyledLink)`
+      padding: 0;
     `;
 
     return (
       <Container
+        {...this.props}
         onMouseEnter={this.handleOpen}
         onMouseLeave={this.handleClose}
         onClick={this.toggleOpen}
       >
-        <StyledLink
+        <DropdownLink
           {...this.props}
         >
           <FormattedMessage id={menuItem.name} />
           <IconWrap>
             <Icon icon={faAngleDown} />
           </IconWrap>
-        </StyledLink>
+        </DropdownLink>
         {hovering &&
-          <LinksContainer>
+          <LinksContainer
+            {...this.props}
+          >
             {menuItem.menu.map(item => renderMenu(item, white, isMobile))}
           </LinksContainer>}
       </Container>

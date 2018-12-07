@@ -418,6 +418,8 @@ class Navigation extends React.PureComponent {
       },
     ];
 
+    console.log(`is mobile : ${isMobile}`);
+
     return (
       <NavWrapper isMobile={isMobile}>
         {isMobile && <MenuOpen onClick={this.toggleMenu} white={white} />}
