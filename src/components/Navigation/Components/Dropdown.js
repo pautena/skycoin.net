@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
