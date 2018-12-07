@@ -9,8 +9,6 @@ import Footer from 'components/Footer';
 import Languages from 'components/Languages';
 import Text from 'components/Text';
 import { COLOR } from 'config';
-
-import Banner from './components/Banner';
 import Hero from './components/Hero';
 import Network from './components/Network';
 import Miner from './components/Miner';
@@ -19,7 +17,7 @@ import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
 import News from './components/News';
 import SignUp from './components/SignUp';
-import BannerStore from "./components/BannerStore/BannerStore";
+import BannerStore from './components/BannerStore/BannerStore';
 
 const HeaderWrapper = styled.div`
   position: relative;
