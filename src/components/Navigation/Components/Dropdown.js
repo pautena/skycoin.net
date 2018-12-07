@@ -32,6 +32,7 @@ const LinksContainer = styled.ul`
   margin: 5px 0 0 15px;
   transition: height 1s linear;
   height: auto;
+  background: white;
   
   a {
     margin: 10px 0 5px 0;
@@ -39,8 +40,11 @@ const LinksContainer = styled.ul`
     padding: 0;
   }
   
+  ${media.sm.css`
+    background: ${props => (props.white ? COLOR.dark : 'white')};
+  `};
+  
   ${media.md.css`
-    background: ${props => (props.white ? COLOR.dark : '#fff')};
     border-radius: 0 0 3px 3px;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
     border-top: 1px solid white;
@@ -54,24 +58,6 @@ const LinksContainer = styled.ul`
       padding: 5px;
     }
   `};
-  
-  /*&.example-enter {
-    transform: translateY(-100%);
-    transition: .3s cubic-bezier(0, 1, 0.5, 1);
-  
-    &.example-enter-active {
-      transform: translateY(0%);
-    }
-  }
-  
-  &.example-leave {
-    transform: translateY(0%);
-    transition: .3s ease-in-out;
-  
-    &.example-leave-active {
-      transform: translateY(-100%);
-    }
-  }*/
 `;
 
 const Container = styled(Flex)`
@@ -120,10 +106,10 @@ Icon.propTypes = {
 };
 
 class Dropdown extends React.Component {
-  constructor({ active }) {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      menuOpen: active || false,
+      menuOpen: props.active || false,
     };
 
     this.handleClose = this.handleClose.bind(this);
@@ -173,7 +159,7 @@ class Dropdown extends React.Component {
             <Icon icon={faAngleDown} />
           </IconWrap>
         </DropdownLink>
-        {menuOpen && <LinksContainer>
+        {menuOpen && <LinksContainer {...this.props}>
           {menuItem.menu.map((item, index) => renderMenu(item, white, isMobile, index))}
         </LinksContainer>}
       </Container>
@@ -182,6 +168,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
+  active: PropTypes.bool,
   white: PropTypes.bool.isRequired,
   isMobile: PropTypes.bool.isRequired,
   menuItem: PropTypes.shape({
@@ -189,6 +176,10 @@ Dropdown.propTypes = {
     to: PropTypes.string,
     href: PropTypes.string,
   }).isRequired,
+};
+
+Dropdown.defaultProps = {
+  active: false,
 };
 
 export default Dropdown;

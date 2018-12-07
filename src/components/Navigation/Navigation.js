@@ -465,7 +465,7 @@ class Navigation extends React.PureComponent {
                 </StyledLink>
               </GroupWrapper>
               <GroupWrapper isMobile={isMobile} show={showBuy}>
-                <LinkButton href="/buy-options" color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                <LinkButton href="/buy-options" color="white" bg="base" pill ml={[0, 0, 0]} mr={[7, 7, 0]}>
                   <FormattedMessage id="header.navigation.getWallet" />
                 </LinkButton>
               </GroupWrapper>

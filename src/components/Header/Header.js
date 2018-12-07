@@ -23,11 +23,17 @@ const Wrapper = styled.div`
   `}
 `;
 
+const StyledLogo = styled(Logo)`
+  display: flex;
+  flex; 1;
+  margin-right: 15px;
+`;
+
 const Header = ({ white, blueWhite, border, social, showBuy, showNav, socialWhite }) => (
   <Container>
     <Wrapper border={border}>
       <Flex align="center" justify="space-between" wrap>
-        <Logo white={white} />
+        <StyledLogo white={white} />
         <Navigation
           white={white}
           social={social}
