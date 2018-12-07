@@ -328,6 +328,82 @@ export const renderMenu = (menuItem, white, isMobile, index = 0) => {
   );
 };
 
+function getMenu(intl) {
+  const linkSuffix = intl.locale !== intl.defaultLocale ? intl.locale : '';
+  return [
+    {
+      name: 'header.navigation.downloads',
+      to: '/downloads',
+    },
+    {
+      name: 'header.navigation.ecosystem',
+      menu: [
+        {
+          name: 'header.navigation.ecosystem_overview',
+          to: '/ecosystem',
+        },
+        {
+          name: 'header.navigation.skywire',
+          to: '/skywire',
+        },
+        {
+          name: 'header.navigation.obelisk',
+          to: '/obelisk',
+        },
+        {
+          name: 'header.navigation.fiber',
+          to: '/fiber',
+        },
+        {
+          name: 'header.navigation.cx',
+          to: '/cx',
+        },
+        {
+          name: 'header.navigation.cxo',
+          to: '/cxo',
+        },
+      ],
+    },
+    {
+      name: 'header.navigation.skyminer',
+      to: '/skyminer',
+    },
+    {
+      name: 'header.navigation.blog',
+      href: `https://www.skycoin.net/blog/${linkSuffix}`,
+    },
+    {
+      name: 'header.navigation.store',
+      href: 'https://store.skycoin.net/',
+    },
+    {
+      name: 'header.navigation.other',
+      menu: [
+        {
+          name: 'header.navigation.team',
+          to: '/team',
+        },
+        {
+          name: 'header.navigation.gallery',
+          to: '/XXXX',
+        },
+        {
+          name: 'header.navigation.events',
+          to: '/events',
+        },
+        {
+          name: 'header.navigation.jobs',
+          to: '/jobs',
+        },
+        {
+          name: 'header.navigation.explorer',
+          href: 'https://explorer.skycoin.net',
+        },
+      ],
+    },
+  ];
+}
+
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -360,79 +436,6 @@ class Navigation extends React.PureComponent {
   render() {
     const { white, social, showBuy, showNav, isMobile, socialWhite, intl } = this.props;
     const { menuVisible } = this.state;
-    const linkSuffix = intl.locale !== intl.defaultLocale ? intl.locale : '';
-    const menu = [
-      {
-        name: 'header.navigation.downloads',
-        to: '/downloads',
-      },
-      {
-        name: 'header.navigation.ecosystem',
-        menu: [
-          {
-            name: 'header.navigation.ecosystem_overview',
-            to: '/ecosystem',
-          },
-          {
-            name: 'header.navigation.skywire',
-            to: '/skywire',
-          },
-          {
-            name: 'header.navigation.obelisk',
-            to: '/obelisk',
-          },
-          {
-            name: 'header.navigation.fiber',
-            to: '/fiber',
-          },
-          {
-            name: 'header.navigation.cx',
-            to: '/cx',
-          },
-          {
-            name: 'header.navigation.cxo',
-            to: '/cxo',
-          },
-        ],
-      },
-      {
-        name: 'header.navigation.skyminer',
-        to: '/skyminer',
-      },
-      {
-        name: 'header.navigation.blog',
-        href: `https://www.skycoin.net/blog/${linkSuffix}`,
-      },
-      {
-        name: 'header.navigation.store',
-        href: 'https://store.skycoin.net/',
-      },
-      {
-        name: 'header.navigation.other',
-        menu: [
-          {
-            name: 'header.navigation.team',
-            to: '/team',
-          },
-          {
-            name: 'header.navigation.gallery',
-            to: '/XXXX',
-          },
-          {
-            name: 'header.navigation.events',
-            to: '/events',
-          },
-          {
-            name: 'header.navigation.jobs',
-            to: '/jobs',
-          },
-          {
-            name: 'header.navigation.explorer',
-            href: 'https://explorer.skycoin.net',
-          },
-        ],
-      },
-    ];
 
     return (
       <NavWrapper isMobile={isMobile}>
@@ -444,7 +447,7 @@ class Navigation extends React.PureComponent {
               {isMobile && <MenuClose onClick={this.toggleMenu} />}
               {showNav &&
                 <GroupWrapper isMobile={isMobile} show>
-                  {menu.map((item, index) => renderMenu(item, white, isMobile, index))}
+                  {getMenu(intl).map((item, index) => renderMenu(item, white, isMobile, index))}
                 </GroupWrapper>
               }
 
