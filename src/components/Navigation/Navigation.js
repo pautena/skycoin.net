@@ -493,7 +493,7 @@ Navigation.defaultProps = {
   social: false,
   showBuy: false,
   showNav: true,
-  isMobile: false,
+  mobile: false,
   socialWhite: false,
 };
 

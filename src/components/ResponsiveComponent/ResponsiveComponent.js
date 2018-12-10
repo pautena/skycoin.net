@@ -3,11 +3,21 @@ import React from 'react';
 import { BREAKPOINTS as breakpoints } from '../../config';
 
 const makeResponsiveComponent = Component => class extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: false,
+      desktop: false,
+    };
+    this.mediaQueryState = [];
+  }
+
   componentDidMount() {
     Object.keys(breakpoints).forEach((key) => {
       // create a new media query object using the window.matchMedia api.
       // Read more here: https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
-      const query = window.matchMedia(`(max-width: ${breakpoints[key]}px)`);
+      const query = window.matchMedia(`(min-width: ${breakpoints[key]}rem)`);
 
       // add the breakpoint value to the media query object
       query.breakpoint = breakpoints[key];
@@ -58,13 +68,14 @@ const makeResponsiveComponent = Component => class extends React.Component {
 
     // Now dispatch both values using the setActiveBreakpoint action
     this.setState({
-      isMobile: breakpointName === 'sm',
+      mobile: breakpointName === 'sm',
+      desktop: breakpointName !== 'sm',
     });
   }
 
   render() {
-    const { isMobile } = this.state;
-    return <Component {...this.props} isMobile={isMobile} />;
+    const { mobile, desktop } = this.state;
+    return <Component {...this.props} desktop={desktop} mobile={mobile} />;
   }
 };
 

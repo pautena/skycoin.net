@@ -11,7 +11,7 @@ import Fa from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
 import { renderMenu, StyledLink } from '../Navigation';
 import media from '../../../utils/media';
-import makeResponsiveComponent from "../../ResponsiveComponent/ResponsiveComponent";
+import makeResponsiveComponent from '../../ResponsiveComponent/ResponsiveComponent';
 
 const menuBreakpoint = '1035px';
 
@@ -138,20 +138,25 @@ class Dropdown extends React.Component {
   }
 
   render() {
-    const { isMobile, white, menuItem } = this.props;
+    const { isMobile, white, menuItem, desktop } = this.props;
     const DropdownLink = styled(StyledLink)`
       padding: 0;
       cursor: pointer;
       color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
     `;
     const { menuOpen } = this.state;
+    const myProps = {};
+    if (desktop) {
+      myProps.onMouseEnter = this.handleOpen;
+      myProps.onMouseLeave = this.handleClose;
+    } else {
+      myProps.onClick = this.toggleOpen;
+    }
 
     return (
-      <MediaQueryContainer
+      <Container
         {...this.props}
-        handleOpen={this.handleOpen}
-        handleClose={this.handleClose}
-        toggleOpen={this.toggleOpen}
+        {...myProps}
       >
         <DropdownLink
           {...this.props}
@@ -164,39 +169,13 @@ class Dropdown extends React.Component {
         {menuOpen && <LinksContainer {...this.props}>
           {menuItem.menu.map((item, index) => renderMenu(item, white, isMobile, index))}
         </LinksContainer>}
-      </MediaQueryContainer>
+      </Container>
     );
   }
 }
 
-const MediaQueryContainer = logProps(Container);
-
-const Mobile = props => <MediaQuery {...props} maxWidth={831} />;
-const Default = props => <MediaQuery {...props} minWidth={832} />;
-
-function logProps(WrappedComponent) {
-  return class extends React.Component {
-    render() {
-      return (<div>
-        <Default>
-          <WrappedComponent
-            {...this.props}
-            onMouseEnter={this.props.handleOpen}
-            onMouseLeave={this.props.handleClose}
-          />
-        </Default>
-        <Mobile>
-          <WrappedComponent
-            onClick={this.props.toggleOpen}
-            {...this.props}
-          />
-        </Mobile>
-      </div>);
-    }
-  };
-}
-
 Dropdown.propTypes = {
+  desktop: PropTypes.bool.isRequired,
   active: PropTypes.bool,
   white: PropTypes.bool.isRequired,
   isMobile: PropTypes.bool.isRequired,
