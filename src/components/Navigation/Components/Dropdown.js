@@ -137,6 +137,14 @@ class Dropdown extends React.Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.desktop === true && this.props.desktop === false) {
+      this.setState({
+        menuOpen: false,
+      });
+    }
+  }
+
   render() {
     const { isMobile, white, menuItem, desktop } = this.props;
     const DropdownLink = styled(StyledLink)`
