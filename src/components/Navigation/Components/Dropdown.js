@@ -1,6 +1,5 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import MediaQuery from 'react-responsive';
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
@@ -119,6 +118,14 @@ class Dropdown extends React.Component {
     this.toggleOpen = this.toggleOpen.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.desktop === true && this.props.desktop === false) {
+      this.setState({
+        menuOpen: false,
+      });
+    }
+  }
+
   handleOpen() {
     this.setState({
       menuOpen: true,
@@ -135,14 +142,6 @@ class Dropdown extends React.Component {
     this.setState({
       menuOpen: !this.state.menuOpen,
     });
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.desktop === true && this.props.desktop === false) {
-      this.setState({
-        menuOpen: false,
-      });
-    }
   }
 
   render() {

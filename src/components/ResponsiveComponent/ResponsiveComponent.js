@@ -3,7 +3,6 @@ import React from 'react';
 import { BREAKPOINTS as breakpoints } from '../../config';
 
 const makeResponsiveComponent = Component => class extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
