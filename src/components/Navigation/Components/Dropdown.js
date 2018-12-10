@@ -11,7 +11,7 @@ import Fa from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
 import { renderMenu, StyledLink } from '../Navigation';
 import media from '../../../utils/media';
-import {BREAKPOINTS} from "../../../config";
+import makeResponsiveComponent from "../../ResponsiveComponent/ResponsiveComponent";
 
 const menuBreakpoint = '1035px';
 
@@ -211,5 +211,5 @@ Dropdown.defaultProps = {
   active: false,
 };
 
-export default Dropdown;
+export default makeResponsiveComponent(Dropdown);
 
