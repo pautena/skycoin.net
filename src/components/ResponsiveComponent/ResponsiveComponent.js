@@ -68,8 +68,8 @@ const makeResponsiveComponent = Component => class extends React.Component {
 
     // Now dispatch both values using the setActiveBreakpoint action
     this.setState({
-      mobile: breakpointName === 'sm',
-      desktop: breakpointName !== 'sm',
+      mobile: breakpointName === 'sm' || breakpointName === 'default',
+      desktop: breakpointName !== 'sm' && breakpointName !== 'default',
     });
   }
 
