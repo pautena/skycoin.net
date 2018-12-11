@@ -272,8 +272,6 @@ const NavWrapper = styled.div`
   `}
 `;
 
-const LinkButton = Button.withComponent('a');
-
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -362,9 +360,9 @@ class Navigation extends React.PureComponent {
                 </StyledLink>
               </GroupWrapper>
               <GroupWrapper isMobile={isMobile} show={showBuy}>
-                <LinkButton href={BUY_SKY_LINK} color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
+                <Button to={BUY_SKY_LINK} color="white" bg="base" pill ml={[7, 0, 0]} mr={[7, 7, 0]}>
                   <FormattedMessage id="header.navigation.getWallet" />
-                </LinkButton>
+                </Button>
               </GroupWrapper>
             </Wrapper>
           </Scrollable>

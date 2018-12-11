@@ -61,4 +61,4 @@ export const FLAGS = {
 
 export const whiteListFormSrc = 'https://trello-attachments.s3.amazonaws.com/5ab38209e926ff042bc206ca/5ad45bbbbbc8af5ad024b24b/9655c1b1713f785ec85da79f723e6ada/skyminer_whitelist_form.html';
 export const skyminerFormSrc = 'https://sv.mikecrm.com/NAWohxs';
-export const BUY_SKY_LINK = '/buy/';
+export const BUY_SKY_LINK = 'buy';

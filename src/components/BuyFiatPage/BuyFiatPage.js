@@ -281,7 +281,7 @@ class BuyFiatPage extends PureComponent {
     const skyAmountText = conversionLoading ? 'Loading...' : `${skyAmount} SKY`;
 
     return (<div>
-      <Header border showBuy={false} />
+      <Header border showBuy />
       <StyledDiv style={{ height }}>
         <Container>
           <Wrap>
