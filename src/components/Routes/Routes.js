@@ -10,7 +10,6 @@ import WhitepapersPage from '../WhitepapersPage';
 import NotFound from '../NotFound';
 import RoadmapPage from '../RoadmapPage';
 import MailingPage from '../MailingPage';
-import MarketsPage from '../MarketsPage';
 import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
@@ -25,11 +24,10 @@ import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
 import BuyFiatPage from '../BuyFiatPage/BuyFiatPage';
+import BuyOptionsPage from '../BuyOptionsPage/BuyOptionsPage';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
-  /* TODO: add to routes
-     <Route path={`${prefix}buy-options`} exact component={BuyOptionsPage} />*/
   return (
     <Switch>
       <Route path={`${prefix}`} exact component={Home} />
@@ -39,7 +37,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
-      <Route path={`${prefix}buy`} exact component={MarketsPage} />
+      <Route path={`${prefix}buy`} exact component={BuyOptionsPage} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />

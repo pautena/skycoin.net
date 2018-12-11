@@ -1,14 +1,15 @@
 /*** Skycoin styles for Indacoin ***/
 
 /***** GENERAL *****/
+
 @font-face {
     font-family: SkycoinSans;
-    src: url(https://www.skycoin.net/static/media/skycoin-regular-webfont.1647bb8e.woff2);
+    src: url(https://assets.skycoin.net/web/skycoin-regular-webfont.1647bb8e.woff2);
 }
 
 @font-face {
     font-family: SkycoinSansBold;
-    src: url(https://www.skycoin.net/static/media/skycoin-bold-webfont.993cd488.woff2);
+    src: url(https://assets.skycoin.net/web/skycoin-bold-webfont.993cd488.woff2);
 }
 
 * {
@@ -25,24 +26,33 @@ body {
     background: transparent;
 }
 
-@media (min-width: 576px) {
-  .page {
-    margin-top: 5%;
-  }
+.page {
+    margin-top: 60px;
 }
 
 /***** FORM HEADER *****/
 .indacoin-wizard .icon-space .icon-phone {
-    display: none;
+    display: none !important;
+}
+
+.indacoin-wizard .icon-space .icon-kyc {
+    display: none !important;
 }
 
 .wizard-header {
-    width: 400px;
+    display: block;
+    width: 70%;
     position: absolute;
     top: 0;
     margin-top: 20px;
     height: 80px;
-    background: transparent url(https://www.skycoin.net/static/media/logoWhite.070120ac.svg) no-repeat center;
+    background: transparent url(https://assets.skycoin.net/web/skycoin_white.svg) no-repeat center;
+}
+
+@media (min-width: 576px) {
+    .wizard-header {
+        width: 400px;
+    }
 }
 
 /***** FORM BODY *****/
@@ -117,7 +127,7 @@ body {
 }
 
 .intl-tel-input .country-list .country.active .dial-code {
-    color: white;   
+    color: white;
 }
 
 .wrapper > .indacoin-wizard {
@@ -129,7 +139,7 @@ body {
     padding: 30px;
     box-sizing: border-box;
     border-radius: 2px;
-    margin: 0 auto;
+    margin: 60px auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -138,7 +148,6 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .btn-indacoin {
@@ -222,7 +231,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     outline: none;
     border: none;
 }
-   
+
 .indacoin-wizard .wizard-body p {
     font-size: 24px;
     color: #07172E;
