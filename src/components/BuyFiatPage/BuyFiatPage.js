@@ -14,7 +14,7 @@ import { Box } from 'grid-styled';
 import { Flex } from 'glamor/jsxstyle';
 import background from './back.svg';
 import { FONT_FAMILIES, FONT_SIZES } from '../../config';
-import Analytics from "../../utils/analytics";
+import Analytics from '../../utils/analytics';
 
 export const MIN_TRANSACTION_AMOUNT = 30;
 export const MAX_TRANSACTION_AMOUNT = 3000;
