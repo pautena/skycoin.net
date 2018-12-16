@@ -882,7 +882,7 @@ export default {
       heading: 'Antennas',
     },
     wallet: {
-      heading: 'Hardware Wallet',
+      heading: 'Skywallet',
     },
     skyminer: {
       heading: 'Skyminer',
