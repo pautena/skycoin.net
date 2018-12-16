@@ -8,6 +8,7 @@ import Footer from 'components/Footer';
 import Container from 'components/Container';
 import Button from '../Button/Button';
 import background from './back.svg';
+import Analytics from '../../utils/analytics';
 
 const LinkButton = Button.withComponent('a');
 
@@ -43,6 +44,10 @@ const FlexRow = styled(Container)`
   justify-content: center;
 `;
 
+function handleCryptoClicked() {
+  Analytics.sendEvent(Analytics.EVENT_BUY_SKY, 'Crypto', 'BTC to SKY');
+}
+
 const BuyOptionsPage = () => {
   const height = window.innerHeight;
   return (<div>
@@ -53,7 +58,7 @@ const BuyOptionsPage = () => {
           <FormattedMessage id="buyOptions.title" />
         </Heading>
         <FlexRow>
-          <LinkButton href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
+          <LinkButton onClick={() => handleCryptoClicked()} href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
             <FormattedMessage id="buyOptions.bitcoin" />
           </LinkButton>
           <Button to="/buy-fiat" {...buttonsProps} >
