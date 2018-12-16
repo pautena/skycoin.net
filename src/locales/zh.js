@@ -726,7 +726,7 @@ export default {
       heading: 'Antennas',
     },
     wallet: {
-      heading: 'Hardware Wallet',
+      heading: 'Skywallet',
     },
     skyminer: {
       heading: 'Skyminer',
@@ -736,8 +736,8 @@ export default {
     },
   },
   buyOptions: {
-    title: 'You can buy SKY using Bitcoin or your credit card',
-    bitcoin: 'Bitcoin',
+    title: 'You can buy SKY using crypto or your credit card',
+    bitcoin: 'Crypto',
     creditCard: 'Credit card',
   },
   buyFiat: {

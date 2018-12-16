@@ -1,6 +1,13 @@
 import * as images from './images';
 
 export const wallet = [
+  { caption: '', src: images.wallet8 },
+  { caption: '', src: images.wallet9 },
+  { caption: '', src: images.wallet10 },
+  { caption: '', src: images.wallet11 },
+  { caption: '', src: images.wallet12 },
+  { caption: '', src: images.wallet13 },
+  { caption: '', src: images.wallet14 },
   { caption: '', src: images.wallet1 },
   { caption: '', src: images.wallet2 },
   { caption: '', src: images.wallet3 },
@@ -11,6 +18,7 @@ export const wallet = [
 ];
 
 export const antenna = [
+  { caption: '', src: images.antenna3 },
   { caption: '', src: images.antenna1 },
   { caption: '', src: images.antenna2 },
 ];

@@ -14,6 +14,7 @@ import { Box } from 'grid-styled';
 import { Flex } from 'glamor/jsxstyle';
 import background from './back.svg';
 import { FONT_FAMILIES, FONT_SIZES } from '../../config';
+import Analytics from '../../utils/analytics';
 
 export const MIN_TRANSACTION_AMOUNT = 30;
 export const MAX_TRANSACTION_AMOUNT = 3000;
@@ -170,7 +171,9 @@ InputGroup.defaultProps = {
   type: 'text',
 };
 
-const currencies = ['usd', 'eur'];
+const USD = 'usd';
+const EUR = 'eur';
+const currencies = [USD, EUR];
 
 class BuyFiatPage extends PureComponent {
   static getIndacoinUrl(email, amount, currency, wallet) {
@@ -212,6 +215,8 @@ class BuyFiatPage extends PureComponent {
     e43a92bcedffce7747128c5571e48e932bf16523e266d171b4cd1c86053c4d65d6ef22d05321679d9
     4b824b523b03d99a2d92aa0cdad76721a9542c5e43';
     */
+
+    Analytics.sendEvent(Analytics.EVENT_BUY_SKY, 'Card', `${currency.toUpperCase()} to SKY`);
 
     BuyFiatPage.navigateToIndacoin(email, amount, currency, wallet);
   }

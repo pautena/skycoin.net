@@ -11,4 +11,7 @@ export default class Analytics {
     // eslint-disable-next-line no-undef
     ga(action, kind, name, type, value);
   }
+
+  static EVENT_BUY_SKY = 'Buy Skycoin';
 }
+
