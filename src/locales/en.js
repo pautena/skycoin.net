@@ -910,6 +910,15 @@ export default {
     conversionError: 'Error: unable to get currency conversion. Try again later.',
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
+  landing: {
+    skyware: {
+      hero: {
+        title: 'Skywire',
+        heading: 'Skywire is the next evolutionary step in the internet’s development and use. Our goal is to provide everyone with access to fast, secure, private and reliable internet.',
+        button: 'Learn more',
+      },
+    },
+  },
 };
 
 /* eslint-enable max-len */

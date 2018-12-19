@@ -14,6 +14,7 @@ import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
 import Skywire from '../Skywire';
+import SkywireLanding from '../SkywireLanding';
 import CXO from '../CXO';
 import CX from '../CX';
 import Fiber from '../Fiber';
@@ -42,6 +43,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
       <Route path={`${prefix}skywire`} exact component={Skywire} />
+      <Route path={`${prefix}skywire-landing`} exact component={SkywireLanding} />
       <Route path={`${prefix}cxo`} exact component={CXO} />
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
