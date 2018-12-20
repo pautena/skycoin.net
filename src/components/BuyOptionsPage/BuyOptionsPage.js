@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from 'utils/media';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { COLOR } from 'config';
 import Heading from 'components/Heading';
@@ -27,6 +28,7 @@ const StyledDiv = styled.div`
   background-size: cover;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 `;
 
 const StyledContainer = styled(Container)`
@@ -34,41 +36,51 @@ const StyledContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
-  top: 288px;
+  position: relative;
+  top: -100px;
 `;
 
 const FlexRow = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  
+  ${media.sm.css`
+    flex-direction: row;
+  `}
+`;
+
+const StyledLinkButton = styled(LinkButton)`
+  margin: 10px;
+`;
+
+const StyledButton = styled(Button)`
+  margin: 10px;
 `;
 
 function handleCryptoClicked() {
   Analytics.sendEvent(Analytics.EVENT_BUY_SKY, 'Crypto', 'BTC to SKY');
 }
 
-const BuyOptionsPage = () => {
-  const height = window.innerHeight;
-  return (<div>
-    <Header border showBuy={false} />
-    <StyledDiv style={{ height }}>
-      <StyledContainer>
-        <Heading heavy as="h2" mb={10} fontSize={[6, 7]} color={COLOR.white}>
-          <FormattedMessage id="buyOptions.title" />
-        </Heading>
-        <FlexRow>
-          <LinkButton onClick={() => handleCryptoClicked()} href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
-            <FormattedMessage id="buyOptions.bitcoin" />
-          </LinkButton>
-          <Button to="/buy-fiat" {...buttonsProps} >
-            <FormattedMessage id="buyOptions.creditCard" />
-          </Button>
-        </FlexRow>
-      </StyledContainer>
-    </StyledDiv>
-    <Footer />
-  </div>);
-};
+const BuyOptionsPage = () => (<div>
+  <Header border showBuy={false} />
+  <StyledDiv>
+    <StyledContainer>
+      <Heading heavy as="h2" mb={10} fontSize={[6, 7]} color={COLOR.white}>
+        <FormattedMessage id="buyOptions.title" />
+      </Heading>
+      <FlexRow>
+        <StyledLinkButton onClick={() => handleCryptoClicked()} href="https://exchange.skycoin.net/" target="_blank" {...buttonsProps}>
+          <FormattedMessage id="buyOptions.bitcoin" />
+        </StyledLinkButton>
+        <StyledButton to="/buy-fiat" {...buttonsProps} >
+          <FormattedMessage id="buyOptions.creditCard" />
+        </StyledButton>
+      </FlexRow>
+    </StyledContainer>
+  </StyledDiv>
+  <Footer />
+</div>);
 
 export default injectIntl(BuyOptionsPage);
