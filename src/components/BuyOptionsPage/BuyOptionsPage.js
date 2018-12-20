@@ -27,17 +27,19 @@ const StyledDiv = styled.div`
   background: url('${background}') ${COLOR.base};
   background-size: cover;
   display: flex;
-  justify-content: center;
   min-height: 100vh;
+  padding-top: 20%;
+  
+  ${media.sm.css`
+    padding-top: 10%;
+  `}
 `;
 
 const StyledContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  position: relative;
-  top: -100px;
 `;
 
 const FlexRow = styled(Container)`
