@@ -281,13 +281,12 @@ class BuyFiatPage extends PureComponent {
   }
 
   render() {
-    const height = window.innerHeight;
     const { skyAmount, conversionError, conversionLoading, transactionRangeError } = this.state;
     const skyAmountText = conversionLoading ? 'Loading...' : `${skyAmount} SKY`;
 
     return (<div>
       <Header border showBuy />
-      <StyledDiv style={{ height }}>
+      <StyledDiv>
         <Container>
           <Wrap>
             <StyledContainer>
@@ -295,14 +294,16 @@ class BuyFiatPage extends PureComponent {
                 <FormattedMessage id="buyFiat.title" />
               </Heading>
               <Form onSubmit={this.handleSubmit}>
-                <InputGroup
-                  label={'buyFiat.labelEmail'}
-                  inputId={'email'}
-                  type={'email'}
-                  required
-                  onChange={this.handleInputChange}
-                />
-                <Box width={3 / 4} pr={4}>
+                <Box width={1}>
+                  <InputGroup
+                    label={'buyFiat.labelEmail'}
+                    inputId={'email'}
+                    type={'email'}
+                    required
+                    onChange={this.handleInputChange}
+                  />
+                </Box>
+                <Box width={[1, 3 / 4]} pr={[0, 4]}>
                   <InputGroup
                     label={'buyFiat.labelAmount'}
                     inputId={'amount'}
@@ -314,7 +315,7 @@ class BuyFiatPage extends PureComponent {
                     errorText={transactionRangeError}
                   />
                 </Box>
-                <Box width={1 / 4}>
+                <Box width={[1, 1 / 4]}>
                   <InputGroup
                     label={'buyFiat.labelCurrency'}
                     inputId={'currency'}
@@ -345,12 +346,12 @@ class BuyFiatPage extends PureComponent {
                 <Heading as="label" mb={1} fontSize={[1]} color={COLOR.textDark}>
                   <FormattedMessage id={'buyFiat.note'} />
                 </Heading>
-                <Flex justifyContent={'center'} flex={1}>
-                  <Submit {...buttonsProps}>
-                    <FormattedMessage id={'buyFiat.formBtn'} />
-                  </Submit>
-                </Flex>
                 <Box width={1}>
+                  <Flex justifyContent={'center'} flex={1}>
+                    <Submit {...buttonsProps}>
+                      <FormattedMessage id={'buyFiat.formBtn'} />
+                    </Submit>
+                  </Flex>
                   <Heading as="p" mb={1} fontSize={[1]} color={COLOR.textDark} style={{ textAlign: 'center', fontStyle: 'italic' }}>
                     <FormattedMessage id={'buyFiat.footNote'} />
                   </Heading>
