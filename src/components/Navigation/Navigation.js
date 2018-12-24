@@ -46,7 +46,7 @@ const MenuClose = ToggleButton.extend`
   background: url(${cancelIc}) 0 0 no-repeat;
   position: absolute;
   top: 82px;
-  right: 53px;
+  right: 25px;
   cursor: pointer;
 `;
 
@@ -77,9 +77,8 @@ const Scrollable = styled.div`
   transform: translateX(${props => (props.menuVisible ? '-270px' : '0')});
   transition: transform 400ms ease-in-out;
   position: relative;
-  right: -17px;
   top: -60px;
-  padding: 60px 20px 60px 20px;
+  padding: 60px 0 60px 0;
   
   ${media.md.css`
     top: 0;
