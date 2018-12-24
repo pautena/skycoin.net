@@ -65,6 +65,10 @@ const Navigation = ({ white }) => (
       <FormattedMessage id="header.navigation.team" />
     </StyledLink>
 
+    <StyledLink white={white} href={'https://store.skycoin.net/'} target="_blank">
+      <FormattedMessage id="header.navigation.store" />
+    </StyledLink>
+
     <StyledLink white={white} href="https://explorer.skycoin.net" target="_blank">
       <FormattedMessage id="header.navigation.explorer" />
     </StyledLink>

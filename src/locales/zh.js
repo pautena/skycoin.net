@@ -11,10 +11,22 @@ export default {
       skyminer: '天空矿机',
       blog: '博客',
       team: '团队',
+      store: 'Store',
       telegram: 'Telegram',
       discord: 'Discord',
       getWallet: '购买天空链',
       jobs: '工作',
+      ecosystem_overview: 'Overview',
+      skywire: 'Skywire',
+      obelisk: 'Obelisk',
+      fiber: 'Fiber',
+      cx: 'CX',
+      cxo: 'CXO',
+      other: 'Other',
+      gallery: 'Gallery',
+      events: 'Events',
+      explorerApi: 'Explorer API',
+      merchandise: 'Merchandise store ',
     },
   },
   notFound: {
@@ -51,6 +63,10 @@ export default {
     banner: {
       heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
+    },
+    bannerStore: {
+      heading: 'Order a Skyminer today!',
+      button: 'Visit store',
     },
     hero: {
       heading: '新时代的新互联网',
