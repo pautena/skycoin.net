@@ -373,7 +373,12 @@ function getMenu(intl) {
     },
     {
       name: 'header.navigation.store',
-      href: 'https://store.skycoin.net/',
+      menu: [
+        {
+          name: 'header.navigation.merchandise',
+          href: 'https://merch.skycoin.net/',
+        },
+      ],
     },
     {
       name: 'header.navigation.other',
@@ -387,16 +392,16 @@ function getMenu(intl) {
           to: '/gallery',
         },
         {
-          name: 'header.navigation.events',
-          to: '/events',
-        },
-        {
           name: 'header.navigation.jobs',
           to: '/jobs',
         },
         {
           name: 'header.navigation.explorer',
           href: 'https://explorer.skycoin.net',
+        },
+        {
+          name: 'header.navigation.explorerApi',
+          href: 'https://explorer.skycoin.net/api.html',
         },
       ],
     },

@@ -27,6 +27,8 @@ export default {
       other: 'Other',
       gallery: 'Gallery',
       events: 'Events',
+      explorerApi: 'Explorer API',
+      merchandise: 'Merchandise store ',
     },
   },
   footer: {
