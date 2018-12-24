@@ -128,6 +128,32 @@ const TdPadding = styled.td`
   `}
 `;
 
+function sendDownloadWalletEvent(eventName) {
+  // eslint-disable-next-line no-undef
+  ga('send', 'event', 'Download', 'Download Wallet', eventName);
+}
+
+function handleDownloadClick(platform) {
+  switch (platform) {
+    case 'downloads.wallet.windows':
+      sendDownloadWalletEvent('Download Wallet Windows');
+      break;
+    case 'downloads.wallet.macos':
+      sendDownloadWalletEvent('Download Wallet MACOS');
+      break;
+    case 'downloads.wallet.linux':
+      sendDownloadWalletEvent('Download Wallet Linux');
+      break;
+    case 'downloads.wallet.android':
+      sendDownloadWalletEvent('Download Wallet Android');
+      break;
+    case 'downloads.wallet.ios':
+      sendDownloadWalletEvent('Download Wallet iOS');
+      break;
+    default:
+      break;
+  }
+}
 
 const ApplicationTable = ({ list }) => {
   let OSName = -1;
@@ -136,6 +162,8 @@ const ApplicationTable = ({ list }) => {
   if (navigator.appVersion.indexOf('X11') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Linux') !== -1) OSName = 2;
   if (navigator.appVersion.indexOf('Android') !== -1) OSName = 3;
+  if (navigator.appVersion.indexOf('iPhone') !== -1) OSName = 4;
+  if (navigator.appVersion.indexOf('iPad') !== -1) OSName = 4;
 
   return (
     <TableWrapper mb={[7, 10, 13]}>
@@ -187,6 +215,7 @@ const ApplicationTable = ({ list }) => {
 
                   <TdLink>
                     <A
+                      onClick={() => handleDownloadClick(platform)}
                       href={architecture.download}
                       recommended={
                         platformIndex === OSName && buildIndex === 0 && architectureIndex === 0

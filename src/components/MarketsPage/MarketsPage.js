@@ -76,6 +76,7 @@ const VideoWrapper = styled.div`
 
 const videoId = 'Ymh6m5B8hcA';
 
+// TODO: delete this file, as it's component is no longer used?
 class MarketsPage extends PureComponent {
   componentDidMount() {
     const cryptoUrl = 'https://external.cryptowolf.eu/main-backend/';

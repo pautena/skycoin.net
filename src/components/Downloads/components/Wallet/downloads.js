@@ -99,10 +99,26 @@ export const downloads = [
         name: 'downloads.wallet.androidAdvanced',
         architectures: [{
           name: '',
-          download: 'https://downloads.skycoin.net/android/Skycoin-Wallet-v1.1.1.apk',
+          download: 'https://downloads.skycoin.net/android/Skycoin-Wallet-v1.2.2.apk',
           signature: '',
           filetype: '.apk',
           filesize: 'mb',
+        }],
+      },
+    ],
+  },
+  {
+    platform: 'downloads.wallet.ios',
+    icon: 'macos',
+    builds: [
+      {
+        name: 'downloads.wallet.iosRecommended',
+        architectures: [{
+          name: '',
+          download: 'https://itunes.apple.com/gb/app/skycoin/id1439949089?mt=8',
+          signature: '',
+          filetype: ' ',
+          filesize: '',
         }],
       },
     ],

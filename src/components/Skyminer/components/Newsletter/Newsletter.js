@@ -11,6 +11,7 @@ import { COLOR } from 'config';
 import media from 'utils/media';
 
 import bg from './skyminerSignupBg.svg';
+import Analytics from '../../../../utils/analytics';
 
 const Wrapper = styled.div`
   background: ${COLOR.base};
@@ -41,6 +42,10 @@ const StyledBox = styled(Box)`
   }
 `;
 
+function handleSubmit() {
+  Analytics.sendEvent('Email', 'Sign Up', 'Skyminer Waitlist', false);
+}
+
 const Newsletter = ({ setRef }) => (
   <Wrapper innerRef={c => setRef(c)}>
     <Container>
@@ -52,7 +57,7 @@ const Newsletter = ({ setRef }) => (
           <FormattedMessage id="skyminer.signup.body" />
         </Text>
         <Box pr={[0, 0, 8]}>
-          <SignUpForm home skyminerOption />
+          <SignUpForm onSubmitCallback={handleSubmit} home skyminerOption />
         </Box>
       </StyledBox>
     </Container>

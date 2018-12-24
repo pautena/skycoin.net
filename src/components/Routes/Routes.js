@@ -10,7 +10,6 @@ import WhitepapersPage from '../WhitepapersPage';
 import NotFound from '../NotFound';
 import RoadmapPage from '../RoadmapPage';
 import MailingPage from '../MailingPage';
-import MarketsPage from '../MarketsPage';
 import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
@@ -24,12 +23,11 @@ import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
-import BuyFiatPage from '../BuyFiatPage';
-import BuyOptionsPage from '../BuyOptionsPage';
+import BuyFiatPage from '../BuyFiatPage/BuyFiatPage';
+import BuyOptionsPage from '../BuyOptionsPage/BuyOptionsPage';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
-
   return (
     <Switch>
       <Route path={`${prefix}`} exact component={Home} />
@@ -39,9 +37,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}architecture-overview`} exact component={ArchitectureOverview} />
       <Route path={`${prefix}roadmap`} exact component={RoadmapPage} />
       <Route path={`${prefix}mailing-list`} exact component={MailingPage} />
-      <Route path={`${prefix}buy`} exact component={MarketsPage} />
-      <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
-      <Route path={`${prefix}buy-options`} exact component={BuyOptionsPage} />
+      <Route path={`${prefix}buy`} exact component={BuyOptionsPage} />
       <Route path={`${prefix}team`} exact component={TeamPage} />
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
@@ -55,6 +51,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Route path={`${prefix}obelisk`} exact component={Obelisk} />
       <Route path={`${prefix}gallery`} exact component={GalleryPage} />
+      <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />

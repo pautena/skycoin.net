@@ -17,6 +17,7 @@ export const COLOR = {
   darkGrey: '#333',
   lightBlueGrey: '#ebf3fd',
   borderGrey: '#d0d0d0',
+  red: 'red',
 };
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 30, 36, 40];
@@ -60,3 +61,4 @@ export const FLAGS = {
 
 export const whiteListFormSrc = 'https://trello-attachments.s3.amazonaws.com/5ab38209e926ff042bc206ca/5ad45bbbbbc8af5ad024b24b/9655c1b1713f785ec85da79f723e6ada/skyminer_whitelist_form.html';
 export const skyminerFormSrc = 'https://sv.mikecrm.com/NAWohxs';
+export const BUY_SKY_LINK = 'buy';

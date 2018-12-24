@@ -1,3 +1,5 @@
+import { MAX_TRANSACTION_AMOUNT, MIN_TRANSACTION_AMOUNT } from '../components/BuyFiatPage/BuyFiatPage';
+
 export default {
   header: {
     navigation: {
@@ -740,7 +742,7 @@ export default {
       heading: 'Antennas',
     },
     wallet: {
-      heading: 'Hardware Wallet',
+      heading: 'Skywallet',
     },
     skyminer: {
       heading: 'Skyminer',
@@ -750,18 +752,22 @@ export default {
     },
   },
   buyOptions: {
-    title: 'You can buy SKY using Bitcoin or your credit card',
-    bitcoin: 'Bitcoin',
+    title: 'You can buy SKY using crypto or your credit card',
+    bitcoin: 'Crypto',
     creditCard: 'Credit card',
   },
   buyFiat: {
     title: 'Buy SKY with credit card',
     labelEmail: 'Email',
     labelAmount: 'Amount',
+    helpTextAmount: `Must be between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
     labelCurrency: 'Currency',
     labelAddress: 'Send to your Skycoin wallet',
+    labelSkyAmount: 'You get',
     formBtn: 'send',
     note: 'NOTE: The actual amount received may be different due to changes in the exchange rate.',
     footNote: '*You will be redirected to our partners website to complete your purchase',
+    conversionError: 'Error: unable to get currency conversion. Try again later.',
+    transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
 };

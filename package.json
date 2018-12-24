@@ -1,6 +1,6 @@
 {
   "name": "skycoin.net",
-  "version": "0.7.89",
+  "version": "0.7.98",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
@@ -67,7 +67,8 @@
     "lint:fix": "eslint src --fix",
     "eject": "react-scripts eject",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "release": "npm version patch -m 'chore: bump version to [version %s]' && git push upstream --tags"
   },
   "snyk": true
 }
