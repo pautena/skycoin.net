@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { rem, rgba } from 'polished';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
@@ -9,8 +10,9 @@ import Heading from 'components/Heading';
 import Button from 'components/Button';
 import TopBanner from 'components/TopBanner';
 import media from 'utils/media';
-import { COLOR } from 'config';
 import banner from "../SkywireLanding/images/skywire.png";
+import { FONT_FAMILIES, COLOR, SPACE, FONT_SIZES } from 'config';
+
 
 const Wrapper = styled(Flex)`
   position: relative;
@@ -36,7 +38,7 @@ const IntroContent = styled(Box)`
   display: block;
   
   ${media.sm.css`
-    max-width: 25rem;
+    max-width: 29rem;
   `}
 `;
 
@@ -49,9 +51,21 @@ const StyledIntro = styled(Intro)`
 
 const StyledLogoContainer = styled.div`
   position: absolute;
-  top: 50px;
-  height: 100%;
+  top: 5%;
   width: 100%;
+`;
+
+const StyledTopBanner = styled(TopBanner)`
+  margin: 0;
+`;
+
+const Paragraph = styled.p`
+  font-size: ${rem(FONT_SIZES[4])};
+  color: ${COLOR.white};
+  font-family: ${FONT_FAMILIES.sans};
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
 `;
 
 const MinerHero = ({ onClick }) => (
@@ -61,16 +75,16 @@ const MinerHero = ({ onClick }) => (
         <Logo white />
       </Container>
     </StyledLogoContainer>
-    <TopBanner src={banner} />
+    <StyledTopBanner src={banner} />
     <StyledIntro align="center">
       <Container>
         <IntroContent>
           <Heading heavy as="h1" fontSize={[9]} color="white">
-            <FormattedHTMLMessage id="landing.skyware.hero.title" />
+            <FormattedMessage id="landing.skyware.hero.title" />
           </Heading>
-          <Heading heavy as="h1" fontSize={[3]} color="white">
-            <FormattedHTMLMessage id="landing.skyware.hero.heading" />
-          </Heading>
+          <Paragraph heavy as="h1" fontSize={[3]} color="white">
+            <FormattedMessage id="landing.skyware.hero.heading" />
+          </Paragraph>
           <Button big color="#fff" bg="#000" width={['auto']} mt={5} onClick={onClick}>
             <FormattedMessage id="landing.skyware.hero.button" />
           </Button>
