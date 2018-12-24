@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
+import { SPACE } from 'config';
 import media from 'utils/media';
-
 import Link from 'components/Link';
 import logo from './logo.svg';
 import logoWhite from './logoWhite.svg';
 import logoBlueWhite from './logoBlueWhite.svg';
 
 const StyledLink = styled(Link)`
-  display: block;
+  display: flex;
+  flex: 1;
+  margin-right: ${rem(SPACE[5])}
 `;
 
 const Img = styled.img.attrs({
@@ -22,12 +24,10 @@ const Img = styled.img.attrs({
   
   ${media.md.css`
     height: ${rem(38)};
-    margin-right: 15px;
   `}
   
   ${media.lg.css`
     height: ${props => (props.white ? rem(49) : rem(38))};
-    margin-right: 0;
   `}
 `;
 

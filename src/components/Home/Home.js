@@ -9,7 +9,6 @@ import Footer from 'components/Footer';
 import Languages from 'components/Languages';
 import Text from 'components/Text';
 import { COLOR } from 'config';
-
 import Banner from './components/Banner';
 import Hero from './components/Hero';
 import Network from './components/Network';

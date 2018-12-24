@@ -15,10 +15,22 @@ export default {
       blog: 'Блог',
       buy: 'Купить Skycoin',
       team: 'Team',
+      store: 'Store',
       telegram: 'Telegram',
       discord: 'Discord',
       getWallet: 'Buy Skycoin',
       jobs: 'Jobs',
+      ecosystem_overview: 'Overview',
+      skywire: 'Skywire',
+      obelisk: 'Obelisk',
+      fiber: 'Fiber',
+      cx: 'CX',
+      cxo: 'CXO',
+      other: 'Other',
+      gallery: 'Gallery',
+      events: 'Events',
+      explorerApi: 'Explorer API',
+      merchandise: 'Merchandise store ',
     },
   },
   footer: {
@@ -99,6 +111,10 @@ export default {
     banner: {
       heading: 'Check out the Skycoin hardware gallery',
       button: 'View photos',
+    },
+    bannerStore: {
+      heading: 'Order a Skyminer today!',
+      button: 'Visit store',
     },
     hero: {
       heading: 'New Internet, New World',
