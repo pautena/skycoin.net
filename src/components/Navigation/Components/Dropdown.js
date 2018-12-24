@@ -149,7 +149,6 @@ class Dropdown extends React.Component {
     const DropdownLink = styled(StyledLink)`
       padding: 0;
       cursor: pointer;
-      color: ${props => (props.white && !props.isMobile ? 'white' : (props.active ? COLOR.dark : COLOR.base))};
     `;
     const { menuOpen } = this.state;
     const myProps = {};
