@@ -11,7 +11,7 @@ class ThankYouPage extends PureComponent {
         return(
             <div>
                 <Helmet>
-                    <title>ThankYouPage</title>          
+                    <title>Thank you!</title>          
                 </Helmet>
                 <Header />
                 <FullScreenMessage>    
