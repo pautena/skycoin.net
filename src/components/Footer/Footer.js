@@ -18,7 +18,7 @@ import Social from './components/Social';
 import PageLinks from './components/PageLinks';
 
 const COPYRIGHT = '© Skycoin.net 2018';
-const RIGHTS_RESERVED = 'footer.rightsReserved'
+const RIGHTS_RESERVED = 'footer.rightsReserved';
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};

@@ -34,8 +34,8 @@ export default {
       merchandise: 'Merchandise store ',
     },
   },
-  footer : {
-    rightsReserved:'All rights reserved'
+  footer: {
+    rightsReserved: 'All rights reserved',
   },
   // footer: {
   //   bounty: 'Bounty Channel',
