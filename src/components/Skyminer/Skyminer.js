@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 
+
 import WhitelistSignUp from 'components/WhitelistSignUp/WhitelistSignUp';
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
