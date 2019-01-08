@@ -17,6 +17,7 @@ import Social from './components/Social';
 import PageLinks from './components/PageLinks';
 
 const COPYRIGHT = '© Skycoin.net 2018';
+const RIGHTS_RESERVED = 'All rights reserved'
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};
@@ -56,8 +57,15 @@ const Footer = ({ isLanding }) => (
 
       {!isLanding &&
       <Flex py={[6, 8]} wrap>
-        <Box width={[1, 1, 1 / 3]}>
-          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>{COPYRIGHT}</Text>
+        <Box width={[1, 1, 1 / 6]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>
+            {COPYRIGHT}
+          </Text>
+        </Box>
+        <Box width={[1, 1, 1 / 6]}>
+          <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>
+            {RIGHTS_RESERVED}
+          </Text>
         </Box>
         <Box width={[1, 1, 1 / 3]}>
           <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">
