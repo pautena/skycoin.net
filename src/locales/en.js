@@ -360,9 +360,9 @@ export default {
     roadmap: {
       heading: 'Roadmap',
     },
-    thankYou:{
-      message:'Thank you! Your response has been recorded.'
-    }
+  },
+  thankYou: {
+    message: 'Thank you! Your response has been recorded.',
   },
   // infographics: {
   //   title: 'Infographics',

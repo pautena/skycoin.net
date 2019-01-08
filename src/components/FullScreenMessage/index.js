@@ -1,1 +1,1 @@
-export {default} from './FullScreenMessage'
+export { default } from './FullScreenMessage';
