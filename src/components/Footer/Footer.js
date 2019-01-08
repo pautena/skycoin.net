@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
+import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Navigation from 'components/Navigation';
@@ -17,7 +18,7 @@ import Social from './components/Social';
 import PageLinks from './components/PageLinks';
 
 const COPYRIGHT = '© Skycoin.net 2018';
-const RIGHTS_RESERVED = 'All rights reserved'
+const RIGHTS_RESERVED = 'footer.rightsReserved'
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};
@@ -64,7 +65,7 @@ const Footer = ({ isLanding }) => (
         </Box>
         <Box width={[1, 1, 1 / 6]}>
           <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign={['center', 'center', 'left']}>
-            {RIGHTS_RESERVED}
+            <FormattedMessage id={RIGHTS_RESERVED} />
           </Text>
         </Box>
         <Box width={[1, 1, 1 / 3]}>
