@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { rem, rgba } from 'polished';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { rem } from 'polished';
+import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
@@ -10,8 +10,7 @@ import Heading from 'components/Heading';
 import Button from 'components/Button';
 import TopBanner from 'components/TopBanner';
 import media from 'utils/media';
-import banner from "../SkywireLanding/images/skywire.png";
-import { FONT_FAMILIES, COLOR, SPACE, FONT_SIZES } from 'config';
+import { FONT_FAMILIES, COLOR, FONT_SIZES } from 'config';
 
 
 const Wrapper = styled(Flex)`
@@ -68,7 +67,7 @@ const Paragraph = styled.p`
   text-transform: none;
 `;
 
-const MinerHero = ({ onClick }) => (
+const Hero = ({ title, description, buttonText, banner, onClick }) => (
   <Wrapper column>
     <StyledLogoContainer>
       <Container>
@@ -80,13 +79,13 @@ const MinerHero = ({ onClick }) => (
       <Container>
         <IntroContent>
           <Heading heavy as="h1" fontSize={[9]} color="white">
-            <FormattedMessage id="landing.skyware.hero.title" />
+            <FormattedMessage id={title} />
           </Heading>
           <Paragraph heavy as="h1" fontSize={[3]} color="white">
-            <FormattedMessage id="landing.skyware.hero.heading" />
+            <FormattedMessage id={description} />
           </Paragraph>
           <Button big color="#fff" bg="#000" width={['auto']} mt={5} onClick={onClick}>
-            <FormattedMessage id="landing.skyware.hero.button" />
+            <FormattedMessage id={buttonText} />
           </Button>
         </IntroContent>
       </Container>
@@ -94,8 +93,12 @@ const MinerHero = ({ onClick }) => (
   </Wrapper>
 );
 
-MinerHero.propTypes = {
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+  banner: PropTypes.element.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
-export default MinerHero;
+export default Hero;
