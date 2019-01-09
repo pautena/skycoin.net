@@ -9,11 +9,12 @@ const Content = styled(Flex)`
     justify-content:center;
     align-items:center;
     height:50vh;
+    padding: 0 1rem;
 `;
 
 const FullScreenMessage = ({ children }) => (
   <Content>
-    <Text fontSize={[6, 6, 7]} color="black" heavy>
+    <Text fontSize={[6, 6, 7]} color="black" heavy textAlign="center">
       {children}
     </Text>
   </Content>
