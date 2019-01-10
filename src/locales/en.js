@@ -940,42 +940,45 @@ export default {
         button: 'Learn more',
       },
       watchNow: {
-        title:'Watch now!',
-        description:'Check out these YouTube videos to learn more about Skywire',
+        title: 'Watch now!',
+        description: 'Check out these YouTube videos to learn more about Skywire',
         youtube: {
-          what:'What is Skywire?',
-          solution:'A Solution to Censorship',
-          isp:'Why ISPs need to be Replaced',
-        }
+          what: 'What is Skywire?',
+          solution: 'A Solution to Censorship',
+          isp: 'Why ISPs need to be Replaced',
+        },
       },
       afee: {
-        text:'“To free Crypto from the bonds of corrupt power, we need more than distributed exchanges. We need to bypass the existing Internet. Mesh networks solve this problem. Skywire  is the only one designed by and for the Crypto Space.” ',
-        name:'John McAfee'
+        text: '“To free Crypto from the bonds of corrupt power, we need more than distributed exchanges. We need to bypass the existing Internet. Mesh networks solve this problem. Skywire  is the only one designed by and for the Crypto Space.” ',
+        name: 'John McAfee',
       },
-      divider:'Everyone will be able to contribute to and benefit from Skywire',
-      bottom:{
-        text:'Its <b>private</b>, <b>secure</b> and <b>decentralized</b>. Join over 1,450+ nodes now on Skywire with our current special promotion!',
-        button:'Order a skyminer'
+      divider: 'Everyone will be able to contribute to and benefit from Skywire',
+      bottom: {
+        text: 'Its <b>private</b>, <b>secure</b> and <b>decentralized</b>. Join over 1,450+ nodes now on Skywire with our current special promotion!',
+        button: 'Order a skyminer',
       },
-      features:{
+      features: {
         speed: {
-          title:'Speed',
-          description:'Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.',
-        },privacy: {
-          title:'Privacy',
-          description:'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold.',
-        },security: {
-          title:'Security',
-          description:'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system.',
-        },ecosystem: {
-          title:'Self-sustaining ecosystem',
-          description:'By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network.',
-        },internet: {
-          title:'Foundation of the new internet',
-          description:'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet',
+          title: 'Speed',
+          description: 'Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.',
         },
-
-      }
+        privacy: {
+          title: 'Privacy',
+          description: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold.',
+        },
+        security: {
+          title: 'Security',
+          description: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system.',
+        },
+        ecosystem: {
+          title: 'Self-sustaining ecosystem',
+          description: 'By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network.',
+        },
+        internet: {
+          title: 'Foundation of the new internet',
+          description: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet',
+        },
+      },
     },
   },
 };

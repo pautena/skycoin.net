@@ -8,16 +8,16 @@ import Container from 'components/Container';
 import Logo from 'components/Logo';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
-import TopBanner from 'components/TopBanner';
 import media from 'utils/media';
 import { FONT_FAMILIES, COLOR, FONT_SIZES } from 'config';
 
 
 const Wrapper = styled(Flex)`
+
   position: relative;
-  height: auto;
+  height: 550px;
   box-sizing: border-box;
-  background: ${COLOR.white};
+  background: ${COLOR.base} url(${props => props.banner}) no-repeat right top;
   background-size: cover;
   overflow: hidden;
 
@@ -54,9 +54,6 @@ const StyledLogoContainer = styled.div`
   width: 100%;
 `;
 
-const StyledTopBanner = styled(TopBanner)`
-  margin: 0;
-`;
 
 const Paragraph = styled.p`
   font-size: ${rem(FONT_SIZES[4])};
@@ -67,14 +64,17 @@ const Paragraph = styled.p`
   text-transform: none;
 `;
 
-const Hero = ({ title, description, buttonText, banner, onClick }) => (
-  <Wrapper column>
+const StyledButton = styled(Button)`
+  border-radius:5px;
+`;
+
+const Hero = ({ title, description, buttonText, banner, to }) => (
+  <Wrapper column banner={banner}>
     <StyledLogoContainer>
       <Container>
         <Logo white />
       </Container>
     </StyledLogoContainer>
-    <StyledTopBanner src={banner} />
     <StyledIntro align="center">
       <Container>
         <IntroContent>
@@ -84,9 +84,9 @@ const Hero = ({ title, description, buttonText, banner, onClick }) => (
           <Paragraph heavy as="h1" fontSize={[3]} color="white">
             <FormattedMessage id={description} />
           </Paragraph>
-          <Button big color="#fff" bg="#000" width={['auto']} mt={5} onClick={onClick}>
+          <StyledButton big color="#fff" bg="#000" width={['auto']} mt={5} to={to}>
             <FormattedMessage id={buttonText} />
-          </Button>
+          </StyledButton>
         </IntroContent>
       </Container>
     </StyledIntro>
@@ -98,7 +98,7 @@ Hero.propTypes = {
   description: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   banner: PropTypes.element.isRequired,
-  onClick: PropTypes.func.isRequired,
+  to: PropTypes.string.isRequired,
 };
 
 export default Hero;
