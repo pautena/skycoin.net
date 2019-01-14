@@ -54,7 +54,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}gallery`} exact component={GalleryPage} />
       <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
       <Route path={`${prefix}thankyou`} exact component={ThankYouPage} />
-      <Redirect from={`${prefix}whiteList`} to={`${prefix}`} />
+      <Route from={`${prefix}whiteList`} component={() => { window.location = 'https://whitelist.skycoin.net'; }} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
