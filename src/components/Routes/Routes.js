@@ -19,7 +19,6 @@ import CXO from '../CXO';
 import CX from '../CX';
 import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
-import Whitelist from '../Whitelist';
 import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
@@ -49,13 +48,13 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
-      <Route path={`${prefix}whiteList`} exact component={Whitelist} />
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Route path={`${prefix}obelisk`} exact component={Obelisk} />
       <Route path={`${prefix}gallery`} exact component={GalleryPage} />
       <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
       <Route path={`${prefix}thankyou`} exact component={ThankYouPage} />
+      <Redirect from={`${prefix}whiteList`} to={`${prefix}`} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
