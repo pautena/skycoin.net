@@ -19,7 +19,6 @@ import CXO from '../CXO';
 import CX from '../CX';
 import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
-import Whitelist from '../Whitelist';
 import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
