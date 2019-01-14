@@ -24,7 +24,6 @@ const Iframe = styled.iframe`
 
 export default class WhiteList extends React.PureComponent {
   componentDidMount() {
-
   }
   render() {
     return (
