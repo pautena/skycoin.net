@@ -99,7 +99,7 @@ export const downloads = [
         name: 'downloads.wallet.androidAdvanced',
         architectures: [{
           name: '',
-          download: 'https://downloads.skycoin.net/android/Skycoin-Wallet-v1.2.2.apk',
+          download: 'https://downloads.skycoin.net/android/Skycoin-Wallet-v1.3.0.apk',
           signature: '',
           filetype: '.apk',
           filesize: 'mb',
