@@ -373,6 +373,10 @@ function getMenu(intl) {
       name: 'header.navigation.store',
       menu: [
         {
+          name: 'header.navigation.hardwareStore',
+          href: 'https://store.skycoin.net/',
+        },
+        {
           name: 'header.navigation.merchandise',
           href: 'https://merch.skycoin.net/',
         },
