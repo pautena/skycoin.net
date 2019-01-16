@@ -41,7 +41,6 @@ class Home extends React.PureComponent {
           />
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
         </Helmet>
-        {/*<Banner onClick={() => this.handleScroll()} />*/}
         <BannerStore />
         <HeaderWrapper>
           <Container>
