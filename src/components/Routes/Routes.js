@@ -19,7 +19,7 @@ import CXO from '../CXO';
 import CX from '../CX';
 import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
-import Whitelist from '../Whitelist';
+import WhiteListRedirect from '../Whitelist/WhiteListRedirect';
 import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
@@ -49,7 +49,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
-      <Route path={`${prefix}whiteList`} exact component={Whitelist} />
+      <Route path={`${prefix}whiteList`} exact component={WhiteListRedirect} />
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Route path={`${prefix}obelisk`} exact component={Obelisk} />

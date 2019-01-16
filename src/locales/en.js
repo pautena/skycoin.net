@@ -31,7 +31,8 @@ export default {
       gallery: 'Gallery',
       events: 'Events',
       explorerApi: 'Explorer API',
-      merchandise: 'Merchandise store ',
+      merchandise: 'Merchandise store',
+      hardwareStore: 'Hardware store',
     },
   },
   footer: {
