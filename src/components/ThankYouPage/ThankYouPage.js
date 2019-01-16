@@ -68,4 +68,4 @@ ThankYouPage.propTypes = {
   }),
 };
 
-export default withRouter(injectIntl(ThankYouPage));
+export default injectIntl(ThankYouPage);

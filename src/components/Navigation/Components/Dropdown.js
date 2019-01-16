@@ -110,7 +110,7 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: props.active || true,
+      menuOpen: props.active || false,
     };
 
     this.handleClose = this.handleClose.bind(this);
@@ -121,7 +121,7 @@ class Dropdown extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.desktop === true && this.props.desktop === false) {
       this.setState({
-        menuOpen: true,
+        menuOpen: false,
       });
     }
   }
@@ -134,7 +134,7 @@ class Dropdown extends React.Component {
 
   handleClose() {
     this.setState({
-      menuOpen: true,
+      menuOpen: false,
     });
   }
 
@@ -197,4 +197,3 @@ Dropdown.defaultProps = {
 };
 
 export default makeResponsiveComponent(Dropdown);
-
