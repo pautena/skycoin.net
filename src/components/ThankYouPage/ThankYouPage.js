@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
-import { withRouter } from 'react-router';
 
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -68,4 +67,4 @@ ThankYouPage.propTypes = {
   }),
 };
 
-export default withRouter(injectIntl(ThankYouPage));
+export default injectIntl(ThankYouPage);

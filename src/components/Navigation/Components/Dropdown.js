@@ -197,4 +197,3 @@ Dropdown.defaultProps = {
 };
 
 export default makeResponsiveComponent(Dropdown);
-
