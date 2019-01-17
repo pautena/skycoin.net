@@ -468,7 +468,7 @@ export default {
         item0: '8 CPU boards',
         item1: '2 GB of RAM per board',
         item2: '4 CPU cores per board',
-        item3: '64 GB of storage per board',
+        item3: '16 GB of storage per board',
         item4: '64-bit Linux (Alpine Linux)',
         item5: 'Gigabit ethernet, 8+1 port switch',
       },
