@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
@@ -12,10 +12,6 @@ const TIMEOUT_REDIRECT_DELAY = 3000;
 
 
 class ThankYouPage extends PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.redirect();
   }
@@ -49,7 +45,7 @@ class ThankYouPage extends PureComponent {
 ThankYouPage.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
-  }),
+  }).isRequired,
 };
 
 export default injectIntl(ThankYouPage);
