@@ -7,6 +7,7 @@ const PageLinks = () => (
     <Link to="/buy" />
     <Link to="/gallery" />
     <Link to="/buy-fiat" />
+    <Link to="/thankyou" />
   </div>
 );
 
