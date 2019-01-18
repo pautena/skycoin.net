@@ -30,6 +30,7 @@ export default {
       gallery: 'Gallery',
       events: 'Events',
       explorerApi: 'Explorer API',
+      hardwareStore:"Hardware Store",
       merchandise: 'Merchandise store ',
     },
   },
