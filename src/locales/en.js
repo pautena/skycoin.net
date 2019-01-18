@@ -356,6 +356,7 @@ export default {
     },
     skywire: {
       heading: 'Skywire',
+      installationGuide:'Skywire Installation Guide v1.0',
       minerAssemblyManual: 'Skywire Miner Assembly Manual',
     },
     roadmap: {
