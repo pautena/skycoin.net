@@ -93,8 +93,8 @@ export default {
   },
   newsletter: {
     heading: 'Sign up to receive updates',
-    button: 'Sign up',
-    input: 'Enter Your Email',
+    button: '회원가입',
+    input: '메일 주소를 입력해주세요',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
   },
   markets: {
@@ -197,80 +197,81 @@ export default {
     },
     press: {
       heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
+      subheading: 'The #1 Project to watch out for in 2019',
       forbes: 'Holding itself out as the “third generation cryptocurrency,” Skycoin aims to provide a “new internet” that is global, decentralized, and not controlled by any country, corporation, or government entity.  For privacy gurus or net neutrality enthusiasts, this is a project to stay on top of.',
       huffingtonPost: 'Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.',
     },
     ecosystem: {
-      heading: 'Skycoin Is The Most Advanced Blockchain Application Platform In The World | ko',
-      subheading: 'Skycoin Ecosystem | ko',
+      heading: 'Skycoin은 세계적으로 가장 선진적인 블록체인 어플리케이션 플랫폼입니다',
+      subheading: 'Skycoin생태시스템',
       fiber: {
-        title: 'Fiber | ko',
-        text: 'Our blockchain platform, an infinite number of blockchains in parallel bound together.  | ko',
+        title: 'Fiber',
+        text: 'Skycoin플랫폼의 무한 확장 가능하고 고도로 맞춤 제작가능한 P2P 체인 시스템 구조입니다.',
       },
       obelisk: {
-        title: 'Obelisk | ko',
-        text: 'Developed by OG Ethereum devs, it is the most powerful consensus algorithm to date. | ko',
+        title: 'Obelisk',
+        text: '“신뢰성 웹”은 PoW & PoS의 기본 허점을 해결한 신형의 합의 알고리즘입니다.',
       },
       skycoin: {
-        title: 'Skycoin | ko',
-        text: 'The most powerful and complete cryptocurrency ever created. | ko',
+        title: 'Skycoin',
+        text: '가장 강력하고 완전한 암호 화페 플랫폼.',
       },
       coinHours: {
-        title: 'Coin Hours | ko',
-        text: 'Our network\'s gas. You earn 1 CH every hour you hold Skycoin in your wallet. You burn 50% to transact. | ko',
+        title: '코인 시간',
+        text: '보유하는 Skycoin을 통하여 획득 가능한 코인 시간은 Skycoin 플랫폼의 서비스 결제 메커니즘입니다.',
       },
       coinJoin: {
-        title: 'Coin Join | ko',
-        text: 'Completely private, untracable transactions on top of Fiber, our blockchain technology. | ko',
+        title: '코인 조인',
+        text: '네이티브 플랫폼은 코인 조인이 프라이버시를 완벽하게 지켜주고 추적 불가한 거래를 제공할 수 있도록 지원합니다.',
       },
       skyledger: {
-        title: 'Skyledger | ko',
-        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology. | ko',
+        title: 'Skyledger',
+        text: 'Platform for launching your very own ICO on top of Fiber, our blockchain technology.',
       },
       skywire: {
-        title: 'Skywire | ko',
-        text: 'The new decentralized Internet, a wireless mesh network that pays you to process bandwidth. | ko',
+        title: 'Skywire',
+        text: '하나의 무선 메쉬 네트워크인 신형 탈중앙화 네트워크를 통해 여러분들께 서비스를 제공해드립니다.',
       },
       skyminer: {
-        title: 'Skyminer | ko',
-        text: 'Hardware for the new Internet. Get paid to process bandwidth while you sleep. | ko',
+        title: '스카이 채굴기',
+        text: '탄탄한 분산형 네트워크의 하드워크 핵심부분으로서 잠을 자는 순간에도 대역폭, 스토리지와 CPU 성능을 제공하여 이로부터 보수를 얻을 수 있습니다.',
       },
       nodes: {
-        title: 'Nodes | ko',
-        text: 'Our community members, and anyone who processes bandwith on Skywire. | ko',
+        title: '노드',
+        text: 'Skywire네트워크의 구성부분으로서 모든 사람들이 노드를 배치 가능하게 함으로써 Skywire 생태시스템의 탈중앙화를 보장하였습니다.',
       },
       cx: {
-        title: 'CX | ko',
-        text: 'The most powerful programming language on the market. | ko',
+        title: 'CX',
+        text: 'Golang 에 기반을 두어 맞춤 제작된 프로그래밍 언어로서 쉽게 배울 수 있고 편하게 조작할 수 있습니다.',
       },
       cxo: {
-        title: 'CXO | ko',
-        text: 'Peer-to-peer cloud storage. Dropbox for the new Internet. | ko',
+        title: 'CXO',
+        text: 'Skywire 분산형 네트워크를 따라 디자인된 P2P 클라우드 스토리지 서비스입니다.',
       },
       kittyCash: {
-        title: 'Kitty Cash | ko',
-        text: 'Remember Cryptokitties? This is an infinitely scalable version. Plus they\'re cute. | ko',
+        title: 'KittyCash',
+        text: '현재 Fiber에서 건립된 가장 트렌디한 어플리케이션입니다. Kittycash는 키티를 원동력으로 한 완벽한 게임 생태시스템입니다.',
       },
       skyVpn: {
-        title: 'SDN | ko',
-        text: 'Decentralized Virtual Private Network running on Skywire. | ko',
+        title: 'SDN',
+        text: 'Skywire네트워크에 내장된 엔드 투 엔드 가상 개인 암호화 기능으로서 프라이버시를 확실하게 보호합니다.',
       },
       skyMessenger: {
-        title: 'SkyMessenger | ko',
-        text: 'Decentralized Encrypted Messenger running on Skywire. | ko',
+        title: 'Sky메신져',
+        text: '저희의 완벽하게 암호화된 메신져는 도청이나 불법침입자를 막아드립니다.',
       },
       bbs: {
-        title: 'BBS | ko',
-        text: 'Decentralized Social Network running on Skywire. | ko',
-      },
+        title: 'BBS',
+        text: '분산형 소셜 네트워크 서비스를 구축하는 프레임입니다.'
+      }
     },
     news: {
-      heading: 'News',
+      heading: '뉴스',
     },
     signup: {
-      heading: 'Join Our Skyfleet Newsletter and Soar to New Heights with Skycoin!',
-      body: 'Stay current, receive updates from the Skycoin team, and enjoy the progress by subscribing to our newsletter! Enter your personal email address & prepare for liftoff today.',
-      button: 'Sign Up | ko',
+      heading: '저희 Skyfleet 뉴스레터에 가입하여 저희와 함께 세계를 자유롭게 활보하세요!',
+      body: '메일을 구독하여 Skycoin팀의 최근 추세, 정보 업데이트를 알아보세요. 여러분의 개인메일 주소만 입력하시면 바로 출발하실 수 있습니다.',
+      button: '회원가입',
     },
     roadmap: {
       heading: '로드맵',
