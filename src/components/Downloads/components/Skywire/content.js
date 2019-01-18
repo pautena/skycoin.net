@@ -1,5 +1,5 @@
 export default [{
-  name: 'Skywire Installation Guide v1.0',
+  name: 'downloads.skywire.installationGuide',
   download: 'https://downloads.skycoin.net/skywire/Skywire-Installation-Guide-v1.0.pdf',
   filetype: '.pdf',
   filesize: '477kb',

@@ -26,7 +26,8 @@ export default {
       gallery: 'Gallery',
       events: 'Events',
       explorerApi: 'Explorer API',
-      merchandise: 'Merchandise store ',
+      hardwareStore: 'Hardware store',
+      merchandise: 'Merchandise store',
     },
   },
   notFound: {
