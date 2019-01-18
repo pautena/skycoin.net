@@ -5,21 +5,17 @@ export default {
   header: {
     navigation: {
       home: 'Home',
-      // distribution: 'Distribution',
-      // distributionEvent: 'Distribution event',
-      // whitepapers: 'Whitepapers',
       downloads: 'ダウンロード',
       wallet: 'Wallet',
       explorer: 'ブラウザ',
       ecosystem: '生態システム',
       skyminer: 'スカイマイニングマシン',
       blog: 'ブログ',
-      // buy: 'Buy Skycoin',
       team: 'チーム',
       store: 'ショップ',
       telegram: 'Telegram',
       discord: 'Discord',
-      getWallet: 'Buy Skycoin',
+      getWallet: 'Skycoinを購入',
       jobs: 'レーバー',
       ecosystem_overview: '概説',
       skywire: 'Skywire',
@@ -52,7 +48,7 @@ export default {
     wallet: 'Get Wallet',
   },
   newsletter: {
-    heading: 'Sign up to receive updates',
+    heading: '登録して更新を受信',
     button: '登録',
     input: 'メールアドレスを入力',
     skyminerOption: 'I\'m Interested in a Skywire Miner',
@@ -187,7 +183,6 @@ export default {
     description: 'Download Skycoin wallet.',
     wallet: {
       heading: 'Download Skycoin Wallet',
-      // lead: 'For simple use, download the Desktop wallet. For advanced use, or slow connections, the CLI wallet provides a UI that runs directly in your browser.',
       build: 'The current build is {version}.',
       macos: 'MacOS',
       linux: 'Linux',
@@ -245,56 +240,31 @@ export default {
   thankYou: {
     message: 'Thank you! Your response has been recorded.',
   },
-  // infographics: {
-  //   title: 'Infographics',
-  //   description: 'Graphical overview',
-  // },
-  // distribution: {
-  //   title: 'Skycoin distribution event',
-  //   description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
-  //   hero: {
-  //     heading: 'Skycoin distribution event',
-  //     preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.<br /><br /><em>This event was originally scheduled for July 24, 2017 but has been rescheduled to August 8, 2017 due to uncertainty in the Bitcoin network during this time period.</em>',
-  //     postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
-  //     participate: 'Participate',
-  //   },
-  //   countdown: {
-  //     preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
-  //     eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
-  //     days: 'Days',
-  //     hours: 'Hours',
-  //     minutes: 'Minutes',
-  //     seconds: 'Seconds',
-  //   },
-  // },
-  // roadmapPage: {
-  //   heading: 'Development roadmap',
-  // },
   ecosystem: {
-    title: 'Ecosystem',
-    description: 'Ecosystem',
-    heading: 'Ecosystem',
-    subheading: 'Architecture of the new internet',
+    title: '生態システム',
+    description: '生態システム',
+    heading: '生態システム',
+    subheading: 'ニューインターネットアーキテクチャー',
     skycoin: {
       heading: 'Skycoin',
-      body: 'Skycoin was created as an answer to the shortcomings of both Bitcoin and Ethereum. Born out of necessity, no other coin was fulfilling Satoshi’s original vision of a fully decentralized digital currency.<br/><br/>Skycoin’s platform is free from centralization and manipulation through its revolutionary Obelisk consensus algorithm. It features CX, a turing complete programming language built from the ground up to allow hundreds of thousands of devs to easily deploy applications to the blockchain. Skycoin functions as a currency with virtually-free transactions, soon-to-be-implemented absolute privacy, and Visa-like speeds with inherent asset-backed value not based on speculation.<br/><br/>Holding Skycoin generates Coin Hours which are used to purchase services on the Skywire network and can be exchanged for more Skycoin.</p>',
-      btn: 'learn more about cx',
+      body: 'Skycoinはビットコインとイーサリアムの欠陥を解決するために作られた。Skycoinの出現は当時、完全な分散型デジタル通貨という中本聡の最初の思いを実現できる他のコインがなかったからである。<br/><br/>独自なObeliskコンセンサスアルゴリズムにより、Skycoinのプラットフォームは分散型や人的制御を免れる。その独特なプログラミング言語CXは千や万人の開発者がアプリケーションプログラムをブロックチェーンへ配置することを許容している。Skycoinは暗号化通貨として、無料取引という機能を持ち、絶対プライベート保持機能が間もなく実現し、Visa支払処理システムに類似する速度を備えている。その価値はチャンスをねらう主義ではなく、内在資産サポートに基づくものである。<br/><br/>Skycoinで生まれたコインタイムを持つと、Skywireネットワークからサービスを購入できるだけではなく、より多くのSkycoinの両替できる。</p>',
+      btn: 'CXの情報をもっと知りたい',
     },
     skywire: {
       heading: 'Skywire',
-      body: 'It is fast. It doesn’t suffer from throttling and other service disruptions that you get with large ISPs.<br/><br/>It is private. This means that you can’t be tracked as you browse. Instead of paying $$$ per month to be tracked by the ISP (which then sells your browsing data without permission), the Skywire community will have internet service that protects their privacy.<br/><br/>It is incentivized. Skywire will develop to be a wireless mesh network (WMN). Users can earn both Skycoin and Coin Hours for running hardware nodes that provide both bandwidth and storage to the entire network. Users can then spend earned Coin Hours on content and other network resources, as they choose.<br/><br/>It is secure. Skywire is created by users for users. Users dictate the decisions made on the network and the network operates on a web of trust system where malicious nodes can be cut off from the main Skywire network via collective agreement of the community. This consensus model allows Skywire to be immune from attacks, exploitation and manipulation.<br/><br/>In an era where consumers are consistently being taken advantage of by large corporations in the name of profit, Skycoin’s Skywire network is a breath of fresh air. Skywire gives the power back to the people and creates a stronger, faster, and more secure internet in the process.</p>',
-      skywireBtn: 'learn more about skywire',
-      cxoBtn: 'learn more about cxo',
+      body: '快速：大型ISPみたいに、トラフィック制限や他サービス中断に影響されない。<br/><br/>プライベート保持：プライベート保持は客が閲覧する時に、追跡できないことを意味する。ISPみたいに、毎月に巨大な費用を支払い、客の追跡をしたり、許可なしに客の閲覧データを売却したりするISPのやり方と違って、 Skywire地域はインターネットサービスにより、ユーザのプライベートを保持できる。<br/><br/>インセンティブ：Skywireは無線メッシュネットワーク（WMN）に発展する予定。ユーザはSkycoinとコインタイムを同時にゲットするによって、ネットワーク全体へブロードバンドや記憶を提供するハードウエアノードを稼働させる。ユーザはゲットしたコインタイムで欲しい内容や他のネットワーク資源と交換できる。<br/><br/>セキュリティ：Skywireはユーザ自身より作り、ユーザへサービスする。ユーザはシステムが稼働するネットワークを信頼した上で決断し、地域の集団プロトコルにより、悪意ノードをメインSkywireネットワークから中断させる。このコンセンサスモデルによって、Skywireを攻撃、搾取や操縦を免れる。<br/><br/>ークは正に清流と言えるでしょう。Skywireは権利を大衆に戻しながら、更に強い、速い、安全なインタネットを作ってきている。</p>',
+      skywireBtn: 'SKYWIREの情報をもっと知りたい',
+      cxoBtn: 'CXOの情報をもっと知りたい',
     },
     obelisk: {
       heading: 'Obelisk',
-      body: 'Decentralization in a centralized world.<br/><br/>Obelisk was created out of the shortcomings in the Proof of Work (PoW) and Proof of Stake (PoS) algorithms. Obelisk can never be centralized by mining pools or manipulated by shareholders, meaning it is truly decentralized. Obelisk distributes influence over the network according to a web-of-trust architecture. Instead of miners, the network consists of nodes. Each node gets its own personal blockchain which prevents and quarantines any potential bad actors. These nodes are substantially less expensive to produce, acquire and operate than any traditional miner used for Bitcoin or Ethereum. Obelisk was designed to be a scalable, computationally-inexpensive, zero-waste alternative to PoW. These features enable the algorithm to be run on budget hardware in a sustainable fashion, without wasting electricity or consuming valuable natural resources. Centralization becomes nigh-impossible when virtually anyone is able to operate a node.</p>',
+      body: '権利集中世界での権利分散<br/><br/>Obeliskはプルーフオブワーク(PoW)とプルーフオブステーク(PoS)のアルゴリズムの不足から生まれたものである。Obeliskは永遠にプール集中又は株主の操りにされないことは、本当の分散とは言える。Obeliskは信頼のサイトアーキテクチャーにより、ネットワークへの影響を分配する。ネットワークはマイニングマシンではなく、ノードで構成される。それぞれのノードには自分のブロックチェーンを持つことは、いかなる潜在な不良行為を防止や隔離できる。ビットコイン又はイーサリアムを使用する伝統的なマイニングマシンと比べると、これらのノードの生産、獲得と運営コストは更に低くなる。Obeliskは伸縮可能、計算が安く、無駄ゼロのPoW代替品として設計されている。これらの特性により、アルゴリズムは電力を無駄にしない又は大事な自然資源を消耗しないで、継続可能な方法で安価なハードウェアに稼働できる。ほとんどの人が同じノードを操作できるようになったら、集中化はほぼ不可能になる。</p>',
       btn: 'learn more about obelisk',
     },
     experiments: {
       heading: 'Fiber',
-      body: 'The infinitely-scalable and highly customizable parallel peer-chain architecture of the Skycoin platform. Fiber is a better-than-blockchain solution, which is transformational in the way that it solves existing problems with distributed ledger technology.<br/><br/>Fiber is the foundation of “cryptocurrency 3.0”, an infinitely scalable network of blockchains laid side-by-side, like strands. Each project hosted on Fiber gets its own fully customizable, private blockchain capable of Visa-like speeds. Each strand added to Fiber strengthens the whole network and constructs the fabric of the entire ecosystem.<br/><br/>Skycoin Fiber does not compete with first and second generation cryptocurrency architectures, it replaces them. From fledgling blockchain projects to enterprises looking for solutions, Fiber is the answer.</p>',
-      btn: 'learn more about fiber',
+      body: 'FiberはSkycoinプラットフォームを無限拡張と高度カスタマイズ化できる平行同クラスチェーン仕組みである。Fiberはブロックチェーンより良いソリューションであり、現在の分布式帳簿にある技術問題を解決できる。<br/><br/>Fiberは「ブロックチェーン 3.0」の基礎であり、Strand（チェーン）のように並列に設置し、無限拡張可能なブロックチェーンネットワークと記述しても良い。 Fiberにある各会社、各プロジェクトには専用、完全カスタマイズなプライベートブロックチェーンを所有し、その速度がVisaと匹敵できる。それによって、個人又は会社ブロックチェーンの企業へブロックチェーンに関するソリューションを提供し、企業の独自管理を実現し、自社のチェーンを完全にコントロールできるようにする。Fiberに加入したそれぞれのチェーンによって、ネットワーク全体を強化し、全体の生態システム仕組みを構築した。<br/><br/>Skycoinの Fiberは一代目や二代目の暗号通貨アーキテクチャーと競争するのではなく、それらに代わるのである。立ち上げたばかりのブロックチェーンプロジェクトからソリューションを求める会社ならば、Fiberが正にその答え。</p>',
+      btn: 'FIBERの情報をもっと知りたい',
     },
     iconLabel: {
       fiber: 'Fiber',
@@ -311,24 +281,24 @@ export default {
       kittyCash: 'KittyCash',
     },
     about: {
-      heading: 'What is Skycoin?',
-      paragraph1: 'The original purpose of digital currency was to reinvent the economy so that users could be independently empowered to trade in a peer-to-peer fashion, without interference from centralized powers. At Skycoin, we believe strongly in this mission. That’s why the Skycoin blockchain is designed to benefit all users, not just a select few. With Obelisk, we’re solving the problems inherent in PoW- and PoS-based coins to bring you a decentralized and democratic consensus network.',
-      paragraph2: 'Satoshi envisioned Bitcoin as a decentralized digital currency. Blockchain networks were intended to democratize finance, eliminating corporate control and spreading power among users. However, Bitcoin and related currencies have become centralized due to their reliance on Proof of Work (PoW) and Proof of Stake (PoS) algorithms, as well as their use of mining to create coins. This centralization defeats the original purpose of digital currencies.',
-      paragraph3: 'We created the Skycoin blockchain to correct these flaws. The Skycoin blockchain uses a novel consensus algorithm to replace PoW and PoS. It also fixes security problems associated with other blockchain networks and decouples coin creation from the mining process. The result is a fully decentralized cryptocurrency that fulfills Satoshi’s original vision.',
-      paragraph4: 'The Skycoin blockchain does not use mining, so user power cannot be concentrated in a few large mining pools as it is with Bitcoin today. Coin creation doesn’t give certain users disproportionate control over the network. The supply of Skycoin is fixed. Skycoin transactions occur in seconds and are more secure. With Skycoin, we’ve created an immutable cryptocurrency that functions as digital property, rather than a political tool for amassing control over networks.',
+      heading: 'Skycoinって？',
+      paragraph1: 'デジタル通貨の最初目的は経済を再生することにある。ユーザが独立に授権され、センター機構に影響されず、対等な方式で取引を行なえるようにすることである。Skycoinにとっては、これが我々の使命である。これはSkycoinが僅かなユーザではなく、全てのユーザの利益を目指す目的である。Obeliskにより、我々はPoWやPoアルゴリズムの固有問題を解決し、顧客様へ分散型民主同認識なネットワークを提供する。',
+      paragraph2: '中本聡はビットコインを分散型なデジタル通貨と考えている。ブロックチェーンネットワークは金融を民主化にし、大手会社によるコントロールを除去し、権力を大衆の手に握らせることを目指している。しかし、ビットコインと、PoW/PoSアルゴリズムを使用してマイニングによる奨励を獲得するデジタル通貨はますます中心となってきている。これはデジタル通貨を発明した初心と反している。',
+      paragraph3: 'だから、これらの欠陥を埋める為に、我々はSkycoinを作り出した。 SkycoinのブロックチェーンはPoW/PoSに代わる新たな一致性アルゴリズムを使用し、他のブロックチェーンネットワークと接続する時のセキュリティン問題も解決し、新しいコインの生み出しとマイニングを分けた。Skycoinこそ中本聡のビジョンに合うよ真の分散型デジタル通貨である。',
+      paragraph4: 'Skycoinブロックチェーンにはマイニングがないので、権力は現在のビットコインのように、幾つかの大きいプールに集中したりしない。新しいコインの生み出しはあるユーザへネットワークに対する不適切なコントロール権力を与えたりしない。 Skycoinの総量が固定され、取引速度が秒単位であり、しかも安全である。ネットワークをコントロールする政治道具ではなく、デジタル財産として、我々はSkycoinという変化不可な暗号通貨を作り出した。'
     },
     roadmap: {
       dev: {
-        heading: 'Skycoin Development Roadmap',
+        heading: 'Skycoin発展路線図',
       },
       marketing: {
         heading: 'Skycoin Marketing Roadmap',
       },
     },
     whitepaper: {
-      heading: 'Whitepaper',
-      body: 'Skycoin does not have signature mutability, does not have transaction mutability, does not have duplicate coinbase outputs and dozens of other changes and improvements from Bitcoin. Skycoin makes dozens of changes from Bitcoin.</br></br>Skycoin produces both academic and technical whitepapers. The academic whitepaper lays out the theoretical and mathematical foundation of Skycoin’s distributed consensus system and its inspirations. The academic paper is focused on the mathematical formalisms, assumptions which allow us to prove security guarantees. The technical papers outlines implementation details, milestones and software architecture. The technical paper is focused on security as a process and defense in depth.',
-      download: 'Download',
+      heading: '白書',
+      body: 'Skycoinにはシグネチャーの可変性、取引の可変性がなく、重複なcoinbaseアウトプットや、ビットコインにおける他の数十項目の変更や改善もない。 Skycoinはビットコインの上で数十箇所の変化を行なった。</br></br>Skycoinは学術や技術白書を制作した。学術白書はSkycoin分布式コンセンサスシステムの理論や数学基礎及びその啓示を記述した。Skycoin学術論文は数学形式主義を重んじているので、これらの考え方は我々が安全保障を提供する元である。技術文書は実施細部、マイルストーンとソフトウェアアーキテクチャーの概要を記述した。この技術資料のポイントは安全保護の進捗や防御の深さをアピールすることにある。',
+      download: 'ダウンロード',
     },
   },
   skyminer: {
