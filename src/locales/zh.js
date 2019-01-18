@@ -26,7 +26,7 @@ export default {
       gallery: 'Gallery',
       events: 'Events',
       explorerApi: 'Explorer API',
-      hardwareStore: "Hardware store",
+      hardwareStore: 'Hardware store',
       merchandise: 'Merchandise store',
     },
   },

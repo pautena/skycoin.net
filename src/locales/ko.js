@@ -30,7 +30,7 @@ export default {
       gallery: '사진',
       events: 'Events',
       explorerApi: '브라우저 API',
-      hardwareStore:"Hardware Store",
+      hardwareStore: 'Hardware Store',
       merchandise: '상품 스토어',
     },
   },
@@ -193,7 +193,7 @@ export default {
       link: 'Become a node | ko',
       more: '더많은 정보 얻기',
       headingHardware: 'Skycoin하드웨어 세트의 지속적인 실체화',
-      morePhotos:'더 많은 사진 보기'
+      morePhotos: '더 많은 사진 보기',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
@@ -262,8 +262,8 @@ export default {
       },
       bbs: {
         title: 'BBS',
-        text: '분산형 소셜 네트워크 서비스를 구축하는 프레임입니다.'
-      }
+        text: '분산형 소셜 네트워크 서비스를 구축하는 프레임입니다.',
+      },
     },
     news: {
       heading: '뉴스',
@@ -352,7 +352,7 @@ export default {
     },
     skywire: {
       heading: 'Skywire',
-      installationGuide:'Skywire설치 안내 v1.0',
+      installationGuide: 'Skywire설치 안내 v1.0',
       minerAssemblyManual: 'Skywire채굴기 조립 안내',
     },
     roadmap: {
