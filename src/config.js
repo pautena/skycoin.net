@@ -54,6 +54,7 @@ export const FLAGS = {
   chinese: true,
   russian: true,
   korean: true,
+  japanese: true,
   timeline: false,
   distribution: true,
   network: false,
