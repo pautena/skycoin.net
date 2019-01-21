@@ -629,3 +629,161 @@ export const ko = {
     ],
   },
 };
+
+export const ja = {
+  title: 'チーム紹介',
+  subtitle: 'ニューインターネットアーキテクト',
+  quote: '「彼らはニューインターネット（世界で最も先進なブロックチェーンアプリケーションプラットフォーム）のアーキテクトです。私達は彼らを信じます。彼らは皆の期待を裏切ったりしないと思います。”– Synth',
+  description: 'Bios of the Skycoin team',
+  readBio: 'パソーナルファイル',
+  hide: '非表示',
+  heading: '',
+  anonymous: {
+    heading: 'Why Anonymous?',
+    paragraph: 'You may have noticed that some members of Skycoin share their full name and others do not. At Skycoin, we believe in every individual’s right to privacy on the internet. And we walk the walk for both our users and our team. While professional vetting happens on the internal level, no team member is required to give up personal information publicly that they don’t wish to share.',
+  },
+  founders: {
+    title: '創始者',
+    bios: [
+      {
+        name: 'Synth',
+        email: '',
+        picture: 'synth.png',
+        title: '',
+        bio: '創始者 Synthは最も早期なビットコイン開発者の一人である。斬新な分散型ネットワークを作り出すことを目指し、8年前にSkycoinを創立した。現在、幾つか暗号化通貨のプロジェクト顧問を勤めている。Synthには、数学、分布式システムと記号ロジック学の背景を持っている。',
+      },
+      {
+        name: 'Houwu Chen',
+        email: '',
+        picture: '',
+        title: '',
+        bio: 'Houwuはイーサリアム開発者の一人であり、我々分布式ネットワークや暗号化通貨の中心--Obelisk白書の作者でもある。かつて、清華大学で博士学位の勉強をした。',
+      },
+    ],
+  },
+  west: {
+    title: 'Skycoin Team',
+    bios: [
+      {
+        name: 'Sam Sing Fong',
+        email: '',
+        picture: 'sam_sing.jpg',
+        title: 'Operations Lead',
+        bio: 'In 2017, Sam began strategic development of Skycoin’s China team. Sam is a co-founder of a blockchain foundation and a founding partner of bluePro Consulting—a management consulting firm with offices in Shanghai and Singapor Sam has also held senior roles in a variety of Fortune 500 companies. Sam is an alumnus of the University of South Australia.',
+      },
+      {
+        name: 'Jesse Sun',
+        email: '',
+        picture: 'jesse_sun.jpg',
+        title: 'Eastern PR and Relations',
+        bio: 'Jesse Sun is both the Founder and head of a fund investing in blockchain startups, applications and cryptocurrencies, as well as bitcoin mining. Before joining the crypto world, he was a management consultant. Sun holds an MBA from the Manchester Business School and a master’s degree from Tongji University.',
+      },
+      {
+        name: 'Li Zhen',
+        email: '',
+        picture: 'li_zhen.png',
+        title: 'Eastern Marketing Lead',
+        bio: 'Ms Li is a serial entrepreneur who moved from mobile Internet investing into blockchain angel investing in 2014. During her time in the blockchain industry, she has organized over 200 meetup events and raised nearly $10 million for various blockchain projects. In 2017, Li founded a blockchain investment fund, developed Skycoin’s community in China, and recruited strategic hires for a blockchain application.',
+      },
+    ],
+  },
+  advisors: {
+    title: '主要顧問',
+    bios: [
+      {
+        name: 'Michael Terpin',
+        title: 'CoinAgenda創始者兼CEO',
+        picture: 'michael_terpin.jpg',
+        bio: 'Michael Terpin、Transform Groupの創始者兼CEO、Marketwired創始者。2013年初、BitAngelsを共同設立し、CoinAgendaシリーズの会議が誕生した。早期のブロックチェーンインキュベーターbCommerce LabsとDappsファンドを聯合創立した。現在、AlphabitファンドICO投資委員会首席を勤め、多くのブロックチェーン会社やファンド会へアドバイスを提供している。Terpinは150余りのブロックチェーン会社やファンド会へ広報へ力を貢献している。',
+      },
+      {
+        name: 'John Otto Peters',
+        title: 'SIWA therapeutics,Inc董事長',
+        picture: 'john_otto_peters.jpg',
+        bio: 'John Otto Petersは現在、Chai SIWA therapeutics, Inc.に勤務中。彼はかつて、財務主管を勤め、科技、製造業と政府サービスなど多くの異なる分野で30年余りの経験を積み重ねていた。現在の職務はTriple Canopy, Inc.の創始者、董事会成員と最初の首席財務官である。',
+      },
+      {
+        name: 'TokenKey',
+        title: '',
+        picture: 'tokenkey.png',
+        bio: 'Chris Emmsが創立したTokenkeyはプロフェッショナルグローバルチームであり、ブロックチェーンプロジェクトに対し、最初の提案から最後の交付までのサポートを提供している。そのサービス内容として、白書やビジネル計画、代用貨幣経済学、会計審査やランク評定、アーキテクチャーとコンプライアンス、会社実体と法律、デジタル資産創立、コンサルタント委員会、代用貨幣発行や取引所上場、監視と委託管理、営業と広報、地域管理と奨励や暗号化通貨取引と利益獲得を含めている。',
+      },
+      {
+        name: 'SharkCIA',
+        title: '市場と策略',
+        picture: 'shark_cia.png',
+        bio: 'SharkCIAはブロックチェーン会社に対する研究、投資や営業を専門的に取り扱う機構である。SharkCIA世界各地から成員を含め、チーム経験がハッカー式成長、公共関係、末端地域拡張、戦略アドバイスの提供や、名の知らないプロジェクトが幅広く評価されて時価を高めることを含めている。',
+      },
+    ],
+  },
+  investors: {
+    title: '主な投資者',
+    bios: [
+      {
+        name: 'Patrick Dai',
+        title: 'Qtum創始者兼CEO',
+        picture: 'patrick_dai.jpg',
+        bio: 'PatrickはDraper大学から卒業し、博士課程を終えるまでに中国科学院を離れた。かつて、アリババで勤務していた。ブロックチェーン技術開発に関する専門知識をお持ち、その発展の推進に取組み続けている。',
+      },
+      {
+        name: 'Alphabit',
+        title: 'デジタル貨幣ファンド',
+        picture: 'alphabit.png',
+        bio: 'AlphabitはロンドンヘッジファンドLight Peak Capitalの元貨幣取引員であるLiam Robertsonが共同創立された。Alphabitは3億ドルのファンドであり、業務内容がオープン式共同ファンドとヘッジファンドのクロスである。Alphabitが今までの投資はVideocoinとStormxを含めている。',
+      },
+      {
+        name: 'Hive Chain Labs',
+        title: '',
+        picture: 'hive_chain_labs.jpg',
+        bio: 'シリコンバレーからのHive Chain LabsとHChain資本は学科を跨ぐブロックチェーン基本プロジェクトの研究やインキュベーションに取組んでいる。HChainはブロックチェーン技術の信者であり、「ブロックチェーンを隅々までに」というビジョンを持っている。彼らの投資実績は ICO.com, TKN.com. Scry、RChainやPolkadotなどを含めている。',
+      },
+    ],
+  },
+  asia: {
+    title: 'Asia Marketing Team',
+    bios: [
+      {
+        name: 'Chris',
+        title: 'SKYCOIN China Region Marketing Leader',
+        picture: '',
+        bio: 'Blockchain enthusiast, investor. Over 9 years of working experience in finance and Internet industries. Working experiences in marketing, strategic planning, business development. Experienced in market strategies, marketing cooperation, has led a few strategic collaboration',
+      },
+      {
+        name: 'Tien',
+        title: 'SKYCOIN China Region Tech Leader',
+        picture: '',
+        bio: 'Early adopter of Bitcoin, blockchain enthusiast, coding geek. Has led a team in a hackathon and got the championship. Participated throughout the whole developing, assembling and improving process of SKYMINER. Tien has his contribution in SKYCOIN recognized generously by the team and the community',
+      },
+      {
+        name: 'Sherry',
+        title: 'SKYCOIN China Region Financial Leader',
+        picture: '',
+        bio: 'Over 10 years of financial management experience. Proficient in accounting and financial analysis',
+      },
+      {
+        name: 'Rae',
+        title: 'SKYCOIN China Region Aftersales Service Leader',
+        picture: '',
+        bio: 'Blockchain Believer. Years of planning and operation management experience, highly experienced in procedure planning. Has planned a comprehensive aftersales management procedure',
+      },
+      {
+        name: 'Mimi',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 1 year of market operation experience. Over 2 years of community building and operation experience, good community interaction management ability',
+      },
+      {
+        name: 'Greeny',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 3 years of market operation and media planning experience. Has planned a few marketing events, highly experienced in self-media operation',
+      },
+      {
+        name: 'Jeremiah',
+        title: 'SKYCOIN China Region Market Operation & Community Management',
+        picture: '',
+        bio: 'Blockchain supporter. Over 4 years of market operation and media planning experience. Outgoing and easy-going, good at communicating with people from diverse backgrounds. Has participated in a few event planning and execution tasks.',
+      },
+    ],
+  },
+};
