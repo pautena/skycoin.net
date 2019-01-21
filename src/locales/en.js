@@ -353,11 +353,13 @@ export default {
       guidelines: 'Skycoin Brand Guidelines',
       logo: 'Skycoin Logo PNGs',
       font: 'Skycoin Sans font',
+      branding:'Skycoin品牌视觉规范 v1.6.1',
     },
     skywire: {
       heading: 'Skywire',
       installationGuide: 'Skywire Installation Guide v1.0',
       minerAssemblyManual: 'Skywire Miner Assembly Manual',
+      skyminer: 'Skyminer矿机安装手册 v2.2',
     },
     roadmap: {
       heading: 'Roadmap',
