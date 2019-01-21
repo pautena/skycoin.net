@@ -9,7 +9,7 @@ import Footer from 'components/Footer';
 import Languages from 'components/Languages';
 import Text from 'components/Text';
 import { COLOR } from 'config';
-import Banner from './components/Banner';
+import BannerStore from './components/BannerStore';
 import Hero from './components/Hero';
 import Network from './components/Network';
 import Miner from './components/Miner';
@@ -18,6 +18,7 @@ import Press from './components/Press';
 import Ecosystem from './components/Ecosystem';
 import News from './components/News';
 import SignUp from './components/SignUp';
+
 
 const HeaderWrapper = styled.div`
   position: relative;
@@ -39,7 +40,7 @@ class Home extends React.PureComponent {
           />
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="preload" onLoad="this.rel='stylesheet'" as="style" />
         </Helmet>
-        <Banner onClick={() => this.handleScroll()} />
+        <BannerStore />
         <HeaderWrapper>
           <Container>
             <Text as="div" fontSize={[0, 0, 1]} color="gray.8" pt={5} mt={0} mb={-3} textAlign="right">

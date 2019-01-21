@@ -17,7 +17,7 @@ import Email from './components/Email';
 import Social from './components/Social';
 import PageLinks from './components/PageLinks';
 
-const COPYRIGHT = '© Skycoin.net 2018';
+const COPYRIGHT = '© Skycoin.net 2019';
 const RIGHTS_RESERVED = 'footer.rightsReserved';
 
 const Wrapper = styled.div`
@@ -35,6 +35,13 @@ const FooterNavWrapper = styled(Flex)`
   `}
 `;
 
+const NavigationWrapper = styled.div`
+  display:none;
+  ${media.sm.css`
+    display:block;
+  `}
+`;
+
 const Footer = ({ isLanding }) => (
   <Wrapper>
     <Container>
@@ -46,7 +53,7 @@ const Footer = ({ isLanding }) => (
         isLanding={isLanding}
       >
         <Logo blueWhite />
-        {!isLanding && <Navigation white />}
+        {!isLanding && <NavigationWrapper><Navigation white /></NavigationWrapper>}
         {isLanding &&
         <Text fontSize={[1, 1, 2]} color="gray.8" my={0} textAlign="center">
           <Email />
