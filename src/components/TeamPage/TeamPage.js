@@ -17,7 +17,7 @@ import Text from 'components/Text';
 import SignUpSection from 'components/SignUpSection';
 
 import { FONT_FAMILIES, FONT_SIZES, COLOR, BORDER_RADIUS, BOX_SHADOWS, SPACE } from 'config';
-import { en, zh, ko, ru } from './content/bios';
+import { en, zh, ko, ru, ja } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
@@ -63,7 +63,7 @@ const Bio = styled.p`
   font-size: 14px;
 `;
 
-const localeList = { en, zh, ko, ru };
+const localeList = { en, zh, ko, ru, ja };
 
 const getLocale = (locale) => {
   const language = localeList[locale];
