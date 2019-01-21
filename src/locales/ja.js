@@ -227,7 +227,7 @@ export default {
       guidelines: 'Skycoinブランドマニュアル',
       logo: 'Skycoinの Logo PNGs',
       font: 'Skycoinの Sansフォント',
-      branding:'Skycoinブランド視覚規範 v1.6.1',
+      branding: 'Skycoinブランド視覚規範 v1.6.1',
     },
     skywire: {
       heading: 'Skywire',

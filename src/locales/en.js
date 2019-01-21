@@ -353,7 +353,7 @@ export default {
       guidelines: 'Skycoin Brand Guidelines',
       logo: 'Skycoin Logo PNGs',
       font: 'Skycoin Sans font',
-      branding:'Skycoin品牌视觉规范 v1.6.1',
+      branding: 'Skycoin品牌视觉规范 v1.6.1',
     },
     skywire: {
       heading: 'Skywire',

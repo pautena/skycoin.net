@@ -17,7 +17,7 @@ import Text from 'components/Text';
 import SignUpSection from 'components/SignUpSection';
 
 import { FONT_FAMILIES, FONT_SIZES, COLOR, BORDER_RADIUS, BOX_SHADOWS, SPACE } from 'config';
-import { en, zh, ko, ru,ja } from './content/bios';
+import { en, zh, ko, ru, ja } from './content/bios';
 
 import ArrowIcon from './expander.svg';
 import bg from './bg.svg';
