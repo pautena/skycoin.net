@@ -17,7 +17,7 @@ const Wrapper = styled(Flex)`
   position: relative;
   height: 550px;
   box-sizing: border-box;
-  background: ${COLOR.base} url(${props => props.banner}) no-repeat right top;
+  background: ${COLOR.base} url(${props => props.banner}) no-repeat right bottom;
   background-size: cover;
   overflow: hidden;
 
