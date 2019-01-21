@@ -389,40 +389,40 @@ export default {
       paragraph2: 'CXOはブロックチェーンに基づく他の記憶ネットワークが使用するプロトコルを整合や拡張した。CXOは内蔵方式の IPLDを備えている。このような方式は規制したり、関連データベースを分類したりするために使用できる。惑星間ファイルシステム（InterPlanetary File System、IPFS）はCXOの上で構築できる。CXOが提供したデータはSkywireネットワークに分布し、データセキュリティ、検証可能性の実現をサポートでき、ブロックチェーンに記憶する必要もない。',
       skywire: {
         title: 'Skywire',
-        text: 'Skywire - Peer-to-peer community-driven decentralized',
+        text: 'Skywire-ポイント対ポイント 地域で分散化を駆動',
       },
       cx: {
         title: 'CX',
-        text: 'Specification and programming language',
+        text: '規範とプログラミング言語',
       },
       cxo: {
         title: 'CXO',
-        text: 'Low-level library designed to house applications for sharing objects',
+        text: 'データの共有を実現し、アプリケーションプログラムを記憶するための低クラスデータベース',
       },
     },
     features: {
-      heading: 'Key Features:',
+      heading: '主要な機能：',
       sharing: {
-        title: 'Data Sharing',
-        text: 'Useful for data owners who want to share information, as it can share many feeds like public keys. CXO nodes can subscribe to a feed to receive updates and can connect using the discovery server, interconnecting data based on interests.',
+        title: 'データ共有',
+        text: '共有した情報のデータ所有者にとっては、非常に役に立つ。パブリックキーなど多くの情報を共有できるから。 CXOノードは情報源を引用することによって、更に多くの情報を受信できる。また、サーバーを使用や発見し、接続することによって、興味に応じるデータを獲得できる。',
       },
       privacy: {
-        title: 'Privacy',
-        text: 'CXO data exists collectively over the network. Once data is published, it cannot be destroyed, and data feeds are downloaded from peer subscribers. For privacy, the publisher’s location cannot be tracked as the publisher becomes merely a peer on the decentralized network',
+        title: 'プライベート',
+        text: 'CXOデータはインターネットに集中存在する。データが発表されると、消去できなくなる。そのデータは対等ユーザ（引用者）にダウンロードされる。プライベート情報を守るために、発表者の位置は追跡できない。発表者は分散化ネットワークにおける一つのポイント（対等ユーザ）に過ぎないから。',
       },
       security: {
-        title: 'Security',
-        text: 'CXO exists within a self-contained standard ecosystem that is mathematically strict and is implemented from the ground up. The owners sign data using private keys, and users who receive the data can audit the signature through the use of public key feeds to be sure the data comes from the desired owner. Security is ensured because nodes cannot alter data without the use of the owner’s private keys.',
+        title: '高い安全性',
+        text: 'CXOは自給自足な標準生態システムに存在する。しかも、この生態システムのデータが正確であり、ゼロから作り出した生態システムである。所有者がプライベートキーでデータを発行し、データを受取るユーザがパブリックキーで審査や署名できる。それによって、データが予測の情報所有者から来たものだと確保する。データ所有者のプライベートキーがないと、ノードがデータを変更できないので、データの安全を保障できる。',
       },
       apps: {
-        title: 'CXO Applications',
-        text: 'Applications on CXO are currently being tested with light use. SkyBBS is a social network similar to Facebook, Steemit, and Twitter, and is built on top of CXO, with many more to come.',
+        title: 'CXOアプリケーション',
+        text: 'CXOにおけるアプリケーションは現在、少量なテストを行なっている。SkyBBSはFacebook、SteemitやTwitterに類似するSソーシャルネットワークであり、しかも、CXOの上に構築されたものである。もっと沢山のアプリケーションを発表するので、お楽しみにして下さい。',
       },
     },
   },
   cx: {
-    title: 'CX - CX programming language',
-    description: 'CX - programming language',
+    title: 'CX - プログラム設計言語',
+    description: 'CX - プログラム設計言語',
     about: {
       heading: 'CXって？',
       subheading: 'プログラム設計言語',
