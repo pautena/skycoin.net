@@ -379,14 +379,14 @@ export default {
     },
   },
   cxo: {
-    title: 'CXO - CX Object Systems',
-    description: 'CXO - CX Object Systems',
+    title: 'CX対象システム',
+    description: 'CX対象システム',
     about: {
-      heading: 'What is CXO?',
-      subheading: 'CX Object Systems',
-      quote: 'Skycoin is building a new ecosystem, consisting of the following components:',
-      paragraph1: 'CXO (CX Object Systems) is the Skycoin immutable object system, previously called Aether. Designed to replace current conventional methods of peer-to-peer sharing, CXO creates a robust storage system that supersedes services like BitTorrent, Dropbox, and Google Drive. Data is replicated peer-to-peer utilizing the Skycoin CXO library.',
-      paragraph2: 'CXO incorporates and expands on the protocols utilized in other blockchain-based storage networks. CXO is an IPLD, with a built-in schema that sets constraints to classify relatable databases. InterPlanetary File Systems (IPFS) can be built on top of CXO. CXO provides data distribution over the Skywire network and is useful for data that must be secure and verifiable yet doesn\'t need storage on the blockchain.',
+      heading: 'CXOとって？',
+      subheading: 'CX対象システム',
+      quote: 'Skycoinは新たな生態システムを作ろうとしているが、それが下記の部分を含めている。',
+      paragraph1: 'CXO（CX対象システム）は変更不可なSkycoin対象システムであり、Aetherとも言われていた。CXOは現在で伝統的なポイント対ポイントの共有方法の代わりとなる強いメモリシステムを作り出すことを主旨とし、BitTorrent、DropboxとGoogle Driveなどサービスのサービスに代わり、データがSkycoin CXOデータベースにより、ポイント対ポイントのコピーを実現できる。',
+      paragraph2: 'CXOはブロックチェーンに基づく他の記憶ネットワークが使用するプロトコルを整合や拡張した。CXOは内蔵方式の IPLDを備えている。このような方式は規制したり、関連データベースを分類したりするために使用できる。惑星間ファイルシステム（InterPlanetary File System、IPFS）はCXOの上で構築できる。CXOが提供したデータはSkywireネットワークに分布し、データセキュリティ、検証可能性の実現をサポートでき、ブロックチェーンに記憶する必要もない。',
       skywire: {
         title: 'Skywire',
         text: 'Skywire - Peer-to-peer community-driven decentralized',
