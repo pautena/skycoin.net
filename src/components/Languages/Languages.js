@@ -36,12 +36,12 @@ export default () => (
       render={() => (
         <Language><StyledLink to="/ja/">日本語</StyledLink></Language>
       )}
-    /> 
+    />
     <Flag
-    name="korean"
-    render={() => (
-      <Language><StyledLink to="/ko/">한국어</StyledLink></Language>
-    )}
-  /> 
+      name="korean"
+      render={() => (
+        <Language><StyledLink to="/ko/">한국어</StyledLink></Language>
+      )}
+    />
   </Languages>
 );
